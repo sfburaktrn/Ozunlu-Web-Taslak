@@ -68,7 +68,7 @@ export default function Navbar() {
             <div className="container mx-auto px-3 md:px-5 flex items-center justify-between">
                 <Link
                     href="/"
-                    className="relative z-50 transition-transform hover:scale-105 -ml-2"
+                    className="relative z-50 transition-transform hover:scale-105 -ml-6 md:-ml-8"
                 >
                     <div className="relative w-40 h-10 md:w-48 md:h-12">
                         <Image
@@ -150,7 +150,7 @@ export default function Navbar() {
                                 <div className="flex items-center justify-between px-6 pt-5 pb-0 border-b border-white/10">
                                     <Link
                                         href="/"
-                                        className="relative w-36 h-10"
+                                        className="relative w-36 h-10 -ml-3"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
                                         <Image

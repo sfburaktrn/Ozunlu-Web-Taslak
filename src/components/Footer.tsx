@@ -37,7 +37,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr_1fr] gap-10 lg:gap-12">
                     {/* Brand / About */}
                     <div className="space-y-5">
-                        <div className="flex items-center gap-3 -ml-2">
+                        <div className="flex items-center gap-3 -ml-6 md:-ml-8">
                             <div className="relative w-40 h-10">
                                 <Image
                                     src="/ozunlu-logo.png"
@@ -136,4 +136,3 @@ export default function Footer() {
         </footer>
     );
 }
-
