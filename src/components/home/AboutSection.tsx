@@ -44,7 +44,7 @@ export default function AboutSection() {
 
                         <div className="space-y-4 text-gray-300 text-lg leading-relaxed mb-8">
                             <p>
-                                <span className="text-white font-bold">1980 yılından</span> bu yana, Türkiye'nin kalbi Ankara'dan
+                                <span className="text-white font-bold">1980 yılından</span> bu yana, Türkiye&apos;nin kalbi Ankara&apos;dan
                                 dünyaya uzanan bir mühendislik hikayesi yazıyoruz.
                             </p>
                             <p className="flex items-center flex-wrap gap-2">

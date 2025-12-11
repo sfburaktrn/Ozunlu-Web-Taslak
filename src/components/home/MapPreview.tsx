@@ -23,8 +23,8 @@ export default function MapPreview() {
                 </motion.h2>
 
                 <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-lg">
-                    Türkiye'nin kalbinden dünyaya uzanan lojistik ağı.
-                    Ankara, Eskişehir ve Aksaray üretim tesislerimizden 50'den fazla ülkeye ihracat.
+                    Türkiye&apos;nin kalbinden dünyaya uzanan lojistik ağı.
+                    Ankara, Eskişehir ve Aksaray üretim tesislerimizden 50&apos;den fazla ülkeye ihracat.
                 </p>
 
                 <Link
