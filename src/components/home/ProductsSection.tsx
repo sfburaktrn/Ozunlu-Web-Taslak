@@ -14,7 +14,8 @@ const products = [
         capacity: '20-40 m³',
         features: ['Hardox 450 Çelik', 'Hidrolik Sistem', 'Hafif Yapı'],
         link: '/products',
-        image: '/products/yarı-romork-damper.jpg', // Görsel yolunu buraya ekleyin
+        image: '/products/yarı-romork-damper.png',
+        hasSpotlight: true, // Platform ve spot ışığı efekti için
     },
     {
         id: 2,
@@ -24,7 +25,8 @@ const products = [
         capacity: '15-25 m³',
         features: ['Özel Tasarım', 'Yüksek Dayanım', 'Kolay Bakım'],
         link: '/products',
-        image: '/products/cekici-damper.jpg', // Görsel yolunu buraya ekleyin
+        image: '/products/product-photo-2.png',
+        hasSpotlight: true,
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ const products = [
         capacity: 'Özel',
         features: ['Kişiye Özel', 'Ar-Ge Desteği', 'Hızlı Üretim'],
         link: '/products',
-        image: '/products/ozel-uretim.jpg', // Görsel yolunu buraya ekleyin
+        image: '/products/product-photo-3.png',
+        hasSpotlight: true,
     },
 ];
 
@@ -100,40 +103,104 @@ export default function ProductsSection() {
                             className="group relative"
                         >
                             <Link href={product.link} className="block h-full">
-                                <div className="relative h-full bg-gradient-to-br from-ozunlu-900 to-ozunlu-950 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 overflow-hidden group cursor-pointer">
-                                    {/* Product Image */}
-                                    <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-ozunlu-800 to-ozunlu-900">
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
-                                        <Image
-                                            src={product.image}
-                                            alt={product.title}
-                                            fill
-                                            className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                            onError={(e) => {
-                                                // Görsel yüklenemezse placeholder göster
-                                                const target = e.target as HTMLImageElement;
-                                                target.style.display = 'none';
-                                                const placeholder = target.parentElement?.querySelector('.image-placeholder');
-                                                if (placeholder) {
-                                                    (placeholder as HTMLElement).style.display = 'flex';
-                                                }
-                                            }}
-                                        />
-                                        <div className="image-placeholder absolute inset-0 flex items-center justify-center bg-gradient-to-br from-ozunlu-800 to-ozunlu-900" style={{ display: 'none' }}>
-                                            <product.icon className="text-white/20" size={80} />
+                                <div className="relative h-full rounded-2xl overflow-hidden group cursor-pointer">
+                                    {/* Animated Gradient Background Lights */}
+                                    {product.hasSpotlight && (
+                                        <>
+                                            {/* Main Gradient Background */}
+                                            <div className="absolute inset-0 bg-gradient-to-br from-black via-ozunlu-950 to-black" />
+                                            
+                                            {/* Animated Light Orbs */}
+                                            <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#000552] opacity-20 rounded-full blur-3xl animate-pulse" 
+                                                style={{ animationDuration: '4s' }} />
+                                            <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#000552] opacity-30 rounded-full blur-3xl animate-pulse" 
+                                                style={{ animationDuration: '5s', animationDelay: '1s' }} />
+                                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#000552] opacity-10 rounded-full blur-3xl group-hover:opacity-20 transition-opacity duration-1000" />
+                                            
+                                            {/* Radial Gradient Lights */}
+                                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-96 pointer-events-none"
+                                                style={{
+                                                    background: 'radial-gradient(ellipse 100% 60% at 50% 100%, rgba(0, 5, 82, 0.5) 0%, rgba(0, 5, 82, 0.2) 30%, transparent 70%)',
+                                                }}
+                                            />
+                                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 pointer-events-none"
+                                                style={{
+                                                    background: 'radial-gradient(ellipse 80% 40% at 50% 0%, rgba(0, 5, 82, 0.3) 0%, transparent 60%)',
+                                                }}
+                                            />
+                                            
+                                            {/* Side Light Accents */}
+                                            <div className="absolute top-1/4 left-0 w-32 h-32 bg-[#000552] opacity-15 rounded-full blur-2xl group-hover:opacity-25 transition-opacity" />
+                                            <div className="absolute top-1/4 right-0 w-32 h-32 bg-[#000552] opacity-15 rounded-full blur-2xl group-hover:opacity-25 transition-opacity" />
+                                            
+                                            {/* Platform Base */}
+                                            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-gray-900 via-gray-800 to-gray-900 rounded-t-2xl shadow-2xl">
+                                                {/* Platform Texture */}
+                                                <div className="absolute inset-0 opacity-20" style={{
+                                                    backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.05) 2px, rgba(255,255,255,0.05) 4px)',
+                                                    backgroundSize: '8px 8px',
+                                                }} />
+                                                
+                                                {/* Platform Edge Highlight */}
+                                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                                                
+                                                {/* Platform Shadow */}
+                                                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-4/5 h-8 bg-black/60 blur-2xl rounded-full" />
+                                            </div>
+                                            
+                                            {/* Bottom Spot Light - Enhanced */}
+                                            <div 
+                                                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-40 pointer-events-none"
+                                                style={{
+                                                    background: 'radial-gradient(ellipse 120% 80% at 50% 100%, rgba(0, 5, 82, 0.6) 0%, rgba(0, 5, 82, 0.3) 40%, transparent 80%)',
+                                                }}
+                                            />
+                                        </>
+                                    )}
+                                    
+                                    {/* Gradient Background for Non-Spotlight Products */}
+                                    {!product.hasSpotlight && (
+                                        <>
+                                            <div className="absolute inset-0 bg-gradient-to-br from-ozunlu-900 via-ozunlu-950 to-black" />
+                                            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-3/4 bg-[#000552] opacity-10 rounded-full blur-3xl" />
+                                            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-[#000552] opacity-5 rounded-full blur-3xl" />
+                                        </>
+                                    )}
+                                    
+                                    {/* Image Container - No Frame */}
+                                    <div className={`relative ${product.hasSpotlight ? 'h-80 -mb-12' : 'h-64'} w-full flex items-end justify-center`}>
+                                        {/* Transparent Background - No black box */}
+                                        <div className="absolute inset-0 z-0" />
+                                        
+                                        {/* Product Image - Free Floating */}
+                                        <div className="relative w-full h-full flex items-end justify-center z-20">
+                                            <Image
+                                                src={product.image}
+                                                alt={product.title}
+                                                fill
+                                                className={`object-contain object-bottom group-hover:scale-110 transition-transform duration-700`}
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                onError={(e) => {
+                                                    const target = e.target as HTMLImageElement;
+                                                    target.style.display = 'none';
+                                                    const placeholder = target.parentElement?.querySelector('.image-placeholder');
+                                                    if (placeholder) {
+                                                        (placeholder as HTMLElement).style.display = 'flex';
+                                                    }
+                                                }}
+                                            />
+                                            <div className="image-placeholder absolute inset-0 flex items-center justify-center" style={{ display: 'none' }}>
+                                                <product.icon className="text-white/20" size={80} />
+                                            </div>
                                         </div>
                                         
-                                        {/* Capacity Badge - Image üzerinde */}
-                                        <div className="absolute top-4 right-4 z-20">
-                                            <span className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full border border-white/20">
+                                        {/* Capacity Badge - Floating */}
+                                        <div className="absolute top-4 right-4 z-30">
+                                            <span className="inline-flex items-center gap-2 bg-black/80 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full border border-white/30 shadow-lg">
                                                 <product.icon size={14} />
                                                 {product.capacity}
                                             </span>
                                         </div>
-
-                                        {/* Gradient Overlay */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-ozunlu-950 via-transparent to-transparent z-10" />
                                     </div>
 
                                     {/* Content */}
@@ -165,13 +232,24 @@ export default function ProductsSection() {
                                         </div>
                                     </div>
 
-                                    {/* Hover Glow Effect */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-                                    
-                                    {/* Shine Effect on Hover */}
-                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 animate-shine" />
-                                    </div>
+                                    {/* Enhanced Hover Light Effects */}
+                                    {product.hasSpotlight && (
+                                        <>
+                                            <div className="absolute inset-0 bg-gradient-to-br from-[#000552]/20 via-transparent to-[#000552]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                                            
+                                            {/* Hover Light Pulse */}
+                                            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-48 bg-[#000552] opacity-0 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none blur-3xl"
+                                                style={{
+                                                    background: 'radial-gradient(ellipse at center, rgba(0, 5, 82, 0.4) 0%, transparent 70%)',
+                                                }}
+                                            />
+                                            
+                                            {/* Shine Effect on Hover */}
+                                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 animate-shine" />
+                                            </div>
+                                        </>
+                                    )}
                                 </div>
                             </Link>
                         </motion.div>
