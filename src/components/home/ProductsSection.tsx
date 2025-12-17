@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Truck, Package, Settings } from 'lucide-react';
+import { ArrowRight, Truck, Package, Settings, Check } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const products = [
     {
@@ -13,6 +14,7 @@ const products = [
         capacity: '20-40 m³',
         features: ['Hardox 450 Çelik', 'Hidrolik Sistem', 'Hafif Yapı'],
         link: '/products',
+        image: '/products/yarı-romork-damper.jpg', // Görsel yolunu buraya ekleyin
     },
     {
         id: 2,
@@ -22,6 +24,7 @@ const products = [
         capacity: '15-25 m³',
         features: ['Özel Tasarım', 'Yüksek Dayanım', 'Kolay Bakım'],
         link: '/products',
+        image: '/products/cekici-damper.jpg', // Görsel yolunu buraya ekleyin
     },
     {
         id: 3,
@@ -31,6 +34,7 @@ const products = [
         capacity: 'Özel',
         features: ['Kişiye Özel', 'Ar-Ge Desteği', 'Hızlı Üretim'],
         link: '/products',
+        image: '/products/ozel-uretim.jpg', // Görsel yolunu buraya ekleyin
     },
 ];
 
@@ -92,65 +96,84 @@ export default function ProductsSection() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            whileHover={{ y: -10 }}
+                            whileHover={{ y: -8 }}
                             className="group relative"
                         >
-                            <div className="relative h-full bg-gradient-to-br from-ozunlu-900 to-ozunlu-950 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 overflow-hidden">
-                                {/* Steel Texture Background */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-[#3a4556] via-[#2d3748] to-[#1a202c]" />
-                                <div className="absolute inset-0 opacity-40" style={{
-                                    backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(255,255,255,0.02) 1px, rgba(255,255,255,0.02) 2px)',
-                                    backgroundSize: '3px 3px',
-                                }} />
-                                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/20" />
+                            <Link href={product.link} className="block h-full">
+                                <div className="relative h-full bg-gradient-to-br from-ozunlu-900 to-ozunlu-950 rounded-2xl border border-white/10 hover:border-primary/50 transition-all duration-300 overflow-hidden group cursor-pointer">
+                                    {/* Product Image */}
+                                    <div className="relative h-64 w-full overflow-hidden bg-gradient-to-br from-ozunlu-800 to-ozunlu-900">
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
+                                        <Image
+                                            src={product.image}
+                                            alt={product.title}
+                                            fill
+                                            className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                            onError={(e) => {
+                                                // Görsel yüklenemezse placeholder göster
+                                                const target = e.target as HTMLImageElement;
+                                                target.style.display = 'none';
+                                                const placeholder = target.parentElement?.querySelector('.image-placeholder');
+                                                if (placeholder) {
+                                                    (placeholder as HTMLElement).style.display = 'flex';
+                                                }
+                                            }}
+                                        />
+                                        <div className="image-placeholder absolute inset-0 flex items-center justify-center bg-gradient-to-br from-ozunlu-800 to-ozunlu-900" style={{ display: 'none' }}>
+                                            <product.icon className="text-white/20" size={80} />
+                                        </div>
+                                        
+                                        {/* Capacity Badge - Image üzerinde */}
+                                        <div className="absolute top-4 right-4 z-20">
+                                            <span className="inline-flex items-center gap-2 bg-black/70 backdrop-blur-sm text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full border border-white/20">
+                                                <product.icon size={14} />
+                                                {product.capacity}
+                                            </span>
+                                        </div>
 
-                                {/* Content */}
-                                <div className="relative z-10 p-8">
-                                    {/* Icon */}
-                                    <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/10 transition-all border border-white/20">
-                                        <product.icon className="text-white" size={32} />
+                                        {/* Gradient Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-ozunlu-950 via-transparent to-transparent z-10" />
                                     </div>
 
-                                    {/* Capacity Badge */}
-                                    <div className="inline-block mb-4">
-                                        <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-primary/10 text-white rounded-full border border-primary/30">
-                                            {product.capacity}
-                                        </span>
+                                    {/* Content */}
+                                    <div className="relative z-10 p-6">
+                                        {/* Title */}
+                                        <h3 className="text-2xl font-black text-white mb-2 group-hover:text-white transition-colors">
+                                            {product.title}
+                                        </h3>
+
+                                        {/* Description */}
+                                        <p className="text-gray-400 mb-4 leading-relaxed text-sm">
+                                            {product.description}
+                                        </p>
+
+                                        {/* Features */}
+                                        <ul className="space-y-2 mb-6">
+                                            {product.features.map((feature, idx) => (
+                                                <li key={idx} className="flex items-center gap-2 text-sm text-gray-300">
+                                                    <Check size={14} className="text-white flex-shrink-0" />
+                                                    <span>{feature}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        {/* CTA Button */}
+                                        <div className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:gap-4 transition-all border-b border-white/20 pb-1">
+                                            Detaylı İncele
+                                            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                                        </div>
                                     </div>
 
-                                    {/* Title */}
-                                    <h3 className="text-2xl font-black text-white mb-3 group-hover:text-white transition-colors">
-                                        {product.title}
-                                    </h3>
-
-                                    {/* Description */}
-                                    <p className="text-gray-400 mb-6 leading-relaxed">
-                                        {product.description}
-                                    </p>
-
-                                    {/* Features */}
-                                    <ul className="space-y-2 mb-6">
-                                        {product.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-center gap-2 text-sm text-gray-300">
-                                                <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
-
-                                    {/* CTA Button */}
-                                    <Link
-                                        href={product.link}
-                                        className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:gap-4 transition-all"
-                                    >
-                                        Detaylı İncele
-                                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                                    </Link>
+                                    {/* Hover Glow Effect */}
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                                    
+                                    {/* Shine Effect on Hover */}
+                                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 animate-shine" />
+                                    </div>
                                 </div>
-
-                                {/* Hover Glow */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </div>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>

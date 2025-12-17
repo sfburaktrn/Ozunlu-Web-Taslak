@@ -24,14 +24,19 @@ export default function View360() {
 
                 {/* 3D Model Placeholder Box */}
                 <motion.div
-                    style={{ x, rotateY, cursor: 'grab' }}
+                    style={{ 
+                        x, 
+                        rotateY, 
+                        cursor: 'grab',
+                        backgroundColor: '#000552', 
+                        borderColor: '#000552' 
+                    }}
                     drag="x"
                     dragConstraints={{ left: -200, right: 200 }}
                     onDragStart={() => setIsDragging(true)}
                     onDragEnd={() => setIsDragging(false)}
                     whileTap={{ cursor: 'grabbing' }}
                     className="w-64 h-40 md:w-96 md:h-60 rounded-lg shadow-[0_20px_50px_rgba(0,5,82,0.3)] flex items-center justify-center text-white font-black text-2xl transform-style-3d border-b-8 border-r-8 relative"
-                    style={{ backgroundColor: '#000552', borderColor: '#000552' }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent pointer-events-none" />
                     HARDOX 450
