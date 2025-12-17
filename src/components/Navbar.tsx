@@ -92,14 +92,14 @@ export default function Navbar() {
                         {/* Theme Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="text-gray-400 hover:text-primary transition-colors"
+                            className="text-gray-400 hover:text-white transition-colors"
                         >
                             {isDark ? <Sun size={20} /> : <Moon size={20} />}
                         </button>
 
                         {/* Language */}
                         <div className="flex items-center gap-2">
-                            <Globe size={16} className="text-primary" />
+                            <Globe size={16} className="text-white" />
                             <button
                                 onClick={() => setLang('TR')}
                                 className={`text-xs font-bold transition-colors ${lang === 'TR' ? 'text-white' : 'text-gray-500 hover:text-white'}`}
@@ -163,7 +163,7 @@ export default function Navbar() {
                                     </Link>
                                     <button
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className="p-2 text-white hover:text-primary transition-colors"
+                                        className="p-2 text-white hover:text-white transition-colors"
                                         aria-label="Menüyü kapat"
                                     >
                                         <X size={26} />
@@ -179,18 +179,18 @@ export default function Navbar() {
                                         {isDark ? <><Sun size={18} /> Aydınlık Mod</> : <><Moon size={18} /> Karanlık Mod</>}
                                     </button>
                                     <div className="flex items-center gap-3 text-white">
-                                        <Globe size={18} className="text-primary" />
+                                        <Globe size={18} className="text-white" />
                                         <div className="flex items-center gap-2">
                                             <button
                                                 onClick={() => setLang('TR')}
-                                                className={`text-sm font-black ${lang === 'TR' ? 'text-primary' : 'text-gray-400'}`}
+                                                className={`text-sm font-black ${lang === 'TR' ? 'text-white' : 'text-gray-400'}`}
                                             >
                                                 TR
                                             </button>
                                             <span className="text-gray-600">/</span>
                                             <button
                                                 onClick={() => setLang('EN')}
-                                                className={`text-sm font-black ${lang === 'EN' ? 'text-primary' : 'text-gray-400'}`}
+                                                className={`text-sm font-black ${lang === 'EN' ? 'text-white' : 'text-gray-400'}`}
                                             >
                                                 EN
                                             </button>
@@ -205,7 +205,7 @@ export default function Navbar() {
                                                 key={link.href}
                                                 href={link.href}
                                                 onClick={() => setMobileMenuOpen(false)}
-                                                className="text-xl font-bold text-white tracking-[0.08em] px-4 py-2 rounded-lg hover:text-primary transition-colors"
+                                                className="text-xl font-bold text-white tracking-[0.08em] px-4 py-2 rounded-lg hover:text-white transition-colors"
                                             >
                                                 {link.label}
                                             </Link>
@@ -215,7 +215,7 @@ export default function Navbar() {
                                     <Link
                                         href="/iletisim"
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className="w-full max-w-xs text-center bg-primary text-black font-bold py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+                                        className="w-full max-w-xs text-center bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
                                     >
                                         Teklif Al
                                     </Link>
@@ -233,7 +233,7 @@ function NavLink({ href, label }: { href: string; label: string }) {
     return (
         <Link
             href={href}
-            className="text-sm font-bold text-gray-300 hover:text-primary transition-colors tracking-wider"
+            className="text-sm font-bold text-gray-300 hover:text-white transition-colors tracking-wider"
         >
             {label}
         </Link>

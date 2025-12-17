@@ -15,7 +15,7 @@ export default function ContactForm() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-                        İLETİŞİM <span className="text-primary">AĞI</span>
+                        İLETİŞİM <span className="text-white">AĞI</span>
                     </h2>
                     <p className="text-gray-400">
                         Sorularınız, projeleriniz ve iş birlikleri için doğru departmanla iletişime geçin.
@@ -40,7 +40,7 @@ export default function ContactForm() {
 
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
-                                    <MapPin className="text-primary mt-1" />
+                                    <MapPin className="text-white mt-1" />
                                     <div>
                                         <p className="text-white font-bold">ANKARA</p>
                                         <p className="text-gray-400 text-sm">
@@ -51,7 +51,7 @@ export default function ContactForm() {
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <Phone className="text-primary" />
+                                    <Phone className="text-white" />
                                     <div>
                                         <p className="text-white font-bold">+90 (312) 123 45 67</p>
                                         <p className="text-gray-500 text-xs">Hafta içi 08:30 - 18:00</p>
@@ -59,7 +59,7 @@ export default function ContactForm() {
                                 </div>
 
                                 <div className="flex items-center gap-4">
-                                    <Mail className="text-primary" />
+                                    <Mail className="text-white" />
                                     <div>
                                         <p className="text-white font-bold">{currentDept?.email}</p>
                                         <p className="text-gray-500 text-xs">{currentDept?.label} DEPARTMANI</p>
@@ -100,7 +100,7 @@ export default function ContactForm() {
                             </div>
 
                             <div className="pt-4">
-                                <button type="button" className="w-full md:w-auto px-10 py-4 bg-primary text-black font-black uppercase tracking-widest rounded hover:bg-white transition-colors flex items-center justify-center gap-3">
+                                <button type="button" className="w-full md:w-auto px-10 py-4 bg-primary text-white font-black uppercase tracking-widest rounded hover:opacity-90 transition-colors flex items-center justify-center gap-3">
                                     <Send size={20} />
                                     Gönder
                                 </button>

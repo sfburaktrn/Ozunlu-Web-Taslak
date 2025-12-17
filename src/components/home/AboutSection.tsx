@@ -31,7 +31,7 @@ export default function AboutSection() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="inline-block mb-4">
-                            <span className="text-primary text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
+                            <span className="text-white text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
                                 Hakkımızda
                             </span>
                         </div>
@@ -39,7 +39,7 @@ export default function AboutSection() {
                         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
                             GÜCÜN
                             <br />
-                            <span className="text-primary">MÜHENDİSLİK</span> HALİ
+                            <span className="text-white">MÜHENDİSLİK</span> HALİ
                         </h2>
 
                         <div className="space-y-4 text-gray-300 text-lg leading-relaxed mb-8">
@@ -55,7 +55,7 @@ export default function AboutSection() {
                                     height={30}
                                     className="inline-block rounded-lg w-20 md:w-[120px] h-auto"
                                 />
-                                çelik işleme teknolojisinde <span className="text-primary font-bold">öncü</span> konumumuzla,
+                                çelik işleme teknolojisinde <span className="text-white font-bold">öncü</span> konumumuzla,
                                 her damper sadece bir ürün değil, dayanıklılığın ve gücün sembolüdür.
                             </p>
                             <p>
@@ -68,7 +68,7 @@ export default function AboutSection() {
                             href="/corporate"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="inline-flex items-center gap-3 bg-primary text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
+                            className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
                         >
                             Kurumsal
                             <TrendingUp size={20} />
@@ -134,11 +134,11 @@ export default function AboutSection() {
                                     <div className="relative z-10">
                                         {/* Icon */}
                                         <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center mb-4 group-hover:from-primary/30 group-hover:to-primary/10 transition-all backdrop-blur-md border border-white/20 shadow-lg">
-                                            <stat.icon className="text-primary drop-shadow-[0_2px_8px_rgba(212,175,55,0.5)]" size={28} />
+                                            <stat.icon className="text-white drop-shadow-[0_2px_8px_rgba(0,5,82,0.5)]" size={28} />
                                         </div>
 
                                         {/* Value - Engraved Effect */}
-                                        <div className="text-4xl font-black text-white mb-2 group-hover:text-primary transition-colors" style={{
+                                        <div className="text-4xl font-black text-white mb-2 group-hover:text-white transition-colors" style={{
                                             textShadow: '0 3px 6px rgba(0,0,0,0.8), 0 -1px 1px rgba(255,255,255,0.15), 1px 1px 0 rgba(0,0,0,0.3), -1px -1px 0 rgba(255,255,255,0.1)',
                                             filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.5))',
                                         }}>

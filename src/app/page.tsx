@@ -10,9 +10,10 @@ export default function Home() {
     return (
         <main className="flex min-h-screen flex-col bg-ozunlu-950">
             <HeroSection />
+            <AboutSection />
             <StatsCounter />
             <PartnersSlider />
-            <AboutSection />
+           
             <ProductsSection />
             <NewsFeed />
             <MapPreview />

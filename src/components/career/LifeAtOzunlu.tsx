@@ -17,7 +17,7 @@ export default function LifeAtOzunlu() {
                 <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
                     <div className="w-full md:w-1/2 text-left">
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-6">
-                            BİZDE <span className="text-primary">HAYAT</span>
+                            BİZDE <span className="text-white">HAYAT</span>
                         </h2>
                         <div className="h-1 w-24 bg-primary mb-8" />
                         <p className="text-xl text-gray-300 font-light leading-relaxed">

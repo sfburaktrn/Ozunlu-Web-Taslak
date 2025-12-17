@@ -34,7 +34,7 @@ export default function NewsFeed() {
                 <div className="flex justify-between items-end mb-12">
                     <div>
                         <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                            GÜNCEL <span className="text-primary">GELİŞMELER</span>
+                            GÜNCEL <span className="text-white">GELİŞMELER</span>
                         </h2>
                         <div className="h-1 w-24 bg-primary rounded-full" />
                     </div>
@@ -59,12 +59,12 @@ export default function NewsFeed() {
                             <div className="relative aspect-[4/3] bg-ozunlu-800 overflow-hidden rounded-lg mb-6">
                                 {/* Placeholder for image */}
                                 <div className="absolute inset-0 bg-gray-800 group-hover:scale-105 transition-transform duration-700" />
-                                <div className="absolute top-4 left-4 bg-primary text-black text-xs font-bold px-3 py-1 rounded">
+                                <div className="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded">
                                     {item.category}
                                 </div>
                             </div>
-                            <span className="text-primary text-sm font-bold tracking-widest">{item.date}</span>
-                            <h3 className="text-xl font-bold text-white mt-2 group-hover:text-primary transition-colors">
+                            <span className="text-white text-sm font-bold tracking-widest">{item.date}</span>
+                            <h3 className="text-xl font-bold text-white mt-2 group-hover:text-white transition-colors">
                                 {item.title}
                             </h3>
                         </motion.div>

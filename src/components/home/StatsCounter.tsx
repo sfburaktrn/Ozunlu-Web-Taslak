@@ -151,9 +151,9 @@ export default function StatsCounter() {
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             className="text-center group"
                         >
-                            <div className="text-4xl md:text-6xl font-black text-white mb-2 flex justify-center items-center gap-1 transition-colors duration-300 group-hover:text-primary">
+                            <div className="text-4xl md:text-6xl font-black text-white mb-2 flex justify-center items-center gap-1 transition-colors duration-300 group-hover:text-white">
                                 <Counter from={0} to={stat.value} duration={2} />
-                                <span className="text-primary">{stat.suffix}</span>
+                                <span className="text-white">{stat.suffix}</span>
                             </div>
                             <p className="text-gray-400 uppercase tracking-widest text-sm font-semibold transition-colors duration-300 group-hover:text-white">
                                 {stat.label}

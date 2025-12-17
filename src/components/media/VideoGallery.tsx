@@ -15,7 +15,7 @@ export default function VideoGallery() {
         <section className="py-24 bg-ozunlu-900 border-t border-b border-white/5">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-black text-white mb-12">
-                    ÖZÜNLÜ <span className="text-primary">TV</span>
+                    ÖZÜNLÜ <span className="text-white">TV</span>
                 </h2>
 
                 {/* Featured Video (Netflix Hero Style) */}
@@ -27,7 +27,7 @@ export default function VideoGallery() {
                     </div>
 
                     <div className="absolute bottom-10 left-10 right-10 z-10">
-                        <span className="bg-primary text-black text-xs font-bold px-2 py-1 rounded inline-block mb-3">
+                        <span className="bg-primary text-white text-xs font-bold px-2 py-1 rounded inline-block mb-3">
                             YENİ
                         </span>
                         <h3 className="text-4xl font-bold text-white mb-2">Global Marka Yolculuğu</h3>
@@ -54,7 +54,7 @@ export default function VideoGallery() {
                                     {vid.duration}
                                 </div>
                             </div>
-                            <h5 className="text-gray-200 font-bold group-hover:text-primary transition-colors text-sm">
+                            <h5 className="text-gray-200 font-bold group-hover:text-white transition-colors text-sm">
                                 {vid.title}
                             </h5>
                         </div>

@@ -20,7 +20,7 @@ export default function ContactTabs({ activeTab, setActiveTab }: ContactTabsProp
                     key={dept.id}
                     onClick={() => setActiveTab(dept.id)}
                     className={`px-6 py-3 rounded-full text-sm font-bold tracking-wider transition-all border ${activeTab === dept.id
-                            ? 'bg-primary text-black border-primary scale-105 shadow-glow'
+                            ? 'bg-primary text-white border-primary scale-105 shadow-glow'
                             : 'bg-transparent text-gray-400 border-gray-700 hover:border-gray-500 hover:text-white'
                         }`}
                 >

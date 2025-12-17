@@ -33,7 +33,7 @@ export default function LeaderMessage() {
                         viewport={{ once: true }}
                         className="w-full md:w-1/2"
                     >
-                        <h2 className="text-primary font-bold tracking-widest uppercase mb-4">Liderin Mesajı</h2>
+                        <h2 className="text-white font-bold tracking-widest uppercase mb-4">Liderin Mesajı</h2>
                         <blockquote className="text-3xl md:text-4xl font-serif italic text-white leading-tight mb-8">
                             &ldquo;Geleceği tahmin etmenin en iyi yolu, onu inşa etmektir. Biz her kaynağı atarken sadece bir damper değil, güven inşa ediyoruz.&rdquo;
                         </blockquote>

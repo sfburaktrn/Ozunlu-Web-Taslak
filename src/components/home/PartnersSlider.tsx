@@ -138,7 +138,7 @@ export default function PartnersSlider() {
                             key={index}
                             className="flex-shrink-0 relative group cursor-pointer"
                         >
-                            <div className="w-[200px] h-[100px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex items-center justify-center p-4 transition-all duration-500 group-hover:bg-white/10 group-hover:border-primary/30 group-hover:shadow-[0_0_40px_rgba(212,175,55,0.1)] group-hover:-translate-y-1">
+                            <div className="w-[200px] h-[100px] bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl flex items-center justify-center p-4 transition-all duration-500 group-hover:bg-white/10 group-hover:border-primary/30 group-hover:shadow-[0_0_40px_rgba(0,5,82,0.1)] group-hover:-translate-y-1">
                                 <Image
                                     src={partner.logo}
                                     alt={partner.name}

@@ -29,7 +29,7 @@ export default function HeroSection() {
                     transition={{ duration: 1, ease: 'easeOut' }}
                 >
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white drop-shadow-2xl">
-                        GÜCÜN <span className="text-primary">MÜHENDİSLİK</span> HALİ
+                        GÜCÜN <span className="text-white">MÜHENDİSLİK</span> HALİ
                     </h1>
                 </motion.div>
 
@@ -43,18 +43,6 @@ export default function HeroSection() {
                         Geleceği Taşıyoruz. 3 Üretim Üssü, +50 İhracat Ülkesi ile
                         <span className="font-semibold text-white"> Global Güç.</span>
                     </p>
-                </motion.div>
-
-                <motion.div
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    transition={{ delay: 1, duration: 0.5 }}
-                    className="mt-12"
-                >
-                    <button className="group relative px-8 py-4 bg-transparent overflow-hidden border-2 border-primary text-primary font-bold uppercase tracking-wider transition-all hover:text-black">
-                        <span className="relative z-10">Ürünlerimizi İnceleyin</span>
-                        <div className="absolute inset-0 h-full w-full origin-left scale-x-0 bg-primary transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                    </button>
                 </motion.div>
             </div>
 

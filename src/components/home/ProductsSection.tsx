@@ -57,7 +57,7 @@ export default function ProductsSection() {
                         viewport={{ once: true }}
                         className="inline-block mb-4"
                     >
-                        <span className="text-primary text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
+                        <span className="text-white text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
                             Ürünlerimiz
                         </span>
                     </motion.div>
@@ -69,7 +69,7 @@ export default function ProductsSection() {
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-6xl font-black text-white mb-6"
                     >
-                        DAMPER <span className="text-primary">ÇÖZÜMLERİ</span>
+                        DAMPER <span className="text-white">ÇÖZÜMLERİ</span>
                     </motion.h2>
 
                     <motion.p
@@ -108,18 +108,18 @@ export default function ProductsSection() {
                                 <div className="relative z-10 p-8">
                                     {/* Icon */}
                                     <div className="w-16 h-16 bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:from-primary/30 group-hover:to-primary/10 transition-all border border-white/20">
-                                        <product.icon className="text-primary" size={32} />
+                                        <product.icon className="text-white" size={32} />
                                     </div>
 
                                     {/* Capacity Badge */}
                                     <div className="inline-block mb-4">
-                                        <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-primary/10 text-primary rounded-full border border-primary/30">
+                                        <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 bg-primary/10 text-white rounded-full border border-primary/30">
                                             {product.capacity}
                                         </span>
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-2xl font-black text-white mb-3 group-hover:text-primary transition-colors">
+                                    <h3 className="text-2xl font-black text-white mb-3 group-hover:text-white transition-colors">
                                         {product.title}
                                     </h3>
 
@@ -141,7 +141,7 @@ export default function ProductsSection() {
                                     {/* CTA Button */}
                                     <Link
                                         href={product.link}
-                                        className="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-4 transition-all"
+                                        className="inline-flex items-center gap-2 text-white font-bold text-sm group-hover:gap-4 transition-all"
                                     >
                                         Detaylı İncele
                                         <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -165,7 +165,7 @@ export default function ProductsSection() {
                 >
                     <Link
                         href="/products"
-                        className="inline-flex items-center gap-3 bg-primary text-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40"
+                        className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 hover:shadow-primary/40"
                     >
                         Tüm Ürünleri Görüntüle
                         <ArrowRight size={20} />

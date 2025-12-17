@@ -17,7 +17,7 @@ export default function Timeline() {
 
             <div className="container mx-auto px-4 relative z-10">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-20 text-center">
-                    ZAMANIN <span className="text-primary">ÖTESİNDE</span>
+                    ZAMANIN <span className="text-white">ÖTESİNDE</span>
                 </h2>
 
                 <div className="relative">
@@ -39,7 +39,7 @@ export default function Timeline() {
                                         {item.year}
                                     </h3>
                                     <div className="relative z-10">
-                                        <h4 className="text-2xl font-bold text-primary mb-2">{item.title}</h4>
+                                        <h4 className="text-2xl font-bold text-white mb-2">{item.title}</h4>
                                         <p className="text-gray-400">{item.desc}</p>
                                     </div>
                                 </div>

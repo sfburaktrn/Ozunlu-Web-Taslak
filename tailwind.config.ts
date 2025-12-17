@@ -24,8 +24,8 @@ const config: Config = {
                     950: '#0d0d0d',
                 },
                 primary: {
-                    DEFAULT: '#D4AF37', // Premium Gold
-                    foreground: '#000000',
+                    DEFAULT: '#000552', // Deep Blue
+                    foreground: '#FFFFFF',
                 },
                 secondary: {
                     DEFAULT: '#022247', // Deep Navy Blue

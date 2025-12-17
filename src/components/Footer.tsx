@@ -46,7 +46,7 @@ export default function Footer() {
                                     className="object-contain"
                                 />
                             </div>
-                            <span className="text-xs uppercase tracking-[0.3em] text-primary">Since 1977</span>
+                            <span className="text-xs uppercase tracking-[0.3em] text-white">Since 1977</span>
                         </div>
                         <p className="text-gray-300 text-sm leading-relaxed">
                             Ağır hizmet taşımacılık çözümlerinde 45 yılı aşkın deneyim. Tasarımdan üretime, satış sonrası destekten dijital servislerimize kadar uçtan uca güven inşa ediyoruz.
@@ -57,7 +57,7 @@ export default function Footer() {
                                     key={href}
                                     href={href}
                                     aria-label={label}
-                                    className="w-10 h-10 flex items-center justify-center rounded-full border border-white/15 bg-white/5 hover:border-primary hover:text-primary transition-colors"
+                                    className="w-10 h-10 flex items-center justify-center rounded-full border border-white/15 bg-white/5 hover:border-primary hover:text-white transition-colors"
                                 >
                                     <Icon size={18} />
                                 </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
                                     <Link
                                         key={item.href}
                                         href={item.href}
-                                        className="flex items-center gap-2 hover:text-primary transition-colors"
+                                        className="flex items-center gap-2 hover:text-white transition-colors"
                                     >
                                         <span className="h-px w-4 bg-white/25" />
                                         {item.label}
@@ -87,7 +87,7 @@ export default function Footer() {
                             <div className="space-y-3 text-sm text-gray-300">
                                 {services.map((item) => (
                                     <div key={item} className="flex items-center gap-2">
-                                        <ArrowUpRight size={16} className="text-primary" />
+                                        <ArrowUpRight size={16} className="text-white" />
                                         <span>{item}</span>
                                     </div>
                                 ))}
@@ -100,19 +100,19 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold text-gray-200 mb-2 uppercase tracking-[0.12em]">İletişim</h3>
                         <div className="space-y-3 text-sm text-gray-300">
                             <div className="flex items-start gap-3">
-                                <MapPin size={18} className="text-primary mt-0.5" />
+                                <MapPin size={18} className="text-white mt-0.5" />
                                 <p>Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul</p>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Phone size={18} className="text-primary" />
-                                <Link href="tel:+902125954646" className="hover:text-primary transition-colors">(0212) 595 46 46</Link>
+                                <Phone size={18} className="text-white" />
+                                <Link href="tel:+902125954646" className="hover:text-white transition-colors">(0212) 595 46 46</Link>
                             </div>
                             <div className="flex items-center gap-3">
-                                <Mail size={18} className="text-primary" />
-                                <Link href="mailto:info@ozunlu.com" className="hover:text-primary transition-colors">info@ozunlu.com</Link>
+                                <Mail size={18} className="text-white" />
+                                <Link href="mailto:info@ozunlu.com" className="hover:text-white transition-colors">info@ozunlu.com</Link>
                             </div>
                             <div className="flex items-start gap-3">
-                                <Clock size={18} className="text-primary mt-0.5" />
+                                <Clock size={18} className="text-white mt-0.5" />
                                 <div>
                                     <p>Hafta içi & Cumartesi</p>
                                     <p className="font-semibold text-white">09:00 - 18:30</p>
@@ -127,9 +127,9 @@ export default function Footer() {
                 <div className="container mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-gray-400">
                     <p>© {year} Özünlü Damper. Tüm hakları saklıdır.</p>
                     <div className="flex items-center gap-4">
-                        <Link href="/kvkk" className="hover:text-primary transition-colors">KVKK</Link>
-                        <Link href="/aydinlatma-metni" className="hover:text-primary transition-colors">Aydınlatma Metni</Link>
-                        <Link href="/cerez-politikasi" className="hover:text-primary transition-colors">Çerez Politikası</Link>
+                        <Link href="/kvkk" className="hover:text-white transition-colors">KVKK</Link>
+                        <Link href="/aydinlatma-metni" className="hover:text-white transition-colors">Aydınlatma Metni</Link>
+                        <Link href="/cerez-politikasi" className="hover:text-white transition-colors">Çerez Politikası</Link>
                     </div>
                 </div>
             </div>

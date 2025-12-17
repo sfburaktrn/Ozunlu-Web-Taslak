@@ -38,7 +38,7 @@ export default function SectorFilter() {
         <section className="py-24 bg-ozunlu-950">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-black text-white text-center mb-16">
-                    HER SEKTÖR İÇİN <span className="text-primary">MÜKEMMEL ÇÖZÜM</span>
+                    HER SEKTÖR İÇİN <span className="text-white">MÜKEMMEL ÇÖZÜM</span>
                 </h2>
 
                 <div className="flex flex-col md:flex-row gap-8">
@@ -49,12 +49,12 @@ export default function SectorFilter() {
                                 key={sector.id}
                                 onClick={() => setActiveSector(sector)}
                                 className={`w-full p-6 rounded-xl text-left transition-all duration-300 border-2 group relative overflow-hidden ${activeSector.id === sector.id
-                                        ? 'bg-ozunlu-900 border-primary shadow-[0_0_30px_rgba(255,165,0,0.1)]'
+                                        ? 'bg-ozunlu-900 border-primary shadow-[0_0_30px_rgba(0,5,82,0.1)]'
                                         : 'bg-transparent border-white/10 hover:border-white/30'
                                     }`}
                             >
                                 <div className="relative z-10 flex items-center gap-4">
-                                    <div className={`p-3 rounded-lg transition-colors ${activeSector.id === sector.id ? 'bg-primary text-black' : 'bg-ozunlu-800 text-gray-400'}`}>
+                                    <div className={`p-3 rounded-lg transition-colors ${activeSector.id === sector.id ? 'bg-primary text-white' : 'bg-ozunlu-800 text-gray-400'}`}>
                                         <sector.icon size={24} />
                                     </div>
                                     <div>
@@ -96,7 +96,7 @@ export default function SectorFilter() {
                                         ))}
                                     </div>
 
-                                    <button className="flex items-center gap-3 text-primary font-bold uppercase tracking-widest hover:gap-6 transition-all group">
+                                    <button className="flex items-center gap-3 text-white font-bold uppercase tracking-widest hover:gap-6 transition-all group">
                                         İlgili Ürünleri İncele
                                         <ArrowRight className="group-hover:text-white transition-colors" />
                                     </button>

@@ -16,7 +16,7 @@ export default function GreenReport() {
                 <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
                     <div className="w-full md:w-1/2">
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-                            DOĞAYA <span className="text-primary">SAYGI</span>, GELECEĞE <span className="text-primary">YATIRIM</span>
+                            DOĞAYA <span className="text-white">SAYGI</span>, GELECEĞE <span className="text-white">YATIRIM</span>
                         </h2>
                         <div className="h-2 w-32 bg-green-500 rounded-full" />
                     </div>

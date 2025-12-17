@@ -7,7 +7,7 @@ export default function RDLab() {
         <section className="py-24 bg-ozunlu-950 border-t border-white/5">
             <div className="container mx-auto px-4 text-center">
                 <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-                    AR-GE & <span className="text-primary">INOVASYON</span>
+                    AR-GE & <span className="text-white">INOVASYON</span>
                 </h2>
                 <p className="text-gray-400 max-w-2xl mx-auto mb-16">
                     Mühendislik sınırlarını zorluyoruz.
@@ -34,7 +34,7 @@ export default function RDLab() {
                         whileHover={{ scale: 1.05 }}
                         className="bg-ozunlu-800 rounded-2xl p-6 flex flex-col justify-center items-center text-center border border-white/5"
                     >
-                        <span className="text-4xl font-bold text-primary mb-2">50+</span>
+                        <span className="text-4xl font-bold text-white mb-2">50+</span>
                         <span className="text-sm text-gray-400 font-bold uppercase">Ar-Ge Mühendisi</span>
                     </motion.div>
 
@@ -42,7 +42,7 @@ export default function RDLab() {
                         whileHover={{ scale: 1.05 }}
                         className="bg-ozunlu-800 rounded-2xl p-6 flex flex-col justify-center items-center text-center border border-white/5"
                     >
-                        <span className="text-4xl font-bold text-primary mb-2">12</span>
+                        <span className="text-4xl font-bold text-white mb-2">12</span>
                         <span className="text-sm text-gray-400 font-bold uppercase">Patentli Tasarım</span>
                     </motion.div>
 

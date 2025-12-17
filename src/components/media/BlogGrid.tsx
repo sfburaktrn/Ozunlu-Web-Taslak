@@ -35,12 +35,12 @@ export default function BlogGrid() {
                 <div className="flex justify-between items-end mb-12">
                     <div>
                         <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-                            ÖZÜNLÜ <span className="text-primary">AKADEMİ</span>
+                            ÖZÜNLÜ <span className="text-white">AKADEMİ</span>
                         </h2>
                         <p className="text-gray-400">Sektöre yön veren bilgi ve analizler.</p>
                     </div>
 
-                    <button className="hidden md:flex items-center gap-2 text-white border border-white/20 px-6 py-3 rounded-full hover:bg-primary hover:text-black hover:border-primary transition-all font-bold tracking-wider">
+                    <button className="hidden md:flex items-center gap-2 text-white border border-white/20 px-6 py-3 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all font-bold tracking-wider">
                         Tüm Yazıları Gör
                     </button>
                 </div>
@@ -66,10 +66,10 @@ export default function BlogGrid() {
 
                             <div className="flex items-center justify-between text-xs text-gray-400 font-bold mb-3 uppercase tracking-wider">
                                 <span>{article.readTime}</span>
-                                <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-primary transition-colors" />
+                                <ArrowUpRight className="w-5 h-5 text-gray-600 group-hover:text-white transition-colors" />
                             </div>
 
-                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors leading-tight">
+                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors leading-tight">
                                 {article.title}
                             </h3>
 

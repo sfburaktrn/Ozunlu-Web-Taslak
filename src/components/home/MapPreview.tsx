@@ -119,7 +119,7 @@ export default function MapPreview() {
 
   return (
     <section className="relative py-24 bg-ozunlu-900 border-t border-white/5 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.12),_transparent_45%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.12),_transparent_45%)]" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -129,12 +129,12 @@ export default function MapPreview() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <p className="text-sm tracking-[0.35em] text-primary uppercase">
+              <p className="text-sm tracking-[0.35em] text-white uppercase">
                 Servis Noktalarimiz
               </p>
               <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                 Turkiye genelinde{" "}
-                <span className="text-primary">yetkili servis</span> agi.
+                <span className="text-white">yetkili servis</span> agi.
               </h2>
               <p className="text-gray-400 max-w-2xl">
                 Haritadan sehir secerek o ildeki yetkili servis ve iletisim
@@ -152,7 +152,7 @@ export default function MapPreview() {
               </div>
               <div className="p-4 rounded-xl border border-white/10 bg-ozunlu-800/60 shadow-lg">
                 <p className="text-sm text-gray-400">Toplam servis noktasi</p>
-                <p className="text-3xl font-bold text-primary mt-1">
+                <p className="text-3xl font-bold text-white mt-1">
                   {totalProviders}
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function MapPreview() {
                     key={loc.city}
                     className="flex items-center gap-3 p-3 rounded-lg border border-white/10 bg-ozunlu-800/60"
                   >
-                    <div className="p-2 rounded-full bg-primary/10 text-primary">
+                    <div className="p-2 rounded-full bg-primary/10 text-white">
                       <MapPin size={16} />
                     </div>
                     <div>
@@ -268,13 +268,13 @@ export default function MapPreview() {
                       </p>
                       {provider.address && (
                         <div className="flex items-start gap-2 text-gray-300 mt-1">
-                          <MapPin size={14} className="mt-0.5 text-primary" />
+                          <MapPin size={14} className="mt-0.5 text-white" />
                           <span className="text-sm">{provider.address}</span>
                         </div>
                       )}
                       {provider.phones && provider.phones.length > 0 && (
                         <div className="flex items-start gap-2 text-gray-300 mt-1">
-                          <Phone size={14} className="mt-0.5 text-primary" />
+                          <Phone size={14} className="mt-0.5 text-white" />
                           <span className="text-sm">
                             {provider.phones.join(" / ")}
                           </span>

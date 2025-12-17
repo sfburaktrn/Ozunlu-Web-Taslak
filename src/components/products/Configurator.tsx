@@ -6,7 +6,7 @@ import { Check } from 'lucide-react';
 
 const options = {
     colors: [
-        { name: 'Özünlü Sarısı', hex: '#FFA500' },
+        { name: 'Özünlü Mavisi', hex: '#000552' },
         { name: 'Kuvars Gri', hex: '#6b7280' },
         { name: 'Gece Mavisi', hex: '#1e3a8a' },
         { name: 'Alev Kırmızısı', hex: '#dc2626' },
@@ -62,7 +62,7 @@ export default function Configurator() {
                                 key={cap}
                                 onClick={() => setConfig({ ...config, capacity: cap })}
                                 className={`py-2 px-4 rounded text-sm font-bold border transition-colors ${config.capacity === cap
-                                        ? 'bg-primary text-black border-primary'
+                                        ? 'bg-primary text-white border-primary'
                                         : 'bg-transparent text-gray-300 border-gray-700 hover:border-gray-500'
                                     }`}
                             >
@@ -86,7 +86,7 @@ export default function Configurator() {
                                     }`}
                             >
                                 <span className="font-bold">{tire}</span>
-                                {config.tire === tire && <Check size={18} className="text-primary" />}
+                                {config.tire === tire && <Check size={18} className="text-white" />}
                             </button>
                         ))}
                     </div>
@@ -94,7 +94,7 @@ export default function Configurator() {
 
                 {/* Summary / CTA */}
                 <div className="pt-6 border-t border-white/10">
-                    <button className="w-full py-4 bg-primary text-black font-black uppercase tracking-widest hover:bg-white transition-colors rounded">
+                    <button className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest hover:opacity-90 transition-colors rounded">
                         TEKLİF OLUŞTUR
                     </button>
                 </div>

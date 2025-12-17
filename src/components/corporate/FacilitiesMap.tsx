@@ -13,7 +13,7 @@ export default function FacilitiesMap() {
         <section className="py-24 bg-ozunlu-900 border-t border-white/5">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-bold text-white mb-16 text-center">
-                    ÜRETİM <span className="text-primary">GÜCÜMÜZ</span>
+                    ÜRETİM <span className="text-white">GÜCÜMÜZ</span>
                 </h2>
 
                 <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
@@ -51,7 +51,7 @@ export default function FacilitiesMap() {
                                 transition={{ delay: i * 0.1 }}
                                 className="p-6 bg-ozunlu-800 rounded-lg border-l-4 border-transparent hover:border-primary transition-all cursor-crosshair group"
                             >
-                                <h4 className="text-xl font-bold text-white group-hover:text-primary mb-1">{loc.name}</h4>
+                                <h4 className="text-xl font-bold text-white group-hover:text-white mb-1">{loc.name}</h4>
                                 <p className="text-gray-400 text-sm">{loc.specs}</p>
                             </motion.div>
                         ))}

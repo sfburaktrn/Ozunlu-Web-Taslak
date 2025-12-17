@@ -12,7 +12,7 @@ export default function VisionManifesto() {
                     viewport={{ once: true }}
                     className="text-4xl md:text-6xl font-black mb-12 tracking-tighter"
                 >
-                    KLASİK BİR &quot;HAKKIMIZDA&quot; YAZISINDAN <span className="text-primary">FAZLASI</span>
+                    KLASİK BİR &quot;HAKKIMIZDA&quot; YAZISINDAN <span className="text-white">FAZLASI</span>
                 </motion.h1>
 
                 <motion.div

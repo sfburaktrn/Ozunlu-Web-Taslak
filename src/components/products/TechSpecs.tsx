@@ -38,7 +38,7 @@ export default function TechSpecs() {
                     transition={{ delay: index * 0.1 }}
                     className="bg-ozunlu-900/50 p-6 rounded-lg border border-white/5 hover:border-primary/50 transition-colors group"
                 >
-                    <div className="w-12 h-12 bg-ozunlu-800 rounded-full flex items-center justify-center mb-4 text-primary group-hover:bg-primary group-hover:text-black transition-colors">
+                    <div className="w-12 h-12 bg-ozunlu-800 rounded-full flex items-center justify-center mb-4 text-white group-hover:bg-primary group-hover:text-white transition-colors">
                         <benefit.icon size={24} />
                     </div>
                     <h4 className="text-white font-bold mb-2">{benefit.title}</h4>

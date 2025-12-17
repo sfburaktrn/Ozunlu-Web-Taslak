@@ -26,7 +26,7 @@ export default function SuccessStories() {
         <section className="py-24 bg-ozunlu-900 border-t border-white/5">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-5xl font-bold text-white text-center mb-16">
-                    BAŞARI <span className="text-primary">HİKAYELERİ</span>
+                    BAŞARI <span className="text-white">HİKAYELERİ</span>
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -46,7 +46,7 @@ export default function SuccessStories() {
                             <div className="relative z-10">
                                 <div className="mb-6">
                                     <h3 className="text-2xl font-bold text-white mb-1">{story.client}</h3>
-                                    <p className="text-primary text-sm font-bold uppercase tracking-wider">{story.project}</p>
+                                    <p className="text-white text-sm font-bold uppercase tracking-wider">{story.project}</p>
                                 </div>
 
                                 <blockquote className="text-gray-300 text-lg italic mb-8 leading-relaxed">
@@ -59,7 +59,7 @@ export default function SuccessStories() {
                                         <span className="text-xs text-gray-500 uppercase font-bold">{story.statLabel}</span>
                                     </div>
                                     <div className="text-right">
-                                        <span className="block text-xl font-bold text-primary">{story.result}</span>
+                                        <span className="block text-xl font-bold text-white">{story.result}</span>
                                         <span className="text-xs text-gray-500 uppercase font-bold">KAZANIM</span>
                                     </div>
                                 </div>

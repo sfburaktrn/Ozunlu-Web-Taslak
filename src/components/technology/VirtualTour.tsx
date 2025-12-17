@@ -24,7 +24,7 @@ export default function VirtualTour() {
                     </div>
 
                     <h2 className="text-4xl md:text-7xl font-black text-white mb-6">
-                        SANAL <span className="text-primary">FABRİKA</span> TURU
+                        SANAL <span className="text-white">FABRİKA</span> TURU
                     </h2>
 
                     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
@@ -35,7 +35,7 @@ export default function VirtualTour() {
             </div>
 
             <div className="absolute bottom-10 left-0 w-full text-center z-20">
-                <p className="text-sm font-bold tracking-widest text-primary animate-pulse">
+                <p className="text-sm font-bold tracking-widest text-white animate-pulse">
                     AŞAĞI KAYDIRIN
                 </p>
             </div>
