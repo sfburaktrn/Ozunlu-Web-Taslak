@@ -28,8 +28,8 @@ export default function HeroSection() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, ease: 'easeOut' }}
                 >
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white drop-shadow-2xl">
-                        GÜCÜN <span className="text-white">MÜHENDİSLİK</span> HALİ
+                    <h1 className="text-4xl md:text-6xl font-bold tracking-tighter text-white drop-shadow-2xl uppercase">
+                        Hızlı Üretimle Gücü Standartlaştırıyoruz
                     </h1>
                 </motion.div>
 
@@ -40,8 +40,7 @@ export default function HeroSection() {
                     className="mt-6 max-w-2xl"
                 >
                     <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
-                        Geleceği Taşıyoruz. 3 Üretim Üssü, +50 İhracat Ülkesi ile
-                        <span className="font-semibold text-white"> Global Güç.</span>
+                        Zamanında üretim, uzun ömürlü damperler ve sahada güven veren performans
                     </p>
                 </motion.div>
             </div>

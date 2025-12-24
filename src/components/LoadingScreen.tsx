@@ -23,7 +23,7 @@ const LightBeam = ({ isOn, direction }: { isOn: boolean; direction: 'left' | 'ri
         scaleX: isOn ? 1 : 0
       }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`absolute bottom-[18%] ${direction === 'left' ? 'right-[85%]' : 'left-[85%]'} w-[60vw] h-[150px] z-10`}
+      className={`absolute bottom-[18%] ${direction === 'left' ? 'right-[85%]' : 'left-[85%]'} w-[25vw] h-[150px] z-10`}
       style={{
         background: direction === 'left'
           ? 'linear-gradient(-90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.05) 70%, transparent 100%)'
@@ -96,16 +96,22 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       {/* Background Image - Factory Interior */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/loading/factory_bg_v2.jpg"
+          src="/images/loading/final_bg.png"
           alt="Factory Background"
           fill
-          className="object-cover opacity-60"
+          className="object-cover opacity-100"
           priority
         />
         {/* Overlay - Changes opacity based on lights */}
+        {/* Center Dark Spot Overlay - Fades out when lights turn on */}
         <motion.div
-          animate={{ backgroundColor: (rightLightOn || leftLightOn) ? "rgba(0,0,0,0.4)" : "rgba(0,0,0,0.7)" }}
-          transition={{ duration: 1 }}
+          initial={{ background: "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%)" }}
+          animate={{
+            background: (rightLightOn || leftLightOn)
+              ? "radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)"
+              : "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%)"
+          }}
+          transition={{ duration: 1.5 }}
           className="absolute inset-0 z-0"
         />
       </div>
