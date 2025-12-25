@@ -11,6 +11,7 @@ import ProductsSection from '@/components/home/ProductsSection';
 import GallerySection from '@/components/home/GallerySection';
 import NewsFeed from '@/components/home/NewsFeed';
 import MapPreview from '@/components/home/MapPreview';
+import WhyChooseUsSection from '@/components/home/WhyChooseUsSection';
 
 export default function Home() {
     const [loading, setLoading] = useState(true);
@@ -28,11 +29,12 @@ export default function Home() {
                     <HeroSection />
                     <StatsCounter />
                     <AboutSection />
+                    <WhyChooseUsSection />
                     <ProductsSection />
                     <PartnersSlider />
                     <MapPreview />
                     <GallerySection />
-                    <NewsFeed />
+                    {/* <NewsFeed /> */}
                 </main>
             )}
         </>
