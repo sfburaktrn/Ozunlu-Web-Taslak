@@ -42,7 +42,7 @@ export default function Navbar() {
     const navLinks = [
         { href: "/kurumsal", label: "KURUMSAL" },
         { href: "/urunler", label: "ÜRÜNLER" },
-        { href: "/cozumler", label: "ÇÖZÜMLER" },
+        { href: "/satis-sonrasi", label: "SATIŞ SONRASI" },
         { href: "/medya", label: "MEDYA" },
         { href: "/kariyer", label: "KARİYER" },
         { href: "/iletisim", label: "İLETİŞİM" },

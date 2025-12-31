@@ -45,8 +45,14 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
     let timer: NodeJS.Timeout;
 
     const runSequence = async () => {
+      // 0. Mobile Check - Skip loading on mobile
+      if (typeof window !== 'undefined' && window.innerWidth < 768) {
+        onComplete();
+        return;
+      }
+
       // 1. Initial Delay
-      await new Promise(r => setTimeout(r, 300));
+      await new Promise(r => setTimeout(r, 200));
 
       // 2. Right Light
       const audio1 = new Audio('/sounds/light-switch.mp3');
@@ -55,7 +61,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       setRightLightOn(true);
 
       // 3. Short Delay
-      await new Promise(r => setTimeout(r, 400));
+      await new Promise(r => setTimeout(r, 200));
 
       // 4. Left Light
       const audio2 = new Audio('/sounds/light-switch.mp3');
@@ -63,11 +69,11 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
       audio2.play().catch(e => console.log('Audio play failed', e));
       setLeftLightOn(true);
 
-      // 5. Short Delay before Damper (conceptually)
-      await new Promise(r => setTimeout(r, 300));
+      // Show Text
+      setShowCenter(true);
 
       // 7. Hold before finishing
-      await new Promise(r => setTimeout(r, 1500)); // Reduced wait time
+      await new Promise(r => setTimeout(r, 1500));
 
       // 8. Complete
       onComplete();
@@ -75,10 +81,10 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
 
     runSequence();
 
-    // Fallback: If anything stucks, force complete after 4 seconds
+    // Fallback
     timer = setTimeout(() => {
       onComplete();
-    }, 4000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, [onComplete]);
@@ -87,8 +93,8 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="fixed inset-0 z-[100] bg-black overflow-hidden flex items-center justify-center"
+      transition={{ duration: 0.8 }}
+      className="hidden md:flex fixed inset-0 z-[100] bg-black overflow-hidden items-center justify-center"
     >
       {/* Background Image - Factory Interior */}
       <div className="absolute inset-0 z-0">
@@ -99,24 +105,23 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
           className="object-cover opacity-100"
           priority
         />
-        {/* Overlay - Changes opacity based on lights */}
-        {/* Center Dark Spot Overlay - Fades out when lights turn on */}
+        {/* Overlay */}
         <motion.div
-          initial={{ background: "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%)" }}
+          initial={{ background: "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.95) 100%)" }}
           animate={{
             background: (rightLightOn || leftLightOn)
-              ? "radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)"
-              : "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.7) 100%)"
+              ? "radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)"
+              : "radial-gradient(circle, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.95) 100%)"
           }}
-          transition={{ duration: 1.5 }}
+          transition={{ duration: 1 }}
           className="absolute inset-0 z-0"
         />
       </div>
 
       {/* Container for the Scene */}
-      <div className="relative w-full h-full max-w-[1920px] mx-auto perspective-[1000px] z-10">
+      <div className="relative w-full h-full max-w-[1920px] mx-auto perspective-[1000px] z-10 flex items-center justify-center">
 
-        {/* RIGHT TRUCK (First to light up) */}
+        {/* RIGHT TRUCK */}
         <div className="absolute right-[-5%] bottom-0 h-[70vh] w-[45vw] md:w-[35vw] flex items-end justify-center pointer-events-none">
           <div className="relative w-full h-full transition-all duration-500"
             style={{ filter: rightLightOn ? 'brightness(1.1) contrast(1.1)' : 'brightness(0.3)' }}>
@@ -131,7 +136,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
           </div>
         </div>
 
-        {/* LEFT TRUCK (Second to light up) */}
+        {/* LEFT TRUCK */}
         <div className="absolute left-[-5%] bottom-0 h-[70vh] w-[45vw] md:w-[35vw] flex items-end justify-center pointer-events-none">
           <div className="relative w-full h-full transition-all duration-500"
             style={{ filter: leftLightOn ? 'brightness(1.1) contrast(1.1)' : 'brightness(0.3)' }}>
@@ -146,40 +151,35 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
           </div>
         </div>
 
-        {/* CENTER DAMPER - HIDDEN */}
-        {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+        {/* CENTER LOGO & TITLE */}
+        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{
-              opacity: showCenter ? 1 : 0
+              opacity: showCenter ? 1 : 0,
+              scale: showCenter ? 1 : 0.9,
+              y: showCenter ? 0 : 20
             }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px] flex items-center justify-center"
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="flex flex-col items-center justify-center"
           >
-            <Image
-              src="/images/loading/damper_user.png"
-              alt="Ozunlu Damper"
-              fill
-              className="object-contain" 
-              priority
-            />
+            <div className="relative w-[300px] h-[100px] md:w-[400px] md:h-[130px] mb-4">
+              <Image
+                src="/images/loading/ozunlu_logo_text.png"
+                alt="Özünlü Logo"
+                fill
+                className="object-contain drop-shadow-2xl"
+                priority
+              />
+            </div>
 
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: showCenter ? 1 : 0, scale: showCenter ? 1 : 0.9 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="absolute z-30 bottom-[21%] md:bottom-[21%] left-0 right-0 flex justify-center"
-            >
-             
-              <div className="px-3 py-1 bg-black/20 backdrop-blur-sm rounded-sm border border-white/10">
-                <h1 className="text-sm md:text-base font-bold tracking-[0.2em] text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.8)]" style={{ fontFamily: 'Arial, sans-serif' }}>
-                  ÖZÜNLÜ
-                </h1>
-              </div>
-            </motion.div>
+            <div className="h-[1px] w-24 mx-auto bg-gradient-to-r from-transparent via-white/50 to-transparent mb-4" />
+
+            <h2 className="text-lg md:text-xl font-medium tracking-[0.25em] text-gray-200 uppercase">
+              Dünyasına Hoş Geldiniz
+            </h2>
           </motion.div>
-        </div> */}
+        </div>
 
       </div>
     </motion.div>

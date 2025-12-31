@@ -121,7 +121,7 @@ export default function MapPreview() {
     <section className="relative py-24 bg-ozunlu-900 border-t border-white/5 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.12),_transparent_45%)]" />
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -143,7 +143,7 @@ export default function MapPreview() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl border border-white/10 bg-ozunlu-800/60 shadow-lg">
                 <p className="text-sm text-gray-400">Servis bulunan sehir</p>
                 <p className="text-3xl font-bold text-white mt-1">
@@ -189,19 +189,19 @@ export default function MapPreview() {
             viewport={{ once: true }}
             className="bg-ozunlu-950/80 border border-white/10 rounded-2xl shadow-2xl p-5 backdrop-blur-sm"
           >
-                        <div className="flex items-center justify-between mb-4">
-                            <div>
-                                <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
-                                    Haritaya dokun
-                                </p>
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
+                  Haritaya dokun
+                </p>
                 <h3 className="text-white text-xl font-semibold">
-                                    Sehir sec, servis bilgisi acilir.
-                                </h3>
-                            </div>
-                            <div className="p-2 rounded-full bg-white/10 text-white">
-                                <MapPin size={18} />
-                            </div>
-                        </div>
+                  Sehir sec, servis bilgisi acilir.
+                </h3>
+              </div>
+              <div className="p-2 rounded-full bg-white/10 text-white">
+                <MapPin size={18} />
+              </div>
+            </div>
 
             <div className="rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-3">
               <TurkeyMap
