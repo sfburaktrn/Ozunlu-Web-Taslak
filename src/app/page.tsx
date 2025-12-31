@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/home/HeroSection';
@@ -16,6 +16,11 @@ import WhyChooseUsSection from '@/components/home/WhyChooseUsSection';
 export default function Home() {
     const [loading, setLoading] = useState(true);
 
+    // Force scroll to top on mount and when loading finishes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [loading]);
+
     return (
         <>
             <AnimatePresence mode="wait">
@@ -24,19 +29,17 @@ export default function Home() {
                 )}
             </AnimatePresence>
 
-            {!loading && (
-                <main className="flex min-h-screen flex-col bg-ozunlu-950">
-                    <HeroSection />
-                    <StatsCounter />
-                    <AboutSection />
-                    <WhyChooseUsSection />
-                    <ProductsSection />
-                    <PartnersSlider />
-                    <MapPreview />
-                    <GallerySection />
-                    {/* <NewsFeed /> */}
-                </main>
-            )}
+            <main className="flex min-h-screen flex-col bg-ozunlu-950">
+                <HeroSection />
+                <StatsCounter />
+                <AboutSection />
+                <WhyChooseUsSection />
+                <ProductsSection />
+                <PartnersSlider />
+                <MapPreview />
+                <GallerySection />
+                {/* <NewsFeed /> */}
+            </main>
         </>
     );
 }

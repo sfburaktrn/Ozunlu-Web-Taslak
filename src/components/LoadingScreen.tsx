@@ -152,7 +152,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         </div>
 
         {/* CENTER LOGO & TITLE */}
-        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+        <div className="absolute inset-0 flex items-end justify-center z-30 pointer-events-none pb-24 md:pb-32">
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
             animate={{
@@ -163,7 +163,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex flex-col items-center justify-center"
           >
-            <div className="relative w-[300px] h-[100px] md:w-[400px] md:h-[130px] mb-4">
+            <div className="relative w-[180px] h-[60px] md:w-[240px] md:h-[80px] mb-3">
               <Image
                 src="/images/loading/ozunlu_logo_text.png"
                 alt="Özünlü Logo"
@@ -173,9 +173,9 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
               />
             </div>
 
-            <div className="h-[1px] w-24 mx-auto bg-gradient-to-r from-transparent via-white/50 to-transparent mb-4" />
+            <div className="h-[1px] w-16 mx-auto bg-gradient-to-r from-transparent via-white/50 to-transparent mb-3" />
 
-            <h2 className="text-lg md:text-xl font-medium tracking-[0.25em] text-gray-200 uppercase">
+            <h2 className="text-sm md:text-base font-medium tracking-[0.25em] text-gray-200 uppercase">
               Dünyasına Hoş Geldiniz
             </h2>
           </motion.div>
