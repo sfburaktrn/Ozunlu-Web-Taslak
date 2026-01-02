@@ -7,7 +7,7 @@ import { Mail, MapPin, Phone, Clock, Linkedin, Facebook, Instagram, Youtube, Arr
 const quickLinks = [
     { href: "/kurumsal", label: "Kurumsal" },
     { href: "/urunler", label: "Ürünler" },
-    { href: "/cozumler", label: "Çözümler" },
+    { href: "/satis-sonrasi", label: "Satış Sonrası" },
     { href: "/medya", label: "Medya" },
     { href: "/kariyer", label: "Kariyer" },
     { href: "/iletisim", label: "İletişim" },
@@ -21,10 +21,10 @@ const services = [
 ];
 
 const socials = [
-    { href: "https://www.linkedin.com", icon: Linkedin, label: "LinkedIn" },
-    { href: "https://www.facebook.com", icon: Facebook, label: "Facebook" },
-    { href: "https://www.instagram.com", icon: Instagram, label: "Instagram" },
-    { href: "https://www.youtube.com", icon: Youtube, label: "YouTube" },
+    { href: "https://www.linkedin.com/company/ozunlu-damper/", icon: Linkedin, label: "LinkedIn" },
+    { href: "https://www.facebook.com/OzunluDamper/", icon: Facebook, label: "Facebook" },
+    { href: "https://www.instagram.com/ozunludamper/", icon: Instagram, label: "Instagram" },
+    { href: "https://www.youtube.com/@ozunludamper588", icon: Youtube, label: "YouTube" },
 ];
 
 export default function Footer() {
