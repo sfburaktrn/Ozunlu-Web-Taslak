@@ -82,7 +82,7 @@ export default function JobBoard() {
                                 </h3>
                                 <p className="text-gray-400 max-w-lg mx-auto mb-8 leading-relaxed">
                                     Ancak yetenekli profesyonellerle tanışmak için her zaman heyecanlıyız.
-                                    Genel başvuru yapmak için CV'nizi bize gönderebilir veya sosyal medya hesaplarımızı takip edebilirsiniz.
+                                    Genel başvuru yapmak için CV&apos;nizi bize gönderebilir veya sosyal medya hesaplarımızı takip edebilirsiniz.
                                 </p>
 
                                 <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center flex-wrap">
