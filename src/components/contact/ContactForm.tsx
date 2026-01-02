@@ -1,112 +1,173 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Send, Phone, Mail, MapPin } from 'lucide-react';
-import { useState } from 'react';
-import ContactTabs, { contactDepartments } from './ContactTabs';
+import { Send, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function ContactForm() {
-    const [activeTab, setActiveTab] = useState('sales');
-
-    const currentDept = contactDepartments.find(d => d.id === activeTab);
-
     return (
-        <section className="py-24 bg-ozunlu-950">
-            <div className="container mx-auto px-4">
+        <section className="py-24 bg-ozunlu-950 relative overflow-hidden">
+            {/* Background Effects */}
+            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#000080]/20 rounded-full blur-[120px] pointer-events-none mix-blend-screen" />
+            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#000080]/10 rounded-full blur-[100px] pointer-events-none mix-blend-screen" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#000080]/5 via-transparent to-transparent pointer-events-none" />
+
+            <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-                        İLETİŞİM <span className="text-white">AĞI</span>
+                    <h2 className="text-3xl md:text-6xl font-black text-white mb-6 tracking-tight">
+                        İLETİŞİM <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">AĞI</span>
                     </h2>
-                    <p className="text-gray-400">
-                        Sorularınız, projeleriniz ve iş birlikleri için doğru departmanla iletişime geçin.
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+                        Sorularınız, projeleriniz ve iş birlikleri için bizimle iletişime geçin.
                     </p>
                 </div>
 
-                <ContactTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-
-                <div className="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+                <div className="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
                     {/* Info Panel */}
                     <motion.div
-                        key={activeTab}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
                         className="w-full lg:w-1/3 space-y-8"
                     >
-                        <div className="bg-ozunlu-900 p-8 rounded-2xl border border-white/5">
-                            <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                                <div className="w-2 h-8 bg-primary rounded-full" />
+                        <div className="bg-ozunlu-900/80 backdrop-blur-sm p-8 rounded-3xl border border-white/5 h-full relative overflow-hidden group">
+                            {/* Hover highlight */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3 relative z-10">
+                                <span className="w-1.5 h-8 bg-gradient-to-b from-primary to-blue-600 rounded-full" />
                                 MERKEZ OFİS
                             </h3>
 
-                            <div className="space-y-6">
-                                <div className="flex items-start gap-4">
-                                    <MapPin className="text-white mt-1" />
+                            <div className="space-y-8 relative z-10">
+                                <div className="flex items-start gap-5">
+                                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0 border border-white/5 group-hover:border-primary/20 transition-colors">
+                                        <MapPin className="text-white" size={24} />
+                                    </div>
                                     <div>
-                                        <p className="text-white font-bold">ANKARA</p>
-                                        <p className="text-gray-400 text-sm">
-                                            Ostim OSB Mahallesi, 1234. Cadde No: 56<br />
-                                            Yenimahalle / ANKARA
+                                        <p className="text-white font-bold text-lg mb-1">ADRES</p>
+                                        <p className="text-gray-400 leading-relaxed">
+                                            Yayla, Habibler Pirinççi Köyü Yolu<br />
+                                            No:62, 34270<br />
+                                            Sultangazi / İstanbul
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-4">
-                                    <Phone className="text-white" />
+                                <div className="flex items-start gap-5">
+                                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0 border border-white/5 group-hover:border-primary/20 transition-colors">
+                                        <Phone className="text-white" size={24} />
+                                    </div>
                                     <div>
-                                        <p className="text-white font-bold">+90 (312) 123 45 67</p>
-                                        <p className="text-gray-500 text-xs">Hafta içi 08:30 - 18:00</p>
+                                        <p className="text-white font-bold text-lg mb-1">TELEFON</p>
+                                        <p className="text-gray-400 text-lg hover:text-white transition-colors">
+                                            (0212) 595 46 46
+                                        </p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-center gap-4">
-                                    <Mail className="text-white" />
+                                <div className="flex items-start gap-5">
+                                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0 border border-white/5 group-hover:border-primary/20 transition-colors">
+                                        <Mail className="text-white" size={24} />
+                                    </div>
                                     <div>
-                                        <p className="text-white font-bold">{currentDept?.email}</p>
-                                        <p className="text-gray-500 text-xs">{currentDept?.label} DEPARTMANI</p>
+                                        <p className="text-white font-bold text-lg mb-1">E-POSTA</p>
+                                        <p className="text-gray-400 text-lg hover:text-white transition-colors">
+                                            info@ozunlu.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-start gap-5">
+                                    <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center shrink-0 border border-white/5 group-hover:border-primary/20 transition-colors">
+                                        <Clock className="text-white" size={24} />
+                                    </div>
+                                    <div className="w-full">
+                                        <p className="text-white font-bold text-lg mb-1">ÇALIŞMA SAATLERİ</p>
+                                        <p className="text-blue-500 font-bold mb-1">Hafta içi & Cumartesi</p>
+                                        <p className="text-gray-400 mb-4">
+                                            09:00 - 18:30
+                                        </p>
+                                        {/* Map Embed */}
+                                        <div className="w-full h-48 rounded-xl overflow-hidden border border-white/10 shadow-lg grayscale hover:grayscale-0 transition-all duration-500">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.6752191444284!2d28.831061975905456!3d41.1416154713321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caae14a9f0318d%3A0x62b7c453a4d806bd!2s%C3%96z%C3%BCnl%C3%BC%20Damper%20Karoser%20ve%20%C3%87elik%20Konst.%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1767361978718!5m2!1str!2str"
+                                                width="100%"
+                                                height="100%"
+                                                style={{ border: 0 }}
+                                                allowFullScreen
+                                                loading="lazy"
+                                                referrerPolicy="no-referrer-when-downgrade"
+                                                title="Google Maps Location"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </motion.div>
 
-                    {/* Dynamic Form */}
-                    <div className="w-full lg:w-2/3">
-                        <form className="bg-ozunlu-900/50 p-8 md:p-12 rounded-2xl border border-white/5 space-y-6">
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-gray-400">ADINIZ SOYADINIZ</label>
-                                    <input type="text" className="w-full bg-ozunlu-950 border border-white/10 rounded-lg p-4 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Ad Soyad" />
+                    {/* Form */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 }}
+                        className="w-full lg:w-2/3"
+                    >
+                        <form className="bg-ozunlu-900/50 backdrop-blur-sm p-8 md:p-12 rounded-3xl border border-white/5 space-y-8 relative overflow-hidden">
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div className="space-y-3">
+                                    <label className="text-xs font-bold text-gray-400 tracking-wider">ADINIZ SOYADINIZ</label>
+                                    <input
+                                        type="text"
+                                        className="w-full bg-ozunlu-950/50 border border-white/10 rounded-xl p-5 text-white focus:border-primary focus:bg-ozunlu-950 focus:outline-none transition-all placeholder:text-gray-600"
+                                        placeholder="Ad Soyad"
+                                    />
                                 </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-gray-400">FİRMA ADI</label>
-                                    <input type="text" className="w-full bg-ozunlu-950 border border-white/10 rounded-lg p-4 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Firma Ünvanı" />
+                                <div className="space-y-3">
+                                    <label className="text-xs font-bold text-gray-400 tracking-wider">FİRMA ADI</label>
+                                    <input
+                                        type="text"
+                                        className="w-full bg-ozunlu-950/50 border border-white/10 rounded-xl p-5 text-white focus:border-primary focus:bg-ozunlu-950 focus:outline-none transition-all placeholder:text-gray-600"
+                                        placeholder="Firma Ünvanı"
+                                    />
                                 </div>
                             </div>
 
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-gray-400">E-POSTA</label>
-                                    <input type="email" className="w-full bg-ozunlu-950 border border-white/10 rounded-lg p-4 text-white focus:border-primary focus:outline-none transition-colors" placeholder="ornek@sirket.com" />
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div className="space-y-3">
+                                    <label className="text-xs font-bold text-gray-400 tracking-wider">E-POSTA</label>
+                                    <input
+                                        type="email"
+                                        className="w-full bg-ozunlu-950/50 border border-white/10 rounded-xl p-5 text-white focus:border-primary focus:bg-ozunlu-950 focus:outline-none transition-all placeholder:text-gray-600"
+                                        placeholder="ornek@sirket.com"
+                                    />
                                 </div>
-                                <div className="space-y-2">
-                                    <label className="text-sm font-bold text-gray-400">TELEFON</label>
-                                    <input type="tel" className="w-full bg-ozunlu-950 border border-white/10 rounded-lg p-4 text-white focus:border-primary focus:outline-none transition-colors" placeholder="05XX XXX XX XX" />
+                                <div className="space-y-3">
+                                    <label className="text-xs font-bold text-gray-400 tracking-wider">TELEFON</label>
+                                    <input
+                                        type="tel"
+                                        className="w-full bg-ozunlu-950/50 border border-white/10 rounded-xl p-5 text-white focus:border-primary focus:bg-ozunlu-950 focus:outline-none transition-all placeholder:text-gray-600"
+                                        placeholder="05XX XXX XX XX"
+                                    />
                                 </div>
                             </div>
 
-                            <div className="space-y-2">
-                                <label className="text-sm font-bold text-gray-400">MESAJINIZ</label>
-                                <textarea rows={5} className="w-full bg-ozunlu-950 border border-white/10 rounded-lg p-4 text-white focus:border-primary focus:outline-none transition-colors resize-none" placeholder={`Sayın ${currentDept?.label} yetkilisi...`} />
+                            <div className="space-y-3">
+                                <label className="text-xs font-bold text-gray-400 tracking-wider">MESAJINIZ</label>
+                                <textarea
+                                    rows={6}
+                                    className="w-full bg-ozunlu-950/50 border border-white/10 rounded-xl p-5 text-white focus:border-primary focus:bg-ozunlu-950 focus:outline-none transition-all placeholder:text-gray-600 resize-none"
+                                    placeholder="Mesajınızı buraya yazınız..."
+                                />
                             </div>
 
-                            <div className="pt-4">
-                                <button type="button" className="w-full md:w-auto px-10 py-4 bg-primary text-white font-black uppercase tracking-widest rounded hover:opacity-90 transition-colors flex items-center justify-center gap-3">
-                                    <Send size={20} />
+                            <div className="pt-4 flex justify-end">
+                                <button type="button" className="w-full md:w-auto px-12 py-5 bg-gradient-to-r from-primary to-blue-700 text-white font-bold uppercase tracking-widest rounded-xl hover:shadow-[0_0_30px_rgba(37,99,235,0.3)] transition-all flex items-center justify-center gap-4 group">
                                     Gönder
+                                    <Send size={20} className="group-hover:translate-x-1 transition-transform" />
                                 </button>
                             </div>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

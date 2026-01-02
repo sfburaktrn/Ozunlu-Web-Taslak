@@ -88,7 +88,7 @@ export default function JobBoard() {
                                 <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center flex-wrap">
                                     <a
                                         href="mailto:info@ozunlu.com"
-                                        className="px-8 py-4 bg-white text-black font-bold uppercase rounded hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
+                                        className="px-8 py-4 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
                                     >
                                         info@ozunlu.com
                                         <ArrowRight size={18} />
