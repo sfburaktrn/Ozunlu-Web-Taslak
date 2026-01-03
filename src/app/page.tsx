@@ -33,9 +33,10 @@ export default function Home() {
                 <HeroSection />
                 <StatsCounter />
                 <AboutSection />
+                <PartnersSlider />
                 <WhyChooseUsSection />
                 <ProductsSection />
-                <PartnersSlider />
+
                 <MapPreview />
                 <GallerySection />
                 {/* <NewsFeed /> */}
