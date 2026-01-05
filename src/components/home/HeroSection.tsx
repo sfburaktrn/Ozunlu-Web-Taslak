@@ -16,7 +16,7 @@ export default function HeroSection() {
                     playsInline
                     className="h-full w-full object-cover opacity-60"
                 >
-                    <source src="/banner-video.mp4" type="video/mp4" />
+                    <source src="/medya-hero.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/50" />
             </div>

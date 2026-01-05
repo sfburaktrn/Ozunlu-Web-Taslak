@@ -14,7 +14,7 @@ export default function MediaHero() {
                     playsInline
                     className="h-full w-full object-cover opacity-80"
                 >
-                    <source src="/medya-hero.mp4" type="video/mp4" />
+                    <source src="/banner-video.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/40" />
             </div>
