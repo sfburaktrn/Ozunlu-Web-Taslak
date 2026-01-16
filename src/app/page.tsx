@@ -23,13 +23,13 @@ export default function Home() {
 
     return (
         <>
-            <AnimatePresence mode="wait">
+            {/* <AnimatePresence mode="wait">
                 {loading && (
                     <LoadingScreen onComplete={() => setLoading(false)} />
                 )}
-            </AnimatePresence>
+            </AnimatePresence> */}
 
-            <main className="flex min-h-screen flex-col bg-ozunlu-950">
+            <main className="flex min-h-screen flex-col bg-white">
                 <HeroSection />
                 <StatsCounter />
                 <AboutSection />

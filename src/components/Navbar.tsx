@@ -20,7 +20,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            setIsScrolled(window.scrollY > 0);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -37,205 +37,142 @@ export default function Navbar() {
         };
     }, [mobileMenuOpen]);
 
-
-
     const navLinks = [
-        { href: "/kurumsal", label: "KURUMSAL" },
-        { href: "/urunler", label: "ÜRÜNLER" },
-        { href: "/satis-sonrasi", label: "SATIŞ SONRASI" },
-        { href: "/medya", label: "MEDYA" },
-        { href: "/kariyer", label: "KARİYER" },
-        { href: "/iletisim", label: "İLETİŞİM" },
+        // { href: "/kurumsal", label: "Kurumsal" },
+        // { href: "/urunler", label: "Ürünler" },
+        { href: "/damper", label: "Damper" },
+        { href: "/yari-romork", label: "Yarı Römork" },
+        { href: "/ek-ekipmanlar", label: "Ek Ekipmanlar" },
+        { href: "/satis-sonrasi", label: "Satış Sonrası" },
+        // { href: "/medya", label: "Medya" },
+        // { href: "/kariyer", label: "Kariyer" },
+        { href: "/iletisim", label: "İletişim" },
     ];
 
     return (
-        <nav
-            className={`fixed top-0 left-0 w-full z-[120] transition-all duration-300 ${isScrolled || mobileMenuOpen
-                ? "bg-black backdrop-blur-md shadow-lg border-b border-white/10 py-4"
-                : "bg-transparent py-6"
-                }`}
-        >
-            <div className="container mx-auto px-3 md:px-5 flex items-center justify-between">
-                <Link
-                    href="/"
-                    className="relative z-50 transition-transform hover:scale-105 -ml-6 md:-ml-8"
-                >
-                    <div className="relative w-40 h-10 md:w-48 md:h-12">
-                        <Image
-                            src="/ozunlu-logo.png"
-                            alt="Özünlü Damper Logo"
-                            fill
-                            className="object-contain"
-                            priority
-                        />
-                    </div>
-                </Link>
-
-                {/* Desktop Menu */}
-                <div className="hidden lg:flex items-center space-x-8">
-                    {navLinks.map((link) => (
-                        <NavLink key={link.href} href={link.href} label={link.label} />
-                    ))}
-
-                    {/* Language & Theme Controls */}
-                    <div className="flex items-center gap-4 border-l border-white/20 pl-6 ml-2">
-
-
-                        {/* Language */}
-                        {/* Language */}
-                        <div className="relative">
-                            <button
-                                onClick={toggleLangMenu}
-                                className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors"
-                            >
-                                <Globe size={18} />
-                                <span className="text-sm font-bold">{lang}</span>
-                                <ChevronDown size={14} className={`transition-transform duration-200 ${isLangMenuOpen ? 'rotate-180' : ''}`} />
-                            </button>
-
-                            <AnimatePresence>
-                                {isLangMenuOpen && (
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: 10 }}
-                                        className="absolute right-0 mt-2 w-24 bg-black border border-white/20 rounded-lg shadow-xl overflow-hidden py-1 z-50"
-                                    >
-                                        {['TR', 'EN'].map((l) => (
-                                            <button
-                                                key={l}
-                                                onClick={() => selectLang(l)}
-                                                className={`w-full text-left px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors ${lang === l ? 'text-primary' : 'text-white'}`}
-                                            >
-                                                {l}
-                                            </button>
-                                        ))}
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Mobile Menu Toggle */}
-                <button
-                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    className="lg:hidden p-2 text-white z-50"
-                >
-                    {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-                </button>
-
-                {/* Mobile Menu */}
-                <AnimatePresence>
-                    {mobileMenuOpen && (
-                        <>
-                            {/* Backdrop */}
-                            <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.2 }}
-                                className="fixed inset-0 bg-black opacity-100 z-[120] lg:hidden"
-                                onClick={() => setMobileMenuOpen(false)}
+        <>
+            <nav
+                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? "bg-transparent border-transparent" : "bg-[#1d1d1f]/80 backdrop-blur-md border-b border-white/5"
+                    }`}
+            >
+                <div className="container mx-auto px-6 h-[48px] flex items-center justify-center gap-x-[50px]">
+                    {/* Logo */}
+                    <Link
+                        href="/"
+                        className="flex-shrink-0 relative z-50 flex items-center opacity-80 hover:opacity-100 transition-opacity"
+                    >
+                        <div className="relative w-20 h-5">
+                            <Image
+                                src="/ozunlu-logo-new.png"
+                                alt="Özünlü Damper"
+                                fill
+                                className="object-contain object-left"
+                                priority
                             />
+                        </div>
+                    </Link>
 
-                            {/* Drawer */}
-                            <motion.aside
-                                initial={{ x: "100%" }}
-                                animate={{ x: 0 }}
-                                exit={{ x: "100%" }}
-                                transition={{ type: "tween", duration: 0.3 }}
-                                className="fixed top-0 right-0 h-full w-full bg-black z-[130] lg:hidden flex flex-col"
-                            >
-                                <div className="flex items-center justify-between px-6 pt-5 pb-0 border-b border-white/10">
-                                    <Link
-                                        href="/"
-                                        className="relative w-36 h-10 -ml-3"
-                                        onClick={() => setMobileMenuOpen(false)}
+                    {/* Desktop Menu */}
+                    <div className="hidden lg:flex items-center space-x-[50px]">
+                        {navLinks.map((link) => (
+                            <NavLink key={link.href} href={link.href} label={link.label} />
+                        ))}
+                    </div>
+
+                    {/* Right Side - Language Selector */}
+                    <div className="hidden lg:flex items-center relative">
+                        <button
+                            onClick={toggleLangMenu}
+                            className="flex items-center gap-1 text-[12px] font-medium text-white/70 hover:text-white transition-colors"
+                        >
+                            {lang}
+                            <ChevronDown size={10} className={`transition-transform duration-200 ${isLangMenuOpen ? 'rotate-180' : ''}`} />
+                        </button>
+
+                        <AnimatePresence>
+                            {isLangMenuOpen && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: 5 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, y: 5 }}
+                                    className="absolute right-0 top-full mt-2 w-16 bg-[#1d1d1f]/95 backdrop-blur-xl border border-white/10 rounded-lg shadow-2xl overflow-hidden p-1"
+                                >
+                                    {['TR', 'EN'].map((l) => (
+                                        <button
+                                            key={l}
+                                            onClick={() => selectLang(l)}
+                                            className={`w-full text-center px-2 py-1.5 text-[11px] rounded-md transition-colors ${lang === l ? 'text-white bg-white/10' : 'text-white/60 hover:bg-white/5'}`}
+                                        >
+                                            {l}
+                                        </button>
+                                    ))}
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
+                    </div>
+
+                    {/* Mobile Menu Toggle - Stays on top */}
+                    <button
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        className="lg:hidden p-2 text-white/90 absolute right-6 z-[140] hover:bg-white/5 rounded-full transition-colors"
+                        aria-label="Toggle Menu"
+                    >
+                        {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+                    </button>
+                </div>
+            </nav>
+
+            {/* Mobile Menu Overlay - Outside nav for better stacking */}
+            <AnimatePresence>
+                {mobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="fixed inset-0 z-[120] lg:hidden bg-[#1d1d1f]/95 backdrop-blur-2xl overflow-hidden"
+                    >
+                        <div className="flex flex-col pt-24 px-10 h-full">
+                            <div className="flex flex-col space-y-6">
+                                {navLinks.map((link, i) => (
+                                    <motion.div
+                                        key={link.href}
+                                        initial={{ opacity: 0, y: 15 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{
+                                            delay: 0.1 + i * 0.05,
+                                            ease: [0.4, 0, 0.2, 1]
+                                        }}
                                     >
-                                        <Image
-                                            src="/ozunlu-logo.png"
-                                            alt="Özünlü Damper Logo"
-                                            fill
-                                            className="object-contain"
-                                            priority
-                                        />
-                                    </Link>
-                                    <button
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="p-2 text-white hover:text-white transition-colors"
-                                        aria-label="Menüyü kapat"
-                                    >
-                                        <X size={26} />
-                                    </button>
-                                </div>
-
-                                {/* Quick actions (theme + language) */}
-                                <div className="px-6 py-4 bg-black border-b border-white/10 flex items-center justify-between gap-4">
-
-                                    <div className="flex items-center gap-3 text-white">
-                                        <div className="relative">
-                                            <button
-                                                onClick={toggleLangMenu}
-                                                className="flex items-center gap-2 text-white hover:text-gray-300 transition-colors px-3 py-2 rounded-lg bg-white/5"
-                                            >
-                                                <Globe size={18} />
-                                                <span className="text-sm font-bold">{lang}</span>
-                                                <ChevronDown size={14} className={`transition-transform duration-200 ${isLangMenuOpen ? 'rotate-180' : ''}`} />
-                                            </button>
-
-                                            <AnimatePresence>
-                                                {isLangMenuOpen && (
-                                                    <motion.div
-                                                        initial={{ opacity: 0, y: 10 }}
-                                                        animate={{ opacity: 1, y: 0 }}
-                                                        exit={{ opacity: 0, y: 10 }}
-                                                        className="absolute left-0 mt-2 w-full min-w-[100px] bg-white/10 border border-white/20 rounded-lg shadow-xl overflow-hidden py-1 z-50"
-                                                    >
-                                                        {['TR', 'EN'].map((l) => (
-                                                            <button
-                                                                key={l}
-                                                                onClick={() => selectLang(l)}
-                                                                className={`w-full text-left px-4 py-2 text-sm font-bold hover:bg-white/10 transition-colors ${lang === l ? 'text-primary' : 'text-white'}`}
-                                                            >
-                                                                {l}
-                                                            </button>
-                                                        ))}
-                                                    </motion.div>
-                                                )}
-                                            </AnimatePresence>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="flex-1 px-6 pt-6 pb-8 flex flex-col items-center justify-start space-y-8 bg-black">
-                                    <div className="flex flex-col items-center space-y-4 w-full">
-                                        {navLinks.map((link) => (
-                                            <Link
-                                                key={link.href}
-                                                href={link.href}
-                                                onClick={() => setMobileMenuOpen(false)}
-                                                className="text-xl font-bold text-white tracking-[0.08em] px-4 py-2 rounded-lg hover:text-white transition-colors"
-                                            >
-                                                {link.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-
+                                        <Link
+                                            href={link.href}
+                                            onClick={() => setMobileMenuOpen(false)}
+                                            className="text-[28px] font-semibold text-[#f5f5f7] hover:text-white block border-b border-white/5 pb-4"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </motion.div>
+                                ))}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 15 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 + navLinks.length * 0.05 }}
+                                    className="pt-4"
+                                >
                                     <Link
                                         href="/iletisim"
                                         onClick={() => setMobileMenuOpen(false)}
-                                        className="w-full max-w-xs text-center bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+                                        className="text-[19px] font-medium text-[#2997ff] hover:underline"
                                     >
-                                        Teklif Al
+                                        İletişim & Teklif Al
                                     </Link>
-                                </div>
-                            </motion.aside>
-                        </>
-                    )}
-                </AnimatePresence>
-            </div>
-        </nav>
+                                </motion.div>
+                            </div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
     );
 }
 
@@ -243,7 +180,7 @@ function NavLink({ href, label }: { href: string; label: string }) {
     return (
         <Link
             href={href}
-            className="text-sm font-bold text-gray-300 hover:text-white transition-colors tracking-wider"
+            className="text-[13px] font-medium text-white/80 hover:text-white transition-opacity tracking-tight"
         >
             {label}
         </Link>

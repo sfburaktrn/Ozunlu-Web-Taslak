@@ -14,11 +14,10 @@ export default function HeroSection() {
                     loop
                     muted
                     playsInline
-                    className="h-full w-full object-cover opacity-60"
+                    className="h-full w-full object-cover"
                 >
-                    <source src="/medya-hero.mp4" type="video/mp4" />
+                    <source src="/banner-video-new.webm" type="video/webm" />
                 </video>
-                <div className="absolute inset-0 bg-black/50" />
             </div>
 
             {/* Content */}

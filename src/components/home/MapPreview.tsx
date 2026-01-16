@@ -118,104 +118,108 @@ export default function MapPreview() {
   const closeModal = () => setSelected(null);
 
   return (
-    <section className="relative py-24 bg-ozunlu-900 border-t border-white/5 overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.12),_transparent_45%)]" />
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              <p className="text-sm tracking-[0.35em] text-white uppercase">
-                Servis Noktalarimiz
-              </p>
-              <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                Turkiye genelinde{" "}
-                <span className="text-white">yetkili servis</span> agi.
-              </h2>
-              <p className="text-gray-400 max-w-2xl">
-                Haritadan sehir secerek o ildeki yetkili servis ve iletisim
-                bilgilerine aninda ulasin. Tum servis noktalarimiz guncel ve
-                baglantiya hazir.
-              </p>
-            </motion.div>
+    <section className="bg-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-24 overflow-hidden isolate shadow-sm">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.05),_transparent_45%)] pointer-events-none" />
+          <div className="px-4 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-8">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="space-y-4"
+                >
+                  <p className="text-sm tracking-[0.35em] text-black font-bold uppercase">
+                    Servis Noktalarımız
+                  </p>
+                  <h2 className="text-3xl md:text-5xl font-black text-black leading-tight">
+                    Türkiye genelinde{" "}
+                    <span className="text-primary">yetkili servis</span> ağı.
+                  </h2>
+                  <p className="text-black max-w-2xl font-medium">
+                    Haritadan şehir seçerek o ildeki yetkili servis ve iletişim
+                    bilgilerine anında ulaşın. Tüm servis noktalarımız güncel ve
+                    bağlantıya hazır.
+                  </p>
+                </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 rounded-xl border border-white/10 bg-ozunlu-800/60 shadow-lg">
-                <p className="text-sm text-gray-400">Servis bulunan sehir</p>
-                <p className="text-3xl font-bold text-white mt-1">
-                  {serviceLocations.length}
-                </p>
-              </div>
-              <div className="p-4 rounded-xl border border-white/10 bg-ozunlu-800/60 shadow-lg">
-                <p className="text-sm text-gray-400">Toplam servis noktasi</p>
-                <p className="text-3xl font-bold text-white mt-1">
-                  {totalProviders}
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-3">
-              <p className="text-sm text-gray-400 uppercase tracking-[0.25em]">
-                One cikan iller
-              </p>
-              <div className="flex flex-col gap-3">
-                {topLocations.map((loc) => (
-                  <div
-                    key={loc.city}
-                    className="flex items-center gap-3 p-3 rounded-lg border border-white/10 bg-ozunlu-800/60"
-                  >
-                    <div className="p-2 rounded-full bg-primary/10 text-white">
-                      <MapPin size={16} />
-                    </div>
-                    <div>
-                      <p className="text-white font-semibold">{loc.city}</p>
-                      <p className="text-gray-400 text-sm">
-                        {loc.providers.length} servis noktasi
-                      </p>
-                    </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
+                    <p className="text-sm text-black font-bold">Servis bulunan şehir</p>
+                    <p className="text-3xl font-black text-black mt-1">
+                      {serviceLocations.length}
+                    </p>
                   </div>
-                ))}
+                  <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
+                    <p className="text-sm text-black font-bold">Toplam servis noktası</p>
+                    <p className="text-3xl font-black text-black mt-1">
+                      {totalProviders}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <p className="text-sm text-black font-bold uppercase tracking-[0.25em]">
+                    Öne çıkan iller
+                  </p>
+                  <div className="flex flex-col gap-3">
+                    {topLocations.map((loc) => (
+                      <div
+                        key={loc.city}
+                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white"
+                      >
+                        <div className="p-2 rounded-full bg-primary/10 text-primary">
+                          <MapPin size={16} />
+                        </div>
+                        <div>
+                          <p className="text-black font-bold">{loc.city}</p>
+                          <p className="text-gray-900 text-sm font-medium">
+                            {loc.providers.length} servis noktası
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-2xl shadow-xl p-5"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.25em] text-gray-900 font-bold">
+                      Haritaya dokun
+                    </p>
+                    <h3 className="text-black text-xl font-bold">
+                      Şehir seç, servis bilgisi açılır.
+                    </h3>
+                  </div>
+                  <div className="p-2 rounded-full bg-gray-100 text-primary">
+                    <MapPin size={18} />
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-gray-200 bg-gray-50 p-3">
+                  <TurkeyMap
+                    hoverable
+                    showTooltip
+                    customStyle={{ idleColor: "#d1d5db", hoverColor: "#000552" }}
+                    onClick={handleCityClick}
+                    cityWrapper={renderCity}
+                  />
+                </div>
+                <p className="text-sm text-black font-medium mt-3 text-center">
+                  Bir il üzerine tıkladığınızda o şehri içeren servis kartı açılır.
+                </p>
+              </motion.div>
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-ozunlu-950/80 border border-white/10 rounded-2xl shadow-2xl p-5 backdrop-blur-sm"
-          >
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
-                  Haritaya dokun
-                </p>
-                <h3 className="text-white text-xl font-semibold">
-                  Sehir sec, servis bilgisi acilir.
-                </h3>
-              </div>
-              <div className="p-2 rounded-full bg-white/10 text-white">
-                <MapPin size={18} />
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-white/10 bg-gradient-to-b from-white/5 to-transparent p-3">
-              <TurkeyMap
-                hoverable
-                showTooltip
-                customStyle={{ idleColor: "#111827", hoverColor: "#000000" }}
-                onClick={handleCityClick}
-                cityWrapper={renderCity}
-              />
-            </div>
-            <p className="text-xs text-gray-500 mt-3 text-center">
-              Bir il uzerine tikladiginizda o sehri iceren servis karti acilir.
-            </p>
-          </motion.div>
         </div>
       </div>
 
@@ -232,24 +236,24 @@ export default function MapPreview() {
               initial={{ opacity: 0, y: 20, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.98 }}
-              className="w-full max-w-2xl bg-ozunlu-950 rounded-2xl border border-white/10 shadow-2xl p-6"
+              className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-2xl p-6"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.25em] text-gray-400">
-                    Servis detaylari
+                  <p className="text-xs uppercase tracking-[0.25em] text-gray-800 font-bold">
+                    Servis detayları
                   </p>
-                  <h3 className="text-2xl font-bold text-white">
+                  <h3 className="text-2xl font-black text-black">
                     {selected.location?.city ?? selected.city.name}
                   </h3>
-                  <p className="text-gray-500 text-sm">
+                  <p className="text-black font-medium text-sm">
                     Plaka kodu: {selected.city.plateNumber}
                   </p>
                 </div>
                 <button
                   onClick={closeModal}
-                  className="p-2 rounded-full bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition"
+                  className="p-2 rounded-full bg-gray-100 text-black hover:text-black hover:bg-gray-200 transition"
                   aria-label="Kapat"
                 >
                   <X size={18} />
@@ -261,20 +265,20 @@ export default function MapPreview() {
                   selected.location.providers.map((provider, idx) => (
                     <div
                       key={`${provider.name}-${idx}`}
-                      className="p-4 rounded-xl border border-white/10 bg-ozunlu-900/80"
+                      className="p-4 rounded-xl border border-gray-200 bg-gray-50"
                     >
-                      <p className="text-white font-semibold">
+                      <p className="text-black font-bold">
                         {provider.name}
                       </p>
                       {provider.address && (
-                        <div className="flex items-start gap-2 text-gray-300 mt-1">
-                          <MapPin size={14} className="mt-0.5 text-white" />
+                        <div className="flex items-start gap-2 text-black mt-1 font-medium">
+                          <MapPin size={14} className="mt-0.5 text-primary" />
                           <span className="text-sm">{provider.address}</span>
                         </div>
                       )}
                       {provider.phones && provider.phones.length > 0 && (
-                        <div className="flex items-start gap-2 text-gray-300 mt-1">
-                          <Phone size={14} className="mt-0.5 text-white" />
+                        <div className="flex items-start gap-2 text-black mt-1 font-medium">
+                          <MapPin size={14} className="mt-0.5 text-primary" />
                           <span className="text-sm">
                             {provider.phones.join(" / ")}
                           </span>
@@ -283,8 +287,8 @@ export default function MapPreview() {
                     </div>
                   ))
                 ) : (
-                  <p className="text-gray-400">
-                    Bu il icin kayitli servis bulunamadi.
+                  <p className="text-black font-medium">
+                    Bu il için kayıtlı servis bulunamadı.
                   </p>
                 )}
               </div>
