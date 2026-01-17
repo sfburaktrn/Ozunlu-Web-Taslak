@@ -6,6 +6,7 @@ import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/home/HeroSection';
 import StatsCounter from '@/components/home/StatsCounter';
 import DamperHero from '@/components/home/DamperHero';
+import WebIntro from '@/components/home/WebIntro';
 import TrailerHero from '@/components/home/TrailerHero';
 import EquipmentHero from '@/components/home/EquipmentHero';
 import PartnersSlider from '@/components/home/PartnersSlider';
@@ -35,18 +36,20 @@ export default function Home() {
             <main className="flex min-h-screen flex-col bg-white">
                 <HeroSection />
                 <StatsCounter />
+                <AboutSection />
                 <TrailerHero />
                 <DamperHero />
 
                 <EquipmentHero />
-                <AboutSection />
                 <PartnersSlider />
+                <WebIntro />
+
                 <WhyChooseUsSection />
-                <ProductsSection />
+
 
                 <MapPreview />
                 <GallerySection />
-                {/* <NewsFeed /> */}
+
             </main>
         </>
     );
