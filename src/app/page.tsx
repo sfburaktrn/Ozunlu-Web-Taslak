@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/home/HeroSection';
 import StatsCounter from '@/components/home/StatsCounter';
+import DamperHero from '@/components/home/DamperHero';
 import PartnersSlider from '@/components/home/PartnersSlider';
 import AboutSection from '@/components/home/AboutSection';
 import ProductsSection from '@/components/home/ProductsSection';
@@ -32,6 +33,7 @@ export default function Home() {
             <main className="flex min-h-screen flex-col bg-white">
                 <HeroSection />
                 <StatsCounter />
+                <DamperHero />
                 <AboutSection />
                 <PartnersSlider />
                 <WhyChooseUsSection />
