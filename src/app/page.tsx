@@ -35,8 +35,9 @@ export default function Home() {
             <main className="flex min-h-screen flex-col bg-white">
                 <HeroSection />
                 <StatsCounter />
-                <DamperHero />
                 <TrailerHero />
+                <DamperHero />
+
                 <EquipmentHero />
                 <AboutSection />
                 <PartnersSlider />
