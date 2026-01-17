@@ -26,15 +26,22 @@ export default function DamperHero() {
                             quality={100}
                         />
                         {/* Gradient Overlay for Text Readability - Left aligned based on user request */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent" />
                     </div>
 
                     {/* Content */}
-                    <div className="relative h-full flex items-center p-8 md:p-16">
+                    <div className="relative h-full flex items-end md:items-center p-6 pb-6 md:p-16">
+                        {/* Mobile Watermark - Fixed at top */}
+                        <div className="absolute top-8 left-6 md:hidden z-0 pointer-events-none select-none">
+                            <span className="text-6xl font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                                ÖZÜNLÜ
+                            </span>
+                        </div>
+
                         <div className="max-w-xl relative">
-                            {/* Watermark Text */}
-                            <div className="absolute -top-20 -left-10 z-0 pointer-events-none select-none">
-                                <span className="text-8xl md:text-[8rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                            {/* Desktop Watermark - Relative to text */}
+                            <div className="hidden md:block absolute -top-20 -left-10 z-0 pointer-events-none select-none">
+                                <span className="md:text-[8rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                     ÖZÜNLÜ
                                 </span>
                             </div>
@@ -43,7 +50,7 @@ export default function DamperHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="relative z-10 text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
+                                className="relative z-10 text-xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-6 leading-tight"
                             >
                                 Gücünüze Güç <br />
                                 <span className="text-primary">Katan Performans</span>
@@ -53,7 +60,7 @@ export default function DamperHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="text-lg text-gray-300 mb-8 leading-relaxed max-w-md"
+                                className="text-xs md:text-lg text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-md"
                             >
                                 En zorlu şartlarda bile üstün performans sunan damper sistemlerimiz ile işinize değer katıyoruz. Teknolojik üretim ve dayanıklı tasarım.
                             </motion.p>
@@ -65,10 +72,10 @@ export default function DamperHero() {
                             >
                                 <Link
                                     href="/teklif-al"
-                                    className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20"
+                                    className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-6 py-3 md:px-8 md:py-4 text-sm md:text-base rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20"
                                 >
                                     Teklif Al
-                                    <ArrowRight size={20} />
+                                    <ArrowRight size={16} className="md:w-5 md:h-5" />
                                 </Link>
                             </motion.div>
                         </div>

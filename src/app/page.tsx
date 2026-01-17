@@ -6,6 +6,8 @@ import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/home/HeroSection';
 import StatsCounter from '@/components/home/StatsCounter';
 import DamperHero from '@/components/home/DamperHero';
+import TrailerHero from '@/components/home/TrailerHero';
+import EquipmentHero from '@/components/home/EquipmentHero';
 import PartnersSlider from '@/components/home/PartnersSlider';
 import AboutSection from '@/components/home/AboutSection';
 import ProductsSection from '@/components/home/ProductsSection';
@@ -34,6 +36,8 @@ export default function Home() {
                 <HeroSection />
                 <StatsCounter />
                 <DamperHero />
+                <TrailerHero />
+                <EquipmentHero />
                 <AboutSection />
                 <PartnersSlider />
                 <WhyChooseUsSection />
