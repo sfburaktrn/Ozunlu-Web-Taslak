@@ -31,10 +31,10 @@ export default function DamperHero() {
 
                     {/* Content */}
                     <div className="relative h-full flex items-center p-8 md:p-16">
-                        <div className="max-w-xl">
-                            {/* Watermark Text - Reverted for dark banner */}
-                            <div className="absolute -top-24 -left-12 z-0 pointer-events-none select-none">
-                                <span className="text-8xl md:text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-br from-white/10 via-white/5 to-transparent leading-none tracking-tighter opacity-50 whitespace-nowrap">
+                        <div className="max-w-xl relative">
+                            {/* Watermark Text */}
+                            <div className="absolute -top-20 -left-10 z-0 pointer-events-none select-none">
+                                <span className="text-8xl md:text-[8rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                     ÖZÜNLÜ
                                 </span>
                             </div>
