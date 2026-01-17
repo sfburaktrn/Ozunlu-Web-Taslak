@@ -16,7 +16,7 @@ export default function HeroSection() {
                     playsInline
                     className="h-full w-full object-cover"
                 >
-                    <source src="/banner-video-new.webm" type="video/webm" />
+                    <source src="/banner-video-new.mp4" type="video/mp4" />
                 </video>
             </div>
 
