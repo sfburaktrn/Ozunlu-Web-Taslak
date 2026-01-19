@@ -95,7 +95,7 @@ export default function YariRomorkPage() {
                                 <div>
                                     <h4 className="text-xl font-bold mb-2 text-black">Çok Yönlü Çözümler</h4>
                                     <p className="text-black leading-relaxed">
-                                        Lowbed'den konteyner taşıyıcıya, her türlü lojistik ihtiyaca uygun adaptasyon.
+                                        Lowbed&apos;den konteyner taşıyıcıya, her türlü lojistik ihtiyaca uygun adaptasyon.
                                     </p>
                                 </div>
                             </div>
