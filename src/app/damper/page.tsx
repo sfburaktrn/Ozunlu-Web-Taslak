@@ -21,7 +21,7 @@ export default function DamperPage() {
                 variants={fadeInUp}
                 initial="initial"
                 animate="animate"
-                className="w-full max-w-[1600px] mx-auto bg-[#FDFBF7] rounded-[2.5rem] p-8 md:p-16 mb-8 relative overflow-hidden group"
+                className="w-full max-w-[1600px] mx-auto bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 mb-8 relative overflow-hidden group"
             >
                 <div className="relative z-10 max-w-3xl">
                     <span className="inline-block py-2 px-4 rounded-full bg-white border border-black/5 text-xs font-bold tracking-widest uppercase text-black mb-6">
@@ -57,7 +57,7 @@ export default function DamperPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="bg-[#FDFBF7] rounded-[2.5rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 group hover:shadow-xl transition-all duration-500"
+                    className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 group hover:shadow-xl transition-all duration-500"
                 >
                     <div className="w-full md:w-1/2 flex flex-col justify-center">
                         <h3 className="text-3xl md:text-5xl font-bold text-black mb-8">
