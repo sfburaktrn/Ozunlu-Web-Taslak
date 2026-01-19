@@ -127,10 +127,7 @@ export default function WebIntro() {
                                 transition={{ duration: 2.5, ease: "easeOut" }}
                                 className="flex flex-col items-center justify-center"
                             >
-                                <h2 className="text-2xl md:text-5xl font-bold text-white drop-shadow-lg text-center font-sans">
-                                    En İyilerin Tercihi
-                                </h2>
-                                <div className="h-[2px] w-24 mx-auto bg-primary mt-4" />
+                                {/* Slogan Removed */}
                             </motion.div>
                         </div>
                     </div>
