@@ -37,10 +37,10 @@ export default function GallerySection() {
     const contentBlur = useTransform(springProgress, [0.1, 0.3], ["10px", "0px"]);
 
     return (
-        <section className="bg-white pb-8 hidden md:block"> {/* Ana zemin beyaz, alttan boşluk */}
+        <section className="bg-white pb-8"> {/* Ana zemin kurumsal beyaz */}
 
-            {/* SCROLL TRIGGER (TRACK): Görünmez, sadece scroll mesafesi sağlar (200vh) */}
-            <div ref={targetRef} className="relative h-[200vh]">
+            {/* SCROLL TRIGGER (TRACK) - DESKTOP ONLY */}
+            <div ref={targetRef} className="relative h-[200vh] hidden md:block">
 
                 {/* STICKY CONTAINER: Ekran boyunca sabit kalır */}
                 <div className="sticky top-0 h-screen w-full flex items-center justify-center p-4">
