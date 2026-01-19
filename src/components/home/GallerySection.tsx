@@ -6,12 +6,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const galleryImages = [
-    { id: 1, src: '/products/gallery-1.jpg?v=2', alt: 'Özünlü Damper', w: 300, h: 400, x: "-60vw", y: "-30vh", r: -15 },
-    { id: 2, src: '/products/gallery-2.jpg?v=2', alt: 'Özünlü Damper', w: 400, h: 300, x: "50vw", y: "-40vh", r: 10 },
-    { id: 3, src: '/products/gallery-3.jpg?v=2', alt: 'Özünlü Damper', w: 320, h: 420, x: "-70vw", y: "20vh", r: -5 },
-    { id: 4, src: '/products/gallery-4.jpg?v=2', alt: 'Özünlü Damper', w: 280, h: 350, x: "60vw", y: "30vh", r: 12 },
-    { id: 5, src: '/products/gallery-5.jpg?v=2', alt: 'Özünlü Damper', w: 350, h: 250, x: "0vw", y: "-50vh", r: 5 },
-    { id: 6, src: '/products/gallery-6.jpg?v=2', alt: 'Özünlü Damper', w: 300, h: 300, x: "0vw", y: "50vh", r: -8 },
+    { id: 1, src: '/products/gallery-1.jpg?v=2', alt: 'Özünlü Damper', w: 300, h: 400, x: "-35vw", y: "-25vh", r: -15 },
+    { id: 2, src: '/products/gallery-2.jpg?v=2', alt: 'Özünlü Damper', w: 400, h: 300, x: "35vw", y: "-30vh", r: 10 },
+    { id: 3, src: '/products/gallery-3.jpg?v=2', alt: 'Özünlü Damper', w: 320, h: 420, x: "-38vw", y: "20vh", r: -5 },
+    { id: 4, src: '/products/gallery-4.jpg?v=2', alt: 'Özünlü Damper', w: 280, h: 350, x: "38vw", y: "25vh", r: 12 },
+    { id: 5, src: '/products/gallery-5.jpg?v=2', alt: 'Özünlü Damper', w: 350, h: 250, x: "0vw", y: "-38vh", r: 5 },
+    { id: 6, src: '/products/gallery-6.jpg?v=2', alt: 'Özünlü Damper', w: 300, h: 300, x: "0vw", y: "38vh", r: -8 },
 ];
 
 export default function GallerySection() {
@@ -70,7 +70,7 @@ export default function GallerySection() {
 
                             <Link
                                 href="/medya"
-                                className="mt-8 text-[10px] md:text-xs font-bold tracking-[0.3em] text-white/50 hover:text-white uppercase border-b border-white/20 pb-2 hover:border-white transition-all"
+                                className="mt-4 text-[10px] md:text-xs font-bold tracking-[0.3em] text-white/50 hover:text-white uppercase border-b border-white/20 pb-1 hover:border-white transition-all"
                             >
                                 Keşfet
                             </Link>
