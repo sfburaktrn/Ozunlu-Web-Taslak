@@ -2,9 +2,8 @@ import ContactForm from '@/components/contact/ContactForm';
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen bg-ozunlu-950 pt-16">
+        <main className="min-h-screen bg-white pt-24 md:pt-28 px-4 sm:px-6">
             <ContactForm />
-            {/* Could add a full width map here if desired */}
         </main>
     );
 }

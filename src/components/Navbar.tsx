@@ -52,7 +52,7 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? "bg-transparent border-transparent" : "bg-[#1d1d1f]/80 backdrop-blur-md border-b border-white/5"
+                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? "bg-transparent border-transparent" : "bg-[rgba(251,251,253,0.8)] backdrop-blur-xl backdrop-saturate-[180%] border-b border-black/[0.08]"
                     }`}
             >
                 <div className="container mx-auto px-6 h-[48px] flex items-center justify-center gap-x-[50px]">
@@ -83,7 +83,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex items-center relative">
                         <button
                             onClick={toggleLangMenu}
-                            className="flex items-center gap-1 text-[12px] font-medium text-white/70 hover:text-white transition-colors"
+                            className="flex items-center gap-1 text-[12px] font-medium text-black/60 hover:text-black transition-colors"
                         >
                             {lang}
                             <ChevronDown size={10} className={`transition-transform duration-200 ${isLangMenuOpen ? 'rotate-180' : ''}`} />
@@ -95,13 +95,13 @@ export default function Navbar() {
                                     initial={{ opacity: 0, y: 5 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: 5 }}
-                                    className="absolute right-0 top-full mt-2 w-16 bg-[#1d1d1f]/95 backdrop-blur-xl border border-white/10 rounded-lg shadow-2xl overflow-hidden p-1"
+                                    className="absolute right-0 top-full mt-2 w-16 bg-white/95 backdrop-blur-xl border border-black/10 rounded-lg shadow-xl overflow-hidden p-1"
                                 >
                                     {['TR', 'EN'].map((l) => (
                                         <button
                                             key={l}
                                             onClick={() => selectLang(l)}
-                                            className={`w-full text-center px-2 py-1.5 text-[11px] rounded-md transition-colors ${lang === l ? 'text-white bg-white/10' : 'text-white/60 hover:bg-white/5'}`}
+                                            className={`w-full text-center px-2 py-1.5 text-[11px] rounded-md transition-colors ${lang === l ? 'text-black bg-black/10' : 'text-black/60 hover:bg-black/5'}`}
                                         >
                                             {l}
                                         </button>
@@ -114,7 +114,7 @@ export default function Navbar() {
                     {/* Mobile Menu Toggle - Stays on top */}
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className="lg:hidden p-2 text-white/90 absolute right-6 z-[140] hover:bg-white/5 rounded-full transition-colors"
+                        className={`lg:hidden p-2 absolute right-6 z-[140] hover:bg-black/5 rounded-full transition-colors ${mobileMenuOpen ? 'text-white/90' : 'text-black/80'}`}
                         aria-label="Toggle Menu"
                     >
                         {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -180,7 +180,7 @@ function NavLink({ href, label }: { href: string; label: string }) {
     return (
         <Link
             href={href}
-            className="text-[13px] font-medium text-white/80 hover:text-white transition-opacity tracking-tight"
+            className="text-[13px] font-medium text-black/80 hover:text-black transition-opacity tracking-tight"
         >
             {label}
         </Link>
