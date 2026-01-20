@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import ProposalForm from '@/components/proposal/ProposalForm';
 
 export default function YariRomorkPage() {
     const fadeInUp = {
@@ -102,7 +103,7 @@ export default function YariRomorkPage() {
                         </div>
 
                         <div className="mt-12">
-                            <Link href="/iletisim" className="inline-flex items-center gap-3 px-8 py-4 bg-transparent text-black border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-all">
+                            <Link href="#teklif-formu" className="inline-flex items-center gap-3 px-8 py-4 bg-transparent text-black border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-all">
                                 Teklif Alın <ArrowRight size={18} />
                             </Link>
                         </div>
@@ -113,6 +114,10 @@ export default function YariRomorkPage() {
                     </div>
                 </motion.div>
             </div>
+
+            {/* 3. PROPOSAL FORM */}
+            <ProposalForm initialProduct="dorse" />
+
         </main >
     );
 }
