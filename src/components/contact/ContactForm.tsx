@@ -88,7 +88,7 @@ export default function ContactForm() {
                         <form className="bg-white p-5 md:p-8 rounded-2xl border border-black/5 space-y-4">
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div>
-                                    <label className="text-xs font-bold text-black/50 pl-1 mb-1 block">AD SOYAD</label>
+                                    <label className="text-xs font-bold text-black pl-1 mb-1 block">AD SOYAD</label>
                                     <input
                                         type="text"
                                         className="w-full bg-gray-50 border border-black/10 rounded-xl p-3 text-black text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 focus:outline-none transition-all placeholder:text-black/30"
@@ -96,7 +96,7 @@ export default function ContactForm() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-xs font-bold text-black/50 pl-1 mb-1 block">FİRMA</label>
+                                    <label className="text-xs font-bold text-black pl-1 mb-1 block">FİRMA</label>
                                     <input
                                         type="text"
                                         className="w-full bg-gray-50 border border-black/10 rounded-xl p-3 text-black text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 focus:outline-none transition-all placeholder:text-black/30"
@@ -107,7 +107,7 @@ export default function ContactForm() {
 
                             <div className="grid md:grid-cols-2 gap-4">
                                 <div>
-                                    <label className="text-xs font-bold text-black/50 pl-1 mb-1 block">E-POSTA</label>
+                                    <label className="text-xs font-bold text-black pl-1 mb-1 block">E-POSTA</label>
                                     <input
                                         type="email"
                                         className="w-full bg-gray-50 border border-black/10 rounded-xl p-3 text-black text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 focus:outline-none transition-all placeholder:text-black/30"
@@ -115,7 +115,7 @@ export default function ContactForm() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-xs font-bold text-black/50 pl-1 mb-1 block">TELEFON</label>
+                                    <label className="text-xs font-bold text-black pl-1 mb-1 block">TELEFON</label>
                                     <input
                                         type="tel"
                                         className="w-full bg-gray-50 border border-black/10 rounded-xl p-3 text-black text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 focus:outline-none transition-all placeholder:text-black/30"
@@ -125,7 +125,7 @@ export default function ContactForm() {
                             </div>
 
                             <div>
-                                <label className="text-xs font-bold text-black/50 pl-1 mb-1 block">MESAJ</label>
+                                <label className="text-xs font-bold text-black pl-1 mb-1 block">MESAJ</label>
                                 <textarea
                                     rows={4}
                                     className="w-full bg-gray-50 border border-black/10 rounded-xl p-3 text-black text-sm focus:border-primary focus:ring-2 focus:ring-primary/10 focus:outline-none transition-all placeholder:text-black/30 resize-none"
