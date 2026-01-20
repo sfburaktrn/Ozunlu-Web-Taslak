@@ -149,8 +149,8 @@ export default function YariRomorkPage() {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2 min-h-[400px] relative grayscale group-hover:grayscale-0 transition-all duration-700">
-                        <Image src="/products/gallery-4.jpg" alt="Yarı Römork Genel" fill className="object-cover rounded-[2rem]" />
+                    <div className="w-full md:w-1/2 min-h-[400px] relative transition-all duration-700">
+                        <Image src="/products/yari-romork-feature-new.jpg" alt="Yarı Römork Genel" fill className="object-cover rounded-[2rem]" />
                     </div>
                 </motion.div>
             </div>
