@@ -15,6 +15,7 @@ interface FormData {
     volumeM3: string;
     thickness: string;
     quantity: string;
+    axle: 'yerli' | 'yabancı' | ''; // Added Axle Option
     // Common
     paymentMethod: 'pesin' | 'vadeli' | '';
     // Contact
@@ -39,6 +40,7 @@ export default function ProposalForm({ initialProduct }: ProposalFormProps) {
         volumeM3: '',
         thickness: '',
         quantity: '1',
+        axle: '', // Initial state for Axle
         paymentMethod: '',
         companyName: '',
         contactPerson: '',
@@ -64,7 +66,7 @@ export default function ProposalForm({ initialProduct }: ProposalFormProps) {
     // Validation Logic
     const step1Complete = formData.type === 'damper'
         ? formData.brand !== '' && formData.model !== ''
-        : formData.volumeM3 !== ''; // Dorse starts with Volume
+        : formData.volumeM3 !== '' && formData.axle !== ''; // Dorse starts with Volume & Axle
 
     const step2Complete = formData.type === 'damper'
         ? formData.cargoType !== ''
@@ -187,7 +189,7 @@ export default function ProposalForm({ initialProduct }: ProposalFormProps) {
                                     Teklif formunuz başarıyla bize ulaştı. Satış temsilcimiz en kısa sürede sizinle iletişime geçecektir.
                                 </p>
                                 <button
-                                    onClick={() => { setIsSuccess(false); setFormData(prev => ({ ...prev, brand: '', model: '', cargoType: '', volumeM3: '', thickness: '', quantity: '1', paymentMethod: '', companyName: '', contactPerson: '', contactPhone: '', email: '', message: '' })) }}
+                                    onClick={() => { setIsSuccess(false); setFormData(prev => ({ ...prev, brand: '', model: '', cargoType: '', volumeM3: '', thickness: '', quantity: '1', axle: '', paymentMethod: '', companyName: '', contactPerson: '', contactPhone: '', email: '', message: '' })) }}
                                     className="px-8 py-3 bg-white text-ozunlu-950 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
                                 >
                                     Yeni Form Oluştur
@@ -220,7 +222,7 @@ export default function ProposalForm({ initialProduct }: ProposalFormProps) {
                                             />
                                         </div>
                                     ) : (
-                                        <div className="grid md:grid-cols-1 gap-6">
+                                        <div className="grid md:grid-cols-2 gap-6">
                                             <InputGroup
                                                 label="İstenen Hacim (m³)"
                                                 placeholder="Örn: 30"
@@ -228,6 +230,32 @@ export default function ProposalForm({ initialProduct }: ProposalFormProps) {
                                                 onChange={(v) => handleInputChange('volumeM3', v)}
                                                 type="text"
                                             />
+                                            {/* Axle Option - Dingil Seçeneği */}
+                                            <div className="space-y-2">
+                                                <label className="text-sm font-bold text-gray-600 block pl-1">Dingil Seçeneği</label>
+                                                <div className="grid grid-cols-2 gap-4">
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleInputChange('axle', 'yerli')}
+                                                        className={`p-4 rounded-xl font-bold transition-all border-2 
+                                                        ${formData.axle === 'yerli'
+                                                                ? 'border-primary bg-primary/10 text-primary'
+                                                                : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
+                                                    >
+                                                        Yerli
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleInputChange('axle', 'yabancı')}
+                                                        className={`p-4 rounded-xl font-bold transition-all border-2
+                                                        ${formData.axle === 'yabancı'
+                                                                ? 'border-primary bg-primary/10 text-primary'
+                                                                : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
+                                                    >
+                                                        Yabancı
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     )}
                                 </div>

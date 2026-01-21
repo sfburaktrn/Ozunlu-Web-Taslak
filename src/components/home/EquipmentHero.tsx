@@ -29,6 +29,13 @@ export default function EquipmentHero() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-l md:from-black/80 md:via-black/40 md:to-transparent" />
                     </div>
 
+                    {/* Category Label */}
+                    <div className="absolute top-6 left-6 z-20">
+                        <span className="inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase">
+                            Ek Ekipmanlar
+                        </span>
+                    </div>
+
                     {/* Content - Aligned to Right */}
                     <div className="absolute inset-0 flex flex-col justify-end md:justify-center items-end p-6 pb-6 md:p-16">
                         {/* Mobile Watermark - Fixed at top left */}

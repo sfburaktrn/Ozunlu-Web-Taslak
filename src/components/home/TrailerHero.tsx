@@ -29,6 +29,13 @@ export default function TrailerHero() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-l md:from-black/80 md:via-black/40 md:to-transparent" />
                     </div>
 
+                    {/* Category Label */}
+                    <div className="absolute top-6 left-6 z-20">
+                        <span className="inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase">
+                            Yarı Römork
+                        </span>
+                    </div>
+
                     {/* Content - Aligned to Right */}
                     <div className="relative h-full flex flex-col justify-end md:justify-center items-end p-6 pb-6 md:p-16">
                         {/* Mobile Watermark - Fixed at top left */}
@@ -71,7 +78,7 @@ export default function TrailerHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                             >
                                 <Link
-                                    href="/teklif-al"
+                                    href="/yari-romork#teklif-formu"
                                     className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-6 py-3 md:px-8 md:py-4 text-sm md:text-base rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20"
                                 >
                                     Teklif Al

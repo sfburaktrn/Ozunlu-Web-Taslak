@@ -1,6 +1,8 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
     const { scrollY } = useScroll();
@@ -44,6 +46,33 @@ export default function HeroSection() {
                     <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
                         Zamanında üretim, uzun ömürlü üst yapı çözümleri ve sahada güven veren performans
                     </p>
+                </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.7, duration: 1 }}
+                    className="flex flex-col sm:flex-row gap-4 mt-10 md:mt-12"
+                >
+                    <Link
+                        href="/damper#teklif-formu"
+                        className="group relative px-8 py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[#002349] font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:border-white/40 shadow-lg shadow-black/10"
+                    >
+                        <span className="relative z-10 flex items-center gap-3">
+                            Damper Teklifi <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                        </span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                    </Link>
+
+                    <Link
+                        href="/yari-romork#teklif-formu"
+                        className="group relative px-8 py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[#002349] font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:border-white/40 shadow-lg shadow-black/10"
+                    >
+                        <span className="relative z-10 flex items-center gap-3">
+                            Yarı Römork Teklifi <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                        </span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                    </Link>
                 </motion.div>
             </div>
 
