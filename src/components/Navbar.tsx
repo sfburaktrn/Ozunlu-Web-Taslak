@@ -59,7 +59,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="flex-shrink-0 relative z-50 flex items-center opacity-80 hover:opacity-100 transition-opacity"
+                        className="flex-shrink-0 relative z-50 flex items-center"
                     >
                         <div className="relative w-20 h-5">
                             <Image
