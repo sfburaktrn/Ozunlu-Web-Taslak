@@ -180,7 +180,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
 
         <section className="w-full max-w-[1600px] mx-auto mt-8 mb-24" id="teklif-formu">
             <div className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16">
-                <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 min-h-[800px]">
+                <div className={`flex flex-col lg:flex-row gap-8 lg:gap-16 ${selectedProduct ? 'lg:items-start' : 'min-h-[800px]'}`}>
 
                     {/* Left Side: Sticky Image & Summary */}
                     <div className="w-full lg:w-5/12 relative">
