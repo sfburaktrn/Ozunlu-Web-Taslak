@@ -39,7 +39,7 @@ export default function DamperPage() {
                         </span>
                     </div>
 
-                    <div className="max-w-3xl relative text-left z-10 w-full">
+                    <div className="max-w-3xl relative text-left z-10 w-full md:mt-64">
                         {/* Desktop Watermark - Relative to text (Left aligned) */}
                         <div className="hidden md:block absolute -top-32 -left-10 z-0 pointer-events-none select-none">
                             <span className="md:text-[12rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
