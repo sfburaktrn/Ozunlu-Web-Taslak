@@ -15,38 +15,76 @@ export default function DamperPage() {
     };
 
     return (
-        <main className="min-h-screen bg-white pt-24 pb-12 md:pt-32 md:pb-24 px-4 sm:px-6">
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
 
-            {/* 1. HERO CARD */}
-            <motion.section
-                variants={fadeInUp}
-                initial="initial"
-                animate="animate"
-                className="w-full max-w-[1600px] mx-auto bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 mb-8 relative overflow-hidden group"
-            >
-                <div className="relative z-10 max-w-3xl">
-                    <span className="inline-block py-2 px-4 rounded-full bg-white border border-black/5 text-xs font-bold tracking-widest uppercase text-black mb-6">
-                        Özünlü Mühendisliği
-                    </span>
-                    <h1 className="text-4xl md:text-7xl font-bold text-black mb-6 leading-[0.9]">
-                        Damper <br /> <span className="text-black">Çözümleri</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-black max-w-xl leading-relaxed">
-                        Zorlu sahaların vazgeçilmezi. Dayanıklılık ve performansın mükemmel dengesiyle, yükünüz ne olursa olsun işinizi kolaylaştırın.
-                    </p>
-                </div>
-
-                {/* Hero Image */}
-                <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-[-5%] w-full md:w-[60%] h-[300px] md:h-[120%] mt-8 md:mt-0 relative pointer-events-none">
-                    {/* Not: Görsel path güncellenebilir, şimdilik temsili */}
+            {/* 1. HERO SECTION (CARD STYLE) */}
+            <section className="relative w-full h-[600px] md:h-[700px] rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
                     <Image
-                        src="/ozunlu-damper-performans.png"
-                        alt="Damper Hero"
+                        src="/damper-hero.png"
+                        alt="Özünlü Damper"
                         fill
-                        className="object-contain"
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                        priority
                     />
                 </div>
-            </motion.section>
+
+                {/* Content - Aligned to Left */}
+                <div className="relative h-full flex flex-col justify-end md:justify-center items-start px-6 pb-32 md:pb-6 md:px-16 lg:px-24">
+                    {/* Mobile Watermark */}
+                    <div className="absolute top-32 left-6 md:hidden z-0 pointer-events-none select-none">
+                        <span className="text-6xl font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                            ÖZÜNLÜ
+                        </span>
+                    </div>
+
+                    <div className="max-w-3xl relative text-left z-10 w-full">
+                        {/* Desktop Watermark - Relative to text (Left aligned) */}
+                        <div className="hidden md:block absolute -top-32 -left-10 z-0 pointer-events-none select-none">
+                            <span className="md:text-[12rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                                ÖZÜNLÜ
+                            </span>
+                        </div>
+
+                        <motion.h1
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.2, duration: 0.8 }}
+                            className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight"
+                        >
+                            DAMPER <br />
+                            <span className="text-primary">ÇÖZÜMLERİ</span>
+                        </motion.h1>
+
+                        <motion.p
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.3, duration: 0.8 }}
+                            className="text-sm md:text-xl text-gray-300 mb-8 leading-relaxed mr-auto max-w-lg"
+                        >
+                            Zorlu sahaların vazgeçilmezi. Dayanıklılık ve performansın mükemmel dengesiyle, yükünüz ne olursa olsun işinizi kolaylaştırın.
+                        </motion.p>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, duration: 0.8 }}
+                            className="flex flex-col sm:flex-row gap-4 justify-start"
+                        >
+                            <Link
+                                href="#teklif-formu"
+                                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-600 text-white px-8 py-4 text-base rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20"
+                            >
+                                Teklif Alın
+                                <ArrowRight size={20} />
+                            </Link>
+
+
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
 
 
             {/* 2. GENEL ÖZELLİKLER (TEK KART AKIŞI) */}
