@@ -54,15 +54,7 @@ export default function AboutSection() {
 
                                 </div>
 
-                                <motion.a
-                                    href="/corporate"
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
-                                >
-                                    Kurumsal
-                                    <TrendingUp size={20} />
-                                </motion.a>
+
                             </motion.div>
 
                             {/* Right Side - Stats Grid */}
@@ -116,7 +108,7 @@ export default function AboutSection() {
                             whileInView={{ scaleX: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.5 }}
-                            className="mt-16 h-1 bg-gray-200"
+                            className="mt-16 h-1 bg-[#000552]"
                         />
                     </div>
                 </div>
