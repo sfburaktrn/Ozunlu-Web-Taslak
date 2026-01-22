@@ -407,7 +407,7 @@ export default function YariRomorkPage() {
                         </div>
 
                         <div className="mt-12">
-                            <Link href="#teklif-formu" onClick={() => setSelectedProduct(null)} className="inline-flex items-center gap-3 px-8 py-4 bg-transparent text-black border-2 border-black rounded-full font-bold hover:bg-black hover:text-white transition-all">
+                            <Link href="#teklif-formu" onClick={() => setSelectedProduct(null)} className="inline-flex items-center gap-3 px-8 py-4 bg-[#000552] text-white border-2 border-[#000552] rounded-full font-bold hover:bg-[#000552]/90 hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                                 Teklif Alın <ArrowRight size={18} />
                             </Link>
                         </div>

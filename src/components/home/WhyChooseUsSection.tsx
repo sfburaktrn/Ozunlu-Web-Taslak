@@ -20,7 +20,7 @@ const features = [
 // Correct image paths mapped to the public/products directory
 const images = [
     '/products/product-new-1.jpg',
-    '/products/product-new-6.png',
+    '/products/why-choose-new.jpg',
     '/products/product-new-2.jpg',
 ];
 
@@ -132,9 +132,9 @@ export default function WhyChooseUsSection() {
 
                             {/* Interactive Stacked Images */}
                             {/* Mobile: Order 2 (Bottom), Desktop: Order 2 (Right) */}
-                            <div className="order-2 relative h-[450px] lg:h-[600px] w-full flex items-center justify-center">
+                            <div className="order-2 relative h-[450px] lg:h-[700px] w-full flex items-center justify-center">
                                 <div
-                                    className="relative w-[320px] h-[320px] lg:w-[500px] lg:h-[500px] cursor-pointer"
+                                    className="relative w-[340px] h-[240px] lg:w-[750px] lg:h-[500px] cursor-pointer"
                                     onClick={handleNext}
                                 >
                                     {images.map((img, index) => {
