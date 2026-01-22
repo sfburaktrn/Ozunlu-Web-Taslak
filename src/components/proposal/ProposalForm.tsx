@@ -74,11 +74,11 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
         if (selectedProduct) {
             setFormData(prev => ({
                 ...prev,
-                type: 'dorse', // Force to dorse/yari-romork context usually
+                type: initialProduct, // Keep context of the page (damper vs dorse/yari-romork)
                 // Reset other fields if needed, but keep contact info if filled
             }));
         }
-    }, [selectedProduct]);
+    }, [selectedProduct, initialProduct]);
 
     const handleInputChange = (field: keyof FormData, value: string) => {
         setFormData(prev => ({ ...prev, [field]: value }));
