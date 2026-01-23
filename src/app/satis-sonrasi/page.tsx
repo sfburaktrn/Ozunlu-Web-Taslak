@@ -4,7 +4,7 @@ import MapPreview from '@/components/home/MapPreview';
 
 export default function AfterSalesPage() {
     return (
-        <main className="min-h-screen bg-white pt-24 pb-12 md:pt-32 md:pb-24 px-4 sm:px-6">
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
             <AfterSalesHero />
             <DocumentLibrary />
             <MapPreview />
