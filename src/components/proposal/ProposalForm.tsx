@@ -111,7 +111,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
     // For selected product: Qty + Contact only.
     // So isFormValid needs to check Qty if selectedProduct.
     const isFormValid = selectedProduct
-        ? formData.quantity !== '' && isContactValid
+        ? formData.quantity !== '' && formData.paymentMethod !== '' && isContactValid
         : step1Complete && step2Complete && step3Complete && isPaymentValid && isContactValid;
 
     // Auto-scroll effects - only for standard flow
@@ -180,11 +180,11 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
 
         <section className="w-full max-w-[1600px] mx-auto mt-8 mb-24" id="teklif-formu">
             <div className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16">
-                <div className={`flex flex-col lg:flex-row gap-8 lg:gap-16 ${selectedProduct ? 'lg:items-start' : 'min-h-[800px]'}`}>
+                <div className={`flex flex-col lg:flex-row gap-8 lg:gap-16 ${selectedProduct ? '' : 'min-h-[800px]'}`}>
 
                     {/* Left Side: Sticky Image & Summary */}
                     <div className="w-full lg:w-5/12 relative">
-                        <div className="lg:sticky lg:top-32 space-y-8">
+                        <div className="lg:sticky lg:top-14 space-y-4">
                             <div className="hidden lg:block">
                                 <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
                                     {selectedProduct ? 'Seçili Ürün' : 'Konfigüratör'}
@@ -280,6 +280,31 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                         <div className="space-y-6 pt-4">
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">2</div>
+                                                <h3 className="text-2xl font-bold text-ozunlu-950">
+                                                    Ödeme Yöntemi
+                                                </h3>
+                                            </div>
+                                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-4">
+                                                <PaymentOption
+                                                    icon={<Banknote size={24} />}
+                                                    title="Peşin / Havale"
+                                                    description="Nakit ödemelerde özel indirim fırsatı"
+                                                    selected={formData.paymentMethod === 'pesin'}
+                                                    onClick={() => handleInputChange('paymentMethod', 'pesin')}
+                                                />
+                                                <PaymentOption
+                                                    icon={<Building2 size={24} />}
+                                                    title="Vadeli / Çek"
+                                                    description="Vade ve taksitlendirme seçenekleri"
+                                                    selected={formData.paymentMethod === 'vadeli'}
+                                                    onClick={() => handleInputChange('paymentMethod', 'vadeli')}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div className="space-y-6 pt-4">
+                                            <div className="flex items-center gap-4 mb-2">
+                                                <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">3</div>
                                                 <h3 className="text-2xl font-bold text-ozunlu-950">
                                                     İletişim Bilgileri
                                                 </h3>
