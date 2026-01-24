@@ -14,35 +14,43 @@ export default function EkEkipmanlarPage() {
     };
 
     return (
-        <main className="min-h-screen bg-white pt-24 pb-12 md:pt-32 md:pb-24 px-4 sm:px-6">
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
 
             {/* 1. HERO CARD */}
             <motion.section
                 variants={fadeInUp}
                 initial="initial"
                 animate="animate"
-                className="w-full max-w-[1600px] mx-auto bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 mb-8 relative overflow-hidden group"
+                className="w-full max-w-[1600px] mx-auto h-[600px] md:h-[700px] rounded-[2.5rem] relative overflow-hidden group mb-12 shadow-2xl"
             >
-                <div className="relative z-10 max-w-3xl">
-                    <span className="inline-block py-2 px-4 rounded-full bg-white border border-black/5 text-xs font-bold tracking-widest uppercase text-black mb-6">
-                        Tam Destek
-                    </span>
-                    <h1 className="text-4xl md:text-7xl font-bold text-black mb-6 leading-[0.9]">
-                        Ekipman & <br /> <span className="text-black">Yedek Parça</span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-black max-w-xl leading-relaxed">
-                        Üretimin her aşamasında kalite. Orijinal yedek parça ve üstün hidrolik sistemler ile işiniz asla yarım kalmasın.
-                    </p>
-                </div>
-
-                {/* Hero Image */}
-                <div className="md:absolute md:top-1/2 md:-translate-y-1/2 md:right-[-5%] w-full md:w-[60%] h-[300px] md:h-[100%] mt-8 md:mt-0 relative pointer-events-none">
+                {/* Background Image */}
+                <div className="absolute inset-0 w-full h-full">
                     <Image
-                        src="/ozunlu-ek-ekipmanlar-ve-yedek-parca.png"
+                        src="/ek-ekipman-banner.png"
                         alt="Ekipman Hero"
                         fill
-                        className="object-contain"
+                        className="object-cover object-center"
+                        priority
                     />
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-l md:from-black/80 md:via-black/40 md:to-transparent" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 w-full h-full flex flex-col justify-center items-start p-8 md:p-16">
+                    {/* Watermark - Right Aligned */}
+                    <div className="hidden md:block absolute top-6 right-6 z-0 pointer-events-none select-none">
+                        <span className="text-[8rem] md:text-[10rem] font-black text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                            ÖZÜNLÜ
+                        </span>
+                    </div>
+
+                    <h1 className="relative z-10 text-4xl md:text-7xl font-bold text-white mb-6 leading-[0.9] max-w-4xl">
+                        Ekipman & <br /> <span className="text-primary">Yedek Parça</span>
+                    </h1>
+                    <p className="relative z-10 text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed mb-8">
+                        Üretimin her aşamasında kalite. Orijinal yedek parça ve üstün hidrolik sistemler ile işiniz asla yarım kalmasın.
+                    </p>
                 </div>
             </motion.section>
 

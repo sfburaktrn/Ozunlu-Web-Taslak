@@ -78,7 +78,7 @@ export default function EquipmentHero() {
                                 transition={{ delay: 0.4, duration: 0.6 }}
                             >
                                 <Link
-                                    href="/teklif-al"
+                                    href="/ek-ekipmanlar"
                                     className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-6 py-3 md:px-8 md:py-4 text-sm md:text-base rounded-xl font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-primary/20"
                                 >
                                     Teklif Al
