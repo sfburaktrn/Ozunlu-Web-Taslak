@@ -111,8 +111,8 @@ export default function EkEkipmanlarPage() {
 
                     </div>
 
-                    <div className="w-full md:w-1/2 min-h-[400px] relative grayscale group-hover:grayscale-0 transition-all duration-700">
-                        <Image src="/images/products/product-photo-2.png" alt="Yedek Parça Genel" fill className="object-cover rounded-[2rem]" />
+                    <div className="w-full md:w-1/2 min-h-[400px] relative transition-all duration-700">
+                        <Image src="/ek-ekipman-yedek-parca.png" alt="Yedek Parça Genel" fill className="object-cover rounded-[2rem]" />
                     </div>
                 </motion.div>
             </div>
