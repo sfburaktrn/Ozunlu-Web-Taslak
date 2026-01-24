@@ -19,7 +19,7 @@ export default function EquipmentHero() {
                     {/* Background Image */}
                     <div className="relative w-full h-full">
                         <Image
-                            src="/ozunlu-ek-ekipmanlar-ve-yedek-parca.png"
+                            src="/images/ozunlu-ek-ekipmanlar-ve-yedek-parca.png"
                             alt="Özünlü Ek Ekipmanlar ve Yedek Parça Çözümleri"
                             fill
                             className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
