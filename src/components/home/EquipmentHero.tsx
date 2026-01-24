@@ -19,10 +19,10 @@ export default function EquipmentHero() {
                     {/* Background Image */}
                     <div className="relative w-full h-full">
                         <Image
-                            src="/images/ozunlu-ek-ekipmanlar-ve-yedek-parca.png"
+                            src="/ozunlu-ek-ekipmanlar-ve-yedek-parca.png"
                             alt="Özünlü Ek Ekipmanlar ve Yedek Parça Çözümleri"
                             fill
-                            className="object-cover object-left group-hover:scale-105 transition-transform duration-700"
+                            className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                             quality={100}
                         />
                         {/* Gradient Overlay - Reversed for Right Alignment */}
@@ -59,17 +59,17 @@ export default function EquipmentHero() {
                                 transition={{ delay: 0.2, duration: 0.6 }}
                                 className="relative z-10 text-xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-6 leading-tight"
                             >
-                                Güvenilir Çözümler <br />
-                                <span className="text-primary">Kesintisiz Güç</span>
+                                Her İhtiyaca Uygun <br />
+                                <span className="text-primary">Ekipman ve Yedek Parça</span>
                             </motion.h2>
 
                             <motion.p
                                 initial={{ opacity: 0, x: 20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="text-xs md:text-lg text-gray-300 mb-6 md:mb-8 leading-relaxed ml-auto max-w-md"
+                                className="text-xs md:text-lg text-gray-300 mb-6 md:mb-8 leading-relaxed ml-auto max-w-xl"
                             >
-                                Damper ve Yarı Römork sistemleriniz için en dayanıklı yedek parça ve ek ekipman çözümleri. Operasyonlarınızda maksimum verimlilik ve güven için yanınızdayız.
+                                Geniş ürün yelpazemizle, aracınızın gücüne güç katacak, dayanıklı ve yüksek performanslı ekipman çözümleri sunuyoruz.
                             </motion.p>
 
                             <motion.div
