@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FileText, Download, BookOpen, FileCheck } from 'lucide-react';
+import { FileText, Download, BookOpen, Search, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const documents = [
     {
@@ -40,88 +41,99 @@ const documents = [
 ];
 
 export default function DocumentLibrary() {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const filteredDocuments = documents.filter(doc =>
+        doc.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        doc.desc.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
     return (
-        <section className="w-full max-w-[1600px] mx-auto mt-8">
+        <section className="w-full max-w-[1600px] mx-auto py-20 px-6">
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16"
+                className="bg-[#F5F5F7] rounded-[3rem] p-8 md:p-16 relative overflow-hidden"
             >
-                <div className="mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">
-                        TEKNİK <span className="text-black">DOKÜMANLAR</span>
-                    </h2>
-                    <p className="text-black/70 max-w-2xl text-lg">
-                        Ürünlerinizden maksimum verim almanız için hazırladığımız kullanım kılavuzları ve teknik dokümanlara buradan ulaşabilirsiniz.
-                    </p>
+                {/* Decorative Elements */}
+                <div className="absolute top-0 right-0 w-96 h-96 bg-gray-200 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 opacity-50" />
+
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 relative z-10 gap-8">
+                    <div className="max-w-xl">
+                        <div className="inline-block text-sm font-bold text-[#000552]/60 mb-4 tracking-wider uppercase">Bilgi Bankası</div>
+                        <h2 className="text-4xl md:text-5xl font-black text-[#000552] mb-6 tracking-tight">
+                            TEKNİK <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#000552] to-blue-600">DOKÜMANLAR</span>
+                        </h2>
+                        <p className="text-gray-500 text-lg leading-relaxed">
+                            Ürünlerinizden maksimum verim almanız için hazırladığımız kullanım kılavuzları ve teknik dokümanlara buradan ulaşabilirsiniz.
+                        </p>
+                    </div>
+
+                    {/* Search Bar */}
+                    <div className="w-full md:w-auto relative group">
+                        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-[#000552] transition-colors">
+                            <Search size={20} />
+                        </div>
+                        <input
+                            type="text"
+                            placeholder="Doküman ara..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            className="w-full md:w-80 bg-white border border-gray-200 rounded-2xl py-4 pl-12 pr-6 text-[#000552] placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-[#000552]/10 transition-all shadow-sm"
+                        />
+                    </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {documents.map((doc, index) => (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+                    {filteredDocuments.map((doc, index) => (
                         <motion.div
                             key={doc.id}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="group"
+                            className="bg-white rounded-[2rem] p-2 hover:shadow-2xl hover:shadow-[#000552]/10 transition-all duration-500 group"
                         >
-                            {doc.type === 'pdf' ? (
-                                <div className="relative h-full bg-white border border-black/5 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 flex flex-col group-hover:-translate-y-2">
-                                    <div className="w-14 h-18 bg-gradient-to-br from-red-500 to-red-700 rounded-xl shadow-lg mb-6 flex items-center justify-center relative overflow-hidden">
-                                        <BookOpen className="text-white relative z-10" size={28} />
-                                        <div className="absolute bottom-1 right-1 text-[8px] text-white/70 font-bold">PDF</div>
+                            <div className="bg-gray-50 rounded-[1.5rem] p-6 h-full flex flex-col border border-transparent group-hover:border-gray-100 transition-colors">
+                                {/* Icon & Type Badge */}
+                                <div className="flex justify-between items-start mb-6">
+                                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center shadow-lg ${doc.type === 'pdf' ? 'bg-gradient-to-br from-red-500 to-red-600' : 'bg-gradient-to-br from-blue-500 to-blue-600'}`}>
+                                        {doc.type === 'pdf' ? <BookOpen size={20} className="text-white" /> : <FileText size={20} className="text-white" />}
                                     </div>
-
-                                    <h3 className="text-lg font-bold text-black mb-2 group-hover:text-primary transition-colors">
-                                        {doc.title}
-                                    </h3>
-                                    <p className="text-sm text-black/60 mb-6 flex-grow leading-relaxed">
-                                        {doc.desc}
-                                    </p>
-
-                                    <div className="flex items-center justify-between pt-4 border-t border-black/5">
-                                        <span className="text-xs text-black/40 font-mono">{doc.size}</span>
-                                        <Link
-                                            href={doc.path}
-                                            target="_blank"
-                                            className="flex items-center gap-2 text-sm font-bold text-black hover:text-primary transition-colors"
-                                        >
-                                            <Download size={16} />
-                                            İNDİR
-                                        </Link>
-                                    </div>
+                                    <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400 bg-white px-3 py-1 rounded-full shadow-sm">
+                                        {doc.type}
+                                    </span>
                                 </div>
-                            ) : (
-                                <div className="relative h-full bg-white border border-black/5 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 flex flex-col group-hover:-translate-y-2">
-                                    <div className="flex items-start justify-between mb-6">
-                                        <div className="p-3 bg-blue-100 text-blue-600 rounded-xl">
-                                            <FileText size={24} />
-                                        </div>
-                                        <span className="text-xs font-bold text-black/40 bg-black/5 px-2 py-1 rounded">DOCX</span>
-                                    </div>
 
-                                    <h3 className="text-lg font-bold text-black mb-2 group-hover:text-primary transition-colors">
-                                        {doc.title}
-                                    </h3>
-                                    <p className="text-sm text-black/60 mb-6 flex-grow">
-                                        {doc.desc}
-                                    </p>
+                                <h3 className="text-lg font-bold text-[#000552] mb-3 line-clamp-2 min-h-[3.5rem] group-hover:text-blue-600 transition-colors">
+                                    {doc.title}
+                                </h3>
 
-                                    <Link
-                                        href={doc.path}
-                                        target="_blank"
-                                        className="w-full py-3 rounded-xl border border-black/10 flex items-center justify-center gap-2 text-sm font-bold text-black hover:bg-black/5 transition-all"
-                                    >
-                                        <FileCheck size={16} />
-                                        Görüntüle
-                                    </Link>
-                                </div>
-                            )}
+                                <p className="text-sm text-gray-500 mb-8 line-clamp-3 leading-relaxed flex-grow">
+                                    {doc.desc}
+                                </p>
+
+                                <Link
+                                    href={doc.path}
+                                    target="_blank"
+                                    className="w-full py-4 rounded-xl bg-white text-[#000552] text-sm font-bold flex items-center justify-center gap-2 shadow-sm hover:bg-[#000552] hover:text-white transition-all duration-300 group/btn"
+                                >
+                                    {doc.type === 'pdf' ? <Download size={16} /> : <FileText size={16} />}
+                                    <span>İNDİR</span>
+                                    <ArrowRight size={14} className="opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all" />
+                                </Link>
+                            </div>
                         </motion.div>
                     ))}
                 </div>
+
+                {filteredDocuments.length === 0 && (
+                    <div className="text-center py-20 text-gray-400">
+                        <Search size={48} className="mx-auto mb-4 opacity-20" />
+                        <p>Aradığınız kriterlere uygun doküman bulunamadı.</p>
+                    </div>
+                )}
             </motion.div>
         </section>
     );
