@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Hızlı Üretim, Hardox Çelik Üst Yapı Çözümleri – Since 1977",
+      "description": "1977'den bu yana Hardox sertifikalı çelik işleme, ileri mühendislik ve kapsamlı satış sonrası hizmet ağıyla ağır ticari araç üst yapısında Türkiye'nin güvenilir üreticisi."
+    },
+    "damper": {
+      "title": "Özünlü Damper | Yüksek Performanslı Hardox Damper Çözümleri – Since 1977",
+      "description": "Hardox çelik gövde, ileri mühendislik ve 45 yılı aşkın üretim deneyimiyle tasarlanan Özünlü damper modelleri; şantiye, maden ve inşaat sektörünün vazgeçilmezi. Hemen teklif alın."
+    },
+    "yariRomork": {
+      "title": "Özünlü Yarı Römork | Hardox Çelik Damper Dorse – Ağır Hizmet Taşımacılık Çözümleri",
+      "description": "BPW ve Özkoç dingilli, Hardox 450/500 gövdeli yarı römork modelleriyle ağır yük taşımacılığında güvenlik ve verimlilik bir arada. Özünlü mühendisliğiyle üretilmiş dorse çözümleri."
+    },
+    "ekEkipmanlar": {
+      "title": "Dorse Yedek Parça ve Ekipmanları | Orijinal Hidrolik, Dingil, Fren Sistemleri – Özünlü",
+      "description": "Özünlü güvencesiyle orijinal dorse ekipmanları ve yedek parça tedariği. Hidrolik sistemler, BPW-Özkoç dingil, EBS fren kitleri ve LED aydınlatma — geniş stok, hızlı teslimat."
+    },
+    "afterSales": {
+      "title": "Özünlü Satış Sonrası Hizmetler | 7/24 Teknik Servis, Yedek Parça, Yetkili Servis Ağı",
+      "description": "Türkiye genelinde 87 yetkili servis noktası, 7/24 teknik destek hattı ve orijinal yedek parça garantisiyle Özünlü satış sonrası hizmetleri filonuzun operasyonel sürekliliğini sağlar."
+    },
+    "contact": {
+      "title": "İletişim | Özünlü Damper – Teklif ve Destek",
+      "description": "Satış, satış sonrası, ihracat ve insan kaynakları için Özünlü Damper ile iletişime geçin. Merkez ofis: Sultangazi, İstanbul."
+    },
+    "corporate": {
+      "title": "Kurumsal | Özünlü Damper – Since 1977",
+      "description": "1977'den bu yana ağır ticari araç üst yapı sektöründe güven ve kalitenin adresi Özünlü Damper."
+    },
+    "products": {
+      "title": "Ürünler | Özünlü Damper",
+      "description": "Damper, yarı römork ve ek ekipman çözümleri."
+    },
+    "media": {
+      "title": "Medya | Özünlü Damper",
+      "description": "Özünlü Damper haberleri, blog ve sektör içgörüleri."
+    },
+    "career": {
+      "title": "Kariyer | Özünlü Damper",
+      "description": "Özünlü Damper'de kariyer fırsatları."
+    },
+    "legalKvkk": {
+      "title": "KVKK | Özünlü Damper",
+      "description": "Özünlü Damper kişisel verilerin korunması politikası ve KVKK aydınlatma metni."
+    },
+    "legalPrivacy": {
+      "title": "Aydınlatma Metni | Özünlü Damper",
+      "description": "Kişisel verilerin işlenmesine ilişkin aydınlatma metni."
+    },
+    "legalCookie": {
+      "title": "Çerez Politikası | Özünlü Damper",
+      "description": "Özünlü Damper web sitesi çerez kullanım politikası."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Damper",
+      "yariRomork": "Yarı Römork",
+      "ekEkipmanlar": "Ek Ekipmanlar",
+      "satisSonrasi": "Satış Sonrası",
+      "iletisim": "İletişim",
+      "mobileContactQuote": "İletişim & Teklif Al"
+    },
+    "footer": {
+      "logoAlt": "Özünlü Damper Logo",
+      "about": "1977'den bu yana <hardox></hardox> sertifikalı <strong>çelik</strong> işleme, ileri <strong>mühendislik</strong> ve kapsamlı <strong>satış sonrası</strong> hizmet ağıyla — <strong>ağır ticari araç</strong> üst yapısında Türkiye'nin güvenilir üreticisi.",
+      "quickAccess": "Hızlı Erişim",
+      "contact": "İletişim",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "copyright": "© {year} Özünlü Damper. Tüm hakları saklıdır.",
+      "kvkk": "KVKK",
+      "aydinlatmaMetni": "Aydınlatma Metni",
+      "cerezPolitikasi": "Çerez Politikası"
+    },
+    "cta": {
+      "teklifAl": "Teklif Al",
+      "teklifAlin": "Teklif Alın",
+      "hemenTeklifAl": "Hemen Teklif Al",
+      "incele": "İncele",
+      "bizeUlasin": "Bize Ulaşın",
+      "bilgiAl": "Bilgi Al",
+      "iletisimeGecin": "İletişime Geçin",
+      "detayliIncele": "Detaylı İncele",
+      "tumUrunler": "TÜM ÜRÜNLER",
+      "kesfet": "Keşfet",
+      "kaydir": "Kaydır"
+    },
+    "labels": {
+      "modellerimiz": "Modellerimiz",
+      "oneCikanlar": "Öne Çıkanlar",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Hardox In My Body sertifikalı aşınmaya dayanıklı çelik logosu"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "ÜRETİMDE HIZ",
+      "titleLine2": "SAHADA DAYANAKLILIK",
+      "subtitle": "Hızlı <strong>üretim</strong>, uzun ömürlü <strong>üst yapı</strong> çözümleri ve sahada güven veren performans",
+      "ctaDamper": "Damper Teklifi",
+      "ctaYariRomork": "Yarı Römork Teklifi",
+      "scroll": "Kaydır"
+    },
+    "about": {
+      "eyebrow": "Hakkımızda",
+      "title": "Hızlı Üretimle Gücü Tanımlıyoruz",
+      "paragraph1": "1977 yılından bu yana, Türkiye'den dünyaya uzanan <strong>üretim</strong> gücümüzle farklı sektörlere güvenilir ve uzun ömürlü <strong>üst yapı</strong> çözümleri sunuyoruz.",
+      "paragraph2": "İleri teknoloji mühendislik ve tasarım anlayışımızı <hardox></hardox> çeliğinin üstün dayanımıyla birleştiriyor; her ürünü yalnızca bir <strong>üst yapı</strong> değil, operasyonel verimlilik sağlayan bir çözüm olarak geliştiriyoruz.",
+      "cards": {
+        "arge": "AR-GE & MÜHENDİSLİK",
+        "ozelTasarim": "ÖZEL TASARIM ÇÖZÜMLER",
+        "uretimTeknolojisi": "İLERİ ÜRETİM TEKNOLOJİSİ",
+        "sertifikaliUretim": "SERTİFİKALI ÜRETİM"
+      }
+    },
+    "damperHero": {
+      "category": "DAMPER",
+      "imageAlt": "Özünlü Damper Performans ve Dayanıklılık",
+      "titleLine1": "Zorlu Sahaların",
+      "titleLine2": "Mühendislik Cevabı",
+      "description": "Şantiye, maden ve altyapı projelerinin ağır koşullarına karşı geliştirilmiş <strong>damper</strong> sistemlerimiz; <hardox></hardox> gövde dayanımı, yüksek devrilme stabilitesi ve hızlı boşaltım kapasitesiyle sahada kesintisiz çalışır."
+    },
+    "trailerHero": {
+      "category": "YARI RÖMORK",
+      "imageAlt": "Özünlü Yarı Römork ve Dorse Sistemleri",
+      "titleLine1": "Hafif Tasarım",
+      "titleLine2": "Güçlü Performans",
+      "description": "Taşımacılıkta verimlilik, Güçlü ikinci el değeri ve Uzun ömürlü performans sunar."
+    },
+    "equipmentHero": {
+      "category": "Ek Ekipmanlar",
+      "imageAlt": "Özünlü Ek Ekipmanlar ve Yedek Parça Çözümleri",
+      "titleLine1": "Filonuz İçin",
+      "titleLine2": "Komple Ekipman Çözümleri",
+      "description": "<strong>Hidrolik</strong> sistemlerden EBS fren kitine, premium dingil markalarından LED aydınlatmaya — tüm dorse ekipmanları orijinal sertifikalı ve Özünlü güvencesiyle, geniş stoktan hızlı teslimatla."
+    },
+    "whyChooseUs": {
+      "eyebrow": "NEDEN ÖZÜNLÜ?",
+      "title": "Neden Özünlü?",
+      "features": {
+        "0": "Araç üreticisi onaylı <strong>üst yapı</strong> tasarımı — farklı şasi ve çekici konfigürasyonlarına uyumlu <strong>üretim</strong>",
+        "1": "<hardox></hardox> sertifikalı <strong>çelik</strong> işleme ve robotik kaynak teknolojisi",
+        "2": "Tüm yasal düzenlemeler ve Avrupa güvenlik standartlarına (ECE/ADR) tam uyum",
+        "3": "Kapsamlı garanti ve kesintisiz <strong>satış sonrası</strong> hizmet",
+        "4": "Türkiye genelinde 50 ilde 87 <strong>yetkili servis</strong> noktası",
+        "5": "Yüksek ikinci el değeri koruyan yapısal tasarım anlayışı",
+        "6": "50'yi aşkın ülkeye ihracat — küresel ölçekte kanıtlanmış kalite"
+      },
+      "cardLabel": "Özünlü Güvencesi"
+    },
+    "mapPreview": {
+      "eyebrow": "Servis Haritası",
+      "title": "Türkiye Geneli ",
+      "titleHighlight": "Yetkili Servis Ağı",
+      "description": "Aracınız nerede olursa olsun, Özünlü güvencesi yanınızda. 50 ilde konumlanan 87 <strong>yetkili servis</strong> noktamız; orijinal yedek parça stoku ve sertifikalı teknisyenleriyle filonuzun operasyonel sürekliliğini kesintisiz sağlar.",
+      "citiesLabel": "Servis bulunan şehir",
+      "pointsLabel": "Toplam servis noktası",
+      "topCities": "Öne çıkan iller",
+      "serviceCount": "{count} servis noktası",
+      "tapHint": "Haritaya dokun",
+      "mapInstruction": "Şehir seç, servis bilgisi açılır.",
+      "modalEyebrow": "Servis detayları",
+      "plateCode": "Plaka kodu: {code}",
+      "closeAria": "Kapat",
+      "noService": "Bu il için kayıtlı servis bulunamadı."
+    },
+    "partners": {
+      "title": "Sektörün Lider Markalarının Tercihi",
+      "description": "<strong>Ağır ticari araç</strong> <strong>üst yapı</strong> çözümlerimiz; şantiye, maden ve uzun mesafe taşımacılığının en zorlu güzergahlarında güvenle çalışır.",
+      "footer": "Onaylı Üst Yapı Tedarikçisi"
+    },
+    "products": {
+      "eyebrow": "Ürünlerimiz",
+      "title": "ÜST YAPI",
+      "titleHighlight": "ÇÖZÜMLERİ",
+      "subtitle": "Her ihtiyaca uygun, <hardox></hardox> <strong>çelik</strong> kalitesinde <strong>üst yapı</strong> çözümleri",
+      "viewDetails": "Detaylı İncele",
+      "items": {
+        "damper": {
+          "title": "DAMPER",
+          "description": "<hardox></hardox> <strong>çelik</strong> gövde, <strong>hidrolik sistem</strong>, 20-40m³ kapasite",
+          "features": [
+            "Hardox 450 Çelik",
+            "Hidrolik Sistem",
+            "Hafif Yapı"
+          ]
+        },
+        "dorse": {
+          "title": "DORSE",
+          "description": "Yüksek mukavemet, uzun ömür, özel tasarım seçenekleri",
+          "features": [
+            "Özel Tasarım",
+            "Yüksek Dayanım",
+            "Kolay Bakım"
+          ]
+        },
+        "kar": {
+          "title": "KAR KÜREME",
+          "description": "Müşteri ihtiyaçlarına özel <strong>damper</strong> çözümleri",
+          "features": [
+            "Kişiye Özel",
+            "Ar-Ge Desteği",
+            "Hızlı Üretim"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "En İyilerin Tercihi"
+    },
+    "stats": {
+      "exportCountries": "İhracat Ülkesi",
+      "steelProcessing": "Yıllık Çelik İşleme (Ton)",
+      "experience": "Yıllık Tecrübe"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü Damper Çözümleri",
+      "titleLine1": "DAMPER",
+      "titleLine2": "ÇÖZÜMLERİ",
+      "description": "Zorlu sahaların <strong>mühendislik</strong> cevabı. <hardox></hardox> gövde, yüksek devrilme stabilitesi ve optimize yük kapasitesiyle — her koşulda üstün performans."
+    },
+    "products": {
+      "title": "Hazır Damper Çözümleri",
+      "subtitle": "En çok tercih edilen konfigürasyonları sizin için hazırladık. İnceleyin veya hemen teklif alın."
+    },
+    "features": {
+      "titleLine1": "Güç ve Estetiğin",
+      "titleLine2": "Mükemmel Uyumu",
+      "item01Title": "Hardox® Gövde",
+      "item01Content": "İsveç <hardox></hardox> çeliğiyle üretilen gövde yapısı, aşınma ve darbe direncinde sektör standardını yeniden tanımlar. Uzun ömür, düşük bakım maliyeti.",
+      "item02Title": "Aerodinamik Mühendislik",
+      "item02Content": "Rüzgar tüneli testleriyle optimize edilen aerodinamik hatlar, yakıt tüketimini düşürür ve toplam işletme maliyetini azaltır.",
+      "item03Title": "Yüksek Tonaj Kapasitesi",
+      "item03Content": "Hafifletilmiş yüksek mukavemetli şasi tasarımı sayesinde yasal yük sınırlarında maksimum taşıma kapasitesi.",
+      "imageAlt": "Özünlü Damper Özellikleri"
+    },
+    "configurator": {
+      "title": "Damper Konfigüratörü",
+      "subtitle": "İhtiyaçlarınıza özel yüksek performanslı damper çözümü için teknik detayları belirleyin. Uzman ekibimiz en kısa sürede size özel teklif hazırlasın."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Damper",
+        "description": "Şantiye ve inşaat sektörünün ağır koşullarına karşı mühendislik odaklı tasarım. <hardox></hardox> gövde opsiyonu, güçlendirilmiş şasi ve hızlı boşaltım kapasitesiyle maksimum operasyonel verimlilik.",
+        "features": [
+          "Hardox Gövde Opsiyonu",
+          "Yüksek Devrilme Stabilitesi",
+          "Hızlı Boşaltım",
+          "Güçlendirilmiş Şasi",
+          "Kolay Bakım"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Hardox® Gövde",
+            "content": "Aşınma ve darbe direncinde uzun ömür, düşük bakım maliyeti."
+          },
+          "sasi": {
+            "title": "Şasi",
+            "content": "Güçlendirilmiş şasi ile ağır hizmet kullanımına uygun yapı."
+          },
+          "bosaltim": {
+            "title": "Boşaltım",
+            "content": "Optimize hidrolik sistem ile hızlı ve kontrollü boşaltım."
+          },
+          "verimlilik": {
+            "title": "Verimlilik",
+            "content": "Operasyonel sürekliliği artıran mühendislik detayları."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Damper",
+        "description": "Yüksek tonajlı yüklerde sektörün en güçlü gövde-şasi kombinasyonu.",
+        "features": [
+          "Ağır Hizmet Kullanımı",
+          "Optimize Hacim",
+          "Dayanımlı Yan Duvarlar",
+          "Servis Kolaylığı",
+          "Opsiyonel Ekipman"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Kapasite",
+            "content": "Yüksek tonaj operasyonları için optimize edilmiş hacim."
+          },
+          "dayanim": {
+            "title": "Dayanım",
+            "content": "Ağır hizmet kullanımında darbe ve aşınmaya dayanıklı yapı."
+          },
+          "donanim": {
+            "title": "Donanım",
+            "content": "Branda, kapak, aydınlatma ve diğer opsiyonlar."
+          },
+          "uyumluluk": {
+            "title": "Uyumluluk",
+            "content": "Farklı şasi ihtiyaçlarına uygun montaj alternatifleri."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Damper",
+        "description": "Kompakt kullanım senaryolarında dengeli ağırlık ve ekonomik işletme maliyeti.",
+        "features": [
+          "Kompakt Tasarım",
+          "Ekonomik İşletme",
+          "Dengeli Ağırlık",
+          "Kolay Manevra",
+          "Uzun Ömür"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Kullanım",
+            "content": "Kompakt saha operasyonlarında çevik çalışma."
+          },
+          "agirlik": {
+            "title": "Ağırlık",
+            "content": "Yasal sınırlar içinde maksimum kapasite."
+          },
+          "maliyet": {
+            "title": "Maliyet",
+            "content": "Ekonomik işletme maliyeti ve bakım kolaylığı."
+          },
+          "performans": {
+            "title": "Performans",
+            "content": "Günlük yoğun kullanımda stabil çalışma."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü Yarı Römork Çözümleri",
+      "titleLine1": "YARI RÖMORK",
+      "titleLine2": "ÇÖZÜMLERİ",
+      "description": "Ağır taşımacılığın yükünü mühendislikle hafifletin. <hardox></hardox> <strong>çelik</strong> yapı, ileri fren teknolojisi ve optimize yük dağılımıyla — her güzergahta üstün performans ve güvenlik."
+    },
+    "products": {
+      "title": "Hazır Yarı Römork Çözümleri",
+      "subtitle": "Sektörün en çok tercih edilen konfigürasyonlarını sizin için hazırladık. Hemen teklif alın veya kendi aracınızı tasarlayın."
+    },
+    "features": {
+      "titleLine1": "Yolun Her Anına",
+      "titleLine2": "Hakim Olun",
+      "item01Title": "İleri Teknoloji Şasi",
+      "item01Content": "Robotik kaynak teknolojisiyle üretilen yüksek mukavemetli şasi; esnemeye karşı maksimum direnç, minimize edilmiş ağırlık, maksimize edilmiş yük kapasitesi.",
+      "item02Title": "Aktif Güvenlik Sistemleri",
+      "item02Content": "EBS elektronik fren sistemi ve RSS (Roll Stability Support) devrilme önleme teknolojisiyle Avrupa güvenlik standartlarında sürüş güvencesi.",
+      "item03Title": "Çok Yönlü Adaptasyon",
+      "item03Content": "Lowbed taşımacılığından konteyner lojistiğine, bulk kargo çözümlerinden özel yük konfigürasyonlarına kadar tam esneklik.",
+      "imageAlt": "Yarı Römork Özellikleri"
+    },
+    "configurator": {
+      "title": "Yarı Römork Konfigüratörü",
+      "subtitle": "Filosunuza en uygun yüksek performanslı yarı römork çözümünü tasarlamak için detayları paylaşın. Uzman mühendis ekibimiz ihtiyaçlarınıza özel teknik teklif hazırlasın."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Yarı Römork",
+        "description": "22m³ yüksek hacimli yapısı, Hardox 450 çelik gövdesi ve BPW dingil sistemiyle uzun mesafe ağır hizmet taşımacılığının güvenilir çözümü.",
+        "features": [
+          "22m³ Hacim",
+          "Hardox 450 Gövde",
+          "5/6mm Sac Kalınlığı",
+          "BPW Dingil (Yabancı)",
+          "Katlanır Tampon"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Yarı Römork",
+        "description": "Hardox 500 şasi teknolojisi ve hidrolik rampa sistemiyle yüksek performanslı dorse.",
+        "features": [
+          "Özkoç Dingil (Yerli)",
+          "Hardox 500 Şasi",
+          "Sabit Tampon",
+          "Hidrolik Rampa",
+          "Genişletilebilir Yanlar"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Yarı Römork",
+        "description": "21m³ hacim, hafifletilmiş gövde yapısı ve otomatik branda sistemiyle verimli taşımacılık.",
+        "features": [
+          "21m³ Hacim",
+          "Özkoç Dingil",
+          "3/4mm Sac (Hafif)",
+          "Otomatik Branda",
+          "Manşonlu Kapak"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "EK EKİPMANLAR",
+      "imageAlt": "Ekipman ve Yedek Parça Çözümleri",
+      "titleLine1": "Filonuz İçin",
+      "titleLine2": "Komple Ekipman Çözümleri",
+      "description": "<strong>Hidrolik</strong> sistemlerden EBS fren kitine, premium dingil markalarından LED aydınlatmaya — tüm dorse ekipmanları orijinal sertifikalı ve Özünlü güvencesiyle, geniş stoktan hızlı teslimatla."
+    },
+    "categories": {
+      "title": "Ürün Grupları",
+      "subtitle": "Orijinal sertifikalı ekipmanlar, geniş stok ve hızlı teslimat avantajıyla tek adreste.",
+      "hidrolik": {
+        "title": "Hidrolik Sistemler",
+        "desc": "Yüksek basınç kapasiteli pompalar, silindirler ve vana sistemleri. Zorlu saha koşullarına karşı kanıtlanmış güç ve dayanıklılık."
+      },
+      "dingil": {
+        "title": "Dingil & Süspansiyon",
+        "desc": "BPW ve Özkoç başta olmak üzere premium marka dingil ve süspansiyon sistemleri."
+      },
+      "fren": {
+        "title": "Fren Sistemleri",
+        "desc": "EBS ve ABS uyumlu fren kitleri. Avrupa güvenlik standartlarına uygun maksimum frenleme performansı."
+      },
+      "elektrik": {
+        "title": "Elektrik & Aydınlatma",
+        "desc": "Yüksek görünürlüklü LED aydınlatma sistemleri. ECE R48 uyumu."
+      },
+      "aksesuar": {
+        "title": "Dorse Aksesuarları",
+        "desc": "Takım dolabı, yakıt tankı, destek ayağı ve özel konfigürasyon aksesuarları."
+      },
+      "yedekParca": {
+        "title": "Yedek Parça",
+        "desc": "Orijinal ve garantili yedek parça. Aynı gün kargo seçeneğiyle minimum araç duruş süresi."
+      }
+    },
+    "cta": {
+      "title": "Aradığınız Parçayı Bulamadınız mı?",
+      "description": "Uzman ekibimizle iletişime geçin, ihtiyacınız olan ürünü sizin için temin edelim."
+    },
+    "performance": {
+      "imageAlt": "Dorse Ekipmanları",
+      "titleLine1": "Doğru Parça,",
+      "titleLine2": "Maksimum Performans",
+      "description": "Araç performansı doğrudan ekipman kalitesine bağlıdır. Özünlü olarak, dünya genelinde kanıtlanmış markaların orijinal sertifikalı ürünlerini geniş stoklarımızdan anında teslim ediyoruz.",
+      "bullets": {
+        "0": "Orijinal ve sertifikalı ürün garantisi",
+        "1": "Geniş marka ve model uyum yelpazesi",
+        "2": "Rekabetçi fiyat ve esnek ödeme seçenekleri",
+        "3": "Uzman teknik danışmanlık desteği"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "%100",
+        "label": "Orijinal Ürün Garantisi"
+      },
+      "delivery": {
+        "value": "Hızlı",
+        "label": "Stoktan Teslimat"
+      },
+      "support": {
+        "value": "Destek",
+        "label": "Satış Öncesi & Sonrası"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Satış Sonrası Hizmetler",
+      "badge": "ÖZÜNLÜ GÜVENCESİ",
+      "titleLine1": "YOLUN HER",
+      "titleLine2": "ANINDA",
+      "titleLine3": "YANINIZDAYIZ",
+      "description": "Satın alma sonrası başlayan gerçek ortaklık. Türkiye genelinde 87 <strong>yetkili servis</strong> noktası, 7/24 teknik destek hattı ve orijinal yedek parça güvencesiyle aracınızın operasyonel sürekliliğini kesintisiz koruyoruz."
+    },
+    "services": {
+      "title": "HİZMETLERİMİZ",
+      "subtitle": "Aracınızın değerini koruyan ve operasyonel verimliliğinizi artıran profesyonel çözümler.",
+      "servisAgi": {
+        "title": "Yetkili Servis Ağı",
+        "description": "Türkiye'nin 50 ilinde konumlanan 87 <strong>yetkili servis</strong> noktasıyla filonuzu fabrika standartlarında donanımlı teknisyenlere emanet edin."
+      },
+      "yedekParca": {
+        "title": "Orijinal Yedek Parça",
+        "description": "%100 orijinal Özünlü parçaları ile minimum araç duruş süresi."
+      },
+      "garanti": {
+        "title": "Garanti Kapsamı",
+        "description": "Tüm ürünlerimiz kapsamlı üretici garantisi kapsamındadır."
+      },
+      "teknikDestek": {
+        "title": "7/24 Teknik Destek",
+        "description": "Uzman teknik destek ekibimiz gün ve gece ulaşılabilir."
+      }
+    },
+    "documents": {
+      "eyebrow": "Bilgi Bankası",
+      "title": "TEKNİK",
+      "titleHighlight": "DOKÜMANLAR",
+      "description": "Ürünlerinizden maksimum verim almanız için hazırladığımız kullanım kılavuzları, bakım prosedürleri ve teknik şartnameler — Türkçe ve İngilizce olarak erişiminizde.",
+      "searchPlaceholder": "Doküman ara...",
+      "download": "İNDİR",
+      "noResults": "Aradığınız kriterlere uygun doküman bulunamadı.",
+      "damperManual": {
+        "title": "Damper Kullanım Kılavuzu",
+        "desc": "Damper ürün grubu için temel kullanım ve güvenlik talimatları."
+      },
+      "dorseManual": {
+        "title": "Dorse ve Yarı Römork Kılavuzu",
+        "desc": "Genel yarı römork ürünleri için standart kullanım kılavuzu."
+      },
+      "generalManual": {
+        "title": "Genel Ürün & Bakım El Kitabı (TR/EN)",
+        "desc": "Tüm dorse modelleri için kapsamlı bakım ve teknik detaylar."
+      },
+      "damperSpec": {
+        "title": "Damper Teknik Şartnamesi (TR/EN)",
+        "desc": "Damperli araçlar için özel teknik spesifikasyonlar."
+      }
+    },
+    "map": {
+      "title": "Türkiye Geneli Yetkili Servis Ağı",
+      "description": "50 ilde 87 yetkili servis noktası. Haritadan şehrinizi seçin, size en yakın servis ve iletişim bilgilerine anında ulaşın."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "İLETİŞİM",
+      "subtitle": "Sorularınız ve projeleriniz için bizimle iletişime geçin.",
+      "headOffice": "MERKEZ OFİS",
+      "submit": "Gönder",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "hours": "Çalışma Saatleri",
+      "hoursValue": "Hafta içi & Cmt: 09:00 - 18:30",
+      "name": "AD SOYAD",
+      "namePlaceholder": "Adınız Soyadınız",
+      "company": "FİRMA",
+      "companyPlaceholder": "Firma Ünvanı",
+      "email": "E-POSTA",
+      "emailPlaceholder": "ornek@sirket.com",
+      "phone": "TELEFON",
+      "phonePlaceholder": "05XX XXX XX XX",
+      "message": "MESAJ",
+      "messagePlaceholder": "Mesajınızı buraya yazınız...",
+      "mapTitle": "Özünlü Damper Konum Haritası"
+    },
+    "tabs": {
+      "sales": "SATIŞ & PAZARLAMA",
+      "service": "SATIŞ SONRASI HİZMETLER",
+      "export": "İHRACAT",
+      "hr": "İNSAN KAYNAKLARI"
+    }
+  },
+  "proposal": {
+    "configurator": "Konfigüratör",
+    "selectedProduct": "Seçili Ürün",
+    "selectedSubtitle": "Seçtiğiniz ürün için teklif formunu doldurun.",
+    "defaultSubtitle": "İhtiyaçlarınıza özel çözümler için detayları belirleyin.",
+    "clearSelection": "Farklı bir ürün seçin veya konfigüretörü kullanın",
+    "stepQuantity": "Adet Belirleyin",
+    "stepPayment": "Ödeme Yöntemi",
+    "stepContact": "İletişim Bilgileri",
+    "vehicleInfo": "Araç Bilgisi",
+    "trailerSpecs": "Dorse Özellikleri",
+    "cargoType": "Yük Tipi",
+    "dimensions": "Ölçüler & Adet",
+    "submit": "TEKLİF İSTE",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Talebiniz Alındı!",
+    "successMessage": "Teklif formunuz başarıyla bize ulaştı. Satış temsilcimiz en kısa sürede sizinle iletişime geçecektir.",
+    "newForm": "Yeni Form Oluştur",
+    "kvkkNotice": "Kişisel verileriniz KVKK kapsamında korunmaktadır.",
+    "payment": {
+      "cashTitle": "Peşin / Havale",
+      "cashDesc": "Nakit ödemelerde özel indirim fırsatı",
+      "creditTitle": "Vadeli / Çek",
+      "creditDesc": "Vade ve taksitlendirme seçenekleri"
+    },
+    "fields": {
+      "quantity": "İstenen Adet",
+      "brand": "Araç Markası",
+      "brandPh": "Örn: Mercedes, Ford",
+      "model": "Araç Modeli",
+      "modelPh": "Örn: 4140, Cargo",
+      "volume": "İstenen Hacim (m³)",
+      "volumePh": "Örn: 30",
+      "axle": "Dingil Seçeneği",
+      "domestic": "Yerli",
+      "foreign": "Yabancı",
+      "cargo": "Taşınacak Yük",
+      "cargoPh": "Örn: Hafriyat, Kum, Asfalt",
+      "thickness": "Taban/Yan Kalınlık (mm)",
+      "thicknessPh": "Örn: 5mm / 4mm",
+      "company": "Firma Adı",
+      "companyPh": "Firma Ünvanı",
+      "contact": "Yetkili Kişi",
+      "contactPh": "Ad Soyad",
+      "phone": "Telefon",
+      "phonePh": "05XX...",
+      "email": "E-posta",
+      "emailPh": "mail@sirket.com",
+      "heardFrom": "Bizi Nereden Duydunuz?",
+      "heardFromPh": "Google, Sosyal Medya, Referans..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "1977'den Beri",
+      "titleLine1": "HIZIN VE GÜVENİN",
+      "titleLine2": "İMZASI",
+      "description": "Yarım asra yaklaşan tecrübemizle, <strong>ağır ticari araç</strong> <strong>üst yapı</strong> sektöründe standartları belirliyor, geleceği sağlam temeller üzerine inşa ediyoruz."
+    },
+    "values": {
+      "trust": {
+        "title": "GÜVEN",
+        "desc": "45 yılı aşkın süredir müşterilerimize, iş ortaklarımıza ve çalışanlarımıza verdiğimiz her sözün arkasındayız."
+      },
+      "quality": {
+        "title": "KALİTE",
+        "desc": "<hardox></hardox> çelikten en ince işçiliğe kadar, üretimimizin her aşamasında mükemmelliği hedefliyoruz."
+      },
+      "innovation": {
+        "title": "İNOVASYON",
+        "desc": "Sektörün ihtiyaçlarını analiz ediyor, AR-GE çalışmalarımızla geleceğin teknolojilerini bugüne taşıyoruz."
+      },
+      "speed": {
+        "title": "HIZ",
+        "desc": "Optimize edilmiş <strong>üretim</strong> süreçlerimizle, kaliteden ödün vermeden en kısa sürede teslimat sağlıyor; işinize hız katıyoruz."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "SADECE ÇELİK DEĞİL,",
+      "titleLine2": "GÜVEN İŞLİYORUZ.",
+      "p1": "<strong>1977'den bugüne,</strong> üretim bandımızdan çıkan sadece bir damper değil; yarım asırlık bir tecrübenin, mühendislik tutkusunun ve inovasyonun somut halidir. Bizim için kalite, bir kontrol aşaması değil, üretim kültürümüzün ta kendisidir.",
+      "p2": "Zorlu coğrafyalar ve ağır yükler altında test edilen ürünlerimiz, en ince detayına kadar <durability>dayanıklılık</durability> ve <performance>performans</performance> odaklı tasarlanır. <hardox></hardox> çeliğinin sağlamlığını, Türk mühendisliğinin kıvrak zekasıyla birleştiriyor; sektöre yön veren standartları belirliyoruz.",
+      "quote": "Her kaynak dikişinde, her montajda ve her teslimatta tek bir amacımız var: İş ortağımızın gücüne güç katmak."
+    },
+    "leader": {
+      "eyebrow": "Liderin Mesajı",
+      "quote": "Özünlü olarak, sadece ürün üretmiyoruz; güven inşa ediyoruz. Her damper ve her dorse, yarım asırlık tecrübemizin ve mühendislik tutkumuzun bir yansımasıdır.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Yönetim Kurulu Başkanı",
+      "bio": "1977 yılında kurulan Özünlü Damper, bugün 40'tan fazla ülkeye ihracat yapan, sektörün öncü üreticilerinden biridir. Qualified Body Builder unvanıyla dünya standartlarında üretim gerçekleştiriyoruz.",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "ZAMANIN",
+      "titleHighlight": "ÖTESİNDE",
+      "m1977": {
+        "title": "Temellerin Atılması",
+        "desc": "İstanbul Okmeydanı'nda 30 metrekarelik bir atölyede, büyük hayallerle başlayan üretim yolculuğu."
+      },
+      "m1985": {
+        "title": "İlk Büyüme",
+        "desc": "Üretim tesislerinin günümüzde de bulunduğu İstanbul Habipler'e taşınması."
+      },
+      "m1991": {
+        "title": "Geleceğe Yatırım",
+        "desc": "Mevcut fabrika arazisinin satın alınması ve lider üstyapı üreticisi olma yolunda ilk büyük yatırım."
+      },
+      "m2005": {
+        "title": "Yetkili Üst Yapıcı",
+        "desc": "Dünyanın önde gelen kamyon üreticilerinin sektördeki ilk \"Qualified Body Builder\" unvanı."
+      },
+      "m2009": {
+        "title": "Kapasite Artışı",
+        "desc": "Yeni Kalite Yönetimi anlayışı ve makine yatırımları ile üretim kapasitesinin iki katına çıkarılması."
+      },
+      "mToday": {
+        "title": "Küresel Güç",
+        "desc": "3 ayrı tesiste toplam 30.000 m² üretim alanı, 81 ilde satış ve 40'tan fazla ülkeye ihracat."
+      },
+      "yearToday": "Günümüz"
+    },
+    "facilities": {
+      "title": "ÜRETİM GÜCÜ VE",
+      "titleHighlight": "KÜRESEL ETKİ",
+      "description": "Yerli <strong>mühendislik</strong> gücümüzü küresel standartlarla birleştiriyor, dünyanın dört bir yanına değer taşıyoruz.",
+      "production": {
+        "title": "ÜRETİM ÜSSÜ",
+        "value": "30.000 m²",
+        "desc": "3 ayrı tesiste, 7.000m² kapalı ve 23.000m² açık alanda yüksek kapasiteli üretim."
+      },
+      "global": {
+        "title": "KÜRESEL ERİŞİM",
+        "value": "40+ Ülke",
+        "desc": "Türkiye'nin 81 iline ve dünyada 40'tan fazla ülkeye uzanan geniş ihracat ağı."
+      },
+      "quality": {
+        "title": "KALİTE STANDARDI",
+        "value": "QBB Belgesi",
+        "desc": "Sektörde ilk \"Qualified Body Builder\" (Yetkili Üst Yapıcı) unvanına sahip marka."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "YETENEK",
+      "titleHighlight": "YÖNETİMİ",
+      "description": "Büyük hayaller kuran, tutkulu ve yetenekli profesyoneller için eşsiz bir kariyer yolculuğu sunuyoruz."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "BİZDE",
+      "titleLine2": "HAYAT",
+      "description": "Özünlü ailesi olarak, sadece en iyi damperleri üretmekle kalmıyor, en mutlu çalışanlara sahip olmayı da hedefliyoruz. İnovasyon, sürekli gelişim ve takım ruhu DNA'mızda var.",
+      "imageAlt": "Özünlü Kariyer {n}"
+    },
+    "jobs": {
+      "title": "SENİ",
+      "titleHighlight": "BEKLİYORUZ",
+      "subtitle": "Geleceği şekillendiren ekibin bir parçası ol.",
+      "apply": "Başvur",
+      "noJobsTitle": "Şu anda açık pozisyonumuz bulunmamaktadır",
+      "noJobsDesc": "Ancak yetenekli profesyonellerle tanışmak için her zaman heyecanlıyız. Genel başvuru yapmak için CV'nizi bize gönderebilir veya sosyal medya hesaplarımızı takip edebilirsiniz."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "MEDYA",
+      "titleHighlight": "MERKEZİ",
+      "description": "Sektörel haberler, teknolojik gelişmeler ve Özünlü dünyasından en son güncellemeler."
+    },
+    "gallery": {
+      "title": "ÜRÜN",
+      "titleHighlight": "GALERİSİ",
+      "description": "Üstün mühendislik ve kusursuz işçiliğin detaylarını inceleyin.",
+      "imageAlt": "Özünlü Damper Galeri {n}",
+      "detailAlt": "Galeri detayı"
+    },
+    "insights": {
+      "title": "SEKTÖREL",
+      "titleHighlight": "İÇGÖRÜLER",
+      "description": "Ağır ticari araç sektörü, üretim teknolojileri ve lojistik dünyasına dair uzman analizleri.",
+      "readMore": "Devamını Oku",
+      "articles": {
+        "a1": {
+          "category": "AKADEMİ",
+          "title": "Damper Üretiminde Çelik Kalitesi: Hardox ve Ötesi",
+          "excerpt": "Yüksek mukavemetli çelik kullanımı, damper ömrünü nasıl uzatır? Hardox 450 ve 500 karşılaştırması ve yatırım getirisi analizi.",
+          "date": "12 Ocak 2025",
+          "readTime": "6 dk okuma"
+        },
+        "a2": {
+          "category": "SEKTÖREL",
+          "title": "2026 Lojistik ve Taşımacılık Trendleri",
+          "excerpt": "Küresel tedarik zincirindeki değişimler, yakıt verimliliği düzenlemeleri ve Türk taşımacılık sektörünü bekleyen fırsatlar.",
+          "date": "08 Ocak 2025",
+          "readTime": "8 dk okuma"
+        },
+        "a3": {
+          "category": "SÜRDÜRÜLEBİLİRLİK",
+          "title": "Yeşil Lojistik: Hafif Damperlerin Çevresel Etkisi",
+          "excerpt": "Daha hafif şasi tasarımı ile yakıt tasarrufu sağlamak ve karbon ayak izini azaltmak mümkün. Özünlü AR-GE verileriyle inceledik.",
+          "date": "03 Ocak 2025",
+          "readTime": "5 dk okuma"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "İNTERAKTİF",
+    "titleHighlight": "DENEYİM",
+    "description": "Klasik katalogların ötesine geçin. Özünlü Damper'in mühendislik harikası ürünlerini 360 derece inceleyin ve projenize en uygun konfigürasyonu kendiniz oluşturun.",
+    "view360": {
+      "dragHint": "Çevirmek için Sürükleyin",
+      "bodyLabel": "GÖVDE MODELİ",
+      "disclaimer": "*Temsili 3D Görsel Mockup"
+    },
+    "configurator": {
+      "title": "KONFİGÜRATÖR",
+      "bodyColor": "Gövde Rengi",
+      "capacity": "Hacim Kapasitesi",
+      "tires": "Lastik Tipi",
+      "summary": "Özet",
+      "colors": {
+        "blue": "Özünlü Mavisi",
+        "gray": "Kuvars Gri",
+        "navy": "Gece Mavisi",
+        "red": "Alev Kırmızısı"
+      },
+      "tireTypes": {
+        "standard": "Standart",
+        "offRoad": "Off-Road",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "2 Dakikada Boşaltım",
+        "desc": "Optimize edilmiş hidrolik sistem ile rekor sürede tahliye."
+      },
+      "weight": {
+        "title": "%15 Daha Hafif",
+        "desc": "Özel alaşımlı tasarım sayesinde daha fazla yük taşıma kapasitesi."
+      },
+      "hardox": {
+        "title": "Hardox 450 Gövde",
+        "desc": "Aşınmaya ve darbeye karşı maksimum dirençli İsveç çeliği."
+      },
+      "balance": {
+        "title": "Akıllı Denge Sistemi",
+        "desc": "Zorlu arazilerde devrilmeyi önleyen aktif sensör teknolojisi."
+      }
+    }
+  }
+}

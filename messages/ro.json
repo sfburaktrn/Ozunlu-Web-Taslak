@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Producție rapidă, suprastructuri din oțel Hardox – Since 1977",
+      "description": "Din 1977, producătorul de încredere al Turciei de suprastructuri pentru vehicule comerciale grele, cu prelucrare certificată Hardox a oțelului, inginerie avansată și rețea completă de servicii post-vânzare."
+    },
+    "damper": {
+      "title": "Özünlü Damper | Soluții basculante Hardox de înaltă performanță – Since 1977",
+      "description": "Modele basculante Özünlü proiectate cu caroserie din oțel Hardox, inginerie avansată și peste 45 de ani de experiență în producție — esențiale pentru construcții, minerit și infrastructură. Solicitați o ofertă astăzi."
+    },
+    "yariRomork": {
+      "title": "Özünlü Semiremorcă | Remorcă basculantă din oțel Hardox – Soluții de transport greu",
+      "description": "Modele de semiremorci cu osii BPW și Özkoç și caroserii Hardox 450/500 pentru transport sigur și eficient al încărcăturilor grele. Inginerie Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Piese de schimb și echipamente pentru remorci | Sisteme hidraulice, osii și frâne originale – Özünlü",
+      "description": "Echipamente și piese de schimb originale pentru remorci cu garanția Özünlü. Sisteme hidraulice, osii BPW-Özkoç, kituri de frână EBS și iluminare LED — stoc extins, livrare rapidă."
+    },
+    "afterSales": {
+      "title": "Özünlü Servicii post-vânzare | Asistență tehnică 24/7, piese de schimb, rețea de service autorizat",
+      "description": "87 de puncte de service autorizate în toată Turcia, linie de asistență tehnică 24/7 și garanție pentru piese de schimb originale — serviciile post-vânzare Özünlü asigură continuitatea operațională a flotei dumneavoastră."
+    },
+    "contact": {
+      "title": "Contact | Özünlü Damper – Oferte și asistență",
+      "description": "Contactați Özünlü Damper pentru vânzări, post-vânzare, export și resurse umane. Sediu central: Sultangazi, Istanbul."
+    },
+    "corporate": {
+      "title": "Corporativ | Özünlü Damper – Since 1977",
+      "description": "Din 1977, Özünlü Damper este adresa încrederii și calității în sectorul suprastructurilor pentru vehicule comerciale grele."
+    },
+    "products": {
+      "title": "Produse | Özünlü Damper",
+      "description": "Soluții basculante, semiremorci și echipamente."
+    },
+    "media": {
+      "title": "Media | Özünlü Damper",
+      "description": "Știri, blog și perspective din industrie de la Özünlü Damper."
+    },
+    "career": {
+      "title": "Carieră | Özünlü Damper",
+      "description": "Oportunități de carieră la Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Basculantă",
+      "yariRomork": "Semiremorcă",
+      "ekEkipmanlar": "Echipamente",
+      "satisSonrasi": "Post-vânzare",
+      "iletisim": "Contact",
+      "mobileContactQuote": "Contact și ofertă"
+    },
+    "footer": {
+      "logoAlt": "Logo Özünlü Damper",
+      "about": "Din 1977, prelucrare certificată <hardox></hardox> a oțelului, inginerie avansată și rețea completă de servicii post-vânzare — producătorul de încredere al Turciei de suprastructuri pentru vehicule comerciale grele.",
+      "quickAccess": "Acces rapid",
+      "contact": "Contact",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "copyright": "© {year} Özünlü Damper. Toate drepturile rezervate.",
+      "kvkk": "GDPR",
+      "aydinlatmaMetni": "Notificare de confidențialitate",
+      "cerezPolitikasi": "Politica de cookie-uri"
+    },
+    "cta": {
+      "teklifAl": "Solicitați ofertă",
+      "teklifAlin": "Solicitați ofertă",
+      "hemenTeklifAl": "Solicitați ofertă acum",
+      "incele": "Vizualizați",
+      "bizeUlasin": "Contactați-ne",
+      "bilgiAl": "Aflați mai multe",
+      "iletisimeGecin": "Luați legătura",
+      "detayliIncele": "Vedeți detalii",
+      "tumUrunler": "TOATE PRODUSELE",
+      "kesfet": "Explorați",
+      "kaydir": "Derulați"
+    },
+    "labels": {
+      "modellerimiz": "Modelele noastre",
+      "oneCikanlar": "Repere",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Logo Hardox In My Body oțel certificat rezistent la uzură"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "VITEZĂ ÎN PRODUCȚIE",
+      "titleLine2": "DURABILITATE PE TEREN",
+      "subtitle": "Producție rapidă, suprastructuri de lungă durată și performanță dovedită pe teren",
+      "ctaDamper": "Ofertă basculantă",
+      "ctaYariRomork": "Ofertă semiremorcă",
+      "scroll": "Derulați"
+    },
+    "about": {
+      "eyebrow": "Despre noi",
+      "title": "Definim puterea prin producție rapidă",
+      "paragraph1": "Din 1977, oferim soluții de suprastructuri fiabile și de lungă durată diverselor sectoare, cu o putere de producție care se extinde din Turcia în lume.",
+      "paragraph2": "Combinăm ingineria și designul avansat cu durabilitatea superioară a oțelului <hardox></hardox>, dezvoltând fiecare produs nu doar ca <strong>suprastructură</strong>, ci ca soluție care asigură eficiența operațională.",
+      "cards": {
+        "arge": "C&D și INGINERIE",
+        "ozelTasarim": "SOLUȚII DE DESIGN PERSONALIZAT",
+        "uretimTeknolojisi": "TEHNOLOGIE AVANSATĂ DE PRODUCȚIE",
+        "sertifikaliUretim": "PRODUCȚIE CERTIFICATĂ"
+      }
+    },
+    "damperHero": {
+      "category": "BASCULANTĂ",
+      "imageAlt": "Performanță și durabilitate Özünlü basculantă",
+      "titleLine1": "Răspunsul ingineresc",
+      "titleLine2": "pentru condiții dificile",
+      "description": "Sistemele noastre basculante, dezvoltate pentru condiții grele din construcții, minerit și proiecte de infrastructură, funcționează neîntrerupt pe teren cu durabilitatea caroseriei <hardox></hardox>, stabilitate ridicată la basculare și capacitate rapidă de descărcare."
+    },
+    "trailerHero": {
+      "category": "SEMIREMORCĂ",
+      "imageAlt": "Özünlü semiremorci și sisteme de remorci",
+      "titleLine1": "Design ușor",
+      "titleLine2": "Performanță puternică",
+      "description": "Oferă eficiență în transport, valoare ridicată la revânzare și performanță de lungă durată."
+    },
+    "equipmentHero": {
+      "category": "Echipamente",
+      "imageAlt": "Özünlü soluții de echipamente și piese de schimb",
+      "titleLine1": "Soluții complete",
+      "titleLine2": "de echipamente pentru flota dumneavoastră",
+      "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
+    },
+    "whyChooseUs": {
+      "eyebrow": "DE CE ÖZÜNLÜ?",
+      "title": "De ce Özünlü?",
+      "features": {
+        "0": "Design de <strong>suprastructură</strong> aprobat de producătorul de vehicule — producție compatibilă cu diferite configurații de șasiu și tractor",
+        "1": "Prelucrare certificată <hardox></hardox> a oțelului și tehnologie de sudare robotică",
+        "2": "Conformitate deplină cu toate reglementările și standardele europene de siguranță (ECE/ADR)",
+        "3": "Garanție completă și servicii post-vânzare neîntrerupte",
+        "4": "87 de puncte de service autorizate în 50 de provincii din Turcia",
+        "5": "Design structural care păstrează valoarea ridicată la revânzare",
+        "6": "Export în peste 50 de țări — calitate dovedită la nivel global"
+      },
+      "cardLabel": "Garanția Özünlü"
+    },
+    "mapPreview": {
+      "eyebrow": "Harta service-urilor",
+      "title": "Rețea națională de ",
+      "titleHighlight": "service autorizat",
+      "description": "Oriunde se află vehiculul dumneavoastră, Özünlü este alături de dumneavoastră. Cele 87 de puncte de service autorizate din 50 de provincii asigură continuitatea operațională a flotei cu piese de schimb originale și tehnicieni certificați.",
+      "citiesLabel": "Orașe cu service",
+      "pointsLabel": "Număr total de puncte de service",
+      "topCities": "Orașe principale",
+      "serviceCount": "{count} puncte de service",
+      "tapHint": "Atingeți harta",
+      "mapInstruction": "Selectați un oraș pentru a deschide informațiile de service.",
+      "modalEyebrow": "Detalii service",
+      "plateCode": "Cod județean: {code}",
+      "closeAria": "Închide",
+      "noService": "Nu a fost găsit niciun service înregistrat pentru această provincie."
+    },
+    "partners": {
+      "title": "Preferat de liderii din industrie",
+      "description": "Soluțiile noastre de suprastructuri pentru vehicule comerciale grele funcționează fiabil pe cele mai dificile rute din construcții, minerit și transport pe distanțe lungi.",
+      "footer": "Furnizor aprobat de suprastructuri"
+    },
+    "products": {
+      "eyebrow": "Produsele noastre",
+      "title": "SUPRASTRUCTURI",
+      "titleHighlight": "SOLUȚII",
+      "subtitle": "Soluții de suprastructuri din <strong>oțel</strong> <hardox></hardox> pentru fiecare nevoie",
+      "viewDetails": "Vezi detalii",
+      "items": {
+        "damper": {
+          "title": "BASCULANTĂ",
+          "description": "Caroserie din <strong>oțel</strong> <hardox></hardox>, <strong>sistem hidraulic</strong>, capacitate 20-40 m³",
+          "features": [
+            "Oțel Hardox 450",
+            "Sistem hidraulic",
+            "Structură ușoară"
+          ]
+        },
+        "dorse": {
+          "title": "REMORCĂ",
+          "description": "Rezistență ridicată, durată lungă de viață și opțiuni de design personalizat",
+          "features": [
+            "Design personalizat",
+            "Durabilitate ridicată",
+            "Întreținere ușoară"
+          ]
+        },
+        "kar": {
+          "title": "ECHIPAMENT DE DESZĂPEZIRE",
+          "description": "Soluții de <strong>basculantă</strong> adaptate cerințelor specifice ale clientului",
+          "features": [
+            "Personalizare completă",
+            "Suport R&D",
+            "Producție rapidă"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "Alegerea celor mai buni"
+    },
+    "stats": {
+      "exportCountries": "Țări de export",
+      "steelProcessing": "Prelucrare anuală a oțelului (tone)",
+      "experience": "Ani de experiență"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü soluții basculante",
+      "titleLine1": "BASCULANTĂ",
+      "titleLine2": "SOLUȚII",
+      "description": "Răspunsul ingineresc pentru condiții dificile. Caroserie <hardox></hardox>, stabilitate ridicată la basculare și capacitate de încărcare optimizată — performanță superioară în orice condiție."
+    },
+    "products": {
+      "title": "Soluții basculante gata configurate",
+      "subtitle": "Am pregătit cele mai preferate configurații pentru dumneavoastră. Explorați sau solicitați o ofertă acum."
+    },
+    "features": {
+      "titleLine1": "Armonia perfectă între",
+      "titleLine2": "putere și design",
+      "item01Title": "Caroserie Hardox®",
+      "item01Content": "Structura caroseriei din <strong>oțel</strong> suedez <hardox></hardox> redefinește standardele industriei în rezistența la uzură și impact. Durată de viață lungă, costuri reduse de întreținere.",
+      "item02Title": "Inginerie aerodinamică",
+      "item02Content": "Liniile aerodinamice optimizate în tunel de vânt reduc consumul de combustibil și costul total de operare.",
+      "item03Title": "Capacitate ridicată de încărcare",
+      "item03Content": "Design de șasiu ușor și rezistent asigură capacitate maximă de transport în limitele legale de încărcare.",
+      "imageAlt": "Caracteristici Özünlü basculantă"
+    },
+    "configurator": {
+      "title": "Configurator basculantă",
+      "subtitle": "Specificați detaliile tehnice pentru o basculantă de înaltă performanță adaptată nevoilor dumneavoastră. Echipa noastră de experți va pregăti oferta personalizată în cel mai scurt timp."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Basculantă",
+        "description": "Design orientat spre inginerie pentru condițiile grele din șantier și construcții. Opțiune de caroserie din <hardox></hardox>, șasiu ranforsat și descărcare rapidă pentru eficiență operațională maximă.",
+        "features": [
+          "Opțiune caroserie Hardox",
+          "Stabilitate ridicată la basculare",
+          "Descărcare rapidă",
+          "Șasiu ranforsat",
+          "Întreținere ușoară"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Caroserie Hardox®",
+            "content": "Durată lungă de viață și costuri reduse de întreținere în condiții de uzură și impact."
+          },
+          "sasi": {
+            "title": "Șasiu",
+            "content": "Structură de șasiu ranforsată, potrivită pentru utilizare în regim greu."
+          },
+          "bosaltim": {
+            "title": "Descărcare",
+            "content": "Descărcare rapidă și controlată cu sistem hidraulic optimizat."
+          },
+          "verimlilik": {
+            "title": "Eficiență",
+            "content": "Detalii de inginerie care sporesc continuitatea operațională."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Basculantă",
+        "description": "Cea mai puternică combinație caroserie-șasiu pentru încărcături de tonaj ridicat.",
+        "features": [
+          "Utilizare în regim greu",
+          "Volum optimizat",
+          "Pereți laterali rezistenți",
+          "Service facil",
+          "Echipamente opționale"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacitate",
+            "content": "Volum optimizat pentru operațiuni cu tonaj ridicat."
+          },
+          "dayanim": {
+            "title": "Durabilitate",
+            "content": "Structură rezistentă la șocuri și uzură în exploatare intensivă."
+          },
+          "donanim": {
+            "title": "Echipare",
+            "content": "Prelată, oblon, iluminare și alte opțiuni suplimentare."
+          },
+          "uyumluluk": {
+            "title": "Compatibilitate",
+            "content": "Alternative de montaj pentru diferite cerințe de șasiu."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Basculantă",
+        "description": "Greutate echilibrată și costuri de exploatare economice pentru scenarii compacte de utilizare.",
+        "features": [
+          "Design compact",
+          "Exploatare economică",
+          "Greutate echilibrată",
+          "Maniabilitate ușoară",
+          "Durată lungă de viață"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Utilizare",
+            "content": "Funcționare agilă în aplicații compacte de șantier."
+          },
+          "agirlik": {
+            "title": "Greutate",
+            "content": "Capacitate maximă în limitele legale."
+          },
+          "maliyet": {
+            "title": "Cost",
+            "content": "Cost redus de exploatare și întreținere simplificată."
+          },
+          "performans": {
+            "title": "Performanță",
+            "content": "Funcționare stabilă în utilizare zilnică intensivă."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü soluții semiremorcă",
+      "titleLine1": "SEMIREMORCĂ",
+      "titleLine2": "SOLUȚII",
+      "description": "Ușurați transportul greu prin inginerie. Structură din <strong>oțel</strong> <hardox></hardox>, tehnologie avansată de frânare și distribuție optimizată a încărcăturii — performanță și siguranță superioare pe fiecare rută."
+    },
+    "products": {
+      "title": "Soluții semiremorcă gata configurate",
+      "subtitle": "Am pregătit cele mai preferate configurații din industrie. Solicitați o ofertă sau proiectați propriul vehicul."
+    },
+    "features": {
+      "titleLine1": "Stăpâniți",
+      "titleLine2": "fiecare moment pe drum",
+      "item01Title": "Tehnologie avansată de șasiu",
+      "item01Content": "Șasiu de înaltă rezistență produs prin sudare robotică; rezistență maximă la flexiune, greutate minimizată, capacitate de încărcare maximizată.",
+      "item02Title": "Sisteme active de siguranță",
+      "item02Content": "Sistem electronic de frânare EBS și tehnologie RSS (Roll Stability Support) de prevenire a răsturnării — siguranță la condus conform standardelor europene.",
+      "item03Title": "Adaptare versatilă",
+      "item03Content": "Flexibilitate completă — de la transport lowbed la logistică container, de la mărfuri vrac la configurații speciale de încărcare.",
+      "imageAlt": "Caracteristici semiremorcă"
+    },
+    "configurator": {
+      "title": "Configurator semiremorcă",
+      "subtitle": "Partajați detaliile pentru a proiecta cea mai potrivită semiremorcă de înaltă performanță pentru flota dumneavoastră. Echipa noastră de ingineri va pregăti o ofertă tehnică personalizată."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semiremorcă",
+        "description": "Soluție fiabilă pentru transport greu pe distanțe lungi, cu volum de 22 m³, caroserie Hardox 450 și sistem de osii BPW.",
+        "features": [
+          "Volum 22 m³",
+          "Caroserie Hardox 450",
+          "Tablă 5/6 mm",
+          "Axă BPW (import)",
+          "Bară spate rabatabilă"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semiremorcă",
+        "description": "Remorcă de înaltă performanță cu șasiu Hardox 500 și rampă hidraulică pentru operațiuni solicitante.",
+        "features": [
+          "Axă Özkoç (locală)",
+          "Șasiu Hardox 500",
+          "Bară spate fixă",
+          "Rampă hidraulică",
+          "Laterale extensibile"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semiremorcă",
+        "description": "Transport eficient cu volum de 21 m³, caroserie ușoară și sistem automat de prelată.",
+        "features": [
+          "Volum 21 m³",
+          "Axă Özkoç",
+          "Tablă 3/4 mm (ușoară)",
+          "Prelată automată",
+          "Capac cu manșon"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "ECHIPAMENTE",
+      "imageAlt": "Soluții de echipamente și piese de schimb",
+      "titleLine1": "Soluții complete",
+      "titleLine2": "de echipamente pentru flota dumneavoastră",
+      "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
+    },
+    "categories": {
+      "title": "Grupuri de produse",
+      "subtitle": "Echipamente certificate originale, stoc extins și livrare rapidă — totul într-un singur loc.",
+      "hidrolik": {
+        "title": "Sisteme hidraulice",
+        "desc": "Pompe, cilindri și sisteme de supape cu capacitate mare de presiune. Putere și durabilitate dovedite pentru condiții grele de lucru."
+      },
+      "dingil": {
+        "title": "Osie și suspensie",
+        "desc": "Sisteme premium de osii și suspensie, inclusiv BPW și Özkoç, pentru fiabilitate și durată lungă de exploatare."
+      },
+      "fren": {
+        "title": "Sisteme de frânare",
+        "desc": "Kituri de frânare compatibile EBS și ABS. Performanță maximă de frânare conform standardelor europene de siguranță."
+      },
+      "elektrik": {
+        "title": "Sisteme electrice și iluminare",
+        "desc": "Sisteme de iluminare LED cu vizibilitate ridicată și conformitate ECE R48."
+      },
+      "aksesuar": {
+        "title": "Accesorii pentru remorci",
+        "desc": "Lăzi de scule, rezervoare, picioare de sprijin și accesorii pentru configurații speciale."
+      },
+      "yedekParca": {
+        "title": "Piese de schimb",
+        "desc": "Piese de schimb originale și garantate, cu opțiune de expediere în aceeași zi și timp minim de staționare a vehiculului."
+      }
+    },
+    "cta": {
+      "title": "Nu ați găsit piesa căutată?",
+      "description": "Contactați echipa noastră de experți — vom procura produsul de care aveți nevoie."
+    },
+    "performance": {
+      "imageAlt": "Echipamente pentru remorci",
+      "titleLine1": "Piesa potrivită,",
+      "titleLine2": "performanță maximă",
+      "description": "Performanța vehiculului depinde direct de calitatea echipamentelor. La Özünlü, livrăm instant produse certificate originale de la mărci dovedite la nivel global din stocul nostru extins.",
+      "bullets": {
+        "0": "Garanție pentru produse originale și certificate",
+        "1": "Compatibilitate extinsă cu mărci și modele",
+        "2": "Prețuri competitive și opțiuni flexibile de plată",
+        "3": "Suport tehnic de consultanță oferit de specialiști"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "%100",
+        "label": "Garanție de produs original"
+      },
+      "delivery": {
+        "value": "Rapidă",
+        "label": "Livrare din stoc"
+      },
+      "support": {
+        "value": "Suport",
+        "label": "Înainte și după vânzare"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Servicii post-vânzare",
+      "badge": "GARANȚIA ÖZÜNLÜ",
+      "titleLine1": "ALĂTURI DE DUMNEAVOASTRĂ",
+      "titleLine2": "ÎN FIECARE",
+      "titleLine3": "MOMENT",
+      "description": "Parteneriatul adevărat începe după achiziție. Protejăm continuitatea operațională a vehiculului dumneavoastră cu 87 de puncte de service autorizate la nivel național, asistență tehnică 24/7 și garanție pentru piese de schimb originale."
+    },
+    "services": {
+      "title": "SERVICIILE NOASTRE",
+      "subtitle": "Soluții profesionale care protejează valoarea vehiculului dumneavoastră și cresc eficiența operațională.",
+      "servisAgi": {
+        "title": "Rețea de service autorizat",
+        "description": "Încredințați-vă flota unor tehnicieni certificați, echipați la standarde de fabrică, în 87 de puncte de service autorizat din 50 de provincii ale Turciei."
+      },
+      "yedekParca": {
+        "title": "Piese de schimb originale",
+        "description": "Piese Özünlü 100% originale pentru un timp minim de imobilizare a vehiculului."
+      },
+      "garanti": {
+        "title": "Acoperire în garanție",
+        "description": "Toate produsele noastre sunt acoperite de o garanție completă a producătorului."
+      },
+      "teknikDestek": {
+        "title": "Asistență tehnică 24/7",
+        "description": "Echipa noastră de suport tehnic este disponibilă zi și noapte."
+      }
+    },
+    "documents": {
+      "eyebrow": "Baza de cunoștințe",
+      "title": "DOCUMENTE",
+      "titleHighlight": "TEHNICE",
+      "description": "Manuale de utilizare, proceduri de întreținere și specificații tehnice pregătite pentru eficiență maximă a produselor dumneavoastră — disponibile în turcă și engleză.",
+      "searchPlaceholder": "Căutați documente...",
+      "download": "DESCĂRCAȚI",
+      "noResults": "Nu s-au găsit documente care să corespundă criteriilor dumneavoastră.",
+      "damperManual": {
+        "title": "Manual de utilizare pentru basculantă",
+        "desc": "Instrucțiuni esențiale de utilizare și siguranță pentru gama de produse basculante."
+      },
+      "dorseManual": {
+        "title": "Manual pentru remorcă și semiremorcă",
+        "desc": "Manual standard de utilizare pentru produsele generale de semiremorci."
+      },
+      "generalManual": {
+        "title": "Manual general de produs și întreținere (TR/EN)",
+        "desc": "Instrucțiuni complete de întreținere și detalii tehnice pentru toate modelele de remorci."
+      },
+      "damperSpec": {
+        "title": "Specificație tehnică pentru basculantă (TR/EN)",
+        "desc": "Specificații tehnice dedicate pentru vehicule basculante."
+      }
+    },
+    "map": {
+      "title": "Rețea națională de service autorizat",
+      "description": "87 de puncte de service autorizate în 50 de provincii. Selectați orașul pe hartă pentru informații instantanee despre service și contact."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "CONTACT",
+      "subtitle": "Contactați-ne pentru întrebările și proiectele dumneavoastră.",
+      "headOffice": "SEDIU CENTRAL",
+      "submit": "Trimite",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Program de lucru",
+      "hoursValue": "Luni-vineri și sâ.: 09:00 - 18:30",
+      "name": "NUME COMPLET",
+      "namePlaceholder": "Numele dumneavoastră complet",
+      "company": "COMPANIE",
+      "companyPlaceholder": "Numele companiei",
+      "email": "E-MAIL",
+      "emailPlaceholder": "exemplu@companie.com",
+      "phone": "TELEFON",
+      "phonePlaceholder": "+40 ...",
+      "message": "MESAJ",
+      "messagePlaceholder": "Scrieți mesajul dumneavoastră aici...",
+      "mapTitle": "Harta locației Özünlü Damper"
+    },
+    "tabs": {
+      "sales": "VÂNZĂRI ȘI MARKETING",
+      "service": "SERVICII POST-VÂNZARE",
+      "export": "EXPORT",
+      "hr": "RESURSE UMANE"
+    }
+  },
+  "proposal": {
+    "configurator": "Configurător",
+    "selectedProduct": "Produs selectat",
+    "selectedSubtitle": "Completați formularul de ofertă pentru produsul selectat.",
+    "defaultSubtitle": "Specificați detaliile pentru o soluție adaptată nevoilor dumneavoastră.",
+    "clearSelection": "Selectați un alt produs sau utilizați configuratorul",
+    "stepQuantity": "Stabiliți cantitatea",
+    "stepPayment": "Metoda de plată",
+    "stepContact": "Informații de contact",
+    "vehicleInfo": "Informații despre vehicul",
+    "trailerSpecs": "Specificațiile remorcii",
+    "cargoType": "Tipul încărcăturii",
+    "dimensions": "Dimensiuni și cantitate",
+    "submit": "SOLICITAȚI OFERTĂ",
+    "submitting": "Se trimite...",
+    "successTitle": "Solicitarea a fost primită!",
+    "successMessage": "Formularul dumneavoastră de ofertă a fost trimis cu succes. Un reprezentant de vânzări vă va contacta în cel mai scurt timp.",
+    "newForm": "Creați un formular nou",
+    "kvkkNotice": "Datele dumneavoastră cu caracter personal sunt protejate conform legislației aplicabile privind protecția datelor.",
+    "payment": {
+      "cashTitle": "Numerar / Transfer bancar",
+      "cashDesc": "Reducere specială pentru plățile în numerar",
+      "creditTitle": "La termen / CEC",
+      "creditDesc": "Opțiuni flexibile de termen și rate"
+    },
+    "fields": {
+      "quantity": "Cantitate dorită",
+      "brand": "Marca vehiculului",
+      "brandPh": "Ex.: Mercedes, Ford",
+      "model": "Modelul vehiculului",
+      "modelPh": "Ex.: 4140, Cargo",
+      "volume": "Volum dorit (m³)",
+      "volumePh": "Ex.: 30",
+      "axle": "Opțiune de axă",
+      "domestic": "Locală",
+      "foreign": "Import",
+      "cargo": "Încărcătură transportată",
+      "cargoPh": "Ex.: pământ, nisip, asfalt",
+      "thickness": "Grosime podea/lateral (mm)",
+      "thicknessPh": "Ex.: 5 mm / 4 mm",
+      "company": "Numele companiei",
+      "companyPh": "Denumirea companiei",
+      "contact": "Persoană de contact",
+      "contactPh": "Nume și prenume",
+      "phone": "Telefon",
+      "phonePh": "+40 ...",
+      "email": "E-mail",
+      "emailPh": "mail@companie.com",
+      "heardFrom": "De unde ați auzit de noi?",
+      "heardFromPh": "Google, Social Media, recomandare..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Din 1977",
+      "titleLine1": "SEMNĂTURA",
+      "titleLine2": "VITEZEI ȘI ÎNCREDERII",
+      "description": "Cu aproape jumătate de secol de experiență, stabilim standardele în sectorul suprastructurilor pentru vehicule comerciale grele și construim viitorul pe baze solide."
+    },
+    "values": {
+      "trust": {
+        "title": "ÎNCREDERE",
+        "desc": "De peste 45 de ani, ne respectăm fiecare promisiune făcută clienților, partenerilor și angajaților noștri."
+      },
+      "quality": {
+        "title": "CALITATE",
+        "desc": "De la oțelul <hardox></hardox> până la cea mai fină execuție, urmărim excelența în fiecare etapă a producției."
+      },
+      "innovation": {
+        "title": "INOVAȚIE",
+        "desc": "Analizăm nevoile industriei și, prin activitatea noastră de cercetare-dezvoltare, aducem tehnologiile viitorului în prezent."
+      },
+      "speed": {
+        "title": "VITEZĂ",
+        "desc": "Prin procese de producție optimizate, livrăm rapid fără compromisuri privind calitatea și adăugăm viteză afacerii dumneavoastră."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NU PRELUCRĂM DOAR OȚEL,",
+      "titleLine2": "CI ȘI ÎNCREDERE.",
+      "p1": "<strong>Din 1977 până astăzi,</strong> ceea ce iese de pe liniile noastre de producție nu este doar o basculantă, ci forma concretă a aproape jumătate de secol de experiență, pasiune inginerească și inovație. Pentru noi, calitatea nu este o simplă etapă de control, ci însăși cultura noastră de producție.",
+      "p2": "Testate în geografii dificile și sub sarcini grele, produsele noastre sunt proiectate până la cel mai mic detaliu cu accent pe <durability>durabilitate</durability> și <performance>performanță</performance>. Îmbinăm robustețea oțelului <hardox></hardox> cu ingeniozitatea flexibilă a ingineriei turcești și stabilim standardele care ghidează industria.",
+      "quote": "În fiecare cordon de sudură, în fiecare montaj și la fiecare livrare avem un singur scop: să adăugăm forță puterii partenerilor noștri."
+    },
+    "leader": {
+      "eyebrow": "Mesajul liderului",
+      "quote": "La Özünlü, nu producem doar echipamente; construim încredere. Fiecare basculantă și fiecare remorcă reflectă aproape jumătate de secol de experiență și pasiune inginerească.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Președintele Consiliului de Administrație",
+      "bio": "Fondată în 1977, Özünlü Damper este astăzi unul dintre producătorii de referință ai sectorului, exportând în peste 40 de țări. Producem la standarde mondiale cu titlul de Qualified Body Builder (constructor de suprastructuri autorizat).",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "DINCOLO DE",
+      "titleHighlight": "TIMP",
+      "m1977": {
+        "title": "Punerea bazelor",
+        "desc": "Drumul producției a început într-un atelier de 30 m² din Okmeydanı, Istanbul, cu visuri mari."
+      },
+      "m1985": {
+        "title": "Prima extindere",
+        "desc": "Mutarea facilităților de producție în Habipler, Istanbul, unde se află și astăzi."
+      },
+      "m1991": {
+        "title": "Investiție în viitor",
+        "desc": "Achiziționarea actualului teren al fabricii și prima investiție majoră pe drumul către statutul de lider în suprastructuri."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "Primul titlu \"Qualified Body Builder\" din sector, acordat de producătorii mondiali de camioane."
+      },
+      "m2009": {
+        "title": "Creșterea capacității",
+        "desc": "Dublarea capacității de producție printr-o nouă abordare a managementului calității și investiții în utilaje."
+      },
+      "mToday": {
+        "title": "Forță globală",
+        "desc": "Suprafață totală de producție de 30.000 m² în 3 unități separate, vânzări în toate cele 81 de provincii și export în peste 40 de țări."
+      },
+      "yearToday": "Astăzi"
+    },
+    "facilities": {
+      "title": "PUTERE DE PRODUCȚIE ȘI",
+      "titleHighlight": "IMPACT GLOBAL",
+      "description": "Combinăm forța ingineriei locale cu standardele globale și livrăm valoare în întreaga lume.",
+      "production": {
+        "title": "BAZĂ DE PRODUCȚIE",
+        "value": "30.000 m²",
+        "desc": "Producție de mare capacitate în 3 unități, cu 7.000 m² spațiu acoperit și 23.000 m² spațiu deschis."
+      },
+      "global": {
+        "title": "ACOPERIRE GLOBALĂ",
+        "value": "40+ țări",
+        "desc": "O rețea extinsă de export care acoperă toate cele 81 de provincii ale Turciei și peste 40 de țări din lume."
+      },
+      "quality": {
+        "title": "STANDARD DE CALITATE",
+        "value": "Certificat QBB",
+        "desc": "Primul brand din sector care deține titlul \"Qualified Body Builder\" (constructor de suprastructuri autorizat)."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "MANAGEMENTUL",
+      "titleHighlight": "TALENTULUI",
+      "description": "Oferim un parcurs profesional unic pentru profesioniști pasionați și talentați, cu aspirații mari."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "VIAȚA",
+      "titleLine2": "LA NOI",
+      "description": "Ca familie Özünlü, nu ne propunem doar să producem cele mai bune basculante, ci și să avem cei mai fericiți angajați. Inovația, dezvoltarea continuă și spiritul de echipă fac parte din ADN-ul nostru.",
+      "imageAlt": "Carieră la Özünlü {n}"
+    },
+    "jobs": {
+      "title": "VĂ",
+      "titleHighlight": "AȘTEPTĂM",
+      "subtitle": "Faceți parte din echipa care modelează viitorul.",
+      "apply": "Aplică",
+      "noJobsTitle": "În prezent nu avem posturi deschise",
+      "noJobsDesc": "Totuși, suntem întotdeauna bucuroși să cunoaștem profesioniști talentați. Ne puteți trimite CV-ul pentru o aplicație generală sau ne puteți urmări pe rețelele sociale."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "CENTRU",
+      "titleHighlight": "MEDIA",
+      "description": "Știri din industrie, evoluții tehnologice și cele mai recente actualizări din universul Özünlü."
+    },
+    "gallery": {
+      "title": "GALERIE",
+      "titleHighlight": "DE PRODUSE",
+      "description": "Explorați detaliile unei inginerii superioare și ale unei execuții impecabile.",
+      "imageAlt": "Galerie Özünlü Damper {n}",
+      "detailAlt": "Detaliu galerie"
+    },
+    "insights": {
+      "title": "PERSPECTIVE",
+      "titleHighlight": "DIN INDUSTRIE",
+      "description": "Analize de specialitate despre sectorul vehiculelor comerciale grele, tehnologiile de producție și logistică.",
+      "readMore": "Citește mai mult",
+      "articles": {
+        "a1": {
+          "category": "ACADEMIE",
+          "title": "Calitatea oțelului în producția de basculante: Hardox și dincolo de acesta",
+          "excerpt": "Cum prelungește utilizarea oțelului de înaltă rezistență durata de viață a unei basculante? Comparație între Hardox 450 și 500 și analiză a rentabilității investiției.",
+          "date": "12 ianuarie 2025",
+          "readTime": "6 min de citit"
+        },
+        "a2": {
+          "category": "INDUSTRIE",
+          "title": "Tendințele în logistică și transport pentru 2026",
+          "excerpt": "Schimbări în lanțurile globale de aprovizionare, reglementări privind eficiența combustibilului și oportunitățile care așteaptă sectorul transporturilor din Turcia.",
+          "date": "8 ianuarie 2025",
+          "readTime": "8 min de citit"
+        },
+        "a3": {
+          "category": "SUSTENABILITATE",
+          "title": "Logistică verde: impactul asupra mediului al basculantelor ușoare",
+          "excerpt": "Este posibil să economisiți combustibil și să reduceți amprenta de carbon printr-un design de șasiu mai ușor. Analizăm subiectul cu date din R&D-ul Özünlü.",
+          "date": "3 ianuarie 2025",
+          "readTime": "5 min de citit"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "EXPERIENȚĂ",
+    "titleHighlight": "INTERACTIVĂ",
+    "description": "Depășiți limitele cataloagelor clasice. Explorați capodoperele de inginerie Özünlü Damper la 360° și configurați singuri soluția ideală pentru proiectul dumneavoastră.",
+    "view360": {
+      "dragHint": "Trageți pentru a roti",
+      "bodyLabel": "MODELUL CAROSERIEI",
+      "disclaimer": "*Mockup vizual 3D cu titlu reprezentativ"
+    },
+    "configurator": {
+      "title": "CONFIGURATOR",
+      "bodyColor": "Culoarea caroseriei",
+      "capacity": "Capacitate volumică",
+      "tires": "Tipul anvelopelor",
+      "summary": "Rezumat",
+      "colors": {
+        "blue": "Albastru Özünlü",
+        "gray": "Gri Quartz",
+        "navy": "Albastru nocturn",
+        "red": "Roșu flacără"
+      },
+      "tireTypes": {
+        "standard": "Standard",
+        "offRoad": "Off-Road",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "Descărcare în 2 minute",
+        "desc": "Timp record de evacuare cu sistem hidraulic optimizat."
+      },
+      "weight": {
+        "title": "Cu 15% mai ușor",
+        "desc": "Capacitate mai mare de încărcare datorită designului special din aliaj."
+      },
+      "hardox": {
+        "title": "Caroserie Hardox 450",
+        "desc": "Rezistență maximă la uzură și impact datorită oțelului suedez."
+      },
+      "balance": {
+        "title": "Sistem inteligent de echilibru",
+        "desc": "Tehnologie cu senzori activi care previne răsturnarea pe teren dificil."
+      }
+    }
+  }
+}

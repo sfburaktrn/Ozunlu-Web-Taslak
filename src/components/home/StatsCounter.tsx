@@ -1,14 +1,8 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, useEffect, useState } from 'react';
-
-const stats = [
-
-    { label: 'İhracat Ülkesi', value: 50, suffix: '+' },
-    { label: 'Yıllık Çelik İşleme (Ton)', value: 12000, suffix: '' },
-    { label: 'Yıllık Tecrübe', value: 45, suffix: '' },
-];
+import { useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 const Counter = ({ from, to, duration }: { from: number; to: number; duration: number }) => {
     const nodeRef = useRef<HTMLSpanElement>(null);
@@ -40,6 +34,14 @@ const Counter = ({ from, to, duration }: { from: number; to: number; duration: n
 };
 
 export default function StatsCounter() {
+    const t = useTranslations('home.stats');
+
+    const stats = [
+        { label: t('exportCountries'), value: 50, suffix: '+' },
+        { label: t('steelProcessing'), value: 12000, suffix: '' },
+        { label: t('experience'), value: 45, suffix: '' },
+    ];
+
     return (
         <section className="bg-white py-8">
             <div className="container mx-auto px-4">

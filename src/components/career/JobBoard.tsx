@@ -2,25 +2,26 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
-const positions: any[] = []; // Leave empty to trigger the "No Active Jobs" state
+const positions: { title: string; dept: string; location: string; type: string }[] = [];
 const KARIYER_NET_URL = 'https://www.kariyer.net/firma-profil/ozunlu-damper-ltd-sti-52915-211659';
 const LINKEDIN_URL = 'https://www.linkedin.com/company/ozunlu-damper/';
 
 export default function JobBoard() {
+    const t = useTranslations('career.jobs');
     const hasJobs = positions.length > 0;
 
     return (
         <section className="py-24 bg-ozunlu-900 border-t border-white/5 relative overflow-hidden">
-            {/* Background glow for this section too */}
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+            <div className="absolute bottom-0 end-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
-                        SENİ <span className="text-white">BEKLİYORUZ</span>
+                        {t('title')} <span className="text-white">{t('titleHighlight')}</span>
                     </h2>
-                    <p className="text-gray-400">Geleceği şekillendiren ekibin bir parçası ol.</p>
+                    <p className="text-gray-400">{t('subtitle')}</p>
                 </div>
 
                 <div className="max-w-4xl mx-auto">
@@ -53,8 +54,8 @@ export default function JobBoard() {
                                     </div>
 
                                     <button className="w-full md:w-auto px-6 py-3 bg-white text-black font-bold uppercase rounded hover:bg-primary transition-colors flex items-center justify-center gap-2">
-                                        Başvur
-                                        <ArrowRight size={18} />
+                                        {t('apply')}
+                                        <ArrowRight size={18} className="icon-directional" />
                                     </button>
                                 </motion.div>
                             ))}
@@ -69,7 +70,6 @@ export default function JobBoard() {
                             <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                             <div className="relative z-10 flex flex-col items-center">
-                                {/* Icon with Glow */}
                                 <div className="relative mb-8 group-hover:scale-110 transition-transform duration-300">
                                     <div className="absolute inset-0 bg-primary/40 blur-xl rounded-full" />
                                     <div className="relative w-24 h-24 bg-ozunlu-900 border border-white/10 rounded-full flex items-center justify-center text-primary shadow-2xl">
@@ -77,13 +77,8 @@ export default function JobBoard() {
                                     </div>
                                 </div>
 
-                                <h3 className="text-2xl font-bold text-white mb-4">
-                                    Şu anda açık pozisyonumuz bulunmamaktadır
-                                </h3>
-                                <p className="text-gray-400 max-w-lg mx-auto mb-8 leading-relaxed">
-                                    Ancak yetenekli profesyonellerle tanışmak için her zaman heyecanlıyız.
-                                    Genel başvuru yapmak için CV&apos;nizi bize gönderebilir veya sosyal medya hesaplarımızı takip edebilirsiniz.
-                                </p>
+                                <h3 className="text-2xl font-bold text-white mb-4">{t('noJobsTitle')}</h3>
+                                <p className="text-gray-400 max-w-lg mx-auto mb-8 leading-relaxed">{t('noJobsDesc')}</p>
 
                                 <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center flex-wrap">
                                     <a
@@ -91,7 +86,7 @@ export default function JobBoard() {
                                         className="px-8 py-4 bg-white text-black font-bold rounded hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 min-w-[200px]"
                                     >
                                         info@ozunlu.com
-                                        <ArrowRight size={18} />
+                                        <ArrowRight size={18} className="icon-directional" />
                                     </a>
                                     <a
                                         href={KARIYER_NET_URL}
@@ -100,7 +95,7 @@ export default function JobBoard() {
                                         className="px-8 py-4 bg-[#830051] text-white font-bold uppercase rounded hover:bg-[#60003c] transition-colors flex items-center justify-center gap-2 min-w-[200px]"
                                     >
                                         Kariyer.net
-                                        <ArrowRight size={18} />
+                                        <ArrowRight size={18} className="icon-directional" />
                                     </a>
                                     <a
                                         href={LINKEDIN_URL}
@@ -109,7 +104,7 @@ export default function JobBoard() {
                                         className="px-8 py-4 bg-[#0077b5] text-white font-bold uppercase rounded hover:bg-[#005582] transition-colors flex items-center justify-center gap-2 min-w-[200px]"
                                     >
                                         LinkedIn
-                                        <ArrowRight size={18} />
+                                        <ArrowRight size={18} className="icon-directional" />
                                     </a>
                                 </div>
                             </div>

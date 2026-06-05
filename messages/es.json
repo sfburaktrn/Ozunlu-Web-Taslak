@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Producción rápida, superestructuras de acero Hardox – Since 1977",
+      "description": "Desde 1977, el fabricante turco de confianza de superestructuras para vehículos comerciales pesados, con procesamiento de acero certificado Hardox, ingeniería avanzada y red integral de servicio posventa."
+    },
+    "damper": {
+      "title": "Özünlü Damper | Soluciones de volquete Hardox de alto rendimiento – Since 1977",
+      "description": "Modelos de volquete Özünlü diseñados con caja de acero Hardox, ingeniería avanzada y más de 45 años de experiencia en producción — imprescindibles para construcción, minería e infraestructura. Solicite un presupuesto hoy."
+    },
+    "yariRomork": {
+      "title": "Özünlü Semirremolque | Remolque volquete de acero Hardox – Soluciones de transporte pesado",
+      "description": "Modelos de semirremolque con ejes BPW y Özkoç y cajas Hardox 450/500 para un transporte seguro y eficiente de cargas pesadas. Ingeniería Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Repuestos y equipamiento para remolques | Sistemas hidráulicos, ejes y frenos originales – Özünlü",
+      "description": "Equipamiento y repuestos originales para remolques con garantía Özünlü. Sistemas hidráulicos, ejes BPW-Özkoç, kits de frenos EBS e iluminación LED — amplio stock, entrega rápida."
+    },
+    "afterSales": {
+      "title": "Özünlü Servicio posventa | Asistencia técnica 24/7, repuestos, red de servicio autorizado",
+      "description": "87 puntos de servicio autorizados en toda Turquía, línea de asistencia técnica 24/7 y garantía de repuestos originales — el servicio posventa de Özünlü garantiza la continuidad operativa de su flota."
+    },
+    "contact": {
+      "title": "Contacto | Özünlü Damper – Presupuestos y asistencia",
+      "description": "Contacte con Özünlü Damper para ventas, posventa, exportación y recursos humanos. Oficina central: Sultangazi, Estambul."
+    },
+    "corporate": {
+      "title": "Corporativo | Özünlü Damper – Since 1977",
+      "description": "Desde 1977, Özünlü Damper es la referencia de confianza y calidad en el sector de superestructuras para vehículos comerciales pesados."
+    },
+    "products": {
+      "title": "Productos | Özünlü Damper",
+      "description": "Soluciones de volquete, semirremolque y equipamiento."
+    },
+    "media": {
+      "title": "Medios | Özünlü Damper",
+      "description": "Noticias, blog y perspectivas del sector de Özünlü Damper."
+    },
+    "career": {
+      "title": "Carrera | Özünlü Damper",
+      "description": "Oportunidades de carrera en Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Volquete",
+      "yariRomork": "Semirremolque",
+      "ekEkipmanlar": "Equipamiento",
+      "satisSonrasi": "Posventa",
+      "iletisim": "Contacto",
+      "mobileContactQuote": "Contacto y presupuesto"
+    },
+    "footer": {
+      "logoAlt": "Logo Özünlü Damper",
+      "about": "Desde 1977, procesamiento de <strong>acero</strong> certificado <hardox></hardox>, ingeniería avanzada y red integral de <strong>servicio posventa</strong> — el fabricante turco de confianza de superestructuras para vehículos comerciales pesados.",
+      "quickAccess": "Acceso rápido",
+      "contact": "Contacto",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "copyright": "© {year} Özünlü Damper. Todos los derechos reservados.",
+      "kvkk": "RGPD",
+      "aydinlatmaMetni": "Aviso de privacidad",
+      "cerezPolitikasi": "Política de cookies"
+    },
+    "cta": {
+      "teklifAl": "Solicitar presupuesto",
+      "teklifAlin": "Solicitar presupuesto",
+      "hemenTeklifAl": "Solicitar presupuesto ahora",
+      "incele": "Consultar",
+      "bizeUlasin": "Contáctenos",
+      "bilgiAl": "Más información",
+      "iletisimeGecin": "Póngase en contacto",
+      "detayliIncele": "Ver detalles",
+      "tumUrunler": "TODOS LOS PRODUCTOS",
+      "kesfet": "Explorar",
+      "kaydir": "Desplazar"
+    },
+    "labels": {
+      "modellerimiz": "Nuestros modelos",
+      "oneCikanlar": "Destacados",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Logo Hardox In My Body acero certificado resistente al desgaste"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "VELOCIDAD EN PRODUCCIÓN",
+      "titleLine2": "DURABILIDAD EN CAMPO",
+      "subtitle": "Producción rápida, superestructuras duraderas y rendimiento probado en campo",
+      "ctaDamper": "Presupuesto volquete",
+      "ctaYariRomork": "Presupuesto semirremolque",
+      "scroll": "Desplazar"
+    },
+    "about": {
+      "eyebrow": "Sobre nosotros",
+      "title": "Definimos la fuerza mediante la producción rápida",
+      "paragraph1": "Desde 1977, ofrecemos soluciones de superestructuras fiables y duraderas a diversos sectores con una capacidad de producción que se extiende desde Turquía al mundo.",
+      "paragraph2": "Combinamos ingeniería y diseño avanzados con la superior durabilidad del <strong>acero</strong> <hardox></hardox>, desarrollando cada producto no solo como una <strong>superestructura</strong>, sino como una solución que garantiza la eficiencia operativa.",
+      "cards": {
+        "arge": "I+D E INGENIERÍA",
+        "ozelTasarim": "SOLUCIONES DE DISEÑO PERSONALIZADO",
+        "uretimTeknolojisi": "TECNOLOGÍA DE PRODUCCIÓN AVANZADA",
+        "sertifikaliUretim": "PRODUCCIÓN CERTIFICADA"
+      }
+    },
+    "damperHero": {
+      "category": "VOLQUETE",
+      "imageAlt": "Rendimiento y durabilidad Özünlü volquete",
+      "titleLine1": "La respuesta de ingeniería",
+      "titleLine2": "para condiciones exigentes",
+      "description": "Nuestros sistemas de <strong>volquete</strong> desarrollados para las duras condiciones de construcción, minería y proyectos de infraestructura funcionan sin interrupciones en campo con la durabilidad de la caja <hardox></hardox>, alta estabilidad de volcado y rápida capacidad de descarga."
+    },
+    "trailerHero": {
+      "category": "SEMIRREMOLQUE",
+      "imageAlt": "Özünlü semirremolques y sistemas de remolque",
+      "titleLine1": "Diseño ligero",
+      "titleLine2": "Rendimiento potente",
+      "description": "Ofrece eficiencia de transporte, alto valor de reventa y rendimiento duradero."
+    },
+    "equipmentHero": {
+      "category": "Equipamiento",
+      "imageAlt": "Özünlü soluciones de equipamiento y repuestos",
+      "titleLine1": "Soluciones de equipamiento",
+      "titleLine2": "completas para su flota",
+      "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
+    },
+    "whyChooseUs": {
+      "eyebrow": "¿POR QUÉ ÖZÜNLÜ?",
+      "title": "¿Por qué Özünlü?",
+      "features": {
+        "0": "Diseño de <strong>superestructura</strong> aprobado por el fabricante del vehículo — producción compatible con diferentes configuraciones de chasis y tractor",
+        "1": "Procesamiento de <strong>acero</strong> certificado <hardox></hardox> y tecnología de soldadura robótica",
+        "2": "Cumplimiento total de todas las normativas y estándares europeos de seguridad (ECE/ADR)",
+        "3": "Garantía integral y <strong>servicio posventa</strong> ininterrumpido",
+        "4": "87 puntos de servicio autorizados en 50 provincias de toda Turquía",
+        "5": "Diseño estructural que preserva un alto valor de reventa",
+        "6": "Exportación a más de 50 países — calidad probada a nivel global"
+      },
+      "cardLabel": "La garantía de Özünlü"
+    },
+    "mapPreview": {
+      "eyebrow": "Mapa de servicios",
+      "title": "Red nacional de ",
+      "titleHighlight": "servicio autorizado",
+      "description": "Dondequiera que esté su vehículo, Özünlü está a su lado. Nuestros 87 puntos de servicio autorizados en 50 provincias garantizan la continuidad operativa de su flota con repuestos originales y técnicos certificados.",
+      "citiesLabel": "Ciudades con servicio",
+      "pointsLabel": "Total de puntos de servicio",
+      "topCities": "Ciudades destacadas",
+      "serviceCount": "{count} puntos de servicio",
+      "tapHint": "Toque el mapa",
+      "mapInstruction": "Seleccione una ciudad para abrir la información del servicio.",
+      "modalEyebrow": "Detalles del servicio",
+      "plateCode": "Código de matrícula: {code}",
+      "closeAria": "Cerrar",
+      "noService": "No se encontró ningún servicio registrado para esta provincia."
+    },
+    "partners": {
+      "title": "Preferido por las marcas líderes del sector",
+      "description": "Nuestras soluciones de superestructuras para vehículos comerciales pesados funcionan de forma fiable en las rutas más exigentes de construcción, minería y transporte de larga distancia.",
+      "footer": "Proveedor de superestructuras homologado"
+    },
+    "products": {
+      "eyebrow": "Nuestros productos",
+      "title": "SUPERESTRUCTURAS",
+      "titleHighlight": "SOLUCIONES",
+      "subtitle": "Soluciones de superestructuras en <strong>acero</strong> <hardox></hardox> para cada necesidad",
+      "viewDetails": "Ver detalles",
+      "items": {
+        "damper": {
+          "title": "VOLQUETE",
+          "description": "Caja de <strong>acero</strong> <hardox></hardox>, <strong>sistema hidráulico</strong>, capacidad de 20-40 m³",
+          "features": [
+            "Acero Hardox 450",
+            "Sistema hidráulico",
+            "Estructura ligera"
+          ]
+        },
+        "dorse": {
+          "title": "REMOLQUE",
+          "description": "Alta resistencia, larga vida útil y opciones de diseño personalizado",
+          "features": [
+            "Diseño personalizado",
+            "Alta durabilidad",
+            "Mantenimiento sencillo"
+          ]
+        },
+        "kar": {
+          "title": "EQUIPO QUITANIEVES",
+          "description": "Soluciones de <strong>volquete</strong> adaptadas a las necesidades específicas de cada cliente",
+          "features": [
+            "Fabricación a medida",
+            "Apoyo de I+D",
+            "Producción rápida"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "La elección de los mejores"
+    },
+    "stats": {
+      "exportCountries": "Países de exportación",
+      "steelProcessing": "Procesamiento anual de acero (toneladas)",
+      "experience": "Años de experiencia"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü soluciones de volquete",
+      "titleLine1": "VOLQUETE",
+      "titleLine2": "SOLUCIONES",
+      "description": "La respuesta de ingeniería para condiciones exigentes. Caja <hardox></hardox>, alta estabilidad de volcado y capacidad de carga optimizada — rendimiento superior en cualquier condición."
+    },
+    "products": {
+      "title": "Soluciones de volquete listas",
+      "subtitle": "Hemos preparado las configuraciones más demandadas para usted. Consulte o solicite un presupuesto ahora."
+    },
+    "features": {
+      "titleLine1": "La armonía perfecta entre",
+      "titleLine2": "potencia y diseño",
+      "item01Title": "Caja Hardox®",
+      "item01Content": "La estructura de caja fabricada con <strong>acero</strong> sueco <hardox></hardox> redefine los estándares del sector en resistencia al desgaste e impactos. Larga vida útil, bajos costes de mantenimiento.",
+      "item02Title": "Ingeniería aerodinámica",
+      "item02Content": "Las líneas aerodinámicas optimizadas en túnel de viento reducen el consumo de combustible y el coste total de operación.",
+      "item03Title": "Alta capacidad de carga",
+      "item03Content": "El diseño de chasis ligero y de alta resistencia garantiza la máxima capacidad de transporte dentro de los límites legales de carga.",
+      "imageAlt": "Características Özünlü volquete"
+    },
+    "configurator": {
+      "title": "Configurador de volquete",
+      "subtitle": "Especifique los detalles técnicos para un volquete de alto rendimiento adaptado a sus necesidades. Nuestro equipo de expertos preparará su presupuesto personalizado a la mayor brevedad."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Volquete",
+        "description": "Diseño orientado a la ingeniería para las duras condiciones de obra y construcción. Opción de caja de <hardox></hardox>, chasis reforzado y descarga rápida para una máxima eficiencia operativa.",
+        "features": [
+          "Opción de caja Hardox",
+          "Alta estabilidad de elevación",
+          "Descarga rápida",
+          "Chasis reforzado",
+          "Mantenimiento sencillo"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Caja Hardox®",
+            "content": "Larga vida útil y bajo coste de mantenimiento frente al desgaste y los impactos."
+          },
+          "sasi": {
+            "title": "Chasis",
+            "content": "Estructura de chasis reforzada, apta para trabajo pesado."
+          },
+          "bosaltim": {
+            "title": "Descarga",
+            "content": "Descarga rápida y controlada con un sistema hidráulico optimizado."
+          },
+          "verimlilik": {
+            "title": "Eficiencia",
+            "content": "Detalles de ingeniería que aumentan la continuidad operativa."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Volquete",
+        "description": "La combinación más robusta de caja y chasis para cargas de gran tonelaje.",
+        "features": [
+          "Uso de servicio pesado",
+          "Volumen optimizado",
+          "Paredes laterales reforzadas",
+          "Facilidad de servicio",
+          "Equipamiento opcional"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacidad",
+            "content": "Volumen optimizado para operaciones de alto tonelaje."
+          },
+          "dayanim": {
+            "title": "Resistencia",
+            "content": "Estructura resistente al desgaste y a los impactos en operaciones intensivas."
+          },
+          "donanim": {
+            "title": "Equipamiento",
+            "content": "Lona, tapa, iluminación y otras opciones disponibles."
+          },
+          "uyumluluk": {
+            "title": "Compatibilidad",
+            "content": "Alternativas de montaje adecuadas para distintas necesidades de chasis."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Volquete",
+        "description": "Peso equilibrado y costes operativos económicos para escenarios compactos de uso.",
+        "features": [
+          "Diseño compacto",
+          "Operación económica",
+          "Peso equilibrado",
+          "Maniobra sencilla",
+          "Larga vida útil"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Uso",
+            "content": "Trabajo ágil en operaciones compactas de obra."
+          },
+          "agirlik": {
+            "title": "Peso",
+            "content": "Capacidad máxima dentro de los límites legales."
+          },
+          "maliyet": {
+            "title": "Coste",
+            "content": "Coste operativo económico y mantenimiento sencillo."
+          },
+          "performans": {
+            "title": "Rendimiento",
+            "content": "Funcionamiento estable en un uso diario intensivo."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü soluciones de semirremolque",
+      "titleLine1": "SEMIRREMOLQUE",
+      "titleLine2": "SOLUCIONES",
+      "description": "Aligere el transporte pesado con ingeniería. Estructura de <strong>acero</strong> <hardox></hardox>, tecnología de frenado avanzada y distribución optimizada de la carga — rendimiento y seguridad superiores en cada ruta."
+    },
+    "products": {
+      "title": "Soluciones de semirremolque listas",
+      "subtitle": "Hemos preparado las configuraciones más demandadas del sector. Solicite un presupuesto o diseñe su propio vehículo."
+    },
+    "features": {
+      "titleLine1": "Domine",
+      "titleLine2": "cada momento en carretera",
+      "item01Title": "Tecnología de chasis avanzada",
+      "item01Content": "Chasis de alta resistencia producido con soldadura robótica; máxima resistencia a la flexión, peso minimizado, capacidad de carga maximizada.",
+      "item02Title": "Sistemas de seguridad activos",
+      "item02Content": "Sistema de frenado electrónico EBS y tecnología RSS (Roll Stability Support) antivuelco — seguridad de conducción conforme a los estándares europeos.",
+      "item03Title": "Adaptación versátil",
+      "item03Content": "Flexibilidad total — desde transporte lowbed hasta logística de contenedores, desde carga a granel hasta configuraciones de carga especiales.",
+      "imageAlt": "Características de semirremolque"
+    },
+    "configurator": {
+      "title": "Configurador de semirremolque",
+      "subtitle": "Comparta los detalles para diseñar el semirremolque de alto rendimiento más adecuado para su flota. Nuestro equipo de ingenieros preparará un presupuesto técnico personalizado."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semirremolque",
+        "description": "Solución fiable para transporte pesado de larga distancia con volumen de 22 m³, caja Hardox 450 y sistema de ejes BPW.",
+        "features": [
+          "Volumen de 22 m³",
+          "Caja Hardox 450",
+          "Chapa de 5/6 mm",
+          "Eje BPW (importado)",
+          "Parachoques abatible"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semirremolque",
+        "description": "Remolque de alto rendimiento con chasis Hardox 500 y rampa hidráulica para operaciones exigentes.",
+        "features": [
+          "Eje Özkoç (nacional)",
+          "Chasis Hardox 500",
+          "Parachoques fijo",
+          "Rampa hidráulica",
+          "Laterales extensibles"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semirremolque",
+        "description": "Transporte eficiente con volumen de 21 m³, carrocería aligerada y sistema automático de lona.",
+        "features": [
+          "Volumen de 21 m³",
+          "Eje Özkoç",
+          "Chapa de 3/4 mm (ligera)",
+          "Lona automática",
+          "Tapa con manguito"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "EQUIPAMIENTO",
+      "imageAlt": "Soluciones de equipamiento y repuestos",
+      "titleLine1": "Soluciones de equipamiento",
+      "titleLine2": "completas para su flota",
+      "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
+    },
+    "categories": {
+      "title": "Grupos de productos",
+      "subtitle": "Equipamiento original certificado, amplio stock y ventaja de entrega rápida en un solo lugar.",
+      "hidrolik": {
+        "title": "Sistemas hidráulicos",
+        "desc": "Bombas, cilindros y sistemas de válvulas de alta capacidad de presión. Potencia y durabilidad probadas para las condiciones de trabajo más exigentes."
+      },
+      "dingil": {
+        "title": "Ejes y suspensión",
+        "desc": "Sistemas premium de ejes y suspensión, incluidos BPW y Özkoç, para una fiabilidad duradera."
+      },
+      "fren": {
+        "title": "Sistemas de freno",
+        "desc": "Kits de freno compatibles con EBS y ABS. Máximo rendimiento de frenado conforme a los estándares europeos de seguridad."
+      },
+      "elektrik": {
+        "title": "Sistema eléctrico e iluminación",
+        "desc": "Sistemas de iluminación LED de alta visibilidad con conformidad ECE R48."
+      },
+      "aksesuar": {
+        "title": "Accesorios para remolques",
+        "desc": "Cajas de herramientas, depósitos, patas de apoyo y accesorios para configuraciones especiales."
+      },
+      "yedekParca": {
+        "title": "Repuestos",
+        "desc": "Repuestos originales y garantizados, con opción de envío el mismo día y tiempo mínimo de inmovilización del vehículo."
+      }
+    },
+    "cta": {
+      "title": "¿No encontró la pieza que buscaba?",
+      "description": "Contacte con nuestro equipo de expertos y le conseguiremos el producto que necesita."
+    },
+    "performance": {
+      "imageAlt": "Equipamiento para remolques",
+      "titleLine1": "La pieza correcta,",
+      "titleLine2": "máximo rendimiento",
+      "description": "El rendimiento del vehículo depende directamente de la calidad del equipamiento. En Özünlü, entregamos al instante productos originales certificados de marcas probadas a nivel global desde nuestro amplio stock.",
+      "bullets": {
+        "0": "Garantía de productos originales y certificados",
+        "1": "Amplia compatibilidad con marcas y modelos",
+        "2": "Precios competitivos y opciones de pago flexibles",
+        "3": "Asesoramiento técnico especializado"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "%100",
+        "label": "Garantía de producto original"
+      },
+      "delivery": {
+        "value": "Rápida",
+        "label": "Entrega desde stock"
+      },
+      "support": {
+        "value": "Soporte",
+        "label": "Antes y después de la venta"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Servicio posventa",
+      "badge": "GARANTÍA ÖZÜNLÜ",
+      "titleLine1": "A SU LADO",
+      "titleLine2": "EN CADA",
+      "titleLine3": "MOMENTO",
+      "description": "La verdadera asociación comienza después de la compra. Protegemos la continuidad operativa de su vehículo con 87 puntos de servicio autorizados a nivel nacional, asistencia técnica 24/7 y garantía de repuestos originales."
+    },
+    "services": {
+      "title": "NUESTROS SERVICIOS",
+      "subtitle": "Soluciones profesionales que protegen el valor de su vehículo y aumentan su eficiencia operativa.",
+      "servisAgi": {
+        "title": "Red de servicio autorizada",
+        "description": "Confíe su flota a técnicos certificados con equipamiento conforme a los estándares de fábrica en 87 puntos de servicio autorizados distribuidos en 50 provincias de Turquía."
+      },
+      "yedekParca": {
+        "title": "Repuestos originales",
+        "description": "Piezas Özünlü 100 % originales para minimizar el tiempo de inmovilización del vehículo."
+      },
+      "garanti": {
+        "title": "Cobertura de garantía",
+        "description": "Todos nuestros productos están cubiertos por una garantía integral del fabricante."
+      },
+      "teknikDestek": {
+        "title": "Asistencia técnica 24/7",
+        "description": "Nuestro equipo de soporte técnico está disponible día y noche."
+      }
+    },
+    "documents": {
+      "eyebrow": "Base de conocimiento",
+      "title": "DOCUMENTOS",
+      "titleHighlight": "TÉCNICOS",
+      "description": "Manuales de usuario, procedimientos de mantenimiento y especificaciones técnicas preparados para la máxima eficiencia de sus productos — disponibles en turco e inglés.",
+      "searchPlaceholder": "Buscar documentos...",
+      "download": "DESCARGAR",
+      "noResults": "No se encontraron documentos que coincidan con sus criterios.",
+      "damperManual": {
+        "title": "Manual de uso del volquete",
+        "desc": "Instrucciones básicas de uso y seguridad para la gama de productos volquete."
+      },
+      "dorseManual": {
+        "title": "Manual de remolque y semirremolque",
+        "desc": "Manual estándar de uso para los productos generales de semirremolque."
+      },
+      "generalManual": {
+        "title": "Manual general de producto y mantenimiento (TR/EN)",
+        "desc": "Guía completa de mantenimiento y detalles técnicos para todos los modelos de remolque."
+      },
+      "damperSpec": {
+        "title": "Especificación técnica de volquete (TR/EN)",
+        "desc": "Especificaciones técnicas específicas para vehículos volquete."
+      }
+    },
+    "map": {
+      "title": "Red nacional de servicio autorizado",
+      "description": "87 puntos de servicio autorizados en 50 provincias. Seleccione su ciudad en el mapa para acceder al instante a la información de servicio y contacto."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "CONTACTO",
+      "subtitle": "Contáctenos para sus preguntas y proyectos.",
+      "headOffice": "OFICINA CENTRAL",
+      "submit": "Enviar",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Horario de trabajo",
+      "hoursValue": "Lun. a vie. y sáb.: 09:00 - 18:30",
+      "name": "NOMBRE Y APELLIDOS",
+      "namePlaceholder": "Su nombre completo",
+      "company": "EMPRESA",
+      "companyPlaceholder": "Nombre de la empresa",
+      "email": "CORREO ELECTRÓNICO",
+      "emailPlaceholder": "ejemplo@empresa.com",
+      "phone": "TELÉFONO",
+      "phonePlaceholder": "+34 ...",
+      "message": "MENSAJE",
+      "messagePlaceholder": "Escriba aquí su mensaje...",
+      "mapTitle": "Mapa de ubicación de Özünlü Damper"
+    },
+    "tabs": {
+      "sales": "VENTAS Y MARKETING",
+      "service": "SERVICIOS POSVENTA",
+      "export": "EXPORTACIÓN",
+      "hr": "RECURSOS HUMANOS"
+    }
+  },
+  "proposal": {
+    "configurator": "Configurador",
+    "selectedProduct": "Producto seleccionado",
+    "selectedSubtitle": "Complete el formulario de presupuesto para el producto seleccionado.",
+    "defaultSubtitle": "Defina los detalles para una solución adaptada a sus necesidades.",
+    "clearSelection": "Seleccione otro producto o utilice el configurador",
+    "stepQuantity": "Definir cantidad",
+    "stepPayment": "Método de pago",
+    "stepContact": "Datos de contacto",
+    "vehicleInfo": "Información del vehículo",
+    "trailerSpecs": "Especificaciones del remolque",
+    "cargoType": "Tipo de carga",
+    "dimensions": "Dimensiones y cantidad",
+    "submit": "SOLICITAR PRESUPUESTO",
+    "submitting": "Enviando...",
+    "successTitle": "¡Hemos recibido su solicitud!",
+    "successMessage": "Su formulario de presupuesto se ha enviado correctamente. Un representante comercial se pondrá en contacto con usted lo antes posible.",
+    "newForm": "Crear un nuevo formulario",
+    "kvkkNotice": "Sus datos personales están protegidos de acuerdo con la normativa aplicable en materia de protección de datos.",
+    "payment": {
+      "cashTitle": "Contado / Transferencia bancaria",
+      "cashDesc": "Descuento especial para pagos al contado",
+      "creditTitle": "Pago aplazado / Cheque",
+      "creditDesc": "Opciones de plazo y financiación flexibles"
+    },
+    "fields": {
+      "quantity": "Cantidad solicitada",
+      "brand": "Marca del vehículo",
+      "brandPh": "Ej.: Mercedes, Ford",
+      "model": "Modelo del vehículo",
+      "modelPh": "Ej.: 4140, Cargo",
+      "volume": "Volumen deseado (m³)",
+      "volumePh": "Ej.: 30",
+      "axle": "Opción de eje",
+      "domestic": "Nacional",
+      "foreign": "Importado",
+      "cargo": "Carga a transportar",
+      "cargoPh": "Ej.: escombros, arena, asfalto",
+      "thickness": "Espesor de piso/laterales (mm)",
+      "thicknessPh": "Ej.: 5 mm / 4 mm",
+      "company": "Nombre de la empresa",
+      "companyPh": "Razón social",
+      "contact": "Persona de contacto",
+      "contactPh": "Nombre y apellidos",
+      "phone": "Teléfono",
+      "phonePh": "+34 ...",
+      "email": "Correo electrónico",
+      "emailPh": "mail@empresa.com",
+      "heardFrom": "¿Cómo nos conoció?",
+      "heardFromPh": "Google, redes sociales, recomendación..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Desde 1977",
+      "titleLine1": "LA FIRMA DE",
+      "titleLine2": "LA VELOCIDAD Y LA CONFIANZA",
+      "description": "Con casi medio siglo de experiencia, marcamos los estándares del sector de las superestructuras para vehículos comerciales pesados y construimos el futuro sobre bases sólidas."
+    },
+    "values": {
+      "trust": {
+        "title": "CONFIANZA",
+        "desc": "Durante más de 45 años hemos respaldado cada promesa hecha a nuestros clientes, socios y empleados."
+      },
+      "quality": {
+        "title": "CALIDAD",
+        "desc": "Desde el <strong>acero</strong> <hardox></hardox> hasta el acabado más minucioso, perseguimos la excelencia en cada etapa de la producción."
+      },
+      "innovation": {
+        "title": "INNOVACIÓN",
+        "desc": "Analizamos las necesidades del sector y, a través de nuestra I+D, acercamos al presente las tecnologías del futuro."
+      },
+      "speed": {
+        "title": "VELOCIDAD",
+        "desc": "Gracias a procesos de producción optimizados, entregamos con rapidez sin comprometer la calidad y aportamos velocidad a su negocio."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NO SOLO TRABAJAMOS EL ACERO,",
+      "titleLine2": "TAMBIÉN FORJAMOS CONFIANZA.",
+      "p1": "<strong>Desde 1977 hasta hoy,</strong> lo que sale de nuestra línea de producción no es solo un volquete, sino la forma tangible de casi medio siglo de experiencia, pasión por la ingeniería e innovación. Para nosotros, la calidad no es una etapa de control; es nuestra propia cultura de producción.",
+      "p2": "Probados en geografías exigentes y bajo cargas pesadas, nuestros productos se diseñan hasta el último detalle con foco en la <durability>durabilidad</durability> y el <performance>rendimiento</performance>. Combinamos la robustez del acero <hardox></hardox> con la agilidad de la ingeniería turca para definir los estándares que marcan el rumbo del sector.",
+      "quote": "En cada cordón de soldadura, en cada montaje y en cada entrega perseguimos un único objetivo: sumar fuerza a la fortaleza de nuestros socios."
+    },
+    "leader": {
+      "eyebrow": "Mensaje del líder",
+      "quote": "En Özünlü no solo fabricamos productos; construimos confianza. Cada volquete y cada remolque reflejan casi medio siglo de experiencia y pasión por la ingeniería.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Presidente del Consejo de Administración",
+      "bio": "Fundada en 1977, Özünlü Damper es hoy uno de los fabricantes de referencia del sector, con exportaciones a más de 40 países. Producimos con estándares mundiales bajo el título de Qualified Body Builder (carrocero autorizado).",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "MÁS ALLÁ DEL",
+      "titleHighlight": "TIEMPO",
+      "m1977": {
+        "title": "Sentando las bases",
+        "desc": "El camino de la producción comenzó en un taller de 30 m² en Okmeydanı, Estambul, con grandes sueños."
+      },
+      "m1985": {
+        "title": "Primera expansión",
+        "desc": "Traslado de las instalaciones de producción a Habipler, Estambul, donde siguen ubicadas hoy."
+      },
+      "m1991": {
+        "title": "Invertir en el futuro",
+        "desc": "Compra del actual terreno de fábrica y primera gran inversión en el camino para convertirse en un líder de las superestructuras."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "El primer título \"Qualified Body Builder\" del sector, otorgado por los principales fabricantes mundiales de camiones."
+      },
+      "m2009": {
+        "title": "Aumento de capacidad",
+        "desc": "Duplicación de la capacidad de producción gracias a un nuevo enfoque de gestión de calidad y a inversiones en maquinaria."
+      },
+      "mToday": {
+        "title": "Potencia global",
+        "desc": "30.000 m² de superficie total de producción en 3 instalaciones, ventas en las 81 provincias y exportación a más de 40 países."
+      },
+      "yearToday": "Actualidad"
+    },
+    "facilities": {
+      "title": "POTENCIA PRODUCTIVA E",
+      "titleHighlight": "IMPACTO GLOBAL",
+      "description": "Combinamos la fuerza de la ingeniería local con los estándares globales para aportar valor en todo el mundo.",
+      "production": {
+        "title": "CENTRO DE PRODUCCIÓN",
+        "value": "30.000 m²",
+        "desc": "Producción de alta capacidad en 3 instalaciones con 7.000 m² cubiertos y 23.000 m² de área abierta."
+      },
+      "global": {
+        "title": "ALCANCE GLOBAL",
+        "value": "Más de 40 países",
+        "desc": "Una amplia red de exportación que abarca las 81 provincias de Turquía y más de 40 países en todo el mundo."
+      },
+      "quality": {
+        "title": "ESTÁNDAR DE CALIDAD",
+        "value": "Certificado QBB",
+        "desc": "La primera marca del sector en contar con el título de \"Qualified Body Builder\" (carrocero autorizado)."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "GESTIÓN DEL",
+      "titleHighlight": "TALENTO",
+      "description": "Ofrecemos una trayectoria profesional única para profesionales talentosos, apasionados y con grandes ambiciones."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "LA VIDA",
+      "titleLine2": "CON NOSOTROS",
+      "description": "Como familia Özünlü, no solo aspiramos a fabricar los mejores volquetes, sino también a contar con los empleados más satisfechos. La innovación, el desarrollo continuo y el espíritu de equipo forman parte de nuestro ADN.",
+      "imageAlt": "Carrera en Özünlü {n}"
+    },
+    "jobs": {
+      "title": "LE",
+      "titleHighlight": "ESPERAMOS",
+      "subtitle": "Forme parte del equipo que está dando forma al futuro.",
+      "apply": "Postularse",
+      "noJobsTitle": "Actualmente no tenemos vacantes abiertas",
+      "noJobsDesc": "Aun así, siempre nos entusiasma conocer a profesionales con talento. Puede enviarnos su CV como candidatura general o seguirnos en nuestras redes sociales."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "CENTRO",
+      "titleHighlight": "DE MEDIOS",
+      "description": "Noticias del sector, avances tecnológicos y las últimas novedades del mundo de Özünlü."
+    },
+    "gallery": {
+      "title": "GALERÍA",
+      "titleHighlight": "DE PRODUCTOS",
+      "description": "Explore al detalle una ingeniería superior y una ejecución impecable.",
+      "imageAlt": "Galería Özünlü Damper {n}",
+      "detailAlt": "Detalle de la galería"
+    },
+    "insights": {
+      "title": "ANÁLISIS",
+      "titleHighlight": "DEL SECTOR",
+      "description": "Análisis especializados sobre el sector de los vehículos comerciales pesados, las tecnologías de producción y la logística.",
+      "readMore": "Seguir leyendo",
+      "articles": {
+        "a1": {
+          "category": "ACADEMIA",
+          "title": "La calidad del acero en la fabricación de volquetes: Hardox y más allá",
+          "excerpt": "¿Cómo prolonga la vida útil de un volquete el uso de acero de alta resistencia? Comparativa entre Hardox 450 y 500 y análisis del retorno de la inversión.",
+          "date": "12 de enero de 2025",
+          "readTime": "6 min de lectura"
+        },
+        "a2": {
+          "category": "SECTOR",
+          "title": "Tendencias de logística y transporte para 2026",
+          "excerpt": "Cambios en la cadena de suministro global, normativas sobre eficiencia de combustible y oportunidades para el sector turco del transporte.",
+          "date": "8 de enero de 2025",
+          "readTime": "8 min de lectura"
+        },
+        "a3": {
+          "category": "SOSTENIBILIDAD",
+          "title": "Logística verde: el impacto ambiental de los volquetes ligeros",
+          "excerpt": "Es posible ahorrar combustible y reducir la huella de carbono mediante un diseño de chasis más ligero. Lo analizamos con datos de I+D de Özünlü.",
+          "date": "3 de enero de 2025",
+          "readTime": "5 min de lectura"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "EXPERIENCIA",
+    "titleHighlight": "INTERACTIVA",
+    "description": "Vaya más allá de los catálogos tradicionales. Explore las soluciones de ingeniería de Özünlü Damper en 360° y configure usted mismo la opción ideal para su proyecto.",
+    "view360": {
+      "dragHint": "Arrastre para girar",
+      "bodyLabel": "MODELO DE CARROCERÍA",
+      "disclaimer": "*Maqueta visual 3D representativa"
+    },
+    "configurator": {
+      "title": "CONFIGURADOR",
+      "bodyColor": "Color de la carrocería",
+      "capacity": "Capacidad volumétrica",
+      "tires": "Tipo de neumático",
+      "summary": "Resumen",
+      "colors": {
+        "blue": "Azul Özünlü",
+        "gray": "Gris cuarzo",
+        "navy": "Azul noche",
+        "red": "Rojo llama"
+      },
+      "tireTypes": {
+        "standard": "Estándar",
+        "offRoad": "Todoterreno",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "Descarga en 2 minutos",
+        "desc": "Tiempo récord de vaciado gracias a un sistema hidráulico optimizado."
+      },
+      "weight": {
+        "title": "15 % más ligero",
+        "desc": "Mayor capacidad de carga gracias a un diseño especial de aleación."
+      },
+      "hardox": {
+        "title": "Carrocería Hardox 450",
+        "desc": "Máxima resistencia al desgaste y a los impactos con acero sueco."
+      },
+      "balance": {
+        "title": "Sistema inteligente de equilibrio",
+        "desc": "Tecnología activa de sensores que previene el vuelco en terrenos difíciles."
+      }
+    }
+  }
+}

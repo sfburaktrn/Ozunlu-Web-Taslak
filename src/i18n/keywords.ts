@@ -1,0 +1,173 @@
+import type { Locale } from './routing';
+
+type PageSeoKey =
+    | 'home'
+    | 'damper'
+    | 'yariRomork'
+    | 'ekEkipmanlar'
+    | 'afterSales'
+    | 'contact'
+    | 'corporate'
+    | 'products'
+    | 'media'
+    | 'career'
+    | 'legalKvkk'
+    | 'legalPrivacy'
+    | 'legalCookie';
+
+export const pageKeywords: Record<Locale, Record<PageSeoKey, string>> = {
+    tr: {
+        home: 'Özünlü Damper, damper, Hardox, yarı römork, üst yapı, ağır ticari araç, çelik işleme, hidrolik sistem, satış sonrası, yetkili servis, BPW, Özkoç',
+        damper: 'damper, Hardox damper, samosval, hidrolik damper, şantiye damperi, maden damperi, üst yapı, teklif',
+        yariRomork: 'yarı römork, dorse, Hardox dorse, BPW dingil, Özkoç dingil, ağır yük taşımacılığı, yarı römork üreticisi',
+        ekEkipmanlar: 'dorse yedek parça, hidrolik sistem, dingil, fren sistemi, EBS, LED aydınlatma, BPW, Özkoç, orijinal parça',
+        afterSales: 'satış sonrası hizmet, yetkili servis, yedek parça, teknik destek, Özünlü servis, 7/24 destek',
+        contact: 'Özünlü iletişim, damper teklif, satış, ihracat, İstanbul, Sultangazi',
+        corporate: 'Özünlü Damper, kurumsal, 1977, üst yapı üreticisi, Qualified Body Builder, ihracat',
+        products: 'damper, yarı römork, üst yapı, Hardox, ürün kataloğu, konfigüratör',
+        media: 'Özünlü haberler, damper sektörü, blog, medya, inşaat taşımacılığı',
+        career: 'Özünlü kariyer, iş ilanları, üretim, mühendislik kariyeri',
+        legalKvkk: 'KVKK, kişisel verilerin korunması, Özünlü Damper, veri sorumlusu',
+        legalPrivacy: 'aydınlatma metni, kişisel veri, KVKK, gizlilik',
+        legalCookie: 'çerez politikası, cookie, web sitesi, Özünlü',
+    },
+    en: {
+        home: 'Özünlü Damper, tipper, Hardox, semi-trailer, superstructure, heavy commercial vehicle, steel processing, hydraulic, after-sales, authorized service, BPW',
+        damper: 'tipper, Hardox tipper, dump truck body, hydraulic tipper, construction tipper, mining tipper, superstructure, quote',
+        yariRomork: 'semi-trailer, trailer, Hardox trailer, BPW axle, Özkoç axle, heavy haulage, semi-trailer manufacturer',
+        ekEkipmanlar: 'trailer spare parts, hydraulic system, axle, brake system, EBS, LED lighting, BPW, original parts',
+        afterSales: 'after-sales service, authorized service, spare parts, technical support, Özünlü service, 24/7 support',
+        contact: 'Özünlü contact, tipper quote, sales, export, Istanbul, Sultangazi',
+        corporate: 'Özünlü Damper, corporate, since 1977, body builder, Qualified Body Builder, export',
+        products: 'tipper, semi-trailer, superstructure, Hardox, product catalogue, configurator',
+        media: 'Özünlü news, tipper industry, blog, media, construction transport',
+        career: 'Özünlü careers, jobs, manufacturing, engineering careers',
+        legalKvkk: 'KVKK, personal data protection, Özünlü Damper, data controller',
+        legalPrivacy: 'privacy notice, personal data, KVKK, clarification',
+        legalCookie: 'cookie policy, cookies, website, Özünlü',
+    },
+    de: {
+        home: 'Özünlü Damper, Kipper, Hardox, Auflieger, Aufbau, Schwerlastfahrzeug, Stahlverarbeitung, Hydraulik, Kundendienst, BPW',
+        damper: 'Kipper, Hardox Kipper, Muldenkipper, Hydraulikkipper, Baustellenkipper, Bergbaukipper, Aufbau, Angebot',
+        yariRomork: 'Auflieger, Sattelanhänger, Hardox Auflieger, BPW Achse, Özkoç Achse, Schwertransport, Auflieger Hersteller',
+        ekEkipmanlar: 'Anhänger Ersatzteile, Hydrauliksystem, Achse, Bremssystem, EBS, LED Beleuchtung, BPW, Originalteile',
+        afterSales: 'Kundendienst, autorisierte Werkstatt, Ersatzteile, technischer Support, Özünlü Service, 24/7 Support',
+        contact: 'Özünlü Kontakt, Kipper Angebot, Vertrieb, Export, Istanbul, Sultangazi',
+        corporate: 'Özünlü Damper, Unternehmen, seit 1977, Aufbauhersteller, Qualified Body Builder, Export',
+        products: 'Kipper, Auflieger, Aufbau, Hardox, Produktkatalog, Konfigurator',
+        media: 'Özünlü News, Kipper Branche, Blog, Medien, Bautransport',
+        career: 'Özünlü Karriere, Jobs, Fertigung, Ingenieurkarriere',
+        legalKvkk: 'KVKK, Datenschutz, Özünlü Damper, DSGVO',
+        legalPrivacy: 'Datenschutzhinweis, personenbezogene Daten',
+        legalCookie: 'Cookie-Richtlinie, Cookies, Website',
+    },
+    bg: {
+        home: 'Özünlü Damper, самосвал, Hardox, полуремарке, надстройка, тежкотоварно превозно средство, обработка на стомана, хидравлика, следпродажно обслужване, BPW',
+        damper: 'самосвал, Hardox самосвал, хидравличен самосвал, строителен самосвал, минен самосвал, надстройка, оферта',
+        yariRomork: 'полуремарке, ремарке, Hardox ремарке, BPW ос, Özkoç ос, тежък транспорт, производител на полуремаркета',
+        ekEkipmanlar: 'резервни части за ремарке, хидравлична система, ос, спирачна система, EBS, LED осветление, BPW, оригинални части',
+        afterSales: 'следпродажно обслужване, оторизиран сервиз, резервни части, техническа поддръжка, Özünlü сервиз',
+        contact: 'Özünlü контакт, оферта за самосвал, продажби, експорт, Истанбул, Султангази',
+        corporate: 'Özünlü Damper, корпоративен, от 1977, производител на надстройки, Qualified Body Builder, експорт',
+        products: 'самосвал, полуремарке, надстройка, Hardox, продуктов каталог, конфигуратор',
+        media: 'Özünlü новини, сектор самосвали, блог, медии, строителен транспорт',
+        career: 'Özünlü кариера, работни места, производство, инженерна кариера',
+        legalKvkk: 'KVKK, защита на личните данни, Özünlü Damper',
+        legalPrivacy: 'известие за поверителност, лични данни',
+        legalCookie: 'политика за бисквитки, cookies',
+    },
+    ro: {
+        home: 'Özünlü Damper, basculantă, Hardox, semiremorcă, suprastructură, vehicul comercial greu, prelucrare oțel, hidraulică, service post-vânzare, BPW',
+        damper: 'basculantă, Hardox basculantă, basculantă hidraulică, basculantă construcții, basculantă minieră, suprastructură, ofertă',
+        yariRomork: 'semiremorcă, remorcă, Hardox remorcă, osie BPW, osie Özkoç, transport greu, producător semiremorci',
+        ekEkipmanlar: 'piese de schimb remorcă, sistem hidraulic, osie, sistem frânare, EBS, iluminare LED, BPW, piese originale',
+        afterSales: 'service post-vânzare, service autorizat, piese de schimb, suport tehnic, service Özünlü, suport 24/7',
+        contact: 'contact Özünlü, ofertă basculantă, vânzări, export, Istanbul, Sultangazi',
+        corporate: 'Özünlü Damper, corporativ, din 1977, constructor suprastructuri, Qualified Body Builder, export',
+        products: 'basculantă, semiremorcă, suprastructură, Hardox, catalog produse, configurator',
+        media: 'știri Özünlü, industrie basculante, blog, media, transport construcții',
+        career: 'cariere Özünlü, locuri de muncă, producție, cariere inginerie',
+        legalKvkk: 'KVKK, protecția datelor, Özünlü Damper, GDPR',
+        legalPrivacy: 'notificare confidențialitate, date personale',
+        legalCookie: 'politică cookie, cookies',
+    },
+    ar: {
+        home: 'Özünlü Damper, قلاب, Hardox, نصف مقطورة, هيكل علوي, مركبة تجارية ثقيلة, معالجة الفولاذ, هيدروليك, ما بعد البيع, BPW',
+        damper: 'قلاب, Hardox قلاب, قلاب هيدروليكي, قلاب بناء, قلاب تعدين, هيكل علوي, عرض سعر',
+        yariRomork: 'نصف مقطورة, مقطورة, Hardox مقطورة, محور BPW, محور Özkoç, نقل ثقيل, مصنع نصف مقطورات',
+        ekEkipmanlar: 'قطع غيار مقطورة, نظام هيدروليكي, محور, نظام فرامل, EBS, إضاءة LED, BPW, قطع أصلية',
+        afterSales: 'خدمة ما بعد البيع, مركز خدمة معتمد, قطع غيار, دعم فني, خدمة Özünlü, دعم 24/7',
+        contact: 'اتصال Özünlü, عرض سعر قلاب, مبيعات, تصدير, إسطنبول, سلطان غازي',
+        corporate: 'Özünlü Damper, مؤسسي, منذ 1977, مصنع هياكل علوية, Qualified Body Builder, تصدير',
+        products: 'قلاب, نصف مقطورة, هيكل علوي, Hardox, كتالوج منتجات, مُكوِّن',
+        media: 'أخبار Özünlü, صناعة القلابات, مدونة, إعلام, نقل البناء',
+        career: 'وظائف Özünlü, توظيف, تصنيع, وظائف هندسية',
+        legalKvkk: 'KVKK, حماية البيانات, Özünlü Damper',
+        legalPrivacy: 'إشعار الخصوصية, بيانات شخصية',
+        legalCookie: 'سياسة ملفات تعريف الارتباط, cookies',
+    },
+    fr: {
+        home: 'Özünlü Damper, benne, Hardox, semi-remorque, superstructure, véhicule utilitaire lourd, acier, hydraulique, SAV, BPW',
+        damper: 'benne, benne Hardox, benne hydraulique, benne chantier, benne minière, superstructure, devis',
+        yariRomork: 'semi-remorque, remorque, Hardox remorque, essieu BPW, essieu Özkoç, transport lourd, fabricant semi-remorque',
+        ekEkipmanlar: 'pièces détachées remorque, système hydraulique, essieu, freinage, EBS, éclairage LED, BPW, pièces d\'origine',
+        afterSales: 'service après-vente, garage agréé, pièces détachées, support technique, service Özünlü, support 24/7',
+        contact: 'contact Özünlü, devis benne, ventes, export, Istanbul, Sultangazi',
+        corporate: 'Özünlü Damper, entreprise, depuis 1977, carrossier, Qualified Body Builder, export',
+        products: 'benne, semi-remorque, superstructure, Hardox, catalogue produits, configurateur',
+        media: 'actualités Özünlü, industrie bennes, blog, médias, transport BTP',
+        career: 'carrières Özünlü, emplois, fabrication, carrières ingénierie',
+        legalKvkk: 'KVKK, protection des données, Özünlü Damper, RGPD',
+        legalPrivacy: 'notice confidentialité, données personnelles',
+        legalCookie: 'politique cookies, cookies',
+    },
+    es: {
+        home: 'Özünlü Damper, volquete, Hardox, semirremolque, superestructura, vehículo comercial pesado, acero, hidráulica, posventa, BPW',
+        damper: 'volquete, volquete Hardox, volquete hidráulico, volquete construcción, volquete minero, superestructura, presupuesto',
+        yariRomork: 'semirremolque, remolque, Hardox remolque, eje BPW, eje Özkoç, transporte pesado, fabricante semirremolque',
+        ekEkipmanlar: 'repuestos remolque, sistema hidráulico, eje, frenos, EBS, iluminación LED, BPW, piezas originales',
+        afterSales: 'servicio posventa, taller autorizado, repuestos, soporte técnico, servicio Özünlü, soporte 24/7',
+        contact: 'contacto Özünlü, presupuesto volquete, ventas, exportación, Estambul, Sultangazi',
+        corporate: 'Özünlü Damper, empresa, desde 1977, carrocero, Qualified Body Builder, exportación',
+        products: 'volquete, semirremolque, superestructura, Hardox, catálogo productos, configurador',
+        media: 'noticias Özünlü, industria volquetes, blog, medios, transporte construcción',
+        career: 'carreras Özünlü, empleo, fabricación, carreras ingeniería',
+        legalKvkk: 'KVKK, protección de datos, Özünlü Damper, RGPD',
+        legalPrivacy: 'aviso privacidad, datos personales',
+        legalCookie: 'política cookies, cookies',
+    },
+    ru: {
+        home: 'Özünlü Damper, самосвал, Hardox, полуприцеп, надстройка, тяжёлый коммерческий автомобиль, обработка стали, гидравлика, сервис, BPW',
+        damper: 'самосвал, Hardox самосвал, гидравлический самосвал, строительный самосвал, горный самосвал, надстройка, предложение',
+        yariRomork: 'полуприцеп, прицеп, Hardox полуприцеп, ось BPW, ось Özkoç, тяжёлые перевозки, производитель полуприцепов',
+        ekEkipmanlar: 'запчасти для прицепов, гидравлическая система, ось, тормозная система, EBS, LED освещение, BPW, оригинальные запчасти',
+        afterSales: 'послепродажное обслуживание, авторизованный сервис, запчасти, техподдержка, сервис Özünlü, поддержка 24/7',
+        contact: 'контакты Özünlü, предложение на самосвал, продажи, экспорт, Стамбул, Султангази',
+        corporate: 'Özünlü Damper, о компании, с 1977, производитель надстроек, Qualified Body Builder, экспорт',
+        products: 'самосвал, полуприцеп, надстройка, Hardox, каталог продукции, конфигуратор',
+        media: 'новости Özünlü, отрасль самосвалов, блог, медиа, строительные перевозки',
+        career: 'карьера Özünlü, вакансии, производство, инженерная карьера',
+        legalKvkk: 'KVKK, защита персональных данных, Özünlü Damper',
+        legalPrivacy: 'уведомление о конфиденциальности, персональные данные',
+        legalCookie: 'политика cookie, cookies',
+    },
+    uk: {
+        home: 'Özünlü Damper, самоскид, Hardox, напівпричіп, надбудова, важкий комерційний автомобіль, обробка сталі, гідравліка, сервіс, BPW',
+        damper: 'самоскид, Hardox самоскид, гідравлічний самоскид, будівельний самоскид, гірничий самоскид, надбудова, пропозиція',
+        yariRomork: 'напівпричіп, причіп, Hardox напівпричіп, вісь BPW, вісь Özkoç, важкі перевезення, виробник напівпричепів',
+        ekEkipmanlar: 'запчастини для причепів, гідравлічна система, вісь, гальмівна система, EBS, LED освітлення, BPW, оригінальні запчастини',
+        afterSales: 'післяпродажне обслуговування, авторизований сервіс, запчастини, техпідтримка, сервіс Özünlü, підтримка 24/7',
+        contact: 'контакти Özünlü, пропозиція на самоскид, продажі, експорт, Стамбул, Султангазі',
+        corporate: 'Özünlü Damper, про компанію, з 1977, виробник надбудов, Qualified Body Builder, експорт',
+        products: 'самоскид, напівпричіп, надбудова, Hardox, каталог продукції, конфігуратор',
+        media: 'новини Özünlü, галузь самоскидів, блог, медіа, будівельні перевезення',
+        career: 'кар\'єра Özünlü, вакансії, виробництво, інженерна кар\'єра',
+        legalKvkk: 'KVKK, захист персональних даних, Özünlü Damper',
+        legalPrivacy: 'повідомлення про конфіденційність, персональні дані',
+        legalCookie: 'політика cookie, cookies',
+    },
+};
+
+export function getPageKeywords(locale: Locale, pageKey: PageSeoKey): string {
+    return pageKeywords[locale][pageKey];
+}

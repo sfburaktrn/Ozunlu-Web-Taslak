@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Kipper | Schnelle Produktion, Hardox-Stahl-Aufbauten – Seit 1977",
+      "description": "Seit 1977: Türkeis vertrauenswürdiger Hersteller von Aufbauten für schwere Nutzfahrzeuge mit Hardox-zertifizierter Stahlverarbeitung, Ingenieurskunst und umfassendem Kundendienst."
+    },
+    "damper": {
+      "title": "Özünlü Kipper | Hochleistungs-Hardox-Kipperlösungen – Seit 1977",
+      "description": "Özünlü Kipper mit Hardox-Stahlmulden, fortschrittlicher Technik und über 45 Jahren Erfahrung — unverzichtbar für Bau, Bergbau und Infrastruktur. Jetzt Angebot anfordern."
+    },
+    "yariRomork": {
+      "title": "Özünlü Sattelanhänger | Hardox-Stahl-Kipperanhänger – Schwerlasttransport",
+      "description": "Sattelanhänger mit BPW- und Özkoç-Achsen und Hardox 450/500-Mulden für sicheren, effizienten Schwerlasttransport. Entwickelt von Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Anhänger-Ersatzteile & Ausrüstung | Original Hydraulik, Achsen, Bremsen – Özünlü",
+      "description": "Original-Anhängerausrüstung und Ersatzteile mit Özünlü-Garantie. Hydraulik, BPW-Özkoç-Achsen, EBS-Bremsen und LED-Beleuchtung — großer Lagerbestand, schnelle Lieferung."
+    },
+    "afterSales": {
+      "title": "Özünlü Kundendienst | 24/7 Technischer Support, Ersatzteile, Servicenetz",
+      "description": "87 autorisierte Servicestellen in der Türkei, 24/7 technischer Support und Original-Ersatzteile — Özünlü Kundendienst hält Ihre Flotte am Laufen."
+    },
+    "contact": {
+      "title": "Kontakt | Özünlü Damper – Angebote & Support",
+      "description": "Kontaktieren Sie Özünlü für Vertrieb, Kundendienst, Export und Personal. Hauptsitz: Sultangazi, Istanbul."
+    },
+    "corporate": {
+      "title": "Unternehmen | Özünlü Damper – Seit 1977",
+      "description": "Seit 1977 ist Özünlü Damper die Adresse für Vertrauen und Qualität bei Aufbauten für schwere Nutzfahrzeuge."
+    },
+    "products": {
+      "title": "Produkte | Özünlü Damper",
+      "description": "Kipper-, Sattelanhänger- und Ausrüstungslösungen."
+    },
+    "media": {
+      "title": "Medien | Özünlü Damper",
+      "description": "Özünlü Damper Nachrichten, Blog und Brancheneinblicke."
+    },
+    "career": {
+      "title": "Karriere | Özünlü Damper",
+      "description": "Karrieremöglichkeiten bei Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Kipper",
+      "yariRomork": "Sattelanhänger",
+      "ekEkipmanlar": "Ausrüstung",
+      "satisSonrasi": "Kundendienst",
+      "iletisim": "Kontakt",
+      "mobileContactQuote": "Kontakt & Angebot"
+    },
+    "footer": {
+      "logoAlt": "Özünlü Damper Logo",
+      "about": "Seit 1977: <hardox></hardox>-zertifizierte <strong>Stahlverarbeitung</strong>, Ingenieurskunst und umfassendes Kundendienstnetz — Türkeis vertrauenswürdiger Hersteller von Aufbauten für schwere Nutzfahrzeuge.",
+      "quickAccess": "Schnellzugriff",
+      "contact": "Kontakt",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "copyright": "© {year} Özünlü Damper. Alle Rechte vorbehalten.",
+      "kvkk": "DSGVO",
+      "aydinlatmaMetni": "Datenschutzhinweis",
+      "cerezPolitikasi": "Cookie-Richtlinie"
+    },
+    "cta": {
+      "teklifAl": "Angebot",
+      "teklifAlin": "Angebot anfordern",
+      "hemenTeklifAl": "Jetzt Angebot",
+      "incele": "Ansehen",
+      "bizeUlasin": "Kontaktieren Sie uns",
+      "bilgiAl": "Mehr erfahren",
+      "iletisimeGecin": "Kontakt aufnehmen",
+      "detayliIncele": "Details ansehen",
+      "tumUrunler": "ALLE PRODUKTE",
+      "kesfet": "Entdecken",
+      "kaydir": "Scrollen"
+    },
+    "labels": {
+      "modellerimiz": "Unsere Modelle",
+      "oneCikanlar": "Highlights",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Hardox In My Body zertifiziertes verschleißfestes Stahl-Logo"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "GESCHWINDIGKEIT IN DER PRODUKTION",
+      "titleLine2": "BESTÄNDIGKEIT IM EINSATZ",
+      "subtitle": "Schnelle Produktion, langlebige Aufbauten und bewährte Leistung im Einsatz",
+      "ctaDamper": "Kipper-Angebot",
+      "ctaYariRomork": "Sattelanhänger-Angebot",
+      "scroll": "Scrollen"
+    },
+    "about": {
+      "eyebrow": "Über uns",
+      "title": "Stärke durch schnelle Produktion definieren",
+      "paragraph1": "Seit 1977 liefern wir mit Produktionskraft von der Türkei in die Welt zuverlässige, langlebige Aufbauten für verschiedene Branchen.",
+      "paragraph2": "Wir verbinden fortschrittliche Technik und Design mit der überlegenen Beständigkeit von <hardox></hardox>-Stahl und entwickeln jedes Produkt als Lösung für operative Effizienz.",
+      "cards": {
+        "arge": "F&E & INGENIEURWESEN",
+        "ozelTasarim": "INDIVIDUELLE DESIGNLÖSUNGEN",
+        "uretimTeknolojisi": "FORTSCHRITTLICHE PRODUKTIONSTECHNOLOGIE",
+        "sertifikaliUretim": "ZERTIFIZIERTE PRODUKTION"
+      }
+    },
+    "damperHero": {
+      "category": "KIPPER",
+      "imageAlt": "Özünlü Kipper Leistung und Beständigkeit",
+      "titleLine1": "Ingenieursantwort",
+      "titleLine2": "für harte Einsätze",
+      "description": "Unsere Kippersysteme für harte Bau-, Bergbau- und Infrastrukturbedingungen arbeiten unterbrechungsfrei mit <hardox></hardox>-Muldenbeständigkeit, hoher Kippstabilität und schneller Entladekapazität."
+    },
+    "trailerHero": {
+      "category": "SATTELANHÄNGER",
+      "imageAlt": "Özünlü Sattelanhänger und Anhängersysteme",
+      "titleLine1": "Leichtes Design",
+      "titleLine2": "Starke Leistung",
+      "description": "Bietet Transporteffizienz, hohen Wiederverkaufswert und langlebige Leistung."
+    },
+    "equipmentHero": {
+      "category": "Ausrüstung",
+      "imageAlt": "Özünlü Ausrüstung und Ersatzteile",
+      "titleLine1": "Komplette Ausrüstung",
+      "titleLine2": "für Ihre Flotte",
+      "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung ist original zertifiziert und schnell aus großem Lager mit Özünlü-Garantie lieferbar."
+    },
+    "whyChooseUs": {
+      "eyebrow": "WARUM ÖZÜNLÜ?",
+      "title": "Warum Özünlü?",
+      "features": {
+        "0": "OEM-genehmigtes Aufbaudesign — kompatibel mit verschiedenen Fahrgestell- und Zugmaschinenkonfigurationen",
+        "1": "<hardox></hardox>-zertifizierte <strong>Stahlverarbeitung</strong> und Roboterschweißtechnologie",
+        "2": "Volle Einhaltung aller Vorschriften und europäischer Sicherheitsstandards (ECE/ADR)",
+        "3": "Umfassende Garantie und unterbrechungsfreier <strong>Kundendienst</strong>",
+        "4": "87 autorisierte Servicestellen in 50 Provinzen in der Türkei",
+        "5": "Strukturdesign, das hohen Wiederverkaufswert bewahrt",
+        "6": "Export in über 50 Länder — weltweit bewährte Qualität"
+      },
+      "cardLabel": "Özünlü Guarantee"
+    },
+    "mapPreview": {
+      "eyebrow": "Servicelandkarte",
+      "title": "Landesweites ",
+      "titleHighlight": "autorisiertes Servicenetz",
+      "description": "Wo auch immer Ihr Fahrzeug ist — Özünlü ist bei Ihnen. 87 autorisierte Servicestellen in 50 Provinzen mit Original-Ersatzteilen und zertifizierten Technikern.",
+      "citiesLabel": "Cities with service",
+      "pointsLabel": "Total service points",
+      "topCities": "Featured cities",
+      "serviceCount": "{count} service points",
+      "tapHint": "Tap the map",
+      "mapInstruction": "Select a city to view service details.",
+      "modalEyebrow": "Service details",
+      "plateCode": "Plate code: {code}",
+      "closeAria": "Close",
+      "noService": "No registered service found for this province."
+    },
+    "partners": {
+      "title": "Bevorzugt von Branchenführern",
+      "description": "Unsere Aufbauten für schwere Nutzfahrzeuge arbeiten zuverlässig auf den härtesten Strecken in Bau, Bergbau und Fernverkehr.",
+      "footer": "Zugelassener Aufbau-Lieferant"
+    },
+    "products": {
+      "eyebrow": "Unsere Produkte",
+      "title": "AUFBAU",
+      "titleHighlight": "LÖSUNGEN",
+      "subtitle": "Aufbaulösungen in <hardox></hardox>-Stahlqualität für jeden Bedarf",
+      "viewDetails": "View Details",
+      "items": {
+        "damper": {
+          "title": "TIPPER",
+          "description": "<hardox></hardox> steel body, hydraulic system, 20-40m³ capacity",
+          "features": [
+            "Hardox 450 Steel",
+            "Hydraulic System",
+            "Lightweight Design"
+          ]
+        },
+        "dorse": {
+          "title": "TRAILER",
+          "description": "High strength, long life, custom design options",
+          "features": [
+            "Custom Design",
+            "High Durability",
+            "Easy Maintenance"
+          ]
+        },
+        "kar": {
+          "title": "SNOW PLOW",
+          "description": "Custom tipper solutions for customer needs",
+          "features": [
+            "Custom Built",
+            "R&D Support",
+            "Fast Production"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "Die Wahl der Besten"
+    },
+    "stats": {
+      "exportCountries": "Export Countries",
+      "steelProcessing": "Annual Steel Processing (Tons)",
+      "experience": "Years of Experience"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü Kipperlösungen",
+      "titleLine1": "KIPPER",
+      "titleLine2": "LÖSUNGEN",
+      "description": "Die Ingenieursantwort für harte Einsätze. <hardox></hardox>-Mulde, hohe Kippstabilität und optimierte Nutzlast — überlegene Leistung unter allen Bedingungen."
+    },
+    "products": {
+      "title": "Fertige Kipperlösungen",
+      "subtitle": "Die beliebtesten Konfigurationen für Sie vorbereitet. Ansehen oder sofort Angebot anfordern."
+    },
+    "features": {
+      "titleLine1": "Perfekte Harmonie von",
+      "titleLine2": "Kraft und Design",
+      "item01Title": "Hardox® Mulde",
+      "item01Content": "Muldenstruktur aus schwedischem <hardox></hardox>-Stahl definiert Industriestandards bei Verschleiß- und Stoßfestigkeit neu. Lange Lebensdauer, niedrige Wartungskosten.",
+      "item02Title": "Aerodynamisches Engineering",
+      "item02Content": "Im Windkanal optimierte Linien senken Kraftstoffverbrauch und Gesamtbetriebskosten.",
+      "item03Title": "Hohe Nutzlastkapazität",
+      "item03Content": "Leichtes Hochfestigkeits-Fahrgestell für maximale Transportkapazität innerhalb gesetzlicher Grenzen.",
+      "imageAlt": "Özünlü Kipper Merkmale"
+    },
+    "configurator": {
+      "title": "Kipper-Konfigurator",
+      "subtitle": "Geben Sie technische Details für einen leistungsstarken Kipper nach Maß an. Unser Expertenteam erstellt Ihr individuelles Angebot."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Tipper",
+        "description": "Engineering-focused design for harsh construction conditions. <hardox></hardox> body option, reinforced chassis and fast unloading.",
+        "features": [
+          "Hardox Body Option",
+          "High Tipping Stability",
+          "Fast Unloading",
+          "Reinforced Chassis",
+          "Easy Maintenance"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Hardox® Body",
+            "content": "Long life and low maintenance in wear and impact resistance."
+          },
+          "sasi": {
+            "title": "Chassis",
+            "content": "Reinforced chassis for heavy-duty use."
+          },
+          "bosaltim": {
+            "title": "Unloading",
+            "content": "Fast and controlled unloading with optimized hydraulics."
+          },
+          "verimlilik": {
+            "title": "Efficiency",
+            "content": "Engineering details that boost operational continuity."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Tipper",
+        "description": "The strongest body-chassis combination for high-tonnage loads.",
+        "features": [
+          "Heavy Duty Use",
+          "Optimized Volume",
+          "Durable Side Walls",
+          "Service Ease",
+          "Optional Equipment"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacity",
+            "content": "Optimized volume for high-tonnage operations."
+          },
+          "dayanim": {
+            "title": "Durability",
+            "content": "Impact and wear resistant structure."
+          },
+          "donanim": {
+            "title": "Equipment",
+            "content": "Tarpaulin, cover, lighting and other options."
+          },
+          "uyumluluk": {
+            "title": "Compatibility",
+            "content": "Mounting alternatives for different chassis needs."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Tipper",
+        "description": "Balanced weight and economical operation for compact scenarios.",
+        "features": [
+          "Compact Design",
+          "Economical Operation",
+          "Balanced Weight",
+          "Easy Maneuver",
+          "Long Life"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Usage",
+            "content": "Agile operation in compact sites."
+          },
+          "agirlik": {
+            "title": "Weight",
+            "content": "Maximum capacity within legal limits."
+          },
+          "maliyet": {
+            "title": "Cost",
+            "content": "Economical operation and easy maintenance."
+          },
+          "performans": {
+            "title": "Performance",
+            "content": "Stable performance in daily intensive use."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü Sattelanhänger-Lösungen",
+      "titleLine1": "SATTELANHÄNGER",
+      "titleLine2": "LÖSUNGEN",
+      "description": "Erleichtern Sie Schwerlasttransport mit Ingenieurskunst. <hardox></hardox>-Stahlstruktur, fortschrittliche Bremsentechnik und optimierte Lastverteilung — überlegene Leistung und Sicherheit auf jeder Strecke."
+    },
+    "products": {
+      "title": "Fertige Sattelanhänger-Lösungen",
+      "subtitle": "Die beliebtesten Branchenkonfigurationen für Sie vorbereitet. Angebot anfordern oder eigenes Fahrzeug gestalten."
+    },
+    "features": {
+      "titleLine1": "Beherrschen Sie",
+      "titleLine2": "jeden Moment auf der Straße",
+      "item01Title": "Fortschrittliche Fahrgestelltechnik",
+      "item01Content": "Hochfestes Fahrgestell mit Roboterschweißung; maximale Biegefestigkeit, minimiertes Gewicht, maximierte Nutzlast.",
+      "item02Title": "Aktive Sicherheitssysteme",
+      "item02Content": "EBS-Elektronikbremse und RSS-Kippschutz für Fahrsicherheit nach europäischen Standards.",
+      "item03Title": "Vielseitige Anpassung",
+      "item03Content": "Volle Flexibilität von Tieflader bis Containerlogistik, Schüttgut bis Speziallasten.",
+      "imageAlt": "Sattelanhänger Merkmale"
+    },
+    "configurator": {
+      "title": "Sattelanhänger-Konfigurator",
+      "subtitle": "Teilen Sie Details für den besten leistungsstarken Sattelanhänger für Ihre Flotte. Unser Ingenieurteam erstellt ein individuelles technisches Angebot."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semi-Trailer",
+        "description": "22m³ volume with Hardox 450 body and BPW axle for long-distance heavy transport.",
+        "features": [
+          "22m³ Volume",
+          "Hardox 450 Body",
+          "5/6mm Plate",
+          "BPW Axle (Foreign)",
+          "Folding Bumper"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semi-Trailer",
+        "description": "Hardox 500 chassis and hydraulic ramp for high-performance operations.",
+        "features": [
+          "Özkoç Axle (Domestic)",
+          "Hardox 500 Chassis",
+          "Fixed Bumper",
+          "Hydraulic Ramp",
+          "Extendable Sides"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semi-Trailer",
+        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "features": [
+          "21m³ Volume",
+          "Özkoç Axle",
+          "3/4mm Plate (Light)",
+          "Automatic Tarpaulin",
+          "Sleeve Cover"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "AUSRÜSTUNG",
+      "imageAlt": "Ausrüstungs- und Ersatzteillösungen",
+      "titleLine1": "Komplette Ausrüstung",
+      "titleLine2": "für Ihre Flotte",
+      "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung original zertifiziert mit Özünlü-Garantie und schneller Lagerlieferung."
+    },
+    "categories": {
+      "title": "Produktgruppen",
+      "subtitle": "Original zertifizierte Ausrüstung, großer Lagerbestand und schnelle Lieferung an einem Ort.",
+      "hidrolik": {
+        "title": "Hydraulic Systems",
+        "desc": "High-pressure pumps, cylinders and valve systems for tough field conditions."
+      },
+      "dingil": {
+        "title": "Axle & Suspension",
+        "desc": "Premium axle and suspension systems including BPW and Özkoç."
+      },
+      "fren": {
+        "title": "Brake Systems",
+        "desc": "EBS and ABS compatible brake kits meeting European safety standards."
+      },
+      "elektrik": {
+        "title": "Electrical & Lighting",
+        "desc": "High-visibility LED lighting systems. ECE R48 compliant."
+      },
+      "aksesuar": {
+        "title": "Trailer Accessories",
+        "desc": "Tool boxes, fuel tanks, landing legs and custom accessories."
+      },
+      "yedekParca": {
+        "title": "Spare Parts",
+        "desc": "Original guaranteed spare parts with same-day shipping option."
+      }
+    },
+    "cta": {
+      "title": "Teil nicht gefunden?",
+      "description": "Kontaktieren Sie unser Expertenteam — wir beschaffen das benötigte Produkt für Sie."
+    },
+    "performance": {
+      "imageAlt": "Anhängerausrüstung",
+      "titleLine1": "Das richtige Teil,",
+      "titleLine2": "maximale Leistung",
+      "description": "Fahrzeugleistung hängt direkt von der Ausrüstungsqualität ab. Bei Özünlü liefern wir original zertifizierte Produkte weltweit bewährter Marken sofort aus großem Lager.",
+      "bullets": {
+        "0": "Original certified product guarantee",
+        "1": "Wide brand and model compatibility",
+        "2": "Competitive pricing and flexible payment",
+        "3": "Expert technical consulting support"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "100%",
+        "label": "Original Product Guarantee"
+      },
+      "delivery": {
+        "value": "Fast",
+        "label": "Stock Delivery"
+      },
+      "support": {
+        "value": "Support",
+        "label": "Pre & After Sales"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Kundendienst",
+      "badge": "ÖZÜNLÜ GARANTIE",
+      "titleLine1": "AN IHRER SEITE",
+      "titleLine2": "IN JEDEM",
+      "titleLine3": "MOMENT",
+      "description": "Echte Partnerschaft beginnt nach dem Kauf. Wir schützen die Betriebskontinuität Ihres Fahrzeugs mit 87 autorisierten Servicestellen, 24/7 Support und Original-Ersatzteilen."
+    },
+    "services": {
+      "title": "UNSERE DIENSTLEISTUNGEN",
+      "subtitle": "Professionelle Lösungen, die den Fahrzeugwert schützen und die operative Effizienz steigern.",
+      "servisAgi": {
+        "title": "Authorized Service Network",
+        "description": "87 authorized service points in 50 provinces across Turkey with certified technicians."
+      },
+      "yedekParca": {
+        "title": "Original Spare Parts",
+        "description": "100% original Özünlü parts for minimum vehicle downtime."
+      },
+      "garanti": {
+        "title": "Warranty Coverage",
+        "description": "All products covered by comprehensive manufacturer warranty."
+      },
+      "teknikDestek": {
+        "title": "24/7 Technical Support",
+        "description": "Expert support team available day and night."
+      }
+    },
+    "documents": {
+      "eyebrow": "Wissensdatenbank",
+      "title": "TECHNISCHE",
+      "titleHighlight": "DOKUMENTE",
+      "description": "Bedienungsanleitungen, Wartungsverfahren und technische Spezifikationen für maximale Produkteffizienz — auf Türkisch und Englisch verfügbar.",
+      "searchPlaceholder": "Dokumente suchen...",
+      "download": "HERUNTERLADEN",
+      "noResults": "Keine Dokumente gefunden.",
+      "damperManual": {
+        "title": "Tipper User Manual",
+        "desc": "Basic usage and safety instructions for tipper products."
+      },
+      "dorseManual": {
+        "title": "Trailer User Manual",
+        "desc": "Standard user manual for semi-trailer products."
+      },
+      "generalManual": {
+        "title": "General Product & Maintenance Handbook (TR/EN)",
+        "desc": "Comprehensive maintenance and technical details for all trailer models."
+      },
+      "damperSpec": {
+        "title": "Tipper Technical Specification (TR/EN)",
+        "desc": "Special technical specifications for tipper vehicles."
+      }
+    },
+    "map": {
+      "title": "Landesweites autorisiertes Servicenetz",
+      "description": "87 autorisierte Servicestellen in 50 Provinzen. Wählen Sie Ihre Stadt auf der Karte für sofortige Service- und Kontaktdaten."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "KONTAKT",
+      "subtitle": "Kontaktieren Sie uns für Fragen und Projekte.",
+      "headOffice": "HAUPTSITZ",
+      "submit": "Senden",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Mo–Sa: 09:00 – 18:30",
+      "name": "VOR- UND NACHNAME",
+      "namePlaceholder": "Ihr Vor- und Nachname",
+      "company": "UNTERNEHMEN",
+      "companyPlaceholder": "Firmenname",
+      "email": "E-MAIL",
+      "emailPlaceholder": "beispiel@firma.de",
+      "phone": "TELEFON",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "message": "NACHRICHT",
+      "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+      "mapTitle": "Özünlü Damper Standortkarte"
+    },
+    "tabs": {
+      "sales": "VERTRIEB & MARKETING",
+      "service": "KUNDENDIENST",
+      "export": "EXPORT",
+      "hr": "PERSONALWESEN"
+    }
+  },
+  "proposal": {
+    "configurator": "Configurator",
+    "selectedProduct": "Selected Product",
+    "selectedSubtitle": "Fill out the quote form for your selected product.",
+    "defaultSubtitle": "Specify details for a custom solution.",
+    "clearSelection": "Select a different product or use the configurator",
+    "stepQuantity": "Set Quantity",
+    "stepPayment": "Payment Method",
+    "stepContact": "Contact Information",
+    "vehicleInfo": "Vehicle Information",
+    "trailerSpecs": "Trailer Specifications",
+    "cargoType": "Cargo Type",
+    "dimensions": "Dimensions & Quantity",
+    "submit": "REQUEST QUOTE",
+    "submitting": "Sending...",
+    "successTitle": "Request Received!",
+    "successMessage": "Your quote form has been submitted. Our sales team will contact you shortly.",
+    "newForm": "Create New Form",
+    "kvkkNotice": "Your personal data is protected under GDPR.",
+    "payment": {
+      "cashTitle": "Cash / Wire Transfer",
+      "cashDesc": "Special discount for cash payments",
+      "creditTitle": "Credit / Check",
+      "creditDesc": "Flexible payment terms available"
+    },
+    "fields": {
+      "quantity": "Quantity",
+      "brand": "Vehicle Brand",
+      "brandPh": "e.g. Mercedes, Ford",
+      "model": "Vehicle Model",
+      "modelPh": "e.g. 4140, Cargo",
+      "volume": "Desired Volume (m³)",
+      "volumePh": "e.g. 30",
+      "axle": "Axle Option",
+      "domestic": "Domestic",
+      "foreign": "Foreign",
+      "cargo": "Cargo Type",
+      "cargoPh": "e.g. Earth, Sand, Asphalt",
+      "thickness": "Floor/Side Thickness (mm)",
+      "thicknessPh": "e.g. 5mm / 4mm",
+      "company": "Company Name",
+      "companyPh": "Company Title",
+      "contact": "Contact Person",
+      "contactPh": "Full Name",
+      "phone": "Phone",
+      "phonePh": "+90 5XX...",
+      "email": "Email",
+      "emailPh": "mail@company.com",
+      "heardFrom": "How did you hear about us?",
+      "heardFromPh": "Google, Social Media, Referral..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Seit 1977",
+      "titleLine1": "GESCHWINDIGKEIT UND VERTRAUEN",
+      "titleLine2": "UNSERE SIGNATUR",
+      "description": "Mit fast einem halben Jahrhundert Erfahrung setzen wir Maßstäbe im <strong>Aufbau</strong> schwerer Nutzfahrzeuge und bauen die Zukunft auf soliden Grundlagen."
+    },
+    "values": {
+      "trust": {
+        "title": "VERTRAUEN",
+        "desc": "Seit über 45 Jahren stehen wir hinter jedem Versprechen an Kunden, Partner und Mitarbeiter."
+      },
+      "quality": {
+        "title": "QUALITÄT",
+        "desc": "Von <hardox></hardox>-Stahl bis zur feinsten Handarbeit streben wir in jeder Produktionsphase nach Perfektion."
+      },
+      "innovation": {
+        "title": "INNOVATION",
+        "desc": "Wir analysieren Branchenbedürfnisse und bringen die Technologien von morgen durch F&E in die Gegenwart."
+      },
+      "speed": {
+        "title": "GESCHWINDIGKEIT",
+        "desc": "Mit optimierten Produktionsprozessen liefern wir schnell ohne Qualitätskompromisse."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NICHT NUR STAHL,",
+      "titleLine2": "WIR SCHAFFEN VERTRAUEN.",
+      "p1": "<strong>Seit 1977</strong> verlässt unser Band nicht nur ein Kipper — sondern ein halbes Jahrhundert Erfahrung, Ingenieursleidenschaft und Innovation.",
+      "p2": "Unter harten Bedingungen getestet, sind unsere Produkte auf <durability>Haltbarkeit</durability> und <performance>Leistung</performance> ausgelegt. <hardox></hardox>-Stahl trifft auf türkisches Ingenieurwesen.",
+      "quote": "Bei jedem Schweißnaht, jeder Montage und jeder Lieferung: dem Erfolg unserer Partner Stärke verleihen."
+    },
+    "leader": {
+      "eyebrow": "Botschaft des Vorstands",
+      "quote": "Bei Özünlü produzieren wir nicht nur — wir bauen Vertrauen.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Vorstandsvorsitzender",
+      "bio": "Gegründet 1977, exportiert Özünlü Damper heute in über 40 Länder als Qualified Body Builder.",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "JENSEITS",
+      "titleHighlight": "DER ZEIT",
+      "m1977": {
+        "title": "Gründung",
+        "desc": "Produktionsreise in einer 30 m²-Werkstatt in Istanbul Okmeydanı."
+      },
+      "m1985": {
+        "title": "Erstes Wachstum",
+        "desc": "Verlagerung der Produktion nach Istanbul Habipler."
+      },
+      "m1991": {
+        "title": "Zukunftsinvestition",
+        "desc": "Kauf des heutigen Werksgeländes."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "Erster QBB-Titel der Branche."
+      },
+      "m2009": {
+        "title": "Kapazitätserhöhung",
+        "desc": "Verdopplung der Produktionskapazität."
+      },
+      "mToday": {
+        "title": "Globale Stärke",
+        "desc": "30.000 m² Produktionsfläche, 81 Provinzen, Export in 40+ Länder."
+      },
+      "yearToday": "Heute"
+    },
+    "facilities": {
+      "title": "PRODUKTIONSKRAFT UND",
+      "titleHighlight": "GLOBALE WIRKUNG",
+      "description": "Lokale Ingenieurskraft trifft auf globale Standards.",
+      "production": {
+        "title": "PRODUKTIONSSTANDORT",
+        "value": "30.000 m²",
+        "desc": "3 Standorte mit 7.000 m² Hallen- und 23.000 m² Freifläche."
+      },
+      "global": {
+        "title": "GLOBALE REICHWEITE",
+        "value": "40+ Länder",
+        "desc": "Exportnetz in alle 81 Provinzen und über 40 Länder."
+      },
+      "quality": {
+        "title": "QUALITÄTSSTANDARD",
+        "value": "QBB-Zertifikat",
+        "desc": "Erste Marke mit Qualified Body Builder-Titel."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "TALENT",
+      "titleHighlight": "MANAGEMENT",
+      "description": "Eine einzigartige Karriere für leidenschaftliche Fachkräfte mit großen Träumen."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "LEBEN",
+      "titleLine2": "BEI ÖZÜNLÜ",
+      "description": "Wir produzieren nicht nur die besten Kipper — wir wollen auch die zufriedensten Mitarbeiter haben.",
+      "imageAlt": "Özünlü Karriere {n}"
+    },
+    "jobs": {
+      "title": "WIR",
+      "titleHighlight": "WARTEN AUF DICH",
+      "subtitle": "Werde Teil des Teams, das die Zukunft gestaltet.",
+      "apply": "Bewerben",
+      "noJobsTitle": "Derzeit keine offenen Stellen",
+      "noJobsDesc": "Wir freuen uns jedoch immer, talentierte Fachkräfte kennenzulernen. Senden Sie uns Ihren Lebenslauf."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "MEDIEN",
+      "titleHighlight": "ZENTRUM",
+      "description": "Branchennews, Technologie und Updates aus der Welt von Özünlü."
+    },
+    "gallery": {
+      "title": "PRODUKT",
+      "titleHighlight": "GALERIE",
+      "description": "Details überlegener Technik und Handwerkskunst.",
+      "imageAlt": "Özünlü Galerie {n}",
+      "detailAlt": "Galeriedetail"
+    },
+    "insights": {
+      "title": "BRANCHEN",
+      "titleHighlight": "EINBLICKE",
+      "description": "Expertenanalysen zu Nutzfahrzeugen, Produktion und Logistik.",
+      "readMore": "Weiterlesen",
+      "articles": {
+        "a1": {
+          "category": "AKADEMIE",
+          "title": "Stahlqualität im Kipperbau: Hardox und mehr",
+          "excerpt": "Wie verlängert Hochfeststahl die Lebensdauer? Hardox 450 vs 500.",
+          "date": "12. Januar 2025",
+          "readTime": "6 Min. Lesezeit"
+        },
+        "a2": {
+          "category": "BRANCHE",
+          "title": "Logistik-Trends 2026",
+          "excerpt": "Lieferketten, Effizienzregeln und Chancen für die Türkei.",
+          "date": "8. Januar 2025",
+          "readTime": "8 Min. Lesezeit"
+        },
+        "a3": {
+          "category": "NACHHALTIGKEIT",
+          "title": "Grüne Logistik: Leichte Kipper",
+          "excerpt": "Kraftstoffeinsparung durch leichtere Chassis.",
+          "date": "3. Januar 2025",
+          "readTime": "5 Min. Lesezeit"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "INTERAKTIVES",
+    "titleHighlight": "ERLEBNIS",
+    "description": "Über klassische Kataloge hinaus: 360°-Ansicht und Konfigurator für Ihr Projekt.",
+    "view360": {
+      "dragHint": "Zum Drehen ziehen",
+      "bodyLabel": "AUFBAU-MODELL",
+      "disclaimer": "*Repräsentatives 3D-Mockup"
+    },
+    "configurator": {
+      "title": "KONFIGURATOR",
+      "bodyColor": "Aufbaufarbe",
+      "capacity": "Volumenkapazität",
+      "tires": "Reifentyp",
+      "summary": "Zusammenfassung",
+      "colors": {
+        "blue": "Özünlü Blau",
+        "gray": "Quarzgrau",
+        "navy": "Mitternachtsblau",
+        "red": "Flammenrot"
+      },
+      "tireTypes": {
+        "standard": "Standard",
+        "offRoad": "Off-Road",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "Entladung in 2 Min.",
+        "desc": "Rekord-Entladezeit mit optimierter Hydraulik."
+      },
+      "weight": {
+        "title": "15% leichter",
+        "desc": "Speziallegierung für mehr Nutzlast."
+      },
+      "hardox": {
+        "title": "Hardox 450 Aufbau",
+        "desc": "Maximaler Verschleiß- und Stoßschutz."
+      },
+      "balance": {
+        "title": "Smart-Balance-System",
+        "desc": "Aktive Sensoren gegen Kippen im Gelände."
+      }
+    }
+  }
+}

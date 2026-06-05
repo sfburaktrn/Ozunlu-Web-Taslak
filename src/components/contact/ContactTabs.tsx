@@ -1,11 +1,13 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 export const contactDepartments = [
-    { id: 'sales', label: 'SATIŞ & PAZARLAMA', email: 'satis@ozunlu.com' },
-    { id: 'service', label: 'SATIŞ SONRASI HİZMETLER', email: 'servis@ozunlu.com' },
-    { id: 'export', label: 'İHRACAT', email: 'export@ozunlu.com' },
-    { id: 'hr', label: 'İNSAN KAYNAKLARI', email: 'ik@ozunlu.com' }
-];
+    { id: 'sales', email: 'satis@ozunlu.com' },
+    { id: 'service', email: 'servis@ozunlu.com' },
+    { id: 'export', email: 'export@ozunlu.com' },
+    { id: 'hr', email: 'ik@ozunlu.com' },
+] as const;
 
 interface ContactTabsProps {
     activeTab: string;
@@ -13,6 +15,8 @@ interface ContactTabsProps {
 }
 
 export default function ContactTabs({ activeTab, setActiveTab }: ContactTabsProps) {
+    const t = useTranslations('contact.tabs');
+
     return (
         <div className="flex flex-wrap justify-center gap-4 mb-12">
             {contactDepartments.map((dept) => (
@@ -24,7 +28,7 @@ export default function ContactTabs({ activeTab, setActiveTab }: ContactTabsProp
                             : 'bg-transparent text-gray-400 border-gray-700 hover:border-gray-500 hover:text-white'
                         }`}
                 >
-                    {dept.label}
+                    {t(dept.id)}
                 </button>
             ))}
         </div>

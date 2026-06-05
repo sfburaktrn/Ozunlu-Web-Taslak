@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useRef, useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { defaultRichTextHandlers } from '@/i18n/richText';
 
 // Partner logos
 const partners = [
@@ -15,7 +17,7 @@ const partners = [
 ];
 
 export default function PartnersSlider() {
-    // const canvasRef = useRef<HTMLCanvasElement>(null); removed
+    const t = useTranslations('home.partners');
 
 
     const ozunluRef = useRef<HTMLDivElement>(null);
@@ -140,11 +142,11 @@ export default function PartnersSlider() {
                             className="text-center mb-8"
                         >
                             <h2 className="text-3xl md:text-5xl font-bold text-black mb-2">
-                                REFERANSLARIMIZ
+                                {t('title')}
                             </h2>
                             <div className="w-24 h-1 bg-gradient-to-r from-primary to-transparent mx-auto rounded-full" />
                             <p className="text-gray-800 max-w-2xl mx-auto mt-3 text-lg font-light leading-relaxed">
-                                Sektörün öncü markalarıyla kurduğumuz güçlü iş birlikleri sayesinde, kalite ve güveni her teslimatta bir adım öteye taşıyoruz.
+                                {t.rich('description', defaultRichTextHandlers)}
                             </p>
                         </motion.div>
 
@@ -191,7 +193,7 @@ export default function PartnersSlider() {
                                 />
                             </div>
                             <p className="text-lg md:text-xl text-primary uppercase tracking-[0.2em] font-normal border-t border-gray-200 inline-block pt-2 px-8 text-center">
-                                Onaylı Üst Yapı Tedarikçisi
+                                {t('footer')}
                             </p>
                         </motion.div>
                     </div>

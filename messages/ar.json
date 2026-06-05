@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | إنتاج سريع، حلول هياعل علوية من فولاذ Hardox – Since 1977",
+      "description": "منذ عام 1977، Özünlü هو المصنع الموثوق في تركيا للهياكل العلوية للمركبات التجارية الثقيلة، بمعالجة فولاذ Hardox المعتمدة، وهندسة متقدمة وشبكة خدمات ما بعد البيع شاملة."
+    },
+    "damper": {
+      "title": "Özünlü Damper | حلول قلاب Hardox عالية الأداء – Since 1977",
+      "description": "طرازات قلاب Özünlü المصممة بهيكل من فولاذ Hardox، وهندسة متقدمة وأكثر من 45 عاماً من الخبرة الإنتاجية — لا غنى عنها في البناء والتعدين والبنية التحتية. اطلب عرض سعر اليوم."
+    },
+    "yariRomork": {
+      "title": "Özünlü نصف مقطورة | مقطورة قلاب من فولاذ Hardox – حلول نقل الأحمال الثقيلة",
+      "description": "طرازات نصف مقطورة بمحاور BPW وÖzkoç وهياكل Hardox 450/500 لنقل آمن وفعّال للأحمال الثقيلة. هندسة Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "قطع غيار ومعدات المقطورات | أنظمة هيدروليكي ومحاور وفرامل أصلية – Özünlü",
+      "description": "معدات وقطع غيار أصلية للمقطورات بضمان Özünlü. أنظمة هيدروليكي، محاور BPW-Özkoç، مجموعات فرامل EBS وإضاءة LED — مخزون واسع وتوصيل سريع."
+    },
+    "afterSales": {
+      "title": "Özünlü خدمات ما بعد البيع | دعم فني 24/7، قطع غيار، شبكة خدمة معتمدة",
+      "description": "87 نقطة خدمة معتمدة في جميع أنحاء تركيا، خط دعم فني على مدار الساعة وضمان قطع غيار أصلية — خدمات ما بعد البيع من Özünlü تضمن استمرارية تشغيل أسطولكم."
+    },
+    "contact": {
+      "title": "اتصل بنا | Özünlü Damper – عروض أسعار ودعم",
+      "description": "تواصل مع Özünlü Damper للمبيعات وما بعد البيع والتصدير والموارد البشرية. المكتب الرئيسي: Sultangazi، إسطنبول."
+    },
+    "corporate": {
+      "title": "الشركة | Özünlü Damper – Since 1977",
+      "description": "منذ عام 1977، يُعد Özünlü Damper عنوان الثقة والجودة في قطاع الهياكل العلوية للمركبات التجارية الثقيلة."
+    },
+    "products": {
+      "title": "المنتجات | Özünlü Damper",
+      "description": "حلول القلاب ونصف المقطورة والمعدات."
+    },
+    "media": {
+      "title": "الإعلام | Özünlü Damper",
+      "description": "أخبار Özünlü Damper والمدونة ورؤى القطاع."
+    },
+    "career": {
+      "title": "الوظائف | Özünlü Damper",
+      "description": "فرص عمل في Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "قلاب",
+      "yariRomork": "نصف مقطورة",
+      "ekEkipmanlar": "معدات إضافية",
+      "satisSonrasi": "ما بعد البيع",
+      "iletisim": "اتصل بنا",
+      "mobileContactQuote": "اتصل واطلب عرض سعر"
+    },
+    "footer": {
+      "logoAlt": "شعار Özünlü Damper",
+      "about": "منذ عام 1977، معالجة <strong>فولاذ</strong> معتمدة <hardox></hardox>، وهندسة متقدمة وشبكة خدمات <strong>ما بعد البيع</strong> شاملة — المصنع الموثوق في تركيا للهياكل العلوية للمركبات التجارية الثقيلة.",
+      "quickAccess": "وصول سريع",
+      "contact": "اتصل بنا",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "copyright": "© {year} Özünlü Damper. جميع الحقوق محفوظة.",
+      "kvkk": "حماية البيانات",
+      "aydinlatmaMetni": "إشعار الخصوصية",
+      "cerezPolitikasi": "سياسة ملفات تعريف الارتباط"
+    },
+    "cta": {
+      "teklifAl": "اطلب عرض سعر",
+      "teklifAlin": "اطلب عرض سعر",
+      "hemenTeklifAl": "اطلب عرض سعر الآن",
+      "incele": "استعرض",
+      "bizeUlasin": "تواصل معنا",
+      "bilgiAl": "اعرف المزيد",
+      "iletisimeGecin": "تواصل",
+      "detayliIncele": "عرض التفاصيل",
+      "tumUrunler": "جميع المنتجات",
+      "kesfet": "استكشف",
+      "kaydir": "مرّر"
+    },
+    "labels": {
+      "modellerimiz": "طرازاتنا",
+      "oneCikanlar": "أبرز المميزات",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "شعار Hardox In My Body فولاذ معتمد مقاوم للتآكل"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "سرعة في الإنتاج",
+      "titleLine2": "متانة في الميدان",
+      "subtitle": "إنتاج سريع، حلول هياكل علوية طويلة الأمد وأداء مثبت على أرض الواقع",
+      "ctaDamper": "عرض سعر قلاب",
+      "ctaYariRomork": "عرض سعر نصف مقطورة",
+      "scroll": "مرّر"
+    },
+    "about": {
+      "eyebrow": "من نحن",
+      "title": "نعرّف القوة من خلال الإنتاج السريع",
+      "paragraph1": "منذ عام 1977، نقدّم حلول هياكل علوية موثوقة وطويلة الأمد لمختلف القطاعات بقوة إنتاجية تمتد من تركيا إلى العالم.",
+      "paragraph2": "نجمع بين الهندسة والتصميم المتقدمين ومتانة <strong>فولاذ</strong> <hardox></hardox> الفائقة، ونطوّر كل منتج ليس مجرد <strong>هيكل علوي</strong> بل حلاً يحقق الكفاءة التشغيلية.",
+      "cards": {
+        "arge": "البحث والتطوير والهندسة",
+        "ozelTasarim": "حلول تصميم مخصصة",
+        "uretimTeknolojisi": "تقنية إنتاج متقدمة",
+        "sertifikaliUretim": "إنتاج معتمد"
+      }
+    },
+    "damperHero": {
+      "category": "قلاب",
+      "imageAlt": "أداء ومتانة Özünlü قلاب",
+      "titleLine1": "الإجابة الهندسية",
+      "titleLine2": "للظروف الصعبة",
+      "description": "أنظمة القلاب لدينا المطوّرة لظروف البناء والتعدين ومشاريع البنية التحتية الثقيلة تعمل بلا انقطاع في الميدان بمتانة هيكل <hardox></hardox>، واستقرار عالٍ عند التفريغ وسعة تفريغ سريعة."
+    },
+    "trailerHero": {
+      "category": "نصف مقطورة",
+      "imageAlt": "Özünlü نصف مقطورة وأنظمة المقطورات",
+      "titleLine1": "تصميم خفيف",
+      "titleLine2": "أداء قوي",
+      "description": "يوفر كفاءة النقل وقيمة إعادة بيع عالية وأداءً طويل الأمد."
+    },
+    "equipmentHero": {
+      "category": "معدات إضافية",
+      "imageAlt": "Özünlü حلول المعدات وقطع الغيار",
+      "titleLine1": "حلول معدات",
+      "titleLine2": "متكاملة لأسطولكم",
+      "description": "من الأنظمة الهيدروليكي إلى مجموعات فرامل EBS، ومن محاور العلامات التجارية المتميزة إلى إضاءة LED — جميع معدات المقطورات أصلية معتمدة بضمان Özünlü وتوصيل سريع من مخزون واسع."
+    },
+    "whyChooseUs": {
+      "eyebrow": "لماذا ÖZÜNLÜ؟",
+      "title": "لماذا Özünlü؟",
+      "features": {
+        "0": "تصميم <strong>هيكل علوي</strong> معتمد من مصنع المركبة — إنتاج متوافق مع مختلف تكوينات الشاسيه والجرار",
+        "1": "معالجة <strong>فولاذ</strong> معتمدة <hardox></hardox> وتقنية اللحام الآلي",
+        "2": "امتثال كامل لجميع اللوائح ومعايير السلامة الأوروبية (ECE/ADR)",
+        "3": "ضمان شامل وخدمة <strong>ما بعد البيع</strong> بلا انقطاع",
+        "4": "87 نقطة خدمة معتمدة في 50 محافظة في جميع أنحاء تركيا",
+        "5": "تصميم هيكلي يحافظ على قيمة إعادة البيع العالية",
+        "6": "تصدير إلى أكثر من 50 دولة — جودة مثبتة على مستوى عالمي"
+      },
+      "cardLabel": "Özünlü Guarantee"
+    },
+    "mapPreview": {
+      "eyebrow": "خريطة الخدمة",
+      "title": "شبكة ",
+      "titleHighlight": "خدمة معتمدة على مستوى تركيا",
+      "description": "أينما كانت مركبتكم، Özünlü بجانبكم. 87 نقطة خدمة معتمدة في 50 محافظة تضمن استمرارية تشغيل أسطولكم بقطع غيار أصلية وفنيين معتمدين.",
+      "citiesLabel": "Cities with service",
+      "pointsLabel": "Total service points",
+      "topCities": "Featured cities",
+      "serviceCount": "{count} service points",
+      "tapHint": "Tap the map",
+      "mapInstruction": "Select a city to view service details.",
+      "modalEyebrow": "Service details",
+      "plateCode": "Plate code: {code}",
+      "closeAria": "Close",
+      "noService": "No registered service found for this province."
+    },
+    "partners": {
+      "title": "الخيار المفضل لدى العلامات الرائدة في القطاع",
+      "description": "حلولنا للهياكل العلوية للمركبات التجارية الثقيلة تعمل بموثوقية على أصعب المسارات في البناء والتعدين والنقل لمسافات طويلة.",
+      "footer": "مورد هياكل علوية معتمد"
+    },
+    "products": {
+      "eyebrow": "منتجاتنا",
+      "title": "حلول",
+      "titleHighlight": "الهياكل العلوية",
+      "subtitle": "حلول هياكل علوية بجودة <strong>فولاذ</strong> <hardox></hardox> لكل احتياج",
+      "viewDetails": "View Details",
+      "items": {
+        "damper": {
+          "title": "TIPPER",
+          "description": "<hardox></hardox> steel body, hydraulic system, 20-40m³ capacity",
+          "features": [
+            "Hardox 450 Steel",
+            "Hydraulic System",
+            "Lightweight Design"
+          ]
+        },
+        "dorse": {
+          "title": "TRAILER",
+          "description": "High strength, long life, custom design options",
+          "features": [
+            "Custom Design",
+            "High Durability",
+            "Easy Maintenance"
+          ]
+        },
+        "kar": {
+          "title": "SNOW PLOW",
+          "description": "Custom tipper solutions for customer needs",
+          "features": [
+            "Custom Built",
+            "R&D Support",
+            "Fast Production"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "اختيار الأفضل"
+    },
+    "stats": {
+      "exportCountries": "Export Countries",
+      "steelProcessing": "Annual Steel Processing (Tons)",
+      "experience": "Years of Experience"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü حلول القلاب",
+      "titleLine1": "قلاب",
+      "titleLine2": "حلول",
+      "description": "الإجابة الهندسية للظروف الصعبة. هيكل <hardox></hardox>، استقرار عالٍ عند التفريغ وسعة حمولة محسّنة — أداء فائق في كل الظروف."
+    },
+    "products": {
+      "title": "حلول قلاب جاهزة",
+      "subtitle": "أعددنا أكثر التكوينات تفضيلاً لكم. استعرضوا أو اطلبوا عرض سعر الآن."
+    },
+    "features": {
+      "titleLine1": "الانسجام المثالي بين",
+      "titleLine2": "القوة والتصميم",
+      "item01Title": "هيكل Hardox®",
+      "item01Content": "هيكل مصنوع من <strong>فولاذ</strong> <hardox></hardox> السويدي يعيد تعريف معايير القطاع في مقاومة التآكل والصدمات. عمر طويل وتكاليف صيانة منخفضة.",
+      "item02Title": "الهندسة الأيروديناميكية",
+      "item02Content": "خطوط أيروديناميكية محسّنة في نفق الرياح تقلّل استهلاك الوقود وتكلفة التشغيل الإجمالية.",
+      "item03Title": "سعة حمولة عالية",
+      "item03Content": "تصميم شاسيه خفيف وعالي المقاومة يحقق أقصى سعة نقل ضمن حدود الحمولة القانونية.",
+      "imageAlt": "مميزات Özünlü قلاب"
+    },
+    "configurator": {
+      "title": "مُكوِّن القلاب",
+      "subtitle": "حدّدوا التفاصيل الفنية لقلاب عالي الأداء مصمم حسب احتياجاتكم. سيجهّز فريق خبرائنا عرض سعر مخصص في أقرب وقت."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Tipper",
+        "description": "Engineering-focused design for harsh construction conditions. <hardox></hardox> body option, reinforced chassis and fast unloading.",
+        "features": [
+          "Hardox Body Option",
+          "High Tipping Stability",
+          "Fast Unloading",
+          "Reinforced Chassis",
+          "Easy Maintenance"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Hardox® Body",
+            "content": "Long life and low maintenance in wear and impact resistance."
+          },
+          "sasi": {
+            "title": "Chassis",
+            "content": "Reinforced chassis for heavy-duty use."
+          },
+          "bosaltim": {
+            "title": "Unloading",
+            "content": "Fast and controlled unloading with optimized hydraulics."
+          },
+          "verimlilik": {
+            "title": "Efficiency",
+            "content": "Engineering details that boost operational continuity."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Tipper",
+        "description": "The strongest body-chassis combination for high-tonnage loads.",
+        "features": [
+          "Heavy Duty Use",
+          "Optimized Volume",
+          "Durable Side Walls",
+          "Service Ease",
+          "Optional Equipment"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacity",
+            "content": "Optimized volume for high-tonnage operations."
+          },
+          "dayanim": {
+            "title": "Durability",
+            "content": "Impact and wear resistant structure."
+          },
+          "donanim": {
+            "title": "Equipment",
+            "content": "Tarpaulin, cover, lighting and other options."
+          },
+          "uyumluluk": {
+            "title": "Compatibility",
+            "content": "Mounting alternatives for different chassis needs."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Tipper",
+        "description": "Balanced weight and economical operation for compact scenarios.",
+        "features": [
+          "Compact Design",
+          "Economical Operation",
+          "Balanced Weight",
+          "Easy Maneuver",
+          "Long Life"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Usage",
+            "content": "Agile operation in compact sites."
+          },
+          "agirlik": {
+            "title": "Weight",
+            "content": "Maximum capacity within legal limits."
+          },
+          "maliyet": {
+            "title": "Cost",
+            "content": "Economical operation and easy maintenance."
+          },
+          "performans": {
+            "title": "Performance",
+            "content": "Stable performance in daily intensive use."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü حلول نصف المقطورة",
+      "titleLine1": "نصف مقطورة",
+      "titleLine2": "حلول",
+      "description": "خفّفوا عبء النقل الثقيل بالهندسة. هيكل من <strong>فولاذ</strong> <hardox></hardox>، تقنية فرامل متقدمة وتوزيع محسّن للحمولة — أداء وأمان فائقان في كل مسار."
+    },
+    "products": {
+      "title": "حلول نصف مقطورة جاهزة",
+      "subtitle": "أعددنا أكثر التكوينات تفضيلاً في القطاع. اطلبوا عرض سعر أو صمّموا مركبتكم الخاصة."
+    },
+    "features": {
+      "titleLine1": "سيطروا على",
+      "titleLine2": "كل لحظة على الطريق",
+      "item01Title": "تقنية شاسيه متقدمة",
+      "item01Content": "شاسيه عالي المقاومة منتج باللحام الآلي؛ أقصى مقاومة للانحناء، وزن مخفّض وسعة حمولة أقصى حمولة.",
+      "item02Title": "أنظمة سلامة نشطة",
+      "item02Content": "نظام فرامل إلكتروني EBS وتقنية RSS (Roll Stability Support) لمنع الانقلاب — سلامة قيادة وفق المعايير الأوروبية.",
+      "item03Title": "تكيّف متعدد الاستخدامات",
+      "item03Content": "مرونة كاملة — من نقل المنصات المنخفضة إلى لوجستيات الحاويات، ومن البضائع السائبة إلى تكوينات حمولة مخصصة.",
+      "imageAlt": "مميزات نصف المقطورة"
+    },
+    "configurator": {
+      "title": "مُكوِّن نصف المقطورة",
+      "subtitle": "شاركوا التفاصيل لتصميم أفضل نصف مقطورة عالية الأداء لأسطولكم. سيجهّز فريق مهندسينا عرضاً فنياً مخصصاً."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semi-Trailer",
+        "description": "22m³ volume with Hardox 450 body and BPW axle for long-distance heavy transport.",
+        "features": [
+          "22m³ Volume",
+          "Hardox 450 Body",
+          "5/6mm Plate",
+          "BPW Axle (Foreign)",
+          "Folding Bumper"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semi-Trailer",
+        "description": "Hardox 500 chassis and hydraulic ramp for high-performance operations.",
+        "features": [
+          "Özkoç Axle (Domestic)",
+          "Hardox 500 Chassis",
+          "Fixed Bumper",
+          "Hydraulic Ramp",
+          "Extendable Sides"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semi-Trailer",
+        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "features": [
+          "21m³ Volume",
+          "Özkoç Axle",
+          "3/4mm Plate (Light)",
+          "Automatic Tarpaulin",
+          "Sleeve Cover"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "معدات إضافية",
+      "imageAlt": "حلول المعدات وقطع الغيار",
+      "titleLine1": "حلول معدات",
+      "titleLine2": "متكاملة لأسطولكم",
+      "description": "من الأنظمة الهيدروليكي إلى مجموعات فرامل EBS، ومن محاور العلامات المتميزة إلى إضاءة LED — جميع معدات المقطورات أصلية معتمدة بضمان Özünlü وتوصيل سريع من مخزون واسع."
+    },
+    "categories": {
+      "title": "مجموعات المنتجات",
+      "subtitle": "معدات أصلية معتمدة، مخزون واسع وميزة التوصيل السريع في مكان واحد.",
+      "hidrolik": {
+        "title": "Hydraulic Systems",
+        "desc": "High-pressure pumps, cylinders and valve systems for tough field conditions."
+      },
+      "dingil": {
+        "title": "Axle & Suspension",
+        "desc": "Premium axle and suspension systems including BPW and Özkoç."
+      },
+      "fren": {
+        "title": "Brake Systems",
+        "desc": "EBS and ABS compatible brake kits meeting European safety standards."
+      },
+      "elektrik": {
+        "title": "Electrical & Lighting",
+        "desc": "High-visibility LED lighting systems. ECE R48 compliant."
+      },
+      "aksesuar": {
+        "title": "Trailer Accessories",
+        "desc": "Tool boxes, fuel tanks, landing legs and custom accessories."
+      },
+      "yedekParca": {
+        "title": "Spare Parts",
+        "desc": "Original guaranteed spare parts with same-day shipping option."
+      }
+    },
+    "cta": {
+      "title": "لم تجدوا القطعة المطلوبة؟",
+      "description": "تواصلوا مع فريق خبرائنا وسنوفر المنتج الذي تحتاجونه."
+    },
+    "performance": {
+      "imageAlt": "معدات المقطورات",
+      "titleLine1": "القطعة المناسبة،",
+      "titleLine2": "أقصى أداء",
+      "description": "أداء المركبة يرتبط مباشرة بجودة المعدات. في Özünlü، نوصل فوراً منتجات أصلية معتمدة من علامات مثبتة عالمياً من مخزوننا الواسع.",
+      "bullets": {
+        "0": "Original certified product guarantee",
+        "1": "Wide brand and model compatibility",
+        "2": "Competitive pricing and flexible payment",
+        "3": "Expert technical consulting support"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "100%",
+        "label": "Original Product Guarantee"
+      },
+      "delivery": {
+        "value": "Fast",
+        "label": "Stock Delivery"
+      },
+      "support": {
+        "value": "Support",
+        "label": "Pre & After Sales"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "خدمات ما بعد البيع",
+      "badge": "ضمان ÖZÜNLÜ",
+      "titleLine1": "بجانبكم",
+      "titleLine2": "في كل",
+      "titleLine3": "لحظة",
+      "description": "الشراكة الحقيقية تبدأ بعد الشراء. نحمي استمرارية تشغيل مركبتكم بـ 87 نقطة خدمة معتمدة على مستوى البلاد، ودعم فني 24/7 وضمان قطع غيار أصلية."
+    },
+    "services": {
+      "title": "خدماتنا",
+      "subtitle": "حلول احترافية تحافظ على قيمة مركبتكم وتعزز كفاءتكم التشغيلية.",
+      "servisAgi": {
+        "title": "Authorized Service Network",
+        "description": "87 authorized service points in 50 provinces across Turkey with certified technicians."
+      },
+      "yedekParca": {
+        "title": "Original Spare Parts",
+        "description": "100% original Özünlü parts for minimum vehicle downtime."
+      },
+      "garanti": {
+        "title": "Warranty Coverage",
+        "description": "All products covered by comprehensive manufacturer warranty."
+      },
+      "teknikDestek": {
+        "title": "24/7 Technical Support",
+        "description": "Expert support team available day and night."
+      }
+    },
+    "documents": {
+      "eyebrow": "قاعدة المعرفة",
+      "title": "وثائق",
+      "titleHighlight": "فنية",
+      "description": "أدلة الاستخدام وإجراءات الصيانة والمواصفات الفنية المعدّة لتحقيق أقصى كفاءة لمنتجاتكم — متاحة بالتركية والإنجليزية.",
+      "searchPlaceholder": "البحث في الوثائق...",
+      "download": "تنزيل",
+      "noResults": "لم يتم العثور على وثائق تطابق معايير البحث.",
+      "damperManual": {
+        "title": "Tipper User Manual",
+        "desc": "Basic usage and safety instructions for tipper products."
+      },
+      "dorseManual": {
+        "title": "Trailer User Manual",
+        "desc": "Standard user manual for semi-trailer products."
+      },
+      "generalManual": {
+        "title": "General Product & Maintenance Handbook (TR/EN)",
+        "desc": "Comprehensive maintenance and technical details for all trailer models."
+      },
+      "damperSpec": {
+        "title": "Tipper Technical Specification (TR/EN)",
+        "desc": "Special technical specifications for tipper vehicles."
+      }
+    },
+    "map": {
+      "title": "شبكة خدمة معتمدة على مستوى تركيا",
+      "description": "87 نقطة خدمة معتمدة في 50 محافظة. اختاروا مدينتكم على الخريطة للوصول فوراً إلى معلومات الخدمة والاتصال."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "اتصل بنا",
+      "subtitle": "تواصلوا معنا لأسئلتكم ومشاريعكم.",
+      "headOffice": "المكتب الرئيسي",
+      "submit": "إرسال",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "ساعات العمل",
+      "hoursValue": "أيام الأسبوع والسبت: 09:00 - 18:30",
+      "name": "الاسم الكامل",
+      "namePlaceholder": "اسمك الكامل",
+      "company": "الشركة",
+      "companyPlaceholder": "اسم الشركة",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "ornek@sirket.com",
+      "phone": "الهاتف",
+      "phonePlaceholder": "05XX XXX XX XX",
+      "message": "الرسالة",
+      "messagePlaceholder": "اكتب رسالتك هنا...",
+      "mapTitle": "خريطة موقع Özünlü Damper"
+    },
+    "tabs": {
+      "sales": "المبيعات والتسويق",
+      "service": "خدمات ما بعد البيع",
+      "export": "التصدير",
+      "hr": "الموارد البشرية"
+    }
+  },
+  "proposal": {
+    "configurator": "المُكوِّن",
+    "selectedProduct": "المنتج المحدد",
+    "selectedSubtitle": "املأ نموذج عرض السعر للمنتج المحدد.",
+    "defaultSubtitle": "حدد التفاصيل لحل مخصص لاحتياجاتك.",
+    "clearSelection": "اختر منتجاً آخر أو استخدم المُكوِّن",
+    "stepQuantity": "حدد الكمية",
+    "stepPayment": "طريقة الدفع",
+    "stepContact": "معلومات الاتصال",
+    "vehicleInfo": "معلومات المركبة",
+    "trailerSpecs": "مواصفات المقطورة",
+    "cargoType": "نوع الحمولة",
+    "dimensions": "الأبعاد والكمية",
+    "submit": "اطلب عرض سعر",
+    "submitting": "جارٍ الإرسال...",
+    "successTitle": "تم استلام طلبك!",
+    "successMessage": "وصل نموذج عرض السعر إلينا. سيتواصل معك مندوب المبيعات قريباً.",
+    "newForm": "إنشاء نموذج جديد",
+    "kvkkNotice": "بياناتك الشخصية محمية وفق KVKK.",
+    "payment": {
+      "cashTitle": "نقداً / تحويل",
+      "cashDesc": "خصم خاص للدفع النقدي",
+      "creditTitle": "آجل / شيك",
+      "creditDesc": "خيارات دفع مرنة"
+    },
+    "fields": {
+      "quantity": "الكمية المطلوبة",
+      "brand": "ماركة المركبة",
+      "brandPh": "مثال: Mercedes, Ford",
+      "model": "موديل المركبة",
+      "modelPh": "مثال: 4140, Cargo",
+      "volume": "الحجم المطلوب (م³)",
+      "volumePh": "مثال: 30",
+      "axle": "خيار المحور",
+      "domestic": "محلي",
+      "foreign": "أجنبي",
+      "cargo": "نوع الحمولة",
+      "cargoPh": "مثال: حفر، رمل، أسفلت",
+      "thickness": "سماكة القاعدة/الجانب (مم)",
+      "thicknessPh": "مثال: 5مم / 4مم",
+      "company": "اسم الشركة",
+      "companyPh": "الاسم التجاري",
+      "contact": "الشخص المسؤول",
+      "contactPh": "الاسم الكامل",
+      "phone": "الهاتف",
+      "phonePh": "05XX...",
+      "email": "البريد الإلكتروني",
+      "emailPh": "mail@company.com",
+      "heardFrom": "كيف سمعت عنا؟",
+      "heardFromPh": "Google، وسائل التواصل، إحالة..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "منذ 1977",
+      "titleLine1": "السرعة والثقة",
+      "titleLine2": "هما توقيعنا",
+      "description": "بخبرة تقترب من نصف قرن، نضع المعايير في قطاع الهياكل العلوية للمركبات التجارية الثقيلة ونبني المستقبل على أسس متينة."
+    },
+    "values": {
+      "trust": {
+        "title": "الثقة",
+        "desc": "منذ أكثر من 45 عاماً، نقف خلف كل وعد نقدمه لعملائنا وشركائنا وموظفينا."
+      },
+      "quality": {
+        "title": "الجودة",
+        "desc": "من <strong>فولاذ</strong> <hardox></hardox> إلى أدق تفاصيل الحرفية، نسعى للتميز في كل مرحلة إنتاج."
+      },
+      "innovation": {
+        "title": "الابتكار",
+        "desc": "نحلل احتياجات القطاع وننقل تقنيات المستقبل إلى اليوم عبر البحث والتطوير."
+      },
+      "speed": {
+        "title": "السرعة",
+        "desc": "بعمليات إنتاج محسّنة، نسلّم بسرعة دون المساس بالجودة — لنضيف سرعةً لأعمالكم."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "ليس فولاذاً فحسب،",
+      "titleLine2": "نصنع الثقة.",
+      "p1": "<strong>منذ 1977،</strong> ما يخرج من خط الإنتاج ليس مجرد قلاب — بل نصف قرن من الخبرة والشغف الهندسي والابتكار.",
+      "p2": "تُختبر منتجاتنا في ظروف قاسية وتُصمَّم لـ<durability>المتانة</durability> و<performance>الأداء</performance>. نجمع قوة فولاذ <hardox></hardox> مع الهندسة التركية.",
+      "quote": "في كل لحام وكل تركيب وكل تسليم، هدفنا واحد: إضافة قوة لنجاح شركائنا."
+    },
+    "leader": {
+      "eyebrow": "رسالة الرئيس",
+      "quote": "في Özünlü لا نصنع منتجات فحسب — نبني الثقة. كل قلاب وكل مقطورة تعكس خبرة نصف قرن.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "رئيس مجلس الإدارة",
+      "bio": "تأسست عام 1977، وتصدّر Özünlü Damper اليوم إلى أكثر من 40 دولة كباني هياكل معتمد (QBB).",
+      "imageAlt": "أوفوق أوزونلو"
+    },
+    "timeline": {
+      "title": "ما وراء",
+      "titleHighlight": "الزمن",
+      "m1977": {
+        "title": "وضع الأسس",
+        "desc": "رحلة إنتاج بدأت في ورشة 30 م² في إسطنبول أوقميداني."
+      },
+      "m1985": {
+        "title": "أول توسع",
+        "desc": "نقل المنشآت إلى حبيبلر في إسطنبول."
+      },
+      "m1991": {
+        "title": "استثمار المستقبل",
+        "desc": "شراء موقع المصنع الحالي."
+      },
+      "m2005": {
+        "title": "باني هياكل معتمد",
+        "desc": "أول لقب Qualified Body Builder في القطاع."
+      },
+      "m2009": {
+        "title": "زيادة الطاقة",
+        "desc": "مضاعفة طاقة الإنتاج."
+      },
+      "mToday": {
+        "title": "قوة عالمية",
+        "desc": "30,000 م² إنتاج، 81 محافظة، تصدير لأكثر من 40 دولة."
+      },
+      "yearToday": "اليوم"
+    },
+    "facilities": {
+      "title": "قوة الإنتاج و",
+      "titleHighlight": "التأثير العالمي",
+      "description": "نجمع الهندسة المحلية بالمعايير العالمية.",
+      "production": {
+        "title": "مركز الإنتاج",
+        "value": "30,000 م²",
+        "desc": "3 منشآت بمساحة مغلقة 7,000 م² ومفتوحة 23,000 م²."
+      },
+      "global": {
+        "title": "الوصول العالمي",
+        "value": "+40 دولة",
+        "desc": "شبكة تصدير في 81 محافظة وأكثر من 40 دولة."
+      },
+      "quality": {
+        "title": "معيار الجودة",
+        "value": "شهادة QBB",
+        "desc": "أول علامة تحمل لقب Qualified Body Builder."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "إدارة",
+      "titleHighlight": "المواهب",
+      "description": "نقدم رحلة مهنية فريدة للمحترفين الشغوفين أصحاب الطموح الكبير."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "الحياة",
+      "titleLine2": "في Özünlü",
+      "description": "ننتج أفضل القلابات ونسعى لأن يكون لدينا أسعد الموظفين. الابتكار والتطوير المستمر وروح الفريق في حمضنا النووي.",
+      "imageAlt": "مسيرة Özünlü {n}"
+    },
+    "jobs": {
+      "title": "ننتظر",
+      "titleHighlight": "انضمامك",
+      "subtitle": "كن جزءاً من الفريق الذي يشكّل المستقبل.",
+      "apply": "تقدّم",
+      "noJobsTitle": "لا توجد وظائف شاغرة حالياً",
+      "noJobsDesc": "لكننا متحمسون دائماً للتعرف على المحترفين الموهوبين. أرسل سيرتك الذاتية أو تابعنا على وسائل التواصل."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "مركز",
+      "titleHighlight": "الإعلام",
+      "description": "أخبار القطاع والتطورات التقنية وآخر المستجدات من عالم Özünlü."
+    },
+    "gallery": {
+      "title": "معرض",
+      "titleHighlight": "المنتجات",
+      "description": "استكشف تفاصيل الهندسة المتفوقة والحرفية المتقنة.",
+      "imageAlt": "معرض Özünlü {n}",
+      "detailAlt": "تفاصيل المعرض"
+    },
+    "insights": {
+      "title": "رؤى",
+      "titleHighlight": "قطاعية",
+      "description": "تحليلات خبراء حول المركبات التجارية الثقيلة والتقنيات واللوجستيات.",
+      "readMore": "اقرأ المزيد",
+      "articles": {
+        "a1": {
+          "category": "أكاديمي",
+          "title": "جودة الفولاذ في إنتاج القلاب: Hardox وما بعده",
+          "excerpt": "كيف يطيل الفولاذ عالي المقاومة عمر القلاب؟ مقارنة Hardox 450 و500.",
+          "date": "12 يناير 2025",
+          "readTime": "6 دقائق قراءة"
+        },
+        "a2": {
+          "category": "قطاعي",
+          "title": "اتجاهات اللوجستيات 2026",
+          "excerpt": "سلاسل التوريد وكفاءة الوقود وفرص النقل التركي.",
+          "date": "8 يناير 2025",
+          "readTime": "8 دقائق قراءة"
+        },
+        "a3": {
+          "category": "استدامة",
+          "title": "اللوجستيات الخضراء: تأثير القلابات الخفيفة",
+          "excerpt": "توفير الوقود وتقليل البصمة الكربونية بتصميم هيكل أخف.",
+          "date": "3 يناير 2025",
+          "readTime": "5 دقائق قراءة"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "تجربة",
+    "titleHighlight": "تفاعلية",
+    "description": "تجاوز الكتالوجات التقليدية. استكشف منتجات Özünlü بزاوية 360° وابنِ التكوين المناسب لمشروعك.",
+    "view360": {
+      "dragHint": "اسحب للتدوير",
+      "bodyLabel": "نموذج الهيكل",
+      "disclaimer": "*نموذج ثلاثي الأبعاد توضيحي"
+    },
+    "configurator": {
+      "title": "المُكوِّن",
+      "bodyColor": "لون الهيكل",
+      "capacity": "سعة الحجم",
+      "tires": "نوع الإطارات",
+      "summary": "الملخص",
+      "colors": {
+        "blue": "أزرق Özünlü",
+        "gray": "رمادي كوارتز",
+        "navy": "أزرق داكن",
+        "red": "أحمر لهبي"
+      },
+      "tireTypes": {
+        "standard": "قياسي",
+        "offRoad": "طرق وعرة",
+        "heavyDuty": "خدمة شاقة"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "تفريغ في دقيقتين",
+        "desc": "تفريغ سريع بنظام هيدروليكي محسّن."
+      },
+      "weight": {
+        "title": "أخف بنسبة 15%",
+        "desc": "تصميم سبيكة خاص لحمولة أكبر."
+      },
+      "hardox": {
+        "title": "هيكل Hardox 450",
+        "desc": "مقاومة قصوى للتآكل والصدمات."
+      },
+      "balance": {
+        "title": "نظام توازن ذكي",
+        "desc": "حساسات نشطة تمنع الانقلاب في التضاريس الوعرة."
+      }
+    }
+  }
+}

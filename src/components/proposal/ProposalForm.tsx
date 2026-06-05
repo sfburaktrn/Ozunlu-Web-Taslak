@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Check, ChevronRight, Send, CreditCard, Banknote, Building2, User, Phone, Mail, MessageSquare, Info } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Check, Send, CreditCard, Banknote, Building2, User, Phone, Mail, MessageSquare, Info } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 interface FormData {
     type: 'damper' | 'dorse';
@@ -39,9 +40,19 @@ interface ProposalFormProps {
     initialProduct: 'damper' | 'dorse';
     selectedProduct?: SelectedProduct | null;
     onClearSelection?: () => void;
+    configuratorTitle?: string;
+    configuratorSubtitle?: string;
 }
 
-export default function ProposalForm({ initialProduct, selectedProduct, onClearSelection }: ProposalFormProps) {
+export default function ProposalForm({
+    initialProduct,
+    selectedProduct,
+    onClearSelection,
+    configuratorTitle,
+    configuratorSubtitle,
+}: ProposalFormProps) {
+    const t = useTranslations('proposal');
+    const tCommon = useTranslations('common');
     const [formData, setFormData] = useState<FormData>({
         type: initialProduct,
         brand: '',
@@ -187,25 +198,27 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                         <div className="lg:sticky lg:top-14 space-y-4">
                             <div className="hidden lg:block">
                                 <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
-                                    {selectedProduct ? 'Seçili Ürün' : 'Konfigüratör'}
+                                    {selectedProduct ? t('selectedProduct') : t('configurator')}
                                 </span>
                                 <h2 className="text-4xl font-black text-ozunlu-950 mb-2">
-                                    {selectedProduct ? selectedProduct.name : (formData.type === 'damper' ? 'Damper' : 'Yarı Römork')}
+                                    {selectedProduct
+                                        ? selectedProduct.name
+                                        : (configuratorTitle ?? t('configurator'))}
                                 </h2>
                                 {selectedProduct && (
                                     <p className="text-primary font-bold text-xl mb-4">{selectedProduct.code}</p>
                                 )}
                                 <p className="text-gray-500 text-lg">
                                     {selectedProduct
-                                        ? 'Seçtiğiniz ürün için teklif formunu doldurun.'
-                                        : 'İhtiyaçlarınıza özel çözümler için detayları belirleyin.'}
+                                        ? t('selectedSubtitle')
+                                        : (configuratorSubtitle ?? t('defaultSubtitle'))}
                                 </p>
                                 {selectedProduct && onClearSelection && (
                                     <button
                                         onClick={onClearSelection}
                                         className="mt-4 text-sm text-gray-400 hover:text-red-500 underline flex items-center gap-2 transition-colors"
                                     >
-                                        Farklı bir ürün seçin veya konfigüretörü kullanın
+                                        {t('clearSelection')}
                                     </button>
                                 )}
                             </div>
@@ -217,7 +230,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                 <div className="absolute inset-0 p-0 flex items-center justify-center">
                                     <Image
                                         src={getProductImage()}
-                                        alt={selectedProduct ? selectedProduct.name : formData.type}
+                                        alt={selectedProduct ? selectedProduct.name : (formData.type === 'damper' ? tCommon('nav.damper') : tCommon('nav.yariRomork'))}
                                         fill
                                         className="object-cover"
                                     />
@@ -237,9 +250,9 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                 <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white mb-6 shadow-lg shadow-green-500/30">
                                     <Check size={48} strokeWidth={3} />
                                 </div>
-                                <h3 className="text-3xl font-black text-ozunlu-950 mb-4">Talebiniz Alındı!</h3>
+                                <h3 className="text-3xl font-black text-ozunlu-950 mb-4">{t('successTitle')}</h3>
                                 <p className="text-gray-600 text-lg max-w-md mx-auto mb-8">
-                                    Teklif formunuz başarıyla bize ulaştı. Satış temsilcimiz en kısa sürede sizinle iletişime geçecektir.
+                                    {t('successMessage')}
                                 </p>
                                 <button
                                     onClick={() => {
@@ -251,7 +264,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                     }}
                                     className="px-8 py-3 bg-white text-ozunlu-950 font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors"
                                 >
-                                    Yeni Form Oluştur
+                                    {t('newForm')}
                                 </button>
                             </motion.div>
                         ) : (
@@ -263,12 +276,12 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">1</div>
                                                 <h3 className="text-2xl font-bold text-ozunlu-950">
-                                                    Adet Belirleyin
+                                                    {t('stepQuantity')}
                                                 </h3>
                                             </div>
                                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                                                 <InputGroup
-                                                    label="İstenen Adet"
+                                                    label={t('fields.quantity')}
                                                     placeholder="1"
                                                     type="number"
                                                     value={formData.quantity}
@@ -281,21 +294,21 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">2</div>
                                                 <h3 className="text-2xl font-bold text-ozunlu-950">
-                                                    Ödeme Yöntemi
+                                                    {t('stepPayment')}
                                                 </h3>
                                             </div>
                                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-4">
                                                 <PaymentOption
                                                     icon={<Banknote size={24} />}
-                                                    title="Peşin / Havale"
-                                                    description="Nakit ödemelerde özel indirim fırsatı"
+                                                    title={t('payment.cashTitle')}
+                                                    description={t('payment.cashDesc')}
                                                     selected={formData.paymentMethod === 'pesin'}
                                                     onClick={() => handleInputChange('paymentMethod', 'pesin')}
                                                 />
                                                 <PaymentOption
                                                     icon={<Building2 size={24} />}
-                                                    title="Vadeli / Çek"
-                                                    description="Vade ve taksitlendirme seçenekleri"
+                                                    title={t('payment.creditTitle')}
+                                                    description={t('payment.creditDesc')}
                                                     selected={formData.paymentMethod === 'vadeli'}
                                                     onClick={() => handleInputChange('paymentMethod', 'vadeli')}
                                                 />
@@ -306,46 +319,46 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">3</div>
                                                 <h3 className="text-2xl font-bold text-ozunlu-950">
-                                                    İletişim Bilgileri
+                                                    {t('stepContact')}
                                                 </h3>
                                             </div>
                                             {/* Reuse Check for contact validity not block visually but for submit */}
                                             <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-6">
                                                 <InputGroup
-                                                    label="Firma Adı"
+                                                    label={t('fields.company')}
                                                     icon={<Building2 size={18} />}
-                                                    placeholder="Firma Ünvanı"
+                                                    placeholder={t('fields.companyPh')}
                                                     value={formData.companyName}
                                                     onChange={(v) => handleInputChange('companyName', v)}
                                                 />
                                                 <InputGroup
-                                                    label="Yetkili Kişi"
+                                                    label={t('fields.contact')}
                                                     icon={<User size={18} />}
-                                                    placeholder="Ad Soyad"
+                                                    placeholder={t('fields.contactPh')}
                                                     value={formData.contactPerson}
                                                     onChange={(v) => handleInputChange('contactPerson', v)}
                                                 />
                                                 <InputGroup
-                                                    label="Telefon"
+                                                    label={t('fields.phone')}
                                                     icon={<Phone size={18} />}
-                                                    placeholder="05XX..."
+                                                    placeholder={t('fields.phonePh')}
                                                     value={formData.contactPhone}
                                                     onChange={(v) => handleInputChange('contactPhone', v)}
                                                     type="tel"
                                                 />
                                                 <InputGroup
-                                                    label="E-posta"
+                                                    label={t('fields.email')}
                                                     icon={<Mail size={18} />}
-                                                    placeholder="mail@sirket.com"
+                                                    placeholder={t('fields.emailPh')}
                                                     value={formData.email}
                                                     onChange={(v) => handleInputChange('email', v)}
                                                     type="email"
                                                 />
                                                 <div className="md:col-span-2">
                                                     <InputGroup
-                                                        label="Bizi Nereden Duydunuz?"
+                                                        label={t('fields.heardFrom')}
                                                         icon={<MessageSquare size={18} />}
-                                                        placeholder="Google, Sosyal Medya, Referans..."
+                                                        placeholder={t('fields.heardFromPh')}
                                                         value={formData.heardFrom}
                                                         onChange={(v) => handleInputChange('heardFrom', v)}
                                                     />
@@ -360,21 +373,21 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">1</div>
                                                 <h3 className="text-2xl font-bold text-ozunlu-950">
-                                                    {formData.type === 'damper' ? 'Araç Bilgisi' : 'Dorse Özellikleri'}
+                                                    {formData.type === 'damper' ? t('vehicleInfo') : t('trailerSpecs')}
                                                 </h3>
                                             </div>
 
                                             {formData.type === 'damper' ? (
                                                 <div className="grid md:grid-cols-2 gap-6">
                                                     <InputGroup
-                                                        label="Araç Markası"
-                                                        placeholder="Örn: Mercedes, Ford"
+                                                        label={t('fields.brand')}
+                                                        placeholder={t('fields.brandPh')}
                                                         value={formData.brand}
                                                         onChange={(v) => handleInputChange('brand', v)}
                                                     />
                                                     <InputGroup
-                                                        label="Araç Modeli"
-                                                        placeholder="Örn: 4140, Cargo"
+                                                        label={t('fields.model')}
+                                                        placeholder={t('fields.modelPh')}
                                                         value={formData.model}
                                                         onChange={(v) => handleInputChange('model', v)}
                                                     />
@@ -382,15 +395,15 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             ) : (
                                                 <div className="grid md:grid-cols-2 gap-6">
                                                     <InputGroup
-                                                        label="İstenen Hacim (m³)"
-                                                        placeholder="Örn: 30"
+                                                        label={t('fields.volume')}
+                                                        placeholder={t('fields.volumePh')}
                                                         value={formData.volumeM3}
                                                         onChange={(v) => handleInputChange('volumeM3', v)}
                                                         type="text"
                                                     />
                                                     {/* Axle Option - Dingil Seçeneği */}
                                                     <div className="space-y-2">
-                                                        <label className="text-sm font-bold text-gray-600 block pl-1">Dingil Seçeneği</label>
+                                                        <label className="text-sm font-bold text-gray-600 block pl-1">{t('fields.axle')}</label>
                                                         <div className="grid grid-cols-2 gap-4">
                                                             <button
                                                                 type="button"
@@ -400,7 +413,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                                         ? 'border-primary bg-primary/10 text-primary'
                                                                         : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
                                                             >
-                                                                Yerli
+                                                                {t('fields.domestic')}
                                                             </button>
                                                             <button
                                                                 type="button"
@@ -410,7 +423,7 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                                         ? 'border-primary bg-primary/10 text-primary'
                                                                         : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
                                                             >
-                                                                Yabancı
+                                                                {t('fields.foreign')}
                                                             </button>
                                                         </div>
                                                     </div>
@@ -428,27 +441,27 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step1Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>2</div>
                                                 <h3 className={`text-2xl font-bold transition-colors ${step1Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
-                                                    {formData.type === 'damper' ? 'Yük Tipi' : 'Ölçüler & Adet'}
+                                                    {formData.type === 'damper' ? t('cargoType') : t('dimensions')}
                                                 </h3>
                                             </div>
 
                                             {formData.type === 'damper' ? (
                                                 <InputGroup
-                                                    label="Taşınacak Yük"
-                                                    placeholder="Örn: Hafriyat, Kum, Asfalt"
+                                                    label={t('fields.cargo')}
+                                                    placeholder={t('fields.cargoPh')}
                                                     value={formData.cargoType}
                                                     onChange={(v) => handleInputChange('cargoType', v)}
                                                 />
                                             ) : (
                                                 <div className="grid md:grid-cols-2 gap-6">
                                                     <InputGroup
-                                                        label="Taban/Yan Kalınlık (mm)"
-                                                        placeholder="Örn: 5mm / 4mm"
+                                                        label={t('fields.thickness')}
+                                                        placeholder={t('fields.thicknessPh')}
                                                         value={formData.thickness}
                                                         onChange={(v) => handleInputChange('thickness', v)}
                                                     />
                                                     <InputGroup
-                                                        label="Adet"
+                                                        label={t('fields.quantity')}
                                                         placeholder="1"
                                                         type="number"
                                                         value={formData.quantity}
@@ -469,26 +482,26 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step2Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>3</div>
                                                     <h3 className={`text-2xl font-bold transition-colors ${step2Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
-                                                        Ölçüler & Adet
+                                                        {t('dimensions')}
                                                     </h3>
                                                 </div>
 
                                                 <div className="grid md:grid-cols-3 gap-6">
                                                     <InputGroup
-                                                        label="Hacim (m³)"
-                                                        placeholder="Örn: 24"
+                                                        label={t('fields.volume')}
+                                                        placeholder={t('fields.volumePh')}
                                                         value={formData.volumeM3}
                                                         onChange={(v) => handleInputChange('volumeM3', v)}
                                                         type="text"
                                                     />
                                                     <InputGroup
-                                                        label="Kalınlık (mm)"
-                                                        placeholder="Örn: 8/6"
+                                                        label={t('fields.thickness')}
+                                                        placeholder={t('fields.thicknessPh')}
                                                         value={formData.thickness}
                                                         onChange={(v) => handleInputChange('thickness', v)}
                                                     />
                                                     <InputGroup
-                                                        label="Adet"
+                                                        label={t('fields.quantity')}
                                                         placeholder="1"
                                                         type="number"
                                                         value={formData.quantity}
@@ -515,22 +528,22 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                     <CreditCard size={20} />
                                                 </div>
                                                 <h3 className={`text-2xl font-bold transition-colors ${(formData.type === 'damper' ? step3Complete : step2Complete) ? 'text-ozunlu-950' : 'text-gray-300'}`}>
-                                                    Ödeme Yöntemi
+                                                    {t('stepPayment')}
                                                 </h3>
                                             </div>
 
                                             <div className="grid md:grid-cols-2 gap-4">
                                                 <PaymentOption
                                                     icon={<Banknote size={24} />}
-                                                    title="Peşin / Havale"
-                                                    description="Nakit ödemelerde özel indirim fırsatı"
+                                                    title={t('payment.cashTitle')}
+                                                    description={t('payment.cashDesc')}
                                                     selected={formData.paymentMethod === 'pesin'}
                                                     onClick={() => handleInputChange('paymentMethod', 'pesin')}
                                                 />
                                                 <PaymentOption
                                                     icon={<Building2 size={24} />}
-                                                    title="Vadeli / Çek"
-                                                    description="Vade ve taksitlendirme seçenekleri"
+                                                    title={t('payment.creditTitle')}
+                                                    description={t('payment.creditDesc')}
                                                     selected={formData.paymentMethod === 'vadeli'}
                                                     onClick={() => handleInputChange('paymentMethod', 'vadeli')}
                                                 />
@@ -549,46 +562,46 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                     <User size={20} />
                                                 </div>
                                                 <h3 className={`text-2xl font-bold transition-colors ${isPaymentValid ? 'text-ozunlu-950' : 'text-gray-300'}`}>
-                                                    İletişim Bilgileri
+                                                    {t('stepContact')}
                                                 </h3>
                                             </div>
 
                                             <div className="grid md:grid-cols-2 gap-6">
                                                 <InputGroup
-                                                    label="Firma Adı"
+                                                    label={t('fields.company')}
                                                     icon={<Building2 size={18} />}
-                                                    placeholder="Firma Ünvanı"
+                                                    placeholder={t('fields.companyPh')}
                                                     value={formData.companyName}
                                                     onChange={(v) => handleInputChange('companyName', v)}
                                                 />
                                                 <InputGroup
-                                                    label="Yetkili Kişi"
+                                                    label={t('fields.contact')}
                                                     icon={<User size={18} />}
-                                                    placeholder="Ad Soyad"
+                                                    placeholder={t('fields.contactPh')}
                                                     value={formData.contactPerson}
                                                     onChange={(v) => handleInputChange('contactPerson', v)}
                                                 />
                                                 <InputGroup
-                                                    label="Telefon"
+                                                    label={t('fields.phone')}
                                                     icon={<Phone size={18} />}
-                                                    placeholder="05XX..."
+                                                    placeholder={t('fields.phonePh')}
                                                     value={formData.contactPhone}
                                                     onChange={(v) => handleInputChange('contactPhone', v)}
                                                     type="tel"
                                                 />
                                                 <InputGroup
-                                                    label="E-posta"
+                                                    label={t('fields.email')}
                                                     icon={<Mail size={18} />}
-                                                    placeholder="mail@sirket.com"
+                                                    placeholder={t('fields.emailPh')}
                                                     value={formData.email}
                                                     onChange={(v) => handleInputChange('email', v)}
                                                     type="email"
                                                 />
                                                 <div className="md:col-span-2">
                                                     <InputGroup
-                                                        label="Bizi Nereden Duydunuz?"
+                                                        label={t('fields.heardFrom')}
                                                         icon={<MessageSquare size={18} />}
-                                                        placeholder="Google, Sosyal Medya, Referans..."
+                                                        placeholder={t('fields.heardFromPh')}
                                                         value={formData.heardFrom}
                                                         onChange={(v) => handleInputChange('heardFrom', v)}
                                                     />
@@ -608,17 +621,17 @@ export default function ProposalForm({ initialProduct, selectedProduct, onClearS
                                                 : 'bg-gray-100 text-gray-400 cursor-not-allowed'}`}
                                     >
                                         {isSubmitting ? (
-                                            <>Gönderiliyor...</>
+                                            <>{t('submitting')}</>
                                         ) : (
                                             <>
-                                                TEKLİF İSTE
+                                                {t('submit')}
                                                 <Send size={20} />
                                             </>
                                         )}
                                     </button>
                                     <p className="text-center text-gray-400 text-sm mt-4 flex items-center justify-center gap-2">
                                         <Info size={14} />
-                                        Kişisel verileriniz KVKK kapsamında korunmaktadır.
+                                        {t('kvkkNotice')}
                                     </p>
                                 </div>
                             </form>

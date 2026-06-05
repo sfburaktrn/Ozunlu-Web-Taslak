@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Production rapide, superstructures en acier Hardox – Since 1977",
+      "description": "Depuis 1977, le fabricant turc de confiance de superstructures pour véhicules commerciaux lourds, avec traitement d'acier certifié Hardox, ingénierie avancée et réseau complet de services après-vente."
+    },
+    "damper": {
+      "title": "Özünlü Damper | Solutions benne Hardox haute performance – Since 1977",
+      "description": "Modèles de bennes Özünlü conçus avec caisse en acier Hardox, ingénierie avancée et plus de 45 ans d'expérience de production — indispensables pour la construction, les mines et les infrastructures. Demandez un devis dès aujourd'hui."
+    },
+    "yariRomork": {
+      "title": "Özünlü Semi-remorque | Remorque benne en acier Hardox – Solutions de transport lourd",
+      "description": "Modèles de semi-remorques avec essieux BPW et Özkoç et caisses Hardox 450/500 pour un transport de charges lourdes sûr et efficace. Ingénierie Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Pièces détachées et équipements pour remorques | Systèmes hydrauliques, essieux et freins d'origine – Özünlü",
+      "description": "Équipements et pièces détachées d'origine pour remorques avec garantie Özünlü. Systèmes hydrauliques, essieux BPW-Özkoç, kits de freinage EBS et éclairage LED — stock étendu, livraison rapide."
+    },
+    "afterSales": {
+      "title": "Özünlü Services après-vente | Assistance technique 24/7, pièces détachées, réseau de service agréé",
+      "description": "87 points de service agréés dans toute la Turquie, ligne d'assistance technique 24/7 et garantie de pièces détachées d'origine — les services après-vente Özünlü assurent la continuité opérationnelle de votre flotte."
+    },
+    "contact": {
+      "title": "Contact | Özünlü Damper – Devis et assistance",
+      "description": "Contactez Özünlü Damper pour les ventes, l'après-vente, l'export et les ressources humaines. Siège social : Sultangazi, Istanbul."
+    },
+    "corporate": {
+      "title": "Entreprise | Özünlü Damper – Since 1977",
+      "description": "Depuis 1977, Özünlü Damper est la référence en matière de confiance et de qualité dans le secteur des superstructures pour véhicules commerciaux lourds."
+    },
+    "products": {
+      "title": "Produits | Özünlü Damper",
+      "description": "Solutions benne, semi-remorque et équipements."
+    },
+    "media": {
+      "title": "Médias | Özünlü Damper",
+      "description": "Actualités, blog et analyses sectorielles d'Özünlü Damper."
+    },
+    "career": {
+      "title": "Carrières | Özünlü Damper",
+      "description": "Opportunités de carrière chez Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Benne",
+      "yariRomork": "Semi-remorque",
+      "ekEkipmanlar": "Équipements",
+      "satisSonrasi": "Après-vente",
+      "iletisim": "Contact",
+      "mobileContactQuote": "Contact et devis"
+    },
+    "footer": {
+      "logoAlt": "Logo Özünlü Damper",
+      "about": "Depuis 1977, traitement d'<strong>acier</strong> certifié <hardox></hardox>, ingénierie avancée et réseau complet de services après-vente — le fabricant turc de confiance de superstructures pour véhicules commerciaux lourds.",
+      "quickAccess": "Accès rapide",
+      "contact": "Contact",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
+      "copyright": "© {year} Özünlü Damper. Tous droits réservés.",
+      "kvkk": "RGPD",
+      "aydinlatmaMetni": "Notice de confidentialité",
+      "cerezPolitikasi": "Politique de cookies"
+    },
+    "cta": {
+      "teklifAl": "Demander un devis",
+      "teklifAlin": "Demander un devis",
+      "hemenTeklifAl": "Demander un devis maintenant",
+      "incele": "Consulter",
+      "bizeUlasin": "Contactez-nous",
+      "bilgiAl": "En savoir plus",
+      "iletisimeGecin": "Nous contacter",
+      "detayliIncele": "Voir les détails",
+      "tumUrunler": "TOUS LES PRODUITS",
+      "kesfet": "Explorer",
+      "kaydir": "Défiler"
+    },
+    "labels": {
+      "modellerimiz": "Nos modèles",
+      "oneCikanlar": "Points forts",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Logo Hardox In My Body acier certifié résistant à l'usure"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "RAPIDITÉ EN PRODUCTION",
+      "titleLine2": "ROBUSTESSE SUR LE TERRAIN",
+      "subtitle": "Production rapide, superstructures durables et performances éprouvées sur le terrain",
+      "ctaDamper": "Devis benne",
+      "ctaYariRomork": "Devis semi-remorque",
+      "scroll": "Défiler"
+    },
+    "about": {
+      "eyebrow": "À propos",
+      "title": "Définir la puissance par la production rapide",
+      "paragraph1": "Depuis 1977, nous fournissons des solutions de superstructures fiables et durables à divers secteurs grâce à une puissance de production qui s'étend de la Turquie au monde entier.",
+      "paragraph2": "Nous combinons ingénierie et design avancés avec la durabilité supérieure de l'<strong>acier</strong> <hardox></hardox>, en développant chaque produit non seulement comme une <strong>superstructure</strong>, mais comme une solution qui garantit l'efficacité opérationnelle.",
+      "cards": {
+        "arge": "R&D ET INGÉNIERIE",
+        "ozelTasarim": "SOLUTIONS DE DESIGN SUR MESURE",
+        "uretimTeknolojisi": "TECHNOLOGIE DE PRODUCTION AVANCÉE",
+        "sertifikaliUretim": "PRODUCTION CERTIFIÉE"
+      }
+    },
+    "damperHero": {
+      "category": "BENNE",
+      "imageAlt": "Performance et robustesse Özünlü benne",
+      "titleLine1": "La réponse ingénierie",
+      "titleLine2": "aux conditions difficiles",
+      "description": "Nos systèmes de <strong>benne</strong> conçus pour les conditions exigeantes de la construction, des mines et des projets d'infrastructure fonctionnent sans interruption sur le terrain grâce à la robustesse de la caisse <hardox></hardox>, une stabilité de basculement élevée et une capacité de déchargement rapide."
+    },
+    "trailerHero": {
+      "category": "SEMI-REMORQUE",
+      "imageAlt": "Özünlü semi-remorques et systèmes de remorques",
+      "titleLine1": "Design léger",
+      "titleLine2": "Performance puissante",
+      "description": "Offre efficacité de transport, forte valeur de revente et performance durable."
+    },
+    "equipmentHero": {
+      "category": "Équipements",
+      "imageAlt": "Özünlü solutions d'équipements et de pièces détachées",
+      "titleLine1": "Solutions d'équipement",
+      "titleLine2": "complètes pour votre flotte",
+      "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
+    },
+    "whyChooseUs": {
+      "eyebrow": "POURQUOI ÖZÜNLÜ ?",
+      "title": "Pourquoi Özünlü ?",
+      "features": {
+        "0": "Design de <strong>superstructure</strong> approuvé par le constructeur — production compatible avec différentes configurations de châssis et de tracteur",
+        "1": "Traitement d'<strong>acier</strong> certifié <hardox></hardox> et technologie de soudage robotisé",
+        "2": "Conformité totale à toutes les réglementations et aux normes de sécurité européennes (ECE/ADR)",
+        "3": "Garantie complète et <strong>service après-vente</strong> ininterrompu",
+        "4": "87 points de service agréés dans 50 provinces à travers la Turquie",
+        "5": "Conception structurelle préservant une forte valeur de revente",
+        "6": "Export vers plus de 50 pays — qualité reconnue à l'échelle mondiale"
+      },
+      "cardLabel": "La garantie Özünlü"
+    },
+    "mapPreview": {
+      "eyebrow": "Carte des services",
+      "title": "Réseau national de ",
+      "titleHighlight": "services agréés",
+      "description": "Où que se trouve votre véhicule, Özünlü est à vos côtés. Nos 87 points de service agréés dans 50 provinces assurent la continuité opérationnelle de votre flotte avec des pièces détachées d'origine et des techniciens certifiés.",
+      "citiesLabel": "Villes avec service",
+      "pointsLabel": "Nombre total de points de service",
+      "topCities": "Villes principales",
+      "serviceCount": "{count} points de service",
+      "tapHint": "Touchez la carte",
+      "mapInstruction": "Sélectionnez une ville pour afficher les informations de service.",
+      "modalEyebrow": "Détails du service",
+      "plateCode": "Code de plaque : {code}",
+      "closeAria": "Fermer",
+      "noService": "Aucun service enregistré n'a été trouvé pour cette province."
+    },
+    "partners": {
+      "title": "Le choix des marques leaders du secteur",
+      "description": "Nos solutions de superstructures pour véhicules commerciaux lourds fonctionnent de manière fiable sur les itinéraires les plus exigeants de la construction, des mines et du transport longue distance.",
+      "footer": "Fournisseur de superstructures agréé"
+    },
+    "products": {
+      "eyebrow": "Nos produits",
+      "title": "SUPERSTRUCTURES",
+      "titleHighlight": "SOLUTIONS",
+      "subtitle": "Solutions de superstructures en <strong>acier</strong> <hardox></hardox> pour chaque besoin",
+      "viewDetails": "Voir les détails",
+      "items": {
+        "damper": {
+          "title": "BENNE",
+          "description": "Caisse en <strong>acier</strong> <hardox></hardox>, <strong>système <strong>hydraulique</strong></strong>, capacité de 20 à 40 m³",
+          "features": [
+            "Acier Hardox 450",
+            "Système hydraulique",
+            "Structure allégée"
+          ]
+        },
+        "dorse": {
+          "title": "REMORQUE",
+          "description": "Grande résistance, longue durée de vie et options de conception sur mesure",
+          "features": [
+            "Conception sur mesure",
+            "Haute durabilité",
+            "Entretien facile"
+          ]
+        },
+        "kar": {
+          "title": "ÉQUIPEMENT DE DÉNEIGEMENT",
+          "description": "Solutions de <strong>benne</strong> adaptées aux besoins spécifiques de chaque client",
+          "features": [
+            "Fabrication sur mesure",
+            "Support R&D",
+            "Production rapide"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "Le choix des meilleurs"
+    },
+    "stats": {
+      "exportCountries": "Pays d'exportation",
+      "steelProcessing": "Traitement annuel de l'acier (tonnes)",
+      "experience": "Années d'expérience"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü solutions benne",
+      "titleLine1": "BENNE",
+      "titleLine2": "SOLUTIONS",
+      "description": "La réponse ingénierie aux conditions difficiles. Caisse <hardox></hardox>, stabilité de basculement élevée et capacité de charge optimisée — performance supérieure en toutes conditions."
+    },
+    "products": {
+      "title": "Solutions benne prêtes à l'emploi",
+      "subtitle": "Nous avons préparé les configurations les plus demandées pour vous. Consultez ou demandez un devis dès maintenant."
+    },
+    "features": {
+      "titleLine1": "L'harmonie parfaite entre",
+      "titleLine2": "puissance et design",
+      "item01Title": "Caisse Hardox®",
+      "item01Content": "La structure de caisse en <strong>acier</strong> suédois <hardox></hardox> redéfinit les standards du secteur en matière de résistance à l'usure et aux chocs. Longue durée de vie, faibles coûts de maintenance.",
+      "item02Title": "Ingénierie aérodynamique",
+      "item02Content": "Les lignes aérodynamiques optimisées en soufflerie réduisent la consommation de carburant et le coût total d'exploitation.",
+      "item03Title": "Capacité de charge élevée",
+      "item03Content": "Un châssis léger et haute résistance assure une capacité de transport maximale dans les limites légales de charge.",
+      "imageAlt": "Caractéristiques Özünlü benne"
+    },
+    "configurator": {
+      "title": "Configurateur de benne",
+      "subtitle": "Précisez les détails techniques pour une benne haute performance adaptée à vos besoins. Notre équipe d'experts préparera votre devis personnalisé dans les plus brefs délais."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Benne",
+        "description": "Une conception axée sur l'ingénierie pour les conditions les plus exigeantes des chantiers et de la construction. Option de caisse en <hardox></hardox>, châssis renforcé et déchargement rapide pour une efficacité opérationnelle maximale.",
+        "features": [
+          "Option caisse Hardox",
+          "Grande stabilité au bennage",
+          "Déchargement rapide",
+          "Châssis renforcé",
+          "Entretien facile"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Caisse Hardox®",
+            "content": "Longue durée de vie et faibles coûts d'entretien face à l'usure et aux impacts."
+          },
+          "sasi": {
+            "title": "Châssis",
+            "content": "Structure de châssis renforcée, adaptée aux usages intensifs."
+          },
+          "bosaltim": {
+            "title": "Déchargement",
+            "content": "Déchargement rapide et maîtrisé grâce à un système hydraulique optimisé."
+          },
+          "verimlilik": {
+            "title": "Efficacité",
+            "content": "Des détails d'ingénierie qui renforcent la continuité opérationnelle."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Benne",
+        "description": "La combinaison caisse-châssis la plus puissante pour les charges à fort tonnage.",
+        "features": [
+          "Utilisation intensive",
+          "Volume optimisé",
+          "Parois latérales résistantes",
+          "Maintenance facilitée",
+          "Équipements en option"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacité",
+            "content": "Volume optimisé pour les opérations à tonnage élevé."
+          },
+          "dayanim": {
+            "title": "Résistance",
+            "content": "Une structure résistante aux chocs et à l'usure pour les usages intensifs."
+          },
+          "donanim": {
+            "title": "Équipement",
+            "content": "Bâche, ridelle, éclairage et autres options disponibles."
+          },
+          "uyumluluk": {
+            "title": "Compatibilité",
+            "content": "Des alternatives de montage adaptées à différents besoins de châssis."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Benne",
+        "description": "Un poids équilibré et un coût d'exploitation économique pour les usages compacts.",
+        "features": [
+          "Design compact",
+          "Exploitation économique",
+          "Poids équilibré",
+          "Maniabilité facile",
+          "Longue durée de vie"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Usage",
+            "content": "Une grande agilité pour les opérations sur sites compacts."
+          },
+          "agirlik": {
+            "title": "Poids",
+            "content": "Capacité maximale dans le respect des limites légales."
+          },
+          "maliyet": {
+            "title": "Coût",
+            "content": "Coût d'exploitation réduit et maintenance simplifiée."
+          },
+          "performans": {
+            "title": "Performance",
+            "content": "Fonctionnement stable en usage quotidien intensif."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü solutions semi-remorque",
+      "titleLine1": "SEMI-REMORQUE",
+      "titleLine2": "SOLUTIONS",
+      "description": "Allégez le transport lourd grâce à l'ingénierie. Structure en <strong>acier</strong> <hardox></hardox>, technologie de freinage avancée et répartition optimisée de la charge — performance et sécurité supérieures sur chaque itinéraire."
+    },
+    "products": {
+      "title": "Solutions semi-remorque prêtes à l'emploi",
+      "subtitle": "Nous avons préparé les configurations les plus demandées du secteur. Demandez un devis ou concevez votre propre véhicule."
+    },
+    "features": {
+      "titleLine1": "Maîtrisez",
+      "titleLine2": "chaque instant sur la route",
+      "item01Title": "Technologie de châssis avancée",
+      "item01Content": "Châssis haute résistance produit par soudage robotisé ; résistance maximale à la flexion, poids minimisé, capacité de charge maximisée.",
+      "item02Title": "Systèmes de sécurité actifs",
+      "item02Content": "Freinage électronique EBS et technologie RSS (Roll Stability Support) anti-renversement — sécurité de conduite conforme aux normes européennes.",
+      "item03Title": "Adaptation polyvalente",
+      "item03Content": "Flexibilité totale — du transport lowbed à la logistique conteneurs, des cargaisons vrac aux configurations de charge spéciales.",
+      "imageAlt": "Caractéristiques semi-remorque"
+    },
+    "configurator": {
+      "title": "Configurateur de semi-remorque",
+      "subtitle": "Partagez les détails pour concevoir la semi-remorque haute performance la plus adaptée à votre flotte. Notre équipe d'ingénieurs préparera un devis technique personnalisé."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semi-remorque",
+        "description": "Une solution fiable pour le transport lourd longue distance avec un volume de 22 m³, une caisse Hardox 450 et un système d'essieux BPW.",
+        "features": [
+          "Volume de 22 m³",
+          "Caisse Hardox 450",
+          "Tôle 5/6 mm",
+          "Essieu BPW (importé)",
+          "Pare-chocs rabattable"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semi-remorque",
+        "description": "Une remorque haute performance dotée d'un châssis Hardox 500 et d'une rampe hydraulique pour les opérations intensives.",
+        "features": [
+          "Essieu Özkoç (local)",
+          "Châssis Hardox 500",
+          "Pare-chocs fixe",
+          "Rampe hydraulique",
+          "Côtés extensibles"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semi-remorque",
+        "description": "Un transport efficace avec un volume de 21 m³, une caisse allégée et un système de bâche automatique.",
+        "features": [
+          "Volume de 21 m³",
+          "Essieu Özkoç",
+          "Tôle 3/4 mm (légère)",
+          "Bâche automatique",
+          "Couvercle à manchon"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "ÉQUIPEMENTS",
+      "imageAlt": "Solutions d'équipements et de pièces détachées",
+      "titleLine1": "Solutions d'équipement",
+      "titleLine2": "complètes pour votre flotte",
+      "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
+    },
+    "categories": {
+      "title": "Groupes de produits",
+      "subtitle": "Équipements certifiés d'origine, stock étendu et livraison rapide — le tout en un seul endroit.",
+      "hidrolik": {
+        "title": "Systèmes hydrauliques",
+        "desc": "Pompes, vérins et systèmes de vannes à haute capacité de pression. Une puissance et une durabilité éprouvées pour les conditions de terrain les plus exigeantes."
+      },
+      "dingil": {
+        "title": "Essieux et suspension",
+        "desc": "Systèmes premium d'essieux et de suspension, notamment BPW et Özkoç, pour une fiabilité durable."
+      },
+      "fren": {
+        "title": "Systèmes de freinage",
+        "desc": "Kits de freinage compatibles EBS et ABS. Une performance de freinage maximale conforme aux normes européennes de sécurité."
+      },
+      "elektrik": {
+        "title": "Électricité et éclairage",
+        "desc": "Systèmes d'éclairage LED à haute visibilité conformes à la norme ECE R48."
+      },
+      "aksesuar": {
+        "title": "Accessoires pour remorques",
+        "desc": "Coffres à outils, réservoirs, béquilles et accessoires dédiés aux configurations spécifiques."
+      },
+      "yedekParca": {
+        "title": "Pièces détachées",
+        "desc": "Pièces détachées d'origine garanties, avec expédition le jour même et immobilisation minimale du véhicule."
+      }
+    },
+    "cta": {
+      "title": "Vous n'avez pas trouvé la pièce recherchée ?",
+      "description": "Contactez notre équipe d'experts — nous vous procurerons le produit dont vous avez besoin."
+    },
+    "performance": {
+      "imageAlt": "Équipements pour remorques",
+      "titleLine1": "La bonne pièce,",
+      "titleLine2": "performance maximale",
+      "description": "La performance du véhicule dépend directement de la qualité des équipements. Chez Özünlü, nous livrons instantanément des produits certifiés d'origine de marques reconnues mondialement depuis notre stock étendu.",
+      "bullets": {
+        "0": "Garantie de produits d'origine et certifiés",
+        "1": "Large compatibilité avec les marques et les modèles",
+        "2": "Tarification compétitive et solutions de paiement flexibles",
+        "3": "Accompagnement technique assuré par des experts"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "%100",
+        "label": "Garantie de produit d'origine"
+      },
+      "delivery": {
+        "value": "Rapide",
+        "label": "Livraison sur stock"
+      },
+      "support": {
+        "value": "Support",
+        "label": "Avant et après-vente"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Services après-vente",
+      "badge": "GARANTIE ÖZÜNLÜ",
+      "titleLine1": "À VOS CÔTÉS",
+      "titleLine2": "À CHAQUE",
+      "titleLine3": "INSTANT",
+      "description": "Le véritable partenariat commence après l'achat. Nous protégeons la continuité opérationnelle de votre véhicule avec 87 points de service agréés à l'échelle nationale, une assistance technique 24/7 et une garantie de pièces détachées d'origine."
+    },
+    "services": {
+      "title": "NOS SERVICES",
+      "subtitle": "Des solutions professionnelles qui protègent la valeur de votre véhicule et améliorent votre efficacité opérationnelle.",
+      "servisAgi": {
+        "title": "Réseau de service agréé",
+        "description": "Confiez votre flotte à des techniciens certifiés et équipés selon les standards usine, dans 87 points de service agréés répartis dans 50 provinces de Turquie."
+      },
+      "yedekParca": {
+        "title": "Pièces détachées d'origine",
+        "description": "Des pièces Özünlü 100 % d'origine pour réduire au minimum l'immobilisation du véhicule."
+      },
+      "garanti": {
+        "title": "Couverture de garantie",
+        "description": "Tous nos produits sont couverts par une garantie constructeur complète."
+      },
+      "teknikDestek": {
+        "title": "Assistance technique 24/7",
+        "description": "Notre équipe d'assistance technique est joignable jour et nuit."
+      }
+    },
+    "documents": {
+      "eyebrow": "Base de connaissances",
+      "title": "DOCUMENTS",
+      "titleHighlight": "TECHNIQUES",
+      "description": "Manuels d'utilisation, procédures de maintenance et spécifications techniques préparés pour une efficacité maximale de vos produits — disponibles en turc et en anglais.",
+      "searchPlaceholder": "Rechercher des documents...",
+      "download": "TÉLÉCHARGER",
+      "noResults": "Aucun document ne correspond à vos critères de recherche.",
+      "damperManual": {
+        "title": "Manuel d'utilisation de la benne",
+        "desc": "Consignes essentielles d'utilisation et de sécurité pour la gamme de bennes."
+      },
+      "dorseManual": {
+        "title": "Guide remorque et semi-remorque",
+        "desc": "Manuel standard d'utilisation pour les produits généraux de semi-remorques."
+      },
+      "generalManual": {
+        "title": "Manuel général produit et maintenance (TR/EN)",
+        "desc": "Guide complet de maintenance et détails techniques pour l'ensemble des modèles de remorques."
+      },
+      "damperSpec": {
+        "title": "Spécification technique benne (TR/EN)",
+        "desc": "Spécifications techniques dédiées aux véhicules bennes."
+      }
+    },
+    "map": {
+      "title": "Réseau national de services agréés",
+      "description": "87 points de service agréés dans 50 provinces. Sélectionnez votre ville sur la carte pour accéder instantanément aux informations de service et de contact."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "CONTACT",
+      "subtitle": "Contactez-nous pour vos questions et projets.",
+      "headOffice": "SIÈGE SOCIAL",
+      "submit": "Envoyer",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Horaires de travail",
+      "hoursValue": "Lun.-ven. et sam. : 09:00 - 18:30",
+      "name": "NOM ET PRÉNOM",
+      "namePlaceholder": "Vos nom et prénom",
+      "company": "SOCIÉTÉ",
+      "companyPlaceholder": "Nom de l'entreprise",
+      "email": "E-MAIL",
+      "emailPlaceholder": "exemple@entreprise.com",
+      "phone": "TÉLÉPHONE",
+      "phonePlaceholder": "+33 ...",
+      "message": "MESSAGE",
+      "messagePlaceholder": "Rédigez votre message ici...",
+      "mapTitle": "Carte de localisation Özünlü Damper"
+    },
+    "tabs": {
+      "sales": "VENTES ET MARKETING",
+      "service": "SERVICES APRÈS-VENTE",
+      "export": "EXPORT",
+      "hr": "RESSOURCES HUMAINES"
+    }
+  },
+  "proposal": {
+    "configurator": "Configurateur",
+    "selectedProduct": "Produit sélectionné",
+    "selectedSubtitle": "Remplissez le formulaire de devis pour le produit sélectionné.",
+    "defaultSubtitle": "Précisez les détails pour une solution adaptée à vos besoins.",
+    "clearSelection": "Choisissez un autre produit ou utilisez le configurateur",
+    "stepQuantity": "Définir la quantité",
+    "stepPayment": "Mode de paiement",
+    "stepContact": "Coordonnées",
+    "vehicleInfo": "Informations véhicule",
+    "trailerSpecs": "Caractéristiques de la remorque",
+    "cargoType": "Type de chargement",
+    "dimensions": "Dimensions et quantité",
+    "submit": "DEMANDER UN DEVIS",
+    "submitting": "Envoi en cours...",
+    "successTitle": "Votre demande a bien été reçue !",
+    "successMessage": "Votre formulaire de devis a bien été transmis. Notre équipe commerciale vous contactera dans les plus brefs délais.",
+    "newForm": "Créer un nouveau formulaire",
+    "kvkkNotice": "Vos données personnelles sont protégées conformément à la réglementation applicable en matière de protection des données.",
+    "payment": {
+      "cashTitle": "Comptant / Virement bancaire",
+      "cashDesc": "Remise spéciale pour les paiements comptants",
+      "creditTitle": "Paiement différé / Chèque",
+      "creditDesc": "Options de délai et d'échelonnement disponibles"
+    },
+    "fields": {
+      "quantity": "Quantité souhaitée",
+      "brand": "Marque du véhicule",
+      "brandPh": "Ex. : Mercedes, Ford",
+      "model": "Modèle du véhicule",
+      "modelPh": "Ex. : 4140, Cargo",
+      "volume": "Volume souhaité (m³)",
+      "volumePh": "Ex. : 30",
+      "axle": "Option d'essieu",
+      "domestic": "Local",
+      "foreign": "Importé",
+      "cargo": "Chargement transporté",
+      "cargoPh": "Ex. : déblais, sable, asphalte",
+      "thickness": "Épaisseur fond/côtés (mm)",
+      "thicknessPh": "Ex. : 5 mm / 4 mm",
+      "company": "Nom de l'entreprise",
+      "companyPh": "Raison sociale",
+      "contact": "Personne de contact",
+      "contactPh": "Nom et prénom",
+      "phone": "Téléphone",
+      "phonePh": "+33 ...",
+      "email": "E-mail",
+      "emailPh": "mail@entreprise.com",
+      "heardFrom": "Comment nous avez-vous connus ?",
+      "heardFromPh": "Google, réseaux sociaux, recommandation..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Depuis 1977",
+      "titleLine1": "LA SIGNATURE DE",
+      "titleLine2": "LA VITESSE ET DE LA CONFIANCE",
+      "description": "Avec près d'un demi-siècle d'expérience, nous définissons les standards du secteur des superstructures pour véhicules commerciaux lourds et construisons l'avenir sur des bases solides."
+    },
+    "values": {
+      "trust": {
+        "title": "CONFIANCE",
+        "desc": "Depuis plus de 45 ans, nous tenons chaque engagement pris auprès de nos clients, partenaires et collaborateurs."
+      },
+      "quality": {
+        "title": "QUALITÉ",
+        "desc": "De l'<strong>acier</strong> <hardox></hardox> aux finitions les plus soignées, nous visons l'excellence à chaque étape de la production."
+      },
+      "innovation": {
+        "title": "INNOVATION",
+        "desc": "Nous analysons les besoins du secteur et, grâce à notre R&D, nous faisons entrer dès aujourd'hui les technologies de demain."
+      },
+      "speed": {
+        "title": "VITESSE",
+        "desc": "Grâce à des processus de production optimisés, nous livrons rapidement sans compromettre la qualité et donnons de l'élan à votre activité."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NOUS NE FAÇONNONS PAS SEULEMENT L'ACIER,",
+      "titleLine2": "NOUS FAÇONNONS LA CONFIANCE.",
+      "p1": "<strong>Depuis 1977 jusqu'à aujourd'hui,</strong> ce qui sort de notre ligne de production n'est pas simplement une benne, mais la concrétisation de près d'un demi-siècle d'expérience, de passion pour l'ingénierie et d'innovation. Pour nous, la qualité n'est pas une simple étape de contrôle ; c'est notre culture de production.",
+      "p2": "Testés dans des environnements difficiles et sous de lourdes charges, nos produits sont conçus jusque dans les moindres détails avec une attention particulière à la <durability>durabilité</durability> et à la <performance>performance</performance>. Nous associons la robustesse de l'acier <hardox></hardox> à l'ingéniosité de l'ingénierie turque pour définir les standards qui orientent le secteur.",
+      "quote": "Dans chaque cordon de soudure, chaque assemblage et chaque livraison, nous poursuivons un seul objectif : renforcer la puissance de nos partenaires."
+    },
+    "leader": {
+      "eyebrow": "Message du dirigeant",
+      "quote": "Chez Özünlü, nous ne fabriquons pas seulement des produits ; nous construisons la confiance. Chaque benne et chaque remorque reflètent près d'un demi-siècle d'expérience et de passion pour l'ingénierie.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Président du Conseil d'administration",
+      "bio": "Fondée en 1977, Özünlü Damper figure aujourd'hui parmi les fabricants de référence du secteur, avec des exportations vers plus de 40 pays. Nous produisons selon des standards mondiaux avec le titre de Qualified Body Builder (carrossier constructeur agréé).",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "AU-DELÀ DU",
+      "titleHighlight": "TEMPS",
+      "m1977": {
+        "title": "Les fondations",
+        "desc": "Le parcours industriel commence dans un atelier de 30 m² à Okmeydanı, Istanbul, avec de grandes ambitions."
+      },
+      "m1985": {
+        "title": "Première expansion",
+        "desc": "Transfert des installations de production à Habipler, Istanbul, où elles se trouvent encore aujourd'hui."
+      },
+      "m1991": {
+        "title": "Investir dans l'avenir",
+        "desc": "Acquisition du terrain actuel de l'usine et premier investissement majeur sur la voie du leadership dans les superstructures."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "Premier titre \"Qualified Body Builder\" du secteur, décerné par les principaux constructeurs mondiaux de camions."
+      },
+      "m2009": {
+        "title": "Hausse de capacité",
+        "desc": "Doublement de la capacité de production grâce à une nouvelle approche qualité et à des investissements machines."
+      },
+      "mToday": {
+        "title": "Puissance mondiale",
+        "desc": "30 000 m² de surface de production sur 3 sites, des ventes dans les 81 provinces et des exportations vers plus de 40 pays."
+      },
+      "yearToday": "Aujourd'hui"
+    },
+    "facilities": {
+      "title": "PUISSANCE DE PRODUCTION ET",
+      "titleHighlight": "IMPACT MONDIAL",
+      "description": "Nous allions la force de l'ingénierie locale aux standards internationaux pour créer de la valeur dans le monde entier.",
+      "production": {
+        "title": "PÔLE DE PRODUCTION",
+        "value": "30 000 m²",
+        "desc": "Production à haute capacité sur 3 sites distincts, avec 7 000 m² couverts et 23 000 m² en plein air."
+      },
+      "global": {
+        "title": "PORTEE MONDIALE",
+        "value": "40+ pays",
+        "desc": "Un réseau d'exportation étendu couvrant les 81 provinces de Turquie et plus de 40 pays à travers le monde."
+      },
+      "quality": {
+        "title": "STANDARD QUALITÉ",
+        "value": "Certificat QBB",
+        "desc": "La première marque du secteur à détenir le titre de \"Qualified Body Builder\" (carrossier constructeur agréé)."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "GESTION DES",
+      "titleHighlight": "TALENTS",
+      "description": "Nous proposons un parcours professionnel unique aux professionnels passionnés et talentueux qui voient grand."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "LA VIE",
+      "titleLine2": "CHEZ NOUS",
+      "description": "Au sein de la famille Özünlü, nous ne visons pas seulement à produire les meilleures bennes, mais aussi à offrir le meilleur environnement à nos collaborateurs. Innovation, développement continu et esprit d'équipe font partie de notre ADN.",
+      "imageAlt": "Carrière chez Özünlü {n}"
+    },
+    "jobs": {
+      "title": "NOUS VOUS",
+      "titleHighlight": "ATTENDONS",
+      "subtitle": "Rejoignez l'équipe qui façonne l'avenir.",
+      "apply": "Postuler",
+      "noJobsTitle": "Nous n'avons actuellement aucun poste ouvert",
+      "noJobsDesc": "Nous sommes toutefois toujours heureux de rencontrer des profils talentueux. Vous pouvez nous envoyer votre CV pour une candidature spontanée ou suivre nos comptes sur les réseaux sociaux."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "CENTRE",
+      "titleHighlight": "MÉDIA",
+      "description": "Actualités du secteur, évolutions technologiques et dernières nouvelles de l'univers Özünlü."
+    },
+    "gallery": {
+      "title": "GALERIE",
+      "titleHighlight": "PRODUITS",
+      "description": "Découvrez dans le détail une ingénierie de haut niveau et une finition irréprochable.",
+      "imageAlt": "Galerie Özünlü Damper {n}",
+      "detailAlt": "Détail de la galerie"
+    },
+    "insights": {
+      "title": "ANALYSES",
+      "titleHighlight": "SECTORIELLES",
+      "description": "Des analyses d'experts sur le secteur du véhicule industriel lourd, les technologies de production et la logistique.",
+      "readMore": "Lire la suite",
+      "articles": {
+        "a1": {
+          "category": "ACADÉMIE",
+          "title": "La qualité de l'acier dans la fabrication des bennes : Hardox et au-delà",
+          "excerpt": "Comment l'utilisation d'un acier à haute résistance prolonge-t-elle la durée de vie d'une benne ? Comparaison entre Hardox 450 et 500 et analyse du retour sur investissement.",
+          "date": "12 janvier 2025",
+          "readTime": "6 min de lecture"
+        },
+        "a2": {
+          "category": "SECTEUR",
+          "title": "Tendances 2026 de la logistique et du transport",
+          "excerpt": "Évolutions de la chaîne d'approvisionnement mondiale, réglementation sur l'efficacité énergétique et opportunités pour le secteur turc du transport.",
+          "date": "8 janvier 2025",
+          "readTime": "8 min de lecture"
+        },
+        "a3": {
+          "category": "DURABILITÉ",
+          "title": "Logistique verte : l'impact environnemental des bennes allégées",
+          "excerpt": "Réduire la consommation de carburant et l'empreinte carbone grâce à un châssis plus léger est possible. Nous l'analysons avec les données R&D d'Özünlü.",
+          "date": "3 janvier 2025",
+          "readTime": "5 min de lecture"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "EXPÉRIENCE",
+    "titleHighlight": "INTERACTIVE",
+    "description": "Allez au-delà des catalogues classiques. Découvrez les prouesses d'ingénierie d'Özünlü Damper en 360° et composez vous-même la configuration idéale pour votre projet.",
+    "view360": {
+      "dragHint": "Faites glisser pour tourner",
+      "bodyLabel": "MODÈLE DE CAISSE",
+      "disclaimer": "*Visuel 3D représentatif"
+    },
+    "configurator": {
+      "title": "CONFIGURATEUR",
+      "bodyColor": "Couleur de la caisse",
+      "capacity": "Capacité volumique",
+      "tires": "Type de pneumatiques",
+      "summary": "Résumé",
+      "colors": {
+        "blue": "Bleu Özünlü",
+        "gray": "Gris quartz",
+        "navy": "Bleu nuit",
+        "red": "Rouge flamme"
+      },
+      "tireTypes": {
+        "standard": "Standard",
+        "offRoad": "Tout-terrain",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "Déchargement en 2 minutes",
+        "desc": "Un temps de vidage record grâce à un système hydraulique optimisé."
+      },
+      "weight": {
+        "title": "15 % plus léger",
+        "desc": "Une plus grande capacité de charge grâce à une conception spécifique en alliage."
+      },
+      "hardox": {
+        "title": "Caisse Hardox 450",
+        "desc": "Résistance maximale à l'usure et aux impacts grâce à l'acier suédois."
+      },
+      "balance": {
+        "title": "Système d'équilibre intelligent",
+        "desc": "Technologie de capteurs actifs qui prévient le renversement sur terrain difficile."
+      }
+    }
+  }
+}

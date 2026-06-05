@@ -3,19 +3,9 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Check } from 'lucide-react';
-// Using standard img tag for debugging stability as requested
 import Image from 'next/image';
-
-const features = [
-    'Araç üreticilerinin üst yapı talimatlarına uygun üretim',
-    'Sürüş güvenliği',
-    'Tüm yasal düzenlemelere ve güvenlik şartlarına uygunluk',
-    'Garanti – Satış Sonrası Hizmetler – Güvenilirlik avantajı',
-    'Her türlü ihtiyaca uygun ürün çeşitliliği ve malzeme kalitesi',
-    'Özünlü marka değeri ve deneyimi',
-    'Hızlı ve etkili satış sonrası hizmetler',
-    'Yüksek ikinci el değeri olan damperli yarı römork',
-];
+import { useTranslations } from 'next-intl';
+import { heroRichTextHandlers } from '@/i18n/richText';
 
 // Correct image paths mapped to the public/products directory
 const images = [
@@ -25,7 +15,8 @@ const images = [
 ];
 
 export default function WhyChooseUsSection() {
-    // State to track the active (front) image index
+    const t = useTranslations('home.whyChooseUs');
+    const featureKeys = ['0', '1', '2', '3', '4', '5', '6'] as const;
     const [activeIndex, setActiveIndex] = useState(0);
 
     const handleNext = () => {
@@ -99,31 +90,31 @@ export default function WhyChooseUsSection() {
                                     className="mb-10 text-center lg:text-left"
                                 >
                                     <span className="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
-                                        AVANTAJLARIMIZ
+                                        {t('eyebrow')}
                                     </span>
                                     <h2 className="text-4xl md:text-5xl font-black text-black mb-6 leading-tight">
-                                        NEDEN BİZİ <br />
-                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-600">
-                                            SEÇMELİSİNİZ?
-                                        </span>
+                                        {t('title')}
                                     </h2>
                                 </motion.div>
 
                                 <div className="space-y-4">
-                                    {features.map((feature, index) => (
+                                    {featureKeys.map((key, index) => (
                                         <motion.div
                                             key={index}
                                             initial={{ opacity: 0, x: -20 }}
                                             whileInView={{ opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
-                                            transition={{ delay: index * 0.1 }}
+                                            transition={{ delay: index * 0.08 }}
                                             className="flex items-start gap-4 group justify-start"
                                         >
-                                            <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-1 group-hover:bg-primary transition-colors duration-300">
-                                                <Check size={14} className="text-primary group-hover:text-white" />
+                                            <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 group-hover:bg-primary transition-colors duration-300">
+                                                <Check size={15} className="text-primary group-hover:text-white" />
                                             </div>
-                                            <p className="text-gray-800 group-hover:text-primary transition-colors duration-300 text-lg leading-snug text-left">
-                                                {feature}
+                                            <p className="text-gray-800 group-hover:text-primary transition-colors duration-300 text-base md:text-lg leading-snug text-left">
+                                                {t.rich(`features.${key}`, {
+                                                    ...heroRichTextHandlers,
+                                                    hardox: heroRichTextHandlers.hardox,
+                                                })}
                                             </p>
                                         </motion.div>
                                     ))}
@@ -163,7 +154,7 @@ export default function WhyChooseUsSection() {
                                                     animate={{ opacity: style.zIndex === 30 ? 1 : 0 }}
                                                 >
                                                     <div className="bg-white/90 backdrop-blur-md border border-white/20 rounded-xl p-4">
-                                                        <p className="text-[#000080] font-bold text-center text-sm lg:text-base">Özünlü Güvencesi</p>
+                                                        <p className="text-[#000080] font-bold text-center text-sm lg:text-base">{t('cardLabel')}</p>
                                                     </div>
                                                 </motion.div>
                                             </motion.div>

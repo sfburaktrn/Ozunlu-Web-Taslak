@@ -15,10 +15,18 @@ import {
   serviceLocations,
   type ServiceLocation,
 } from "@/data/serviceLocations";
+import { useTranslations } from "next-intl";
+import { defaultRichTextHandlers } from "@/i18n/richText";
 
 type SelectedCity = {
   city: CityType;
   location?: ServiceLocation;
+};
+
+type MapPreviewProps = {
+  eyebrow?: string;
+  title?: string;
+  description?: React.ReactNode;
 };
 
 type CityMarkerWrapperProps = {
@@ -77,7 +85,15 @@ const CityMarkerWrapper = ({
   );
 };
 
-export default function MapPreview() {
+export default function MapPreview({
+  eyebrow: eyebrowProp,
+  title: titleProp,
+  description: descriptionProp,
+}: MapPreviewProps) {
+  const t = useTranslations('home.mapPreview');
+  const eyebrow = eyebrowProp ?? t('eyebrow');
+  const title = titleProp ?? t('title');
+  const description = descriptionProp ?? t.rich('description', defaultRichTextHandlers);
   const [selected, setSelected] = useState<SelectedCity | null>(null);
 
   const totalProviders = useMemo(
@@ -132,28 +148,32 @@ export default function MapPreview() {
                   className="space-y-4"
                 >
                   <p className="text-sm tracking-[0.35em] text-black font-bold uppercase">
-                    Servis Noktalarımız
+                    {eyebrow}
                   </p>
                   <h2 className="text-3xl md:text-5xl font-black text-black leading-tight">
-                    Türkiye genelinde{" "}
-                    <span className="text-primary">yetkili servis</span> ağı.
+                    {titleProp ? (
+                      title
+                    ) : (
+                      <>
+                        {t('title')}
+                        <span className="text-primary">{t('titleHighlight')}</span>
+                      </>
+                    )}
                   </h2>
                   <p className="text-black max-w-2xl font-medium">
-                    Haritadan şehir seçerek o ildeki yetkili servis ve iletişim
-                    bilgilerine anında ulaşın. Tüm servis noktalarımız güncel ve
-                    bağlantıya hazır.
+                    {description}
                   </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
-                    <p className="text-sm text-black font-bold">Servis bulunan şehir</p>
+                    <p className="text-sm text-black font-bold">{t('citiesLabel')}</p>
                     <p className="text-3xl font-black text-black mt-1">
                       {serviceLocations.length}
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
-                    <p className="text-sm text-black font-bold">Toplam servis noktası</p>
+                    <p className="text-sm text-black font-bold">{t('pointsLabel')}</p>
                     <p className="text-3xl font-black text-black mt-1">
                       {totalProviders}
                     </p>
@@ -162,7 +182,7 @@ export default function MapPreview() {
 
                 <div className="space-y-3">
                   <p className="text-sm text-black font-bold uppercase tracking-[0.25em]">
-                    Öne çıkan iller
+                    {t('topCities')}
                   </p>
                   <div className="flex flex-col gap-3">
                     {topLocations.map((loc) => (
@@ -176,7 +196,7 @@ export default function MapPreview() {
                         <div>
                           <p className="text-black font-bold">{loc.city}</p>
                           <p className="text-gray-900 text-sm font-medium">
-                            {loc.providers.length} servis noktası
+                            {t('serviceCount', { count: loc.providers.length })}
                           </p>
                         </div>
                       </div>
@@ -194,10 +214,10 @@ export default function MapPreview() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <p className="text-xs uppercase tracking-[0.25em] text-gray-900 font-bold">
-                      Haritaya dokun
+                      {t('tapHint')}
                     </p>
                     <h3 className="text-black text-xl font-bold">
-                      Şehir seç, servis bilgisi açılır.
+                      {t('mapInstruction')}
                     </h3>
                   </div>
                   <div className="p-2 rounded-full bg-gray-100 text-primary">
@@ -242,19 +262,19 @@ export default function MapPreview() {
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
                   <p className="text-xs uppercase tracking-[0.25em] text-gray-800 font-bold">
-                    Servis detayları
+                    {t('modalEyebrow')}
                   </p>
                   <h3 className="text-2xl font-black text-black">
                     {selected.location?.city ?? selected.city.name}
                   </h3>
                   <p className="text-black font-medium text-sm">
-                    Plaka kodu: {selected.city.plateNumber}
+                    {t('plateCode', { code: selected.city.plateNumber })}
                   </p>
                 </div>
                 <button
                   onClick={closeModal}
                   className="p-2 rounded-full bg-gray-100 text-black hover:text-black hover:bg-gray-200 transition"
-                  aria-label="Kapat"
+                  aria-label={t('closeAria')}
                 >
                   <X size={18} />
                 </button>
@@ -288,7 +308,7 @@ export default function MapPreview() {
                   ))
                 ) : (
                   <p className="text-black font-medium">
-                    Bu il için kayıtlı servis bulunamadı.
+                    {t('noService')}
                   </p>
                 )}
               </div>

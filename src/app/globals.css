@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-::root {
+:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 245, 245, 245;
@@ -29,71 +29,120 @@ body {
   }
 }
 
-/* Custom Scrollbar for Industrial Feel */
+/* ─── Arabic RTL layout ─── */
+[dir='rtl'] {
+  direction: rtl;
+  text-align: start;
+}
+
+[dir='rtl'] body {
+  font-family: 'Manrope', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* Logical alignment overrides */
+[dir='rtl'] .text-left {
+  text-align: start;
+}
+
+[dir='rtl'] .text-right {
+  text-align: end;
+}
+
+/* Gradient directions for hero sections */
+[dir='rtl'] .hero-gradient-ltr {
+  background: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+[dir='rtl'] .hero-gradient-overlay {
+  --tw-gradient-from-position: 0%;
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+/* Mirror directional icons in RTL */
+[dir='rtl'] .icon-directional {
+  transform: scaleX(-1);
+}
+
+/* Flex row reversal for nav-like rows when needed */
+[dir='rtl'] .rtl-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Slide animations */
+[dir='rtl'] .group-hover\:translate-x-1:hover {
+  --tw-translate-x: -0.25rem;
+}
+
+[dir='rtl'] .hover\:translate-x-1:hover {
+  --tw-translate-x: -0.25rem;
+}
+
+[dir='rtl'] .group-hover\:-translate-x-1:hover {
+  --tw-translate-x: 0.25rem;
+}
+
+/* Map and modal positioning */
+[dir='rtl'] .map-modal-panel {
+  left: auto;
+  right: 0;
+}
+
+/* Logical positioning for RTL */
+[dir='rtl'] .-start-8 {
+  --tw-translate-x: 2rem;
+}
+
+[dir='rtl'] .md\:start-1\/2 {
+  left: auto;
+  right: 50%;
+}
+
+[dir='rtl'] .object-left {
+  object-position: right;
+}
+
+[dir='rtl'] .object-right {
+  object-position: left;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
   background: #000000;
-  /* Black Track */
 }
 
 ::-webkit-scrollbar-thumb {
   background: #333333;
-  /* Dark Gray Thumb */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #4d4d4d;
-  /* Lighter Black */
 }
 
-/* Shine Animation for Product Cards */
 @keyframes shine {
-  0% {
-    transform: translateX(-100%) skewX(-12deg);
-  }
-  100% {
-    transform: translateX(200%) skewX(-12deg);
-  }
+  0% { transform: translateX(-100%) skewX(-12deg); }
+  100% { transform: translateX(200%) skewX(-12deg); }
+}
+
+@keyframes shine-rtl {
+  0% { transform: translateX(100%) skewX(12deg); }
+  100% { transform: translateX(-200%) skewX(12deg); }
 }
 
 .animate-shine {
   animation: shine 2s infinite;
 }
 
-/* News Article Styles */
-.prose {
-  color: inherit;
+[dir='rtl'] .animate-shine {
+  animation-name: shine-rtl;
 }
 
-.prose p {
-  margin-bottom: 1.5rem;
-  line-height: 1.75;
-}
-
-.prose strong {
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.prose h2 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-.prose a {
-  color: #ffffff;
-  text-decoration: underline;
-  transition: opacity 0.2s;
-}
-
-.prose a:hover {
-  opacity: 0.8;
-}
-
+.prose p { margin-bottom: 1.5rem; line-height: 1.75; }
+.prose strong { font-weight: 700; color: #ffffff; }
+.prose h2 { font-size: 1.875rem; font-weight: 700; color: #ffffff; margin-top: 2rem; margin-bottom: 1rem; }
+.prose a { color: #ffffff; text-decoration: underline; transition: opacity 0.2s; }
+.prose a:hover { opacity: 0.8; }

@@ -1,0 +1,805 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Fast Production, Hardox Steel Superstructure Solutions – Since 1977",
+      "description": "Since 1977, Turkey's trusted manufacturer of heavy commercial vehicle superstructures with Hardox-certified steel processing, advanced engineering and comprehensive after-sales service network."
+    },
+    "damper": {
+      "title": "Özünlü Tipper | High-Performance Hardox Tipper Solutions – Since 1977",
+      "description": "Özünlü tipper models designed with Hardox steel bodies, advanced engineering and over 45 years of production experience — essential for construction, mining and infrastructure. Request a quote today."
+    },
+    "yariRomork": {
+      "title": "Özünlü Semi-Trailer | Hardox Steel Tipper Trailer – Heavy-Duty Transport Solutions",
+      "description": "Semi-trailer models with BPW and Özkoç axles and Hardox 450/500 bodies for safe, efficient heavy-load transport. Engineered by Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Trailer Spare Parts & Equipment | Original Hydraulic, Axle, Brake Systems – Özünlü",
+      "description": "Original trailer equipment and spare parts supply with Özünlü guarantee. Hydraulic systems, BPW-Özkoç axles, EBS brake kits and LED lighting — wide stock, fast delivery."
+    },
+    "afterSales": {
+      "title": "Özünlü After-Sales Services | 24/7 Technical Support, Spare Parts, Authorized Service Network",
+      "description": "87 authorized service points across Turkey, 24/7 technical support and original spare parts guarantee — Özünlü after-sales keeps your fleet running."
+    },
+    "contact": {
+      "title": "Contact | Özünlü Damper – Quotes & Support",
+      "description": "Contact Özünlü Damper for sales, after-sales, export and HR. Head office: Sultangazi, Istanbul."
+    },
+    "corporate": {
+      "title": "Corporate | Özünlü Damper – Since 1977",
+      "description": "Since 1977, Özünlü Damper has been the address of trust and quality in heavy commercial vehicle superstructures."
+    },
+    "products": {
+      "title": "Products | Özünlü Damper",
+      "description": "Tipper, semi-trailer and equipment solutions."
+    },
+    "media": {
+      "title": "Media | Özünlü Damper",
+      "description": "Özünlü Damper news, blog and industry insights."
+    },
+    "career": {
+      "title": "Careers | Özünlü Damper",
+      "description": "Career opportunities at Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Personal Data Protection | Özünlü Damper",
+      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+    },
+    "legalPrivacy": {
+      "title": "Privacy Notice | Özünlü Damper",
+      "description": "Clarification text on processing of personal data."
+    },
+    "legalCookie": {
+      "title": "Cookie Policy | Özünlü Damper",
+      "description": "Cookie usage policy for the Özünlü Damper website."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Tipper",
+      "yariRomork": "Semi-Trailer",
+      "ekEkipmanlar": "Equipment",
+      "satisSonrasi": "After-Sales",
+      "iletisim": "Contact",
+      "mobileContactQuote": "Contact & Get Quote"
+    },
+    "footer": {
+      "logoAlt": "Özünlü Damper Logo",
+      "about": "Since 1977, <hardox></hardox> certified <strong>steel</strong> processing, advanced <strong>engineering</strong> and comprehensive <strong>after-sales</strong> network — Turkey's trusted <strong>heavy commercial vehicle</strong> <strong>superstructure</strong> manufacturer.",
+      "quickAccess": "Quick Links",
+      "contact": "Contact",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "copyright": "© {year} Özünlü Damper. All rights reserved.",
+      "kvkk": "GDPR",
+      "aydinlatmaMetni": "Privacy Notice",
+      "cerezPolitikasi": "Cookie Policy"
+    },
+    "cta": {
+      "teklifAl": "Get Quote",
+      "teklifAlin": "Request Quote",
+      "hemenTeklifAl": "Get Quote Now",
+      "incele": "View",
+      "bizeUlasin": "Contact Us",
+      "bilgiAl": "Learn More",
+      "iletisimeGecin": "Get in Touch",
+      "detayliIncele": "View Details",
+      "tumUrunler": "ALL PRODUCTS",
+      "kesfet": "Explore",
+      "kaydir": "Scroll"
+    },
+    "labels": {
+      "modellerimiz": "Our Models",
+      "oneCikanlar": "Highlights",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Hardox In My Body certified wear-resistant steel logo"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "SPEED IN PRODUCTION",
+      "titleLine2": "DURABILITY IN THE FIELD",
+      "subtitle": "Fast <strong>production</strong>, long-lasting <strong>superstructure</strong> solutions and field-proven performance",
+      "ctaDamper": "Tipper Quote",
+      "ctaYariRomork": "Semi-Trailer Quote",
+      "scroll": "Scroll"
+    },
+    "about": {
+      "eyebrow": "About Us",
+      "title": "Defining Strength Through Fast Production",
+      "paragraph1": "Since 1977, we have delivered reliable, long-lasting <strong>superstructure</strong> solutions to diverse industries with <strong>production</strong> power extending from Turkey to the world.",
+      "paragraph2": "We combine advanced <strong>engineering</strong> and design with the superior durability of <hardox></hardox> <strong>steel</strong>, developing each product not just as a <strong>superstructure</strong> but as a solution that drives operational efficiency.",
+      "cards": {
+        "arge": "R&D & ENGINEERING",
+        "ozelTasarim": "CUSTOM DESIGN SOLUTIONS",
+        "uretimTeknolojisi": "ADVANCED PRODUCTION TECHNOLOGY",
+        "sertifikaliUretim": "CERTIFIED PRODUCTION"
+      }
+    },
+    "damperHero": {
+      "category": "TIPPER",
+      "imageAlt": "Özünlü Tipper Performance and Durability",
+      "titleLine1": "Engineering Answer",
+      "titleLine2": "for Tough Sites",
+      "description": "Our <strong>tipper</strong> systems built for harsh construction, mining and infrastructure conditions deliver uninterrupted field performance with <hardox></hardox> body durability, high tipping stability and fast unloading capacity."
+    },
+    "trailerHero": {
+      "category": "SEMI-TRAILER",
+      "imageAlt": "Özünlü Semi-Trailer and Trailer Systems",
+      "titleLine1": "Lightweight Design",
+      "titleLine2": "Strong Performance",
+      "description": "Delivers transport efficiency, strong resale value and long-lasting performance."
+    },
+    "equipmentHero": {
+      "category": "Equipment",
+      "imageAlt": "Özünlü Equipment and Spare Parts Solutions",
+      "titleLine1": "Complete Equipment",
+      "titleLine2": "Solutions for Your Fleet",
+      "description": "From <strong>hydraulic</strong> systems to EBS brake kits, premium axle brands to LED lighting — all trailer equipment is original certified and delivered fast from wide stock with Özünlü guarantee."
+    },
+    "whyChooseUs": {
+      "eyebrow": "WHY ÖZÜNLÜ?",
+      "title": "Why Özünlü?",
+      "features": {
+        "0": "OEM-approved <strong>superstructure</strong> design — <strong>production</strong> compatible with different chassis and tractor configurations",
+        "1": "<hardox></hardox> certified <strong>steel</strong> processing and robotic welding technology",
+        "2": "Full compliance with all regulations and European safety standards (ECE/ADR)",
+        "3": "Comprehensive warranty and uninterrupted <strong>after-sales</strong> service",
+        "4": "87 <strong>authorized service</strong> points in 50 provinces across Turkey",
+        "5": "Structural design that preserves high resale value",
+        "6": "Export to over 50 countries — globally proven quality"
+      },
+      "cardLabel": "Özünlü Guarantee"
+    },
+    "mapPreview": {
+      "eyebrow": "Service Map",
+      "title": "Nationwide ",
+      "titleHighlight": "Authorized Service Network",
+      "description": "Wherever your vehicle is, Özünlü is with you. Our 87 <strong>authorized service</strong> points in 50 provinces ensure uninterrupted fleet operations with original spare parts and certified technicians.",
+      "citiesLabel": "Cities with service",
+      "pointsLabel": "Total service points",
+      "topCities": "Featured cities",
+      "serviceCount": "{count} service points",
+      "tapHint": "Tap the map",
+      "mapInstruction": "Select a city to view service details.",
+      "modalEyebrow": "Service details",
+      "plateCode": "Plate code: {code}",
+      "closeAria": "Close",
+      "noService": "No registered service found for this province."
+    },
+    "partners": {
+      "title": "Preferred by Industry Leaders",
+      "description": "Our <strong>heavy commercial vehicle</strong> <strong>superstructure</strong> solutions work reliably on the toughest routes in construction, mining and long-distance transport.",
+      "footer": "Approved Superstructure Supplier"
+    },
+    "products": {
+      "eyebrow": "Our Products",
+      "title": "SUPERSTRUCTURE",
+      "titleHighlight": "SOLUTIONS",
+      "subtitle": "<strong>Superstructure</strong> solutions in <hardox></hardox> <strong>steel</strong> quality for every need",
+      "viewDetails": "View Details",
+      "items": {
+        "damper": {
+          "title": "TIPPER",
+          "description": "<hardox></hardox> <strong>steel</strong> body, <strong>hydraulic system</strong>, 20-40m³ capacity",
+          "features": [
+            "Hardox 450 Steel",
+            "Hydraulic System",
+            "Lightweight Design"
+          ]
+        },
+        "dorse": {
+          "title": "TRAILER",
+          "description": "High strength, long life, custom design options",
+          "features": [
+            "Custom Design",
+            "High Durability",
+            "Easy Maintenance"
+          ]
+        },
+        "kar": {
+          "title": "SNOW PLOW",
+          "description": "Custom <strong>tipper</strong> solutions for customer needs",
+          "features": [
+            "Custom Built",
+            "R&D Support",
+            "Fast Production"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "The Choice of the Best"
+    },
+    "stats": {
+      "exportCountries": "Export Countries",
+      "steelProcessing": "Annual Steel Processing (Tons)",
+      "experience": "Years of Experience"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü Tipper Solutions",
+      "titleLine1": "TIPPER",
+      "titleLine2": "SOLUTIONS",
+      "description": "The <strong>engineering</strong> answer for tough sites. <hardox></hardox> body, high tipping stability and optimized load capacity — superior performance in every condition."
+    },
+    "products": {
+      "title": "Ready Tipper Solutions",
+      "subtitle": "We prepared the most preferred configurations for you. Explore or request a quote now."
+    },
+    "features": {
+      "titleLine1": "Perfect Harmony of",
+      "titleLine2": "Power and Design",
+      "item01Title": "Hardox® Body",
+      "item01Content": "Body structure made with Swedish <hardox></hardox> <strong>steel</strong> redefines industry standards in wear and impact resistance. Long life, low maintenance cost.",
+      "item02Title": "Aerodynamic Engineering",
+      "item02Content": "Wind tunnel optimized aerodynamic lines reduce fuel consumption and total operating cost.",
+      "item03Title": "High Payload Capacity",
+      "item03Content": "Lightweight high-strength chassis design delivers maximum transport capacity within legal load limits.",
+      "imageAlt": "Özünlü Tipper Features"
+    },
+    "configurator": {
+      "title": "Tipper Configurator",
+      "subtitle": "Specify technical details for a high-performance tipper tailored to your needs. Our expert team will prepare your custom quote shortly."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Tipper",
+        "description": "Engineering-focused design for harsh construction conditions. <hardox></hardox> body option, reinforced chassis and fast unloading.",
+        "features": [
+          "Hardox Body Option",
+          "High Tipping Stability",
+          "Fast Unloading",
+          "Reinforced Chassis",
+          "Easy Maintenance"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Hardox® Body",
+            "content": "Long life and low maintenance in wear and impact resistance."
+          },
+          "sasi": {
+            "title": "Chassis",
+            "content": "Reinforced chassis for heavy-duty use."
+          },
+          "bosaltim": {
+            "title": "Unloading",
+            "content": "Fast and controlled unloading with optimized hydraulics."
+          },
+          "verimlilik": {
+            "title": "Efficiency",
+            "content": "Engineering details that boost operational continuity."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Tipper",
+        "description": "The strongest body-chassis combination for high-tonnage loads.",
+        "features": [
+          "Heavy Duty Use",
+          "Optimized Volume",
+          "Durable Side Walls",
+          "Service Ease",
+          "Optional Equipment"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacity",
+            "content": "Optimized volume for high-tonnage operations."
+          },
+          "dayanim": {
+            "title": "Durability",
+            "content": "Impact and wear resistant structure."
+          },
+          "donanim": {
+            "title": "Equipment",
+            "content": "Tarpaulin, cover, lighting and other options."
+          },
+          "uyumluluk": {
+            "title": "Compatibility",
+            "content": "Mounting alternatives for different chassis needs."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Tipper",
+        "description": "Balanced weight and economical operation for compact scenarios.",
+        "features": [
+          "Compact Design",
+          "Economical Operation",
+          "Balanced Weight",
+          "Easy Maneuver",
+          "Long Life"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Usage",
+            "content": "Agile operation in compact sites."
+          },
+          "agirlik": {
+            "title": "Weight",
+            "content": "Maximum capacity within legal limits."
+          },
+          "maliyet": {
+            "title": "Cost",
+            "content": "Economical operation and easy maintenance."
+          },
+          "performans": {
+            "title": "Performance",
+            "content": "Stable performance in daily intensive use."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü Semi-Trailer Solutions",
+      "titleLine1": "SEMI-TRAILER",
+      "titleLine2": "SOLUTIONS",
+      "description": "Lighten heavy transport with <strong>engineering</strong>. <hardox></hardox> <strong>steel</strong> structure, advanced brake technology and optimized load distribution — superior performance and safety on every route."
+    },
+    "products": {
+      "title": "Ready Semi-Trailer Solutions",
+      "subtitle": "We prepared the industry's most preferred configurations. Request a quote or design your own vehicle."
+    },
+    "features": {
+      "titleLine1": "Master Every",
+      "titleLine2": "Moment on the Road",
+      "item01Title": "Advanced Chassis Technology",
+      "item01Content": "High-strength chassis produced with robotic welding; maximum resistance to flex, minimized weight, maximized payload.",
+      "item02Title": "Active Safety Systems",
+      "item02Content": "EBS electronic braking and RSS roll stability support for driving safety at European standards.",
+      "item03Title": "Versatile Adaptation",
+      "item03Content": "Full flexibility from lowbed transport to container logistics, bulk cargo to custom load configurations.",
+      "imageAlt": "Semi-Trailer Features"
+    },
+    "configurator": {
+      "title": "Semi-Trailer Configurator",
+      "subtitle": "Share details to design the best high-performance semi-trailer for your fleet. Our engineering team will prepare a custom technical quote."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semi-Trailer",
+        "description": "22m³ volume with Hardox 450 body and BPW axle for long-distance heavy transport.",
+        "features": [
+          "22m³ Volume",
+          "Hardox 450 Body",
+          "5/6mm Plate",
+          "BPW Axle (Foreign)",
+          "Folding Bumper"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semi-Trailer",
+        "description": "Hardox 500 chassis and hydraulic ramp for high-performance operations.",
+        "features": [
+          "Özkoç Axle (Domestic)",
+          "Hardox 500 Chassis",
+          "Fixed Bumper",
+          "Hydraulic Ramp",
+          "Extendable Sides"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semi-Trailer",
+        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "features": [
+          "21m³ Volume",
+          "Özkoç Axle",
+          "3/4mm Plate (Light)",
+          "Automatic Tarpaulin",
+          "Sleeve Cover"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "EQUIPMENT",
+      "imageAlt": "Equipment and Spare Parts Solutions",
+      "titleLine1": "Complete Equipment",
+      "titleLine2": "Solutions for Your Fleet",
+      "description": "From <strong>hydraulic</strong> systems to EBS brake kits, premium axle brands to LED lighting — all trailer equipment is original certified with Özünlü guarantee and fast stock delivery."
+    },
+    "categories": {
+      "title": "Product Groups",
+      "subtitle": "Original certified equipment, wide stock and fast delivery advantage in one place.",
+      "hidrolik": {
+        "title": "Hydraulic Systems",
+        "desc": "High-pressure pumps, cylinders and valve systems for tough field conditions."
+      },
+      "dingil": {
+        "title": "Axle & Suspension",
+        "desc": "Premium axle and suspension systems including BPW and Özkoç."
+      },
+      "fren": {
+        "title": "Brake Systems",
+        "desc": "EBS and ABS compatible brake kits meeting European safety standards."
+      },
+      "elektrik": {
+        "title": "Electrical & Lighting",
+        "desc": "High-visibility LED lighting systems. ECE R48 compliant."
+      },
+      "aksesuar": {
+        "title": "Trailer Accessories",
+        "desc": "Tool boxes, fuel tanks, landing legs and custom accessories."
+      },
+      "yedekParca": {
+        "title": "Spare Parts",
+        "desc": "Original guaranteed spare parts with same-day shipping option."
+      }
+    },
+    "cta": {
+      "title": "Couldn't Find the Part?",
+      "description": "Contact our expert team and we will source the product you need."
+    },
+    "performance": {
+      "imageAlt": "Trailer Equipment",
+      "titleLine1": "Right Part,",
+      "titleLine2": "Maximum Performance",
+      "description": "Vehicle performance depends directly on equipment quality. At Özünlü, we deliver original certified products from globally proven brands instantly from our wide stock.",
+      "bullets": {
+        "0": "Original certified product guarantee",
+        "1": "Wide brand and model compatibility",
+        "2": "Competitive pricing and flexible payment",
+        "3": "Expert technical consulting support"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "100%",
+        "label": "Original Product Guarantee"
+      },
+      "delivery": {
+        "value": "Fast",
+        "label": "Stock Delivery"
+      },
+      "support": {
+        "value": "Support",
+        "label": "Pre & After Sales"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "After-Sales Services",
+      "badge": "ÖZÜNLÜ GUARANTEE",
+      "titleLine1": "WITH YOU",
+      "titleLine2": "EVERY",
+      "titleLine3": "MOMENT",
+      "description": "True partnership begins after purchase. We protect your vehicle's operational continuity with 87 <strong>authorized service</strong> points nationwide, 24/7 technical support and original spare parts guarantee."
+    },
+    "services": {
+      "title": "OUR SERVICES",
+      "subtitle": "Professional solutions that protect your vehicle's value and increase operational efficiency.",
+      "servisAgi": {
+        "title": "Authorized Service Network",
+        "description": "87 <strong>authorized service</strong> points in 50 provinces across Turkey with certified technicians."
+      },
+      "yedekParca": {
+        "title": "Original Spare Parts",
+        "description": "100% original Özünlü parts for minimum vehicle downtime."
+      },
+      "garanti": {
+        "title": "Warranty Coverage",
+        "description": "All products covered by comprehensive manufacturer warranty."
+      },
+      "teknikDestek": {
+        "title": "24/7 Technical Support",
+        "description": "Expert support team available day and night."
+      }
+    },
+    "documents": {
+      "eyebrow": "Knowledge Base",
+      "title": "TECHNICAL",
+      "titleHighlight": "DOCUMENTS",
+      "description": "User manuals, maintenance procedures and technical specifications prepared for maximum product efficiency — available in Turkish and English.",
+      "searchPlaceholder": "Search documents...",
+      "download": "DOWNLOAD",
+      "noResults": "No documents found matching your criteria.",
+      "damperManual": {
+        "title": "Tipper User Manual",
+        "desc": "Basic usage and safety instructions for tipper products."
+      },
+      "dorseManual": {
+        "title": "Trailer User Manual",
+        "desc": "Standard user manual for semi-trailer products."
+      },
+      "generalManual": {
+        "title": "General Product & Maintenance Handbook (TR/EN)",
+        "desc": "Comprehensive maintenance and technical details for all trailer models."
+      },
+      "damperSpec": {
+        "title": "Tipper Technical Specification (TR/EN)",
+        "desc": "Special technical specifications for tipper vehicles."
+      }
+    },
+    "map": {
+      "title": "Nationwide Authorized Service Network",
+      "description": "87 authorized service points in 50 provinces. Select your city on the map for instant service and contact details."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "CONTACT",
+      "subtitle": "Get in touch for your questions and projects.",
+      "headOffice": "HEAD OFFICE",
+      "submit": "Send",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Working Hours",
+      "hoursValue": "Weekdays & Sat: 09:00 - 18:30",
+      "name": "FULL NAME",
+      "namePlaceholder": "Your Full Name",
+      "company": "COMPANY",
+      "companyPlaceholder": "Company Name",
+      "email": "EMAIL",
+      "emailPlaceholder": "example@company.com",
+      "phone": "PHONE",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "message": "MESSAGE",
+      "messagePlaceholder": "Write your message here...",
+      "mapTitle": "Özünlü Damper Location Map"
+    },
+    "tabs": {
+      "sales": "SALES & MARKETING",
+      "service": "AFTER-SALES SERVICES",
+      "export": "EXPORT",
+      "hr": "HUMAN RESOURCES"
+    }
+  },
+  "proposal": {
+    "configurator": "Configurator",
+    "selectedProduct": "Selected Product",
+    "selectedSubtitle": "Fill out the quote form for your selected product.",
+    "defaultSubtitle": "Specify details for a custom solution.",
+    "clearSelection": "Select a different product or use the configurator",
+    "stepQuantity": "Set Quantity",
+    "stepPayment": "Payment Method",
+    "stepContact": "Contact Information",
+    "vehicleInfo": "Vehicle Information",
+    "trailerSpecs": "Trailer Specifications",
+    "cargoType": "Cargo Type",
+    "dimensions": "Dimensions & Quantity",
+    "submit": "REQUEST QUOTE",
+    "submitting": "Sending...",
+    "successTitle": "Request Received!",
+    "successMessage": "Your quote form has been submitted. Our sales team will contact you shortly.",
+    "newForm": "Create New Form",
+    "kvkkNotice": "Your personal data is protected under GDPR.",
+    "payment": {
+      "cashTitle": "Cash / Wire Transfer",
+      "cashDesc": "Special discount for cash payments",
+      "creditTitle": "Credit / Check",
+      "creditDesc": "Flexible payment terms available"
+    },
+    "fields": {
+      "quantity": "Quantity",
+      "brand": "Vehicle Brand",
+      "brandPh": "e.g. Mercedes, Ford",
+      "model": "Vehicle Model",
+      "modelPh": "e.g. 4140, Cargo",
+      "volume": "Desired Volume (m³)",
+      "volumePh": "e.g. 30",
+      "axle": "Axle Option",
+      "domestic": "Domestic",
+      "foreign": "Foreign",
+      "cargo": "Cargo Type",
+      "cargoPh": "e.g. Earth, Sand, Asphalt",
+      "thickness": "Floor/Side Thickness (mm)",
+      "thicknessPh": "e.g. 5mm / 4mm",
+      "company": "Company Name",
+      "companyPh": "Company Title",
+      "contact": "Contact Person",
+      "contactPh": "Full Name",
+      "phone": "Phone",
+      "phonePh": "+90 5XX...",
+      "email": "Email",
+      "emailPh": "mail@company.com",
+      "heardFrom": "How did you hear about us?",
+      "heardFromPh": "Google, Social Media, Referral..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Since 1977",
+      "titleLine1": "SPEED AND TRUST",
+      "titleLine2": "OUR SIGNATURE",
+      "description": "With nearly half a century of experience, we set standards in the <strong>heavy commercial vehicle</strong> body-building sector and build the future on solid foundations."
+    },
+    "values": {
+      "trust": {
+        "title": "TRUST",
+        "desc": "For over 45 years, we stand behind every promise made to our customers, partners and employees."
+      },
+      "quality": {
+        "title": "QUALITY",
+        "desc": "From <hardox></hardox> <strong>steel</strong> to the finest craftsmanship, we pursue excellence at every stage of <strong>production</strong>."
+      },
+      "innovation": {
+        "title": "INNOVATION",
+        "desc": "We analyse industry needs and bring tomorrow's technologies to today through R&D."
+      },
+      "speed": {
+        "title": "SPEED",
+        "desc": "With optimised <strong>production</strong> processes, we deliver quickly without compromising quality — accelerating your business."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NOT JUST STEEL,",
+      "titleLine2": "WE CRAFT TRUST.",
+      "p1": "<strong>Since 1977,</strong> what leaves our production line is not just a tipper — it is half a century of experience, engineering passion and innovation made tangible. For us, quality is not a checkpoint; it is our production culture itself.",
+      "p2": "Tested in harsh terrains and under heavy loads, our products are designed down to the finest detail for <durability>durability</durability> and <performance>performance</performance>. We combine the strength of <hardox></hardox> steel with Turkish engineering ingenuity to set industry-leading standards.",
+      "quote": "In every weld, every assembly and every delivery, we have one goal: to add strength to our partners' success."
+    },
+    "leader": {
+      "eyebrow": "Leader's Message",
+      "quote": "At Özünlü, we do not just manufacture products — we build trust. Every tipper and every trailer reflects half a century of experience and engineering passion.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Chairman of the Board",
+      "bio": "Founded in 1977, Özünlü Damper is today a leading manufacturer exporting to more than 40 countries, producing to world standards as a Qualified Body Builder.",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "BEYOND",
+      "titleHighlight": "TIME",
+      "m1977": {
+        "title": "Laying the Foundations",
+        "desc": "A production journey beginning in a 30 m² workshop in Istanbul Okmeydanı with big dreams."
+      },
+      "m1985": {
+        "title": "First Expansion",
+        "desc": "Relocation of production facilities to Istanbul Habipler, where they remain today."
+      },
+      "m1991": {
+        "title": "Investing in the Future",
+        "desc": "Purchase of the current factory site and the first major investment toward becoming a leading body builder."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "The sector's first \"Qualified Body Builder\" title from leading global truck manufacturers."
+      },
+      "m2009": {
+        "title": "Capacity Increase",
+        "desc": "Production capacity doubled through new quality management and machinery investments."
+      },
+      "mToday": {
+        "title": "Global Power",
+        "desc": "30,000 m² total production area across 3 facilities, sales in 81 provinces and exports to 40+ countries."
+      },
+      "yearToday": "Today"
+    },
+    "facilities": {
+      "title": "PRODUCTION POWER AND",
+      "titleHighlight": "GLOBAL IMPACT",
+      "description": "We combine local <strong>engineering</strong> strength with global standards, delivering value worldwide.",
+      "production": {
+        "title": "PRODUCTION HUB",
+        "value": "30,000 m²",
+        "desc": "High-capacity production across 3 facilities with 7,000 m² enclosed and 23,000 m² open area."
+      },
+      "global": {
+        "title": "GLOBAL REACH",
+        "value": "40+ Countries",
+        "desc": "An extensive export network spanning all 81 provinces of Turkey and more than 40 countries worldwide."
+      },
+      "quality": {
+        "title": "QUALITY STANDARD",
+        "value": "QBB Certificate",
+        "desc": "The first brand in the sector to hold the \"Qualified Body Builder\" title."
+      }
+    }
+  },
+  "career": {
+    "hero": {
+      "title": "TALENT",
+      "titleHighlight": "MANAGEMENT",
+      "description": "We offer a unique career journey for passionate, talented professionals with big dreams."
+    },
+    "life": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "LIFE",
+      "titleLine2": "AT ÖZÜNLÜ",
+      "description": "As the Özünlü family, we aim not only to build the best tippers but also to have the happiest employees. Innovation, continuous development and team spirit are in our DNA.",
+      "imageAlt": "Özünlü Career {n}"
+    },
+    "jobs": {
+      "title": "WE ARE",
+      "titleHighlight": "WAITING FOR YOU",
+      "subtitle": "Be part of the team shaping the future.",
+      "apply": "Apply",
+      "noJobsTitle": "We currently have no open positions",
+      "noJobsDesc": "However, we are always excited to meet talented professionals. Send us your CV for a general application or follow us on social media."
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "MEDIA",
+      "titleHighlight": "CENTRE",
+      "description": "Industry news, technological developments and the latest updates from the world of Özünlü."
+    },
+    "gallery": {
+      "title": "PRODUCT",
+      "titleHighlight": "GALLERY",
+      "description": "Explore the details of superior engineering and flawless craftsmanship.",
+      "imageAlt": "Özünlü Damper Gallery {n}",
+      "detailAlt": "Gallery detail"
+    },
+    "insights": {
+      "title": "INDUSTRY",
+      "titleHighlight": "INSIGHTS",
+      "description": "Expert analysis on the heavy commercial vehicle sector, production technologies and logistics.",
+      "readMore": "Read More",
+      "articles": {
+        "a1": {
+          "category": "ACADEMY",
+          "title": "Steel Quality in Tipper Production: Hardox and Beyond",
+          "excerpt": "How does high-strength steel extend tipper life? Hardox 450 vs 500 comparison and ROI analysis.",
+          "date": "12 January 2025",
+          "readTime": "6 min read"
+        },
+        "a2": {
+          "category": "INDUSTRY",
+          "title": "2026 Logistics and Transport Trends",
+          "excerpt": "Changes in global supply chains, fuel efficiency regulations and opportunities for Turkish transport.",
+          "date": "8 January 2025",
+          "readTime": "8 min read"
+        },
+        "a3": {
+          "category": "SUSTAINABILITY",
+          "title": "Green Logistics: Environmental Impact of Lightweight Tippers",
+          "excerpt": "Fuel savings and reduced carbon footprint through lighter chassis design. Özünlü R&D insights.",
+          "date": "3 January 2025",
+          "readTime": "5 min read"
+        }
+      }
+    }
+  },
+  "productsPage": {
+    "title": "INTERACTIVE",
+    "titleHighlight": "EXPERIENCE",
+    "description": "Go beyond traditional catalogues. Explore Özünlü Damper's engineering marvels in 360° and build the ideal configuration for your project.",
+    "view360": {
+      "dragHint": "Drag to Rotate",
+      "bodyLabel": "BODY MODEL",
+      "disclaimer": "*Representative 3D visual mockup"
+    },
+    "configurator": {
+      "title": "CONFIGURATOR",
+      "bodyColor": "Body Colour",
+      "capacity": "Volume Capacity",
+      "tires": "Tyre Type",
+      "summary": "Summary",
+      "colors": {
+        "blue": "Özünlü Blue",
+        "gray": "Quartz Grey",
+        "navy": "Midnight Blue",
+        "red": "Flame Red"
+      },
+      "tireTypes": {
+        "standard": "Standard",
+        "offRoad": "Off-Road",
+        "heavyDuty": "Heavy Duty"
+      }
+    },
+    "techSpecs": {
+      "unload": {
+        "title": "2-Minute Unload",
+        "desc": "Record discharge time with optimised hydraulics."
+      },
+      "weight": {
+        "title": "15% Lighter",
+        "desc": "Special alloy design for greater payload capacity."
+      },
+      "hardox": {
+        "title": "Hardox 450 Body",
+        "desc": "Maximum wear and impact resistance with Swedish steel."
+      },
+      "balance": {
+        "title": "Smart Balance System",
+        "desc": "Active sensor technology preventing rollover on rough terrain."
+      }
+    }
+  }
+}
