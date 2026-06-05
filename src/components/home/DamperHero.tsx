@@ -24,7 +24,7 @@ export default function DamperHero() {
                 >
                     <div className="absolute inset-0">
                         <Image
-                            src="/images/ozunlu-damper-performans.png"
+                            src="/images/ozunlu-damper-performans.webp"
                             alt={t('imageAlt')}
                             fill
                             className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

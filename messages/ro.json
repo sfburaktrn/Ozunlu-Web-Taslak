@@ -28,17 +28,9 @@
       "title": "Corporativ | Özünlü Damper – Since 1977",
       "description": "Din 1977, Özünlü Damper este adresa încrederii și calității în sectorul suprastructurilor pentru vehicule comerciale grele."
     },
-    "products": {
-      "title": "Produse | Özünlü Damper",
-      "description": "Soluții basculante, semiremorci și echipamente."
-    },
     "media": {
       "title": "Media | Özünlü Damper",
       "description": "Știri, blog și perspective din industrie de la Özünlü Damper."
-    },
-    "career": {
-      "title": "Carieră | Özünlü Damper",
-      "description": "Oportunități de carieră la Özünlü Damper."
     },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
@@ -691,28 +683,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "MANAGEMENTUL",
-      "titleHighlight": "TALENTULUI",
-      "description": "Oferim un parcurs profesional unic pentru profesioniști pasionați și talentați, cu aspirații mari."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "VIAȚA",
-      "titleLine2": "LA NOI",
-      "description": "Ca familie Özünlü, nu ne propunem doar să producem cele mai bune basculante, ci și să avem cei mai fericiți angajați. Inovația, dezvoltarea continuă și spiritul de echipă fac parte din ADN-ul nostru.",
-      "imageAlt": "Carieră la Özünlü {n}"
-    },
-    "jobs": {
-      "title": "VĂ",
-      "titleHighlight": "AȘTEPTĂM",
-      "subtitle": "Faceți parte din echipa care modelează viitorul.",
-      "apply": "Aplică",
-      "noJobsTitle": "În prezent nu avem posturi deschise",
-      "noJobsDesc": "Totuși, suntem întotdeauna bucuroși să cunoaștem profesioniști talentați. Ne puteți trimite CV-ul pentru o aplicație generală sau ne puteți urmări pe rețelele sociale."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "CENTRU",
@@ -753,52 +723,6 @@
           "date": "3 ianuarie 2025",
           "readTime": "5 min de citit"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "EXPERIENȚĂ",
-    "titleHighlight": "INTERACTIVĂ",
-    "description": "Depășiți limitele cataloagelor clasice. Explorați capodoperele de inginerie Özünlü Damper la 360° și configurați singuri soluția ideală pentru proiectul dumneavoastră.",
-    "view360": {
-      "dragHint": "Trageți pentru a roti",
-      "bodyLabel": "MODELUL CAROSERIEI",
-      "disclaimer": "*Mockup vizual 3D cu titlu reprezentativ"
-    },
-    "configurator": {
-      "title": "CONFIGURATOR",
-      "bodyColor": "Culoarea caroseriei",
-      "capacity": "Capacitate volumică",
-      "tires": "Tipul anvelopelor",
-      "summary": "Rezumat",
-      "colors": {
-        "blue": "Albastru Özünlü",
-        "gray": "Gri Quartz",
-        "navy": "Albastru nocturn",
-        "red": "Roșu flacără"
-      },
-      "tireTypes": {
-        "standard": "Standard",
-        "offRoad": "Off-Road",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "Descărcare în 2 minute",
-        "desc": "Timp record de evacuare cu sistem hidraulic optimizat."
-      },
-      "weight": {
-        "title": "Cu 15% mai ușor",
-        "desc": "Capacitate mai mare de încărcare datorită designului special din aliaj."
-      },
-      "hardox": {
-        "title": "Caroserie Hardox 450",
-        "desc": "Rezistență maximă la uzură și impact datorită oțelului suedez."
-      },
-      "balance": {
-        "title": "Sistem inteligent de echilibru",
-        "desc": "Tehnologie cu senzori activi care previne răsturnarea pe teren dificil."
       }
     }
   }

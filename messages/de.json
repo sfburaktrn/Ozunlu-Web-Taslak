@@ -28,17 +28,9 @@
       "title": "Unternehmen | Özünlü Damper – Seit 1977",
       "description": "Seit 1977 ist Özünlü Damper die Adresse für Vertrauen und Qualität bei Aufbauten für schwere Nutzfahrzeuge."
     },
-    "products": {
-      "title": "Produkte | Özünlü Damper",
-      "description": "Kipper-, Sattelanhänger- und Ausrüstungslösungen."
-    },
     "media": {
       "title": "Medien | Özünlü Damper",
       "description": "Özünlü Damper Nachrichten, Blog und Brancheneinblicke."
-    },
-    "career": {
-      "title": "Karriere | Özünlü Damper",
-      "description": "Karrieremöglichkeiten bei Özünlü Damper."
     },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
@@ -691,28 +683,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "TALENT",
-      "titleHighlight": "MANAGEMENT",
-      "description": "Eine einzigartige Karriere für leidenschaftliche Fachkräfte mit großen Träumen."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "LEBEN",
-      "titleLine2": "BEI ÖZÜNLÜ",
-      "description": "Wir produzieren nicht nur die besten Kipper — wir wollen auch die zufriedensten Mitarbeiter haben.",
-      "imageAlt": "Özünlü Karriere {n}"
-    },
-    "jobs": {
-      "title": "WIR",
-      "titleHighlight": "WARTEN AUF DICH",
-      "subtitle": "Werde Teil des Teams, das die Zukunft gestaltet.",
-      "apply": "Bewerben",
-      "noJobsTitle": "Derzeit keine offenen Stellen",
-      "noJobsDesc": "Wir freuen uns jedoch immer, talentierte Fachkräfte kennenzulernen. Senden Sie uns Ihren Lebenslauf."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "MEDIEN",
@@ -753,52 +723,6 @@
           "date": "3. Januar 2025",
           "readTime": "5 Min. Lesezeit"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "INTERAKTIVES",
-    "titleHighlight": "ERLEBNIS",
-    "description": "Über klassische Kataloge hinaus: 360°-Ansicht und Konfigurator für Ihr Projekt.",
-    "view360": {
-      "dragHint": "Zum Drehen ziehen",
-      "bodyLabel": "AUFBAU-MODELL",
-      "disclaimer": "*Repräsentatives 3D-Mockup"
-    },
-    "configurator": {
-      "title": "KONFIGURATOR",
-      "bodyColor": "Aufbaufarbe",
-      "capacity": "Volumenkapazität",
-      "tires": "Reifentyp",
-      "summary": "Zusammenfassung",
-      "colors": {
-        "blue": "Özünlü Blau",
-        "gray": "Quarzgrau",
-        "navy": "Mitternachtsblau",
-        "red": "Flammenrot"
-      },
-      "tireTypes": {
-        "standard": "Standard",
-        "offRoad": "Off-Road",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "Entladung in 2 Min.",
-        "desc": "Rekord-Entladezeit mit optimierter Hydraulik."
-      },
-      "weight": {
-        "title": "15% leichter",
-        "desc": "Speziallegierung für mehr Nutzlast."
-      },
-      "hardox": {
-        "title": "Hardox 450 Aufbau",
-        "desc": "Maximaler Verschleiß- und Stoßschutz."
-      },
-      "balance": {
-        "title": "Smart-Balance-System",
-        "desc": "Aktive Sensoren gegen Kippen im Gelände."
       }
     }
   }

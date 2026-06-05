@@ -49,7 +49,7 @@ export default function TrailerHero() {
 
                         <Image
 
-                            src="/images/ozunlu-yari-romork-sistemleri.png"
+                            src="/images/ozunlu-yari-romork-sistemleri.webp"
 
                             alt={t('imageAlt')}
 

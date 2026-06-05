@@ -8,6 +8,8 @@ import { Link } from '@/i18n/navigation';
 import { getLocalizedPathname, type AppPathname } from '@/i18n/pathnames';
 import { footerRichTextHandlers } from '@/i18n/richText';
 import type { Locale } from '@/i18n/routing';
+import { getPublicEmail } from '@/lib/siteEmails';
+import EmailLink from '@/components/common/EmailLink';
 
 const socials = [
     { href: 'https://www.linkedin.com/company/ozunlu-damper/', icon: Linkedin, label: 'LinkedIn' },
@@ -22,6 +24,7 @@ export default function Footer() {
     const tNav = useTranslations('common.nav');
     const tLabels = useTranslations('common.labels');
     const year = new Date().getFullYear();
+    const contactEmail = getPublicEmail('contact');
 
     const legalLinks: { pathname: AppPathname; label: string }[] = [
         { pathname: '/kvkk', label: t('kvkk') },
@@ -109,14 +112,17 @@ export default function Footer() {
                                     (0212) 595 46 46
                                 </a>
                             </div>
-                            <div className="flex items-center gap-4 group">
-                                <div className="p-2 rounded-lg bg-gray-100 group-hover:bg-primary/5 transition-colors">
-                                    <Mail size={18} className="text-[#000552]" />
+                            {contactEmail && (
+                                <div className="flex items-center gap-4 group">
+                                    <div className="p-2 rounded-lg bg-gray-100 group-hover:bg-primary/5 transition-colors">
+                                        <Mail size={18} className="text-[#000552]" />
+                                    </div>
+                                    <EmailLink
+                                        email={contactEmail}
+                                        className="hover:text-[#000552] transition-colors"
+                                    />
                                 </div>
-                                <a href="mailto:info@ozunlu.com" className="hover:text-[#000552] transition-colors">
-                                    info@ozunlu.com
-                                </a>
-                            </div>
+                            )}
                         </div>
                     </div>
                 </div>

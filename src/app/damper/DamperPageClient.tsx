@@ -117,7 +117,7 @@ function ProductModal({ product, isOpen, onClose, onSelect, tCommon }: ProductMo
                             </div>
 
                             {product.detailedInfo.length > 0 && (
-                                <div className="flex-grow overflow-y-auto pr-2 custom-scrollbar">
+                                <div className="flex-grow overflow-y-auto pr-2 custom-scrollbar" data-lenis-prevent>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
                                         {product.detailedInfo.map((info, idx) => (
                                             <div key={idx} className="group">
@@ -206,7 +206,7 @@ export default function DamperPageClient() {
             <section className="relative w-full h-[600px] md:h-[700px] rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/damper-hero.png"
+                        src="/damper-hero.webp"
                         alt={t('hero.imageAlt')}
                         fill
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

@@ -28,17 +28,9 @@
       "title": "Corporate | Özünlü Damper – Since 1977",
       "description": "Since 1977, Özünlü Damper has been the address of trust and quality in heavy commercial vehicle superstructures."
     },
-    "products": {
-      "title": "Products | Özünlü Damper",
-      "description": "Tipper, semi-trailer and equipment solutions."
-    },
     "media": {
       "title": "Media | Özünlü Damper",
       "description": "Özünlü Damper news, blog and industry insights."
-    },
-    "career": {
-      "title": "Careers | Özünlü Damper",
-      "description": "Career opportunities at Özünlü Damper."
     },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
@@ -539,7 +531,11 @@
       "phonePlaceholder": "+90 5XX XXX XX XX",
       "message": "MESSAGE",
       "messagePlaceholder": "Write your message here...",
-      "mapTitle": "Özünlü Damper Location Map"
+      "mapTitle": "Özünlü Damper Location Map",
+      "submitting": "Sending...",
+      "successTitle": "Message sent",
+      "successMessage": "We will get back to you as soon as possible.",
+      "submitError": "Submission failed. Please try again or contact us by phone."
     },
     "tabs": {
       "sales": "SALES & MARKETING",
@@ -565,6 +561,7 @@
     "submitting": "Sending...",
     "successTitle": "Request Received!",
     "successMessage": "Your quote form has been submitted. Our sales team will contact you shortly.",
+    "submitError": "Submission failed. Please try again or contact us by phone.",
     "newForm": "Create New Form",
     "kvkkNotice": "Your personal data is protected under GDPR.",
     "payment": {
@@ -691,28 +688,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "TALENT",
-      "titleHighlight": "MANAGEMENT",
-      "description": "We offer a unique career journey for passionate, talented professionals with big dreams."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "LIFE",
-      "titleLine2": "AT ÖZÜNLÜ",
-      "description": "As the Özünlü family, we aim not only to build the best tippers but also to have the happiest employees. Innovation, continuous development and team spirit are in our DNA.",
-      "imageAlt": "Özünlü Career {n}"
-    },
-    "jobs": {
-      "title": "WE ARE",
-      "titleHighlight": "WAITING FOR YOU",
-      "subtitle": "Be part of the team shaping the future.",
-      "apply": "Apply",
-      "noJobsTitle": "We currently have no open positions",
-      "noJobsDesc": "However, we are always excited to meet talented professionals. Send us your CV for a general application or follow us on social media."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "MEDIA",
@@ -753,52 +728,6 @@
           "date": "3 January 2025",
           "readTime": "5 min read"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "INTERACTIVE",
-    "titleHighlight": "EXPERIENCE",
-    "description": "Go beyond traditional catalogues. Explore Özünlü Damper's engineering marvels in 360° and build the ideal configuration for your project.",
-    "view360": {
-      "dragHint": "Drag to Rotate",
-      "bodyLabel": "BODY MODEL",
-      "disclaimer": "*Representative 3D visual mockup"
-    },
-    "configurator": {
-      "title": "CONFIGURATOR",
-      "bodyColor": "Body Colour",
-      "capacity": "Volume Capacity",
-      "tires": "Tyre Type",
-      "summary": "Summary",
-      "colors": {
-        "blue": "Özünlü Blue",
-        "gray": "Quartz Grey",
-        "navy": "Midnight Blue",
-        "red": "Flame Red"
-      },
-      "tireTypes": {
-        "standard": "Standard",
-        "offRoad": "Off-Road",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "2-Minute Unload",
-        "desc": "Record discharge time with optimised hydraulics."
-      },
-      "weight": {
-        "title": "15% Lighter",
-        "desc": "Special alloy design for greater payload capacity."
-      },
-      "hardox": {
-        "title": "Hardox 450 Body",
-        "desc": "Maximum wear and impact resistance with Swedish steel."
-      },
-      "balance": {
-        "title": "Smart Balance System",
-        "desc": "Active sensor technology preventing rollover on rough terrain."
       }
     }
   }

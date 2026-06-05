@@ -1,11 +1,13 @@
 import type { LegalDocument, LegalPageKey } from './types';
+import { formatLegalEmailRef, getLegalContactEmail } from '@/lib/siteEmails';
 
 const company =
     'ÖZÜNLÜ DAMPER KAROSER VE ÇELİK KONSTRÜKSİYON SANAYİ VE TİCARET LİMİTED ŞİRKETİ';
 const shortName = 'Özünlü Damper';
 const address =
     'Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul, Turkey';
-const email = 'info@ozunlu.com';
+const email = getLegalContactEmail();
+const emailRef = formatLegalEmailRef('en');
 const phone = '+90 (212) 595 46 46';
 
 export const legalEn: Record<LegalPageKey, LegalDocument> = {
@@ -20,7 +22,7 @@ export const legalEn: Record<LegalPageKey, LegalDocument> = {
                     `Data Controller: ${company}`,
                     `Address: ${address}`,
                     `Phone: ${phone}`,
-                    `Email: ${email}`,
+                    email ? `Email: ${email}` : 'Email: (to be configured)',
                 ],
             },
             {
@@ -109,7 +111,7 @@ export const legalEn: Record<LegalPageKey, LegalDocument> = {
                 paragraphs: [
                     `${company}`,
                     `${address}`,
-                    `Tel: ${phone} | Email: ${email}`,
+                    email ? `Tel: ${phone} | Email: ${email}` : `Tel: ${phone}`,
                 ],
             },
             {
@@ -144,7 +146,7 @@ export const legalEn: Record<LegalPageKey, LegalDocument> = {
             {
                 title: '6. Your Rights',
                 paragraphs: [
-                    'To exercise your rights under KVKK Article 11, contact info@ozunlu.com. For details, please see our Personal Data Protection Policy.',
+                    `To exercise your rights under KVKK Article 11, contact us via ${emailRef}. For details, please see our Personal Data Protection Policy.`,
                 ],
             },
         ],
@@ -202,7 +204,9 @@ export const legalEn: Record<LegalPageKey, LegalDocument> = {
             {
                 title: '7. Contact',
                 paragraphs: [
-                    `For questions about this Cookie Policy, contact us at ${email} or ${phone}.`,
+                    email
+                        ? `For questions about this Cookie Policy, contact us at ${email} or ${phone}.`
+                        : `For questions about this Cookie Policy, contact us at ${phone} or via ${emailRef}.`,
                 ],
             },
         ],

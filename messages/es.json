@@ -28,17 +28,9 @@
       "title": "Corporativo | Özünlü Damper – Since 1977",
       "description": "Desde 1977, Özünlü Damper es la referencia de confianza y calidad en el sector de superestructuras para vehículos comerciales pesados."
     },
-    "products": {
-      "title": "Productos | Özünlü Damper",
-      "description": "Soluciones de volquete, semirremolque y equipamiento."
-    },
     "media": {
       "title": "Medios | Özünlü Damper",
       "description": "Noticias, blog y perspectivas del sector de Özünlü Damper."
-    },
-    "career": {
-      "title": "Carrera | Özünlü Damper",
-      "description": "Oportunidades de carrera en Özünlü Damper."
     },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
@@ -691,28 +683,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "GESTIÓN DEL",
-      "titleHighlight": "TALENTO",
-      "description": "Ofrecemos una trayectoria profesional única para profesionales talentosos, apasionados y con grandes ambiciones."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "LA VIDA",
-      "titleLine2": "CON NOSOTROS",
-      "description": "Como familia Özünlü, no solo aspiramos a fabricar los mejores volquetes, sino también a contar con los empleados más satisfechos. La innovación, el desarrollo continuo y el espíritu de equipo forman parte de nuestro ADN.",
-      "imageAlt": "Carrera en Özünlü {n}"
-    },
-    "jobs": {
-      "title": "LE",
-      "titleHighlight": "ESPERAMOS",
-      "subtitle": "Forme parte del equipo que está dando forma al futuro.",
-      "apply": "Postularse",
-      "noJobsTitle": "Actualmente no tenemos vacantes abiertas",
-      "noJobsDesc": "Aun así, siempre nos entusiasma conocer a profesionales con talento. Puede enviarnos su CV como candidatura general o seguirnos en nuestras redes sociales."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "CENTRO",
@@ -753,52 +723,6 @@
           "date": "3 de enero de 2025",
           "readTime": "5 min de lectura"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "EXPERIENCIA",
-    "titleHighlight": "INTERACTIVA",
-    "description": "Vaya más allá de los catálogos tradicionales. Explore las soluciones de ingeniería de Özünlü Damper en 360° y configure usted mismo la opción ideal para su proyecto.",
-    "view360": {
-      "dragHint": "Arrastre para girar",
-      "bodyLabel": "MODELO DE CARROCERÍA",
-      "disclaimer": "*Maqueta visual 3D representativa"
-    },
-    "configurator": {
-      "title": "CONFIGURADOR",
-      "bodyColor": "Color de la carrocería",
-      "capacity": "Capacidad volumétrica",
-      "tires": "Tipo de neumático",
-      "summary": "Resumen",
-      "colors": {
-        "blue": "Azul Özünlü",
-        "gray": "Gris cuarzo",
-        "navy": "Azul noche",
-        "red": "Rojo llama"
-      },
-      "tireTypes": {
-        "standard": "Estándar",
-        "offRoad": "Todoterreno",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "Descarga en 2 minutos",
-        "desc": "Tiempo récord de vaciado gracias a un sistema hidráulico optimizado."
-      },
-      "weight": {
-        "title": "15 % más ligero",
-        "desc": "Mayor capacidad de carga gracias a un diseño especial de aleación."
-      },
-      "hardox": {
-        "title": "Carrocería Hardox 450",
-        "desc": "Máxima resistencia al desgaste y a los impactos con acero sueco."
-      },
-      "balance": {
-        "title": "Sistema inteligente de equilibrio",
-        "desc": "Tecnología activa de sensores que previene el vuelco en terrenos difíciles."
       }
     }
   }

@@ -146,3 +146,17 @@ body {
 .prose h2 { font-size: 1.875rem; font-weight: 700; color: #ffffff; margin-top: 2rem; margin-bottom: 1rem; }
 .prose a { color: #ffffff; text-decoration: underline; transition: opacity 0.2s; }
 .prose a:hover { opacity: 0.8; }
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}

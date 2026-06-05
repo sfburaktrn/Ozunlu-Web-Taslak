@@ -28,17 +28,9 @@
       "title": "Entreprise | Özünlü Damper – Since 1977",
       "description": "Depuis 1977, Özünlü Damper est la référence en matière de confiance et de qualité dans le secteur des superstructures pour véhicules commerciaux lourds."
     },
-    "products": {
-      "title": "Produits | Özünlü Damper",
-      "description": "Solutions benne, semi-remorque et équipements."
-    },
     "media": {
       "title": "Médias | Özünlü Damper",
       "description": "Actualités, blog et analyses sectorielles d'Özünlü Damper."
-    },
-    "career": {
-      "title": "Carrières | Özünlü Damper",
-      "description": "Opportunités de carrière chez Özünlü Damper."
     },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
@@ -691,28 +683,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "GESTION DES",
-      "titleHighlight": "TALENTS",
-      "description": "Nous proposons un parcours professionnel unique aux professionnels passionnés et talentueux qui voient grand."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "LA VIE",
-      "titleLine2": "CHEZ NOUS",
-      "description": "Au sein de la famille Özünlü, nous ne visons pas seulement à produire les meilleures bennes, mais aussi à offrir le meilleur environnement à nos collaborateurs. Innovation, développement continu et esprit d'équipe font partie de notre ADN.",
-      "imageAlt": "Carrière chez Özünlü {n}"
-    },
-    "jobs": {
-      "title": "NOUS VOUS",
-      "titleHighlight": "ATTENDONS",
-      "subtitle": "Rejoignez l'équipe qui façonne l'avenir.",
-      "apply": "Postuler",
-      "noJobsTitle": "Nous n'avons actuellement aucun poste ouvert",
-      "noJobsDesc": "Nous sommes toutefois toujours heureux de rencontrer des profils talentueux. Vous pouvez nous envoyer votre CV pour une candidature spontanée ou suivre nos comptes sur les réseaux sociaux."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "CENTRE",
@@ -753,52 +723,6 @@
           "date": "3 janvier 2025",
           "readTime": "5 min de lecture"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "EXPÉRIENCE",
-    "titleHighlight": "INTERACTIVE",
-    "description": "Allez au-delà des catalogues classiques. Découvrez les prouesses d'ingénierie d'Özünlü Damper en 360° et composez vous-même la configuration idéale pour votre projet.",
-    "view360": {
-      "dragHint": "Faites glisser pour tourner",
-      "bodyLabel": "MODÈLE DE CAISSE",
-      "disclaimer": "*Visuel 3D représentatif"
-    },
-    "configurator": {
-      "title": "CONFIGURATEUR",
-      "bodyColor": "Couleur de la caisse",
-      "capacity": "Capacité volumique",
-      "tires": "Type de pneumatiques",
-      "summary": "Résumé",
-      "colors": {
-        "blue": "Bleu Özünlü",
-        "gray": "Gris quartz",
-        "navy": "Bleu nuit",
-        "red": "Rouge flamme"
-      },
-      "tireTypes": {
-        "standard": "Standard",
-        "offRoad": "Tout-terrain",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "Déchargement en 2 minutes",
-        "desc": "Un temps de vidage record grâce à un système hydraulique optimisé."
-      },
-      "weight": {
-        "title": "15 % plus léger",
-        "desc": "Une plus grande capacité de charge grâce à une conception spécifique en alliage."
-      },
-      "hardox": {
-        "title": "Caisse Hardox 450",
-        "desc": "Résistance maximale à l'usure et aux impacts grâce à l'acier suédois."
-      },
-      "balance": {
-        "title": "Système d'équilibre intelligent",
-        "desc": "Technologie de capteurs actifs qui prévient le renversement sur terrain difficile."
       }
     }
   }

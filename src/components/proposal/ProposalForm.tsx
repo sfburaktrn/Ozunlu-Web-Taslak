@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Check, Send, CreditCard, Banknote, Building2, User, Phone, Mail, MessageSquare, Info } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { submitForm } from '@/lib/submitForm';
 
 interface FormData {
     type: 'damper' | 'dorse';
@@ -73,6 +74,7 @@ export default function ProposalForm({
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [submitError, setSubmitError] = useState<string | null>(null);
 
     // Refs for auto-scroll
     const step2Ref = useRef<HTMLDivElement>(null);
@@ -157,19 +159,37 @@ export default function ProposalForm({
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitError(null);
 
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const result = await submitForm({
+            type: 'proposal',
+            productType: formData.type,
+            type_label: formData.type === 'damper' ? 'Damper' : 'Dorse',
+            selectedProduct: selectedProduct?.code ?? null,
+            brand: formData.brand,
+            model: formData.model,
+            cargoType: formData.cargoType,
+            volumeM3: formData.volumeM3,
+            thickness: formData.thickness,
+            quantity: formData.quantity,
+            axle: formData.axle,
+            paymentMethod: formData.paymentMethod,
+            companyName: formData.companyName,
+            contactPerson: formData.contactPerson,
+            contactPhone: formData.contactPhone,
+            email: formData.email,
+            heardFrom: formData.heardFrom,
+            message: formData.message,
+        });
 
-        // Include selected product info in submission log
-        const submissionData = {
-            ...formData,
-            selectedProduct: selectedProduct ? selectedProduct.code : null
-        };
-
-        console.log('Form Submitted:', submissionData);
-        setIsSuccess(true);
         setIsSubmitting(false);
+
+        if (!result.success) {
+            setSubmitError(t('submitError'));
+            return;
+        }
+
+        setIsSuccess(true);
     };
 
     const getProductImage = () => {
@@ -612,6 +632,9 @@ export default function ProposalForm({
                                 )}
 
                                 <div className="pt-8">
+                                    {submitError && (
+                                        <p className="mb-4 text-center text-sm text-red-600">{submitError}</p>
+                                    )}
                                     <button
                                         type="submit"
                                         disabled={!isFormValid || isSubmitting}

@@ -181,7 +181,7 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                         className="fixed inset-0 z-[120] lg:hidden bg-[#1d1d1f]/95 backdrop-blur-2xl overflow-hidden"
                     >
-                        <div className="flex flex-col pt-24 px-10 h-full overflow-y-auto pb-10">
+                        <div className="flex flex-col pt-24 px-10 h-full overflow-y-auto pb-10" data-lenis-prevent>
                             <div className="flex flex-col space-y-6">
                                 {navLinks.map((link, i) => (
                                     <motion.div

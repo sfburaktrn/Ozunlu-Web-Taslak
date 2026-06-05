@@ -28,17 +28,9 @@
       "title": "Kurumsal | Özünlü Damper – Since 1977",
       "description": "1977'den bu yana ağır ticari araç üst yapı sektöründe güven ve kalitenin adresi Özünlü Damper."
     },
-    "products": {
-      "title": "Ürünler | Özünlü Damper",
-      "description": "Damper, yarı römork ve ek ekipman çözümleri."
-    },
     "media": {
       "title": "Medya | Özünlü Damper",
       "description": "Özünlü Damper haberleri, blog ve sektör içgörüleri."
-    },
-    "career": {
-      "title": "Kariyer | Özünlü Damper",
-      "description": "Özünlü Damper'de kariyer fırsatları."
     },
     "legalKvkk": {
       "title": "KVKK | Özünlü Damper",
@@ -539,7 +531,11 @@
       "phonePlaceholder": "05XX XXX XX XX",
       "message": "MESAJ",
       "messagePlaceholder": "Mesajınızı buraya yazınız...",
-      "mapTitle": "Özünlü Damper Konum Haritası"
+      "mapTitle": "Özünlü Damper Konum Haritası",
+      "submitting": "Gönderiliyor...",
+      "successTitle": "Mesajınız iletildi",
+      "successMessage": "En kısa sürede size dönüş yapacağız.",
+      "submitError": "Gönderim başarısız. Lütfen tekrar deneyin veya telefon ile bize ulaşın."
     },
     "tabs": {
       "sales": "SATIŞ & PAZARLAMA",
@@ -565,6 +561,7 @@
     "submitting": "Gönderiliyor...",
     "successTitle": "Talebiniz Alındı!",
     "successMessage": "Teklif formunuz başarıyla bize ulaştı. Satış temsilcimiz en kısa sürede sizinle iletişime geçecektir.",
+    "submitError": "Gönderim başarısız. Lütfen tekrar deneyin veya telefon ile bize ulaşın.",
     "newForm": "Yeni Form Oluştur",
     "kvkkNotice": "Kişisel verileriniz KVKK kapsamında korunmaktadır.",
     "payment": {
@@ -691,28 +688,6 @@
       }
     }
   },
-  "career": {
-    "hero": {
-      "title": "YETENEK",
-      "titleHighlight": "YÖNETİMİ",
-      "description": "Büyük hayaller kuran, tutkulu ve yetenekli profesyoneller için eşsiz bir kariyer yolculuğu sunuyoruz."
-    },
-    "life": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "BİZDE",
-      "titleLine2": "HAYAT",
-      "description": "Özünlü ailesi olarak, sadece en iyi damperleri üretmekle kalmıyor, en mutlu çalışanlara sahip olmayı da hedefliyoruz. İnovasyon, sürekli gelişim ve takım ruhu DNA'mızda var.",
-      "imageAlt": "Özünlü Kariyer {n}"
-    },
-    "jobs": {
-      "title": "SENİ",
-      "titleHighlight": "BEKLİYORUZ",
-      "subtitle": "Geleceği şekillendiren ekibin bir parçası ol.",
-      "apply": "Başvur",
-      "noJobsTitle": "Şu anda açık pozisyonumuz bulunmamaktadır",
-      "noJobsDesc": "Ancak yetenekli profesyonellerle tanışmak için her zaman heyecanlıyız. Genel başvuru yapmak için CV'nizi bize gönderebilir veya sosyal medya hesaplarımızı takip edebilirsiniz."
-    }
-  },
   "mediaPage": {
     "hero": {
       "title": "MEDYA",
@@ -753,52 +728,6 @@
           "date": "03 Ocak 2025",
           "readTime": "5 dk okuma"
         }
-      }
-    }
-  },
-  "productsPage": {
-    "title": "İNTERAKTİF",
-    "titleHighlight": "DENEYİM",
-    "description": "Klasik katalogların ötesine geçin. Özünlü Damper'in mühendislik harikası ürünlerini 360 derece inceleyin ve projenize en uygun konfigürasyonu kendiniz oluşturun.",
-    "view360": {
-      "dragHint": "Çevirmek için Sürükleyin",
-      "bodyLabel": "GÖVDE MODELİ",
-      "disclaimer": "*Temsili 3D Görsel Mockup"
-    },
-    "configurator": {
-      "title": "KONFİGÜRATÖR",
-      "bodyColor": "Gövde Rengi",
-      "capacity": "Hacim Kapasitesi",
-      "tires": "Lastik Tipi",
-      "summary": "Özet",
-      "colors": {
-        "blue": "Özünlü Mavisi",
-        "gray": "Kuvars Gri",
-        "navy": "Gece Mavisi",
-        "red": "Alev Kırmızısı"
-      },
-      "tireTypes": {
-        "standard": "Standart",
-        "offRoad": "Off-Road",
-        "heavyDuty": "Heavy Duty"
-      }
-    },
-    "techSpecs": {
-      "unload": {
-        "title": "2 Dakikada Boşaltım",
-        "desc": "Optimize edilmiş hidrolik sistem ile rekor sürede tahliye."
-      },
-      "weight": {
-        "title": "%15 Daha Hafif",
-        "desc": "Özel alaşımlı tasarım sayesinde daha fazla yük taşıma kapasitesi."
-      },
-      "hardox": {
-        "title": "Hardox 450 Gövde",
-        "desc": "Aşınmaya ve darbeye karşı maksimum dirençli İsveç çeliği."
-      },
-      "balance": {
-        "title": "Akıllı Denge Sistemi",
-        "desc": "Zorlu arazilerde devrilmeyi önleyen aktif sensör teknolojisi."
       }
     }
   }

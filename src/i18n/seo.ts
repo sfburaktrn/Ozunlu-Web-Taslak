@@ -14,10 +14,6 @@ type PageSeoKey =
     | 'ekEkipmanlar'
     | 'afterSales'
     | 'contact'
-    | 'corporate'
-    | 'products'
-    | 'media'
-    | 'career'
     | 'legalKvkk'
     | 'legalPrivacy'
     | 'legalCookie';
@@ -40,10 +36,6 @@ export const pathnameToSeoKey: Record<AppPathname, PageSeoKey> = {
     '/ek-ekipmanlar': 'ekEkipmanlar',
     '/satis-sonrasi': 'afterSales',
     '/iletisim': 'contact',
-    '/kurumsal': 'corporate',
-    '/urunler': 'products',
-    '/medya': 'media',
-    '/kariyer': 'career',
     '/kvkk': 'legalKvkk',
     '/aydinlatma-metni': 'legalPrivacy',
     '/cerez-politikasi': 'legalCookie',
@@ -66,6 +58,18 @@ export function buildAlternateLanguages(pathname: AppPathname) {
     return languages;
 }
 
+const defaultOgImage = `${siteUrl}/damper-hero.webp`;
+
+function buildVerification(): Metadata['verification'] | undefined {
+    const google = process.env.GOOGLE_SITE_VERIFICATION?.trim();
+    const bing = process.env.BING_SITE_VERIFICATION?.trim();
+    if (!google && !bing) return undefined;
+    return {
+        ...(google ? { google } : {}),
+        ...(bing ? { other: { 'msvalidate.01': bing } } : {}),
+    };
+}
+
 export function buildPageMetadata({
     locale,
     pathname,
@@ -80,12 +84,25 @@ export function buildPageMetadata({
     keywords?: string;
 }): Metadata {
     const canonical = `${siteUrl}${getLocalizedPathname(locale, pathname)}`;
+    const verification = buildVerification();
 
     return {
         title,
         description,
         ...(keywords ? { keywords } : {}),
         metadataBase: new URL(siteUrl),
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                'max-image-preview': 'large',
+                'max-snippet': -1,
+                'max-video-preview': -1,
+            },
+        },
+        ...(verification ? { verification } : {}),
         alternates: {
             canonical,
             languages: buildAlternateLanguages(pathname),
@@ -97,12 +114,22 @@ export function buildPageMetadata({
             locale: localeHreflang[locale],
             siteName: 'Özünlü Damper',
             type: 'website',
+            images: [
+                {
+                    url: defaultOgImage,
+                    width: 1920,
+                    height: 1080,
+                    alt: 'Özünlü Damper',
+                },
+            ],
         },
         twitter: {
             card: 'summary_large_image',
             title,
             description,
+            images: [defaultOgImage],
         },
+        category: 'business',
     };
 }
 

@@ -13,7 +13,15 @@ export default function HeroSection() {
     return (
         <div className="relative h-screen w-full overflow-hidden bg-ozunlu-950">
             <div className="absolute inset-0 z-0">
-                <video autoPlay loop muted playsInline className="h-full w-full object-cover">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                    poster="/damper-hero.webp"
+                    className="h-full w-full object-cover"
+                >
                     <source src="/banner-video-new.mp4" type="video/mp4" />
                 </video>
             </div>

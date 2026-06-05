@@ -1,11 +1,13 @@
 import type { LegalDocument, LegalPageKey } from './types';
+import { formatLegalEmailRef, getLegalContactEmail } from '@/lib/siteEmails';
 
 const company =
     'ÖZÜNLÜ DAMPER KAROSER VE ÇELİK KONSTRÜKSİYON SANAYİ VE TİCARET LİMİTED ŞİRKETİ';
 const shortName = 'Özünlü Damper';
 const address =
     'Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul';
-const email = 'info@ozunlu.com';
+const email = getLegalContactEmail();
+const emailRef = formatLegalEmailRef('tr');
 const phone = '(0212) 595 46 46';
 
 export const legalTr: Record<LegalPageKey, LegalDocument> = {
@@ -20,7 +22,7 @@ export const legalTr: Record<LegalPageKey, LegalDocument> = {
                     `Veri Sorumlusu: ${company}`,
                     `Adres: ${address}`,
                     `Telefon: ${phone}`,
-                    `E-posta: ${email}`,
+                    email ? `E-posta: ${email}` : 'E-posta: (yapılandırılacak)',
                 ],
             },
             {
@@ -93,7 +95,7 @@ export const legalTr: Record<LegalPageKey, LegalDocument> = {
             {
                 title: '8. Başvuru Yöntemi',
                 paragraphs: [
-                    `Haklarınıza ilişkin taleplerinizi ${email} e-posta adresine veya ${address} adresine yazılı olarak iletebilirsiniz. Başvurularınız en geç 30 gün içinde ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarifesindeki ücret uygulanabilir.`,
+                    `Haklarınıza ilişkin taleplerinizi ${email ? `${email} e-posta adresine veya ` : ''}${address} adresine yazılı olarak veya ${emailRef} aracılığıyla iletebilirsiniz. Başvurularınız en geç 30 gün içinde ücretsiz olarak sonuçlandırılır; işlemin ayrıca bir maliyet gerektirmesi halinde Kişisel Verileri Koruma Kurulu tarifesindeki ücret uygulanabilir.`,
                     'Başvurularınızın reddedilmesi, verilen cevabın yetersiz bulunması veya süresinde cevap verilmemesi halinde Kişisel Verileri Koruma Kurulu’na şikâyet hakkınız saklıdır.',
                 ],
             },
@@ -109,7 +111,7 @@ export const legalTr: Record<LegalPageKey, LegalDocument> = {
                 paragraphs: [
                     `${company}`,
                     `${address}`,
-                    `Tel: ${phone} | E-posta: ${email}`,
+                    email ? `Tel: ${phone} | E-posta: ${email}` : `Tel: ${phone}`,
                 ],
             },
             {
@@ -144,7 +146,7 @@ export const legalTr: Record<LegalPageKey, LegalDocument> = {
             {
                 title: '6. Haklarınız',
                 paragraphs: [
-                    'KVKK madde 11 kapsamındaki haklarınızı kullanmak için info@ozunlu.com adresine başvurabilirsiniz. Detaylı bilgi için KVKK Politikamızı inceleyebilirsiniz.',
+                    `KVKK madde 11 kapsamındaki haklarınızı kullanmak için ${emailRef} üzerinden başvurabilirsiniz. Detaylı bilgi için KVKK Politikamızı inceleyebilirsiniz.`,
                 ],
             },
         ],
@@ -202,7 +204,9 @@ export const legalTr: Record<LegalPageKey, LegalDocument> = {
             {
                 title: '7. İletişim',
                 paragraphs: [
-                    `Çerez Politikamız hakkında sorularınız için ${email} adresinden veya ${phone} numarasından bize ulaşabilirsiniz.`,
+                    email
+                        ? `Çerez Politikamız hakkında sorularınız için ${email} adresinden veya ${phone} numarasından bize ulaşabilirsiniz.`
+                        : `Çerez Politikamız hakkında sorularınız için ${phone} numarasından veya ${emailRef} üzerinden bize ulaşabilirsiniz.`,
                 ],
             },
         ],
