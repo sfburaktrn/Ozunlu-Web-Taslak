@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -9,17 +10,24 @@ import { Link } from '@/i18n/navigation';
 export default function HeroSection() {
     const t = useTranslations('home.hero');
     const { scrollY } = useScroll();
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        if (!video) return;
+        video.play().catch(() => {});
+    }, []);
 
     return (
         <div className="relative h-screen w-full overflow-hidden bg-ozunlu-950">
             <div className="absolute inset-0 z-0">
                 <video
+                    ref={videoRef}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    preload="metadata"
-                    poster="/damper-hero.webp"
+                    preload="auto"
                     className="h-full w-full object-cover"
                 >
                     <source src="/banner-video-new.mp4" type="video/mp4" />

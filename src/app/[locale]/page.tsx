@@ -21,5 +21,10 @@ export default function HomePage({ params }: Props) {
     const { locale } = params;
     if (!hasLocale(routing.locales, locale)) notFound();
     setRequestLocale(locale);
-    return <HomePageClient />;
+    return (
+        <>
+            <link rel="preload" href="/banner-video-new.mp4" as="video" type="video/mp4" />
+            <HomePageClient />
+        </>
+    );
 }
