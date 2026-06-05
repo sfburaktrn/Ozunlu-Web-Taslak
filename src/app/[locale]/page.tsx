@@ -23,7 +23,7 @@ export default function HomePage({ params }: Props) {
     setRequestLocale(locale);
     return (
         <>
-            <link rel="preload" href="/banner-video-new.mp4" as="video" type="video/mp4" />
+            <link rel="preload" href="/banner-hero-poster.webp" as="image" type="image/webp" fetchPriority="high" />
             <HomePageClient />
         </>
     );

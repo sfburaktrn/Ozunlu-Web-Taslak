@@ -1,49 +1,13 @@
 {
-  "images": [
-    {
-      "input": "yari-romork-hero-new.png",
-      "output": "yari-romork-hero-new.webp",
-      "before": 17854788,
-      "after": 120214,
-      "saved": 99
-    },
-    {
-      "input": "images/ozunlu-damper-performans.png",
-      "output": "images/ozunlu-damper-performans.webp",
-      "before": 8067900,
-      "after": 60502,
-      "saved": 99
-    },
-    {
-      "input": "images/ozunlu-yari-romork-sistemleri.png",
-      "output": "images/ozunlu-yari-romork-sistemleri.webp",
-      "before": 11006393,
-      "after": 117552,
-      "saved": 99
-    },
-    {
-      "input": "damper-hero.png",
-      "output": "damper-hero.webp",
-      "before": 5662598,
-      "after": 100706,
-      "saved": 98
-    }
-  ],
+  "images": [],
   "videos": [
     {
       "input": "banner-video-new.mp4",
       "output": "banner-video-new.mp4",
-      "before": 16433710,
-      "after": 3937466,
-      "saved": 76
-    },
-    {
-      "input": "banner-video-new.webm",
-      "output": "banner-video-new.webm",
-      "before": 5679744,
-      "after": 6751911,
-      "saved": -19
+      "before": 3937466,
+      "after": 3646946,
+      "saved": 7
     }
   ],
-  "generatedAt": "2026-06-05T11:21:53.774Z"
+  "generatedAt": "2026-06-05T12:50:55.757Z"
 }

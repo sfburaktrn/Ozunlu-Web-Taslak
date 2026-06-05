@@ -96,6 +96,8 @@ export default function GallerySection() {
                                             src={img.src}
                                             alt={img.alt}
                                             fill
+                                            loading="lazy"
+                                            quality={75}
                                             className="object-cover"
                                             sizes="(max-width: 768px) 40vw, 400px"
                                         />
@@ -105,7 +107,6 @@ export default function GallerySection() {
                             );
                         })}
 
-                        <div className="absolute inset-0 pointer-events-none z-50 mix-blend-overlay opacity-[0.03] bg-[url('/noise.png')]" />
 
                     </div>
                 </div>

@@ -1,7 +1,16 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import { headers } from 'next/headers';
+import { Manrope } from 'next/font/google';
 import { getSiteUrl } from '@/i18n/seo';
+import { routing } from '@/i18n/routing';
+
+const manrope = Manrope({
+    subsets: ['latin', 'latin-ext'],
+    display: 'swap',
+    variable: '--font-manrope',
+});
 
 const siteUrl = getSiteUrl();
 
@@ -45,9 +54,12 @@ type Props = {
 };
 
 export default function RootLayout({ children }: Props) {
+    const locale = headers().get('x-next-intl-locale') ?? routing.defaultLocale;
+    const dir = locale === 'ar' ? 'rtl' : 'ltr';
+
     return (
-        <html lang="tr" suppressHydrationWarning>
-            <body className="font-sans antialiased dark">{children}</body>
+        <html lang={locale} dir={dir} suppressHydrationWarning className={manrope.variable}>
+            <body className={`${manrope.className} font-sans antialiased dark`}>{children}</body>
         </html>
     );
 }

@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -11,8 +12,13 @@ export default function HeroSection() {
     const t = useTranslations('home.hero');
     const { scrollY } = useScroll();
     const videoRef = useRef<HTMLVideoElement>(null);
+    const [showVideo, setShowVideo] = useState(false);
 
     useEffect(() => {
+        const desktop = window.matchMedia('(min-width: 768px)').matches;
+        setShowVideo(desktop);
+        if (!desktop) return;
+
         const video = videoRef.current;
         if (!video) return;
         video.play().catch(() => {});
@@ -21,17 +27,30 @@ export default function HeroSection() {
     return (
         <div className="relative h-screen w-full overflow-hidden bg-ozunlu-950">
             <div className="absolute inset-0 z-0">
-                <video
-                    ref={videoRef}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="auto"
-                    className="h-full w-full object-cover"
-                >
-                    <source src="/banner-video-new.mp4" type="video/mp4" />
-                </video>
+                {showVideo ? (
+                    <video
+                        ref={videoRef}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="metadata"
+                        poster="/banner-hero-poster.webp"
+                        className="h-full w-full object-cover"
+                    >
+                        <source src="/banner-video-new.mp4" type="video/mp4" />
+                    </video>
+                ) : (
+                    <Image
+                        src="/banner-hero-poster.webp"
+                        alt=""
+                        fill
+                        priority
+                        sizes="100vw"
+                        quality={75}
+                        className="object-cover"
+                    />
+                )}
             </div>
 
             <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">

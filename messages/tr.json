@@ -46,6 +46,11 @@
     }
   },
   "common": {
+    "languageSuggestion": {
+      "message": "Siteyi {language} görüntülemek ister misiniz?",
+      "switch": "Dile geç",
+      "dismiss": "Kapat"
+    },
     "nav": {
       "damper": "Damper",
       "yariRomork": "Yarı Römork",

@@ -112,6 +112,9 @@ export function buildPageMetadata({
             description,
             url: canonical,
             locale: localeHreflang[locale],
+            alternateLocale: locales
+                .filter((l) => l !== locale)
+                .map((l) => localeHreflang[l]),
             siteName: 'Özünlü Damper',
             type: 'website',
             images: [

@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 const SmoothScroll = dynamic(() => import('@/components/common/SmoothScroll'), { ssr: false });
 import Footer from '@/components/Footer';
 import LocaleAttributes from '@/components/common/LocaleAttributes';
+import LanguageSuggestion from '@/components/common/LanguageSuggestion';
 import { routing, type Locale } from '@/i18n/routing';
 import SiteJsonLd from '@/components/seo/SiteJsonLd';
 import FaqJsonLd from '@/components/seo/FaqJsonLd';
@@ -38,6 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <SmoothScroll />
             <Navbar />
             {children}
+            <LanguageSuggestion />
             <Footer />
         </NextIntlClientProvider>
     );

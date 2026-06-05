@@ -48,17 +48,13 @@ export default function TrailerHero() {
                     <div className="absolute inset-0">
 
                         <Image
-
                             src="/images/ozunlu-yari-romork-sistemleri.webp"
-
                             alt={t('imageAlt')}
-
                             fill
-
+                            loading="lazy"
+                            sizes="(max-width: 768px) 100vw, 1200px"
                             className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
-
-                            quality={100}
-
+                            quality={80}
                         />
 
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent md:bg-gradient-to-l md:from-black/80 md:via-black/40 md:to-transparent rtl:md:bg-gradient-to-r" />

@@ -3,14 +3,14 @@
 import { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import HeroSection from '@/components/home/HeroSection';
-import StatsCounter from '@/components/home/StatsCounter';
-import DamperHero from '@/components/home/DamperHero';
-import TrailerHero from '@/components/home/TrailerHero';
-import EquipmentHero from '@/components/home/EquipmentHero';
-import PartnersSlider from '@/components/home/PartnersSlider';
-import AboutSection from '@/components/home/AboutSection';
-import WhyChooseUsSection from '@/components/home/WhyChooseUsSection';
 
+const StatsCounter = dynamic(() => import('@/components/home/StatsCounter'));
+const AboutSection = dynamic(() => import('@/components/home/AboutSection'));
+const TrailerHero = dynamic(() => import('@/components/home/TrailerHero'));
+const DamperHero = dynamic(() => import('@/components/home/DamperHero'));
+const EquipmentHero = dynamic(() => import('@/components/home/EquipmentHero'));
+const PartnersSlider = dynamic(() => import('@/components/home/PartnersSlider'));
+const WhyChooseUsSection = dynamic(() => import('@/components/home/WhyChooseUsSection'));
 const MapPreview = dynamic(() => import('@/components/home/MapPreview'), { ssr: false });
 const GallerySection = dynamic(() => import('@/components/home/GallerySection'));
 

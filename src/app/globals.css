@@ -20,7 +20,7 @@ body {
       rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb)));
   min-height: 100vh;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-manrope), sans-serif;
 }
 
 @layer utilities {
@@ -36,7 +36,7 @@ body {
 }
 
 [dir='rtl'] body {
-  font-family: 'Manrope', 'Segoe UI', Tahoma, sans-serif;
+  font-family: var(--font-manrope), 'Segoe UI', Tahoma, sans-serif;
 }
 
 /* Logical alignment overrides */

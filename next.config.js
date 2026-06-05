@@ -9,7 +9,11 @@ const nextConfig = {
     images: {
         formats: ['image/avif', 'image/webp'],
     },
+    experimental: {
+        optimizePackageImports: ['framer-motion', 'lucide-react'],
+    },
     async headers() {
+        const cacheOneYear = 'public, max-age=31536000, immutable';
         return [
             {
                 source: '/(.*)',
@@ -19,6 +23,10 @@ const nextConfig = {
                     { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
                     { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
                 ],
+            },
+            {
+                source: '/:path*.(mp4|webm|webp|jpg|jpeg|png|gif|svg|ico|woff2)',
+                headers: [{ key: 'Cache-Control', value: cacheOneYear }],
             },
         ];
     },

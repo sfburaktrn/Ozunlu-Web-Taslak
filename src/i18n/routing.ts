@@ -34,7 +34,7 @@ export const localeNames: Record<Locale, string> = {
 
 export const localeHreflang: Record<Locale, string> = {
     tr: 'tr-TR',
-    en: 'en',
+    en: 'en-US',
     de: 'de-DE',
     bg: 'bg-BG',
     ro: 'ro-RO',
@@ -49,6 +49,7 @@ export const routing = defineRouting({
     locales,
     defaultLocale,
     localePrefix: 'as-needed',
-    localeDetection: true,
+    // Tarayıcı diline göre / → /en yönlendirmesini kapat (SEO: ana dil TR, kök URL /)
+    localeDetection: false,
     pathnames: localizedPathnames,
 });
