@@ -34,7 +34,7 @@ export const localeNames: Record<Locale, string> = {
 
 export const localeHreflang: Record<Locale, string> = {
     tr: 'tr-TR',
-    en: 'en-US',
+    en: 'en',
     de: 'de-DE',
     bg: 'bg-BG',
     ro: 'ro-RO',

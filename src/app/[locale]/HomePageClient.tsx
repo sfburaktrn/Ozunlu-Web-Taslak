@@ -10,6 +10,7 @@ const TrailerHero = dynamic(() => import('@/components/home/TrailerHero'));
 const DamperHero = dynamic(() => import('@/components/home/DamperHero'));
 const EquipmentHero = dynamic(() => import('@/components/home/EquipmentHero'));
 const PartnersSlider = dynamic(() => import('@/components/home/PartnersSlider'));
+const FactorySpotlight = dynamic(() => import('@/components/home/FactorySpotlight'));
 const WhyChooseUsSection = dynamic(() => import('@/components/home/WhyChooseUsSection'));
 const MapPreview = dynamic(() => import('@/components/home/MapPreview'), { ssr: false });
 const GallerySection = dynamic(() => import('@/components/home/GallerySection'));
@@ -28,6 +29,7 @@ export default function HomePageClient() {
             <DamperHero />
             <EquipmentHero />
             <PartnersSlider />
+            <FactorySpotlight />
             <WhyChooseUsSection />
             <MapPreview />
             <GallerySection />
