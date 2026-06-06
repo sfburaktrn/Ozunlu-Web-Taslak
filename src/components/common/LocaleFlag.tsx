@@ -76,6 +76,14 @@ export default function LocaleFlag({ locale, className = 'w-5 h-[14px]' }: Local
                     <rect width="20" height="7" y="3.5" fill="#F1BF00" />
                 </svg>
             );
+        case 'it':
+            return (
+                <svg className={base} viewBox="0 0 20 14" aria-hidden>
+                    <rect width="6.67" height="14" fill="#009246" />
+                    <rect width="6.67" height="14" x="6.67" fill="#fff" />
+                    <rect width="6.66" height="14" x="13.34" fill="#CE2B37" />
+                </svg>
+            );
         case 'ru':
             return (
                 <svg className={base} viewBox="0 0 20 14" aria-hidden>

@@ -2,12 +2,13 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown, Check } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
-import { locales, localeLabels, localeNames, type Locale } from '@/i18n/routing';
+import { localeLabels, type Locale } from '@/i18n/routing';
 import LocaleFlag from '@/components/common/LocaleFlag';
+import LanguagePickerPanel from '@/components/common/LanguagePickerPanel';
 
 export default function Navbar() {
     const t = useTranslations('common.nav');
@@ -36,12 +37,6 @@ export default function Navbar() {
     };
 
     useEffect(() => {
-        const handleScroll = () => {};
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    useEffect(() => {
         if (typeof document === 'undefined') return;
         const originalOverflow = document.body.style.overflow;
         document.body.style.overflow = mobileMenuOpen ? 'hidden' : originalOverflow || '';
@@ -61,21 +56,13 @@ export default function Navbar() {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [isLangMenuOpen]);
 
-    const langButtonClass = (active: boolean, dark = false) =>
-        `flex items-center gap-2.5 w-full px-3 py-2.5 rounded-xl text-start transition-all duration-200 ${
-            active
-                ? dark
-                    ? 'bg-white/15 text-white'
-                    : 'bg-[#000552]/8 text-[#000552]'
-                : dark
-                  ? 'text-white/70 hover:bg-white/10 hover:text-white'
-                  : 'text-black/70 hover:bg-black/[0.04] hover:text-black'
-        }`;
+    const languageMenuTitle =
+        locale === 'en' ? t('languageMenu') : `${t('languageMenu')} · Language`;
 
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? 'bg-transparent border-transparent' : 'bg-[rgba(251,251,253,0.8)] backdrop-blur-xl backdrop-saturate-[180%] border-b border-black/[0.08]'}`}
+                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? 'bg-transparent border-transparent' : 'bg-[rgba(251,251,253,0.72)] backdrop-blur-2xl backdrop-saturate-[180%] border-b border-black/[0.06]'}`}
             >
                 <div className="container mx-auto px-6 h-[48px] flex items-center justify-center gap-x-[50px]">
                     <Link href="/" className="flex-shrink-0 relative z-50 flex items-center">
@@ -106,57 +93,39 @@ export default function Navbar() {
                         <button
                             type="button"
                             onClick={() => setIsLangMenuOpen(!isLangMenuOpen)}
-                            className="flex items-center gap-2 ps-2.5 pe-2 py-1.5 rounded-full border border-black/10 bg-white/60 hover:bg-white hover:border-black/15 shadow-sm hover:shadow transition-all duration-200"
+                            className={`flex items-center gap-2 ps-2.5 pe-2.5 py-1.5 rounded-full border transition-all duration-300 ${
+                                isLangMenuOpen
+                                    ? 'border-black/12 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]'
+                                    : 'border-black/[0.08] bg-white/70 hover:bg-white hover:border-black/12 shadow-sm hover:shadow'
+                            }`}
                             aria-expanded={isLangMenuOpen}
                             aria-haspopup="listbox"
-                            aria-label="Language"
+                            aria-label={t('languageMenu')}
                         >
-                            <LocaleFlag locale={locale} />
-                            <span className="text-[12px] font-semibold text-black/80 tracking-wide">
+                            <LocaleFlag locale={locale} className="w-[18px] h-[12px]" />
+                            <span className="text-[12px] font-semibold text-black/75 tracking-wide">
                                 {localeLabels[locale]}
                             </span>
                             <ChevronDown
                                 size={12}
-                                className={`text-black/40 transition-transform duration-200 ${isLangMenuOpen ? 'rotate-180' : ''}`}
+                                className={`text-black/35 transition-transform duration-300 ${isLangMenuOpen ? 'rotate-180' : ''}`}
                             />
                         </button>
 
                         <AnimatePresence>
                             {isLangMenuOpen && (
                                 <motion.div
-                                    initial={{ opacity: 0, y: 8, scale: 0.96 }}
-                                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                                    exit={{ opacity: 0, y: 8, scale: 0.96 }}
-                                    transition={{ duration: 0.18, ease: [0.4, 0, 0.2, 1] }}
-                                    className="absolute end-0 top-full mt-2 w-[200px] bg-white/95 backdrop-blur-2xl border border-black/8 rounded-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)] overflow-hidden p-1.5"
-                                    role="listbox"
+                                    initial={{ opacity: 0, y: 8, scale: 0.94, filter: 'blur(4px)' }}
+                                    animate={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }}
+                                    exit={{ opacity: 0, y: 8, scale: 0.96, filter: 'blur(2px)' }}
+                                    transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
+                                    className="absolute end-0 top-full mt-3 w-[min(320px,calc(100vw-2rem))] rounded-[1.35rem] border border-white/60 bg-white/80 backdrop-blur-3xl shadow-[0_24px_80px_rgba(0,0,0,0.18),0_0_0_1px_rgba(0,0,0,0.04)]"
                                 >
-                                    <p className="px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-[0.14em] text-black/35">
-                                        Dil / Language
-                                    </p>
-                                    {locales.map((l) => (
-                                        <button
-                                            key={l}
-                                            type="button"
-                                            role="option"
-                                            aria-selected={locale === l}
-                                            onClick={() => selectLocale(l)}
-                                            className={langButtonClass(locale === l)}
-                                        >
-                                            <LocaleFlag locale={l} />
-                                            <span className="flex-1 min-w-0">
-                                                <span className="block text-[12px] font-semibold leading-tight">
-                                                    {localeNames[l]}
-                                                </span>
-                                                <span className="block text-[10px] text-black/40 font-medium mt-0.5">
-                                                    {localeLabels[l]}
-                                                </span>
-                                            </span>
-                                            {locale === l && (
-                                                <Check size={14} className="text-[#000552] shrink-0" strokeWidth={2.5} />
-                                            )}
-                                        </button>
-                                    ))}
+                                    <LanguagePickerPanel
+                                        currentLocale={locale}
+                                        title={languageMenuTitle}
+                                        onSelect={selectLocale}
+                                    />
                                 </motion.div>
                             )}
                         </AnimatePresence>
@@ -181,7 +150,7 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                         className="fixed inset-0 z-[120] lg:hidden bg-[#1d1d1f]/95 backdrop-blur-2xl overflow-hidden"
                     >
-                        <div className="flex flex-col pt-24 px-10 h-full overflow-y-auto pb-10" data-lenis-prevent>
+                        <div className="flex flex-col pt-24 px-8 h-full overflow-y-auto pb-10" data-lenis-prevent>
                             <div className="flex flex-col space-y-6">
                                 {navLinks.map((link, i) => (
                                     <motion.div
@@ -218,30 +187,15 @@ export default function Navbar() {
                                     initial={{ opacity: 0, y: 15 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + (navLinks.length + 1) * 0.05 }}
-                                    className="pt-8 border-t border-white/10"
+                                    className="pt-6"
                                 >
-                                    <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-white/40 mb-3">
-                                        Dil / Language
-                                    </p>
-                                    <div className="grid grid-cols-2 gap-2">
-                                        {locales.map((l) => (
-                                            <button
-                                                key={l}
-                                                type="button"
-                                                onClick={() => selectLocale(l)}
-                                                className={langButtonClass(locale === l, true)}
-                                            >
-                                                <LocaleFlag locale={l} />
-                                                <span className="flex-1 min-w-0 text-start">
-                                                    <span className="block text-[12px] font-semibold leading-tight">
-                                                        {localeNames[l]}
-                                                    </span>
-                                                </span>
-                                                {locale === l && (
-                                                    <Check size={13} className="text-white shrink-0" strokeWidth={2.5} />
-                                                )}
-                                            </button>
-                                        ))}
+                                    <div className="rounded-[1.35rem] border border-white/12 bg-white/[0.06] backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
+                                        <LanguagePickerPanel
+                                            currentLocale={locale}
+                                            title={languageMenuTitle}
+                                            onSelect={selectLocale}
+                                            variant="dark"
+                                        />
                                     </div>
                                 </motion.div>
                             </div>
