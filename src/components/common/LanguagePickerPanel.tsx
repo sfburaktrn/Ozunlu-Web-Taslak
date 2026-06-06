@@ -22,7 +22,12 @@ const containerVariants = {
 
 const itemVariants = {
     hidden: { opacity: 0, y: 6, scale: 0.96 },
-    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] } },
+    show: {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        transition: { duration: 0.22, ease: [0.4, 0, 0.2, 1] as const },
+    },
 };
 
 export default function LanguagePickerPanel({ currentLocale, title, onSelect, variant = 'light' }: Props) {
