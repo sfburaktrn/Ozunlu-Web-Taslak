@@ -100,6 +100,17 @@ export const pageKeywords: Record<Locale, Record<PageSeoKey, string>> = {
         legalPrivacy: 'aviso privacidad, datos personales',
         legalCookie: 'política cookies, cookies',
     },
+    it: {
+        home: 'Özünlü Damper, ribaltabile, Hardox, semirimorchio, sovrastruttura, veicolo commerciale pesante, acciaio, idraulica, post-vendita, BPW',
+        damper: 'ribaltabile, ribaltabile Hardox, ribaltabile idraulico, ribaltabile cantiere, ribaltabile minerario, sovrastruttura, preventivo',
+        yariRomork: 'semirimorchio, rimorchio, Hardox rimorchio, asse BPW, asse Özkoç, trasporto pesante, produttore semirimorchi',
+        ekEkipmanlar: 'ricambi rimorchio, sistema idraulico, asse, freni, EBS, illuminazione LED, BPW, ricambi originali',
+        afterSales: 'servizio post-vendita, officina autorizzata, ricambi, supporto tecnico, servizio Özünlü, supporto 24/7',
+        contact: 'contatti Özünlü, preventivo ribaltabile, vendite, export, Istanbul, Sultangazi',
+        legalKvkk: 'KVKK, protezione dati, Özünlü Damper, GDPR',
+        legalPrivacy: 'informativa privacy, dati personali',
+        legalCookie: 'politica cookie, cookies',
+    },
     ru: {
         home: 'Özünlü Damper, самосвал, Hardox, полуприцеп, надстройка, тяжёлый коммерческий автомобиль, обработка стали, гидравлика, сервис, BPW',
         damper: 'самосвал, Hardox самосвал, гидравлический самосвал, строительный самосвал, горный самосвал, надстройка, предложение',

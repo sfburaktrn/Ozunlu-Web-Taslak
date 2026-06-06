@@ -39,7 +39,20 @@ body {
   font-family: var(--font-manrope), 'Segoe UI', Tahoma, sans-serif;
 }
 
-/* Logical alignment overrides */
+/* Keep card/hero physical layout (image right, text left) while page stays RTL */
+.layout-fixed {
+  direction: ltr;
+}
+
+[dir='rtl'] .layout-fixed [dir='rtl'] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir='rtl'] .layout-fixed .text-right {
+  text-align: right;
+}
+
 [dir='rtl'] .text-left {
   text-align: start;
 }

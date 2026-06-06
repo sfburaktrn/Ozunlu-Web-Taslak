@@ -1,0 +1,734 @@
+{
+  "seo": {
+    "home": {
+      "title": "Özünlü Damper | Produzione rapida, soluzioni in acciaio Hardox per sovrastrutture – Dal 1977",
+      "description": "Dal 1977, il produttore turco di fiducia di sovrastrutture per veicoli commerciali pesanti, con lavorazione dell'acciaio certificata Hardox, ingegneria avanzata e rete completa di assistenza post-vendita."
+    },
+    "damper": {
+      "title": "Özünlü Ribaltabile | Soluzioni ribaltabili Hardox ad alte prestazioni – Dal 1977",
+      "description": "Modelli ribaltabili Özünlü progettati con cassoni in acciaio Hardox, ingegneria avanzata e oltre 45 anni di esperienza produttiva — essenziali per edilizia, minerario e infrastrutture. Richiedi un preventivo oggi."
+    },
+    "yariRomork": {
+      "title": "Özünlü Semirimorchio | Rimorchio ribaltabile in acciaio Hardox – Soluzioni per trasporti pesanti",
+      "description": "Modelli semirimorchio con assali BPW e Özkoç e cassoni Hardox 450/500 per un trasporto sicuro ed efficiente di carichi pesanti. Progettati da Özünlü."
+    },
+    "ekEkipmanlar": {
+      "title": "Ricambi e equipaggiamento per rimorchi | Sistemi idraulici, assali e freni originali – Özünlü",
+      "description": "Fornitura di equipaggiamento e ricambi originali per rimorchi con garanzia Özünlü. Sistemi idraulici, assali BPW-Özkoç, kit freni EBS e illuminazione LED — ampio stock, consegna rapida."
+    },
+    "afterSales": {
+      "title": "Özünlü Assistenza post-vendita | Supporto tecnico 24/7, ricambi, rete di assistenza autorizzata",
+      "description": "87 punti di assistenza autorizzati in tutta la Turchia, supporto tecnico 24/7 e garanzia su ricambi originali — l'assistenza post-vendita Özünlü mantiene operativa la tua flotta."
+    },
+    "contact": {
+      "title": "Contatti | Özünlü Damper – Preventivi e assistenza",
+      "description": "Contatta Özünlü Damper per vendite, post-vendita, export e risorse umane. Sede centrale: Sultangazi, Istanbul."
+    },
+    "corporate": {
+      "title": "Azienda | Özünlü Damper – Dal 1977",
+      "description": "Dal 1977, Özünlü Damper è il punto di riferimento per affidabilità e qualità nel settore delle sovrastrutture per veicoli commerciali pesanti."
+    },
+    "media": {
+      "title": "Media | Özünlü Damper",
+      "description": "Notizie, blog e approfondimenti di settore di Özünlü Damper."
+    },
+    "legalKvkk": {
+      "title": "Protezione dei dati personali | Özünlü Damper",
+      "description": "Politica di protezione dei dati personali di Özünlü Damper ai sensi del KVKK turco."
+    },
+    "legalPrivacy": {
+      "title": "Informativa sulla privacy | Özünlü Damper",
+      "description": "Testo informativo sul trattamento dei dati personali."
+    },
+    "legalCookie": {
+      "title": "Politica sui cookie | Özünlü Damper",
+      "description": "Politica sull'utilizzo dei cookie sul sito web Özünlü Damper."
+    }
+  },
+  "common": {
+    "nav": {
+      "damper": "Ribaltabile",
+      "yariRomork": "Semirimorchio",
+      "ekEkipmanlar": "Equipaggiamento",
+      "satisSonrasi": "Post-vendita",
+      "iletisim": "Contatti",
+      "mobileContactQuote": "Contatti e preventivo"
+    },
+    "footer": {
+      "logoAlt": "Logo Özünlü Damper",
+      "about": "Dal 1977, lavorazione dell'<strong>acciaio</strong> certificata <hardox></hardox>, <strong>ingegneria</strong> avanzata e rete completa di <strong>assistenza post-vendita</strong> — il produttore turco di fiducia di <strong>sovrastrutture</strong> per <strong>veicoli commerciali pesanti</strong>.",
+      "quickAccess": "Link rapidi",
+      "contact": "Contatti",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "copyright": "© {year} Özünlü Damper. Tutti i diritti riservati.",
+      "kvkk": "GDPR",
+      "aydinlatmaMetni": "Informativa sulla privacy",
+      "cerezPolitikasi": "Politica sui cookie"
+    },
+    "cta": {
+      "teklifAl": "Richiedi preventivo",
+      "teklifAlin": "Richiedi preventivo",
+      "hemenTeklifAl": "Richiedi preventivo ora",
+      "incele": "Visualizza",
+      "bizeUlasin": "Contattaci",
+      "bilgiAl": "Scopri di più",
+      "iletisimeGecin": "Mettiti in contatto",
+      "detayliIncele": "Vedi dettagli",
+      "tumUrunler": "TUTTI I PRODOTTI",
+      "kesfet": "Esplora",
+      "kaydir": "Scorri"
+    },
+    "labels": {
+      "modellerimiz": "I nostri modelli",
+      "oneCikanlar": "In evidenza",
+      "ozunluWatermark": "ÖZÜNLÜ",
+      "logoAlt": "Özünlü Damper",
+      "hardoxAlt": "Logo Hardox In My Body acciaio certificato resistente all'usura"
+    }
+  },
+  "home": {
+    "hero": {
+      "titleLine1": "VELOCITÀ IN PRODUZIONE",
+      "titleLine2": "DURATA SUL CAMPO",
+      "subtitle": "<strong>Produzione</strong> rapida, soluzioni di <strong>sovrastruttura</strong> durature e prestazioni comprovate sul campo",
+      "ctaDamper": "Preventivo ribaltabile",
+      "ctaYariRomork": "Preventivo semirimorchio",
+      "scroll": "Scorri"
+    },
+    "about": {
+      "eyebrow": "Chi siamo",
+      "title": "Definiamo la forza attraverso la produzione rapida",
+      "paragraph1": "Dal 1977 offriamo soluzioni di <strong>sovrastruttura</strong> affidabili e durature a diversi settori, con una capacità di <strong>produzione</strong> che si estende dalla Turchia al mondo.",
+      "paragraph2": "Uniamo <strong>ingegneria</strong> e design avanzati alla superiore durabilità dell'<strong>acciaio</strong> <hardox></hardox>, sviluppando ogni prodotto non solo come <strong>sovrastruttura</strong>, ma come soluzione che aumenta l'efficienza operativa.",
+      "cards": {
+        "arge": "R&S E INGEGNERIA",
+        "ozelTasarim": "SOLUZIONI DI DESIGN SU MISURA",
+        "uretimTeknolojisi": "TECNOLOGIA PRODUTTIVA AVANZATA",
+        "sertifikaliUretim": "PRODUZIONE CERTIFICATA"
+      }
+    },
+    "damperHero": {
+      "category": "RIBALTABILE",
+      "imageAlt": "Prestazioni e durabilità Özünlü ribaltabile",
+      "titleLine1": "La risposta ingegneristica",
+      "titleLine2": "per cantieri difficili",
+      "description": "I nostri sistemi <strong>ribaltabili</strong> progettati per le dure condizioni di edilizia, minerario e infrastrutture garantiscono prestazioni ininterrotte sul campo con la durabilità del cassone <hardox></hardox>, elevata stabilità di ribaltamento e rapida capacità di scarico."
+    },
+    "trailerHero": {
+      "category": "SEMIRIMORCHIO",
+      "imageAlt": "Özünlü semirimorchi e sistemi rimorchio",
+      "titleLine1": "Design leggero",
+      "titleLine2": "Prestazioni robuste",
+      "description": "Offre efficienza di trasporto, elevato valore di rivendita e prestazioni durature."
+    },
+    "equipmentHero": {
+      "category": "Equipaggiamento",
+      "imageAlt": "Özünlü soluzioni di equipaggiamento e ricambi",
+      "titleLine1": "Soluzioni di equipaggiamento",
+      "titleLine2": "complete per la tua flotta",
+      "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato e consegnato rapidamente da ampio stock con garanzia Özünlü."
+    },
+    "whyChooseUs": {
+      "eyebrow": "PERCHÉ ÖZÜNLÜ?",
+      "title": "Perché Özünlü?",
+      "features": {
+        "0": "Design di <strong>sovrastruttura</strong> approvato OEM — <strong>produzione</strong> compatibile con diverse configurazioni di telaio e trattore",
+        "1": "Lavorazione dell'<strong>acciaio</strong> certificata <hardox></hardox> e tecnologia di saldatura robotizzata",
+        "2": "Piena conformità a tutte le normative e agli standard europei di sicurezza (ECE/ADR)",
+        "3": "Garanzia completa e <strong>assistenza post-vendita</strong> ininterrotta",
+        "4": "87 punti di <strong>assistenza autorizzata</strong> in 50 province in tutta la Turchia",
+        "5": "Design strutturale che preserva un elevato valore di rivendita",
+        "6": "Export in oltre 50 paesi — qualità comprovata a livello globale"
+      },
+      "cardLabel": "Garanzia Özünlü"
+    },
+    "mapPreview": {
+      "eyebrow": "Mappa assistenza",
+      "title": "Rete nazionale di ",
+      "titleHighlight": "assistenza autorizzata",
+      "description": "Ovunque si trovi il tuo veicolo, Özünlü è al tuo fianco. I nostri 87 punti di <strong>assistenza autorizzata</strong> in 50 province garantiscono operatività ininterrotta della flotta con ricambi originali e tecnici certificati.",
+      "citiesLabel": "Città con assistenza",
+      "pointsLabel": "Totale punti di assistenza",
+      "topCities": "Città in evidenza",
+      "serviceCount": "{count} punti di assistenza",
+      "tapHint": "Tocca la mappa",
+      "mapInstruction": "Seleziona una città per visualizzare i dettagli dell'assistenza.",
+      "modalEyebrow": "Dettagli assistenza",
+      "plateCode": "Codice targa: {code}",
+      "closeAria": "Chiudi",
+      "noService": "Nessun servizio registrato trovato per questa provincia."
+    },
+    "partners": {
+      "title": "Scelto dai leader del settore",
+      "description": "Le nostre soluzioni di <strong>sovrastruttura</strong> per <strong>veicoli commerciali pesanti</strong> funzionano in modo affidabile sulle rotte più difficili in edilizia, minerario e trasporto a lunga distanza.",
+      "footer": "Fornitore di sovrastrutture omologato"
+    },
+    "products": {
+      "eyebrow": "I nostri prodotti",
+      "title": "SOVRASTRUTTURE",
+      "titleHighlight": "SOLUZIONI",
+      "subtitle": "Soluzioni di <strong>sovrastruttura</strong> in qualità <strong>acciaio</strong> <hardox></hardox> per ogni esigenza",
+      "viewDetails": "Vedi dettagli",
+      "items": {
+        "damper": {
+          "title": "RIBALTABILE",
+          "description": "Cassone in <strong>acciaio</strong> <hardox></hardox>, <strong>sistema idraulico</strong>, capacità 20-40 m³",
+          "features": [
+            "Acciaio Hardox 450",
+            "Sistema idraulico",
+            "Design leggero"
+          ]
+        },
+        "dorse": {
+          "title": "RIMORCHIO",
+          "description": "Alta resistenza, lunga durata, opzioni di design su misura",
+          "features": [
+            "Design su misura",
+            "Alta durabilità",
+            "Manutenzione semplice"
+          ]
+        },
+        "kar": {
+          "title": "SPAZZANEVE",
+          "description": "Soluzioni <strong>ribaltabili</strong> su misura per le esigenze del cliente",
+          "features": [
+            "Realizzazione su misura",
+            "Supporto R&S",
+            "Produzione rapida"
+          ]
+        }
+      }
+    },
+    "gallery": {
+      "slogan": "La scelta dei migliori"
+    },
+    "stats": {
+      "exportCountries": "Paesi di export",
+      "steelProcessing": "Lavorazione annuale dell'acciaio (tonnellate)",
+      "experience": "Anni di esperienza"
+    }
+  },
+  "damper": {
+    "hero": {
+      "imageAlt": "Özünlü soluzioni ribaltabili",
+      "titleLine1": "RIBALTABILE",
+      "titleLine2": "SOLUZIONI",
+      "description": "La risposta ingegneristica per cantieri difficili. Cassone <hardox></hardox>, elevata stabilità di ribaltamento e capacità di carico ottimizzata — prestazioni superiori in ogni condizione."
+    },
+    "products": {
+      "title": "Soluzioni ribaltabili pronte",
+      "subtitle": "Abbiamo preparato per te le configurazioni più richieste. Esplora o richiedi un preventivo ora."
+    },
+    "features": {
+      "titleLine1": "L'armonia perfetta tra",
+      "titleLine2": "potenza e design",
+      "item01Title": "Cassone Hardox®",
+      "item01Content": "La struttura del cassone realizzata con <strong>acciaio</strong> svedese <hardox></hardox> ridefinisce gli standard del settore in resistenza all'usura e agli urti. Lunga durata, bassi costi di manutenzione.",
+      "item02Title": "Ingegneria aerodinamica",
+      "item02Content": "Le linee aerodinamiche ottimizzate in galleria del vento riducono il consumo di carburante e il costo operativo totale.",
+      "item03Title": "Elevata capacità di carico",
+      "item03Content": "Il design del telaio leggero e ad alta resistenza garantisce la massima capacità di trasporto entro i limiti legali di carico.",
+      "imageAlt": "Caratteristiche Özünlü ribaltabile"
+    },
+    "configurator": {
+      "title": "Configuratore ribaltabile",
+      "subtitle": "Specifica i dettagli tecnici per un ribaltabile ad alte prestazioni su misura per le tue esigenze. Il nostro team di esperti preparerà a breve il tuo preventivo personalizzato."
+    },
+    "items": {
+      "d24": {
+        "name": "ÖZ-D24 Ribaltabile",
+        "description": "Design orientato all'ingegneria per le dure condizioni di cantiere. Opzione cassone <hardox></hardox>, telaio rinforzato e scarico rapido.",
+        "features": [
+          "Opzione cassone Hardox",
+          "Elevata stabilità di ribaltamento",
+          "Scarico rapido",
+          "Telaio rinforzato",
+          "Manutenzione semplice"
+        ],
+        "details": {
+          "hardox": {
+            "title": "Cassone Hardox®",
+            "content": "Lunga durata e bassi costi di manutenzione in resistenza all'usura e agli urti."
+          },
+          "sasi": {
+            "title": "Telaio",
+            "content": "Telaio rinforzato per uso pesante."
+          },
+          "bosaltim": {
+            "title": "Scarico",
+            "content": "Scarico rapido e controllato con idraulica ottimizzata."
+          },
+          "verimlilik": {
+            "title": "Efficienza",
+            "content": "Dettagli ingegneristici che aumentano la continuità operativa."
+          }
+        }
+      },
+      "d30": {
+        "name": "ÖZ-D30 Ribaltabile",
+        "description": "La combinazione cassone-telaio più robusta per carichi ad alto tonnellaggio.",
+        "features": [
+          "Uso pesante",
+          "Volume ottimizzato",
+          "Pareti laterali resistenti",
+          "Facilità di assistenza",
+          "Equipaggiamento opzionale"
+        ],
+        "details": {
+          "kapasite": {
+            "title": "Capacità",
+            "content": "Volume ottimizzato per operazioni ad alto tonnellaggio."
+          },
+          "dayanim": {
+            "title": "Durabilità",
+            "content": "Struttura resistente agli urti e all'usura."
+          },
+          "donanim": {
+            "title": "Equipaggiamento",
+            "content": "Telone, copertura, illuminazione e altre opzioni."
+          },
+          "uyumluluk": {
+            "title": "Compatibilità",
+            "content": "Alternative di montaggio per diverse esigenze di telaio."
+          }
+        }
+      },
+      "d21": {
+        "name": "ÖZ-D21 Ribaltabile",
+        "description": "Peso equilibrato e gestione economica per scenari compatti.",
+        "features": [
+          "Design compatto",
+          "Gestione economica",
+          "Peso equilibrato",
+          "Facile manovra",
+          "Lunga durata"
+        ],
+        "details": {
+          "kullanim": {
+            "title": "Utilizzo",
+            "content": "Operatività agile in cantieri compatti."
+          },
+          "agirlik": {
+            "title": "Peso",
+            "content": "Capacità massima entro i limiti legali."
+          },
+          "maliyet": {
+            "title": "Costo",
+            "content": "Gestione economica e manutenzione semplice."
+          },
+          "performans": {
+            "title": "Prestazioni",
+            "content": "Prestazioni stabili in uso quotidiano intensivo."
+          }
+        }
+      }
+    }
+  },
+  "yariRomork": {
+    "hero": {
+      "imageAlt": "Özünlü soluzioni semirimorchio",
+      "titleLine1": "SEMIRIMORCHIO",
+      "titleLine2": "SOLUZIONI",
+      "description": "Alleggerisci i trasporti pesanti con l'<strong>ingegneria</strong>. Struttura in <strong>acciaio</strong> <hardox></hardox>, tecnologia frenante avanzata e distribuzione del carico ottimizzata — prestazioni e sicurezza superiori su ogni percorso."
+    },
+    "products": {
+      "title": "Soluzioni semirimorchio pronte",
+      "subtitle": "Abbiamo preparato le configurazioni più richieste del settore. Richiedi un preventivo o progetta il tuo veicolo."
+    },
+    "features": {
+      "titleLine1": "Padroneggia ogni",
+      "titleLine2": "momento su strada",
+      "item01Title": "Tecnologia avanzata del telaio",
+      "item01Content": "Telaio ad alta resistenza prodotto con saldatura robotizzata; massima resistenza alla flessione, peso minimizzato, carico utile massimizzato.",
+      "item02Title": "Sistemi di sicurezza attivi",
+      "item02Content": "Frenata elettronica EBS e supporto alla stabilità anti-ribaltamento RSS per una sicurezza di guida conforme agli standard europei.",
+      "item03Title": "Adattamento versatile",
+      "item03Content": "Massima flessibilità dal trasporto lowbed alla logistica container, dalle merci alla rinfusa alle configurazioni di carico su misura.",
+      "imageAlt": "Caratteristiche semirimorchio"
+    },
+    "configurator": {
+      "title": "Configuratore semirimorchio",
+      "subtitle": "Condividi i dettagli per progettare il semirimorchio ad alte prestazioni più adatto alla tua flotta. Il nostro team di ingegneria preparerà un preventivo tecnico su misura."
+    },
+    "items": {
+      "g22": {
+        "name": "ÖZ-G22 Semirimorchio",
+        "description": "Volume 22 m³ con cassone Hardox 450 e assale BPW per trasporti pesanti a lunga distanza.",
+        "features": [
+          "Volume 22 m³",
+          "Cassone Hardox 450",
+          "Lamiera 5/6 mm",
+          "Assale BPW (estero)",
+          "Paraurti pieghevole"
+        ]
+      },
+      "l500": {
+        "name": "ÖZ-L500 Semirimorchio",
+        "description": "Telaio Hardox 500 e rampa idraulica per operazioni ad alte prestazioni.",
+        "features": [
+          "Assale Özkoç (nazionale)",
+          "Telaio Hardox 500",
+          "Paraurti fisso",
+          "Rampa idraulica",
+          "Laterali estendibili"
+        ]
+      },
+      "m21": {
+        "name": "ÖZ-M21 Semirimorchio",
+        "description": "Volume 21 m³ con cassone leggero e sistema telone automatico.",
+        "features": [
+          "Volume 21 m³",
+          "Assale Özkoç",
+          "Lamiera 3/4 mm (leggera)",
+          "Telone automatico",
+          "Copertura a manica"
+        ]
+      }
+    }
+  },
+  "ekEkipmanlar": {
+    "hero": {
+      "badge": "EQUIPAGGIAMENTO",
+      "imageAlt": "Soluzioni di equipaggiamento e ricambi",
+      "titleLine1": "Soluzioni di equipaggiamento",
+      "titleLine2": "complete per la tua flotta",
+      "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato con garanzia Özünlü e consegna rapida da stock."
+    },
+    "categories": {
+      "title": "Gruppi di prodotto",
+      "subtitle": "Equipaggiamento originale certificato, ampio stock e vantaggio di consegna rapida in un unico posto.",
+      "hidrolik": {
+        "title": "Sistemi idraulici",
+        "desc": "Pompe ad alta pressione, cilindri e sistemi valvola per condizioni difficili sul campo."
+      },
+      "dingil": {
+        "title": "Assale e sospensione",
+        "desc": "Sistemi premium di assali e sospensioni, inclusi BPW e Özkoç."
+      },
+      "fren": {
+        "title": "Sistemi frenanti",
+        "desc": "Kit freni compatibili EBS e ABS conformi agli standard europei di sicurezza."
+      },
+      "elektrik": {
+        "title": "Elettrico e illuminazione",
+        "desc": "Sistemi di illuminazione LED ad alta visibilità. Conformi ECE R48."
+      },
+      "aksesuar": {
+        "title": "Accessori rimorchio",
+        "desc": "Cassette attrezzi, serbatoi carburante, piedi di sostegno e accessori su misura."
+      },
+      "yedekParca": {
+        "title": "Ricambi",
+        "desc": "Ricambi originali garantiti con opzione di spedizione in giornata."
+      }
+    },
+    "cta": {
+      "title": "Non hai trovato il pezzo?",
+      "description": "Contatta il nostro team di esperti e troveremo il prodotto di cui hai bisogno."
+    },
+    "performance": {
+      "imageAlt": "Equipaggiamento rimorchio",
+      "titleLine1": "Il pezzo giusto,",
+      "titleLine2": "massime prestazioni",
+      "description": "Le prestazioni del veicolo dipendono direttamente dalla qualità dell'equipaggiamento. In Özünlü consegniamo istantaneamente prodotti originali certificati di marchi comprovati a livello globale dal nostro ampio stock.",
+      "bullets": {
+        "0": "Garanzia prodotto originale certificato",
+        "1": "Ampia compatibilità di marchi e modelli",
+        "2": "Prezzi competitivi e pagamento flessibile",
+        "3": "Supporto di consulenza tecnica specializzata"
+      }
+    },
+    "stats": {
+      "original": {
+        "value": "100%",
+        "label": "Garanzia prodotto originale"
+      },
+      "delivery": {
+        "value": "Rapida",
+        "label": "Consegna da stock"
+      },
+      "support": {
+        "value": "Supporto",
+        "label": "Pre e post vendita"
+      }
+    }
+  },
+  "afterSales": {
+    "hero": {
+      "imageAlt": "Servizi post-vendita",
+      "badge": "GARANZIA ÖZÜNLÜ",
+      "titleLine1": "AL TUO FIANCO",
+      "titleLine2": "IN OGNI",
+      "titleLine3": "MOMENTO",
+      "description": "La vera partnership inizia dopo l'acquisto. Proteggiamo la continuità operativa del tuo veicolo con 87 punti di <strong>assistenza autorizzata</strong> a livello nazionale, supporto tecnico 24/7 e garanzia su ricambi originali."
+    },
+    "services": {
+      "title": "I NOSTRI SERVIZI",
+      "subtitle": "Soluzioni professionali che proteggono il valore del veicolo e aumentano l'efficienza operativa.",
+      "servisAgi": {
+        "title": "Rete di assistenza autorizzata",
+        "description": "87 punti di <strong>assistenza autorizzata</strong> in 50 province in tutta la Turchia con tecnici certificati."
+      },
+      "yedekParca": {
+        "title": "Ricambi originali",
+        "description": "Ricambi Özünlü 100% originali per minimizzare i tempi di fermo del veicolo."
+      },
+      "garanti": {
+        "title": "Copertura garanzia",
+        "description": "Tutti i prodotti coperti da garanzia completa del produttore."
+      },
+      "teknikDestek": {
+        "title": "Supporto tecnico 24/7",
+        "description": "Team di supporto esperto disponibile giorno e notte."
+      }
+    },
+    "documents": {
+      "eyebrow": "Knowledge base",
+      "title": "DOCUMENTI",
+      "titleHighlight": "TECNICI",
+      "description": "Manuali utente, procedure di manutenzione e specifiche tecniche preparati per la massima efficienza del prodotto — disponibili in turco e inglese.",
+      "searchPlaceholder": "Cerca documenti...",
+      "download": "SCARICA",
+      "noResults": "Nessun documento trovato corrispondente ai tuoi criteri.",
+      "damperManual": {
+        "title": "Manuale utente ribaltabile",
+        "desc": "Istruzioni base di utilizzo e sicurezza per i prodotti ribaltabili."
+      },
+      "dorseManual": {
+        "title": "Manuale utente rimorchio",
+        "desc": "Manuale utente standard per i prodotti semirimorchio."
+      },
+      "generalManual": {
+        "title": "Manuale generale prodotto e manutenzione (TR/EN)",
+        "desc": "Manutenzione completa e dettagli tecnici per tutti i modelli di rimorchio."
+      },
+      "damperSpec": {
+        "title": "Specifica tecnica ribaltabile (TR/EN)",
+        "desc": "Specifiche tecniche speciali per veicoli ribaltabili."
+      }
+    },
+    "map": {
+      "title": "Rete nazionale di assistenza autorizzata",
+      "description": "87 punti di assistenza autorizzati in 50 province. Seleziona la tua città sulla mappa per dettagli e contatti immediati."
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "CONTATTI",
+      "subtitle": "Mettiti in contatto per domande e progetti.",
+      "headOffice": "SEDE CENTRALE",
+      "submit": "Invia",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "hours": "Orari di lavoro",
+      "hoursValue": "Lun-Ven e Sab: 09:00 - 18:30",
+      "name": "NOME COMPLETO",
+      "namePlaceholder": "Il tuo nome completo",
+      "company": "AZIENDA",
+      "companyPlaceholder": "Nome azienda",
+      "email": "EMAIL",
+      "emailPlaceholder": "esempio@azienda.com",
+      "phone": "TELEFONO",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "message": "MESSAGGIO",
+      "messagePlaceholder": "Scrivi qui il tuo messaggio...",
+      "mapTitle": "Mappa posizione Özünlü Damper",
+      "submitting": "Invio in corso...",
+      "successTitle": "Messaggio inviato",
+      "successMessage": "Ti risponderemo il prima possibile.",
+      "submitError": "Invio non riuscito. Riprova o contattaci telefonicamente."
+    },
+    "tabs": {
+      "sales": "VENDITE E MARKETING",
+      "service": "SERVIZI POST-VENDITA",
+      "export": "EXPORT",
+      "hr": "RISORSE UMANE"
+    }
+  },
+  "proposal": {
+    "configurator": "Configuratore",
+    "selectedProduct": "Prodotto selezionato",
+    "selectedSubtitle": "Compila il modulo preventivo per il prodotto selezionato.",
+    "defaultSubtitle": "Specifica i dettagli per una soluzione su misura.",
+    "clearSelection": "Seleziona un prodotto diverso o usa il configuratore",
+    "stepQuantity": "Imposta quantità",
+    "stepPayment": "Metodo di pagamento",
+    "stepContact": "Informazioni di contatto",
+    "vehicleInfo": "Informazioni veicolo",
+    "trailerSpecs": "Specifiche rimorchio",
+    "cargoType": "Tipo di carico",
+    "dimensions": "Dimensioni e quantità",
+    "submit": "RICHIEDI PREVENTIVO",
+    "submitting": "Invio in corso...",
+    "successTitle": "Richiesta ricevuta!",
+    "successMessage": "Il tuo modulo preventivo è stato inviato. Il nostro team commerciale ti contatterà a breve.",
+    "submitError": "Invio non riuscito. Riprova o contattaci telefonicamente.",
+    "newForm": "Crea nuovo modulo",
+    "kvkkNotice": "I tuoi dati personali sono protetti ai sensi del GDPR.",
+    "payment": {
+      "cashTitle": "Contanti / Bonifico",
+      "cashDesc": "Sconto speciale per pagamenti in contanti",
+      "creditTitle": "Credito / Assegno",
+      "creditDesc": "Condizioni di pagamento flessibili disponibili"
+    },
+    "fields": {
+      "quantity": "Quantità",
+      "brand": "Marca veicolo",
+      "brandPh": "es. Mercedes, Ford",
+      "model": "Modello veicolo",
+      "modelPh": "es. 4140, Cargo",
+      "volume": "Volume desiderato (m³)",
+      "volumePh": "es. 30",
+      "axle": "Opzione assale",
+      "domestic": "Nazionale",
+      "foreign": "Estero",
+      "cargo": "Tipo di carico",
+      "cargoPh": "es. Terra, Sabbia, Asfalto",
+      "thickness": "Spessore pavimento/laterali (mm)",
+      "thicknessPh": "es. 5mm / 4mm",
+      "company": "Nome azienda",
+      "companyPh": "Ragione sociale",
+      "contact": "Referente",
+      "contactPh": "Nome completo",
+      "phone": "Telefono",
+      "phonePh": "+90 5XX...",
+      "email": "Email",
+      "emailPh": "mail@azienda.com",
+      "heardFrom": "Come ci hai conosciuto?",
+      "heardFromPh": "Google, Social Media, Passaparola..."
+    }
+  },
+  "corporate": {
+    "hero": {
+      "badge": "Dal 1977",
+      "titleLine1": "VELOCITÀ E FIDUCIA",
+      "titleLine2": "LA NOSTRA FIRMA",
+      "description": "Con quasi mezzo secolo di esperienza, definiamo gli standard nel settore delle carrozzerie per <strong>veicoli commerciali pesanti</strong> e costruiamo il futuro su basi solide."
+    },
+    "values": {
+      "trust": {
+        "title": "FIDUCIA",
+        "desc": "Da oltre 45 anni sosteniamo ogni promessa fatta a clienti, partner e dipendenti."
+      },
+      "quality": {
+        "title": "QUALITÀ",
+        "desc": "Dall'<strong>acciaio</strong> <hardox></hardox> alla più fine lavorazione, perseguiamo l'eccellenza in ogni fase della <strong>produzione</strong>."
+      },
+      "innovation": {
+        "title": "INNOVAZIONE",
+        "desc": "Analizziamo le esigenze del settore e portiamo le tecnologie di domani ad oggi attraverso la R&S."
+      },
+      "speed": {
+        "title": "VELOCITÀ",
+        "desc": "Con processi di <strong>produzione</strong> ottimizzati, consegniamo rapidamente senza compromettere la qualità — accelerando il tuo business."
+      }
+    },
+    "philosophy": {
+      "watermark": "ÖZÜNLÜ",
+      "titleLine1": "NON SOLO ACCIAIO,",
+      "titleLine2": "FORGIAMO FIDUCIA.",
+      "p1": "<strong>Dal 1977,</strong> ciò che esce dalla nostra linea di produzione non è solo un ribaltabile — è mezzo secolo di esperienza, passione ingegneristica e innovazione resi tangibili. Per noi, la qualità non è un controllo; è la nostra cultura produttiva.",
+      "p2": "Testati su terreni difficili e sotto carichi pesanti, i nostri prodotti sono progettati fino al minimo dettaglio per <durability>durabilità</durability> e <performance>prestazioni</performance>. Combiniamo la forza dell'acciaio <hardox></hardox> con l'ingegno ingegneristico turco per definire standard di riferimento nel settore.",
+      "quote": "In ogni saldatura, ogni assemblaggio e ogni consegna abbiamo un unico obiettivo: aggiungere forza al successo dei nostri partner."
+    },
+    "leader": {
+      "eyebrow": "Messaggio del leader",
+      "quote": "In Özünlü non produciamo solo prodotti — costruiamo fiducia. Ogni ribaltabile e ogni rimorchio riflettono mezzo secolo di esperienza e passione ingegneristica.",
+      "name": "UFUK ÖZÜNLÜ",
+      "role": "Presidente del Consiglio di Amministrazione",
+      "bio": "Fondata nel 1977, Özünlü Damper è oggi un produttore leader con export in oltre 40 paesi, producendo secondo standard mondiali come Qualified Body Builder.",
+      "imageAlt": "Ufuk Özünlü"
+    },
+    "timeline": {
+      "title": "OLTRE",
+      "titleHighlight": "IL TEMPO",
+      "m1977": {
+        "title": "Gettare le fondamenta",
+        "desc": "Un percorso produttivo iniziato in un laboratorio di 30 m² a Istanbul Okmeydanı con grandi sogni."
+      },
+      "m1985": {
+        "title": "Prima espansione",
+        "desc": "Trasferimento degli impianti produttivi a Istanbul Habipler, dove si trovano ancora oggi."
+      },
+      "m1991": {
+        "title": "Investire nel futuro",
+        "desc": "Acquisto dell'attuale sito produttivo e primo grande investimento verso la leadership nel settore carrozzerie."
+      },
+      "m2005": {
+        "title": "Qualified Body Builder",
+        "desc": "Il primo titolo \"Qualified Body Builder\" del settore dai principali produttori mondiali di camion."
+      },
+      "m2009": {
+        "title": "Aumento capacità",
+        "desc": "Capacità produttiva raddoppiata grazie a nuovi investimenti in gestione qualità e macchinari."
+      },
+      "mToday": {
+        "title": "Potenza globale",
+        "desc": "30.000 m² di area produttiva totale in 3 stabilimenti, vendite in 81 province ed export in oltre 40 paesi."
+      },
+      "yearToday": "Oggi"
+    },
+    "facilities": {
+      "title": "POTENZA PRODUTTIVA E",
+      "titleHighlight": "IMPATTO GLOBALE",
+      "description": "Uniamo la forza dell'<strong>ingegneria</strong> locale agli standard globali, offrendo valore in tutto il mondo.",
+      "production": {
+        "title": "HUB PRODUTTIVO",
+        "value": "30.000 m²",
+        "desc": "Produzione ad alta capacità in 3 stabilimenti con 7.000 m² coperti e 23.000 m² di area scoperta."
+      },
+      "global": {
+        "title": "PORTATA GLOBALE",
+        "value": "Oltre 40 paesi",
+        "desc": "Un'ampia rete di export che copre tutte le 81 province della Turchia e oltre 40 paesi nel mondo."
+      },
+      "quality": {
+        "title": "STANDARD DI QUALITÀ",
+        "value": "Certificato QBB",
+        "desc": "Il primo marchio del settore a detenere il titolo \"Qualified Body Builder\"."
+      }
+    }
+  },
+  "mediaPage": {
+    "hero": {
+      "title": "CENTRO",
+      "titleHighlight": "MEDIA",
+      "description": "Notizie di settore, sviluppi tecnologici e gli ultimi aggiornamenti dal mondo Özünlü."
+    },
+    "gallery": {
+      "title": "GALLERIA",
+      "titleHighlight": "PRODOTTI",
+      "description": "Esplora i dettagli di un'ingegneria superiore e di una lavorazione impeccabile.",
+      "imageAlt": "Galleria Özünlü Damper {n}",
+      "detailAlt": "Dettaglio galleria"
+    },
+    "insights": {
+      "title": "APPROFONDIMENTI",
+      "titleHighlight": "DI SETTORE",
+      "description": "Analisi specialistiche sul settore dei veicoli commerciali pesanti, tecnologie produttive e logistica.",
+      "readMore": "Leggi di più",
+      "articles": {
+        "a1": {
+          "category": "ACADEMY",
+          "title": "Qualità dell'acciaio nella produzione di ribaltabili: Hardox e oltre",
+          "excerpt": "Come l'acciaio ad alta resistenza prolunga la vita del ribaltabile? Confronto Hardox 450 vs 500 e analisi ROI.",
+          "date": "12 gennaio 2025",
+          "readTime": "6 min di lettura"
+        },
+        "a2": {
+          "category": "SETTORE",
+          "title": "Tendenze logistica e trasporti 2026",
+          "excerpt": "Cambiamenti nelle catene di approvvigionamento globali, normative sull'efficienza del carburante e opportunità per il trasporto turco.",
+          "date": "8 gennaio 2025",
+          "readTime": "8 min di lettura"
+        },
+        "a3": {
+          "category": "SOSTENIBILITÀ",
+          "title": "Logistica verde: impatto ambientale dei ribaltabili leggeri",
+          "excerpt": "Risparmio di carburante e riduzione dell'impronta di carbonio grazie a un design del telaio più leggero. Approfondimenti R&S Özünlü.",
+          "date": "3 gennaio 2025",
+          "readTime": "5 min di lettura"
+        }
+      }
+    }
+  }
+}

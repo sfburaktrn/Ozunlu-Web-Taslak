@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 import { Ruler, PencilRuler, Cog, BadgeCheck } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { heroRichTextHandlers } from '@/i18n/richText';
+import { useTextDirection } from '@/i18n/useTextDirection';
 
 export default function AboutSection() {
     const t = useTranslations('home.about');
+    const textDir = useTextDirection();
 
     const cards = [
         { icon: Ruler, title: t('cards.arge') },
@@ -20,8 +22,8 @@ export default function AboutSection() {
             <div className="container mx-auto px-4">
                 <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-24 overflow-hidden isolate shadow-sm">
                     <div className="container mx-auto px-4 relative z-10">
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
+                        <div className="grid lg:grid-cols-2 gap-12 items-center layout-fixed">
+                            <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} dir={textDir}>
                                 <div className="inline-block mb-4">
                                     <span className="text-primary text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
                                         {t('eyebrow')}

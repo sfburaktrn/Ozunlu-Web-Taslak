@@ -6,6 +6,7 @@ import { Check } from 'lucide-react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { heroRichTextHandlers } from '@/i18n/richText';
+import { useTextDirection } from '@/i18n/useTextDirection';
 
 // Correct image paths mapped to the public/products directory
 const images = [
@@ -16,6 +17,7 @@ const images = [
 
 export default function WhyChooseUsSection() {
     const t = useTranslations('home.whyChooseUs');
+    const textDir = useTextDirection();
     const featureKeys = ['0', '1', '2', '3', '4', '5', '6'] as const;
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -78,11 +80,10 @@ export default function WhyChooseUsSection() {
                     </div>
 
                     <div className="container mx-auto px-4 relative z-10">
-                        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
+                        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center layout-fixed">
 
                             {/* Content - Features List */}
-                            {/* Mobile: Order 1 (Top), Desktop: Order 1 (Left) */}
-                            <div className="order-1 flex flex-col justify-center">
+                            <div className="order-1 flex flex-col justify-center" dir={textDir}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
@@ -122,8 +123,7 @@ export default function WhyChooseUsSection() {
                             </div>
 
                             {/* Interactive Stacked Images */}
-                            {/* Mobile: Order 2 (Bottom), Desktop: Order 2 (Right) */}
-                            <div className="order-2 relative h-[450px] lg:h-[700px] w-full flex items-center justify-center">
+                            <div className="order-2 relative h-[450px] lg:h-[700px] w-full flex items-center justify-center layout-fixed">
                                 <div
                                     className="relative w-[340px] h-[240px] lg:w-[750px] lg:h-[500px] cursor-pointer"
                                     onClick={handleNext}

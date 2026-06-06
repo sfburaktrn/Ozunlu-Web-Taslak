@@ -33,16 +33,16 @@
       "description": "أخبار Özünlü Damper والمدونة ورؤى القطاع."
     },
     "legalKvkk": {
-      "title": "Personal Data Protection | Özünlü Damper",
-      "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
+      "title": "حماية البيانات الشخصية | Özünlü Damper",
+      "description": "سياسة حماية البيانات الشخصية لـ Özünlü Damper وفق KVKK التركي."
     },
     "legalPrivacy": {
-      "title": "Privacy Notice | Özünlü Damper",
-      "description": "Clarification text on processing of personal data."
+      "title": "إشعار الخصوصية | Özünlü Damper",
+      "description": "نص توضيحي حول معالجة البيانات الشخصية."
     },
     "legalCookie": {
-      "title": "Cookie Policy | Özünlü Damper",
-      "description": "Cookie usage policy for the Özünlü Damper website."
+      "title": "سياسة ملفات تعريف الارتباط | Özünlü Damper",
+      "description": "سياسة استخدام ملفات تعريف الارتباط على موقع Özünlü Damper."
     }
   },
   "common": {
@@ -82,7 +82,7 @@
       "modellerimiz": "طرازاتنا",
       "oneCikanlar": "أبرز المميزات",
       "ozunluWatermark": "ÖZÜNLÜ",
-      "logoAlt": "Özünlü Damper",
+      "logoAlt": "شعار Özünlü Damper",
       "hardoxAlt": "شعار Hardox In My Body فولاذ معتمد مقاوم للتآكل"
     }
   },
@@ -140,23 +140,23 @@
         "5": "تصميم هيكلي يحافظ على قيمة إعادة البيع العالية",
         "6": "تصدير إلى أكثر من 50 دولة — جودة مثبتة على مستوى عالمي"
       },
-      "cardLabel": "Özünlü Guarantee"
+      "cardLabel": "ضمان Özünlü"
     },
     "mapPreview": {
       "eyebrow": "خريطة الخدمة",
       "title": "شبكة ",
       "titleHighlight": "خدمة معتمدة على مستوى تركيا",
       "description": "أينما كانت مركبتكم، Özünlü بجانبكم. 87 نقطة خدمة معتمدة في 50 محافظة تضمن استمرارية تشغيل أسطولكم بقطع غيار أصلية وفنيين معتمدين.",
-      "citiesLabel": "Cities with service",
-      "pointsLabel": "Total service points",
-      "topCities": "Featured cities",
-      "serviceCount": "{count} service points",
+      "citiesLabel": "مدن بها خدمة",
+      "pointsLabel": "إجمالي نقاط الخدمة",
+      "topCities": "مدن مميزة",
+      "serviceCount": "{count} نقطة خدمة",
       "tapHint": "Tap the map",
-      "mapInstruction": "Select a city to view service details.",
-      "modalEyebrow": "Service details",
-      "plateCode": "Plate code: {code}",
-      "closeAria": "Close",
-      "noService": "No registered service found for this province."
+      "mapInstruction": "اختر مدينة لعرض تفاصيل الخدمة.",
+      "modalEyebrow": "تفاصيل الخدمة",
+      "plateCode": "رمز اللوحة: {code}",
+      "closeAria": "إغلاق",
+      "noService": "لا توجد خدمة مسجلة في هذه المحافظة."
     },
     "partners": {
       "title": "الخيار المفضل لدى العلامات الرائدة في القطاع",
@@ -168,33 +168,33 @@
       "title": "حلول",
       "titleHighlight": "الهياكل العلوية",
       "subtitle": "حلول هياكل علوية بجودة <strong>فولاذ</strong> <hardox></hardox> لكل احتياج",
-      "viewDetails": "View Details",
+      "viewDetails": "عرض التفاصيل",
       "items": {
         "damper": {
-          "title": "TIPPER",
-          "description": "<hardox></hardox> steel body, hydraulic system, 20-40m³ capacity",
+          "title": "قلاب",
+          "description": "هيكل <strong>فولاذ</strong> <hardox></hardox>، <strong>نظام هيدروليكي</strong>، سعة 20-40 م³",
           "features": [
-            "Hardox 450 Steel",
-            "Hydraulic System",
-            "Lightweight Design"
+            "فولاذ Hardox 450",
+            "نظام هيدروليكي",
+            "تصميم خفيف"
           ]
         },
         "dorse": {
-          "title": "TRAILER",
-          "description": "High strength, long life, custom design options",
+          "title": "مقطورة",
+          "description": "قوة عالية، عمر طويل، خيارات تصميم مخصصة",
           "features": [
-            "Custom Design",
-            "High Durability",
-            "Easy Maintenance"
+            "تصميم مخصص",
+            "متانة عالية",
+            "صيانة سهلة"
           ]
         },
         "kar": {
-          "title": "SNOW PLOW",
-          "description": "Custom tipper solutions for customer needs",
+          "title": "كاسحة ثلج",
+          "description": "حلول <strong>قلاب</strong> مخصصة حسب احتياجات العملاء",
           "features": [
-            "Custom Built",
-            "R&D Support",
-            "Fast Production"
+            "تصنيع مخصص",
+            "دعم البحث والتطوير",
+            "إنتاج سريع"
           ]
         }
       }
@@ -203,9 +203,9 @@
       "slogan": "اختيار الأفضل"
     },
     "stats": {
-      "exportCountries": "Export Countries",
-      "steelProcessing": "Annual Steel Processing (Tons)",
-      "experience": "Years of Experience"
+      "exportCountries": "دول التصدير",
+      "steelProcessing": "معالجة فولاذ سنوية (طن)",
+      "experience": "سنوات الخبرة"
     }
   },
   "damper": {
@@ -236,89 +236,89 @@
     },
     "items": {
       "d24": {
-        "name": "ÖZ-D24 Tipper",
-        "description": "Engineering-focused design for harsh construction conditions. <hardox></hardox> body option, reinforced chassis and fast unloading.",
+        "name": "ÖZ-D24 قلاب",
+        "description": "تصميم هندسي للظروف الإنشائية القاسية. خيار هيكل <hardox></hardox>، شاسيه معزز وتفريغ سريع.",
         "features": [
-          "Hardox Body Option",
-          "High Tipping Stability",
-          "Fast Unloading",
-          "Reinforced Chassis",
-          "Easy Maintenance"
+          "خيار هيكل Hardox",
+          "استقرار عالٍ عند التفريغ",
+          "تفريغ سريع",
+          "شاسيه معزز",
+          "صيانة سهلة"
         ],
         "details": {
           "hardox": {
-            "title": "Hardox® Body",
-            "content": "Long life and low maintenance in wear and impact resistance."
+            "title": "هيكل Hardox®",
+            "content": "عمر طويل وصيانة منخفضة في مقاومة التآكل والصدمات."
           },
           "sasi": {
-            "title": "Chassis",
-            "content": "Reinforced chassis for heavy-duty use."
+            "title": "الشاسيه",
+            "content": "شاسيه معزز للاستخدام الشاق."
           },
           "bosaltim": {
-            "title": "Unloading",
-            "content": "Fast and controlled unloading with optimized hydraulics."
+            "title": "التفريغ",
+            "content": "تفريغ سريع ومُتحكم به بنظام هيدروليكي محسّن."
           },
           "verimlilik": {
-            "title": "Efficiency",
-            "content": "Engineering details that boost operational continuity."
+            "title": "الكفاءة",
+            "content": "تفاصيل هندسية تعزز استمرارية التشغيل."
           }
         }
       },
       "d30": {
-        "name": "ÖZ-D30 Tipper",
-        "description": "The strongest body-chassis combination for high-tonnage loads.",
+        "name": "ÖZ-D30 قلاب",
+        "description": "أقوى تركيبة هيكل-شاسيه للأحمال عالية الوزن.",
         "features": [
-          "Heavy Duty Use",
-          "Optimized Volume",
-          "Durable Side Walls",
-          "Service Ease",
-          "Optional Equipment"
+          "استخدام شاق",
+          "حجم محسّن",
+          "جدران جانبية متينة",
+          "سهولة الصيانة",
+          "معدات اختيارية"
         ],
         "details": {
           "kapasite": {
-            "title": "Capacity",
-            "content": "Optimized volume for high-tonnage operations."
+            "title": "السعة",
+            "content": "حجم محسّن للعمليات عالية الوزن."
           },
           "dayanim": {
-            "title": "Durability",
-            "content": "Impact and wear resistant structure."
+            "title": "المتانة",
+            "content": "هيكل مقاوم للصدمات والتآكل."
           },
           "donanim": {
-            "title": "Equipment",
-            "content": "Tarpaulin, cover, lighting and other options."
+            "title": "المعدات",
+            "content": "مظلة، غطاء، إضاءة وخيارات أخرى."
           },
           "uyumluluk": {
-            "title": "Compatibility",
-            "content": "Mounting alternatives for different chassis needs."
+            "title": "التوافق",
+            "content": "بدائل تركيب لمختلف احتياجات الشاسيه."
           }
         }
       },
       "d21": {
-        "name": "ÖZ-D21 Tipper",
-        "description": "Balanced weight and economical operation for compact scenarios.",
+        "name": "ÖZ-D21 قلاب",
+        "description": "وزن متوازن وتشغيل اقتصادي للمواقع المحدودة.",
         "features": [
-          "Compact Design",
-          "Economical Operation",
-          "Balanced Weight",
-          "Easy Maneuver",
-          "Long Life"
+          "تصميم مدمج",
+          "تشغيل اقتصادي",
+          "وزن متوازن",
+          "مناورة سهلة",
+          "عمر طويل"
         ],
         "details": {
           "kullanim": {
-            "title": "Usage",
-            "content": "Agile operation in compact sites."
+            "title": "الاستخدام",
+            "content": "تشغيل مرن في المواقع المحدودة."
           },
           "agirlik": {
-            "title": "Weight",
-            "content": "Maximum capacity within legal limits."
+            "title": "الوزن",
+            "content": "أقصى سعة ضمن الحدود القانونية."
           },
           "maliyet": {
-            "title": "Cost",
-            "content": "Economical operation and easy maintenance."
+            "title": "التكلفة",
+            "content": "تشغيل اقتصادي وصيانة سهلة."
           },
           "performans": {
-            "title": "Performance",
-            "content": "Stable performance in daily intensive use."
+            "title": "الأداء",
+            "content": "أداء مستقر في الاستخدام اليومي المكثف."
           }
         }
       }
@@ -352,36 +352,36 @@
     },
     "items": {
       "g22": {
-        "name": "ÖZ-G22 Semi-Trailer",
-        "description": "22m³ volume with Hardox 450 body and BPW axle for long-distance heavy transport.",
+        "name": "ÖZ-G22 نصف مقطورة",
+        "description": "حجم 22 م³ مع هيكل Hardox 450 ومحور BPW للنقل الثقيل لمسافات طويلة.",
         "features": [
-          "22m³ Volume",
-          "Hardox 450 Body",
-          "5/6mm Plate",
-          "BPW Axle (Foreign)",
-          "Folding Bumper"
+          "حجم 22 م³",
+          "هيكل Hardox 450",
+          "صفائح 5/6 مم",
+          "محور BPW (أجنبي)",
+          "مصد قابل للطي"
         ]
       },
       "l500": {
-        "name": "ÖZ-L500 Semi-Trailer",
-        "description": "Hardox 500 chassis and hydraulic ramp for high-performance operations.",
+        "name": "ÖZ-L500 نصف مقطورة",
+        "description": "شاسيه Hardox 500 ومنحدر هيدروليكي للعمليات عالية الأداء.",
         "features": [
-          "Özkoç Axle (Domestic)",
-          "Hardox 500 Chassis",
-          "Fixed Bumper",
-          "Hydraulic Ramp",
-          "Extendable Sides"
+          "محور Özkoç (محلي)",
+          "شاسيه Hardox 500",
+          "مصد ثابت",
+          "منحدر هيدروليكي",
+          "جوانب قابلة للتمديد"
         ]
       },
       "m21": {
-        "name": "ÖZ-M21 Semi-Trailer",
-        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "name": "ÖZ-M21 نصف مقطورة",
+        "description": "حجم 21 م³ مع هيكل خفيف ونظام مظلة أوتوماتيك.",
         "features": [
-          "21m³ Volume",
-          "Özkoç Axle",
-          "3/4mm Plate (Light)",
-          "Automatic Tarpaulin",
-          "Sleeve Cover"
+          "حجم 21 م³",
+          "محور Özkoç",
+          "صفائح 3/4 مم (خفيف)",
+          "مظلة أوتوماتيك",
+          "غطاء كم"
         ]
       }
     }
@@ -398,28 +398,28 @@
       "title": "مجموعات المنتجات",
       "subtitle": "معدات أصلية معتمدة، مخزون واسع وميزة التوصيل السريع في مكان واحد.",
       "hidrolik": {
-        "title": "Hydraulic Systems",
-        "desc": "High-pressure pumps, cylinders and valve systems for tough field conditions."
+        "title": "أنظمة هيدروليكية",
+        "desc": "مضخات وأسطوانات وصمامات عالية الضغط للظروف الميدانية القاسية."
       },
       "dingil": {
-        "title": "Axle & Suspension",
-        "desc": "Premium axle and suspension systems including BPW and Özkoç."
+        "title": "المحاور والتعليق",
+        "desc": "أنظمة محاور وتعليق متميزة تشمل BPW وÖzkoç."
       },
       "fren": {
-        "title": "Brake Systems",
-        "desc": "EBS and ABS compatible brake kits meeting European safety standards."
+        "title": "أنظمة الفرامل",
+        "desc": "مجموعات فرامل متوافقة مع EBS وABS وفق معايير السلامة الأوروبية."
       },
       "elektrik": {
-        "title": "Electrical & Lighting",
-        "desc": "High-visibility LED lighting systems. ECE R48 compliant."
+        "title": "الكهرباء والإضاءة",
+        "desc": "أنظمة إضاءة LED عالية الوضوح. متوافقة مع ECE R48."
       },
       "aksesuar": {
-        "title": "Trailer Accessories",
-        "desc": "Tool boxes, fuel tanks, landing legs and custom accessories."
+        "title": "ملحقات المقطورات",
+        "desc": "صناديق أدوات، خزانات وقود، رجول هبوط وملحقات مخصصة."
       },
       "yedekParca": {
-        "title": "Spare Parts",
-        "desc": "Original guaranteed spare parts with same-day shipping option."
+        "title": "قطع الغيار",
+        "desc": "قطع غيار أصلية مضمونة مع خيار شحن في نفس اليوم."
       }
     },
     "cta": {
@@ -432,24 +432,24 @@
       "titleLine2": "أقصى أداء",
       "description": "أداء المركبة يرتبط مباشرة بجودة المعدات. في Özünlü، نوصل فوراً منتجات أصلية معتمدة من علامات مثبتة عالمياً من مخزوننا الواسع.",
       "bullets": {
-        "0": "Original certified product guarantee",
-        "1": "Wide brand and model compatibility",
-        "2": "Competitive pricing and flexible payment",
-        "3": "Expert technical consulting support"
+        "0": "ضمان منتج أصلي معتمد",
+        "1": "توافق واسع مع العلامات والطرازات",
+        "2": "أسعار تنافسية ودفع مرن",
+        "3": "دعم استشاري فني متخصص"
       }
     },
     "stats": {
       "original": {
         "value": "100%",
-        "label": "Original Product Guarantee"
+        "label": "ضمان المنتج الأصلي"
       },
       "delivery": {
-        "value": "Fast",
-        "label": "Stock Delivery"
+        "value": "سريع",
+        "label": "توصيل من المخزون"
       },
       "support": {
-        "value": "Support",
-        "label": "Pre & After Sales"
+        "value": "دعم",
+        "label": "قبل وبعد البيع"
       }
     }
   },
@@ -466,20 +466,20 @@
       "title": "خدماتنا",
       "subtitle": "حلول احترافية تحافظ على قيمة مركبتكم وتعزز كفاءتكم التشغيلية.",
       "servisAgi": {
-        "title": "Authorized Service Network",
-        "description": "87 authorized service points in 50 provinces across Turkey with certified technicians."
+        "title": "شبكة خدمة معتمدة",
+        "description": "87 نقطة خدمة معتمدة في 50 محافظة في تركيا مع فنيين معتمدين."
       },
       "yedekParca": {
-        "title": "Original Spare Parts",
-        "description": "100% original Özünlü parts for minimum vehicle downtime."
+        "title": "قطع غيار أصلية",
+        "description": "قطع غيار Özünlü أصلية 100% لأقل وقت توقف للمركبة."
       },
       "garanti": {
-        "title": "Warranty Coverage",
-        "description": "All products covered by comprehensive manufacturer warranty."
+        "title": "تغطية الضمان",
+        "description": "جميع المنتجات مشمولة بضمان شامل من المصنع."
       },
       "teknikDestek": {
-        "title": "24/7 Technical Support",
-        "description": "Expert support team available day and night."
+        "title": "دعم فني 24/7",
+        "description": "فريق دعم خبراء متاح ليلاً ونهاراً."
       }
     },
     "documents": {
@@ -491,20 +491,20 @@
       "download": "تنزيل",
       "noResults": "لم يتم العثور على وثائق تطابق معايير البحث.",
       "damperManual": {
-        "title": "Tipper User Manual",
-        "desc": "Basic usage and safety instructions for tipper products."
+        "title": "دليل مستخدم القلاب",
+        "desc": "تعليمات الاستخدام والسلامة الأساسية لمنتجات القلاب."
       },
       "dorseManual": {
-        "title": "Trailer User Manual",
-        "desc": "Standard user manual for semi-trailer products."
+        "title": "دليل مستخدم المقطورة",
+        "desc": "دليل المستخدم القياسي لمنتجات نصف المقطورة."
       },
       "generalManual": {
-        "title": "General Product & Maintenance Handbook (TR/EN)",
-        "desc": "Comprehensive maintenance and technical details for all trailer models."
+        "title": "دليل المنتج والصيانة العام (TR/EN)",
+        "desc": "تفاصيل صيانة وفنية شاملة لجميع طرازات المقطورات."
       },
       "damperSpec": {
-        "title": "Tipper Technical Specification (TR/EN)",
-        "desc": "Special technical specifications for tipper vehicles."
+        "title": "المواصفات الفنية للقلاب (TR/EN)",
+        "desc": "مواصفات فنية خاصة لمركبات القلاب."
       }
     },
     "map": {
@@ -518,7 +518,7 @@
       "subtitle": "تواصلوا معنا لأسئلتكم ومشاريعكم.",
       "headOffice": "المكتب الرئيسي",
       "submit": "إرسال",
-      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / Istanbul",
+      "address": "Yayla, Habibler Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul",
       "hours": "ساعات العمل",
       "hoursValue": "أيام الأسبوع والسبت: 09:00 - 18:30",
       "name": "الاسم الكامل",
@@ -587,7 +587,7 @@
       "phone": "الهاتف",
       "phonePh": "05XX...",
       "email": "البريد الإلكتروني",
-      "emailPh": "mail@company.com",
+      "emailPh": "posta@sirket.com",
       "heardFrom": "كيف سمعت عنا؟",
       "heardFromPh": "Google، وسائل التواصل، إحالة..."
     }

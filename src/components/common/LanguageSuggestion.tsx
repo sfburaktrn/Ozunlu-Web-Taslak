@@ -16,6 +16,7 @@ const browserLangMap: Record<string, Locale> = {
     ar: 'ar',
     fr: 'fr',
     es: 'es',
+    it: 'it',
     ru: 'ru',
     uk: 'uk',
 };

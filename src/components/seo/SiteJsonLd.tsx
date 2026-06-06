@@ -18,7 +18,7 @@ export default function SiteJsonLd({ locale }: Props) {
         telephone: '+90-212-595-46-46',
         contactType: 'customer service',
         areaServed: 'TR',
-        availableLanguage: ['tr', 'en', 'de', 'bg', 'ro', 'ar', 'fr', 'es', 'ru', 'uk'],
+        availableLanguage: ['tr', 'en', 'de', 'bg', 'ro', 'ar', 'fr', 'es', 'it', 'ru', 'uk'],
     };
     if (contactEmail) {
         contactPoint.email = contactEmail;

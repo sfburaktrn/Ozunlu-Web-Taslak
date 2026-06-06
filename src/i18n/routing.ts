@@ -1,7 +1,7 @@
 import { defineRouting } from 'next-intl/routing';
 import { localizedPathnames } from './pathnames';
 
-export const locales = ['tr', 'en', 'de', 'bg', 'ro', 'ar', 'fr', 'es', 'ru', 'uk'] as const;
+export const locales = ['tr', 'en', 'de', 'bg', 'ro', 'ar', 'fr', 'es', 'it', 'ru', 'uk'] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = 'tr';
@@ -15,6 +15,7 @@ export const localeLabels: Record<Locale, string> = {
     ar: 'AR',
     fr: 'FR',
     es: 'ES',
+    it: 'IT',
     ru: 'RU',
     uk: 'UA',
 };
@@ -28,6 +29,7 @@ export const localeNames: Record<Locale, string> = {
     ar: 'العربية',
     fr: 'Français',
     es: 'Español',
+    it: 'Italiano',
     ru: 'Русский',
     uk: 'Українська',
 };
@@ -41,6 +43,7 @@ export const localeHreflang: Record<Locale, string> = {
     ar: 'ar',
     fr: 'fr-FR',
     es: 'es-ES',
+    it: 'it-IT',
     ru: 'ru-RU',
     uk: 'uk-UA',
 };

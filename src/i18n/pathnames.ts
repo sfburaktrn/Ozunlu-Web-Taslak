@@ -26,6 +26,7 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         ar: '/',
         fr: '/',
         es: '/',
+        it: '/',
         ru: '/',
         uk: '/',
     },
@@ -35,9 +36,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/kipper',
         bg: '/damper',
         ro: '/damper',
-        ar: '/damper',
+        ar: '/قلاب',
         fr: '/benne',
         es: '/volquete',
+        it: '/ribaltabile',
         ru: '/samosval',
         uk: '/samosval',
     },
@@ -47,9 +49,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/sattelauflieger',
         bg: '/poluremork',
         ro: '/semiremorca',
-        ar: '/muqtraila-nisfiya',
+        ar: '/نصف-مقطورة',
         fr: '/semi-remorque',
         es: '/semirremolque',
+        it: '/semirimorchio',
         ru: '/polupritsep',
         uk: '/napivprichep',
     },
@@ -59,9 +62,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/zubehoer',
         bg: '/ekipirovka',
         ro: '/echipamente',
-        ar: '/malhaq',
+        ar: '/معدات-إضافية',
         fr: '/equipements',
         es: '/equipamiento',
+        it: '/equipaggiamento',
         ru: '/oborudovanie',
         uk: '/obladnannya',
     },
@@ -71,9 +75,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/kundendienst',
         bg: '/sled-prodazhbi',
         ro: '/service-post-vanzare',
-        ar: '/khdma-baada-albay',
+        ar: '/ما-بعد-البيع',
         fr: '/service-apres-vente',
         es: '/postventa',
+        it: '/post-vendita',
         ru: '/servis',
         uk: '/pislya-prodazhu',
     },
@@ -83,9 +88,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/kontakt',
         bg: '/kontakt',
         ro: '/contact',
-        ar: '/ittisal',
+        ar: '/اتصل-بنا',
         fr: '/contact',
         es: '/contacto',
+        it: '/contatti',
         ru: '/kontakty',
         uk: '/kontakty',
     },
@@ -95,9 +101,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/kvkk',
         bg: '/kvkk',
         ro: '/kvkk',
-        ar: '/kvkk',
+        ar: '/حماية-البيانات',
         fr: '/kvkk',
         es: '/kvkk',
+        it: '/kvkk',
         ru: '/kvkk',
         uk: '/kvkk',
     },
@@ -107,9 +114,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/datenschutzhinweis',
         bg: '/izvestie-za-poveritelnost',
         ro: '/notificare-confidentialitate',
-        ar: '/ishar-al-khususiya',
+        ar: '/إشعار-الخصوصية',
         fr: '/notice-confidentialite',
         es: '/aviso-privacidad',
+        it: '/informativa-privacy',
         ru: '/uvedomlenie-o-konfidencialnosti',
         uk: '/povidomlennya-pro-konfidentsiynist',
     },
@@ -119,9 +127,10 @@ export const localizedPathnames: Record<AppPathname, Record<Locale, string>> = {
         de: '/cookie-richtlinie',
         bg: '/politika-za-biskvitki',
         ro: '/politica-cookie',
-        ar: '/siyasat-al-cookies',
+        ar: '/سياسة-ملفات-تعريف-الارتباط',
         fr: '/politique-cookies',
         es: '/politica-cookies',
+        it: '/politica-cookie',
         ru: '/politika-cookie',
         uk: '/polityka-cookie',
     },
@@ -137,7 +146,14 @@ export function getLocalizedPathname(locale: Locale, pathname: AppPathname): str
 
 /** Resolve public URL path back to internal AppPathname */
 export function resolveInternalPathname(locale: Locale, segments: string[]): AppPathname | null {
-    const path = segments.length === 0 ? '/' : `/${segments.join('/')}`;
+    const decodedSegments = segments.map((segment) => {
+        try {
+            return decodeURIComponent(segment);
+        } catch {
+            return segment;
+        }
+    });
+    const path = decodedSegments.length === 0 ? '/' : `/${decodedSegments.join('/')}`;
 
     for (const key of appPathnames) {
         if (localizedPathnames[key][locale] === path) {
