@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 import { getFormRecipient, hasFormRecipient } from '@/lib/siteEmails';
-
-const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
 
 type ContactPayload = {
     type: 'contact';
@@ -22,8 +21,12 @@ type ProposalPayload = {
 
 type FormPayload = ContactPayload | ProposalPayload;
 
-function getAccessKey() {
-    return process.env.WEB3FORMS_ACCESS_KEY?.trim();
+function getResendApiKey() {
+    return process.env.RESEND_API_KEY?.trim();
+}
+
+function getFromEmail() {
+    return process.env.RESEND_FROM_EMAIL?.trim();
 }
 
 function buildProposalBody(data: ProposalPayload) {
@@ -56,9 +59,39 @@ function serviceUnavailable(message: string) {
     return NextResponse.json({ error: message }, { status: 503 });
 }
 
+async function sendNotificationEmail({
+    to,
+    subject,
+    replyTo,
+    text,
+}: {
+    to: string;
+    subject: string;
+    replyTo?: string;
+    text: string;
+}) {
+    const apiKey = getResendApiKey();
+    const from = getFromEmail();
+
+    if (!apiKey || !from) {
+        throw new Error('missing-email-config');
+    }
+
+    const resend = new Resend(apiKey);
+
+    await resend.emails.send({
+        from,
+        to,
+        subject,
+        text,
+        replyTo: replyTo ? [replyTo] : undefined,
+    });
+}
+
 export async function POST(request: Request) {
-    const accessKey = getAccessKey();
-    if (!accessKey) {
+    const apiKey = getResendApiKey();
+    const fromEmail = getFromEmail();
+    if (!apiKey || !fromEmail) {
         return serviceUnavailable('Form servisi henüz yapılandırılmadı.');
     }
 
@@ -82,14 +115,12 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Zorunlu alanları doldurun.' }, { status: 400 });
         }
 
-        const body = {
-            access_key: accessKey,
-            subject: `İletişim Formu — ${payload.name.trim()}`,
-            from_name: payload.name.trim(),
-            email: payload.email.trim(),
-            replyto: payload.email.trim(),
-            to: getFormRecipient('contact'),
-            message: [
+        try {
+            await sendNotificationEmail({
+                to: getFormRecipient('contact'),
+                subject: `İletişim Formu — ${payload.name.trim()}`,
+                replyTo: payload.email.trim(),
+                text: [
                 `Ad Soyad: ${payload.name.trim()}`,
                 `Firma: ${payload.company?.trim() || '-'}`,
                 `E-posta: ${payload.email.trim()}`,
@@ -97,17 +128,9 @@ export async function POST(request: Request) {
                 '',
                 'Mesaj:',
                 payload.message.trim(),
-            ].join('\n'),
-        };
-
-        const res = await fetch(WEB3FORMS_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-            body: JSON.stringify(body),
-        });
-
-        const result = await res.json();
-        if (!res.ok || !result.success) {
+                ].join('\n'),
+            });
+        } catch {
             return NextResponse.json({ error: 'E-posta gönderilemedi.' }, { status: 502 });
         }
 
@@ -131,24 +154,14 @@ export async function POST(request: Request) {
 
         const productLabel = productType === 'damper' ? 'Damper' : 'Dorse';
 
-        const body = {
-            access_key: accessKey,
-            subject: `${productLabel} Teklif Formu — ${payload.contactPerson.trim()}`,
-            from_name: payload.contactPerson.trim(),
-            email: payload.email.trim(),
-            replyto: payload.email.trim(),
-            to: getFormRecipient(productType),
-            message: buildProposalBody({ ...payload, productType }),
-        };
-
-        const res = await fetch(WEB3FORMS_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-            body: JSON.stringify(body),
-        });
-
-        const result = await res.json();
-        if (!res.ok || !result.success) {
+        try {
+            await sendNotificationEmail({
+                to: getFormRecipient(productType),
+                subject: `${productLabel} Teklif Formu — ${payload.contactPerson.trim()}`,
+                replyTo: payload.email.trim(),
+                text: buildProposalBody({ ...payload, productType }),
+            });
+        } catch {
             return NextResponse.json({ error: 'E-posta gönderilemedi.' }, { status: 502 });
         }
 

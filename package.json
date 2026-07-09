@@ -17,6 +17,7 @@
         "next-intl": "^4.13.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "resend": "^6.17.2",
         "turkey-map-react": "^2.0.3"
     },
     "devDependencies": {
