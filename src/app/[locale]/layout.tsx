@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Navbar from '@/components/Navbar';
 
 const SmoothScroll = dynamic(() => import('@/components/common/SmoothScroll'), { ssr: false });
+const ScrollToTop = dynamic(() => import('@/components/common/ScrollToTop'), { ssr: false });
 import Footer from '@/components/Footer';
 import LocaleAttributes from '@/components/common/LocaleAttributes';
 import LanguageSuggestion from '@/components/common/LanguageSuggestion';
@@ -41,6 +42,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             {children}
             <LanguageSuggestion />
             <Footer />
+            <ScrollToTop />
         </NextIntlClientProvider>
     );
 }

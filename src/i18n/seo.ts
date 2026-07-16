@@ -162,7 +162,7 @@ export function buildPageMetadata({
             type: 'website',
             images: [
                 {
-                    url: `${siteUrl}/damper-hero.webp`,
+                    url: `${siteUrl}/images/ozunlu-turuncu-hardox-damper-kamyon.webp`,
                     width: 1920,
                     height: 1080,
                     alt: 'Özünlü Damper',
@@ -173,7 +173,7 @@ export function buildPageMetadata({
             card: 'summary_large_image',
             title,
             description,
-            images: [`${siteUrl}/damper-hero.webp`],
+            images: [`${siteUrl}/images/ozunlu-turuncu-hardox-damper-kamyon.webp`],
         },
         category: 'business',
     };

@@ -51,29 +51,30 @@ export default function HeroSection() {
                         className="object-cover"
                     />
                 )}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30" />
             </div>
 
             <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
                 <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }}>
-                    <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter leading-tight uppercase relative z-10">
+                    <h1 className="typo-h1-on-dark mb-6 uppercase drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)]">
                         {t('titleLine1')} <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500">
-                            {t('titleLine2')}
-                        </span>
+                        <span className="text-white">{t('titleLine2')}</span>
                     </h1>
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="mt-6 max-w-2xl">
-                    <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">{t.rich('subtitle', defaultRichTextHandlers)}</p>
+                    <p className="typo-body-on-dark drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+                        {t.rich('subtitle', defaultRichTextHandlers)}
+                    </p>
                 </motion.div>
 
                 <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 1 }} className="flex flex-col sm:flex-row gap-4 mt-10 md:mt-12">
-                    <Link href={{ pathname: '/damper', hash: 'teklif-formu' }} className="group relative px-8 py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[#002349] font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:border-white/40 shadow-lg shadow-black/10">
+                    <Link href={{ pathname: '/damper', hash: 'teklif-formu' }} className="group relative px-8 py-4 rounded-full bg-white/20 backdrop-blur-2xl border border-white/50 text-primary font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/35 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
                         <span className="relative z-10 flex items-center gap-3">
                             {t('ctaDamper')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
                         </span>
                     </Link>
-                    <Link href={{ pathname: '/yari-romork', hash: 'teklif-formu' }} className="group relative px-8 py-4 bg-white/10 backdrop-blur-md rounded-full border border-white/20 text-[#002349] font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/20 hover:scale-105 hover:border-white/40 shadow-lg shadow-black/10">
+                    <Link href={{ pathname: '/yari-romork', hash: 'teklif-formu' }} className="group relative px-8 py-4 rounded-full bg-white/20 backdrop-blur-2xl border border-white/50 text-primary font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/35 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
                         <span className="relative z-10 flex items-center gap-3">
                             {t('ctaYariRomork')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
                         </span>

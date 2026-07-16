@@ -16,32 +16,32 @@ export default function LegalDocumentView({ document }: Props) {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#000552]/60 mb-4">
+                    <p className="typo-eyebrow text-[#000552]/60 mb-4">
                         {document.lastUpdated}
                     </p>
-                    <h1 className="text-3xl md:text-4xl font-black text-black mb-6 leading-tight">
+                    <h1 className="typo-h2 mb-6">
                         {document.title}
                     </h1>
-                    <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-10 border-s-4 border-[#000552] ps-5">
+                    <p className="typo-body mb-10 border-s-4 border-[#000552] ps-5 text-gray-700">
                         {document.intro}
                     </p>
 
                     <div className="space-y-10">
                         {document.sections.map((section) => (
                             <section key={section.title}>
-                                <h2 className="text-lg md:text-xl font-bold text-[#000552] mb-4">
+                                <h2 className="typo-h3 text-primary mb-4">
                                     {section.title}
                                 </h2>
                                 {section.paragraphs?.map((p) => (
                                     <p
                                         key={p.slice(0, 40)}
-                                        className="text-gray-700 text-sm md:text-base leading-relaxed mb-3"
+                                        className="typo-body-sm text-gray-700 mb-3"
                                     >
                                         {p}
                                     </p>
                                 ))}
                                 {section.items && (
-                                    <ul className="list-disc list-outside ms-5 space-y-2 text-gray-700 text-sm md:text-base leading-relaxed">
+                                    <ul className="list-disc list-outside ms-5 space-y-2 typo-body-sm text-gray-700">
                                         {section.items.map((item) => (
                                             <li key={item.slice(0, 40)}>{item}</li>
                                         ))}

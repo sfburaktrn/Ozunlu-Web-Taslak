@@ -10,6 +10,7 @@ const manrope = Manrope({
     subsets: ['latin', 'latin-ext'],
     display: 'swap',
     variable: '--font-manrope',
+    weight: ['400', '500', '600', '700', '800'],
 });
 
 const siteUrl = getSiteUrl();

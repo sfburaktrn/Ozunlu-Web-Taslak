@@ -24,14 +24,6 @@
       "title": "Contatti | Özünlü Damper – Preventivi e assistenza",
       "description": "Contatta Özünlü Damper per vendite, post-vendita, export e risorse umane. Sede centrale: Sultangazi, Istanbul."
     },
-    "corporate": {
-      "title": "Azienda | Özünlü Damper – Dal 1977",
-      "description": "Dal 1977, Özünlü Damper è il punto di riferimento per affidabilità e qualità nel settore delle sovrastrutture per veicoli commerciali pesanti."
-    },
-    "media": {
-      "title": "Media | Özünlü Damper",
-      "description": "Notizie, blog e approfondimenti di settore di Özünlü Damper."
-    },
     "legalKvkk": {
       "title": "Protezione dei dati personali | Özünlü Damper",
       "description": "Politica di protezione dei dati personali di Özünlü Damper ai sensi del KVKK turco."
@@ -77,7 +69,8 @@
       "detayliIncele": "Vedi dettagli",
       "tumUrunler": "TUTTI I PRODOTTI",
       "kesfet": "Esplora",
-      "kaydir": "Scorri"
+      "kaydir": "Scorri",
+      "scrollToTop": "Torna su"
     },
     "labels": {
       "modellerimiz": "I nostri modelli",
@@ -164,42 +157,6 @@
       "description": "Le nostre soluzioni di <strong>sovrastruttura</strong> per <strong>veicoli commerciali pesanti</strong> funzionano in modo affidabile sulle rotte più difficili in edilizia, minerario e trasporto a lunga distanza.",
       "footer": "Fornitore di sovrastrutture omologato"
     },
-    "products": {
-      "eyebrow": "I nostri prodotti",
-      "title": "SOVRASTRUTTURE",
-      "titleHighlight": "SOLUZIONI",
-      "subtitle": "Soluzioni di <strong>sovrastruttura</strong> in qualità <strong>acciaio</strong> <hardox></hardox> per ogni esigenza",
-      "viewDetails": "Vedi dettagli",
-      "items": {
-        "damper": {
-          "title": "RIBALTABILE",
-          "description": "Cassone in <strong>acciaio</strong> <hardox></hardox>, <strong>sistema idraulico</strong>, capacità 20-40 m³",
-          "features": [
-            "Acciaio Hardox 450",
-            "Sistema idraulico",
-            "Design leggero"
-          ]
-        },
-        "dorse": {
-          "title": "RIMORCHIO",
-          "description": "Alta resistenza, lunga durata, opzioni di design su misura",
-          "features": [
-            "Design su misura",
-            "Alta durabilità",
-            "Manutenzione semplice"
-          ]
-        },
-        "kar": {
-          "title": "SPAZZANEVE",
-          "description": "Soluzioni <strong>ribaltabili</strong> su misura per le esigenze del cliente",
-          "features": [
-            "Realizzazione su misura",
-            "Supporto R&S",
-            "Produzione rapida"
-          ]
-        }
-      }
-    },
     "gallery": {
       "slogan": "La scelta dei migliori"
     },
@@ -217,7 +174,7 @@
       "description": "La risposta ingegneristica per cantieri difficili. Cassone <hardox></hardox>, elevata stabilità di ribaltamento e capacità di carico ottimizzata — prestazioni superiori in ogni condizione."
     },
     "products": {
-      "title": "Soluzioni ribaltabili pronte",
+      "title": "Soluzioni ribaltabili",
       "subtitle": "Abbiamo preparato per te le configurazioni più richieste. Esplora o richiedi un preventivo ora."
     },
     "features": {
@@ -333,7 +290,7 @@
       "description": "Alleggerisci i trasporti pesanti con l'<strong>ingegneria</strong>. Struttura in <strong>acciaio</strong> <hardox></hardox>, tecnologia frenante avanzata e distribuzione del carico ottimizzata — prestazioni e sicurezza superiori su ogni percorso."
     },
     "products": {
-      "title": "Soluzioni semirimorchio pronte",
+      "title": "Soluzioni semirimorchio",
       "subtitle": "Abbiamo preparato le configurazioni più richieste del settore. Richiedi un preventivo o progetta il tuo veicolo."
     },
     "features": {
@@ -354,7 +311,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semirimorchio",
-        "description": "Volume 22 m³ con cassone Hardox 450 e assale BPW per trasporti pesanti a lunga distanza.",
+        "description": "Volume 22 m³ con cassone <hardox></hardox> 450 e assale BPW per trasporti pesanti a lunga distanza.",
         "features": [
           "Volume 22 m³",
           "Cassone Hardox 450",
@@ -365,7 +322,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semirimorchio",
-        "description": "Telaio Hardox 500 e rampa idraulica per operazioni ad alte prestazioni.",
+        "description": "Telaio <hardox></hardox> 500 e rampa idraulica per operazioni ad alte prestazioni.",
         "features": [
           "Assale Özkoç (nazionale)",
           "Telaio Hardox 500",
@@ -464,7 +421,7 @@
       "description": "La vera partnership inizia dopo l'acquisto. Proteggiamo la continuità operativa del tuo veicolo con 87 punti di <strong>assistenza autorizzata</strong> a livello nazionale, supporto tecnico 24/7 e garanzia su ricambi originali."
     },
     "services": {
-      "title": "I NOSTRI SERVIZI",
+      "title": "I Nostri Servizi",
       "subtitle": "Soluzioni professionali che proteggono il valore del veicolo e aumentano l'efficienza operativa.",
       "servisAgi": {
         "title": "Rete di assistenza autorizzata",
@@ -485,11 +442,11 @@
     },
     "documents": {
       "eyebrow": "Knowledge base",
-      "title": "DOCUMENTI",
-      "titleHighlight": "TECNICI",
+      "title": "Documenti",
+      "titleHighlight": "Tecnici",
       "description": "Manuali utente, procedure di manutenzione e specifiche tecniche preparati per la massima efficienza del prodotto — disponibili in turco e inglese.",
       "searchPlaceholder": "Cerca documenti...",
-      "download": "SCARICA",
+      "download": "Scarica",
       "noResults": "Nessun documento trovato corrispondente ai tuoi criteri.",
       "damperManual": {
         "title": "Manuale utente ribaltabile",
@@ -596,140 +553,6 @@
       "emailPh": "mail@azienda.com",
       "heardFrom": "Come ci hai conosciuto?",
       "heardFromPh": "Google, Social Media, Passaparola..."
-    }
-  },
-  "corporate": {
-    "hero": {
-      "badge": "Dal 1977",
-      "titleLine1": "VELOCITÀ E FIDUCIA",
-      "titleLine2": "LA NOSTRA FIRMA",
-      "description": "Con quasi mezzo secolo di esperienza, definiamo gli standard nel settore delle carrozzerie per <strong>veicoli commerciali pesanti</strong> e costruiamo il futuro su basi solide."
-    },
-    "values": {
-      "trust": {
-        "title": "FIDUCIA",
-        "desc": "Da oltre 45 anni sosteniamo ogni promessa fatta a clienti, partner e dipendenti."
-      },
-      "quality": {
-        "title": "QUALITÀ",
-        "desc": "Dall'<strong>acciaio</strong> <hardox></hardox> alla più fine lavorazione, perseguiamo l'eccellenza in ogni fase della <strong>produzione</strong>."
-      },
-      "innovation": {
-        "title": "INNOVAZIONE",
-        "desc": "Analizziamo le esigenze del settore e portiamo le tecnologie di domani ad oggi attraverso la R&S."
-      },
-      "speed": {
-        "title": "VELOCITÀ",
-        "desc": "Con processi di <strong>produzione</strong> ottimizzati, consegniamo rapidamente senza compromettere la qualità — accelerando il tuo business."
-      }
-    },
-    "philosophy": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "NON SOLO ACCIAIO,",
-      "titleLine2": "FORGIAMO FIDUCIA.",
-      "p1": "<strong>Dal 1977,</strong> ciò che esce dalla nostra linea di produzione non è solo un ribaltabile — è mezzo secolo di esperienza, passione ingegneristica e innovazione resi tangibili. Per noi, la qualità non è un controllo; è la nostra cultura produttiva.",
-      "p2": "Testati su terreni difficili e sotto carichi pesanti, i nostri prodotti sono progettati fino al minimo dettaglio per <durability>durabilità</durability> e <performance>prestazioni</performance>. Combiniamo la forza dell'acciaio <hardox></hardox> con l'ingegno ingegneristico turco per definire standard di riferimento nel settore.",
-      "quote": "In ogni saldatura, ogni assemblaggio e ogni consegna abbiamo un unico obiettivo: aggiungere forza al successo dei nostri partner."
-    },
-    "leader": {
-      "eyebrow": "Messaggio del leader",
-      "quote": "In Özünlü non produciamo solo prodotti — costruiamo fiducia. Ogni ribaltabile e ogni rimorchio riflettono mezzo secolo di esperienza e passione ingegneristica.",
-      "name": "UFUK ÖZÜNLÜ",
-      "role": "Presidente del Consiglio di Amministrazione",
-      "bio": "Fondata nel 1977, Özünlü Damper è oggi un produttore leader con export in oltre 40 paesi, producendo secondo standard mondiali come Qualified Body Builder.",
-      "imageAlt": "Ufuk Özünlü"
-    },
-    "timeline": {
-      "title": "OLTRE",
-      "titleHighlight": "IL TEMPO",
-      "m1977": {
-        "title": "Gettare le fondamenta",
-        "desc": "Un percorso produttivo iniziato in un laboratorio di 30 m² a Istanbul Okmeydanı con grandi sogni."
-      },
-      "m1985": {
-        "title": "Prima espansione",
-        "desc": "Trasferimento degli impianti produttivi a Istanbul Habipler, dove si trovano ancora oggi."
-      },
-      "m1991": {
-        "title": "Investire nel futuro",
-        "desc": "Acquisto dell'attuale sito produttivo e primo grande investimento verso la leadership nel settore carrozzerie."
-      },
-      "m2005": {
-        "title": "Qualified Body Builder",
-        "desc": "Il primo titolo \"Qualified Body Builder\" del settore dai principali produttori mondiali di camion."
-      },
-      "m2009": {
-        "title": "Aumento capacità",
-        "desc": "Capacità produttiva raddoppiata grazie a nuovi investimenti in gestione qualità e macchinari."
-      },
-      "mToday": {
-        "title": "Potenza globale",
-        "desc": "30.000 m² di area produttiva totale in 3 stabilimenti, vendite in 81 province ed export in oltre 40 paesi."
-      },
-      "yearToday": "Oggi"
-    },
-    "facilities": {
-      "title": "POTENZA PRODUTTIVA E",
-      "titleHighlight": "IMPATTO GLOBALE",
-      "description": "Uniamo la forza dell'<strong>ingegneria</strong> locale agli standard globali, offrendo valore in tutto il mondo.",
-      "production": {
-        "title": "HUB PRODUTTIVO",
-        "value": "30.000 m²",
-        "desc": "Produzione ad alta capacità in 3 stabilimenti con 7.000 m² coperti e 23.000 m² di area scoperta."
-      },
-      "global": {
-        "title": "PORTATA GLOBALE",
-        "value": "Oltre 40 paesi",
-        "desc": "Un'ampia rete di export che copre tutte le 81 province della Turchia e oltre 40 paesi nel mondo."
-      },
-      "quality": {
-        "title": "STANDARD DI QUALITÀ",
-        "value": "Certificato QBB",
-        "desc": "Il primo marchio del settore a detenere il titolo \"Qualified Body Builder\"."
-      }
-    }
-  },
-  "mediaPage": {
-    "hero": {
-      "title": "CENTRO",
-      "titleHighlight": "MEDIA",
-      "description": "Notizie di settore, sviluppi tecnologici e gli ultimi aggiornamenti dal mondo Özünlü."
-    },
-    "gallery": {
-      "title": "GALLERIA",
-      "titleHighlight": "PRODOTTI",
-      "description": "Esplora i dettagli di un'ingegneria superiore e di una lavorazione impeccabile.",
-      "imageAlt": "Galleria Özünlü Damper {n}",
-      "detailAlt": "Dettaglio galleria"
-    },
-    "insights": {
-      "title": "APPROFONDIMENTI",
-      "titleHighlight": "DI SETTORE",
-      "description": "Analisi specialistiche sul settore dei veicoli commerciali pesanti, tecnologie produttive e logistica.",
-      "readMore": "Leggi di più",
-      "articles": {
-        "a1": {
-          "category": "ACADEMY",
-          "title": "Qualità dell'acciaio nella produzione di ribaltabili: Hardox e oltre",
-          "excerpt": "Come l'acciaio ad alta resistenza prolunga la vita del ribaltabile? Confronto Hardox 450 vs 500 e analisi ROI.",
-          "date": "12 gennaio 2025",
-          "readTime": "6 min di lettura"
-        },
-        "a2": {
-          "category": "SETTORE",
-          "title": "Tendenze logistica e trasporti 2026",
-          "excerpt": "Cambiamenti nelle catene di approvvigionamento globali, normative sull'efficienza del carburante e opportunità per il trasporto turco.",
-          "date": "8 gennaio 2025",
-          "readTime": "8 min di lettura"
-        },
-        "a3": {
-          "category": "SOSTENIBILITÀ",
-          "title": "Logistica verde: impatto ambientale dei ribaltabili leggeri",
-          "excerpt": "Risparmio di carburante e riduzione dell'impronta di carbonio grazie a un design del telaio più leggero. Approfondimenti R&S Özünlü.",
-          "date": "3 gennaio 2025",
-          "readTime": "5 min di lettura"
-        }
-      }
     }
   }
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { setLenisInstance } from '@/lib/smoothScroll';
 
 export default function SmoothScroll() {
     useEffect(() => {
@@ -21,10 +22,12 @@ export default function SmoothScroll() {
                 wheelMultiplier: 0.85,
                 autoRaf: true,
             });
+            setLenisInstance(lenis);
         });
 
         return () => {
             cancelled = true;
+            setLenisInstance(null);
             lenis?.destroy();
         };
     }, []);

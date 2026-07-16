@@ -76,7 +76,7 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h3 className="text-sm font-bold text-black mb-6 uppercase tracking-[0.12em] border-b border-primary/20 pb-2 inline-block">
+                        <h3 className="typo-eyebrow text-black mb-6 border-b border-primary/20 pb-2 inline-block">
                             {t('quickAccess')}
                         </h3>
                         <div className="space-y-3 text-sm text-black font-medium">
@@ -94,7 +94,7 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-6">
-                        <h3 className="text-sm font-bold text-black mb-6 uppercase tracking-[0.12em] border-b border-primary/20 pb-2 inline-block">
+                        <h3 className="typo-eyebrow text-black mb-6 border-b border-primary/20 pb-2 inline-block">
                             {t('contact')}
                         </h3>
                         <div className="space-y-4 text-sm text-black font-medium">

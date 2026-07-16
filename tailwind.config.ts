@@ -42,6 +42,7 @@ const config: Config = {
             },
             fontFamily: {
                 sans: [
+                    'var(--font-manrope)',
                     '-apple-system',
                     'BlinkMacSystemFont',
                     '"SF Pro Text"',
@@ -50,9 +51,6 @@ const config: Config = {
                     'Helvetica',
                     'Arial',
                     'sans-serif',
-                    '"Apple Color Emoji"',
-                    '"Segoe UI Emoji"',
-                    '"Segoe UI Symbol"',
                 ],
             },
         },

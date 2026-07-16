@@ -7,11 +7,11 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 const galleryImages = [
-    { id: 1, src: '/products/ford-sari-damper-insaat.jpg', alt: 'Ford Sarı Damper İnşaat Sahası', w: 400, h: 300, x: "-35vw", y: "-25vh", r: -15 },
-    { id: 2, src: '/products/kirmizi-havuz-damper-gece.jpg', alt: 'Kırmızı Havuz Damper Gece Çekimi', w: 400, h: 300, x: "35vw", y: "-30vh", r: 10 },
-    { id: 3, src: '/products/siyah-hardox-damper-arka.jpg', alt: 'Siyah Hardox Damper Arka Görünüm', w: 400, h: 300, x: "-38vw", y: "20vh", r: -5 },
-    { id: 4, src: '/products/ford-sari-damper-yol.jpg', alt: 'Ford Sarı Damper Yol', w: 400, h: 300, x: "38vw", y: "25vh", r: 12 },
-    { id: 5, src: '/products/gri-damper-modeli.jpg', alt: 'Gri Damper Modeli', w: 400, h: 300, x: "0vw", y: "-38vh", r: 5 },
+    { id: 1, src: '/images/ozunlu-turuncu-damper-santiye.webp', alt: 'Özünlü turuncu damper şantiye', w: 400, h: 300, x: "-35vw", y: "-25vh", r: -15 },
+    { id: 2, src: '/images/ozunlu-kirmizi-damper-gece.webp', alt: 'Özünlü kırmızı damper gece', w: 400, h: 300, x: "35vw", y: "-30vh", r: 10 },
+    { id: 3, src: '/images/ozunlu-siyah-hardox-damper-endustriyel.webp', alt: 'Özünlü siyah Hardox damper endüstriyel', w: 400, h: 300, x: "-38vw", y: "20vh", r: -5 },
+    { id: 4, src: '/images/ozunlu-sari-damper-saha.webp', alt: 'Özünlü sarı damper saha', w: 400, h: 300, x: "38vw", y: "25vh", r: 12 },
+    { id: 5, src: '/images/ozunlu-gri-damper-dag-yolu.webp', alt: 'Özünlü gri damper dağ yolu', w: 400, h: 300, x: "0vw", y: "-38vh", r: 5 },
 ];
 
 export default function GallerySection() {
@@ -41,9 +41,10 @@ export default function GallerySection() {
 
             <div ref={targetRef} className="relative h-[200vh]">
 
-                <div className="sticky top-0 h-screen w-full flex items-center justify-center p-4">
+                <div className="sticky top-0 h-screen w-full flex items-center justify-center">
 
-                    <div className="relative w-full max-w-[95%] h-[90vh] rounded-[2rem] md:rounded-[3rem] bg-black overflow-hidden shadow-2xl perspective-[1000px] flex items-center justify-center">
+                    <div className="container mx-auto px-4 w-full">
+                    <div className="relative w-full h-[90vh] rounded-3xl bg-black overflow-hidden shadow-2xl perspective-[1000px] flex items-center justify-center">
 
                         <motion.div
                             style={{ opacity: contentOpacity, scale: contentScale, filter: `blur(${contentBlur})` }}
@@ -58,7 +59,7 @@ export default function GallerySection() {
                                 />
                             </div>
 
-                            <h2 className="text-xl md:text-5xl font-bold text-white tracking-widest font-sans">
+                            <h2 className="typo-h2-on-dark">
                                 {t('slogan')}
                             </h2>
 
@@ -108,6 +109,7 @@ export default function GallerySection() {
                         })}
 
 
+                    </div>
                     </div>
                 </div>
             </div>

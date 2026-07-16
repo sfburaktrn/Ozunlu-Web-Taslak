@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, {
   useCallback,
@@ -7,8 +7,8 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { MapPin, Phone, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { MapPin, X } from "lucide-react";
 import TurkeyMap, { type CityType } from "turkey-map-react";
 
 import {
@@ -17,11 +17,6 @@ import {
 } from "@/data/serviceLocations";
 import { useTranslations } from "next-intl";
 import { defaultRichTextHandlers } from "@/i18n/richText";
-
-type SelectedCity = {
-  city: CityType;
-  location?: ServiceLocation;
-};
 
 type MapPreviewProps = {
   eyebrow?: string;
@@ -32,6 +27,16 @@ type MapPreviewProps = {
 type CityMarkerWrapperProps = {
   cityComponent: React.ReactElement;
   isServiceCity: boolean;
+  isSelected: boolean;
+  pingDelay: number;
+};
+
+const pingDelayFromName = (name: string) => {
+  let hash = 0;
+  for (let i = 0; i < name.length; i += 1) {
+    hash = (hash * 31 + name.charCodeAt(i)) % 1000;
+  }
+  return (hash % 24) / 10;
 };
 
 const normalizeCityName = (name: string) =>
@@ -39,17 +44,19 @@ const normalizeCityName = (name: string) =>
     .toLocaleLowerCase("tr-TR")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\u011f/g, "g") // ğ
-    .replace(/\u00fc/g, "u") // ü
-    .replace(/\u015f/g, "s") // ş
-    .replace(/\u0131/g, "i") // ı
-    .replace(/\u00f6/g, "o") // ö
-    .replace(/\u00e7/g, "c") // ç
+    .replace(/\u011f/g, "g")
+    .replace(/\u00fc/g, "u")
+    .replace(/\u015f/g, "s")
+    .replace(/\u0131/g, "i")
+    .replace(/\u00f6/g, "o")
+    .replace(/\u00e7/g, "c")
     .replace(/[^a-z0-9]/g, "");
 
 const CityMarkerWrapper = ({
   cityComponent,
   isServiceCity,
+  isSelected,
+  pingDelay,
 }: CityMarkerWrapperProps) => {
   const cityRef = useRef<SVGGElement>(null);
   const [center, setCenter] = useState<{ x: number; y: number } | null>(null);
@@ -69,16 +76,17 @@ const CityMarkerWrapper = ({
         <g
           pointerEvents="none"
           transform={`translate(${center.x}, ${center.y})`}
-          className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]"
+          className="service-map-marker"
+          style={{ ["--ping-delay" as string]: `${pingDelay}s` }}
         >
-          <circle r="14" className="fill-white/15 animate-ping" />
-          <path
-            d="M0 -11 C -5 -11 -9 -7 -9 -2 C -9 4 0 12 0 12 C 0 12 9 4 9 -2 C 9 -7 5 -11 0 -11 Z"
-            fill="#FFFFFF"
-            stroke="#FFFFFF"
-            strokeWidth="1"
-          />
-          <circle cx="0" cy="-4" r="3" fill="#0d0d0d" />
+          <circle r="7" className="service-map-radar" />
+          <circle r="7" className="service-map-radar service-map-radar--late" />
+          <g className="service-map-core">
+            <circle r="6.5" fill="#000552" opacity={isSelected ? 0.28 : 0.18} />
+            <circle r="4.6" fill="#FFFFFF" />
+            <circle r={isSelected ? 3.2 : 2.7} fill="#000552" />
+            <circle cx="-0.6" cy="-0.8" r="0.9" fill="#FFFFFF" opacity="0.55" />
+          </g>
         </g>
       )}
     </g>
@@ -90,20 +98,33 @@ export default function MapPreview({
   title: titleProp,
   description: descriptionProp,
 }: MapPreviewProps) {
-  const t = useTranslations('home.mapPreview');
-  const eyebrow = eyebrowProp ?? t('eyebrow');
-  const title = titleProp ?? t('title');
-  const description = descriptionProp ?? t.rich('description', defaultRichTextHandlers);
-  const [selected, setSelected] = useState<SelectedCity | null>(null);
+  const t = useTranslations("home.mapPreview");
+  const eyebrow = eyebrowProp ?? t("eyebrow");
+  const title = titleProp ?? t("title");
+  const description =
+    descriptionProp ?? t.rich("description", defaultRichTextHandlers);
+
+  const [selectedCity, setSelectedCity] = useState<{
+    name: string;
+    location: ServiceLocation | null;
+  } | null>(null);
 
   const totalProviders = useMemo(
     () => serviceLocations.reduce((sum, loc) => sum + loc.providers.length, 0),
     []
   );
 
+  const serviceByCity = useMemo(() => {
+    const map = new Map<string, ServiceLocation>();
+    for (const loc of serviceLocations) {
+      map.set(normalizeCityName(loc.city), loc);
+    }
+    return map;
+  }, []);
+
   const serviceCityNames = useMemo(
-    () => new Set(serviceLocations.map((loc) => normalizeCityName(loc.city))),
-    []
+    () => new Set(serviceByCity.keys()),
+    [serviceByCity]
   );
 
   const topLocations = useMemo(
@@ -114,24 +135,32 @@ export default function MapPreview({
     []
   );
 
+  const selectedKey = selectedCity
+    ? normalizeCityName(selectedCity.name)
+    : null;
+
   const renderCity = useCallback(
-    (cityComponent: React.ReactElement, city: CityType) => (
-      <CityMarkerWrapper
-        cityComponent={cityComponent}
-        isServiceCity={serviceCityNames.has(normalizeCityName(city.name))}
-      />
-    ),
-    [serviceCityNames]
+    (cityComponent: React.ReactElement, city: CityType) => {
+      const key = normalizeCityName(city.name);
+      return (
+        <CityMarkerWrapper
+          cityComponent={cityComponent}
+          isServiceCity={serviceCityNames.has(key)}
+          isSelected={selectedKey === key}
+          pingDelay={pingDelayFromName(city.name)}
+        />
+      );
+    },
+    [serviceCityNames, selectedKey]
   );
 
-  const handleCityClick = (city: CityType) => {
-    const match = serviceLocations.find(
-      (loc) => normalizeCityName(loc.city) === normalizeCityName(city.name)
-    );
-    setSelected({ city, location: match });
-  };
-
-  const closeModal = () => setSelected(null);
+  const handleCityClick = useCallback(
+    (city: CityType) => {
+      const location = serviceByCity.get(normalizeCityName(city.name)) ?? null;
+      setSelectedCity({ name: city.name, location });
+    },
+    [serviceByCity]
+  );
 
   return (
     <section className="bg-white py-8">
@@ -147,59 +176,59 @@ export default function MapPreview({
                   viewport={{ once: true }}
                   className="space-y-4"
                 >
-                  <p className="text-sm tracking-[0.35em] text-black font-bold uppercase">
-                    {eyebrow}
-                  </p>
-                  <h2 className="text-3xl md:text-5xl font-black text-black leading-tight">
+                  <p className="typo-eyebrow">{eyebrow}</p>
+                  <h2 className="typo-h2">
                     {titleProp ? (
                       title
                     ) : (
                       <>
-                        {t('title')}
-                        <span className="text-primary">{t('titleHighlight')}</span>
+                        {t("title")}
+                        <span className="text-primary">{t("titleHighlight")}</span>
                       </>
                     )}
                   </h2>
-                  <p className="text-black max-w-2xl font-medium">
-                    {description}
-                  </p>
+                  <p className="typo-body max-w-2xl">{description}</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
-                    <p className="text-sm text-black font-bold">{t('citiesLabel')}</p>
-                    <p className="text-3xl font-black text-black mt-1">
+                  <div className="p-4 rounded-xl border border-gray-200 bg-white shadow-sm">
+                    <p className="typo-body-sm font-medium text-gray-500">{t("citiesLabel")}</p>
+                    <p className="typo-h2 mt-1">
                       {serviceLocations.length}
                     </p>
                   </div>
-                  <div className="p-4 rounded-xl border border-gray-300 bg-white shadow-lg">
-                    <p className="text-sm text-black font-bold">{t('pointsLabel')}</p>
-                    <p className="text-3xl font-black text-black mt-1">
+                  <div className="p-4 rounded-xl border border-gray-200 bg-white shadow-sm">
+                    <p className="typo-body-sm font-medium text-gray-500">{t("pointsLabel")}</p>
+                    <p className="typo-h2 mt-1">
                       {totalProviders}
                     </p>
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <p className="text-sm text-black font-bold uppercase tracking-[0.25em]">
-                    {t('topCities')}
+                  <p className="typo-eyebrow">
+                    {t("topCities")}
                   </p>
                   <div className="flex flex-col gap-3">
                     {topLocations.map((loc) => (
-                      <div
+                      <button
                         key={loc.city}
-                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white"
+                        type="button"
+                        onClick={() =>
+                          setSelectedCity({ name: loc.city, location: loc })
+                        }
+                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white text-left hover:border-primary/30 hover:shadow-md transition-all"
                       >
                         <div className="p-2 rounded-full bg-primary/10 text-primary">
                           <MapPin size={16} />
                         </div>
                         <div>
-                          <p className="text-black font-bold">{loc.city}</p>
-                          <p className="text-gray-900 text-sm font-medium">
-                            {t('serviceCount', { count: loc.providers.length })}
+                          <p className="font-semibold text-ozunlu-950 tracking-tight">{loc.city}</p>
+                          <p className="typo-body-sm">
+                            {t("serviceCount", { count: loc.providers.length })}
                           </p>
                         </div>
-                      </div>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -211,111 +240,62 @@ export default function MapPreview({
                 viewport={{ once: true }}
                 className="bg-white border border-gray-200 rounded-2xl shadow-xl p-5"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <p className="text-xs uppercase tracking-[0.25em] text-gray-900 font-bold">
-                      {t('tapHint')}
-                    </p>
-                    <h3 className="text-black text-xl font-bold">
-                      {t('mapInstruction')}
-                    </h3>
-                  </div>
-                  <div className="p-2 rounded-full bg-gray-100 text-primary">
-                    <MapPin size={18} />
-                  </div>
-                </div>
-
-                <div className="rounded-xl border border-gray-200 bg-gray-50 p-3">
+                <div className="relative rounded-xl border border-gray-200 bg-gray-50 p-3">
+                  <p className="mb-2 text-center text-xs font-medium text-gray-500">
+                    {t("mapInstruction")}
+                  </p>
                   <TurkeyMap
                     hoverable
-                    showTooltip
-                    customStyle={{ idleColor: "#d1d5db", hoverColor: "#000552" }}
+                    showTooltip={false}
                     onClick={handleCityClick}
+                    customStyle={{ idleColor: "#d1d5db", hoverColor: "#9ca3af" }}
                     cityWrapper={renderCity}
                   />
+
+                  <AnimatePresence>
+                    {selectedCity && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                        className="absolute left-1/2 top-1/2 z-20 w-[min(100%-1.5rem,280px)] -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-gray-200 bg-white p-4 shadow-2xl"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex items-center gap-3 min-w-0">
+                            <div className="shrink-0 p-2 rounded-full bg-primary/10 text-primary">
+                              <MapPin size={18} />
+                            </div>
+                            <div className="min-w-0">
+                              <p className="typo-h3 truncate">
+                                {selectedCity.location?.city ?? selectedCity.name}
+                              </p>
+                              <p className="typo-body-sm font-medium text-gray-600 mt-0.5">
+                                {selectedCity.location
+                                  ? t("serviceCount", {
+                                      count: selectedCity.location.providers.length,
+                                    })
+                                  : t("noService")}
+                              </p>
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            aria-label={t("closeAria")}
+                            onClick={() => setSelectedCity(null)}
+                            className="shrink-0 w-8 h-8 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                          >
+                            <X size={16} />
+                          </button>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-                <p className="text-sm text-black font-medium mt-3 text-center">
-                  Bir il üzerine tıkladığınızda o şehri içeren servis kartı açılır.
-                </p>
               </motion.div>
             </div>
           </div>
         </div>
       </div>
-
-      <AnimatePresence>
-        {selected && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-4"
-            onClick={closeModal}
-          >
-            <motion.div
-              initial={{ opacity: 0, y: 20, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: 10, scale: 0.98 }}
-              className="w-full max-w-2xl bg-white rounded-2xl border border-gray-200 shadow-2xl p-6"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.25em] text-gray-800 font-bold">
-                    {t('modalEyebrow')}
-                  </p>
-                  <h3 className="text-2xl font-black text-black">
-                    {selected.location?.city ?? selected.city.name}
-                  </h3>
-                  <p className="text-black font-medium text-sm">
-                    {t('plateCode', { code: selected.city.plateNumber })}
-                  </p>
-                </div>
-                <button
-                  onClick={closeModal}
-                  className="p-2 rounded-full bg-gray-100 text-black hover:text-black hover:bg-gray-200 transition"
-                  aria-label={t('closeAria')}
-                >
-                  <X size={18} />
-                </button>
-              </div>
-
-              <div className="space-y-3 max-h-[60vh] overflow-y-auto pr-1" data-lenis-prevent>
-                {selected.location ? (
-                  selected.location.providers.map((provider, idx) => (
-                    <div
-                      key={`${provider.name}-${idx}`}
-                      className="p-4 rounded-xl border border-gray-200 bg-gray-50"
-                    >
-                      <p className="text-black font-bold">
-                        {provider.name}
-                      </p>
-                      {provider.address && (
-                        <div className="flex items-start gap-2 text-black mt-1 font-medium">
-                          <MapPin size={14} className="mt-0.5 text-primary" />
-                          <span className="text-sm">{provider.address}</span>
-                        </div>
-                      )}
-                      {provider.phones && provider.phones.length > 0 && (
-                        <div className="flex items-start gap-2 text-black mt-1 font-medium">
-                          <MapPin size={14} className="mt-0.5 text-primary" />
-                          <span className="text-sm">
-                            {provider.phones.join(" / ")}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  ))
-                ) : (
-                  <p className="text-black font-medium">
-                    {t('noService')}
-                  </p>
-                )}
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 }

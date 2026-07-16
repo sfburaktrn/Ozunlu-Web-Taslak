@@ -24,14 +24,6 @@
       "title": "Kontakt | Özünlü Damper – Angebote & Support",
       "description": "Kontaktieren Sie Özünlü für Vertrieb, Kundendienst, Export und Personal. Hauptsitz: Sultangazi, Istanbul."
     },
-    "corporate": {
-      "title": "Unternehmen | Özünlü Damper – Seit 1977",
-      "description": "Seit 1977 ist Özünlü Damper die Adresse für Vertrauen und Qualität bei Aufbauten für schwere Nutzfahrzeuge."
-    },
-    "media": {
-      "title": "Medien | Özünlü Damper",
-      "description": "Özünlü Damper Nachrichten, Blog und Brancheneinblicke."
-    },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
       "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
@@ -77,7 +69,8 @@
       "detayliIncele": "Details ansehen",
       "tumUrunler": "ALLE PRODUKTE",
       "kesfet": "Entdecken",
-      "kaydir": "Scrollen"
+      "kaydir": "Scrollen",
+      "scrollToTop": "Nach oben"
     },
     "labels": {
       "modellerimiz": "Unsere Modelle",
@@ -164,42 +157,6 @@
       "description": "Unsere Aufbauten für schwere Nutzfahrzeuge arbeiten zuverlässig auf den härtesten Strecken in Bau, Bergbau und Fernverkehr.",
       "footer": "Zugelassener Aufbau-Lieferant"
     },
-    "products": {
-      "eyebrow": "Unsere Produkte",
-      "title": "AUFBAU",
-      "titleHighlight": "LÖSUNGEN",
-      "subtitle": "Aufbaulösungen in <hardox></hardox>-Stahlqualität für jeden Bedarf",
-      "viewDetails": "View Details",
-      "items": {
-        "damper": {
-          "title": "TIPPER",
-          "description": "<hardox></hardox> steel body, hydraulic system, 20-40m³ capacity",
-          "features": [
-            "Hardox 450 Steel",
-            "Hydraulic System",
-            "Lightweight Design"
-          ]
-        },
-        "dorse": {
-          "title": "TRAILER",
-          "description": "High strength, long life, custom design options",
-          "features": [
-            "Custom Design",
-            "High Durability",
-            "Easy Maintenance"
-          ]
-        },
-        "kar": {
-          "title": "SNOW PLOW",
-          "description": "Custom tipper solutions for customer needs",
-          "features": [
-            "Custom Built",
-            "R&D Support",
-            "Fast Production"
-          ]
-        }
-      }
-    },
     "gallery": {
       "slogan": "Die Wahl der Besten"
     },
@@ -217,7 +174,7 @@
       "description": "Die Ingenieursantwort für harte Einsätze. <hardox></hardox>-Mulde, hohe Kippstabilität und optimierte Nutzlast — überlegene Leistung unter allen Bedingungen."
     },
     "products": {
-      "title": "Fertige Kipperlösungen",
+      "title": "Kipperlösungen",
       "subtitle": "Die beliebtesten Konfigurationen für Sie vorbereitet. Ansehen oder sofort Angebot anfordern."
     },
     "features": {
@@ -333,7 +290,7 @@
       "description": "Erleichtern Sie Schwerlasttransport mit Ingenieurskunst. <hardox></hardox>-Stahlstruktur, fortschrittliche Bremsentechnik und optimierte Lastverteilung — überlegene Leistung und Sicherheit auf jeder Strecke."
     },
     "products": {
-      "title": "Fertige Sattelanhänger-Lösungen",
+      "title": "Sattelanhänger-Lösungen",
       "subtitle": "Die beliebtesten Branchenkonfigurationen für Sie vorbereitet. Angebot anfordern oder eigenes Fahrzeug gestalten."
     },
     "features": {
@@ -354,7 +311,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semi-Trailer",
-        "description": "22m³ volume with Hardox 450 body and BPW axle for long-distance heavy transport.",
+        "description": "22m³ volume with <hardox></hardox> 450 body and BPW axle for long-distance heavy transport.",
         "features": [
           "22m³ Volume",
           "Hardox 450 Body",
@@ -365,7 +322,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semi-Trailer",
-        "description": "Hardox 500 chassis and hydraulic ramp for high-performance operations.",
+        "description": "<hardox></hardox> 500 chassis and hydraulic ramp for high-performance operations.",
         "features": [
           "Özkoç Axle (Domestic)",
           "Hardox 500 Chassis",
@@ -464,7 +421,7 @@
       "description": "Echte Partnerschaft beginnt nach dem Kauf. Wir schützen die Betriebskontinuität Ihres Fahrzeugs mit 87 autorisierten Servicestellen, 24/7 Support und Original-Ersatzteilen."
     },
     "services": {
-      "title": "UNSERE DIENSTLEISTUNGEN",
+      "title": "Unsere Dienstleistungen",
       "subtitle": "Professionelle Lösungen, die den Fahrzeugwert schützen und die operative Effizienz steigern.",
       "servisAgi": {
         "title": "Authorized Service Network",
@@ -485,11 +442,11 @@
     },
     "documents": {
       "eyebrow": "Wissensdatenbank",
-      "title": "TECHNISCHE",
-      "titleHighlight": "DOKUMENTE",
+      "title": "Technische",
+      "titleHighlight": "Dokumente",
       "description": "Bedienungsanleitungen, Wartungsverfahren und technische Spezifikationen für maximale Produkteffizienz — auf Türkisch und Englisch verfügbar.",
       "searchPlaceholder": "Dokumente suchen...",
-      "download": "HERUNTERLADEN",
+      "download": "Herunterladen",
       "noResults": "Keine Dokumente gefunden.",
       "damperManual": {
         "title": "Tipper User Manual",
@@ -591,140 +548,6 @@
       "emailPh": "mail@company.com",
       "heardFrom": "How did you hear about us?",
       "heardFromPh": "Google, Social Media, Referral..."
-    }
-  },
-  "corporate": {
-    "hero": {
-      "badge": "Seit 1977",
-      "titleLine1": "GESCHWINDIGKEIT UND VERTRAUEN",
-      "titleLine2": "UNSERE SIGNATUR",
-      "description": "Mit fast einem halben Jahrhundert Erfahrung setzen wir Maßstäbe im <strong>Aufbau</strong> schwerer Nutzfahrzeuge und bauen die Zukunft auf soliden Grundlagen."
-    },
-    "values": {
-      "trust": {
-        "title": "VERTRAUEN",
-        "desc": "Seit über 45 Jahren stehen wir hinter jedem Versprechen an Kunden, Partner und Mitarbeiter."
-      },
-      "quality": {
-        "title": "QUALITÄT",
-        "desc": "Von <hardox></hardox>-Stahl bis zur feinsten Handarbeit streben wir in jeder Produktionsphase nach Perfektion."
-      },
-      "innovation": {
-        "title": "INNOVATION",
-        "desc": "Wir analysieren Branchenbedürfnisse und bringen die Technologien von morgen durch F&E in die Gegenwart."
-      },
-      "speed": {
-        "title": "GESCHWINDIGKEIT",
-        "desc": "Mit optimierten Produktionsprozessen liefern wir schnell ohne Qualitätskompromisse."
-      }
-    },
-    "philosophy": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "NICHT NUR STAHL,",
-      "titleLine2": "WIR SCHAFFEN VERTRAUEN.",
-      "p1": "<strong>Seit 1977</strong> verlässt unser Band nicht nur ein Kipper — sondern ein halbes Jahrhundert Erfahrung, Ingenieursleidenschaft und Innovation.",
-      "p2": "Unter harten Bedingungen getestet, sind unsere Produkte auf <durability>Haltbarkeit</durability> und <performance>Leistung</performance> ausgelegt. <hardox></hardox>-Stahl trifft auf türkisches Ingenieurwesen.",
-      "quote": "Bei jedem Schweißnaht, jeder Montage und jeder Lieferung: dem Erfolg unserer Partner Stärke verleihen."
-    },
-    "leader": {
-      "eyebrow": "Botschaft des Vorstands",
-      "quote": "Bei Özünlü produzieren wir nicht nur — wir bauen Vertrauen.",
-      "name": "UFUK ÖZÜNLÜ",
-      "role": "Vorstandsvorsitzender",
-      "bio": "Gegründet 1977, exportiert Özünlü Damper heute in über 40 Länder als Qualified Body Builder.",
-      "imageAlt": "Ufuk Özünlü"
-    },
-    "timeline": {
-      "title": "JENSEITS",
-      "titleHighlight": "DER ZEIT",
-      "m1977": {
-        "title": "Gründung",
-        "desc": "Produktionsreise in einer 30 m²-Werkstatt in Istanbul Okmeydanı."
-      },
-      "m1985": {
-        "title": "Erstes Wachstum",
-        "desc": "Verlagerung der Produktion nach Istanbul Habipler."
-      },
-      "m1991": {
-        "title": "Zukunftsinvestition",
-        "desc": "Kauf des heutigen Werksgeländes."
-      },
-      "m2005": {
-        "title": "Qualified Body Builder",
-        "desc": "Erster QBB-Titel der Branche."
-      },
-      "m2009": {
-        "title": "Kapazitätserhöhung",
-        "desc": "Verdopplung der Produktionskapazität."
-      },
-      "mToday": {
-        "title": "Globale Stärke",
-        "desc": "30.000 m² Produktionsfläche, 81 Provinzen, Export in 40+ Länder."
-      },
-      "yearToday": "Heute"
-    },
-    "facilities": {
-      "title": "PRODUKTIONSKRAFT UND",
-      "titleHighlight": "GLOBALE WIRKUNG",
-      "description": "Lokale Ingenieurskraft trifft auf globale Standards.",
-      "production": {
-        "title": "PRODUKTIONSSTANDORT",
-        "value": "30.000 m²",
-        "desc": "3 Standorte mit 7.000 m² Hallen- und 23.000 m² Freifläche."
-      },
-      "global": {
-        "title": "GLOBALE REICHWEITE",
-        "value": "40+ Länder",
-        "desc": "Exportnetz in alle 81 Provinzen und über 40 Länder."
-      },
-      "quality": {
-        "title": "QUALITÄTSSTANDARD",
-        "value": "QBB-Zertifikat",
-        "desc": "Erste Marke mit Qualified Body Builder-Titel."
-      }
-    }
-  },
-  "mediaPage": {
-    "hero": {
-      "title": "MEDIEN",
-      "titleHighlight": "ZENTRUM",
-      "description": "Branchennews, Technologie und Updates aus der Welt von Özünlü."
-    },
-    "gallery": {
-      "title": "PRODUKT",
-      "titleHighlight": "GALERIE",
-      "description": "Details überlegener Technik und Handwerkskunst.",
-      "imageAlt": "Özünlü Galerie {n}",
-      "detailAlt": "Galeriedetail"
-    },
-    "insights": {
-      "title": "BRANCHEN",
-      "titleHighlight": "EINBLICKE",
-      "description": "Expertenanalysen zu Nutzfahrzeugen, Produktion und Logistik.",
-      "readMore": "Weiterlesen",
-      "articles": {
-        "a1": {
-          "category": "AKADEMIE",
-          "title": "Stahlqualität im Kipperbau: Hardox und mehr",
-          "excerpt": "Wie verlängert Hochfeststahl die Lebensdauer? Hardox 450 vs 500.",
-          "date": "12. Januar 2025",
-          "readTime": "6 Min. Lesezeit"
-        },
-        "a2": {
-          "category": "BRANCHE",
-          "title": "Logistik-Trends 2026",
-          "excerpt": "Lieferketten, Effizienzregeln und Chancen für die Türkei.",
-          "date": "8. Januar 2025",
-          "readTime": "8 Min. Lesezeit"
-        },
-        "a3": {
-          "category": "NACHHALTIGKEIT",
-          "title": "Grüne Logistik: Leichte Kipper",
-          "excerpt": "Kraftstoffeinsparung durch leichtere Chassis.",
-          "date": "3. Januar 2025",
-          "readTime": "5 Min. Lesezeit"
-        }
-      }
     }
   }
 }

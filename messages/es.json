@@ -24,14 +24,6 @@
       "title": "Contacto | Özünlü Damper – Presupuestos y asistencia",
       "description": "Contacte con Özünlü Damper para ventas, posventa, exportación y recursos humanos. Oficina central: Sultangazi, Estambul."
     },
-    "corporate": {
-      "title": "Corporativo | Özünlü Damper – Since 1977",
-      "description": "Desde 1977, Özünlü Damper es la referencia de confianza y calidad en el sector de superestructuras para vehículos comerciales pesados."
-    },
-    "media": {
-      "title": "Medios | Özünlü Damper",
-      "description": "Noticias, blog y perspectivas del sector de Özünlü Damper."
-    },
     "legalKvkk": {
       "title": "Personal Data Protection | Özünlü Damper",
       "description": "Özünlü Damper personal data protection policy under Turkish KVKK."
@@ -77,7 +69,8 @@
       "detayliIncele": "Ver detalles",
       "tumUrunler": "TODOS LOS PRODUCTOS",
       "kesfet": "Explorar",
-      "kaydir": "Desplazar"
+      "kaydir": "Desplazar",
+      "scrollToTop": "Volver arriba"
     },
     "labels": {
       "modellerimiz": "Nuestros modelos",
@@ -164,42 +157,6 @@
       "description": "Nuestras soluciones de superestructuras para vehículos comerciales pesados funcionan de forma fiable en las rutas más exigentes de construcción, minería y transporte de larga distancia.",
       "footer": "Proveedor de superestructuras homologado"
     },
-    "products": {
-      "eyebrow": "Nuestros productos",
-      "title": "SUPERESTRUCTURAS",
-      "titleHighlight": "SOLUCIONES",
-      "subtitle": "Soluciones de superestructuras en <strong>acero</strong> <hardox></hardox> para cada necesidad",
-      "viewDetails": "Ver detalles",
-      "items": {
-        "damper": {
-          "title": "VOLQUETE",
-          "description": "Caja de <strong>acero</strong> <hardox></hardox>, <strong>sistema hidráulico</strong>, capacidad de 20-40 m³",
-          "features": [
-            "Acero Hardox 450",
-            "Sistema hidráulico",
-            "Estructura ligera"
-          ]
-        },
-        "dorse": {
-          "title": "REMOLQUE",
-          "description": "Alta resistencia, larga vida útil y opciones de diseño personalizado",
-          "features": [
-            "Diseño personalizado",
-            "Alta durabilidad",
-            "Mantenimiento sencillo"
-          ]
-        },
-        "kar": {
-          "title": "EQUIPO QUITANIEVES",
-          "description": "Soluciones de <strong>volquete</strong> adaptadas a las necesidades específicas de cada cliente",
-          "features": [
-            "Fabricación a medida",
-            "Apoyo de I+D",
-            "Producción rápida"
-          ]
-        }
-      }
-    },
     "gallery": {
       "slogan": "La elección de los mejores"
     },
@@ -217,7 +174,7 @@
       "description": "La respuesta de ingeniería para condiciones exigentes. Caja <hardox></hardox>, alta estabilidad de volcado y capacidad de carga optimizada — rendimiento superior en cualquier condición."
     },
     "products": {
-      "title": "Soluciones de volquete listas",
+      "title": "Soluciones de volquete",
       "subtitle": "Hemos preparado las configuraciones más demandadas para usted. Consulte o solicite un presupuesto ahora."
     },
     "features": {
@@ -333,7 +290,7 @@
       "description": "Aligere el transporte pesado con ingeniería. Estructura de <strong>acero</strong> <hardox></hardox>, tecnología de frenado avanzada y distribución optimizada de la carga — rendimiento y seguridad superiores en cada ruta."
     },
     "products": {
-      "title": "Soluciones de semirremolque listas",
+      "title": "Soluciones de semirremolque",
       "subtitle": "Hemos preparado las configuraciones más demandadas del sector. Solicite un presupuesto o diseñe su propio vehículo."
     },
     "features": {
@@ -354,7 +311,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semirremolque",
-        "description": "Solución fiable para transporte pesado de larga distancia con volumen de 22 m³, caja Hardox 450 y sistema de ejes BPW.",
+        "description": "Solución fiable para transporte pesado de larga distancia con volumen de 22 m³, caja <hardox></hardox> 450 y sistema de ejes BPW.",
         "features": [
           "Volumen de 22 m³",
           "Caja Hardox 450",
@@ -365,7 +322,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semirremolque",
-        "description": "Remolque de alto rendimiento con chasis Hardox 500 y rampa hidráulica para operaciones exigentes.",
+        "description": "Remolque de alto rendimiento con chasis <hardox></hardox> 500 y rampa hidráulica para operaciones exigentes.",
         "features": [
           "Eje Özkoç (nacional)",
           "Chasis Hardox 500",
@@ -464,7 +421,7 @@
       "description": "La verdadera asociación comienza después de la compra. Protegemos la continuidad operativa de su vehículo con 87 puntos de servicio autorizados a nivel nacional, asistencia técnica 24/7 y garantía de repuestos originales."
     },
     "services": {
-      "title": "NUESTROS SERVICIOS",
+      "title": "Nuestros Servicios",
       "subtitle": "Soluciones profesionales que protegen el valor de su vehículo y aumentan su eficiencia operativa.",
       "servisAgi": {
         "title": "Red de servicio autorizada",
@@ -485,11 +442,11 @@
     },
     "documents": {
       "eyebrow": "Base de conocimiento",
-      "title": "DOCUMENTOS",
-      "titleHighlight": "TÉCNICOS",
+      "title": "Documentos",
+      "titleHighlight": "Técnicos",
       "description": "Manuales de usuario, procedimientos de mantenimiento y especificaciones técnicas preparados para la máxima eficiencia de sus productos — disponibles en turco e inglés.",
       "searchPlaceholder": "Buscar documentos...",
-      "download": "DESCARGAR",
+      "download": "Descargar",
       "noResults": "No se encontraron documentos que coincidan con sus criterios.",
       "damperManual": {
         "title": "Manual de uso del volquete",
@@ -591,140 +548,6 @@
       "emailPh": "mail@empresa.com",
       "heardFrom": "¿Cómo nos conoció?",
       "heardFromPh": "Google, redes sociales, recomendación..."
-    }
-  },
-  "corporate": {
-    "hero": {
-      "badge": "Desde 1977",
-      "titleLine1": "LA FIRMA DE",
-      "titleLine2": "LA VELOCIDAD Y LA CONFIANZA",
-      "description": "Con casi medio siglo de experiencia, marcamos los estándares del sector de las superestructuras para vehículos comerciales pesados y construimos el futuro sobre bases sólidas."
-    },
-    "values": {
-      "trust": {
-        "title": "CONFIANZA",
-        "desc": "Durante más de 45 años hemos respaldado cada promesa hecha a nuestros clientes, socios y empleados."
-      },
-      "quality": {
-        "title": "CALIDAD",
-        "desc": "Desde el <strong>acero</strong> <hardox></hardox> hasta el acabado más minucioso, perseguimos la excelencia en cada etapa de la producción."
-      },
-      "innovation": {
-        "title": "INNOVACIÓN",
-        "desc": "Analizamos las necesidades del sector y, a través de nuestra I+D, acercamos al presente las tecnologías del futuro."
-      },
-      "speed": {
-        "title": "VELOCIDAD",
-        "desc": "Gracias a procesos de producción optimizados, entregamos con rapidez sin comprometer la calidad y aportamos velocidad a su negocio."
-      }
-    },
-    "philosophy": {
-      "watermark": "ÖZÜNLÜ",
-      "titleLine1": "NO SOLO TRABAJAMOS EL ACERO,",
-      "titleLine2": "TAMBIÉN FORJAMOS CONFIANZA.",
-      "p1": "<strong>Desde 1977 hasta hoy,</strong> lo que sale de nuestra línea de producción no es solo un volquete, sino la forma tangible de casi medio siglo de experiencia, pasión por la ingeniería e innovación. Para nosotros, la calidad no es una etapa de control; es nuestra propia cultura de producción.",
-      "p2": "Probados en geografías exigentes y bajo cargas pesadas, nuestros productos se diseñan hasta el último detalle con foco en la <durability>durabilidad</durability> y el <performance>rendimiento</performance>. Combinamos la robustez del acero <hardox></hardox> con la agilidad de la ingeniería turca para definir los estándares que marcan el rumbo del sector.",
-      "quote": "En cada cordón de soldadura, en cada montaje y en cada entrega perseguimos un único objetivo: sumar fuerza a la fortaleza de nuestros socios."
-    },
-    "leader": {
-      "eyebrow": "Mensaje del líder",
-      "quote": "En Özünlü no solo fabricamos productos; construimos confianza. Cada volquete y cada remolque reflejan casi medio siglo de experiencia y pasión por la ingeniería.",
-      "name": "UFUK ÖZÜNLÜ",
-      "role": "Presidente del Consejo de Administración",
-      "bio": "Fundada en 1977, Özünlü Damper es hoy uno de los fabricantes de referencia del sector, con exportaciones a más de 40 países. Producimos con estándares mundiales bajo el título de Qualified Body Builder (carrocero autorizado).",
-      "imageAlt": "Ufuk Özünlü"
-    },
-    "timeline": {
-      "title": "MÁS ALLÁ DEL",
-      "titleHighlight": "TIEMPO",
-      "m1977": {
-        "title": "Sentando las bases",
-        "desc": "El camino de la producción comenzó en un taller de 30 m² en Okmeydanı, Estambul, con grandes sueños."
-      },
-      "m1985": {
-        "title": "Primera expansión",
-        "desc": "Traslado de las instalaciones de producción a Habipler, Estambul, donde siguen ubicadas hoy."
-      },
-      "m1991": {
-        "title": "Invertir en el futuro",
-        "desc": "Compra del actual terreno de fábrica y primera gran inversión en el camino para convertirse en un líder de las superestructuras."
-      },
-      "m2005": {
-        "title": "Qualified Body Builder",
-        "desc": "El primer título \"Qualified Body Builder\" del sector, otorgado por los principales fabricantes mundiales de camiones."
-      },
-      "m2009": {
-        "title": "Aumento de capacidad",
-        "desc": "Duplicación de la capacidad de producción gracias a un nuevo enfoque de gestión de calidad y a inversiones en maquinaria."
-      },
-      "mToday": {
-        "title": "Potencia global",
-        "desc": "30.000 m² de superficie total de producción en 3 instalaciones, ventas en las 81 provincias y exportación a más de 40 países."
-      },
-      "yearToday": "Actualidad"
-    },
-    "facilities": {
-      "title": "POTENCIA PRODUCTIVA E",
-      "titleHighlight": "IMPACTO GLOBAL",
-      "description": "Combinamos la fuerza de la ingeniería local con los estándares globales para aportar valor en todo el mundo.",
-      "production": {
-        "title": "CENTRO DE PRODUCCIÓN",
-        "value": "30.000 m²",
-        "desc": "Producción de alta capacidad en 3 instalaciones con 7.000 m² cubiertos y 23.000 m² de área abierta."
-      },
-      "global": {
-        "title": "ALCANCE GLOBAL",
-        "value": "Más de 40 países",
-        "desc": "Una amplia red de exportación que abarca las 81 provincias de Turquía y más de 40 países en todo el mundo."
-      },
-      "quality": {
-        "title": "ESTÁNDAR DE CALIDAD",
-        "value": "Certificado QBB",
-        "desc": "La primera marca del sector en contar con el título de \"Qualified Body Builder\" (carrocero autorizado)."
-      }
-    }
-  },
-  "mediaPage": {
-    "hero": {
-      "title": "CENTRO",
-      "titleHighlight": "DE MEDIOS",
-      "description": "Noticias del sector, avances tecnológicos y las últimas novedades del mundo de Özünlü."
-    },
-    "gallery": {
-      "title": "GALERÍA",
-      "titleHighlight": "DE PRODUCTOS",
-      "description": "Explore al detalle una ingeniería superior y una ejecución impecable.",
-      "imageAlt": "Galería Özünlü Damper {n}",
-      "detailAlt": "Detalle de la galería"
-    },
-    "insights": {
-      "title": "ANÁLISIS",
-      "titleHighlight": "DEL SECTOR",
-      "description": "Análisis especializados sobre el sector de los vehículos comerciales pesados, las tecnologías de producción y la logística.",
-      "readMore": "Seguir leyendo",
-      "articles": {
-        "a1": {
-          "category": "ACADEMIA",
-          "title": "La calidad del acero en la fabricación de volquetes: Hardox y más allá",
-          "excerpt": "¿Cómo prolonga la vida útil de un volquete el uso de acero de alta resistencia? Comparativa entre Hardox 450 y 500 y análisis del retorno de la inversión.",
-          "date": "12 de enero de 2025",
-          "readTime": "6 min de lectura"
-        },
-        "a2": {
-          "category": "SECTOR",
-          "title": "Tendencias de logística y transporte para 2026",
-          "excerpt": "Cambios en la cadena de suministro global, normativas sobre eficiencia de combustible y oportunidades para el sector turco del transporte.",
-          "date": "8 de enero de 2025",
-          "readTime": "8 min de lectura"
-        },
-        "a3": {
-          "category": "SOSTENIBILIDAD",
-          "title": "Logística verde: el impacto ambiental de los volquetes ligeros",
-          "excerpt": "Es posible ahorrar combustible y reducir la huella de carbono mediante un diseño de chasis más ligero. Lo analizamos con datos de I+D de Özünlü.",
-          "date": "3 de enero de 2025",
-          "readTime": "5 min de lectura"
-        }
-      }
     }
   }
 }

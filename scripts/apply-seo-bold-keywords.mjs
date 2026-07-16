@@ -57,10 +57,6 @@ const targetPaths = [
   'home.equipmentHero.description',
   'home.partners.description',
   'home.mapPreview.description',
-  'home.products.subtitle',
-  'home.products.items.damper.description',
-  'home.products.items.dorse.description',
-  'home.products.items.kar.description',
   'home.whyChooseUs.features.0',
   'home.whyChooseUs.features.1',
   'home.whyChooseUs.features.2',
@@ -84,12 +80,6 @@ const targetPaths = [
   'afterSales.services.garanti.description',
   'afterSales.services.teknikDestek.description',
   'afterSales.documents.description',
-  'corporate.hero.description',
-  'corporate.values.trust.desc',
-  'corporate.values.quality.desc',
-  'corporate.values.innovation.desc',
-  'corporate.values.speed.desc',
-  'corporate.facilities.description',
 ];
 
 function getByPath(obj, path) {
