@@ -39,7 +39,7 @@ export default function StatsCounter() {
     const stats = [
         { label: t('exportCountries'), value: 50, suffix: '+' },
         { label: t('steelProcessing'), value: 12000, suffix: '' },
-        { label: t('experience'), value: 45, suffix: '' },
+        { label: t('experience'), value: 45, suffix: '+' },
     ];
 
     return (

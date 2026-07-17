@@ -148,7 +148,7 @@ export default function EkEkipmanlarPageClient() {
 
                             {t('hero.titleLine1')} <br />
 
-                            <HeroAccentText>{t('hero.titleLine2')}</HeroAccentText>
+                            <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
 
                         </motion.h1>
 
