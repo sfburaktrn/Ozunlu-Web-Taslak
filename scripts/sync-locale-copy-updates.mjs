@@ -35,7 +35,7 @@ const COPY = {
     'yariRomork.products.title': 'Semi-Trailer',
     'yariRomork.products.subtitle': 'Explore and request a quote now.',
     'yariRomork.configurator.badge': 'Semi-trailer',
-    'yariRomork.configurator.title': 'Semi-trailer',
+    'yariRomork.configurator.title': 'Request a Quote',
     'yariRomork.configurator.subtitle':
       'Share details to design the best high-performance semi-trailer for your fleet. Our engineering team will prepare a custom technical quote.',
     'ekEkipmanlar.hero.titleLine1': 'Integrated',
@@ -71,7 +71,7 @@ const COPY = {
     'yariRomork.products.title': 'Sattelanhänger',
     'yariRomork.products.subtitle': 'Ansehen und sofort ein Angebot anfordern.',
     'yariRomork.configurator.badge': 'Sattelanhänger',
-    'yariRomork.configurator.title': 'Sattelanhänger',
+    'yariRomork.configurator.title': 'Angebot anfordern',
     'yariRomork.configurator.subtitle':
       'Teilen Sie Details für den besten leistungsstarken Sattelanhänger für Ihre Flotte. Unser Ingenieurteam erstellt ein individuelles technisches Angebot.',
     'ekEkipmanlar.hero.titleLine1': 'Integriert',
@@ -107,7 +107,7 @@ const COPY = {
     'yariRomork.products.title': 'Semi-remorque',
     'yariRomork.products.subtitle': 'Découvrez et demandez un devis immédiatement.',
     'yariRomork.configurator.badge': 'Semi-remorque',
-    'yariRomork.configurator.title': 'Semi-remorque',
+    'yariRomork.configurator.title': 'Demander un devis',
     'yariRomork.configurator.subtitle':
       'Partagez les détails pour concevoir la meilleure semi-remorque haute performance pour votre flotte. Notre équipe d’ingénieurs prépare un devis technique sur mesure.',
     'ekEkipmanlar.hero.titleLine1': 'Intégré',
@@ -143,7 +143,7 @@ const COPY = {
     'yariRomork.products.title': 'Semirremolque',
     'yariRomork.products.subtitle': 'Explore y solicite presupuesto ahora.',
     'yariRomork.configurator.badge': 'Semirremolque',
-    'yariRomork.configurator.title': 'Semirremolque',
+    'yariRomork.configurator.title': 'Solicitar presupuesto',
     'yariRomork.configurator.subtitle':
       'Comparta los detalles para diseñar el mejor semirremolque de alto rendimiento para su flota. Nuestro equipo de ingeniería preparará un presupuesto técnico a medida.',
     'ekEkipmanlar.hero.titleLine1': 'Integrado',
@@ -179,7 +179,7 @@ const COPY = {
     'yariRomork.products.title': 'Semirimorchio',
     'yariRomork.products.subtitle': 'Scopri e richiedi subito un preventivo.',
     'yariRomork.configurator.badge': 'Semirimorchio',
-    'yariRomork.configurator.title': 'Semirimorchio',
+    'yariRomork.configurator.title': 'Richiedi preventivo',
     'yariRomork.configurator.subtitle':
       'Condividi i dettagli per progettare il miglior semirimorchio ad alte prestazioni per la tua flotta. Il nostro team tecnico preparerà un preventivo su misura.',
     'ekEkipmanlar.hero.titleLine1': 'Integrato',
@@ -215,7 +215,7 @@ const COPY = {
     'yariRomork.products.title': 'Semiremorcă',
     'yariRomork.products.subtitle': 'Explorați și solicitați ofertă acum.',
     'yariRomork.configurator.badge': 'Semiremorcă',
-    'yariRomork.configurator.title': 'Semiremorcă',
+    'yariRomork.configurator.title': 'Solicitați ofertă',
     'yariRomork.configurator.subtitle':
       'Împărtășiți detaliile pentru cea mai bună semiremorcă performantă pentru flota dvs. Echipa noastră de ingineri pregătește o ofertă tehnică personalizată.',
     'ekEkipmanlar.hero.titleLine1': 'Integrat',
@@ -251,7 +251,7 @@ const COPY = {
     'yariRomork.products.title': 'Полуремарке',
     'yariRomork.products.subtitle': 'Разгледайте и поискайте оферта сега.',
     'yariRomork.configurator.badge': 'Полуремарке',
-    'yariRomork.configurator.title': 'Полуремарке',
+    'yariRomork.configurator.title': 'Поискайте оферта',
     'yariRomork.configurator.subtitle':
       'Споделете детайли за най-доброто високопроизводително полуремарке за вашия автопарк. Нашият инженерен екип ще подготви персонализирана техническа оферта.',
     'ekEkipmanlar.hero.titleLine1': 'Интегрирани',
@@ -287,7 +287,7 @@ const COPY = {
     'yariRomork.products.title': 'Полуприцеп',
     'yariRomork.products.subtitle': 'Изучите модели и запросите предложение сейчас.',
     'yariRomork.configurator.badge': 'Полуприцеп',
-    'yariRomork.configurator.title': 'Полуприцеп',
+    'yariRomork.configurator.title': 'Запросить предложение',
     'yariRomork.configurator.subtitle':
       'Укажите детали для лучшего высокопроизводительного полуприцепа для вашего автопарка. Наша инженерная команда подготовит техническое предложение.',
     'ekEkipmanlar.hero.titleLine1': 'Интегрированные',
@@ -323,7 +323,7 @@ const COPY = {
     'yariRomork.products.title': 'Напівпричіп',
     'yariRomork.products.subtitle': 'Ознайомтеся та замовте пропозицію зараз.',
     'yariRomork.configurator.badge': 'Напівпричіп',
-    'yariRomork.configurator.title': 'Напівпричіп',
+    'yariRomork.configurator.title': 'Замовити пропозицію',
     'yariRomork.configurator.subtitle':
       'Поділіться деталями для найкращого високопродуктивного напівпричепа для вашого автопарку. Наша інженерна команда підготує технічну пропозицію.',
     'ekEkipmanlar.hero.titleLine1': 'Інтегровані',
@@ -359,7 +359,7 @@ const COPY = {
     'yariRomork.products.title': 'نصف مقطورة',
     'yariRomork.products.subtitle': 'استكشف واطلب عرض سعر الآن.',
     'yariRomork.configurator.badge': 'نصف مقطورة',
-    'yariRomork.configurator.title': 'نصف مقطورة',
+    'yariRomork.configurator.title': 'اطلب عرض سعر',
     'yariRomork.configurator.subtitle':
       'شارك التفاصيل لتصميم أفضل نصف مقطورة عالية الأداء لأسطولك. يعد فريقنا الفني عرضاً تقنياً مخصصاً.',
     'ekEkipmanlar.hero.titleLine1': 'متكامل',

@@ -37,22 +37,14 @@ export default function DamperHero() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/25 md:bg-gradient-to-r md:from-black/92 md:via-black/55 md:via-40% md:to-transparent" />
                     </div>
 
-                    <div className="absolute top-6 left-6 z-20">
-                        <span className="inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase">
-                            {t('category')}
-                        </span>
-                    </div>
-
                     <div className="relative h-full flex items-end md:items-center justify-start p-6 pb-6 md:p-12 lg:p-16">
-                        <div className="absolute top-8 left-6 md:hidden z-0 pointer-events-none select-none">
-                            <span className="text-6xl font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
-                                {tLabels('ozunluWatermark')}
-                            </span>
-                        </div>
-
                         <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl relative text-left" dir={textDir}>
-                            <div className="hidden md:block absolute -top-20 -left-10 z-0 pointer-events-none select-none">
-                                <span className="md:text-[8rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                            <span className="relative z-20 inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase mb-4 md:mb-6">
+                                {t('category')}
+                            </span>
+
+                            <div className="absolute top-16 md:top-20 -left-1 md:-left-6 z-0 pointer-events-none select-none max-w-[calc(100%+1rem)] overflow-hidden">
+                                <span className="text-[3.25rem] md:text-[8rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                     {tLabels('ozunluWatermark')}
                                 </span>
                             </div>
