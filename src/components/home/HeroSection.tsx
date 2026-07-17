@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -12,45 +12,68 @@ export default function HeroSection() {
     const t = useTranslations('home.hero');
     const { scrollY } = useScroll();
     const videoRef = useRef<HTMLVideoElement>(null);
-    const [showVideo, setShowVideo] = useState(false);
 
     useEffect(() => {
-        const desktop = window.matchMedia('(min-width: 768px)').matches;
-        setShowVideo(desktop);
-        if (!desktop) return;
-
         const video = videoRef.current;
         if (!video) return;
-        video.play().catch(() => {});
+
+        // Safari / iOS: muted must be set in JS before play()
+        video.defaultMuted = true;
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('webkit-playsinline', '');
+
+        const tryPlay = () => {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {
+                    // Autoplay blocked — retry on next interaction / visibility
+                });
+            }
+        };
+
+        tryPlay();
+        video.addEventListener('loadeddata', tryPlay);
+        video.addEventListener('canplay', tryPlay);
+
+        const onVisibility = () => {
+            if (document.visibilityState === 'visible') tryPlay();
+        };
+        document.addEventListener('visibilitychange', onVisibility);
+
+        return () => {
+            video.removeEventListener('loadeddata', tryPlay);
+            video.removeEventListener('canplay', tryPlay);
+            document.removeEventListener('visibilitychange', onVisibility);
+        };
     }, []);
 
     return (
         <div className="relative h-screen w-full overflow-hidden bg-ozunlu-950">
             <div className="absolute inset-0 z-0">
-                {showVideo ? (
-                    <video
-                        ref={videoRef}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                        poster="/banner-hero-poster.webp"
-                        className="h-full w-full object-cover"
-                    >
-                        <source src="/banner-video-new.mp4" type="video/mp4" />
-                    </video>
-                ) : (
-                    <Image
-                        src="/banner-hero-poster.webp"
-                        alt=""
-                        fill
-                        priority
-                        sizes="100vw"
-                        quality={75}
-                        className="object-cover"
-                    />
-                )}
+                {/* Poster fallback while video loads (esp. iOS) */}
+                <Image
+                    src="/banner-hero-poster.webp"
+                    alt=""
+                    fill
+                    priority
+                    sizes="100vw"
+                    quality={75}
+                    className="object-cover"
+                />
+                <video
+                    ref={videoRef}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                    poster="/banner-hero-poster.webp"
+                    className="absolute inset-0 h-full w-full object-cover"
+                >
+                    <source src="/banner-video-new.mp4" type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30" />
             </div>
 
