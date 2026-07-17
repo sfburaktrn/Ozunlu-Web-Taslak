@@ -15,9 +15,9 @@ import { heroRichTextHandlers } from '@/i18n/richText';
 const PRODUCT_KEYS = ['d24', 'd30', 'd21'] as const;
 
 const DAMPER_HERO_IMAGES = [
-    '/images/ozunlu-turuncu-hardox-damper-kamyon.webp',
-    '/images/ozunlu-turuncu-damper-studiyo-hero.webp',
-    '/images/ozunlu-siyah-hardox-damper-hero.webp',
+    '/images/ozunlu-turuncu-hardox-damper-studiyo.webp',
+    '/images/ozunlu-hardox-siyah-damper-kamyon.webp',
+    '/images/ozunlu-gri-hardox-damper-kamyon.webp',
 ] as const;
 
 const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: string }> = {
