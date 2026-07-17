@@ -31,10 +31,10 @@ export default function DamperHero() {
                             fill
                             loading="lazy"
                             sizes="(max-width: 768px) 100vw, 1200px"
-                            className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                            className="object-cover object-[70%_center] md:object-[82%_center] group-hover:scale-105 transition-transform duration-700"
                             quality={90}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/20 md:bg-gradient-to-r md:from-black/85 md:via-black/55 md:to-black/15" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/25 md:bg-gradient-to-r md:from-black/92 md:via-black/55 md:via-40% md:to-transparent" />
                     </div>
 
                     <div className="absolute top-6 left-6 z-20">
@@ -43,14 +43,14 @@ export default function DamperHero() {
                         </span>
                     </div>
 
-                    <div className="relative h-full flex items-end md:items-center justify-start p-6 pb-6 md:p-16">
+                    <div className="relative h-full flex items-end md:items-center justify-start p-6 pb-6 md:p-12 lg:p-16">
                         <div className="absolute top-8 left-6 md:hidden z-0 pointer-events-none select-none">
                             <span className="text-6xl font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                 {tLabels('ozunluWatermark')}
                             </span>
                         </div>
 
-                        <div className="max-w-xl relative text-left" dir={textDir}>
+                        <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl relative text-left" dir={textDir}>
                             <div className="hidden md:block absolute -top-20 -left-10 z-0 pointer-events-none select-none">
                                 <span className="md:text-[8rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                     {tLabels('ozunluWatermark')}
@@ -61,17 +61,17 @@ export default function DamperHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="relative z-10 typo-h2-on-dark mb-3 md:mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                                className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                             >
                                 {t('titleLine1')} <br />
-                                <HeroAccentText>{t('titleLine2')}</HeroAccentText>
+                                <HeroAccentText onDark>{t('titleLine2')}</HeroAccentText>
                             </motion.h2>
 
                             <motion.p
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="typo-body-on-dark mb-6 md:mb-8 max-w-md text-left drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                                className="text-sm sm:text-base md:text-xl text-gray-300 mb-6 md:mb-8 max-w-xl text-left leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                             >
                                 {t.rich('description', heroRichTextHandlers)}
                             </motion.p>
@@ -79,7 +79,7 @@ export default function DamperHero() {
                             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }}>
                                 <Link
                                     href={{ pathname: '/damper', hash: 'teklif-formu' }}
-                                    className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-primary text-white rounded-full font-semibold text-sm md:text-base hover:bg-primary/90 transition-all shadow-lg shadow-black/40 border border-white/35 group/link"
+                                    className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-primary text-white rounded-full font-semibold text-base md:text-lg hover:bg-primary/90 transition-all shadow-lg shadow-black/40 border border-white/35 group/link"
                                 >
                                     {tCommon('cta.teklifAl')}
                                     <ArrowRight size={18} className="icon-directional group-hover/link:translate-x-1 transition-transform" />

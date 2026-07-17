@@ -9,10 +9,10 @@ import { defaultRichTextHandlers } from '@/i18n/richText';
 // Partner logos
 const partners = [
     { name: 'MAN', logo: '/images/partners/man.png', padding: 'p-4' },
-    { name: 'Volvo', logo: '/images/partners/volvo.png', padding: 'p-2' },
+    { name: 'Mercedes-Benz', logo: '/images/partners/mercedes.png', padding: 'p-1' },
     { name: 'Scania', logo: '/images/partners/scania.png', padding: 'p-6' },
     { name: 'Renault', logo: '/images/partners/renault.png', padding: 'p-2' },
-    { name: 'Mercedes-Benz', logo: '/images/partners/mercedes.png', padding: 'p-1' },
+    { name: 'Volvo', logo: '/images/partners/volvo.png', padding: 'p-2' },
     { name: 'Ford Trucks', logo: '/images/partners/ford-trucks.png', padding: 'p-5' },
 ];
 
@@ -145,9 +145,11 @@ export default function PartnersSlider() {
                                 {t('title')}
                             </h2>
                             <div className="w-24 h-1 bg-gradient-to-r from-primary to-transparent mx-auto rounded-full" />
-                            <p className="text-gray-800 max-w-2xl mx-auto mt-3 text-lg font-light leading-relaxed">
-                                {t.rich('description', defaultRichTextHandlers)}
-                            </p>
+                            {t('description') ? (
+                                <p className="text-gray-800 max-w-2xl mx-auto mt-3 text-lg font-light leading-relaxed">
+                                    {t.rich('description', defaultRichTextHandlers)}
+                                </p>
+                            ) : null}
                         </motion.div>
 
                         {/* Grid Layout */}

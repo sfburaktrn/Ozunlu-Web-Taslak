@@ -7,11 +7,11 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
 const galleryImages = [
-    { id: 1, src: '/products/ford-sari-damper-insaat.jpg', alt: 'Ford Sarı Damper İnşaat Sahası', w: 400, h: 300, x: "-35vw", y: "-25vh", r: -15 },
-    { id: 2, src: '/products/kirmizi-havuz-damper-gece.jpg', alt: 'Kırmızı Havuz Damper Gece Çekimi', w: 400, h: 300, x: "35vw", y: "-30vh", r: 10 },
-    { id: 3, src: '/products/siyah-hardox-damper-arka.jpg', alt: 'Siyah Hardox Damper Arka Görünüm', w: 400, h: 300, x: "-38vw", y: "20vh", r: -5 },
-    { id: 4, src: '/products/ford-sari-damper-yol.jpg', alt: 'Ford Sarı Damper Yol', w: 400, h: 300, x: "38vw", y: "25vh", r: 12 },
-    { id: 5, src: '/products/gri-damper-modeli.jpg', alt: 'Gri Damper Modeli', w: 400, h: 300, x: "0vw", y: "-38vh", r: 5 },
+    { id: 1, src: '/images/ozunlu-sari-damper-saha.webp', alt: 'Ford Sarı Damper İnşaat Sahası', w: 400, h: 300, x: "-35vw", y: "-25vh", r: -15 },
+    { id: 2, src: '/images/ozunlu-kirmizi-damper-gece.webp', alt: 'Kırmızı Havuz Damper Gece Çekimi', w: 400, h: 300, x: "35vw", y: "-30vh", r: 10 },
+    { id: 3, src: '/images/ozunlu-siyah-hardox-damper-hero.webp', alt: 'Siyah Hardox Damper Arka Görünüm', w: 400, h: 300, x: "-38vw", y: "20vh", r: -5 },
+    { id: 4, src: '/images/ozunlu-sari-damper-yuksek-devrilme.webp', alt: 'Ford Sarı Damper Yol', w: 400, h: 300, x: "38vw", y: "25vh", r: 12 },
+    { id: 5, src: '/images/ozunlu-gri-damper-dag-yolu.webp', alt: 'Gri Damper Modeli', w: 400, h: 300, x: "0vw", y: "-38vh", r: 5 },
 ];
 
 export default function GallerySection() {
@@ -49,7 +49,7 @@ export default function GallerySection() {
                             style={{ opacity: contentOpacity, scale: contentScale, filter: `blur(${contentBlur})` }}
                             className="relative z-10 flex flex-col items-center justify-center text-center mix-blend-difference"
                         >
-                            <div className="relative w-32 h-16 mb-4 md:w-64 md:h-32 md:mb-6">
+                            <div className="relative w-32 h-16 mb-4 translate-y-3 md:w-64 md:h-32 md:mb-6">
                                 <Image
                                     src="/ozunlu-logo-new.png"
                                     alt={tLabels('logoAlt')}
@@ -58,7 +58,7 @@ export default function GallerySection() {
                                 />
                             </div>
 
-                            <h2 className="text-xl md:text-5xl font-bold text-white tracking-widest font-sans">
+                            <h2 className="text-xl md:text-5xl font-bold italic text-white tracking-widest font-sans">
                                 {t('slogan')}
                             </h2>
 

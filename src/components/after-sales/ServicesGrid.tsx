@@ -30,10 +30,10 @@ export default function ServicesGrid() {
                             viewport={{ once: true }}
                             className="mb-12 md:mb-16 max-w-2xl"
                         >
-                            <h2 className="typo-h2 mb-4">
+                            <h2 className="text-3xl md:text-[2.75rem] font-bold text-ozunlu-950 tracking-tight leading-[1.1] mb-4">
                                 {t('title')}
                             </h2>
-                            <p className="typo-body">
+                            <p className="text-base md:text-lg text-gray-600 font-normal leading-relaxed">
                                 {t('subtitle')}
                             </p>
                         </motion.div>
@@ -55,11 +55,11 @@ export default function ServicesGrid() {
                                             <Icon size={20} strokeWidth={1.75} />
                                         </div>
 
-                                        <h3 className="typo-h3 mb-2.5">
+                                        <h3 className="text-lg font-semibold text-ozunlu-950 mb-2.5 tracking-tight">
                                             {t(`${key}.title`)}
                                         </h3>
 
-                                        <p className="typo-body-sm">
+                                        <p className="text-sm text-gray-600 font-normal leading-relaxed">
                                             {t.rich(`${key}.description`, defaultRichTextHandlers)}
                                         </p>
                                     </motion.div>

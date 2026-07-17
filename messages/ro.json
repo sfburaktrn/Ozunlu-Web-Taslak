@@ -106,7 +106,7 @@
       "imageAlt": "Performanță și durabilitate Özünlü basculantă",
       "titleLine1": "Răspunsul ingineresc",
       "titleLine2": "pentru condiții dificile",
-      "description": "Sistemele noastre basculante, dezvoltate pentru condiții grele din construcții, minerit și proiecte de infrastructură, funcționează neîntrerupt pe teren cu durabilitatea caroseriei <hardox></hardox>, stabilitate ridicată la basculare și capacitate rapidă de descărcare."
+      "description": "Sistemele noastre de <strong>basculantă</strong> dezvoltate pentru condiții de șantier dificile asigură performanță continuă cu rezistență <hardox></hardox>, stabilitate ridicată la basculare și descărcare rapidă."
     },
     "trailerHero": {
       "category": "SEMIREMORCĂ",
@@ -118,20 +118,20 @@
     "equipmentHero": {
       "category": "Echipamente",
       "imageAlt": "Özünlü soluții de echipamente și piese de schimb",
-      "titleLine1": "Soluții complete",
-      "titleLine2": "de echipamente pentru flota dumneavoastră",
+      "titleLine1": "Integrat",
+      "titleLine2": "Soluții de echipamente",
       "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
     },
     "whyChooseUs": {
       "eyebrow": "DE CE ÖZÜNLÜ?",
-      "title": "De ce Özünlü?",
+      "title": "Un brand ales cu încredere",
       "features": {
         "0": "Design de <strong>suprastructură</strong> aprobat de producătorul de vehicule — producție compatibilă cu diferite configurații de șasiu și tractor",
         "1": "Prelucrare certificată <hardox></hardox> a oțelului și tehnologie de sudare robotică",
         "2": "Conformitate deplină cu toate reglementările și standardele europene de siguranță (ECE/ADR)",
         "3": "Garanție completă și servicii post-vânzare neîntrerupte",
         "4": "87 de puncte de service autorizate în 50 de provincii din Turcia",
-        "5": "Design structural care păstrează valoarea ridicată la revânzare",
+        "5": "Design structural care păstrează o valoare ridicată de <strong>revânzare</strong>",
         "6": "Export în peste 50 de țări — calitate dovedită la nivel global"
       },
       "cardLabel": "Garanția Özünlü"
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Preferat de liderii din industrie",
-      "description": "Soluțiile noastre de suprastructuri pentru vehicule comerciale grele funcționează fiabil pe cele mai dificile rute din construcții, minerit și transport pe distanțe lungi.",
+      "description": "",
       "footer": "Furnizor aprobat de suprastructuri"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "Răspunsul ingineresc pentru condiții dificile. Caroserie <hardox></hardox>, stabilitate ridicată la basculare și capacitate de încărcare optimizată — performanță superioară în orice condiție."
     },
     "products": {
-      "title": "Soluții basculante",
-      "subtitle": "Am pregătit cele mai preferate configurații pentru dumneavoastră. Explorați sau solicitați o ofertă acum."
+      "title": "Basculantă",
+      "subtitle": "Explorați și solicitați ofertă acum."
     },
     "features": {
       "titleLine1": "Armonia perfectă între",
@@ -189,8 +189,9 @@
       "imageAlt": "Caracteristici Özünlü basculantă"
     },
     "configurator": {
-      "title": "Configurator basculantă",
-      "subtitle": "Specificați detaliile tehnice pentru o basculantă de înaltă performanță adaptată nevoilor dumneavoastră. Echipa noastră de experți va pregăti oferta personalizată în cel mai scurt timp."
+      "title": "Solicitați ofertă",
+      "subtitle": "Specificați detaliile tehnice pentru o basculantă performantă adaptată nevoilor dvs. Echipa noastră pregătește oferta personalizată.",
+      "badge": "BASCULANTĂ"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Basculantă",
-        "description": "Greutate echilibrată și costuri de exploatare economice pentru scenarii compacte de utilizare.",
+        "description": "Greutate echilibrată și performanță operațională eficientă în scenarii de utilizare compactă.",
         "features": [
           "Design compact",
           "Exploatare economică",
@@ -290,8 +291,8 @@
       "description": "Ușurați transportul greu prin inginerie. Structură din <strong>oțel</strong> <hardox></hardox>, tehnologie avansată de frânare și distribuție optimizată a încărcăturii — performanță și siguranță superioare pe fiecare rută."
     },
     "products": {
-      "title": "Soluții semiremorcă",
-      "subtitle": "Am pregătit cele mai preferate configurații din industrie. Solicitați o ofertă sau proiectați propriul vehicul."
+      "title": "Semiremorcă",
+      "subtitle": "Explorați și solicitați ofertă acum."
     },
     "features": {
       "titleLine1": "Stăpâniți",
@@ -305,8 +306,9 @@
       "imageAlt": "Caracteristici semiremorcă"
     },
     "configurator": {
-      "title": "Configurator semiremorcă",
-      "subtitle": "Partajați detaliile pentru a proiecta cea mai potrivită semiremorcă de înaltă performanță pentru flota dumneavoastră. Echipa noastră de ingineri va pregăti o ofertă tehnică personalizată."
+      "title": "Semiremorcă",
+      "subtitle": "Împărtășiți detaliile pentru cea mai bună semiremorcă performantă pentru flota dvs. Echipa noastră de ingineri pregătește o ofertă tehnică personalizată.",
+      "badge": "Semiremorcă"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "ECHIPAMENTE",
       "imageAlt": "Soluții de echipamente și piese de schimb",
-      "titleLine1": "Soluții complete",
-      "titleLine2": "de echipamente pentru flota dumneavoastră",
+      "titleLine1": "Integrat",
+      "titleLine2": "Soluții de echipamente",
       "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "Nu ați găsit piesa căutată?",
-      "description": "Contactați echipa noastră de experți — vom procura produsul de care aveți nevoie."
+      "description": "Contactați echipa noastră de experți și stabilim împreună cea mai potrivită soluție pentru nevoile dvs."
     },
     "performance": {
       "imageAlt": "Echipamente pentru remorci",
       "titleLine1": "Piesa potrivită,",
       "titleLine2": "performanță maximă",
-      "description": "Performanța vehiculului depinde direct de calitatea echipamentelor. La Özünlü, livrăm instant produse certificate originale de la mărci dovedite la nivel global din stocul nostru extins.",
+      "description": "Livrăm produse originale certificate de mărci recunoscute la nivel mondial în cel mai scurt timp, datorită stocului nostru extins.",
       "bullets": {
         "0": "Garanție pentru produse originale și certificate",
         "1": "Compatibilitate extinsă cu mărci și modele",
@@ -436,12 +438,12 @@
         "description": "Toate produsele noastre sunt acoperite de o garanție completă a producătorului."
       },
       "teknikDestek": {
-        "title": "Asistență tehnică 24/7",
-        "description": "Echipa noastră de suport tehnic este disponibilă zi și noapte."
+        "title": "Suport tehnic rapid",
+        "description": "Echipa noastră de suport tehnic oferă o soluție pentru solicitarea dvs. cât mai rapid posibil."
       }
     },
     "documents": {
-      "eyebrow": "Baza de cunoștințe",
+      "eyebrow": "Resurse",
       "title": "Documente",
       "titleHighlight": "Tehnice",
       "description": "Manuale de utilizare, proceduri de întreținere și specificații tehnice pregătite pentru eficiență maximă a produselor dumneavoastră — disponibile în turcă și engleză.",

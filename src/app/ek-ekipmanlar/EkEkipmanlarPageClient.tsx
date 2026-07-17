@@ -142,7 +142,7 @@ export default function EkEkipmanlarPageClient() {
 
                             variants={fadeInUp}
 
-                            className="typo-h1-on-dark mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
 
                         >
 
@@ -158,7 +158,7 @@ export default function EkEkipmanlarPageClient() {
 
                             variants={fadeInUp}
 
-                            className="typo-body-on-dark max-w-3xl mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-sm md:text-lg font-normal leading-relaxed text-white max-w-3xl mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
 
                         >
 
@@ -226,9 +226,9 @@ export default function EkEkipmanlarPageClient() {
 
                             <div>
 
-                                <h4 className="typo-h2 mb-1">{t(`stats.${key}.value`)}</h4>
+                                <h4 className="text-4xl font-bold text-black mb-1">{t(`stats.${key}.value`)}</h4>
 
-                                <p className="typo-eyebrow text-gray-500">{t(`stats.${key}.label`)}</p>
+                                <p className="text-gray-500 text-sm uppercase tracking-wider font-bold">{t(`stats.${key}.label`)}</p>
 
                             </div>
 
@@ -256,7 +256,7 @@ export default function EkEkipmanlarPageClient() {
 
                         <div className="w-full lg:w-1/2">
 
-                            <h2 className="typo-h2 mb-6">
+                            <h2 className="text-3xl md:text-[2.75rem] font-bold tracking-tight leading-[1.1] text-ozunlu-950 mb-6">
 
                                 {t('performance.titleLine1')} <br />
 
@@ -264,7 +264,7 @@ export default function EkEkipmanlarPageClient() {
 
                             </h2>
 
-                            <p className="typo-body mb-8">
+                            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
 
                                 {t.rich('performance.description', heroRichTextHandlers)}
 
@@ -284,7 +284,7 @@ export default function EkEkipmanlarPageClient() {
 
                                         </div>
 
-                                        <span className="typo-body-sm font-semibold text-gray-900">{t(`performance.bullets.${key}`)}</span>
+                                        <span className="text-base font-semibold text-gray-900">{t(`performance.bullets.${key}`)}</span>
 
                                     </li>
 
@@ -306,9 +306,9 @@ export default function EkEkipmanlarPageClient() {
 
                 <div className="text-center mb-16">
 
-                    <h2 className="typo-h2 mb-4">{t('categories.title')}</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">{t('categories.title')}</h2>
 
-                    <p className="typo-body max-w-3xl mx-auto">
+                    <p className="text-lg text-gray-600 max-w-3xl mx-auto">
 
                         {t('categories.subtitle')}
 
@@ -348,9 +348,9 @@ export default function EkEkipmanlarPageClient() {
 
                                 <div>
 
-                                    <h3 className="typo-h3 mb-3">{t(`categories.${key}.title`)}</h3>
+                                    <h3 className="text-2xl font-bold text-black mb-3">{t(`categories.${key}.title`)}</h3>
 
-                                    <p className="typo-body-sm">{t(`categories.${key}.desc`)}</p>
+                                    <p className="text-gray-600 leading-relaxed">{t(`categories.${key}.desc`)}</p>
 
                                 </div>
 
@@ -390,10 +390,10 @@ export default function EkEkipmanlarPageClient() {
                         <span className="inline-flex w-fit mb-5 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
                             {t('hero.badge')}
                         </span>
-                        <h2 className="typo-h2-on-dark mb-4 drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
+                        <h2 className="text-xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
                             {t('cta.title')}
                         </h2>
-                        <p className="typo-body-on-dark text-white/90 mb-8 max-w-xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
+                        <p className="text-base md:text-xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
                             {t('cta.description')}
                         </p>
                         <div>

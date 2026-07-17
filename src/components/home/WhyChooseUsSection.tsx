@@ -10,9 +10,9 @@ import { useTextDirection } from '@/i18n/useTextDirection';
 
 // Correct image paths mapped to the public/products directory
 const images = [
-    '/products/product-new-1.jpg',
-    '/products/why-choose-new.jpg',
-    '/products/product-new-2.jpg',
+    '/images/ozunlu-hardox-damperli-yari-romork.webp',
+    '/images/ozunlu-beyaz-damperli-yari-romork-hero.webp',
+    '/images/ozunlu-damperli-dorse-cekici-komple-sistem.webp',
 ];
 
 export default function WhyChooseUsSection() {
@@ -147,16 +147,6 @@ export default function WhyChooseUsSection() {
                                                     fill
                                                     className="object-cover"
                                                 />
-
-                                                {/* Label only visible on front card */}
-                                                <motion.div
-                                                    className="absolute bottom-6 left-6 right-6 z-40"
-                                                    animate={{ opacity: style.zIndex === 30 ? 1 : 0 }}
-                                                >
-                                                    <div className="bg-white/90 backdrop-blur-md border border-white/20 rounded-xl p-4">
-                                                        <p className="text-[#000080] font-bold text-center text-sm lg:text-base">{t('cardLabel')}</p>
-                                                    </div>
-                                                </motion.div>
                                             </motion.div>
                                         );
                                     })}

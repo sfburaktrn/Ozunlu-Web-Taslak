@@ -106,7 +106,7 @@
       "imageAlt": "Prestazioni e durabilità Özünlü ribaltabile",
       "titleLine1": "La risposta ingegneristica",
       "titleLine2": "per cantieri difficili",
-      "description": "I nostri sistemi <strong>ribaltabili</strong> progettati per le dure condizioni di edilizia, minerario e infrastrutture garantiscono prestazioni ininterrotte sul campo con la durabilità del cassone <hardox></hardox>, elevata stabilità di ribaltamento e rapida capacità di scarico."
+      "description": "I nostri sistemi <strong>ribaltabili</strong> sviluppati per condizioni di cantiere difficili garantiscono prestazioni continue con resistenza <hardox></hardox>, alta stabilità di ribaltamento e scarico rapido."
     },
     "trailerHero": {
       "category": "SEMIRIMORCHIO",
@@ -118,21 +118,21 @@
     "equipmentHero": {
       "category": "Equipaggiamento",
       "imageAlt": "Özünlü soluzioni di equipaggiamento e ricambi",
-      "titleLine1": "Soluzioni di equipaggiamento",
-      "titleLine2": "complete per la tua flotta",
+      "titleLine1": "Integrato",
+      "titleLine2": "Soluzioni di equipaggiamento",
       "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato e consegnato rapidamente da ampio stock con garanzia Özünlü."
     },
     "whyChooseUs": {
       "eyebrow": "PERCHÉ ÖZÜNLÜ?",
-      "title": "Perché Özünlü?",
+      "title": "Un marchio scelto con fiducia",
       "features": {
         "0": "Design di <strong>sovrastruttura</strong> approvato OEM — <strong>produzione</strong> compatibile con diverse configurazioni di telaio e trattore",
         "1": "Lavorazione dell'<strong>acciaio</strong> certificata <hardox></hardox> e tecnologia di saldatura robotizzata",
         "2": "Piena conformità a tutte le normative e agli standard europei di sicurezza (ECE/ADR)",
         "3": "Garanzia completa e <strong>assistenza post-vendita</strong> ininterrotta",
         "4": "87 punti di <strong>assistenza autorizzata</strong> in 50 province in tutta la Turchia",
-        "5": "Design strutturale che preserva un elevato valore di rivendita",
-        "6": "Export in oltre 50 paesi — qualità comprovata a livello globale"
+        "5": "Design strutturale che preserva un elevato valore di <strong>rivendita</strong>",
+        "6": "Export in più di 50 paesi — qualità comprovata a livello globale"
       },
       "cardLabel": "Garanzia Özünlü"
     },
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Scelto dai leader del settore",
-      "description": "Le nostre soluzioni di <strong>sovrastruttura</strong> per <strong>veicoli commerciali pesanti</strong> funzionano in modo affidabile sulle rotte più difficili in edilizia, minerario e trasporto a lunga distanza.",
+      "description": "",
       "footer": "Fornitore di sovrastrutture omologato"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "La risposta ingegneristica per cantieri difficili. Cassone <hardox></hardox>, elevata stabilità di ribaltamento e capacità di carico ottimizzata — prestazioni superiori in ogni condizione."
     },
     "products": {
-      "title": "Soluzioni ribaltabili",
-      "subtitle": "Abbiamo preparato per te le configurazioni più richieste. Esplora o richiedi un preventivo ora."
+      "title": "Ribaltabile",
+      "subtitle": "Scopri e richiedi subito un preventivo."
     },
     "features": {
       "titleLine1": "L'armonia perfetta tra",
@@ -189,8 +189,9 @@
       "imageAlt": "Caratteristiche Özünlü ribaltabile"
     },
     "configurator": {
-      "title": "Configuratore ribaltabile",
-      "subtitle": "Specifica i dettagli tecnici per un ribaltabile ad alte prestazioni su misura per le tue esigenze. Il nostro team di esperti preparerà a breve il tuo preventivo personalizzato."
+      "title": "Richiedi preventivo",
+      "subtitle": "Indica i dettagli tecnici per un ribaltabile ad alte prestazioni su misura. Il nostro team preparerà il preventivo personalizzato.",
+      "badge": "RIBALTABILE"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Ribaltabile",
-        "description": "Peso equilibrato e gestione economica per scenari compatti.",
+        "description": "Peso equilibrato e prestazioni operative efficienti negli scenari d’uso compatti.",
         "features": [
           "Design compatto",
           "Gestione economica",
@@ -290,8 +291,8 @@
       "description": "Alleggerisci i trasporti pesanti con l'<strong>ingegneria</strong>. Struttura in <strong>acciaio</strong> <hardox></hardox>, tecnologia frenante avanzata e distribuzione del carico ottimizzata — prestazioni e sicurezza superiori su ogni percorso."
     },
     "products": {
-      "title": "Soluzioni semirimorchio",
-      "subtitle": "Abbiamo preparato le configurazioni più richieste del settore. Richiedi un preventivo o progetta il tuo veicolo."
+      "title": "Semirimorchio",
+      "subtitle": "Scopri e richiedi subito un preventivo."
     },
     "features": {
       "titleLine1": "Padroneggia ogni",
@@ -305,8 +306,9 @@
       "imageAlt": "Caratteristiche semirimorchio"
     },
     "configurator": {
-      "title": "Configuratore semirimorchio",
-      "subtitle": "Condividi i dettagli per progettare il semirimorchio ad alte prestazioni più adatto alla tua flotta. Il nostro team di ingegneria preparerà un preventivo tecnico su misura."
+      "title": "Semirimorchio",
+      "subtitle": "Condividi i dettagli per progettare il miglior semirimorchio ad alte prestazioni per la tua flotta. Il nostro team tecnico preparerà un preventivo su misura.",
+      "badge": "Semirimorchio"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "EQUIPAGGIAMENTO",
       "imageAlt": "Soluzioni di equipaggiamento e ricambi",
-      "titleLine1": "Soluzioni di equipaggiamento",
-      "titleLine2": "complete per la tua flotta",
+      "titleLine1": "Integrato",
+      "titleLine2": "Soluzioni di equipaggiamento",
       "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato con garanzia Özünlü e consegna rapida da stock."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "Non hai trovato il pezzo?",
-      "description": "Contatta il nostro team di esperti e troveremo il prodotto di cui hai bisogno."
+      "description": "Contatta il nostro team di esperti e definiamo insieme la soluzione più adatta alle tue esigenze."
     },
     "performance": {
       "imageAlt": "Equipaggiamento rimorchio",
       "titleLine1": "Il pezzo giusto,",
       "titleLine2": "massime prestazioni",
-      "description": "Le prestazioni del veicolo dipendono direttamente dalla qualità dell'equipaggiamento. In Özünlü consegniamo istantaneamente prodotti originali certificati di marchi comprovati a livello globale dal nostro ampio stock.",
+      "description": "Consegniamo prodotti originali certificati di marchi riconosciuti a livello mondiale nel minor tempo possibile grazie al nostro ampio stock.",
       "bullets": {
         "0": "Garanzia prodotto originale certificato",
         "1": "Ampia compatibilità di marchi e modelli",
@@ -436,12 +438,12 @@
         "description": "Tutti i prodotti coperti da garanzia completa del produttore."
       },
       "teknikDestek": {
-        "title": "Supporto tecnico 24/7",
-        "description": "Team di supporto esperto disponibile giorno e notte."
+        "title": "Supporto tecnico rapido",
+        "description": "Il nostro team di supporto tecnico trova una soluzione alla tua richiesta nel minor tempo possibile."
       }
     },
     "documents": {
-      "eyebrow": "Knowledge base",
+      "eyebrow": "Risorse",
       "title": "Documenti",
       "titleHighlight": "Tecnici",
       "description": "Manuali utente, procedure di manutenzione e specifiche tecniche preparati per la massima efficienza del prodotto — disponibili in turco e inglese.",

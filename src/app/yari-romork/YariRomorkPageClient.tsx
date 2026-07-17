@@ -112,17 +112,17 @@ export default function YariRomorkPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.2, duration: 0.8 }}
-                            className="relative z-10 typo-h1-on-dark mb-4 md:mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                         >
                             {t('hero.titleLine1')} <br />
-                            <HeroAccentText>{t('hero.titleLine2')}</HeroAccentText>
+                            <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
                         </motion.h1>
 
                         <motion.p
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="typo-body-on-dark mb-8 mr-auto max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>
@@ -151,8 +151,8 @@ export default function YariRomorkPageClient() {
                     <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
                         {tCommon('labels.modellerimiz')}
                     </span>
-                    <h2 className="typo-h2">{t('products.title')}</h2>
-                    <p className="typo-body mt-4 max-w-2xl mx-auto">{t('products.subtitle')}</p>
+                    <h2 className="text-3xl md:text-[2.75rem] font-bold tracking-tight leading-[1.1] text-ozunlu-950">{t('products.title')}</h2>
+                    <p className="text-base md:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">{t('products.subtitle')}</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -177,7 +177,7 @@ export default function YariRomorkPageClient() {
                                         className="h-5 w-auto object-contain object-left opacity-90"
                                     />
                                 </div>
-                                <p className="typo-body-sm">{product.description}</p>
+                                <p className="text-sm text-gray-600">{product.description}</p>
                             </div>
                         </div>
                     ))}
@@ -194,7 +194,7 @@ export default function YariRomorkPageClient() {
                     className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 group hover:shadow-xl transition-all duration-500"
                 >
                     <div className="w-full md:w-1/2 flex flex-col justify-center">
-                        <h3 className="typo-h2 mb-8">
+                        <h3 className="text-3xl md:text-5xl font-bold text-black mb-8">
                             {t('features.titleLine1')} <br /> <span className="text-ozunlu-950">{t('features.titleLine2')}</span>
                         </h3>
 
@@ -204,8 +204,8 @@ export default function YariRomorkPageClient() {
                                     <span className="text-xl font-bold text-black">01</span>
                                 </div>
                                 <div>
-                                    <h4 className="typo-h3 mb-2">{t('features.item01Title')}</h4>
-                                    <p className="typo-body-sm text-gray-700">{t.rich('features.item01Content', heroRichTextHandlers)}</p>
+                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item01Title')}</h4>
+                                    <p className="text-sm text-gray-700">{t.rich('features.item01Content', heroRichTextHandlers)}</p>
                                 </div>
                             </div>
 
@@ -214,8 +214,8 @@ export default function YariRomorkPageClient() {
                                     <span className="text-xl font-bold text-black">02</span>
                                 </div>
                                 <div>
-                                    <h4 className="typo-h3 mb-2">{t('features.item02Title')}</h4>
-                                    <p className="typo-body-sm text-gray-700">{t.rich('features.item02Content', heroRichTextHandlers)}</p>
+                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item02Title')}</h4>
+                                    <p className="text-sm text-gray-700">{t.rich('features.item02Content', heroRichTextHandlers)}</p>
                                 </div>
                             </div>
 
@@ -224,8 +224,8 @@ export default function YariRomorkPageClient() {
                                     <span className="text-xl font-bold text-black">03</span>
                                 </div>
                                 <div>
-                                    <h4 className="typo-h3 mb-2">{t('features.item03Title')}</h4>
-                                    <p className="typo-body-sm text-gray-700">{t.rich('features.item03Content', heroRichTextHandlers)}</p>
+                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item03Title')}</h4>
+                                    <p className="text-sm text-gray-700">{t.rich('features.item03Content', heroRichTextHandlers)}</p>
                                 </div>
                             </div>
                         </div>
@@ -259,6 +259,7 @@ export default function YariRomorkPageClient() {
             {/* CONFIGURATOR */}
             <ProposalForm
                 initialProduct="dorse"
+                configuratorBadge={t('configurator.badge')}
                 configuratorTitle={t('configurator.title')}
                 configuratorSubtitle={t('configurator.subtitle')}
             />

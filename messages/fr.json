@@ -106,7 +106,7 @@
       "imageAlt": "Performance et robustesse Özünlü benne",
       "titleLine1": "La réponse ingénierie",
       "titleLine2": "aux conditions difficiles",
-      "description": "Nos systèmes de <strong>benne</strong> conçus pour les conditions exigeantes de la construction, des mines et des projets d'infrastructure fonctionnent sans interruption sur le terrain grâce à la robustesse de la caisse <hardox></hardox>, une stabilité de basculement élevée et une capacité de déchargement rapide."
+      "description": "Nos systèmes de <strong>benne</strong> conçus pour des conditions de chantier exigeantes assurent une performance continue grâce à la résistance <hardox></hardox>, une grande stabilité au basculement et une décharge rapide."
     },
     "trailerHero": {
       "category": "SEMI-REMORQUE",
@@ -118,21 +118,21 @@
     "equipmentHero": {
       "category": "Équipements",
       "imageAlt": "Özünlü solutions d'équipements et de pièces détachées",
-      "titleLine1": "Solutions d'équipement",
-      "titleLine2": "complètes pour votre flotte",
+      "titleLine1": "Intégré",
+      "titleLine2": "Solutions d’équipement",
       "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
     },
     "whyChooseUs": {
       "eyebrow": "POURQUOI ÖZÜNLÜ ?",
-      "title": "Pourquoi Özünlü ?",
+      "title": "Une marque choisie en toute confiance",
       "features": {
         "0": "Design de <strong>superstructure</strong> approuvé par le constructeur — production compatible avec différentes configurations de châssis et de tracteur",
         "1": "Traitement d'<strong>acier</strong> certifié <hardox></hardox> et technologie de soudage robotisé",
         "2": "Conformité totale à toutes les réglementations et aux normes de sécurité européennes (ECE/ADR)",
         "3": "Garantie complète et <strong>service après-vente</strong> ininterrompu",
         "4": "87 points de service agréés dans 50 provinces à travers la Turquie",
-        "5": "Conception structurelle préservant une forte valeur de revente",
-        "6": "Export vers plus de 50 pays — qualité reconnue à l'échelle mondiale"
+        "5": "Conception structurelle préservant une forte valeur de <strong>revente</strong>",
+        "6": "Export vers plus de 50 pays — qualité éprouvée à l’échelle mondiale"
       },
       "cardLabel": "La garantie Özünlü"
     },
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Le choix des marques leaders du secteur",
-      "description": "Nos solutions de superstructures pour véhicules commerciaux lourds fonctionnent de manière fiable sur les itinéraires les plus exigeants de la construction, des mines et du transport longue distance.",
+      "description": "",
       "footer": "Fournisseur de superstructures agréé"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "La réponse ingénierie aux conditions difficiles. Caisse <hardox></hardox>, stabilité de basculement élevée et capacité de charge optimisée — performance supérieure en toutes conditions."
     },
     "products": {
-      "title": "Solutions benne",
-      "subtitle": "Nous avons préparé les configurations les plus demandées pour vous. Consultez ou demandez un devis dès maintenant."
+      "title": "Benne",
+      "subtitle": "Découvrez et demandez un devis immédiatement."
     },
     "features": {
       "titleLine1": "L'harmonie parfaite entre",
@@ -189,8 +189,9 @@
       "imageAlt": "Caractéristiques Özünlü benne"
     },
     "configurator": {
-      "title": "Configurateur de benne",
-      "subtitle": "Précisez les détails techniques pour une benne haute performance adaptée à vos besoins. Notre équipe d'experts préparera votre devis personnalisé dans les plus brefs délais."
+      "title": "Demander un devis",
+      "subtitle": "Précisez les détails techniques pour une benne haute performance adaptée à vos besoins. Notre équipe prépare votre devis personnalisé.",
+      "badge": "BENNE"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Benne",
-        "description": "Un poids équilibré et un coût d'exploitation économique pour les usages compacts.",
+        "description": "Poids équilibré et performance d’exploitation efficace dans les scénarios d’usage compacts.",
         "features": [
           "Design compact",
           "Exploitation économique",
@@ -290,8 +291,8 @@
       "description": "Allégez le transport lourd grâce à l'ingénierie. Structure en <strong>acier</strong> <hardox></hardox>, technologie de freinage avancée et répartition optimisée de la charge — performance et sécurité supérieures sur chaque itinéraire."
     },
     "products": {
-      "title": "Solutions semi-remorque",
-      "subtitle": "Nous avons préparé les configurations les plus demandées du secteur. Demandez un devis ou concevez votre propre véhicule."
+      "title": "Semi-remorque",
+      "subtitle": "Découvrez et demandez un devis immédiatement."
     },
     "features": {
       "titleLine1": "Maîtrisez",
@@ -305,8 +306,9 @@
       "imageAlt": "Caractéristiques semi-remorque"
     },
     "configurator": {
-      "title": "Configurateur de semi-remorque",
-      "subtitle": "Partagez les détails pour concevoir la semi-remorque haute performance la plus adaptée à votre flotte. Notre équipe d'ingénieurs préparera un devis technique personnalisé."
+      "title": "Semi-remorque",
+      "subtitle": "Partagez les détails pour concevoir la meilleure semi-remorque haute performance pour votre flotte. Notre équipe d’ingénieurs prépare un devis technique sur mesure.",
+      "badge": "Semi-remorque"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "ÉQUIPEMENTS",
       "imageAlt": "Solutions d'équipements et de pièces détachées",
-      "titleLine1": "Solutions d'équipement",
-      "titleLine2": "complètes pour votre flotte",
+      "titleLine1": "Intégré",
+      "titleLine2": "Solutions d’équipement",
       "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "Vous n'avez pas trouvé la pièce recherchée ?",
-      "description": "Contactez notre équipe d'experts — nous vous procurerons le produit dont vous avez besoin."
+      "description": "Contactez notre équipe d’experts ; définissons ensemble la solution la plus adaptée à vos besoins."
     },
     "performance": {
       "imageAlt": "Équipements pour remorques",
       "titleLine1": "La bonne pièce,",
       "titleLine2": "performance maximale",
-      "description": "La performance du véhicule dépend directement de la qualité des équipements. Chez Özünlü, nous livrons instantanément des produits certifiés d'origine de marques reconnues mondialement depuis notre stock étendu.",
+      "description": "Nous livrons des produits originaux certifiés de marques reconnues mondialement, dans les meilleurs délais grâce à notre large stock.",
       "bullets": {
         "0": "Garantie de produits d'origine et certifiés",
         "1": "Large compatibilité avec les marques et les modèles",
@@ -436,12 +438,12 @@
         "description": "Tous nos produits sont couverts par une garantie constructeur complète."
       },
       "teknikDestek": {
-        "title": "Assistance technique 24/7",
-        "description": "Notre équipe d'assistance technique est joignable jour et nuit."
+        "title": "Support technique rapide",
+        "description": "Notre équipe de support technique trouve une solution à votre demande dans les plus brefs délais."
       }
     },
     "documents": {
-      "eyebrow": "Base de connaissances",
+      "eyebrow": "Ressources",
       "title": "Documents",
       "titleHighlight": "Techniques",
       "description": "Manuels d'utilisation, procédures de maintenance et spécifications techniques préparés pour une efficacité maximale de vos produits — disponibles en turc et en anglais.",

@@ -43,6 +43,7 @@ interface ProposalFormProps {
     onClearSelection?: () => void;
     configuratorTitle?: string;
     configuratorSubtitle?: string;
+    configuratorBadge?: string;
 }
 
 export default function ProposalForm({
@@ -51,6 +52,7 @@ export default function ProposalForm({
     onClearSelection,
     configuratorTitle,
     configuratorSubtitle,
+    configuratorBadge,
 }: ProposalFormProps) {
     const t = useTranslations('proposal');
     const tCommon = useTranslations('common');
@@ -218,7 +220,9 @@ export default function ProposalForm({
                         <div className="lg:sticky lg:top-14 space-y-4">
                             <div className="hidden lg:block">
                                 <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
-                                    {selectedProduct ? t('selectedProduct') : t('configurator')}
+                                    {selectedProduct
+                                        ? t('selectedProduct')
+                                        : (configuratorBadge ?? t('configurator'))}
                                 </span>
                                 <h2 className="text-4xl font-black text-ozunlu-950 mb-2">
                                     {selectedProduct

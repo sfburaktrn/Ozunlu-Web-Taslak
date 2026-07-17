@@ -106,7 +106,7 @@
       "imageAlt": "Rendimiento y durabilidad Özünlü volquete",
       "titleLine1": "La respuesta de ingeniería",
       "titleLine2": "para condiciones exigentes",
-      "description": "Nuestros sistemas de <strong>volquete</strong> desarrollados para las duras condiciones de construcción, minería y proyectos de infraestructura funcionan sin interrupciones en campo con la durabilidad de la caja <hardox></hardox>, alta estabilidad de volcado y rápida capacidad de descarga."
+      "description": "Nuestros sistemas de <strong>volquete</strong> desarrollados para condiciones de obra exigentes ofrecen rendimiento continuo con resistencia <hardox></hardox>, alta estabilidad de volcado y capacidad de descarga rápida."
     },
     "trailerHero": {
       "category": "SEMIRREMOLQUE",
@@ -118,21 +118,21 @@
     "equipmentHero": {
       "category": "Equipamiento",
       "imageAlt": "Özünlü soluciones de equipamiento y repuestos",
-      "titleLine1": "Soluciones de equipamiento",
-      "titleLine2": "completas para su flota",
+      "titleLine1": "Integrado",
+      "titleLine2": "Soluciones de equipamiento",
       "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
     },
     "whyChooseUs": {
       "eyebrow": "¿POR QUÉ ÖZÜNLÜ?",
-      "title": "¿Por qué Özünlü?",
+      "title": "Una marca elegida con confianza",
       "features": {
         "0": "Diseño de <strong>superestructura</strong> aprobado por el fabricante del vehículo — producción compatible con diferentes configuraciones de chasis y tractor",
         "1": "Procesamiento de <strong>acero</strong> certificado <hardox></hardox> y tecnología de soldadura robótica",
         "2": "Cumplimiento total de todas las normativas y estándares europeos de seguridad (ECE/ADR)",
         "3": "Garantía integral y <strong>servicio posventa</strong> ininterrumpido",
         "4": "87 puntos de servicio autorizados en 50 provincias de toda Turquía",
-        "5": "Diseño estructural que preserva un alto valor de reventa",
-        "6": "Exportación a más de 50 países — calidad probada a nivel global"
+        "5": "Diseño estructural que preserva un alto valor de <strong>reventa</strong>",
+        "6": "Exportación a más de 50 países — calidad probada a escala global"
       },
       "cardLabel": "La garantía de Özünlü"
     },
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Preferido por las marcas líderes del sector",
-      "description": "Nuestras soluciones de superestructuras para vehículos comerciales pesados funcionan de forma fiable en las rutas más exigentes de construcción, minería y transporte de larga distancia.",
+      "description": "",
       "footer": "Proveedor de superestructuras homologado"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "La respuesta de ingeniería para condiciones exigentes. Caja <hardox></hardox>, alta estabilidad de volcado y capacidad de carga optimizada — rendimiento superior en cualquier condición."
     },
     "products": {
-      "title": "Soluciones de volquete",
-      "subtitle": "Hemos preparado las configuraciones más demandadas para usted. Consulte o solicite un presupuesto ahora."
+      "title": "Volquete",
+      "subtitle": "Explore y solicite presupuesto ahora."
     },
     "features": {
       "titleLine1": "La armonía perfecta entre",
@@ -189,8 +189,9 @@
       "imageAlt": "Características Özünlü volquete"
     },
     "configurator": {
-      "title": "Configurador de volquete",
-      "subtitle": "Especifique los detalles técnicos para un volquete de alto rendimiento adaptado a sus necesidades. Nuestro equipo de expertos preparará su presupuesto personalizado a la mayor brevedad."
+      "title": "Solicitar presupuesto",
+      "subtitle": "Indique los detalles técnicos para un volquete de alto rendimiento a su medida. Nuestro equipo preparará su presupuesto personalizado.",
+      "badge": "VOLQUETE"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Volquete",
-        "description": "Peso equilibrado y costes operativos económicos para escenarios compactos de uso.",
+        "description": "Peso equilibrado y rendimiento operativo eficiente en escenarios de uso compacto.",
         "features": [
           "Diseño compacto",
           "Operación económica",
@@ -290,8 +291,8 @@
       "description": "Aligere el transporte pesado con ingeniería. Estructura de <strong>acero</strong> <hardox></hardox>, tecnología de frenado avanzada y distribución optimizada de la carga — rendimiento y seguridad superiores en cada ruta."
     },
     "products": {
-      "title": "Soluciones de semirremolque",
-      "subtitle": "Hemos preparado las configuraciones más demandadas del sector. Solicite un presupuesto o diseñe su propio vehículo."
+      "title": "Semirremolque",
+      "subtitle": "Explore y solicite presupuesto ahora."
     },
     "features": {
       "titleLine1": "Domine",
@@ -305,8 +306,9 @@
       "imageAlt": "Características de semirremolque"
     },
     "configurator": {
-      "title": "Configurador de semirremolque",
-      "subtitle": "Comparta los detalles para diseñar el semirremolque de alto rendimiento más adecuado para su flota. Nuestro equipo de ingenieros preparará un presupuesto técnico personalizado."
+      "title": "Semirremolque",
+      "subtitle": "Comparta los detalles para diseñar el mejor semirremolque de alto rendimiento para su flota. Nuestro equipo de ingeniería preparará un presupuesto técnico a medida.",
+      "badge": "Semirremolque"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "EQUIPAMIENTO",
       "imageAlt": "Soluciones de equipamiento y repuestos",
-      "titleLine1": "Soluciones de equipamiento",
-      "titleLine2": "completas para su flota",
+      "titleLine1": "Integrado",
+      "titleLine2": "Soluciones de equipamiento",
       "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "¿No encontró la pieza que buscaba?",
-      "description": "Contacte con nuestro equipo de expertos y le conseguiremos el producto que necesita."
+      "description": "Contacte con nuestro equipo experto y definamos juntos la solución más adecuada a sus necesidades."
     },
     "performance": {
       "imageAlt": "Equipamiento para remolques",
       "titleLine1": "La pieza correcta,",
       "titleLine2": "máximo rendimiento",
-      "description": "El rendimiento del vehículo depende directamente de la calidad del equipamiento. En Özünlü, entregamos al instante productos originales certificados de marcas probadas a nivel global desde nuestro amplio stock.",
+      "description": "Entregamos productos originales certificados de marcas reconocidas mundialmente en el menor tiempo gracias a nuestro amplio stock.",
       "bullets": {
         "0": "Garantía de productos originales y certificados",
         "1": "Amplia compatibilidad con marcas y modelos",
@@ -436,12 +438,12 @@
         "description": "Todos nuestros productos están cubiertos por una garantía integral del fabricante."
       },
       "teknikDestek": {
-        "title": "Asistencia técnica 24/7",
-        "description": "Nuestro equipo de soporte técnico está disponible día y noche."
+        "title": "Soporte técnico rápido",
+        "description": "Nuestro equipo de soporte técnico ofrece una solución a su solicitud lo antes posible."
       }
     },
     "documents": {
-      "eyebrow": "Base de conocimiento",
+      "eyebrow": "Recursos",
       "title": "Documentos",
       "titleHighlight": "Técnicos",
       "description": "Manuales de usuario, procedimientos de mantenimiento y especificaciones técnicas preparados para la máxima eficiencia de sus productos — disponibles en turco e inglés.",

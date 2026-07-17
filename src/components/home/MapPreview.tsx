@@ -176,8 +176,8 @@ export default function MapPreview({
                   viewport={{ once: true }}
                   className="space-y-4"
                 >
-                  <p className="typo-eyebrow">{eyebrow}</p>
-                  <h2 className="typo-h2">
+                  <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase">{eyebrow}</p>
+                  <h2 className="text-3xl md:text-[2.75rem] font-bold tracking-tight leading-[1.1] text-ozunlu-950">
                     {titleProp ? (
                       title
                     ) : (
@@ -187,26 +187,26 @@ export default function MapPreview({
                       </>
                     )}
                   </h2>
-                  <p className="typo-body max-w-2xl">{description}</p>
+                  <p className="text-base md:text-lg text-gray-600 max-w-2xl">{description}</p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="p-4 rounded-xl border border-gray-200 bg-white shadow-sm">
-                    <p className="typo-body-sm font-medium text-gray-500">{t("citiesLabel")}</p>
-                    <p className="typo-h2 mt-1">
+                    <p className="text-sm font-medium text-gray-500">{t("citiesLabel")}</p>
+                    <p className="text-3xl font-bold text-ozunlu-950 tracking-tight mt-1">
                       {serviceLocations.length}
                     </p>
                   </div>
                   <div className="p-4 rounded-xl border border-gray-200 bg-white shadow-sm">
-                    <p className="typo-body-sm font-medium text-gray-500">{t("pointsLabel")}</p>
-                    <p className="typo-h2 mt-1">
+                    <p className="text-sm font-medium text-gray-500">{t("pointsLabel")}</p>
+                    <p className="text-3xl font-bold text-ozunlu-950 tracking-tight mt-1">
                       {totalProviders}
                     </p>
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <p className="typo-eyebrow">
+                  <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase">
                     {t("topCities")}
                   </p>
                   <div className="flex flex-col gap-3">
@@ -224,7 +224,7 @@ export default function MapPreview({
                         </div>
                         <div>
                           <p className="font-semibold text-ozunlu-950 tracking-tight">{loc.city}</p>
-                          <p className="typo-body-sm">
+                          <p className="text-sm text-gray-600">
                             {t("serviceCount", { count: loc.providers.length })}
                           </p>
                         </div>
@@ -266,10 +266,10 @@ export default function MapPreview({
                               <MapPin size={18} />
                             </div>
                             <div className="min-w-0">
-                              <p className="typo-h3 truncate">
+                              <p className="text-lg font-bold text-ozunlu-950 truncate">
                                 {selectedCity.location?.city ?? selectedCity.name}
                               </p>
-                              <p className="typo-body-sm font-medium text-gray-600 mt-0.5">
+                              <p className="text-sm font-medium text-gray-600 mt-0.5">
                                 {selectedCity.location
                                   ? t("serviceCount", {
                                       count: selectedCity.location.providers.length,

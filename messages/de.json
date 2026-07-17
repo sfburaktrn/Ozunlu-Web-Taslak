@@ -106,7 +106,7 @@
       "imageAlt": "Özünlü Kipper Leistung und Beständigkeit",
       "titleLine1": "Ingenieursantwort",
       "titleLine2": "für harte Einsätze",
-      "description": "Unsere Kippersysteme für harte Bau-, Bergbau- und Infrastrukturbedingungen arbeiten unterbrechungsfrei mit <hardox></hardox>-Muldenbeständigkeit, hoher Kippstabilität und schneller Entladekapazität."
+      "description": "Unsere für raue Feldbedingungen entwickelten <strong>Kipper</strong>-Systeme arbeiten mit <hardox></hardox>-Kastenfestigkeit, hoher Kippstabilität und schneller Entladekapazität zuverlässig im Einsatz."
     },
     "trailerHero": {
       "category": "SATTELANHÄNGER",
@@ -118,21 +118,21 @@
     "equipmentHero": {
       "category": "Ausrüstung",
       "imageAlt": "Özünlü Ausrüstung und Ersatzteile",
-      "titleLine1": "Komplette Ausrüstung",
-      "titleLine2": "für Ihre Flotte",
+      "titleLine1": "Integriert",
+      "titleLine2": "Ausrüstungslösungen",
       "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung ist original zertifiziert und schnell aus großem Lager mit Özünlü-Garantie lieferbar."
     },
     "whyChooseUs": {
       "eyebrow": "WARUM ÖZÜNLÜ?",
-      "title": "Warum Özünlü?",
+      "title": "Eine mit Vertrauen gewählte Marke",
       "features": {
         "0": "OEM-genehmigtes Aufbaudesign — kompatibel mit verschiedenen Fahrgestell- und Zugmaschinenkonfigurationen",
         "1": "<hardox></hardox>-zertifizierte <strong>Stahlverarbeitung</strong> und Roboterschweißtechnologie",
         "2": "Volle Einhaltung aller Vorschriften und europäischer Sicherheitsstandards (ECE/ADR)",
         "3": "Umfassende Garantie und unterbrechungsfreier <strong>Kundendienst</strong>",
         "4": "87 autorisierte Servicestellen in 50 Provinzen in der Türkei",
-        "5": "Strukturdesign, das hohen Wiederverkaufswert bewahrt",
-        "6": "Export in über 50 Länder — weltweit bewährte Qualität"
+        "5": "Strukturelles Design, das einen hohen <strong>Wiederverkaufs</strong>wert sichert",
+        "6": "Export in mehr als 50 Länder — weltweit bewährte Qualität"
       },
       "cardLabel": "Özünlü Guarantee"
     },
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Bevorzugt von Branchenführern",
-      "description": "Unsere Aufbauten für schwere Nutzfahrzeuge arbeiten zuverlässig auf den härtesten Strecken in Bau, Bergbau und Fernverkehr.",
+      "description": "",
       "footer": "Zugelassener Aufbau-Lieferant"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "Die Ingenieursantwort für harte Einsätze. <hardox></hardox>-Mulde, hohe Kippstabilität und optimierte Nutzlast — überlegene Leistung unter allen Bedingungen."
     },
     "products": {
-      "title": "Kipperlösungen",
-      "subtitle": "Die beliebtesten Konfigurationen für Sie vorbereitet. Ansehen oder sofort Angebot anfordern."
+      "title": "Kipper",
+      "subtitle": "Ansehen und sofort ein Angebot anfordern."
     },
     "features": {
       "titleLine1": "Perfekte Harmonie von",
@@ -189,8 +189,9 @@
       "imageAlt": "Özünlü Kipper Merkmale"
     },
     "configurator": {
-      "title": "Kipper-Konfigurator",
-      "subtitle": "Geben Sie technische Details für einen leistungsstarken Kipper nach Maß an. Unser Expertenteam erstellt Ihr individuelles Angebot."
+      "title": "Angebot anfordern",
+      "subtitle": "Geben Sie technische Details für einen leistungsstarken Kipper nach Maß an. Unser Expertenteam erstellt Ihr individuelles Angebot.",
+      "badge": "KIPPER"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Tipper",
-        "description": "Balanced weight and economical operation for compact scenarios.",
+        "description": "Ausgewogenes Gewicht und effiziente Betriebsleistung in kompakten Einsatzszenarien.",
         "features": [
           "Compact Design",
           "Economical Operation",
@@ -290,8 +291,8 @@
       "description": "Erleichtern Sie Schwerlasttransport mit Ingenieurskunst. <hardox></hardox>-Stahlstruktur, fortschrittliche Bremsentechnik und optimierte Lastverteilung — überlegene Leistung und Sicherheit auf jeder Strecke."
     },
     "products": {
-      "title": "Sattelanhänger-Lösungen",
-      "subtitle": "Die beliebtesten Branchenkonfigurationen für Sie vorbereitet. Angebot anfordern oder eigenes Fahrzeug gestalten."
+      "title": "Sattelanhänger",
+      "subtitle": "Ansehen und sofort ein Angebot anfordern."
     },
     "features": {
       "titleLine1": "Beherrschen Sie",
@@ -305,8 +306,9 @@
       "imageAlt": "Sattelanhänger Merkmale"
     },
     "configurator": {
-      "title": "Sattelanhänger-Konfigurator",
-      "subtitle": "Teilen Sie Details für den besten leistungsstarken Sattelanhänger für Ihre Flotte. Unser Ingenieurteam erstellt ein individuelles technisches Angebot."
+      "title": "Sattelanhänger",
+      "subtitle": "Teilen Sie Details für den besten leistungsstarken Sattelanhänger für Ihre Flotte. Unser Ingenieurteam erstellt ein individuelles technisches Angebot.",
+      "badge": "Sattelanhänger"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "AUSRÜSTUNG",
       "imageAlt": "Ausrüstungs- und Ersatzteillösungen",
-      "titleLine1": "Komplette Ausrüstung",
-      "titleLine2": "für Ihre Flotte",
+      "titleLine1": "Integriert",
+      "titleLine2": "Ausrüstungslösungen",
       "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung original zertifiziert mit Özünlü-Garantie und schneller Lagerlieferung."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "Teil nicht gefunden?",
-      "description": "Kontaktieren Sie unser Expertenteam — wir beschaffen das benötigte Produkt für Sie."
+      "description": "Kontaktieren Sie unser Expertenteam — wir finden gemeinsam die passende Lösung für Ihren Bedarf."
     },
     "performance": {
       "imageAlt": "Anhängerausrüstung",
       "titleLine1": "Das richtige Teil,",
       "titleLine2": "maximale Leistung",
-      "description": "Fahrzeugleistung hängt direkt von der Ausrüstungsqualität ab. Bei Özünlü liefern wir original zertifizierte Produkte weltweit bewährter Marken sofort aus großem Lager.",
+      "description": "Original zertifizierte Produkte weltweit bewährter Marken liefern wir dank großem Lagerbestand in kürzester Zeit.",
       "bullets": {
         "0": "Original certified product guarantee",
         "1": "Wide brand and model compatibility",
@@ -436,12 +438,12 @@
         "description": "All products covered by comprehensive manufacturer warranty."
       },
       "teknikDestek": {
-        "title": "24/7 Technical Support",
-        "description": "Expert support team available day and night."
+        "title": "Schneller technischer Support",
+        "description": "Unser technisches Expertenteam findet so schnell wie möglich eine Lösung für Ihre Anfrage."
       }
     },
     "documents": {
-      "eyebrow": "Wissensdatenbank",
+      "eyebrow": "Ressourcen",
       "title": "Technische",
       "titleHighlight": "Dokumente",
       "description": "Bedienungsanleitungen, Wartungsverfahren und technische Spezifikationen für maximale Produkteffizienz — auf Türkisch und Englisch verfügbar.",

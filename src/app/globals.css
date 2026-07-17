@@ -15,73 +15,12 @@
 }
 
 body {
-  color: #1d1d1f;
+  color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb)));
   min-height: 100vh;
-  font-family: var(--font-manrope), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@layer base {
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    color: #0d0d0d;
-  }
-
-  p {
-    font-weight: 400;
-    line-height: 1.625;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-}
-
-@layer components {
-  .typo-eyebrow {
-    @apply text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase;
-  }
-
-  .typo-h1 {
-    @apply text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-ozunlu-950;
-  }
-
-  .typo-h1-on-dark {
-    @apply text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white;
-  }
-
-  .typo-h2 {
-    @apply text-3xl md:text-[2.75rem] font-bold tracking-tight leading-[1.1] text-ozunlu-950;
-  }
-
-  .typo-h2-on-dark {
-    @apply text-xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight text-white;
-  }
-
-  .typo-h3 {
-    @apply text-lg md:text-xl font-semibold tracking-tight text-ozunlu-950;
-  }
-
-  .typo-body {
-    @apply text-base md:text-lg font-normal leading-relaxed text-gray-600;
-  }
-
-  .typo-body-sm {
-    @apply text-sm font-normal leading-relaxed text-gray-600;
-  }
-
-  .typo-body-on-dark {
-    @apply text-sm md:text-lg font-normal leading-relaxed text-white;
-  }
+  font-family: var(--font-manrope), sans-serif;
 }
 
 @layer utilities {

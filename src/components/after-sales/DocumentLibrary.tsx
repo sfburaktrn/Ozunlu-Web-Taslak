@@ -69,13 +69,13 @@ export default function DocumentLibrary() {
                     <div className="px-6 md:px-10 relative z-10">
                         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
                             <div className="max-w-xl">
-                                <p className="typo-eyebrow mb-4">
+                                <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase mb-4">
                                     {t('eyebrow')}
                                 </p>
-                                <h2 className="typo-h2 mb-4">
+                                <h2 className="text-3xl md:text-[2.75rem] font-bold text-ozunlu-950 tracking-tight leading-[1.1] mb-4">
                                     {t('title')} {t('titleHighlight')}
                                 </h2>
-                                <p className="typo-body">
+                                <p className="text-base md:text-lg text-gray-600 font-normal leading-relaxed">
                                     {t.rich('description', defaultRichTextHandlers)}
                                 </p>
                             </div>
@@ -113,11 +113,11 @@ export default function DocumentLibrary() {
                                         </span>
                                     </div>
 
-                                    <h3 className="typo-h3 mb-2 leading-snug min-h-[2.75rem]">
+                                    <h3 className="text-base md:text-lg font-semibold text-ozunlu-950 mb-2 tracking-tight leading-snug min-h-[2.75rem]">
                                         {doc.title}
                                     </h3>
 
-                                    <p className="typo-body-sm mb-6 flex-grow">
+                                    <p className="text-sm text-gray-600 font-normal leading-relaxed mb-6 flex-grow">
                                         {doc.desc}
                                     </p>
 
@@ -137,7 +137,7 @@ export default function DocumentLibrary() {
                         {filteredDocuments.length === 0 && (
                             <div className="text-center py-16 text-gray-500">
                                 <Search size={36} className="mx-auto mb-3 opacity-30" strokeWidth={1.5} />
-                                <p className="typo-body-sm">{t('noResults')}</p>
+                                <p className="text-sm font-normal">{t('noResults')}</p>
                             </div>
                         )}
                     </div>

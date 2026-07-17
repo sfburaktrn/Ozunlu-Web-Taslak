@@ -106,7 +106,7 @@
       "imageAlt": "Özünlü Tipper Performance and Durability",
       "titleLine1": "Engineering Answer",
       "titleLine2": "for Tough Sites",
-      "description": "Our <strong>tipper</strong> systems built for harsh construction, mining and infrastructure conditions deliver uninterrupted field performance with <hardox></hardox> body durability, high tipping stability and fast unloading capacity."
+      "description": "Our <strong>tipper</strong> systems developed for tough field conditions deliver uninterrupted field performance with <hardox></hardox> body durability, high tipping stability and fast unloading capacity."
     },
     "trailerHero": {
       "category": "SEMI-TRAILER",
@@ -118,21 +118,21 @@
     "equipmentHero": {
       "category": "Equipment",
       "imageAlt": "Özünlü Equipment and Spare Parts Solutions",
-      "titleLine1": "Complete Equipment",
-      "titleLine2": "Solutions for Your Fleet",
+      "titleLine1": "Integrated",
+      "titleLine2": "Equipment Solutions",
       "description": "From <strong>hydraulic</strong> systems to EBS brake kits, premium axle brands to LED lighting — all trailer equipment is original certified and delivered fast from wide stock with Özünlü guarantee."
     },
     "whyChooseUs": {
       "eyebrow": "WHY ÖZÜNLÜ?",
-      "title": "Why Özünlü?",
+      "title": "A Brand Trusted with Confidence",
       "features": {
         "0": "OEM-approved <strong>superstructure</strong> design — <strong>production</strong> compatible with different chassis and tractor configurations",
         "1": "<hardox></hardox> certified <strong>steel</strong> processing and robotic welding technology",
         "2": "Full compliance with all regulations and European safety standards (ECE/ADR)",
         "3": "Comprehensive warranty and uninterrupted <strong>after-sales</strong> service",
         "4": "87 <strong>authorized service</strong> points in 50 provinces across Turkey",
-        "5": "Structural design that preserves high resale value",
-        "6": "Export to over 50 countries — globally proven quality"
+        "5": "Structural design that preserves high <strong>resale</strong> value",
+        "6": "Export to more than 50 countries — globally proven quality"
       },
       "cardLabel": "Özünlü Guarantee"
     },
@@ -154,7 +154,7 @@
     },
     "partners": {
       "title": "Preferred by Industry Leaders",
-      "description": "Our <strong>heavy commercial vehicle</strong> <strong>superstructure</strong> solutions work reliably on the toughest routes in construction, mining and long-distance transport.",
+      "description": "",
       "footer": "Approved Superstructure Supplier"
     },
     "gallery": {
@@ -174,8 +174,8 @@
       "description": "The <strong>engineering</strong> answer for tough sites. <hardox></hardox> body, high tipping stability and optimized load capacity — superior performance in every condition."
     },
     "products": {
-      "title": "Tipper Solutions",
-      "subtitle": "We prepared the most preferred configurations for you. Explore or request a quote now."
+      "title": "Tipper",
+      "subtitle": "Explore and request a quote now."
     },
     "features": {
       "titleLine1": "Perfect Harmony of",
@@ -189,8 +189,9 @@
       "imageAlt": "Özünlü Tipper Features"
     },
     "configurator": {
-      "title": "Tipper Configurator",
-      "subtitle": "Specify technical details for a high-performance tipper tailored to your needs. Our expert team will prepare your custom quote shortly."
+      "title": "Request a Quote",
+      "subtitle": "Specify technical details for a high-performance tipper tailored to your needs. Our expert team will prepare your custom quote shortly.",
+      "badge": "TIPPER"
     },
     "items": {
       "d24": {
@@ -253,7 +254,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Tipper",
-        "description": "Balanced weight and economical operation for compact scenarios.",
+        "description": "Balanced weight and efficient operating performance in compact use scenarios.",
         "features": [
           "Compact Design",
           "Economical Operation",
@@ -290,8 +291,8 @@
       "description": "Lighten heavy transport with <strong>engineering</strong>. <hardox></hardox> <strong>steel</strong> structure, advanced brake technology and optimized load distribution — superior performance and safety on every route."
     },
     "products": {
-      "title": "Semi-Trailer Solutions",
-      "subtitle": "We prepared the industry's most preferred configurations. Request a quote or design your own vehicle."
+      "title": "Semi-Trailer",
+      "subtitle": "Explore and request a quote now."
     },
     "features": {
       "titleLine1": "Master Every",
@@ -305,8 +306,9 @@
       "imageAlt": "Semi-Trailer Features"
     },
     "configurator": {
-      "title": "Semi-Trailer Configurator",
-      "subtitle": "Share details to design the best high-performance semi-trailer for your fleet. Our engineering team will prepare a custom technical quote."
+      "title": "Semi-trailer",
+      "subtitle": "Share details to design the best high-performance semi-trailer for your fleet. Our engineering team will prepare a custom technical quote.",
+      "badge": "Semi-trailer"
     },
     "items": {
       "g22": {
@@ -348,8 +350,8 @@
     "hero": {
       "badge": "EQUIPMENT",
       "imageAlt": "Equipment and Spare Parts Solutions",
-      "titleLine1": "Complete Equipment",
-      "titleLine2": "Solutions for Your Fleet",
+      "titleLine1": "Integrated",
+      "titleLine2": "Equipment Solutions",
       "description": "From <strong>hydraulic</strong> systems to EBS brake kits, premium axle brands to LED lighting — all trailer equipment is original certified with Özünlü guarantee and fast stock delivery."
     },
     "categories": {
@@ -382,13 +384,13 @@
     },
     "cta": {
       "title": "Couldn't Find the Part?",
-      "description": "Contact our expert team and we will source the product you need."
+      "description": "Contact our expert team and let us determine the best solution for your needs together."
     },
     "performance": {
       "imageAlt": "Trailer Equipment",
       "titleLine1": "Right Part,",
       "titleLine2": "Maximum Performance",
-      "description": "Vehicle performance depends directly on equipment quality. At Özünlü, we deliver original certified products from globally proven brands instantly from our wide stock.",
+      "description": "We deliver original certified products from globally proven brands in the shortest time with our extensive stock advantage.",
       "bullets": {
         "0": "Original certified product guarantee",
         "1": "Wide brand and model compatibility",
@@ -436,12 +438,12 @@
         "description": "All products covered by comprehensive manufacturer warranty."
       },
       "teknikDestek": {
-        "title": "24/7 Technical Support",
-        "description": "Expert support team available day and night."
+        "title": "Fast technical support",
+        "description": "Our expert technical support team provides a solution to your request as quickly as possible."
       }
     },
     "documents": {
-      "eyebrow": "Knowledge Base",
+      "eyebrow": "Resources",
       "title": "Technical",
       "titleHighlight": "Documents",
       "description": "User manuals, maintenance procedures and technical specifications prepared for maximum product efficiency — available in Turkish and English.",

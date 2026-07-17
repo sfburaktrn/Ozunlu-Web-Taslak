@@ -111,33 +111,33 @@
       "imageAlt": "Özünlü Damper Performans ve Dayanıklılık",
       "titleLine1": "Zorlu Sahaların",
       "titleLine2": "Mühendislik Cevabı",
-      "description": "Şantiye, maden ve altyapı projelerinin ağır koşullarına karşı geliştirilmiş <strong>damper</strong> sistemlerimiz; <hardox></hardox> gövde dayanımı, yüksek devrilme stabilitesi ve hızlı boşaltım kapasitesiyle sahada kesintisiz çalışır."
+      "description": "Zorlu saha koşullarına karşı geliştirilmiş <strong>damper</strong> sistemlerimiz; <hardox></hardox> gövde dayanımı, yüksek devrilme stabilitesi ve hızlı boşaltım kapasitesiyle sahada kesintisiz çalışır."
     },
     "trailerHero": {
       "category": "YARI RÖMORK",
       "imageAlt": "Özünlü Yarı Römork ve Dorse Sistemleri",
       "titleLine1": "Hafif Tasarım",
       "titleLine2": "Güçlü Performans",
-      "description": "Taşımacılıkta verimlilik, Güçlü ikinci el değeri ve Uzun ömürlü performans sunar."
+      "description": "Taşımacılıkta verimlilik, güçlü ikinci el değeri ve uzun ömürlü performans sunar."
     },
     "equipmentHero": {
       "category": "Ek Ekipmanlar",
       "imageAlt": "Özünlü Ek Ekipmanlar ve Yedek Parça Çözümleri",
-      "titleLine1": "Filonuz İçin",
-      "titleLine2": "Komple Ekipman Çözümleri",
+      "titleLine1": "Entegre",
+      "titleLine2": "Ekipman Çözümleri",
       "description": "<strong>Hidrolik</strong> sistemlerden EBS fren kitine, premium dingil markalarından LED aydınlatmaya — tüm dorse ekipmanları orijinal sertifikalı ve Özünlü güvencesiyle, geniş stoktan hızlı teslimatla."
     },
     "whyChooseUs": {
       "eyebrow": "NEDEN ÖZÜNLÜ?",
-      "title": "Neden Özünlü?",
+      "title": "Güvenle Tercih Edilen Marka",
       "features": {
         "0": "Araç üreticisi onaylı <strong>üst yapı</strong> tasarımı — farklı şasi ve çekici konfigürasyonlarına uyumlu <strong>üretim</strong>",
         "1": "<hardox></hardox> sertifikalı <strong>çelik</strong> işleme ve robotik kaynak teknolojisi",
         "2": "Tüm yasal düzenlemeler ve Avrupa güvenlik standartlarına (ECE/ADR) tam uyum",
         "3": "Kapsamlı garanti ve kesintisiz <strong>satış sonrası</strong> hizmet",
         "4": "Türkiye genelinde 50 ilde 87 <strong>yetkili servis</strong> noktası",
-        "5": "Yüksek ikinci el değeri koruyan yapısal tasarım anlayışı",
-        "6": "50'yi aşkın ülkeye ihracat — küresel ölçekte kanıtlanmış kalite"
+        "5": "Yüksek <strong>ikinci el</strong> değeri koruyan yapısal tasarım anlayışı",
+        "6": "50'den fazla ülkeye ihracat — küresel ölçekte kanıtlanmış kalite"
       },
       "cardLabel": "Özünlü Güvencesi"
     },
@@ -159,7 +159,7 @@
     },
     "partners": {
       "title": "Sektörün Lider Markalarının Tercihi",
-      "description": "<strong>Ağır ticari araç</strong> <strong>üst yapı</strong> çözümlerimiz; şantiye, maden ve uzun mesafe taşımacılığının en zorlu güzergahlarında güvenle çalışır.",
+      "description": "",
       "footer": "Onaylı Üst Yapı Tedarikçisi"
     },
     "gallery": {
@@ -179,8 +179,8 @@
       "description": "Zorlu sahaların <strong>mühendislik</strong> cevabı. <hardox></hardox> gövde, yüksek devrilme stabilitesi ve optimize yük kapasitesiyle — her koşulda üstün performans."
     },
     "products": {
-      "title": "Damper Çözümleri",
-      "subtitle": "En çok tercih edilen konfigürasyonları sizin için hazırladık. İnceleyin veya hemen teklif alın."
+      "title": "Damper",
+      "subtitle": "İnceleyin ve hemen teklif alın."
     },
     "features": {
       "titleLine1": "Güç ve Estetiğin",
@@ -194,7 +194,8 @@
       "imageAlt": "Özünlü Damper Özellikleri"
     },
     "configurator": {
-      "title": "Damper Konfigüratörü",
+      "badge": "DAMPER",
+      "title": "Teklif Oluşturun",
       "subtitle": "İhtiyaçlarınıza özel yüksek performanslı damper çözümü için teknik detayları belirleyin. Uzman ekibimiz en kısa sürede size özel teklif hazırlasın."
     },
     "items": {
@@ -258,7 +259,7 @@
       },
       "d21": {
         "name": "ÖZ-D21 Damper",
-        "description": "Kompakt kullanım senaryolarında dengeli ağırlık ve ekonomik işletme maliyeti.",
+        "description": "Kompakt kullanım senaryolarında dengeli ağırlık ve verimli işletme performansı.",
         "features": [
           "Kompakt Tasarım",
           "Ekonomik İşletme",
@@ -295,8 +296,8 @@
       "description": "Ağır taşımacılığın yükünü mühendislikle hafifletin. <hardox></hardox> <strong>çelik</strong> yapı, ileri fren teknolojisi ve optimize yük dağılımıyla — her güzergahta üstün performans ve güvenlik."
     },
     "products": {
-      "title": "Yarı Römork Çözümleri",
-      "subtitle": "Sektörün en çok tercih edilen konfigürasyonlarını sizin için hazırladık. Hemen teklif alın veya kendi aracınızı tasarlayın."
+      "title": "Yarı Römork",
+      "subtitle": "İnceleyin ve hemen teklif alın."
     },
     "features": {
       "titleLine1": "Yolun Her Anına",
@@ -310,7 +311,8 @@
       "imageAlt": "Yarı Römork Özellikleri"
     },
     "configurator": {
-      "title": "Yarı Römork Konfigüratörü",
+      "badge": "Yarı römork",
+      "title": "Yarı römork",
       "subtitle": "Filosunuza en uygun yüksek performanslı yarı römork çözümünü tasarlamak için detayları paylaşın. Uzman mühendis ekibimiz ihtiyaçlarınıza özel teknik teklif hazırlasın."
     },
     "items": {
@@ -353,8 +355,8 @@
     "hero": {
       "badge": "EK EKİPMANLAR",
       "imageAlt": "Ekipman ve Yedek Parça Çözümleri",
-      "titleLine1": "Filonuz İçin",
-      "titleLine2": "Komple Ekipman Çözümleri",
+      "titleLine1": "Entegre",
+      "titleLine2": "Ekipman Çözümleri",
       "description": "<strong>Hidrolik</strong> sistemlerden EBS fren kitine, premium dingil markalarından LED aydınlatmaya — tüm dorse ekipmanları orijinal sertifikalı ve Özünlü güvencesiyle, geniş stoktan hızlı teslimatla."
     },
     "categories": {
@@ -387,13 +389,13 @@
     },
     "cta": {
       "title": "Aradığınız Parçayı Bulamadınız mı?",
-      "description": "Uzman ekibimizle iletişime geçin, ihtiyacınız olan ürünü sizin için temin edelim."
+      "description": "Uzman ekibimizle iletişime geçin, ihtiyacınıza en uygun çözümü birlikte belirleyelim."
     },
     "performance": {
       "imageAlt": "Dorse Ekipmanları",
       "titleLine1": "Doğru Parça,",
       "titleLine2": "Maksimum Performans",
-      "description": "Araç performansı doğrudan ekipman kalitesine bağlıdır. Özünlü olarak, dünya genelinde kanıtlanmış markaların orijinal sertifikalı ürünlerini geniş stoklarımızdan anında teslim ediyoruz.",
+      "description": "Dünya genelinde kanıtlanmış markaların orijinal ve sertifikalı ürünlerini geniş stok avantajımızla en kısa sürede teslim ediyoruz.",
       "bullets": {
         "0": "Orijinal ve sertifikalı ürün garantisi",
         "1": "Geniş marka ve model uyum yelpazesi",
@@ -441,12 +443,12 @@
         "description": "Tüm ürünlerimiz kapsamlı üretici garantisi kapsamındadır."
       },
       "teknikDestek": {
-        "title": "7/24 Teknik Destek",
-        "description": "Uzman teknik destek ekibimiz gün ve gece ulaşılabilir."
+        "title": "Hızlı teknik destek",
+        "description": "Uzman teknik destek ekibimiz talebinize en kısa sürede çözüm üretir."
       }
     },
     "documents": {
-      "eyebrow": "Bilgi Bankası",
+      "eyebrow": "Kaynaklar",
       "title": "Teknik",
       "titleHighlight": "Dokümanlar",
       "description": "Ürünlerinizden maksimum verim almanız için hazırladığımız kullanım kılavuzları, bakım prosedürleri ve teknik şartnameler — Türkçe ve İngilizce olarak erişiminizde.",
