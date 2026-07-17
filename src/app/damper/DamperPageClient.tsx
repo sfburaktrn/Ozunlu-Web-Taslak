@@ -15,9 +15,9 @@ import { heroRichTextHandlers } from '@/i18n/richText';
 const PRODUCT_KEYS = ['d24', 'd30', 'd21'] as const;
 
 const DAMPER_HERO_IMAGES = [
-    '/images/ozunlu-turuncu-hardox-damper-studiyo.webp',
-    '/images/ozunlu-hardox-siyah-damper-kamyon.webp',
-    '/images/ozunlu-gri-hardox-damper-kamyon.webp',
+    '/images/ozunlu-sari-damper-beyaz-kabin.webp',
+    '/images/ozunlu-siyah-hardox-damper-beyaz-kabin.webp',
+    '/images/ozunlu-turuncu-hardox-damper-kamyon-hero.webp',
 ] as const;
 
 const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: string }> = {
@@ -114,7 +114,7 @@ export default function DamperPageClient() {
                         </span>
                     </div>
 
-                    <div className="max-w-3xl relative text-left z-10 w-full">
+                    <div className="max-w-[33rem] relative text-left z-10 w-full">
                         <div className="hidden md:block absolute -top-32 -left-4 z-0 pointer-events-none select-none">
                             <span className="md:text-[12rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                 ÖZÜNLÜ
@@ -135,7 +135,7 @@ export default function DamperPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>

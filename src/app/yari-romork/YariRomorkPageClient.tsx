@@ -101,7 +101,7 @@ export default function YariRomorkPageClient() {
                         </span>
                     </div>
 
-                    <div className="max-w-3xl relative text-left z-10 w-full">
+                    <div className="max-w-[33rem] relative text-left z-10 w-full">
                         <div className="hidden md:block absolute -top-32 -left-4 z-0 pointer-events-none select-none">
                             <span className="md:text-[12rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                 ÖZÜNLÜ
@@ -122,7 +122,7 @@ export default function YariRomorkPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-2xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>
