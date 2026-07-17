@@ -71,10 +71,10 @@ export default function ContactForm() {
                 className="w-full bg-[#F5F5F7] rounded-[2.5rem] p-6 md:p-10"
             >
                 <div className="text-center mb-6">
-                    <h1 className="typo-h2 mb-2">
+                    <h1 className="text-3xl md:text-4xl font-bold text-black mb-2">
                         {t('title')}
                     </h1>
-                    <p className="typo-body">
+                    <p className="text-black/60 text-sm md:text-base">
                         {t('subtitle')}
                     </p>
                 </div>
@@ -82,7 +82,7 @@ export default function ContactForm() {
                 <div className="flex flex-col lg:flex-row gap-6">
                     <div className="w-full lg:w-1/3">
                         <div className="bg-white p-5 rounded-2xl border border-black/5 h-full">
-                            <h3 className="typo-h3 mb-4 flex items-center gap-2">
+                            <h3 className="text-lg font-bold text-black mb-4 flex items-center gap-2">
                                 <span className="w-1 h-6 bg-primary rounded-full" />
                                 {t('headOffice')}
                             </h3>
@@ -100,7 +100,7 @@ export default function ContactForm() {
                                 <div className="flex items-center gap-3">
                                     <Phone className="text-black/60 shrink-0" size={18} />
                                     <div>
-                                        <p className="font-semibold text-ozunlu-950 tracking-tight">{t('phone')}</p>
+                                        <p className="font-bold text-black">{t('phone')}</p>
                                         <p className="text-black/60">(0212) 595 46 46</p>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ export default function ContactForm() {
                                     <div className="flex items-center gap-3">
                                         <Mail className="text-black/60 shrink-0" size={18} />
                                         <div>
-                                            <p className="font-semibold text-ozunlu-950 tracking-tight">{t('email')}</p>
+                                            <p className="font-bold text-black">{t('email')}</p>
                                             <EmailLink
                                                 email={contactEmail}
                                                 className="text-black/60 hover:text-[#000552] transition-colors"
@@ -121,7 +121,7 @@ export default function ContactForm() {
                                 <div className="flex items-center gap-3">
                                     <Clock className="text-black/60 shrink-0" size={18} />
                                     <div>
-                                        <p className="font-semibold text-ozunlu-950 tracking-tight">{t('hours')}</p>
+                                        <p className="font-bold text-black">{t('hours')}</p>
                                         <p className="text-black/60">{t('hoursValue')}</p>
                                     </div>
                                 </div>
@@ -148,8 +148,8 @@ export default function ContactForm() {
                                 <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-4">
                                     <Check className="text-green-600" size={32} />
                                 </div>
-                                <h2 className="typo-h3 mb-2">{t('successTitle')}</h2>
-                                <p className="typo-body-sm mb-6">{t('successMessage')}</p>
+                                <h2 className="text-2xl font-bold text-black mb-2">{t('successTitle')}</h2>
+                                <p className="text-black/60 mb-6">{t('successMessage')}</p>
                                 <button
                                     type="button"
                                     onClick={() => setIsSuccess(false)}
@@ -176,7 +176,7 @@ export default function ContactForm() {
 
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="text-xs font-semibold text-xs tracking-wide text-ozunlu-950 ps-1 mb-1 block">{t('name')}</label>
+                                        <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('name')}</label>
                                         <input
                                             type="text"
                                             required
@@ -187,7 +187,7 @@ export default function ContactForm() {
                                         />
                                     </div>
                                     <div>
-                                        <label className="text-xs font-semibold text-xs tracking-wide text-ozunlu-950 ps-1 mb-1 block">{t('company')}</label>
+                                        <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('company')}</label>
                                         <input
                                             type="text"
                                             value={company}
@@ -200,7 +200,7 @@ export default function ContactForm() {
 
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="text-xs font-semibold text-xs tracking-wide text-ozunlu-950 ps-1 mb-1 block">{t('email')}</label>
+                                        <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('email')}</label>
                                         <input
                                             type="email"
                                             required
@@ -211,7 +211,7 @@ export default function ContactForm() {
                                         />
                                     </div>
                                     <div>
-                                        <label className="text-xs font-semibold text-xs tracking-wide text-ozunlu-950 ps-1 mb-1 block">{t('phone')}</label>
+                                        <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('phone')}</label>
                                         <input
                                             type="tel"
                                             value={phone}
@@ -223,7 +223,7 @@ export default function ContactForm() {
                                 </div>
 
                                 <div>
-                                    <label className="text-xs font-semibold text-xs tracking-wide text-ozunlu-950 ps-1 mb-1 block">{t('message')}</label>
+                                    <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('message')}</label>
                                     <textarea
                                         rows={4}
                                         required

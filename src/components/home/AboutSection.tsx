@@ -25,12 +25,12 @@ export default function AboutSection() {
                         <div className="grid lg:grid-cols-2 gap-12 items-center layout-fixed">
                             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} dir={textDir}>
                                 <div className="inline-block mb-4">
-                                    <span className="typo-eyebrow inline-block border border-primary/30 px-4 py-2 rounded-full">
+                                    <span className="text-primary text-sm font-bold tracking-widest uppercase border border-primary/30 px-4 py-2 rounded-full">
                                         {t('eyebrow')}
                                     </span>
                                 </div>
-                                <h2 className="typo-h2 mb-6">{t('title')}</h2>
-                                <div className="space-y-4 typo-body mb-8">
+                                <h2 className="text-4xl md:text-6xl font-black text-black mb-6 leading-tight">{t('title')}</h2>
+                                <div className="space-y-4 text-gray-600 text-lg leading-relaxed mb-8">
                                     <p>{t.rich('paragraph1', heroRichTextHandlers)}</p>
                                     <p>{t.rich('paragraph2', heroRichTextHandlers)}</p>
                                 </div>
@@ -44,7 +44,7 @@ export default function AboutSection() {
                                             <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all backdrop-blur-md border border-white/10 shadow-sm">
                                                 <card.icon className="text-white" size={28} />
                                             </div>
-                                            <div className="typo-h3 text-white">{card.title}</div>
+                                            <div className="text-lg md:text-xl font-black text-white leading-tight">{card.title}</div>
                                         </div>
                                         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 transition-opacity rounded-2xl" />
                                     </motion.div>

@@ -90,10 +90,10 @@ export default function WhyChooseUsSection() {
                                     viewport={{ once: true }}
                                     className="mb-10 text-center lg:text-left"
                                 >
-                                    <span className="typo-eyebrow mb-4 block">
+                                    <span className="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
                                         {t('eyebrow')}
                                     </span>
-                                    <h2 className="typo-h2 mb-6">
+                                    <h2 className="text-4xl md:text-5xl font-black text-black mb-6 leading-tight">
                                         {t('title')}
                                     </h2>
                                 </motion.div>
@@ -111,7 +111,7 @@ export default function WhyChooseUsSection() {
                                             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 group-hover:bg-primary transition-colors duration-300">
                                                 <Check size={15} className="text-primary group-hover:text-white" />
                                             </div>
-                                            <p className="typo-body text-gray-800 group-hover:text-primary transition-colors duration-300 text-left">
+                                            <p className="text-gray-800 group-hover:text-primary transition-colors duration-300 text-base md:text-lg leading-snug text-left">
                                                 {t.rich(`features.${key}`, {
                                                     ...heroRichTextHandlers,
                                                     hardox: heroRichTextHandlers.hardox,

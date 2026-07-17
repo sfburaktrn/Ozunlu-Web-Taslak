@@ -220,15 +220,15 @@ export default function ProposalForm({
                                 <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
                                     {selectedProduct ? t('selectedProduct') : t('configurator')}
                                 </span>
-                                <h2 className="typo-h2 mb-2">
+                                <h2 className="text-4xl font-black text-ozunlu-950 mb-2">
                                     {selectedProduct
                                         ? selectedProduct.name
                                         : (configuratorTitle ?? t('configurator'))}
                                 </h2>
                                 {selectedProduct && (
-                                    <p className="typo-h3 text-primary mb-4">{selectedProduct.code}</p>
+                                    <p className="text-primary font-bold text-xl mb-4">{selectedProduct.code}</p>
                                 )}
-                                <p className="typo-body">
+                                <p className="text-gray-500 text-lg">
                                     {selectedProduct
                                         ? t('selectedSubtitle')
                                         : (configuratorSubtitle ?? t('defaultSubtitle'))}
@@ -270,8 +270,8 @@ export default function ProposalForm({
                                 <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white mb-6 shadow-lg shadow-green-500/30">
                                     <Check size={48} strokeWidth={3} />
                                 </div>
-                                <h3 className="typo-h2 mb-4">{t('successTitle')}</h3>
-                                <p className="typo-body max-w-md mx-auto mb-8">
+                                <h3 className="text-3xl font-black text-ozunlu-950 mb-4">{t('successTitle')}</h3>
+                                <p className="text-gray-600 text-lg max-w-md mx-auto mb-8">
                                     {t('successMessage')}
                                 </p>
                                 <button
@@ -295,7 +295,7 @@ export default function ProposalForm({
                                         <div className="space-y-6 lg:mt-[92px]">
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">1</div>
-                                                <h3 className="typo-h3">
+                                                <h3 className="text-2xl font-bold text-ozunlu-950">
                                                     {t('stepQuantity')}
                                                 </h3>
                                             </div>
@@ -313,7 +313,7 @@ export default function ProposalForm({
                                         <div className="space-y-6 pt-4">
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">2</div>
-                                                <h3 className="typo-h3">
+                                                <h3 className="text-2xl font-bold text-ozunlu-950">
                                                     {t('stepPayment')}
                                                 </h3>
                                             </div>
@@ -338,7 +338,7 @@ export default function ProposalForm({
                                         <div className="space-y-6 pt-4">
                                             <div className="flex items-center gap-4 mb-2">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">3</div>
-                                                <h3 className="typo-h3">
+                                                <h3 className="text-2xl font-bold text-ozunlu-950">
                                                     {t('stepContact')}
                                                 </h3>
                                             </div>
@@ -392,7 +392,7 @@ export default function ProposalForm({
                                         <div className="space-y-6">
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg shadow-lg shadow-primary/20">1</div>
-                                                <h3 className="typo-h3">
+                                                <h3 className="text-2xl font-bold text-ozunlu-950">
                                                     {formData.type === 'damper' ? t('vehicleInfo') : t('trailerSpecs')}
                                                 </h3>
                                             </div>
@@ -460,7 +460,7 @@ export default function ProposalForm({
                                         >
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step1Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>2</div>
-                                                <h3 className={`typo-h3 transition-colors ${step1Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
+                                                <h3 className={`text-2xl font-bold transition-colors ${step1Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
                                                     {formData.type === 'damper' ? t('cargoType') : t('dimensions')}
                                                 </h3>
                                             </div>
@@ -501,7 +501,7 @@ export default function ProposalForm({
                                             >
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step2Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>3</div>
-                                                    <h3 className={`typo-h3 transition-colors ${step2Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
+                                                    <h3 className={`text-2xl font-bold transition-colors ${step2Complete ? 'text-ozunlu-950' : 'text-gray-300'}`}>
                                                         {t('dimensions')}
                                                     </h3>
                                                 </div>
@@ -547,7 +547,7 @@ export default function ProposalForm({
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${(formData.type === 'damper' ? step3Complete : step2Complete) ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>
                                                     <CreditCard size={20} />
                                                 </div>
-                                                <h3 className={`typo-h3 transition-colors ${(formData.type === 'damper' ? step3Complete : step2Complete) ? 'text-ozunlu-950' : 'text-gray-300'}`}>
+                                                <h3 className={`text-2xl font-bold transition-colors ${(formData.type === 'damper' ? step3Complete : step2Complete) ? 'text-ozunlu-950' : 'text-gray-300'}`}>
                                                     {t('stepPayment')}
                                                 </h3>
                                             </div>
@@ -581,7 +581,7 @@ export default function ProposalForm({
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${isPaymentValid ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>
                                                     <User size={20} />
                                                 </div>
-                                                <h3 className={`typo-h3 transition-colors ${isPaymentValid ? 'text-ozunlu-950' : 'text-gray-300'}`}>
+                                                <h3 className={`text-2xl font-bold transition-colors ${isPaymentValid ? 'text-ozunlu-950' : 'text-gray-300'}`}>
                                                     {t('stepContact')}
                                                 </h3>
                                             </div>
@@ -704,7 +704,7 @@ function PaymentOption({ icon, title, description, selected, onClick }: { icon: 
                     {icon}
                 </div>
                 <div>
-                    <h4 className={`typo-h3 mb-1 ${selected ? 'text-primary' : ''}`}>{title}</h4>
+                    <h4 className={`font-bold text-lg mb-1 ${selected ? 'text-primary' : 'text-ozunlu-950'}`}>{title}</h4>
                     <span className="text-xs text-gray-500 font-medium">{description}</span>
                 </div>
             </div>

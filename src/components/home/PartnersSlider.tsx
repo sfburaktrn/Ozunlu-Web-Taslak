@@ -141,11 +141,11 @@ export default function PartnersSlider() {
                             viewport={{ once: true }}
                             className="text-center mb-8"
                         >
-                            <h2 className="typo-h2 mb-2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-black mb-2">
                                 {t('title')}
                             </h2>
                             <div className="w-24 h-1 bg-gradient-to-r from-primary to-transparent mx-auto rounded-full" />
-                            <p className="typo-body max-w-2xl mx-auto mt-3">
+                            <p className="text-gray-800 max-w-2xl mx-auto mt-3 text-lg font-light leading-relaxed">
                                 {t.rich('description', defaultRichTextHandlers)}
                             </p>
                         </motion.div>

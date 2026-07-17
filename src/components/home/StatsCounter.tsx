@@ -39,7 +39,7 @@ export default function StatsCounter() {
     const stats = [
         { label: t('exportCountries'), value: 50, suffix: '+' },
         { label: t('steelProcessing'), value: 12000, suffix: '' },
-        { label: t('experience'), value: 45, suffix: '+' },
+        { label: t('experience'), value: 45, suffix: '' },
     ];
 
     return (
@@ -58,11 +58,11 @@ export default function StatsCounter() {
                                     transition={{ delay: index * 0.1, duration: 0.5 }}
                                     className="text-center group"
                                 >
-                                    <div className="typo-h1 text-primary mb-2 flex justify-center items-center gap-1 transition-colors duration-300">
+                                    <div className="text-4xl md:text-6xl font-black text-primary mb-2 flex justify-center items-center gap-1 transition-colors duration-300">
                                         <Counter from={0} to={stat.value} duration={2} />
                                         <span className="text-primary">{stat.suffix}</span>
                                     </div>
-                                    <p className="typo-eyebrow text-gray-600 transition-colors duration-300 group-hover:text-primary">
+                                    <p className="text-black uppercase tracking-widest text-sm font-bold transition-colors duration-300 group-hover:text-primary">
                                         {stat.label}
                                     </p>
                                 </motion.div>

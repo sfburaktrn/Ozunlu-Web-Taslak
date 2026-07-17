@@ -32,26 +32,30 @@ export default function AfterSalesHero() {
                     transition={{ duration: 0.8, ease: 'easeOut' }}
                     className="max-w-4xl"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold tracking-[0.2em] uppercase mb-8">
-                        <ShieldCheck size={16} className="text-white" strokeWidth={1.75} />
-                        <span>{t('badge')}</span>
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-bold mb-8">
+                        <ShieldCheck size={16} className="text-white" />
+                        <span className="tracking-wider uppercase">{t('badge')}</span>
                     </div>
 
-                    <h1 className="typo-h1-on-dark mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-white mb-8 leading-[0.9] tracking-tighter">
                         {t('titleLine1')} <br />
                         {t('titleLine2')}
-                        <span className="block mt-1 text-white">{t('titleLine3')}</span>
+                        <span className="block mt-2">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
+                                {t('titleLine3')}
+                            </span>
+                        </span>
                     </h1>
 
-                    <p className="typo-body-on-dark text-white/90 max-w-2xl mb-10 drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mb-10 font-light">
                         {t.rich('description', defaultRichTextHandlers)}
                     </p>
 
                     <Link
                         href="/iletisim"
-                        className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full text-sm font-semibold hover:bg-white/90 transition-all shadow-lg"
+                        className="inline-flex items-center gap-3 bg-white text-[#000552] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                     >
-                        {tCommon('cta.iletisimeGecin')} <ArrowRight size={18} strokeWidth={1.75} />
+                        {tCommon('cta.iletisimeGecin')} <ArrowRight size={18} />
                     </Link>
                 </motion.div>
             </div>
