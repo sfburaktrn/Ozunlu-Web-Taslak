@@ -37,7 +37,7 @@ export default function EquipmentHero() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/25 md:bg-gradient-to-r md:from-black/92 md:via-black/55 md:via-40% md:to-transparent" />
                     </div>
 
-                    <div className="absolute top-6 left-6 z-30">
+                    <div className="absolute top-6 right-6 z-30">
                         <span className="inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase">
                             {t('category')}
                         </span>

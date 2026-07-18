@@ -23,7 +23,7 @@ const DAMPER_HERO_IMAGES = [
 const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: string }> = {
     d24: {
         id: 'd1',
-        image: '/images/ozunlu-oz-d24-turuncu-hardox-damper.webp',
+        image: '/images/ozunlu-oz-d24-sari-hardox-damper.webp',
     },
     d30: {
         id: 'd2',
