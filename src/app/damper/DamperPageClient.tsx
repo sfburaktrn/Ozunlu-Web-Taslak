@@ -110,19 +110,7 @@ export default function DamperPageClient() {
                 </div>
 
                 <div className="relative h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:px-8 lg:px-10">
-                    <div className="absolute top-32 left-6 md:hidden z-0 pointer-events-none select-none">
-                        <span className="text-6xl font-bold italic text-white/5 leading-none tracking-tighter whitespace-nowrap">
-                            ÖZÜNLÜ
-                        </span>
-                    </div>
-
                     <div dir={textDir} className="max-w-[33rem] relative text-left z-10 w-full rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
-                        <div className="hidden md:block absolute -top-24 -left-2 z-0 pointer-events-none select-none">
-                            <span className="md:text-[8rem] font-bold italic text-white/5 leading-none tracking-tighter whitespace-nowrap">
-                                ÖZÜNLÜ
-                            </span>
-                        </div>
-
                         <motion.h1
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}

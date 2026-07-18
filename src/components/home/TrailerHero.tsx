@@ -11,7 +11,6 @@ import HeroAccentText from '@/components/common/HeroAccentText';
 export default function TrailerHero() {
     const t = useTranslations('home.trailerHero');
     const tCommon = useTranslations('common');
-    const tLabels = useTranslations('common.labels');
     const textDir = useTextDirection();
 
     return (
@@ -44,19 +43,7 @@ export default function TrailerHero() {
                     </div>
 
                     <div className="relative z-10 h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:p-12 lg:p-16">
-                        <div className="absolute top-14 left-6 md:hidden z-0 pointer-events-none select-none">
-                            <span className="text-6xl font-bold italic text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
-                                {tLabels('ozunluWatermark')}
-                            </span>
-                        </div>
-
                         <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[33rem] relative text-left rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none" dir={textDir}>
-                            <div className="hidden md:block absolute -top-16 left-0 z-0 pointer-events-none select-none">
-                                <span className="md:text-[8rem] font-bold italic text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
-                                    {tLabels('ozunluWatermark')}
-                                </span>
-                            </div>
-
                             <motion.h2
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
