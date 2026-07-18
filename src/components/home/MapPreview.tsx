@@ -127,14 +127,6 @@ export default function MapPreview({
     [serviceByCity]
   );
 
-  const topLocations = useMemo(
-    () =>
-      [...serviceLocations]
-        .sort((a, b) => b.providers.length - a.providers.length)
-        .slice(0, 3),
-    []
-  );
-
   const selectedKey = selectedCity
     ? normalizeCityName(selectedCity.name)
     : null;
@@ -205,33 +197,6 @@ export default function MapPreview({
                   </div>
                 </div>
 
-                <div className="space-y-3">
-                  <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase">
-                    {t("topCities")}
-                  </p>
-                  <div className="flex flex-col gap-3">
-                    {topLocations.map((loc) => (
-                      <button
-                        key={loc.city}
-                        type="button"
-                        onClick={() =>
-                          setSelectedCity({ name: loc.city, location: loc })
-                        }
-                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white text-start hover:border-primary/30 hover:shadow-md transition-all"
-                      >
-                        <div className="p-2 rounded-full bg-primary/10 text-primary">
-                          <MapPin size={16} />
-                        </div>
-                        <div>
-                          <p className="font-semibold text-ozunlu-950 tracking-tight">{loc.city}</p>
-                          <p className="text-sm text-gray-600">
-                            {t("serviceCount", { count: loc.providers.length })}
-                          </p>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
               </div>
 
               <motion.div

@@ -61,7 +61,7 @@ export default function FactorySpotlight() {
 
     return (
         <section className="hidden lg:block pt-2 pb-12 bg-white" aria-hidden="true">
-            <div ref={containerRef} className="relative h-[220vh]">
+            <div ref={containerRef} className="relative h-[150vh]">
                 <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
                 <motion.div
                     style={{ scale: stageScale, borderRadius: stageRadius }}
