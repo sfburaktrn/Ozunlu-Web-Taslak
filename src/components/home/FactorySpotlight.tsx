@@ -47,7 +47,7 @@ export default function FactorySpotlight() {
                 >
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/images/loading/final_bg.png"
+                            src="/images/ozunlu-sari-hardox-damperli-yari-romork-gece-sahne.webp"
                             alt=""
                             fill
                             loading="lazy"

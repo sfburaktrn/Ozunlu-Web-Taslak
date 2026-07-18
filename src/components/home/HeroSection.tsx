@@ -50,7 +50,7 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className="relative h-screen w-full overflow-hidden bg-ozunlu-950">
+        <div className="viewport-screen relative min-h-[640px] w-full overflow-hidden bg-ozunlu-950">
             <div className="absolute inset-0 z-0">
                 {/* Poster fallback while video loads (esp. iOS) */}
                 <Image
@@ -77,24 +77,24 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30" />
             </div>
 
-            <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
+            <div className="relative z-10 flex h-full min-h-[640px] flex-col items-center justify-center text-center px-4 pt-16 pb-20">
                 <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }}>
-                    <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter leading-tight uppercase drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)]">
+                    <h1 className="text-[clamp(2.35rem,11vw,4.5rem)] font-black text-white mb-4 md:mb-6 tracking-tighter leading-[1.02] uppercase drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)]">
                         {t('titleLine1')} <br />
                         <span className="text-white">{t('titleLine2')}</span>
                     </h1>
                 </motion.div>
 
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="mt-6 max-w-2xl">
-                    <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }} className="mt-3 md:mt-6 max-w-[min(100%,42rem)]">
+                    <p className="text-base sm:text-lg md:text-2xl text-gray-200 font-light tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
                         {t.rich('subtitle', defaultRichTextHandlers)}
                     </p>
                 </motion.div>
 
-                <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 1 }} className="flex flex-col sm:flex-row gap-4 mt-10 md:mt-12">
+                <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.7, duration: 1 }} className="flex w-full max-w-md flex-col sm:w-auto sm:max-w-none sm:flex-row gap-3 sm:gap-4 mt-8 md:mt-12">
                     <Link
                         href={{ pathname: '/damper', hash: 'teklif-formu' }}
-                        className="group relative px-8 py-4 rounded-full bg-white/20 backdrop-blur-2xl border border-white/50 text-primary font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/35 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+                        className="group relative flex justify-center px-5 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/30 backdrop-blur-2xl border border-white/60 text-primary text-sm sm:text-base font-bold tracking-[0.12em] sm:tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/45 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
                     >
                         <span className="relative z-10 flex items-center gap-3">
                             {t('ctaDamper')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
@@ -102,7 +102,7 @@ export default function HeroSection() {
                     </Link>
                     <Link
                         href={{ pathname: '/yari-romork', hash: 'teklif-formu' }}
-                        className="group relative px-8 py-4 rounded-full bg-white/20 backdrop-blur-2xl border border-white/50 text-primary font-bold tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/35 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+                        className="group relative flex justify-center px-5 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/30 backdrop-blur-2xl border border-white/60 text-primary text-sm sm:text-base font-bold tracking-[0.12em] sm:tracking-widest uppercase overflow-hidden transition-all duration-300 hover:bg-white/45 hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
                     >
                         <span className="relative z-10 flex items-center gap-3">
                             {t('ctaYariRomork')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />

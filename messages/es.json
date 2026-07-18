@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Logo Hardox In My Body acero certificado resistente al desgaste"
+    },
+    "languageSuggestion": {
+      "message": "¿Le gustaría ver el sitio en {language}?",
+      "switch": "Cambiar idioma",
+      "dismiss": "Cerrar"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "Diseño de <strong>superestructura</strong> aprobado por el fabricante del vehículo — producción compatible con diferentes configuraciones de chasis y tractor",
         "1": "Procesamiento de <strong>acero</strong> certificado <hardox></hardox> y tecnología de soldadura robótica",
-        "2": "Cumplimiento total de todas las normativas y estándares europeos de seguridad (ECE/ADR)",
+        "2": "Cumplimiento total de todos los requisitos legales y estándares europeos de seguridad, encabezados por las normativas ECE y de la UE",
         "3": "Garantía integral y <strong>servicio posventa</strong> ininterrumpido",
         "4": "87 puntos de servicio autorizados en 50 provincias de toda Turquía",
         "5": "Diseño estructural que preserva un alto valor de <strong>reventa</strong>",
@@ -164,6 +169,12 @@
       "exportCountries": "Países de exportación",
       "steelProcessing": "Procesamiento anual de acero (toneladas)",
       "experience": "Años de experiencia"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Encontremos juntos la solución adecuada para su flota",
+      "description": "Con más de 45 años de experiencia, ofrecemos soluciones a medida para sus necesidades de volquetes, semirremolques y equipamiento.",
+      "imageAlt": "Semirremolque volquete y camión Özünlü"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "potencia y diseño",
       "item01Title": "Caja Hardox®",
       "item01Content": "La estructura de caja fabricada con <strong>acero</strong> sueco <hardox></hardox> redefine los estándares del sector en resistencia al desgaste e impactos. Larga vida útil, bajos costes de mantenimiento.",
-      "item02Title": "Ingeniería aerodinámica",
-      "item02Content": "Las líneas aerodinámicas optimizadas en túnel de viento reducen el consumo de combustible y el coste total de operación.",
+      "item02Title": "Estructura de Caja Reforzada",
+      "item02Content": "La caja de acero de alta resistencia y la estructura de piso reforzada evitan la deformación en las condiciones de excavación más exigentes; la alta estabilidad de volteo garantiza una descarga segura.",
       "item03Title": "Alta capacidad de carga",
       "item03Content": "El diseño de chasis ligero y de alta resistencia garantiza la máxima capacidad de transporte dentro de los límites legales de carga.",
       "imageAlt": "Características Özünlü volquete"
@@ -299,10 +310,10 @@
       "titleLine2": "cada momento en carretera",
       "item01Title": "Tecnología de chasis avanzada",
       "item01Content": "Chasis de alta resistencia producido con soldadura robótica; máxima resistencia a la flexión, peso minimizado, capacidad de carga maximizada.",
-      "item02Title": "Sistemas de seguridad activos",
-      "item02Content": "Sistema de frenado electrónico EBS y tecnología RSS (Roll Stability Support) antivuelco — seguridad de conducción conforme a los estándares europeos.",
-      "item03Title": "Adaptación versátil",
-      "item03Content": "Flexibilidad total — desde transporte lowbed hasta logística de contenedores, desde carga a granel hasta configuraciones de carga especiales.",
+      "item02Title": "Sistemas de Seguridad Activa",
+      "item02Content": "Mientras el sistema de frenado electrónico EBS proporciona un frenado preciso y equilibrado, el sistema de monitoreo de presión de neumáticos TPMS advierte de posibles riesgos con antelación; garantía de conducción según los estándares de seguridad europeos.",
+      "item03Title": "Uso Versátil",
+      "item03Content": "Alta eficiencia en diferentes tipos de carga, desde excavación y minería hasta el transporte de áridos; opciones de caja que se adaptan a las necesidades de cada sector.",
       "imageAlt": "Características de semirremolque"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semirremolque",
-        "description": "Solución fiable para transporte pesado de larga distancia con volumen de 22 m³, caja <hardox></hardox> 450 y sistema de ejes BPW.",
+        "description": "El diseño de caja de gran volumen y el sistema de ejes resistente lo convierten en la solución fiable para el transporte pesado de larga distancia.",
         "features": [
           "Volumen de 22 m³",
           "Caja Hardox 450",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semirremolque",
-        "description": "Remolque de alto rendimiento con chasis <hardox></hardox> 500 y rampa hidráulica para operaciones exigentes.",
+        "description": "La caja de acero <hardox></hardox> y la estructura de chasis reforzada ofrecen un transporte duradero y de alto rendimiento en las condiciones de campo más exigentes.",
         "features": [
           "Eje Özkoç (nacional)",
           "Chasis Hardox 500",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semirremolque",
-        "description": "Transporte eficiente con volumen de 21 m³, carrocería aligerada y sistema automático de lona.",
+        "description": "La estructura de caja aligerada permite más carga útil por viaje y un transporte eficiente con bajos costes operativos.",
         "features": [
           "Volumen de 21 m³",
           "Eje Özkoç",
@@ -491,7 +502,11 @@
       "phonePlaceholder": "+34 ...",
       "message": "MENSAJE",
       "messagePlaceholder": "Escriba aquí su mensaje...",
-      "mapTitle": "Mapa de ubicación de Özünlü Damper"
+      "mapTitle": "Mapa de ubicación de Özünlü Damper",
+      "submitting": "Enviando...",
+      "successTitle": "Su mensaje ha sido enviado",
+      "successMessage": "Nos pondremos en contacto con usted lo antes posible.",
+      "submitError": "El envío ha fallado. Inténtelo de nuevo o contáctenos por teléfono."
     },
     "tabs": {
       "sales": "VENTAS Y MARKETING",
@@ -550,6 +565,7 @@
       "emailPh": "mail@empresa.com",
       "heardFrom": "¿Cómo nos conoció?",
       "heardFromPh": "Google, redes sociales, recomendación..."
-    }
+    },
+    "submitError": "El envío ha fallado. Inténtelo de nuevo o contáctenos por teléfono."
   }
 }

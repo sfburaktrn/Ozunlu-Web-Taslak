@@ -56,18 +56,18 @@ export default function DocumentLibrary() {
     );
 
     return (
-        <section className="bg-white py-8">
-            <div className="container mx-auto px-4">
+        <section className="bg-white py-4 md:py-8">
+            <div className="container mx-auto px-3 sm:px-4">
                 <motion.div
                     initial={{ opacity: 0, y: 24 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="relative bg-[#f5f5f7] rounded-[2.5rem] py-16 md:py-24 overflow-hidden isolate shadow-sm"
+                    className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-20 lg:py-24 overflow-hidden isolate shadow-sm"
                 >
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(0,5,82,0.04),_transparent_45%)] pointer-events-none" />
 
-                    <div className="px-6 md:px-10 relative z-10">
-                        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
+                    <div className="px-5 sm:px-6 md:px-10 relative z-10">
+                        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6 md:gap-8">
                             <div className="max-w-xl">
                                 <p className="text-xs md:text-sm font-semibold tracking-[0.25em] text-primary uppercase mb-4">
                                     {t('eyebrow')}
@@ -94,7 +94,7 @@ export default function DocumentLibrary() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
                             {filteredDocuments.map((doc, index) => (
                                 <motion.div
                                     key={doc.id}
@@ -102,7 +102,7 @@ export default function DocumentLibrary() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.06 }}
-                                    className="bg-white rounded-2xl p-6 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-primary/15 transition-all duration-300 flex flex-col group"
+                                    className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-primary/15 transition-all duration-300 flex flex-col group"
                                 >
                                     <div className="flex justify-between items-start mb-5">
                                         <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors duration-300">
@@ -113,7 +113,7 @@ export default function DocumentLibrary() {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-base md:text-lg font-semibold text-ozunlu-950 mb-2 tracking-tight leading-snug min-h-[2.75rem]">
+                                    <h3 className="text-base md:text-lg font-semibold text-ozunlu-950 mb-2 tracking-tight leading-snug sm:min-h-[2.75rem] break-words">
                                         {doc.title}
                                     </h3>
 

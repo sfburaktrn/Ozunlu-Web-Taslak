@@ -15,6 +15,7 @@ export default function LegalDocumentView({ document }: Props) {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
+                    className="break-words [overflow-wrap:anywhere]"
                 >
                     <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#000552]/60 mb-4">
                         {document.lastUpdated}

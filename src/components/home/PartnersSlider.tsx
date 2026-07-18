@@ -84,12 +84,12 @@ export default function PartnersSlider() {
     };
 
     return (
-        <section className="bg-white py-8">
-            <div className="container mx-auto px-4">
-                <div ref={containerRef} className="relative bg-[#f5f5f7] rounded-[2.5rem] py-16 overflow-hidden isolate shadow-sm">
+        <section className="bg-white py-4 md:py-8">
+            <div className="container mx-auto px-3 sm:px-4">
+                <div ref={containerRef} className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-16 overflow-hidden isolate shadow-sm">
 
                     {/* Connection Lines Layer */}
-                    <svg className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible">
+                    <svg className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible hidden md:block">
                         <defs>
                             <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
                                 <stop offset="0%" stopColor="#2563eb" stopOpacity="0.3" />
@@ -134,14 +134,14 @@ export default function PartnersSlider() {
                     </svg>
 
 
-                    <div className="container mx-auto px-4 relative z-10">
+                    <div className="container mx-auto px-5 sm:px-8 relative z-10">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             className="text-center mb-8"
                         >
-                            <h2 className="text-3xl md:text-5xl font-bold text-black mb-2">
+                            <h2 className="text-3xl md:text-5xl font-bold text-black mb-2 break-words">
                                 {t('title')}
                             </h2>
                             <div className="w-24 h-1 bg-gradient-to-r from-primary to-transparent mx-auto rounded-full" />
@@ -184,7 +184,7 @@ export default function PartnersSlider() {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.6 }}
-                            className="mt-10 flex flex-col items-center relative z-30"
+                            className="mt-8 md:mt-10 flex flex-col items-center relative z-30"
                         >
                             <div ref={ozunluRef} className="relative w-40 h-14 mb-1">
                                 <Image
@@ -194,7 +194,7 @@ export default function PartnersSlider() {
                                     className="object-contain opacity-90"
                                 />
                             </div>
-                            <p className="text-lg md:text-xl text-primary uppercase tracking-[0.2em] font-normal border-t border-gray-200 inline-block pt-2 px-8 text-center">
+                            <p className="text-sm sm:text-lg md:text-xl text-primary uppercase tracking-[0.12em] sm:tracking-[0.2em] font-normal border-t border-gray-200 inline-block pt-2 px-3 sm:px-8 text-center break-words">
                                 {t('footer')}
                             </p>
                         </motion.div>

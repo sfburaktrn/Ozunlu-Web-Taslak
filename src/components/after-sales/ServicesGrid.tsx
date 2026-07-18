@@ -18,12 +18,12 @@ export default function ServicesGrid() {
     const t = useTranslations('afterSales.services');
 
     return (
-        <section id="hizmetler" className="bg-white py-8">
-            <div className="container mx-auto px-4">
-                <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-16 md:py-24 overflow-hidden isolate shadow-sm">
+        <section id="hizmetler" className="bg-white py-4 md:py-8">
+            <div className="container mx-auto px-3 sm:px-4">
+                <div className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-20 lg:py-24 overflow-hidden isolate shadow-sm">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.04),_transparent_50%)] pointer-events-none" />
 
-                    <div className="px-6 md:px-10 relative z-10">
+                    <div className="px-5 sm:px-6 md:px-10 relative z-10">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function ServicesGrid() {
                             </p>
                         </motion.div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
                             {serviceKeys.map((key, index) => {
                                 const Icon = serviceIcons[key];
 
@@ -49,7 +49,7 @@ export default function ServicesGrid() {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: index * 0.08 }}
-                                        className="bg-white rounded-2xl p-7 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-primary/15 transition-all duration-300 group"
+                                        className="bg-white rounded-2xl p-5 sm:p-7 border border-gray-200/80 shadow-sm hover:shadow-md hover:border-primary/15 transition-all duration-300 group"
                                     >
                                         <div className="w-11 h-11 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                                             <Icon size={20} strokeWidth={1.75} />

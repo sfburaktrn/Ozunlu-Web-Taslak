@@ -43,12 +43,12 @@ export default function StatsCounter() {
     ];
 
     return (
-        <section className="bg-white py-8">
-            <div className="container mx-auto px-4">
-                <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-20 overflow-hidden isolate shadow-sm">
+        <section className="bg-white py-4 md:py-8">
+            <div className="container mx-auto px-3 sm:px-4">
+                <div className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-20 overflow-hidden isolate shadow-sm">
 
                     <div className="container mx-auto px-4 relative z-10">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">
                             {stats.map((stat, index) => (
                                 <motion.div
                                     key={index}
@@ -62,7 +62,7 @@ export default function StatsCounter() {
                                         <Counter from={0} to={stat.value} duration={2} />
                                         <span className="text-primary">{stat.suffix}</span>
                                     </div>
-                                    <p className="text-black uppercase tracking-widest text-sm font-bold transition-colors duration-300 group-hover:text-primary">
+                                    <p className="px-2 text-black uppercase tracking-[0.12em] md:tracking-widest text-xs md:text-sm font-bold transition-colors duration-300 group-hover:text-primary break-words">
                                         {stat.label}
                                     </p>
                                 </motion.div>

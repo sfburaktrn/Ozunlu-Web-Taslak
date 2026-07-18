@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Hardox In My Body certified wear-resistant steel logo"
+    },
+    "languageSuggestion": {
+      "message": "Would you like to view the site in {language}?",
+      "switch": "Switch language",
+      "dismiss": "Close"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "OEM-approved <strong>superstructure</strong> design — <strong>production</strong> compatible with different chassis and tractor configurations",
         "1": "<hardox></hardox> certified <strong>steel</strong> processing and robotic welding technology",
-        "2": "Full compliance with all regulations and European safety standards (ECE/ADR)",
+        "2": "Full compliance with all legal requirements and European safety standards, led by ECE and EU regulations",
         "3": "Comprehensive warranty and uninterrupted <strong>after-sales</strong> service",
         "4": "87 <strong>authorized service</strong> points in 50 provinces across Turkey",
         "5": "Structural design that preserves high <strong>resale</strong> value",
@@ -164,6 +169,12 @@
       "exportCountries": "Export Countries",
       "steelProcessing": "Annual Steel Processing (Tons)",
       "experience": "Years of Experience"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Let's Find the Right Solution for Your Fleet Together",
+      "description": "With over 45 years of experience, we deliver tailored solutions for your tipper, semi-trailer and equipment needs.",
+      "imageAlt": "Özünlü tipper semi-trailer and truck"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "Power and Design",
       "item01Title": "Hardox® Body",
       "item01Content": "Body structure made with Swedish <hardox></hardox> <strong>steel</strong> redefines industry standards in wear and impact resistance. Long life, low maintenance cost.",
-      "item02Title": "Aerodynamic Engineering",
-      "item02Content": "Wind tunnel optimized aerodynamic lines reduce fuel consumption and total operating cost.",
+      "item02Title": "Reinforced Body Structure",
+      "item02Content": "High-strength steel body and reinforced floor structure prevent deformation under the heaviest excavation conditions; high tipping stability ensures safe unloading.",
       "item03Title": "High Payload Capacity",
       "item03Content": "Lightweight high-strength chassis design delivers maximum transport capacity within legal load limits.",
       "imageAlt": "Özünlü Tipper Features"
@@ -300,9 +311,9 @@
       "item01Title": "Advanced Chassis Technology",
       "item01Content": "High-strength chassis produced with robotic welding; maximum resistance to flex, minimized weight, maximized payload.",
       "item02Title": "Active Safety Systems",
-      "item02Content": "EBS electronic braking and RSS roll stability support for driving safety at European standards.",
-      "item03Title": "Versatile Adaptation",
-      "item03Content": "Full flexibility from lowbed transport to container logistics, bulk cargo to custom load configurations.",
+      "item02Content": "While the EBS electronic braking system provides precise and balanced braking, the TPMS tire pressure monitoring system warns of potential risks in advance; driving assurance at European safety standards.",
+      "item03Title": "Versatile Use",
+      "item03Content": "High efficiency across different load types, from excavation and mining to aggregate transport; body options that adapt to the needs of every industry.",
       "imageAlt": "Semi-Trailer Features"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semi-Trailer",
-        "description": "22m³ volume with <hardox></hardox> 450 body and BPW axle for long-distance heavy transport.",
+        "description": "High-volume body design and durable axle system make it the reliable solution for long-distance heavy-duty transport.",
         "features": [
           "22m³ Volume",
           "Hardox 450 Body",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semi-Trailer",
-        "description": "<hardox></hardox> 500 chassis and hydraulic ramp for high-performance operations.",
+        "description": "<hardox></hardox> steel body and reinforced chassis structure deliver long-lasting, high-performance transport in the toughest field conditions.",
         "features": [
           "Özkoç Axle (Domestic)",
           "Hardox 500 Chassis",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semi-Trailer",
-        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "description": "Lightweight body structure enables more payload per trip and efficient transport with low operating costs.",
         "features": [
           "21m³ Volume",
           "Özkoç Axle",

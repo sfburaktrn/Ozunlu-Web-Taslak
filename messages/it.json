@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Logo Hardox In My Body acciaio certificato resistente all'usura"
+    },
+    "languageSuggestion": {
+      "message": "Vuoi visualizzare il sito in {language}?",
+      "switch": "Cambia lingua",
+      "dismiss": "Chiudi"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "Design di <strong>sovrastruttura</strong> approvato OEM — <strong>produzione</strong> compatibile con diverse configurazioni di telaio e trattore",
         "1": "Lavorazione dell'<strong>acciaio</strong> certificata <hardox></hardox> e tecnologia di saldatura robotizzata",
-        "2": "Piena conformità a tutte le normative e agli standard europei di sicurezza (ECE/ADR)",
+        "2": "Piena conformità a tutti i requisiti di legge e agli standard europei di sicurezza, a partire dalle normative ECE e UE",
         "3": "Garanzia completa e <strong>assistenza post-vendita</strong> ininterrotta",
         "4": "87 punti di <strong>assistenza autorizzata</strong> in 50 province in tutta la Turchia",
         "5": "Design strutturale che preserva un elevato valore di <strong>rivendita</strong>",
@@ -164,6 +169,12 @@
       "exportCountries": "Paesi di export",
       "steelProcessing": "Lavorazione annuale dell'acciaio (tonnellate)",
       "experience": "Anni di esperienza"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Troviamo insieme la soluzione giusta per la vostra flotta",
+      "description": "Con oltre 45 anni di esperienza, offriamo soluzioni su misura per le vostre esigenze di ribaltabili, semirimorchi e attrezzature.",
+      "imageAlt": "Semirimorchio ribaltabile e camion Özünlü"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "potenza e design",
       "item01Title": "Cassone Hardox®",
       "item01Content": "La struttura del cassone realizzata con <strong>acciaio</strong> svedese <hardox></hardox> ridefinisce gli standard del settore in resistenza all'usura e agli urti. Lunga durata, bassi costi di manutenzione.",
-      "item02Title": "Ingegneria aerodinamica",
-      "item02Content": "Le linee aerodinamiche ottimizzate in galleria del vento riducono il consumo di carburante e il costo operativo totale.",
+      "item02Title": "Struttura del Cassone Rinforzata",
+      "item02Content": "Il cassone in acciaio ad alta resistenza e la struttura del fondo rinforzata prevengono la deformazione nelle condizioni di scavo più gravose; l'elevata stabilità di ribaltamento garantisce uno scarico sicuro.",
       "item03Title": "Elevata capacità di carico",
       "item03Content": "Il design del telaio leggero e ad alta resistenza garantisce la massima capacità di trasporto entro i limiti legali di carico.",
       "imageAlt": "Caratteristiche Özünlü ribaltabile"
@@ -299,10 +310,10 @@
       "titleLine2": "momento su strada",
       "item01Title": "Tecnologia avanzata del telaio",
       "item01Content": "Telaio ad alta resistenza prodotto con saldatura robotizzata; massima resistenza alla flessione, peso minimizzato, carico utile massimizzato.",
-      "item02Title": "Sistemi di sicurezza attivi",
-      "item02Content": "Frenata elettronica EBS e supporto alla stabilità anti-ribaltamento RSS per una sicurezza di guida conforme agli standard europei.",
-      "item03Title": "Adattamento versatile",
-      "item03Content": "Massima flessibilità dal trasporto lowbed alla logistica container, dalle merci alla rinfusa alle configurazioni di carico su misura.",
+      "item02Title": "Sistemi di Sicurezza Attiva",
+      "item02Content": "Mentre il sistema frenante elettronico EBS garantisce una frenata precisa ed equilibrata, il sistema di monitoraggio della pressione degli pneumatici TPMS segnala in anticipo i potenziali rischi; sicurezza di guida secondo gli standard europei.",
+      "item03Title": "Utilizzo Versatile",
+      "item03Content": "Elevata efficienza con diversi tipi di carico, dallo scavo e dall'attività mineraria al trasporto di inerti; opzioni di cassone che si adattano alle esigenze di ogni settore.",
       "imageAlt": "Caratteristiche semirimorchio"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semirimorchio",
-        "description": "Volume 22 m³ con cassone <hardox></hardox> 450 e assale BPW per trasporti pesanti a lunga distanza.",
+        "description": "Il design del cassone ad alto volume e il robusto sistema di assali lo rendono la soluzione affidabile per il trasporto pesante a lunga distanza.",
         "features": [
           "Volume 22 m³",
           "Cassone Hardox 450",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semirimorchio",
-        "description": "Telaio <hardox></hardox> 500 e rampa idraulica per operazioni ad alte prestazioni.",
+        "description": "Il cassone in acciaio <hardox></hardox> e la struttura del telaio rinforzata garantiscono un trasporto duraturo e ad alte prestazioni nelle condizioni di cantiere più difficili.",
         "features": [
           "Assale Özkoç (nazionale)",
           "Telaio Hardox 500",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semirimorchio",
-        "description": "Volume 21 m³ con cassone leggero e sistema telone automatico.",
+        "description": "La struttura del cassone alleggerita consente più carico utile per viaggio e un trasporto efficiente con bassi costi di esercizio.",
         "features": [
           "Volume 21 m³",
           "Assale Özkoç",

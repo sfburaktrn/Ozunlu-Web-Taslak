@@ -133,7 +133,7 @@
       "features": {
         "0": "Araç üreticisi onaylı <strong>üst yapı</strong> tasarımı — farklı şasi ve çekici konfigürasyonlarına uyumlu <strong>üretim</strong>",
         "1": "<hardox></hardox> sertifikalı <strong>çelik</strong> işleme ve robotik kaynak teknolojisi",
-        "2": "Tüm yasal düzenlemeler ve Avrupa güvenlik standartlarına (ECE/ADR) tam uyum",
+        "2": "ECE ve EU regülasyonları başta olmak üzere tüm yasal düzenlemelere ve Avrupa güvenlik standartlarına tam uyum",
         "3": "Kapsamlı garanti ve kesintisiz <strong>satış sonrası</strong> hizmet",
         "4": "Türkiye genelinde 50 ilde 87 <strong>yetkili servis</strong> noktası",
         "5": "Yüksek <strong>ikinci el</strong> değeri koruyan yapısal tasarım anlayışı",
@@ -169,6 +169,12 @@
       "exportCountries": "İhracat Ülkesi",
       "steelProcessing": "Yıllık Çelik İşleme (Ton)",
       "experience": "Yıllık Tecrübe"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Filonuz İçin Doğru Çözümü Birlikte Bulalım",
+      "description": "45 yılı aşkın deneyimimizle damper, yarı römork ve ekipman ihtiyaçlarınıza özel çözümler sunuyoruz.",
+      "imageAlt": "Özünlü damperli yarı römork ve çekici"
     }
   },
   "damper": {
@@ -187,8 +193,8 @@
       "titleLine2": "Mükemmel Uyumu",
       "item01Title": "Hardox® Gövde",
       "item01Content": "İsveç <hardox></hardox> çeliğiyle üretilen gövde yapısı, aşınma ve darbe direncinde sektör standardını yeniden tanımlar. Uzun ömür, düşük bakım maliyeti.",
-      "item02Title": "Aerodinamik Mühendislik",
-      "item02Content": "Rüzgar tüneli testleriyle optimize edilen aerodinamik hatlar, yakıt tüketimini düşürür ve toplam işletme maliyetini azaltır.",
+      "item02Title": "Güçlendirilmiş Gövde Yapısı",
+      "item02Content": "Yüksek mukavemetli çelik gövde ve güçlendirilmiş taban yapısı, en ağır hafriyat koşullarında deformasyonu önler; yüksek devrilme stabilitesiyle güvenli boşaltım sağlar.",
       "item03Title": "Yüksek Tonaj Kapasitesi",
       "item03Content": "Hafifletilmiş yüksek mukavemetli şasi tasarımı sayesinde yasal yük sınırlarında maksimum taşıma kapasitesi.",
       "imageAlt": "Özünlü Damper Özellikleri"
@@ -305,9 +311,9 @@
       "item01Title": "İleri Teknoloji Şasi",
       "item01Content": "Robotik kaynak teknolojisiyle üretilen yüksek mukavemetli şasi; esnemeye karşı maksimum direnç, minimize edilmiş ağırlık, maksimize edilmiş yük kapasitesi.",
       "item02Title": "Aktif Güvenlik Sistemleri",
-      "item02Content": "EBS elektronik fren sistemi ve RSS (Roll Stability Support) devrilme önleme teknolojisiyle Avrupa güvenlik standartlarında sürüş güvencesi.",
-      "item03Title": "Çok Yönlü Adaptasyon",
-      "item03Content": "Lowbed taşımacılığından konteyner lojistiğine, bulk kargo çözümlerinden özel yük konfigürasyonlarına kadar tam esneklik.",
+      "item02Content": "EBS elektronik fren sistemi hassas ve dengeli frenleme sağlarken, TPMS lastik basıncı izleme sistemi olası riskleri önceden bildirir; Avrupa güvenlik standartlarında sürüş güvencesi sunar.",
+      "item03Title": "Çok Yönlü Kullanım",
+      "item03Content": "Hafriyat ve madencilikten agrega taşımacılığına kadar farklı yük tiplerinde yüksek verimlilik; her sektörün ihtiyacına uyum sağlayan gövde seçenekleri.",
       "imageAlt": "Yarı Römork Özellikleri"
     },
     "configurator": {
@@ -318,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Yarı Römork",
-        "description": "22m³ yüksek hacimli yapısı, <hardox></hardox> 450 çelik gövdesi ve BPW dingil sistemiyle uzun mesafe ağır hizmet taşımacılığının güvenilir çözümü.",
+        "description": "Yüksek hacimli gövde tasarımı ve dayanıklı dingil sistemiyle uzun mesafe ağır hizmet taşımacılığının güvenilir çözümü.",
         "features": [
           "22m³ Hacim",
           "Hardox 450 Gövde",
@@ -329,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Yarı Römork",
-        "description": "<hardox></hardox> 500 şasi teknolojisi ve hidrolik rampa sistemiyle yüksek performanslı dorse.",
+        "description": "<hardox></hardox> çelik gövdesi ve güçlendirilmiş şasi yapısıyla en zorlu saha koşullarında uzun ömürlü, yüksek performanslı taşımacılık.",
         "features": [
           "Özkoç Dingil (Yerli)",
           "Hardox 500 Şasi",
@@ -340,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Yarı Römork",
-        "description": "21m³ hacim, hafifletilmiş gövde yapısı ve otomatik branda sistemiyle verimli taşımacılık.",
+        "description": "Hafifletilmiş gövde yapısı sayesinde her seferde daha fazla yük ve düşük işletme maliyetiyle verimli taşımacılık.",
         "features": [
           "21m³ Hacim",
           "Özkoç Dingil",

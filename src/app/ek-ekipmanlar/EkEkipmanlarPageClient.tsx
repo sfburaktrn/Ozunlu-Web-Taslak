@@ -15,6 +15,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { heroRichTextHandlers } from '@/i18n/richText';
 import HeroAccentText from '@/components/common/HeroAccentText';
+import { useTextDirection } from '@/i18n/useTextDirection';
 
 const categoryKeys = ['hidrolik', 'dingil', 'fren', 'elektrik', 'aksesuar', 'yedekParca'] as const;
 
@@ -59,6 +60,7 @@ export default function EkEkipmanlarPageClient() {
     const t = useTranslations('ekEkipmanlar');
 
     const tCommon = useTranslations('common');
+    const textDir = useTextDirection();
 
 
 
@@ -92,9 +94,9 @@ export default function EkEkipmanlarPageClient() {
 
     return (
 
-        <main className="min-h-screen bg-[#F8F9FA] pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
+        <main className="min-h-screen bg-[#F8F9FA] pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
 
-            <section className="relative w-full h-[85vh] min-h-[600px] rounded-[2.5rem] overflow-hidden mx-auto max-w-full shadow-2xl group mb-24">
+            <section className="relative w-full h-[680px] md:h-[min(85svh,820px)] min-h-[620px] rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mx-auto max-w-full shadow-2xl group mb-16 md:mb-24 layout-fixed">
 
                 <div className="absolute inset-0 z-0">
 
@@ -106,27 +108,27 @@ export default function EkEkipmanlarPageClient() {
 
                         fill
 
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-[2s] ease-out"
+                        className="object-cover object-[68%_center] sm:object-[72%_center] md:object-center group-hover:scale-105 transition-transform duration-[2s] ease-out"
 
                         priority
 
                     />
 
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/15 rtl:bg-gradient-to-l" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 md:bg-gradient-to-r md:from-black/85 md:via-black/55 md:to-black/15 rtl:md:bg-gradient-to-l" />
 
                 </div>
 
 
 
-                <div className="relative z-10 w-full h-full flex flex-col justify-center px-6 md:px-16 lg:px-24">
+                <div className="relative z-10 w-full h-full flex flex-col justify-end md:justify-center p-4 sm:p-6 md:px-12 lg:px-20 xl:px-24 md:py-10">
 
-                    <motion.div initial="initial" animate="animate" variants={staggerContainer} className="max-w-4xl">
+                    <motion.div dir={textDir} initial="initial" animate="animate" variants={staggerContainer} className="w-full max-w-[40rem] rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
 
                         <motion.div
 
                             variants={fadeInUp}
 
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-sm font-bold mb-8"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-bold mb-5 md:mb-8"
 
                         >
 
@@ -142,7 +144,7 @@ export default function EkEkipmanlarPageClient() {
 
                             variants={fadeInUp}
 
-                            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="text-[clamp(2.35rem,11vw,4.5rem)] font-bold tracking-tight leading-[1.02] text-white mb-4 md:mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
 
                         >
 
@@ -158,7 +160,7 @@ export default function EkEkipmanlarPageClient() {
 
                             variants={fadeInUp}
 
-                            className="text-sm md:text-lg font-normal leading-relaxed text-white max-w-3xl mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-white max-w-[38rem] mb-6 md:mb-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
 
                         >
 
@@ -174,7 +176,7 @@ export default function EkEkipmanlarPageClient() {
 
                                 href="/iletisim"
 
-                                className="bg-white text-black hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center gap-2"
+                                className="w-full sm:w-auto justify-center bg-white text-black hover:bg-gray-100 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all flex items-center gap-2"
 
                             >
 
@@ -210,13 +212,13 @@ export default function EkEkipmanlarPageClient() {
 
 
 
-            <div className="max-w-[1600px] mx-auto mb-24">
+            <div className="max-w-[1600px] mx-auto mb-16 md:mb-24">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
 
                     {statKeys.map((key) => (
 
-                        <div key={key} className="bg-white rounded-[2rem] p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex items-center gap-6 group">
+                        <div key={key} className="bg-white rounded-[1.5rem] md:rounded-[2rem] p-5 md:p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100 flex items-center gap-4 md:gap-6 group">
 
                             <div className="p-4 bg-primary/5 rounded-2xl text-primary group-hover:scale-110 transition-transform duration-300">
 
@@ -242,13 +244,13 @@ export default function EkEkipmanlarPageClient() {
 
 
 
-            <section className="mb-24">
+            <section className="mb-16 md:mb-24">
 
                 <div className="max-w-[1600px] mx-auto">
 
-                    <div className="bg-[#F8F9FA] rounded-[3rem] p-8 md:p-16 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    <div className="bg-[#F8F9FA] rounded-[1.75rem] md:rounded-[3rem] p-5 sm:p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-20">
 
-                        <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden shadow-lg">
+                        <div className="w-full lg:w-1/2 relative aspect-[4/3] sm:aspect-[16/10] lg:h-[500px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden shadow-lg">
 
                             <Image src="/images/ozunlu-yedek-parca-orijinal-ekipman.webp" alt={t('performance.imageAlt')} fill className="object-cover" />
 
@@ -302,9 +304,9 @@ export default function EkEkipmanlarPageClient() {
 
 
 
-            <section id="kategoriler" className="max-w-[1600px] mx-auto mb-24">
+            <section id="kategoriler" className="max-w-[1600px] mx-auto mb-16 md:mb-24">
 
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
 
                     <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">{t('categories.title')}</h2>
 
@@ -334,7 +336,7 @@ export default function EkEkipmanlarPageClient() {
 
                                 transition={{ delay: index * 0.1 }}
 
-                                className="group relative h-[320px] bg-white rounded-[2rem] p-8 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+                                className="group relative min-h-[280px] md:min-h-[320px] bg-white rounded-[1.5rem] md:rounded-[2rem] p-6 md:p-8 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
 
                             >
 
@@ -374,7 +376,7 @@ export default function EkEkipmanlarPageClient() {
 
 
 
-            <section id="contact" className="max-w-[1600px] mx-auto mb-24">
+            <section id="contact" className="max-w-[1600px] mx-auto mb-16 md:mb-24">
                 <div className="relative rounded-[2.5rem] overflow-hidden min-h-[320px] md:min-h-[380px] shadow-2xl">
                     <Image
                         src="/images/ozunlu-yedek-parca-banner.webp"
@@ -386,11 +388,11 @@ export default function EkEkipmanlarPageClient() {
                     <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/55 to-black/20" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/15" />
 
-                    <div className="relative z-10 h-full flex flex-col justify-center px-8 py-14 md:px-16 md:py-20 max-w-3xl">
+                    <div className="relative z-10 h-full flex flex-col justify-center px-5 py-12 sm:px-8 md:px-16 md:py-20 max-w-3xl">
                         <span className="inline-flex w-fit mb-5 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
                             {t('hero.badge')}
                         </span>
-                        <h2 className="text-xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
                             {t('cta.title')}
                         </h2>
                         <p className="text-base md:text-xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
@@ -399,7 +401,7 @@ export default function EkEkipmanlarPageClient() {
                         <div>
                             <Link
                                 href="/iletisim"
-                                className="inline-flex items-center gap-2 bg-white text-[#000552] hover:bg-white/95 px-8 py-4 rounded-xl font-bold text-base md:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+                                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-white text-[#000552] hover:bg-white/95 px-6 sm:px-8 py-4 rounded-xl font-bold text-base md:text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
                             >
                                 {tCommon('cta.iletisimeGecin')}
                                 <ArrowRight className="w-5 h-5 rtl:rotate-180" />

@@ -63,12 +63,12 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="w-full max-w-[1600px] mx-auto h-[calc(100vh-8rem)] flex items-center">
+        <section className="w-full max-w-[1600px] mx-auto min-h-[calc(100svh-8rem)] flex items-center py-4 md:py-8">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="w-full bg-[#F5F5F7] rounded-[2.5rem] p-6 md:p-10"
+                className="w-full bg-[#F5F5F7] rounded-[1.75rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-10"
             >
                 <div className="text-center mb-6">
                     <h1 className="text-3xl md:text-4xl font-bold text-black mb-2">
@@ -79,7 +79,7 @@ export default function ContactForm() {
                     </p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-6">
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-6">
                     <div className="w-full lg:w-1/3">
                         <div className="bg-white p-5 rounded-2xl border border-black/5 h-full">
                             <h3 className="text-lg font-bold text-black mb-4 flex items-center gap-2">
@@ -126,7 +126,7 @@ export default function ContactForm() {
                                     </div>
                                 </div>
 
-                                <div className="w-full h-28 rounded-xl overflow-hidden border border-black/10 mt-2">
+                                <div className="w-full h-44 sm:h-52 lg:h-32 rounded-xl overflow-hidden border border-black/10 mt-2">
                                     <iframe
                                         src={getMapEmbedUrl(locale)}
                                         width="100%"
@@ -161,7 +161,7 @@ export default function ContactForm() {
                         ) : (
                             <form
                                 onSubmit={handleSubmit}
-                                className="bg-white p-5 md:p-8 rounded-2xl border border-black/5 space-y-4"
+                                className="bg-white p-4 sm:p-5 md:p-8 rounded-2xl border border-black/5 space-y-4"
                             >
                                 <input
                                     type="text"
@@ -174,7 +174,7 @@ export default function ContactForm() {
                                     aria-hidden
                                 />
 
-                                <div className="grid md:grid-cols-2 gap-4">
+                                <div className="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('name')}</label>
                                         <input
@@ -198,7 +198,7 @@ export default function ContactForm() {
                                     </div>
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-4">
+                                <div className="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <label className="text-xs font-bold text-black ps-1 mb-1 block">{t('email')}</label>
                                         <input
@@ -238,11 +238,11 @@ export default function ContactForm() {
                                     <p className="text-sm text-red-600 text-center">{submitError}</p>
                                 )}
 
-                                <div className="flex justify-end pt-2">
+                                <div className="flex justify-stretch sm:justify-end pt-2">
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="px-10 py-3 bg-primary text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-primary/80 transition-all flex items-center gap-3 group disabled:opacity-60 disabled:cursor-not-allowed"
+                                        className="w-full sm:w-auto justify-center px-8 sm:px-10 py-3 bg-primary text-white font-bold text-sm uppercase tracking-wider rounded-xl hover:bg-primary/80 transition-all flex items-center gap-3 group disabled:opacity-60 disabled:cursor-not-allowed"
                                     >
                                         {isSubmitting ? t('submitting') : t('submit')}
                                         <Send size={16} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />

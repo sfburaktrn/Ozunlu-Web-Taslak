@@ -163,12 +163,12 @@ export default function MapPreview({
   );
 
   return (
-    <section className="bg-white py-8">
-      <div className="container mx-auto px-4">
-        <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-24 overflow-hidden isolate shadow-sm">
+    <section className="bg-white py-4 md:py-8">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-20 lg:py-24 overflow-hidden isolate shadow-sm">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,5,82,0.05),_transparent_45%)] pointer-events-none" />
-          <div className="px-4 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="px-5 sm:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-10 xl:gap-12 items-center">
               <div className="space-y-8">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -217,7 +217,7 @@ export default function MapPreview({
                         onClick={() =>
                           setSelectedCity({ name: loc.city, location: loc })
                         }
-                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white text-left hover:border-primary/30 hover:shadow-md transition-all"
+                        className="flex items-center gap-3 p-3 rounded-lg border border-gray-200 bg-white text-start hover:border-primary/30 hover:shadow-md transition-all"
                       >
                         <div className="p-2 rounded-full bg-primary/10 text-primary">
                           <MapPin size={16} />
@@ -238,19 +238,21 @@ export default function MapPreview({
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-white border border-gray-200 rounded-2xl shadow-xl p-5"
+                className="bg-white border border-gray-200 rounded-2xl shadow-xl p-2 sm:p-4 lg:p-5 overflow-hidden"
               >
-                <div className="relative rounded-xl border border-gray-200 bg-gray-50 p-3">
+                <div className="relative rounded-xl border border-gray-200 bg-gray-50 p-1 sm:p-3 min-h-[260px] md:min-h-[320px] lg:min-h-[360px] xl:min-h-[400px] flex flex-col justify-center">
                   <p className="mb-2 text-center text-xs font-medium text-gray-500">
                     {t("mapInstruction")}
                   </p>
-                  <TurkeyMap
-                    hoverable
-                    showTooltip={false}
-                    onClick={handleCityClick}
-                    customStyle={{ idleColor: "#d1d5db", hoverColor: "#9ca3af" }}
-                    cityWrapper={renderCity}
-                  />
+                  <div className="service-map-canvas w-full">
+                    <TurkeyMap
+                      hoverable
+                      showTooltip={false}
+                      onClick={handleCityClick}
+                      customStyle={{ idleColor: "#d1d5db", hoverColor: "#9ca3af" }}
+                      cityWrapper={renderCity}
+                    />
+                  </div>
 
                   <AnimatePresence>
                     {selectedCity && (

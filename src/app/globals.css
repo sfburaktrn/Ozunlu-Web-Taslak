@@ -21,6 +21,29 @@ body {
       rgb(var(--background-end-rgb)));
   min-height: 100vh;
   font-family: var(--font-manrope), sans-serif;
+  overflow-x: clip;
+}
+
+html {
+  overflow-x: clip;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+.viewport-screen {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+@supports (height: 100svh) {
+  .viewport-screen {
+    min-height: 100svh;
+    height: 100svh;
+  }
 }
 
 @layer utilities {
@@ -164,6 +187,18 @@ body {
 .service-map-marker {
   transform-box: fill-box;
   transform-origin: center;
+}
+
+.service-map-canvas,
+.service-map-canvas > div {
+  width: 100%;
+}
+
+.service-map-canvas svg {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  max-width: none;
 }
 
 .service-map-radar {

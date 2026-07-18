@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Logo Hardox In My Body acier certifié résistant à l'usure"
+    },
+    "languageSuggestion": {
+      "message": "Souhaitez-vous afficher le site en {language} ?",
+      "switch": "Changer de langue",
+      "dismiss": "Fermer"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "Design de <strong>superstructure</strong> approuvé par le constructeur — production compatible avec différentes configurations de châssis et de tracteur",
         "1": "Traitement d'<strong>acier</strong> certifié <hardox></hardox> et technologie de soudage robotisé",
-        "2": "Conformité totale à toutes les réglementations et aux normes de sécurité européennes (ECE/ADR)",
+        "2": "Conformité totale à toutes les exigences légales et aux normes de sécurité européennes, en premier lieu les réglementations ECE et UE",
         "3": "Garantie complète et <strong>service après-vente</strong> ininterrompu",
         "4": "87 points de service agréés dans 50 provinces à travers la Turquie",
         "5": "Conception structurelle préservant une forte valeur de <strong>revente</strong>",
@@ -164,6 +169,12 @@
       "exportCountries": "Pays d'exportation",
       "steelProcessing": "Traitement annuel de l'acier (tonnes)",
       "experience": "Années d'expérience"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Trouvons ensemble la bonne solution pour votre flotte",
+      "description": "Avec plus de 45 ans d'expérience, nous proposons des solutions sur mesure pour vos besoins en bennes, semi-remorques et équipements.",
+      "imageAlt": "Semi-remorque benne et camion Özünlü"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "puissance et design",
       "item01Title": "Caisse Hardox®",
       "item01Content": "La structure de caisse en <strong>acier</strong> suédois <hardox></hardox> redéfinit les standards du secteur en matière de résistance à l'usure et aux chocs. Longue durée de vie, faibles coûts de maintenance.",
-      "item02Title": "Ingénierie aérodynamique",
-      "item02Content": "Les lignes aérodynamiques optimisées en soufflerie réduisent la consommation de carburant et le coût total d'exploitation.",
+      "item02Title": "Structure de Caisse Renforcée",
+      "item02Content": "La caisse en acier à haute résistance et la structure de plancher renforcée empêchent toute déformation dans les conditions de terrassement les plus difficiles ; la grande stabilité au bennage garantit un déchargement sûr.",
       "item03Title": "Capacité de charge élevée",
       "item03Content": "Un châssis léger et haute résistance assure une capacité de transport maximale dans les limites légales de charge.",
       "imageAlt": "Caractéristiques Özünlü benne"
@@ -299,10 +310,10 @@
       "titleLine2": "chaque instant sur la route",
       "item01Title": "Technologie de châssis avancée",
       "item01Content": "Châssis haute résistance produit par soudage robotisé ; résistance maximale à la flexion, poids minimisé, capacité de charge maximisée.",
-      "item02Title": "Systèmes de sécurité actifs",
-      "item02Content": "Freinage électronique EBS et technologie RSS (Roll Stability Support) anti-renversement — sécurité de conduite conforme aux normes européennes.",
-      "item03Title": "Adaptation polyvalente",
-      "item03Content": "Flexibilité totale — du transport lowbed à la logistique conteneurs, des cargaisons vrac aux configurations de charge spéciales.",
+      "item02Title": "Systèmes de Sécurité Active",
+      "item02Content": "Le système de freinage électronique EBS assure un freinage précis et équilibré, tandis que le système de surveillance de la pression des pneus TPMS signale les risques potentiels à l'avance ; une garantie de conduite aux normes de sécurité européennes.",
+      "item03Title": "Utilisation Polyvalente",
+      "item03Content": "Haute efficacité pour différents types de charges, du terrassement et de l'exploitation minière au transport d'agrégats ; des options de caisse adaptées aux besoins de chaque secteur.",
       "imageAlt": "Caractéristiques semi-remorque"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semi-remorque",
-        "description": "Une solution fiable pour le transport lourd longue distance avec un volume de 22 m³, une caisse <hardox></hardox> 450 et un système d'essieux BPW.",
+        "description": "La caisse à grand volume et le système d'essieux robuste en font la solution fiable pour le transport lourd longue distance.",
         "features": [
           "Volume de 22 m³",
           "Caisse Hardox 450",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semi-remorque",
-        "description": "Une remorque haute performance dotée d'un châssis <hardox></hardox> 500 et d'une rampe hydraulique pour les opérations intensives.",
+        "description": "La caisse en acier <hardox></hardox> et la structure de châssis renforcée offrent un transport durable et performant dans les conditions de terrain les plus difficiles.",
         "features": [
           "Essieu Özkoç (local)",
           "Châssis Hardox 500",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semi-remorque",
-        "description": "Un transport efficace avec un volume de 21 m³, une caisse allégée et un système de bâche automatique.",
+        "description": "La structure de caisse allégée permet plus de charge utile par trajet et un transport efficace à faibles coûts d'exploitation.",
         "features": [
           "Volume de 21 m³",
           "Essieu Özkoç",
@@ -491,7 +502,11 @@
       "phonePlaceholder": "+33 ...",
       "message": "MESSAGE",
       "messagePlaceholder": "Rédigez votre message ici...",
-      "mapTitle": "Carte de localisation Özünlü Damper"
+      "mapTitle": "Carte de localisation Özünlü Damper",
+      "submitting": "Envoi en cours...",
+      "successTitle": "Votre message a été envoyé",
+      "successMessage": "Nous vous répondrons dans les plus brefs délais.",
+      "submitError": "L'envoi a échoué. Veuillez réessayer ou nous contacter par téléphone."
     },
     "tabs": {
       "sales": "VENTES ET MARKETING",
@@ -550,6 +565,7 @@
       "emailPh": "mail@entreprise.com",
       "heardFrom": "Comment nous avez-vous connus ?",
       "heardFromPh": "Google, réseaux sociaux, recommandation..."
-    }
+    },
+    "submitError": "L'envoi a échoué. Veuillez réessayer ou nous contacter par téléphone."
   }
 }

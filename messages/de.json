@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Hardox In My Body zertifiziertes verschleißfestes Stahl-Logo"
+    },
+    "languageSuggestion": {
+      "message": "Möchten Sie die Website auf {language} anzeigen?",
+      "switch": "Sprache wechseln",
+      "dismiss": "Schließen"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "OEM-genehmigtes Aufbaudesign — kompatibel mit verschiedenen Fahrgestell- und Zugmaschinenkonfigurationen",
         "1": "<hardox></hardox>-zertifizierte <strong>Stahlverarbeitung</strong> und Roboterschweißtechnologie",
-        "2": "Volle Einhaltung aller Vorschriften und europäischer Sicherheitsstandards (ECE/ADR)",
+        "2": "Volle Einhaltung aller gesetzlichen Vorgaben und europäischer Sicherheitsstandards, allen voran der ECE- und EU-Vorschriften",
         "3": "Umfassende Garantie und unterbrechungsfreier <strong>Kundendienst</strong>",
         "4": "87 autorisierte Servicestellen in 50 Provinzen in der Türkei",
         "5": "Strukturelles Design, das einen hohen <strong>Wiederverkaufs</strong>wert sichert",
@@ -164,6 +169,12 @@
       "exportCountries": "Export Countries",
       "steelProcessing": "Annual Steel Processing (Tons)",
       "experience": "Years of Experience"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Finden wir gemeinsam die richtige Lösung für Ihre Flotte",
+      "description": "Mit über 45 Jahren Erfahrung bieten wir maßgeschneiderte Lösungen für Ihren Bedarf an Kippern, Sattelanhängern und Ausrüstung.",
+      "imageAlt": "Özünlü Kippsattelanhänger und Lkw"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "Kraft und Design",
       "item01Title": "Hardox® Mulde",
       "item01Content": "Muldenstruktur aus schwedischem <hardox></hardox>-Stahl definiert Industriestandards bei Verschleiß- und Stoßfestigkeit neu. Lange Lebensdauer, niedrige Wartungskosten.",
-      "item02Title": "Aerodynamisches Engineering",
-      "item02Content": "Im Windkanal optimierte Linien senken Kraftstoffverbrauch und Gesamtbetriebskosten.",
+      "item02Title": "Verstärkte Aufbaustruktur",
+      "item02Content": "Hochfester Stahlaufbau und verstärkte Bodenstruktur verhindern Verformungen selbst unter härtesten Aushubbedingungen; hohe Kippstabilität sorgt für sicheres Entladen.",
       "item03Title": "Hohe Nutzlastkapazität",
       "item03Content": "Leichtes Hochfestigkeits-Fahrgestell für maximale Transportkapazität innerhalb gesetzlicher Grenzen.",
       "imageAlt": "Özünlü Kipper Merkmale"
@@ -300,9 +311,9 @@
       "item01Title": "Fortschrittliche Fahrgestelltechnik",
       "item01Content": "Hochfestes Fahrgestell mit Roboterschweißung; maximale Biegefestigkeit, minimiertes Gewicht, maximierte Nutzlast.",
       "item02Title": "Aktive Sicherheitssysteme",
-      "item02Content": "EBS-Elektronikbremse und RSS-Kippschutz für Fahrsicherheit nach europäischen Standards.",
-      "item03Title": "Vielseitige Anpassung",
-      "item03Content": "Volle Flexibilität von Tieflader bis Containerlogistik, Schüttgut bis Speziallasten.",
+      "item02Content": "Während das elektronische Bremssystem EBS präzises und ausgewogenes Bremsen ermöglicht, warnt das Reifendruckkontrollsystem TPMS frühzeitig vor möglichen Risiken; Fahrsicherheit nach europäischen Standards.",
+      "item03Title": "Vielseitiger Einsatz",
+      "item03Content": "Hohe Effizienz bei unterschiedlichen Ladungsarten — vom Aushub und Bergbau bis zum Schüttguttransport; Aufbauvarianten, die sich den Anforderungen jeder Branche anpassen.",
       "imageAlt": "Sattelanhänger Merkmale"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semi-Trailer",
-        "description": "22m³ volume with <hardox></hardox> 450 body and BPW axle for long-distance heavy transport.",
+        "description": "Großvolumiges Aufbaudesign und robustes Achssystem machen ihn zur zuverlässigen Lösung für den Schwerlast-Ferntransport.",
         "features": [
           "22m³ Volume",
           "Hardox 450 Body",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semi-Trailer",
-        "description": "<hardox></hardox> 500 chassis and hydraulic ramp for high-performance operations.",
+        "description": "<hardox></hardox>-Stahlaufbau und verstärkte Chassisstruktur sorgen für langlebigen, leistungsstarken Transport unter härtesten Einsatzbedingungen.",
         "features": [
           "Özkoç Axle (Domestic)",
           "Hardox 500 Chassis",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semi-Trailer",
-        "description": "21m³ volume with lightweight body and automatic tarpaulin system.",
+        "description": "Die leichte Aufbaustruktur ermöglicht mehr Nutzlast pro Fahrt und effizienten Transport bei niedrigen Betriebskosten.",
         "features": [
           "21m³ Volume",
           "Özkoç Axle",
@@ -491,7 +502,11 @@
       "phonePlaceholder": "+90 5XX XXX XX XX",
       "message": "NACHRICHT",
       "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
-      "mapTitle": "Özünlü Damper Standortkarte"
+      "mapTitle": "Özünlü Damper Standortkarte",
+      "submitting": "Wird gesendet...",
+      "successTitle": "Ihre Nachricht wurde übermittelt",
+      "successMessage": "Wir melden uns so schnell wie möglich bei Ihnen.",
+      "submitError": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch."
     },
     "tabs": {
       "sales": "VERTRIEB & MARKETING",
@@ -550,6 +565,7 @@
       "emailPh": "mail@company.com",
       "heardFrom": "How did you hear about us?",
       "heardFromPh": "Google, Social Media, Referral..."
-    }
+    },
+    "submitError": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch."
   }
 }

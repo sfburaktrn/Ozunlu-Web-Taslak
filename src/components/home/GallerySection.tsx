@@ -35,19 +35,24 @@ export default function GallerySection() {
     const contentOpacity = useTransform(springProgress, [0.1, 0.3], [0, 1]);
     const contentScale = useTransform(springProgress, [0.1, 0.3], [0.9, 1]);
     const contentBlur = useTransform(springProgress, [0.1, 0.3], ["10px", "0px"]);
+    const stageScale = useTransform(springProgress, [0, 0.16, 0.84, 1], [0.94, 1, 1, 0.94]);
+    const stageRadius = useTransform(springProgress, [0, 0.16, 0.84, 1], ["3rem", "0rem", "0rem", "3rem"]);
 
     return (
-        <section className="bg-white pb-8">
+        <section className="bg-white pb-3">
 
-            <div ref={targetRef} className="relative h-[200vh]">
+            <div ref={targetRef} className="relative h-[160svh] md:h-[180svh]">
 
-                <div className="sticky top-0 h-screen w-full flex items-center justify-center p-4">
+                <div className="sticky top-0 h-[100svh] w-full flex items-center justify-center overflow-hidden">
 
-                    <div className="relative w-full max-w-[95%] h-[90vh] rounded-[2rem] md:rounded-[3rem] bg-black overflow-hidden shadow-2xl perspective-[1000px] flex items-center justify-center">
+                    <motion.div
+                        style={{ scale: stageScale, borderRadius: stageRadius }}
+                        className="relative w-full h-full bg-black overflow-hidden shadow-2xl perspective-[1000px] flex items-center justify-center will-change-transform"
+                    >
 
                         <motion.div
                             style={{ opacity: contentOpacity, scale: contentScale, filter: `blur(${contentBlur})` }}
-                            className="relative z-10 flex flex-col items-center justify-center text-center mix-blend-difference"
+                            className="relative z-10 flex max-w-[75%] flex-col items-center justify-center text-center mix-blend-difference"
                         >
                             <div className="relative w-32 h-16 mb-4 translate-y-3 md:w-64 md:h-32 md:mb-6">
                                 <Image
@@ -86,7 +91,7 @@ export default function GallerySection() {
                                     className="absolute z-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
                                 >
                                     <div
-                                        className="relative overflow-hidden bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm transition-all w-[40vw] h-[55vw] md:w-[var(--d-w)] md:h-[var(--d-h)]"
+                                        className="relative overflow-hidden bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm transition-all w-[34vw] h-[44vw] max-h-[190px] md:max-h-none md:w-[var(--d-w)] md:h-[var(--d-h)]"
                                         style={{
                                             '--d-w': `${img.w}px`,
                                             '--d-h': `${img.h}px`,
@@ -99,7 +104,7 @@ export default function GallerySection() {
                                             loading="lazy"
                                             quality={75}
                                             className="object-cover"
-                                            sizes="(max-width: 768px) 40vw, 400px"
+                                            sizes="(max-width: 768px) 34vw, 400px"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
                                     </div>
@@ -108,7 +113,7 @@ export default function GallerySection() {
                         })}
 
 
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 

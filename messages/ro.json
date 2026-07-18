@@ -78,6 +78,11 @@
       "ozunluWatermark": "ÖZÜNLÜ",
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Logo Hardox In My Body oțel certificat rezistent la uzură"
+    },
+    "languageSuggestion": {
+      "message": "Doriți să vizualizați site-ul în {language}?",
+      "switch": "Schimbă limba",
+      "dismiss": "Închide"
     }
   },
   "home": {
@@ -128,7 +133,7 @@
       "features": {
         "0": "Design de <strong>suprastructură</strong> aprobat de producătorul de vehicule — producție compatibilă cu diferite configurații de șasiu și tractor",
         "1": "Prelucrare certificată <hardox></hardox> a oțelului și tehnologie de sudare robotică",
-        "2": "Conformitate deplină cu toate reglementările și standardele europene de siguranță (ECE/ADR)",
+        "2": "Conformitate deplină cu toate cerințele legale și standardele europene de siguranță, în frunte cu reglementările ECE și UE",
         "3": "Garanție completă și servicii post-vânzare neîntrerupte",
         "4": "87 de puncte de service autorizate în 50 de provincii din Turcia",
         "5": "Design structural care păstrează o valoare ridicată de <strong>revânzare</strong>",
@@ -164,6 +169,12 @@
       "exportCountries": "Țări de export",
       "steelProcessing": "Prelucrare anuală a oțelului (tone)",
       "experience": "Ani de experiență"
+    },
+    "contactCta": {
+      "badge": "Özünlü",
+      "title": "Să găsim împreună soluția potrivită pentru flota dumneavoastră",
+      "description": "Cu o experiență de peste 45 de ani, oferim soluții personalizate pentru nevoile dumneavoastră de basculante, semiremorci și echipamente.",
+      "imageAlt": "Semiremorcă basculantă și camion Özünlü"
     }
   },
   "damper": {
@@ -182,8 +193,8 @@
       "titleLine2": "putere și design",
       "item01Title": "Caroserie Hardox®",
       "item01Content": "Structura caroseriei din <strong>oțel</strong> suedez <hardox></hardox> redefinește standardele industriei în rezistența la uzură și impact. Durată de viață lungă, costuri reduse de întreținere.",
-      "item02Title": "Inginerie aerodinamică",
-      "item02Content": "Liniile aerodinamice optimizate în tunel de vânt reduc consumul de combustibil și costul total de operare.",
+      "item02Title": "Structură de Benă Consolidată",
+      "item02Content": "Bena din oțel de înaltă rezistență și structura consolidată a podelei previn deformarea în cele mai dure condiții de excavare; stabilitatea ridicată la basculare asigură o descărcare sigură.",
       "item03Title": "Capacitate ridicată de încărcare",
       "item03Content": "Design de șasiu ușor și rezistent asigură capacitate maximă de transport în limitele legale de încărcare.",
       "imageAlt": "Caracteristici Özünlü basculantă"
@@ -299,10 +310,10 @@
       "titleLine2": "fiecare moment pe drum",
       "item01Title": "Tehnologie avansată de șasiu",
       "item01Content": "Șasiu de înaltă rezistență produs prin sudare robotică; rezistență maximă la flexiune, greutate minimizată, capacitate de încărcare maximizată.",
-      "item02Title": "Sisteme active de siguranță",
-      "item02Content": "Sistem electronic de frânare EBS și tehnologie RSS (Roll Stability Support) de prevenire a răsturnării — siguranță la condus conform standardelor europene.",
-      "item03Title": "Adaptare versatilă",
-      "item03Content": "Flexibilitate completă — de la transport lowbed la logistică container, de la mărfuri vrac la configurații speciale de încărcare.",
+      "item02Title": "Sisteme de Siguranță Activă",
+      "item02Content": "În timp ce sistemul electronic de frânare EBS asigură o frânare precisă și echilibrată, sistemul de monitorizare a presiunii în anvelope TPMS avertizează din timp asupra riscurilor potențiale; siguranță în conducere la standardele europene.",
+      "item03Title": "Utilizare Versatilă",
+      "item03Content": "Eficiență ridicată pentru diferite tipuri de încărcături, de la excavare și minerit până la transportul de agregate; opțiuni de benă adaptate nevoilor fiecărui sector.",
       "imageAlt": "Caracteristici semiremorcă"
     },
     "configurator": {
@@ -313,7 +324,7 @@
     "items": {
       "g22": {
         "name": "ÖZ-G22 Semiremorcă",
-        "description": "Soluție fiabilă pentru transport greu pe distanțe lungi, cu volum de 22 m³, caroserie <hardox></hardox> 450 și sistem de osii BPW.",
+        "description": "Designul benei de mare volum și sistemul de axe durabil îl fac soluția de încredere pentru transportul greu pe distanțe lungi.",
         "features": [
           "Volum 22 m³",
           "Caroserie Hardox 450",
@@ -324,7 +335,7 @@
       },
       "l500": {
         "name": "ÖZ-L500 Semiremorcă",
-        "description": "Remorcă de înaltă performanță cu șasiu <hardox></hardox> 500 și rampă hidraulică pentru operațiuni solicitante.",
+        "description": "Bena din oțel <hardox></hardox> și structura consolidată a șasiului asigură un transport durabil și performant în cele mai dure condiții de teren.",
         "features": [
           "Axă Özkoç (locală)",
           "Șasiu Hardox 500",
@@ -335,7 +346,7 @@
       },
       "m21": {
         "name": "ÖZ-M21 Semiremorcă",
-        "description": "Transport eficient cu volum de 21 m³, caroserie ușoară și sistem automat de prelată.",
+        "description": "Structura ușoară a benei permite mai multă sarcină utilă per cursă și un transport eficient cu costuri de operare reduse.",
         "features": [
           "Volum 21 m³",
           "Axă Özkoç",
@@ -491,7 +502,11 @@
       "phonePlaceholder": "+40 ...",
       "message": "MESAJ",
       "messagePlaceholder": "Scrieți mesajul dumneavoastră aici...",
-      "mapTitle": "Harta locației Özünlü Damper"
+      "mapTitle": "Harta locației Özünlü Damper",
+      "submitting": "Se trimite...",
+      "successTitle": "Mesajul dumneavoastră a fost trimis",
+      "successMessage": "Vă vom contacta cât mai curând posibil.",
+      "submitError": "Trimiterea a eșuat. Vă rugăm să încercați din nou sau să ne contactați telefonic."
     },
     "tabs": {
       "sales": "VÂNZĂRI ȘI MARKETING",
@@ -550,6 +565,7 @@
       "emailPh": "mail@companie.com",
       "heardFrom": "De unde ați auzit de noi?",
       "heardFromPh": "Google, Social Media, recomandare..."
-    }
+    },
+    "submitError": "Trimiterea a eșuat. Vă rugăm să încercați din nou sau să ne contactați telefonic."
   }
 }

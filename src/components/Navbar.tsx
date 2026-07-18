@@ -64,7 +64,7 @@ export default function Navbar() {
             <nav
                 className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? 'bg-transparent border-transparent' : 'bg-[rgba(251,251,253,0.72)] backdrop-blur-2xl backdrop-saturate-[180%] border-b border-black/[0.06]'}`}
             >
-                <div className="container mx-auto px-6 h-[48px] flex items-center justify-center gap-x-[50px]">
+                <div className="container mx-auto px-4 sm:px-6 h-[48px] flex items-center justify-between lg:justify-center gap-x-5 xl:gap-x-9 2xl:gap-x-[50px]">
                     <Link href="/" className="flex-shrink-0 relative z-50 flex items-center">
                         <div className="relative w-20 h-5">
                             <Image
@@ -77,12 +77,12 @@ export default function Navbar() {
                         </div>
                     </Link>
 
-                    <div className="hidden lg:flex items-center space-x-[50px]">
+                    <div className="hidden lg:flex items-center gap-x-5 xl:gap-x-8 2xl:gap-x-[50px] whitespace-nowrap">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-[13px] font-medium text-black/80 hover:text-black transition-opacity tracking-tight"
+                                className="text-[11px] xl:text-[12px] 2xl:text-[13px] font-medium text-black/80 hover:text-black transition-opacity tracking-tight"
                             >
                                 {link.label}
                             </Link>
@@ -133,7 +133,7 @@ export default function Navbar() {
 
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                        className={`lg:hidden p-2 absolute end-6 z-[140] hover:bg-black/5 rounded-full transition-colors ${mobileMenuOpen ? 'text-white/90' : 'text-black/80'}`}
+                        className={`lg:hidden p-2 absolute end-3 sm:end-6 z-[140] hover:bg-black/5 rounded-full transition-colors ${mobileMenuOpen ? 'text-white/90' : 'text-black/80'}`}
                         aria-label="Toggle Menu"
                     >
                         {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -150,7 +150,7 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                         className="fixed inset-0 z-[120] lg:hidden bg-[#1d1d1f]/95 backdrop-blur-2xl overflow-hidden"
                     >
-                        <div className="flex flex-col pt-24 px-8 h-full overflow-y-auto pb-10" data-lenis-prevent>
+                        <div className="flex flex-col pt-20 sm:pt-24 px-5 sm:px-8 h-full overflow-y-auto overscroll-contain pb-[max(2.5rem,env(safe-area-inset-bottom))]" data-lenis-prevent>
                             <div className="flex flex-col space-y-6">
                                 {navLinks.map((link, i) => (
                                     <motion.div

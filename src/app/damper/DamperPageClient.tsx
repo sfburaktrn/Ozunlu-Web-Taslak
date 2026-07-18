@@ -11,6 +11,7 @@ import ProductCardImage from '@/components/common/ProductCardImage';
 import ProductImageLightbox from '@/components/common/ProductImageLightbox';
 import HeroAccentText from '@/components/common/HeroAccentText';
 import { heroRichTextHandlers } from '@/i18n/richText';
+import { useTextDirection } from '@/i18n/useTextDirection';
 
 const PRODUCT_KEYS = ['d24', 'd30', 'd21'] as const;
 
@@ -43,6 +44,7 @@ export default function DamperPageClient() {
     const t = useTranslations('damper');
     const tCommon = useTranslations('common');
     const tLabels = useTranslations('common.labels');
+    const textDir = useTextDirection();
     const [heroIndex, setHeroIndex] = React.useState(0);
     const [zoomImage, setZoomImage] = React.useState<{ src: string; alt: string } | null>(null);
 
@@ -88,9 +90,9 @@ export default function DamperPageClient() {
     );
 
     return (
-        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
             {/* HERO */}
-            <section className="relative w-full h-[600px] md:h-[700px] rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl">
+            <section className="relative w-full h-[660px] sm:h-[700px] md:h-[700px] rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl layout-fixed">
                 <div className="absolute inset-0 z-0">
                     {DAMPER_HERO_IMAGES.map((src, index) => (
                         <Image
@@ -99,24 +101,24 @@ export default function DamperPageClient() {
                             alt={t('hero.imageAlt')}
                             fill
                             priority={index === 0}
-                            className={`object-cover object-center transition-opacity duration-700 ${
+                            className={`object-cover object-[68%_center] sm:object-[72%_center] md:object-center transition-opacity duration-700 ${
                                 index === heroIndex ? 'opacity-100' : 'opacity-0'
                             }`}
                         />
                     ))}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/15" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 md:bg-gradient-to-r md:from-black/85 md:via-black/55 md:to-black/15" />
                 </div>
 
-                <div className="relative h-full flex flex-col justify-end md:justify-center items-start px-6 pb-32 md:pb-6 md:px-8 lg:px-10">
+                <div className="relative h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:px-8 lg:px-10">
                     <div className="absolute top-32 left-6 md:hidden z-0 pointer-events-none select-none">
-                        <span className="text-6xl font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                        <span className="text-6xl font-bold italic text-white/5 leading-none tracking-tighter whitespace-nowrap">
                             ÖZÜNLÜ
                         </span>
                     </div>
 
-                    <div className="max-w-[33rem] relative text-left z-10 w-full">
-                        <div className="hidden md:block absolute -top-32 -left-4 z-0 pointer-events-none select-none">
-                            <span className="md:text-[12rem] font-bold text-white/5 leading-none tracking-tighter whitespace-nowrap">
+                    <div dir={textDir} className="max-w-[33rem] relative text-left z-10 w-full rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
+                        <div className="hidden md:block absolute -top-24 -left-2 z-0 pointer-events-none select-none">
+                            <span className="md:text-[8rem] font-bold italic text-white/5 leading-none tracking-tighter whitespace-nowrap">
                                 ÖZÜNLÜ
                             </span>
                         </div>
@@ -125,7 +127,7 @@ export default function DamperPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.2, duration: 0.8 }}
-                            className="relative z-10 text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="relative z-10 text-[clamp(2.5rem,11vw,4.5rem)] font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                         >
                             {t('hero.titleLine1')} <br />
                             <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
@@ -135,7 +137,7 @@ export default function DamperPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-base md:text-xl text-white mb-8 mr-auto max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-sm sm:text-base md:text-xl leading-relaxed text-white mb-6 md:mb-8 mr-auto max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>
@@ -160,7 +162,7 @@ export default function DamperPageClient() {
 
             {/* PRODUCTS */}
             <section className="w-full max-w-[1600px] mx-auto mb-12 px-4 sm:px-0">
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
                     <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
                         {tCommon('labels.modellerimiz')}
                     </span>
@@ -206,10 +208,10 @@ export default function DamperPageClient() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16 flex flex-col md:flex-row gap-12 group hover:shadow-xl transition-all duration-500"
+                    className="bg-[#F5F5F7] rounded-[1.75rem] md:rounded-[2.5rem] p-5 sm:p-8 md:p-12 lg:p-16 flex flex-col md:flex-row gap-8 md:gap-12 group hover:shadow-xl transition-all duration-500"
                 >
                     <div className="w-full md:w-1/2 flex flex-col justify-center">
-                        <h3 className="text-3xl md:text-5xl font-bold text-black mb-8">
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8">
                             {t('features.titleLine1')} <br /> <span className="text-ozunlu-950">{t('features.titleLine2')}</span>
                         </h3>
 

@@ -22,7 +22,7 @@ export default function TrailerHero() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="relative w-full h-[500px] md:h-[600px] rounded-3xl overflow-hidden border border-white/10 group layout-fixed"
+                    className="relative w-full h-[620px] sm:h-[660px] md:h-[600px] rounded-[1.5rem] md:rounded-3xl overflow-hidden border border-white/10 group layout-fixed"
                 >
                     <div className="absolute inset-0">
                         <Image
@@ -31,7 +31,7 @@ export default function TrailerHero() {
                             fill
                             loading="lazy"
                             sizes="(max-width: 768px) 100vw, 1200px"
-                            className="object-cover object-[72%_center] md:object-[80%_center] group-hover:scale-105 transition-transform duration-700"
+                            className="object-cover object-[72%_center] sm:object-[74%_center] md:object-[80%_center] group-hover:scale-105 transition-transform duration-700"
                             quality={90}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/25 md:bg-gradient-to-r md:from-black/92 md:via-black/55 md:via-40% md:to-transparent" />
@@ -43,16 +43,16 @@ export default function TrailerHero() {
                         </span>
                     </div>
 
-                    <div className="relative z-10 h-full flex flex-col justify-end md:justify-center items-start p-6 pb-6 md:p-12 lg:p-16">
+                    <div className="relative z-10 h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:p-12 lg:p-16">
                         <div className="absolute top-14 left-6 md:hidden z-0 pointer-events-none select-none">
-                            <span className="text-6xl font-bold text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
+                            <span className="text-6xl font-bold italic text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
                                 {tLabels('ozunluWatermark')}
                             </span>
                         </div>
 
-                        <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl relative text-left" dir={textDir}>
+                        <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[33rem] relative text-left rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none" dir={textDir}>
                             <div className="hidden md:block absolute -top-16 left-0 z-0 pointer-events-none select-none">
-                                <span className="md:text-[8rem] font-bold text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
+                                <span className="md:text-[8rem] font-bold italic text-white/[0.07] leading-none tracking-tighter whitespace-nowrap">
                                     {tLabels('ozunluWatermark')}
                                 </span>
                             </div>
@@ -61,7 +61,7 @@ export default function TrailerHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="relative z-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 md:mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                                className="relative z-10 text-[clamp(2rem,9vw,3.75rem)] font-bold text-white mb-3 md:mb-6 leading-[1.05] drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                             >
                                 {t('titleLine1')} <br />
                                 <HeroAccentText onDark>{t('titleLine2')}</HeroAccentText>
@@ -71,7 +71,7 @@ export default function TrailerHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="relative z-10 text-sm sm:text-base md:text-xl text-gray-300 mb-6 md:mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                                className="relative z-10 text-sm sm:text-base md:text-lg text-gray-200 mb-5 md:mb-8 max-w-[33rem] leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                             >
                                 {t.rich('description', heroRichTextHandlers)}
                             </motion.p>

@@ -13,6 +13,7 @@ const PartnersSlider = dynamic(() => import('@/components/home/PartnersSlider'))
 const FactorySpotlight = dynamic(() => import('@/components/home/FactorySpotlight'));
 const WhyChooseUsSection = dynamic(() => import('@/components/home/WhyChooseUsSection'));
 const MapPreview = dynamic(() => import('@/components/home/MapPreview'), { ssr: false });
+const ContactCtaSection = dynamic(() => import('@/components/home/ContactCtaSection'));
 const GallerySection = dynamic(() => import('@/components/home/GallerySection'));
 
 export default function HomePageClient() {
@@ -31,6 +32,7 @@ export default function HomePageClient() {
             <PartnersSlider />
             <FactorySpotlight />
             <WhyChooseUsSection />
+            <ContactCtaSection />
             <MapPreview />
             <GallerySection />
         </main>

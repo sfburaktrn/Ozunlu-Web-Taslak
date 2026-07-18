@@ -10,9 +10,9 @@ import { useTextDirection } from '@/i18n/useTextDirection';
 
 // Correct image paths mapped to the public/products directory
 const images = [
-    '/images/ozunlu-hardox-damperli-yari-romork.webp',
-    '/images/ozunlu-beyaz-damperli-yari-romork-hero.webp',
-    '/images/ozunlu-damperli-dorse-cekici-komple-sistem.webp',
+    '/images/ozunlu-gri-hardox-damperli-yari-romork-studyo.webp',
+    '/images/ozunlu-turuncu-hardox-damperli-yari-romork-cekici.webp',
+    '/images/ozunlu-gri-hardox-damperli-yari-romork-cekici.webp',
 ];
 
 export default function WhyChooseUsSection() {
@@ -66,9 +66,9 @@ export default function WhyChooseUsSection() {
     };
 
     return (
-        <section className="bg-white py-8">
-            <div className="container mx-auto px-4">
-                <div className="relative bg-[#f5f5f7] rounded-[2.5rem] py-24 overflow-hidden isolate shadow-sm">
+        <section className="bg-white py-4 md:py-8">
+            <div className="container mx-auto px-3 sm:px-4">
+                <div className="relative bg-[#f5f5f7] rounded-[1.75rem] md:rounded-[2.5rem] py-12 md:py-20 lg:py-24 overflow-hidden isolate shadow-sm">
                     {/* Background Texture */}
                     <div className="absolute inset-0 opacity-10 pointer-events-none">
                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gray-200 via-transparent to-transparent" />
@@ -79,8 +79,8 @@ export default function WhyChooseUsSection() {
                         }} />
                     </div>
 
-                    <div className="container mx-auto px-4 relative z-10">
-                        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center layout-fixed">
+                    <div className="container mx-auto px-5 sm:px-8 relative z-10">
+                        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center layout-fixed">
 
                             {/* Content - Features List */}
                             <div className="order-1 flex flex-col justify-center" dir={textDir}>
@@ -88,12 +88,12 @@ export default function WhyChooseUsSection() {
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    className="mb-10 text-center lg:text-left"
+                                    className="mb-8 md:mb-10 text-center lg:text-start"
                                 >
                                     <span className="text-primary font-bold tracking-[0.2em] text-sm uppercase mb-4 block">
                                         {t('eyebrow')}
                                     </span>
-                                    <h2 className="text-4xl md:text-5xl font-black text-black mb-6 leading-tight">
+                                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-6 leading-tight break-words">
                                         {t('title')}
                                     </h2>
                                 </motion.div>
@@ -106,12 +106,12 @@ export default function WhyChooseUsSection() {
                                             whileInView={{ opacity: 1, x: 0 }}
                                             viewport={{ once: true }}
                                             transition={{ delay: index * 0.08 }}
-                                            className="flex items-start gap-4 group justify-start"
+                                            className="flex items-start gap-3 sm:gap-4 group justify-start"
                                         >
                                             <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center mt-0.5 group-hover:bg-primary transition-colors duration-300">
                                                 <Check size={15} className="text-primary group-hover:text-white" />
                                             </div>
-                                            <p className="text-gray-800 group-hover:text-primary transition-colors duration-300 text-base md:text-lg leading-snug text-left">
+                                            <p className="min-w-0 text-gray-800 group-hover:text-primary transition-colors duration-300 text-sm sm:text-base md:text-lg leading-snug text-start break-words">
                                                 {t.rich(`features.${key}`, {
                                                     ...heroRichTextHandlers,
                                                     hardox: heroRichTextHandlers.hardox,
@@ -123,9 +123,9 @@ export default function WhyChooseUsSection() {
                             </div>
 
                             {/* Interactive Stacked Images */}
-                            <div className="order-2 relative h-[450px] lg:h-[700px] w-full flex items-center justify-center layout-fixed">
+                            <div className="order-2 relative h-[300px] sm:h-[420px] lg:h-[700px] w-full flex items-center justify-center layout-fixed">
                                 <div
-                                    className="relative w-[340px] h-[240px] lg:w-[750px] lg:h-[500px] cursor-pointer"
+                                    className="relative w-[min(72vw,340px)] aspect-[17/12] lg:w-[min(48vw,750px)] lg:h-[500px] cursor-pointer -translate-x-4 sm:translate-x-0 rtl:translate-x-4 rtl:sm:translate-x-0"
                                     onClick={handleNext}
                                 >
                                     {images.map((img, index) => {

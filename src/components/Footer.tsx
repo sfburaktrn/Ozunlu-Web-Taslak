@@ -42,11 +42,11 @@ export default function Footer() {
 
     return (
         <footer className="bg-white text-black border-t border-gray-200">
-            <div className="container mx-auto px-3 md:px-5 py-14">
+            <div className="container mx-auto px-4 sm:px-6 py-10 md:py-14">
                 <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr] gap-10 lg:gap-20">
                     <div className="space-y-5">
-                        <div className="flex items-center gap-3 -ms-6 md:-ms-8">
-                            <div className="relative w-40 h-10">
+                        <div className="flex flex-wrap items-center gap-3">
+                            <div className="relative w-32 sm:w-40 h-10">
                                 <Image
                                     src="/ozunlu-logo-new.png"
                                     alt={t('logoAlt')}
@@ -129,9 +129,9 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-gray-200 bg-gray-50">
-                <div className="container mx-auto px-4 md:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-black font-medium">
-                    <p>{t('copyright', { year })}</p>
-                    <div className="flex items-center gap-6">
+                <div className="container mx-auto px-4 md:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-black font-medium text-center md:text-start">
+                    <p className="max-w-full">{t('copyright', { year })}</p>
+                    <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
                         {legalLinks.map((link) => (
                             <NextLink
                                 key={link.pathname}

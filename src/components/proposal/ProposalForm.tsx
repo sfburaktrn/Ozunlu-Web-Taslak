@@ -198,7 +198,7 @@ export default function ProposalForm({
         if (selectedProduct) return selectedProduct.image;
 
         if (formData.type === 'damper') {
-            if (step2Complete) return '/damper-step-3.jpg';
+            if (step2Complete) return '/images/ozunlu-turuncu-hardox-damper-kamyon-ustyapi.webp';
             if (step1Complete) return '/damper-step-2.jpg';
             return '/damper.jpg';
         } else {
@@ -211,12 +211,23 @@ export default function ProposalForm({
     return (
 
 
-        <section className="w-full max-w-[1600px] mx-auto mt-8 mb-24" id="teklif-formu">
-            <div className="bg-[#F5F5F7] rounded-[2.5rem] p-8 md:p-16">
-                <div className={`flex flex-col lg:flex-row gap-8 lg:gap-16 ${selectedProduct ? '' : 'min-h-[800px]'}`}>
+        <section className="w-full max-w-[1600px] mx-auto mt-8 mb-16 md:mb-24 scroll-mt-16" id="teklif-formu">
+            <div className="bg-[#F5F5F7] rounded-[1.75rem] md:rounded-[2.5rem] p-4 sm:p-6 md:p-10 lg:p-16">
+                <div className={`flex flex-col lg:flex-row gap-6 md:gap-8 lg:gap-16 ${selectedProduct ? '' : 'lg:min-h-[800px]'}`}>
 
                     {/* Left Side: Sticky Image & Summary */}
                     <div className="w-full lg:w-5/12 relative">
+                        <div className="mb-5 lg:hidden">
+                            <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-3">
+                                {selectedProduct ? t('selectedProduct') : (configuratorBadge ?? t('configurator'))}
+                            </span>
+                            <h2 className="text-3xl sm:text-4xl font-black text-ozunlu-950 leading-tight break-words">
+                                {selectedProduct ? selectedProduct.name : (configuratorTitle ?? t('configurator'))}
+                            </h2>
+                            <p className="mt-2 text-sm sm:text-base text-gray-500">
+                                {selectedProduct ? t('selectedSubtitle') : (configuratorSubtitle ?? t('defaultSubtitle'))}
+                            </p>
+                        </div>
                         <div className="lg:sticky lg:top-14 space-y-4">
                             <div className="hidden lg:block">
                                 <span className="inline-block py-2 px-4 rounded-full bg-ozunlu-50 text-primary text-xs font-bold tracking-widest uppercase mb-4">
@@ -249,7 +260,7 @@ export default function ProposalForm({
 
                             <motion.div
                                 layoutId="product-image"
-                                className="relative aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-xl"
+                                className="relative aspect-[4/3] rounded-2xl md:rounded-3xl overflow-hidden bg-white border border-gray-200 shadow-xl"
                             >
                                 <div className="absolute inset-0 p-0 flex items-center justify-center">
                                     <Image
@@ -269,7 +280,7 @@ export default function ProposalForm({
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.95 }}
                                 animate={{ opacity: 1, scale: 1 }}
-                                className="h-full flex flex-col items-center justify-center text-center p-12 bg-green-50 rounded-3xl border border-green-100"
+                                className="h-full flex flex-col items-center justify-center text-center p-6 sm:p-12 bg-green-50 rounded-2xl md:rounded-3xl border border-green-100"
                             >
                                 <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center text-white mb-6 shadow-lg shadow-green-500/30">
                                     <Check size={48} strokeWidth={3} />
@@ -292,7 +303,7 @@ export default function ProposalForm({
                                 </button>
                             </motion.div>
                         ) : (
-                            <form onSubmit={handleSubmit} className="space-y-8 pb-24">
+                            <form onSubmit={handleSubmit} className="space-y-7 md:space-y-8 pb-4 md:pb-12 lg:pb-24">
                                 {selectedProduct ? (
                                     <>
                                         {/* SIMPLIFIED FLOW FOR SELECTED PRODUCT */}
@@ -303,7 +314,7 @@ export default function ProposalForm({
                                                     {t('stepQuantity')}
                                                 </h3>
                                             </div>
-                                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-gray-100 shadow-sm">
                                                 <InputGroup
                                                     label={t('fields.quantity')}
                                                     placeholder="1"
@@ -321,7 +332,7 @@ export default function ProposalForm({
                                                     {t('stepPayment')}
                                                 </h3>
                                             </div>
-                                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-4">
+                                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-4">
                                                 <PaymentOption
                                                     icon={<Banknote size={24} />}
                                                     title={t('payment.cashTitle')}
@@ -347,7 +358,7 @@ export default function ProposalForm({
                                                 </h3>
                                             </div>
                                             {/* Reuse Check for contact validity not block visually but for submit */}
-                                            <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-6">
+                                            <div className="bg-white p-4 sm:p-6 rounded-2xl border border-gray-100 shadow-sm grid md:grid-cols-2 gap-6">
                                                 <InputGroup
                                                     label={t('fields.company')}
                                                     icon={<Building2 size={18} />}
@@ -510,7 +521,7 @@ export default function ProposalForm({
                                                     </h3>
                                                 </div>
 
-                                                <div className="grid md:grid-cols-3 gap-6">
+                                                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6">
                                                     <InputGroup
                                                         label={t('fields.volume')}
                                                         placeholder={t('fields.volumePh')}
