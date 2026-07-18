@@ -28,7 +28,7 @@ const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: s
     },
     d30: {
         id: 'd2',
-        image: '/images/ozunlu-oz-d30-kirmizi-hardox-damper.webp',
+        image: '/images/ozunlu-oz-d30-kirmizi-hardox-damper-kamyon.webp',
     },
     d21: {
         id: 'd3',

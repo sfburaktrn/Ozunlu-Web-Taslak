@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 
 function LightBeam({ isOn, direction }: { isOn: boolean; direction: 'left' | 'right' }) {
@@ -34,26 +34,55 @@ function LightBeam({ isOn, direction }: { isOn: boolean; direction: 'left' | 'ri
 
 export default function FactorySpotlight() {
     const [active, setActive] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    const { scrollYProgress } = useScroll({
+        target: containerRef,
+        offset: ['start start', 'end end'],
+    });
+
+    const springProgress = useSpring(scrollYProgress, {
+        stiffness: 50,
+        damping: 30,
+        mass: 0.8,
+        restDelta: 0.001,
+    });
+
+    // Scroll ilerledikçe kamera damperin arka kısmına doğru hafifçe yaklaşır
+    const bgScale = useTransform(springProgress, [0.1, 0.9], [1, 1.35]);
+    // Yandaki çekiciler dışarı kayarak "aralarından geçiyormuş" hissi verir
+    const truckShift = useTransform(springProgress, [0.1, 0.9], ['0%', '30%']);
+    const truckShiftLeft = useTransform(springProgress, [0.1, 0.9], ['0%', '-30%']);
+    // Galeri bölümündeki gibi: sahne ekranı kaplayacak şekilde büyür, çıkışta eski haline döner
+    const stageScale = useTransform(springProgress, [0, 0.18, 0.82, 1], [0.94, 1, 1, 0.94]);
+    const stageRadius = useTransform(springProgress, [0, 0.18, 0.82, 1], ['1.5rem', '0rem', '0rem', '1.5rem']);
 
     return (
         <section className="hidden md:block pt-2 pb-12 bg-white" aria-hidden="true">
-            <div className="container mx-auto px-4">
+            <div ref={containerRef} className="relative h-[220vh]">
+                <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
                 <motion.div
-                    className="relative w-full h-[600px] rounded-3xl overflow-hidden border border-white/10 bg-black"
+                    style={{ scale: stageScale, borderRadius: stageRadius }}
+                    className="relative w-full h-full overflow-hidden bg-black will-change-transform"
                     onViewportEnter={() => {
                         if (!active) setActive(true);
                     }}
                     viewport={{ amount: 0.45, once: true }}
                 >
                     <div className="absolute inset-0 z-0">
-                        <Image
-                            src="/images/ozunlu-sari-hardox-damperli-yari-romork-gece-sahne.webp"
-                            alt=""
-                            fill
-                            loading="lazy"
-                            sizes="(max-width: 768px) 100vw, 1200px"
-                            className="object-cover"
-                        />
+                        <motion.div
+                            className="absolute inset-0"
+                            style={{ scale: bgScale, transformOrigin: '50% 58%' }}
+                        >
+                            <Image
+                                src="/images/ozunlu-sari-hardox-damperli-yari-romork-gece-sahne.webp"
+                                alt=""
+                                fill
+                                loading="lazy"
+                                sizes="(max-width: 768px) 100vw, 1200px"
+                                className="object-cover"
+                            />
+                        </motion.div>
                         <motion.div
                             initial={{
                                 background:
@@ -70,7 +99,10 @@ export default function FactorySpotlight() {
                     </div>
 
                     <div className="relative w-full h-full z-10">
-                        <div className="absolute right-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none">
+                        <motion.div
+                            className="absolute right-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none"
+                            style={{ x: truckShift }}
+                        >
                             <div
                                 className="relative w-full h-full transition-all duration-[2500ms] ease-out"
                                 style={{ filter: active ? 'brightness(1.1) contrast(1.1)' : 'brightness(0.3)' }}
@@ -85,9 +117,12 @@ export default function FactorySpotlight() {
                                 />
                                 <LightBeam isOn={active} direction="left" />
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className="absolute left-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none">
+                        <motion.div
+                            className="absolute left-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none"
+                            style={{ x: truckShiftLeft }}
+                        >
                             <div
                                 className="relative w-full h-full transition-all duration-[2500ms] ease-out"
                                 style={{ filter: active ? 'brightness(1.1) contrast(1.1)' : 'brightness(0.3)' }}
@@ -102,9 +137,10 @@ export default function FactorySpotlight() {
                                 />
                                 <LightBeam isOn={active} direction="right" />
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </motion.div>
+                </div>
             </div>
         </section>
     );
