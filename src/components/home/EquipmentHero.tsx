@@ -43,12 +43,12 @@ export default function EquipmentHero() {
                     </div>
 
                     <div className="absolute inset-0 z-10 flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:p-12 lg:p-16">
-                        <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[33rem] relative text-left rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none" dir={textDir}>
+                        <div className="w-full max-w-md sm:max-w-lg md:max-w-[26rem] xl:max-w-[28rem] 2xl:max-w-[33rem] relative text-left rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none" dir={textDir}>
                             <motion.h2
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="relative z-10 text-[clamp(2rem,9vw,3.75rem)] font-bold text-white mb-3 md:mb-6 leading-[1.05] drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                                className="relative z-10 text-[clamp(2rem,9vw,3.75rem)] md:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.75rem] font-bold text-white mb-3 md:mb-6 leading-[1.05] drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                             >
                                 {t('titleLine1')} <br />
                                 <HeroAccentText onDark>{t('titleLine2')}</HeroAccentText>

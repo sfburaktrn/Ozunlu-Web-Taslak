@@ -110,12 +110,12 @@ export default function DamperPageClient() {
                 </div>
 
                 <div className="relative h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:px-8 lg:px-10">
-                    <div dir={textDir} className="max-w-[33rem] relative text-left z-10 w-full rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
+                    <div dir={textDir} className="max-w-[33rem] md:max-w-[28rem] 2xl:max-w-[33rem] relative text-left z-10 w-full rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
                         <motion.h1
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.2, duration: 0.8 }}
-                            className="relative z-10 text-[clamp(2.5rem,11vw,4.5rem)] font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="relative z-10 text-[clamp(2.5rem,11vw,4.5rem)] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4.5rem] font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                         >
                             {t('hero.titleLine1')} <br />
                             <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
@@ -125,7 +125,7 @@ export default function DamperPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-sm sm:text-base md:text-xl leading-relaxed text-white mb-6 md:mb-8 mr-auto max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-sm sm:text-base md:text-lg 2xl:text-xl leading-relaxed text-white mb-6 md:mb-8 mr-auto max-w-[28rem] 2xl:max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>
