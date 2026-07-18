@@ -33,7 +33,7 @@ export default function SiteJsonLd({ locale }: Props) {
                 name: 'Özünlü Damper',
                 alternateName: ['Ozunlu Damper', 'Özünlü Damper Karoser'],
                 url: siteUrl,
-                logo: `${siteUrl}/ozunlu-logo-new.png`,
+                logo: `${siteUrl}/ozunlu-damper-logo.png`,
                 foundingDate: '1977',
                 description:
                     'Hardox sertifikalı damper, yarı römork ve ağır ticari araç üst yapı üreticisi. Since 1977.',

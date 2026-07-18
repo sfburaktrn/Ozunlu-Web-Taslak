@@ -186,9 +186,9 @@ export default function PartnersSlider() {
                             transition={{ delay: 0.6 }}
                             className="mt-8 md:mt-10 flex flex-col items-center relative z-30"
                         >
-                            <div ref={ozunluRef} className="relative w-40 h-14 mb-1">
+                            <div ref={ozunluRef} className="relative w-40 h-20 mb-1">
                                 <Image
-                                    src="/ozunlu-logo-new.png"
+                                    src="/ozunlu-damper-logo.png"
                                     alt="Özünlü Logo"
                                     fill
                                     className="object-contain opacity-90"

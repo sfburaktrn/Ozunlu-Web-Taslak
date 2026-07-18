@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import ScrollHint from '@/components/common/ScrollHint';
 
 const galleryImages = [
     { id: 1, src: '/images/ozunlu-sari-damper-saha.webp', alt: 'Ford Sarı Damper İnşaat Sahası', w: 400, h: 300, x: "-35vw", y: "-25vh", r: -15 },
@@ -37,6 +38,7 @@ export default function GallerySection() {
     const contentBlur = useTransform(springProgress, [0.1, 0.3], ["10px", "0px"]);
     const stageScale = useTransform(springProgress, [0, 0.16, 0.84, 1], [0.94, 1, 1, 0.94]);
     const stageRadius = useTransform(springProgress, [0, 0.16, 0.84, 1], ["3rem", "0rem", "0rem", "3rem"]);
+    const hintOpacity = useTransform(springProgress, [0.02, 0.3], [1, 0]);
 
     return (
         <section className="bg-white pb-3">
@@ -56,7 +58,7 @@ export default function GallerySection() {
                         >
                             <div className="relative w-32 h-16 mb-4 translate-y-3 md:w-64 md:h-32 md:mb-6">
                                 <Image
-                                    src="/ozunlu-logo-new.png"
+                                    src="/ozunlu-damper-logo.png"
                                     alt={tLabels('logoAlt')}
                                     fill
                                     className="object-contain"
@@ -112,6 +114,7 @@ export default function GallerySection() {
                             );
                         })}
 
+                        <ScrollHint opacity={hintOpacity} />
 
                     </motion.div>
                 </div>

@@ -83,7 +83,8 @@
       "message": "Souhaitez-vous afficher le site en {language} ?",
       "switch": "Changer de langue",
       "dismiss": "Fermer"
-    }
+    },
+    "scrollHint": "Faites défiler"
   },
   "home": {
     "hero": {

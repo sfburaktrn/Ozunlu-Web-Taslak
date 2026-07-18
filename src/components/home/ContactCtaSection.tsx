@@ -31,11 +31,11 @@ export default function ContactCtaSection() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/15 md:bg-gradient-to-r md:from-black/90 md:via-black/55 md:to-black/10" />
 
-                    <div dir={textDir} className="relative z-10 flex h-full min-h-[420px] md:min-h-[380px] flex-col justify-end md:justify-center px-5 py-10 sm:px-8 md:px-16 md:py-16 max-w-3xl text-left">
+                    <div dir={textDir} className="relative z-10 flex h-full min-h-[420px] md:min-h-[380px] flex-col justify-end md:justify-center px-5 py-10 sm:px-8 md:px-16 md:py-16 max-w-[26rem] md:max-w-[30rem] xl:max-w-[36rem] text-left">
                         <span className="inline-flex w-fit mb-5 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
                             {t('badge')}
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
+                        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
                             {t('title')}
                         </h2>
                         <p className="text-sm sm:text-base md:text-xl text-white/90 mb-7 md:mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">

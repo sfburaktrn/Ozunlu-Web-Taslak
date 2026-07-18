@@ -83,7 +83,8 @@
       "message": "Doriți să vizualizați site-ul în {language}?",
       "switch": "Schimbă limba",
       "dismiss": "Închide"
-    }
+    },
+    "scrollHint": "Derulează"
   },
   "home": {
     "hero": {

@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
+import ScrollHint from '@/components/common/ScrollHint';
 
 function LightBeam({ isOn, direction }: { isOn: boolean; direction: 'left' | 'right' }) {
     return (
@@ -56,9 +57,10 @@ export default function FactorySpotlight() {
     // Galeri bölümündeki gibi: sahne ekranı kaplayacak şekilde büyür, çıkışta eski haline döner
     const stageScale = useTransform(springProgress, [0, 0.18, 0.82, 1], [0.94, 1, 1, 0.94]);
     const stageRadius = useTransform(springProgress, [0, 0.18, 0.82, 1], ['1.5rem', '0rem', '0rem', '1.5rem']);
+    const hintOpacity = useTransform(springProgress, [0.02, 0.3], [1, 0]);
 
     return (
-        <section className="hidden md:block pt-2 pb-12 bg-white" aria-hidden="true">
+        <section className="hidden lg:block pt-2 pb-12 bg-white" aria-hidden="true">
             <div ref={containerRef} className="relative h-[220vh]">
                 <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
                 <motion.div
@@ -75,7 +77,7 @@ export default function FactorySpotlight() {
                             style={{ scale: bgScale, transformOrigin: '50% 58%' }}
                         >
                             <Image
-                                src="/images/ozunlu-sari-hardox-damperli-yari-romork-gece-sahne.webp"
+                                src="/images/ozunlu-sari-hardox-damper-gece-cekiciler-sahne.webp"
                                 alt=""
                                 fill
                                 loading="lazy"
@@ -100,7 +102,7 @@ export default function FactorySpotlight() {
 
                     <div className="relative w-full h-full z-10">
                         <motion.div
-                            className="absolute right-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none"
+                            className="absolute right-[-5%] bottom-[6%] h-[68%] w-[38%] 2xl:bottom-[8%] 2xl:h-[62%] pointer-events-none"
                             style={{ x: truckShift }}
                         >
                             <div
@@ -120,7 +122,7 @@ export default function FactorySpotlight() {
                         </motion.div>
 
                         <motion.div
-                            className="absolute left-[-5%] bottom-0 h-[80%] w-[40%] pointer-events-none"
+                            className="absolute left-[-5%] bottom-[6%] h-[68%] w-[38%] 2xl:bottom-[8%] 2xl:h-[62%] pointer-events-none"
                             style={{ x: truckShiftLeft }}
                         >
                             <div
@@ -139,6 +141,8 @@ export default function FactorySpotlight() {
                             </div>
                         </motion.div>
                     </div>
+
+                    <ScrollHint opacity={hintOpacity} />
                 </motion.div>
                 </div>
             </div>

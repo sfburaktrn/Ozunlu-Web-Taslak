@@ -32,9 +32,9 @@ export const metadata: Metadata = {
         address: true,
     },
     icons: {
-        icon: '/ozunlu-logo.png',
-        shortcut: '/ozunlu-logo.png',
-        apple: '/ozunlu-logo.png',
+        icon: '/ozunlu-damper-logo.png',
+        shortcut: '/ozunlu-damper-logo.png',
+        apple: '/ozunlu-damper-logo.png',
     },
     alternates: {
         types: {

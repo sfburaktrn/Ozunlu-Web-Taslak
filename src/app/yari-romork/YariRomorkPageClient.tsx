@@ -160,11 +160,11 @@ export default function YariRomorkPageClient() {
                             <div className="px-2 flex-1 flex flex-col">
                                 <div className="mb-2">
                                     <Image
-                                        src="/ozunlu-logo-new.png"
+                                        src="/ozunlu-damper-logo.png"
                                         alt={tLabels('logoAlt')}
                                         width={96}
                                         height={28}
-                                        className="h-5 w-auto object-contain object-left opacity-90"
+                                        className="h-8 w-auto object-contain object-left opacity-90"
                                     />
                                 </div>
                                 <p className="text-sm text-gray-600">{product.description}</p>

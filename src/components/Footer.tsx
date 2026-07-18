@@ -46,9 +46,9 @@ export default function Footer() {
                 <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr_1fr] gap-10 lg:gap-20">
                     <div className="space-y-5">
                         <div className="flex flex-wrap items-center gap-3">
-                            <div className="relative w-32 sm:w-40 h-10">
+                            <div className="relative w-32 sm:w-40 h-14 sm:h-16">
                                 <Image
-                                    src="/ozunlu-logo-new.png"
+                                    src="/ozunlu-damper-logo.png"
                                     alt={t('logoAlt')}
                                     fill
                                     className="object-contain"

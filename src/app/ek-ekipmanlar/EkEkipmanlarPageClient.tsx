@@ -388,11 +388,11 @@ export default function EkEkipmanlarPageClient() {
                     <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/55 to-black/20" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/15" />
 
-                    <div className="relative z-10 h-full flex flex-col justify-center px-5 py-12 sm:px-8 md:px-16 md:py-20 max-w-3xl">
+                    <div className="relative z-10 h-full flex flex-col justify-center px-5 py-12 sm:px-8 md:px-16 md:py-20 max-w-[26rem] md:max-w-[30rem] xl:max-w-[36rem]">
                         <span className="inline-flex w-fit mb-5 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
                             {t('hero.badge')}
                         </span>
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
+                        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
                             {t('cta.title')}
                         </h2>
                         <p className="text-base md:text-xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">

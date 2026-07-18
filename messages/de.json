@@ -83,7 +83,8 @@
       "message": "Möchten Sie die Website auf {language} anzeigen?",
       "switch": "Sprache wechseln",
       "dismiss": "Schließen"
-    }
+    },
+    "scrollHint": "Scrollen"
   },
   "home": {
     "hero": {

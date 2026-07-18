@@ -83,7 +83,8 @@
       "message": "Хотите просмотреть сайт на {language}?",
       "switch": "Сменить язык",
       "dismiss": "Закрыть"
-    }
+    },
+    "scrollHint": "Листайте"
   },
   "home": {
     "hero": {

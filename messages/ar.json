@@ -83,7 +83,8 @@
       "message": "هل ترغب في عرض الموقع باللغة {language}؟",
       "switch": "تغيير اللغة",
       "dismiss": "إغلاق"
-    }
+    },
+    "scrollHint": "مرّر"
   },
   "home": {
     "hero": {

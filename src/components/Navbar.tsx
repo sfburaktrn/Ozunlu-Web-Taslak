@@ -66,9 +66,9 @@ export default function Navbar() {
             >
                 <div className="container mx-auto px-4 sm:px-6 h-[48px] flex items-center justify-between lg:justify-center gap-x-5 xl:gap-x-9 2xl:gap-x-[50px]">
                     <Link href="/" className="flex-shrink-0 relative z-50 flex items-center">
-                        <div className="relative w-20 h-5">
+                        <div className="relative w-20 h-9">
                             <Image
-                                src="/ozunlu-logo-new.png"
+                                src="/ozunlu-damper-logo.png"
                                 alt={tLabels('logoAlt')}
                                 fill
                                 className="object-contain object-left"
