@@ -2,7 +2,7 @@
 export type PublicEmailKey = 'contact' | 'sales' | 'damper' | 'dorse';
 
 const publicEmailEnv: Record<PublicEmailKey, string | undefined> = {
-    contact: process.env.NEXT_PUBLIC_EMAIL_CONTACT,
+    contact: process.env.NEXT_PUBLIC_EMAIL_CONTACT || 'info@ozunlu.com',
     sales: process.env.NEXT_PUBLIC_EMAIL_SALES,
     damper: process.env.NEXT_PUBLIC_EMAIL_DAMPER,
     dorse: process.env.NEXT_PUBLIC_EMAIL_DORSE,
