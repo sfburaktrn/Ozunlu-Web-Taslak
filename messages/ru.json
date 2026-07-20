@@ -84,7 +84,27 @@
       "switch": "Сменить язык",
       "dismiss": "Закрыть"
     },
-    "scrollHint": "Листайте"
+    "scrollHint": "Листайте",
+    "cookieConsent": {
+      "eyebrow": "Настройки cookie",
+      "title": "Об использовании cookie",
+      "settingsTitle": "Параметры cookie",
+      "description": "Мы используем cookie для улучшения вашего опыта, измерения производительности сайта и — с вашего согласия — для аналитики и маркетинга. Обязательные cookie необходимы для работы сайта; остальные требуют явного согласия (KVKK / GDPR).",
+      "policyLink": "Подробнее см. нашу <policy>Политику cookie</policy>.",
+      "acceptAll": "Принять все",
+      "rejectAll": "Отклонить все",
+      "settings": "Настройки cookie",
+      "save": "Сохранить настройки",
+      "close": "Закрыть",
+      "necessaryTitle": "Обязательные cookie",
+      "necessaryDesc": "Необходимы для языка, безопасности и базовых функций. Их нельзя отключить.",
+      "analyticsTitle": "Аналитические cookie",
+      "analyticsDesc": "Помогают понимать статистику посещений и производительность (напр. Google Analytics).",
+      "marketingTitle": "Маркетинговые cookie",
+      "marketingDesc": "Используются для рекламы и ремаркетинга. Без согласия не запускаются.",
+      "alwaysOn": "Всегда включены",
+      "managePreferences": "Управление настройками cookie"
+    }
   },
   "home": {
     "hero": {

@@ -84,7 +84,27 @@
       "logoAlt": "Özünlü Damper",
       "hardoxAlt": "Hardox In My Body sertifikalı aşınmaya dayanıklı çelik logosu"
     },
-    "scrollHint": "Kaydırın"
+    "scrollHint": "Kaydırın",
+    "cookieConsent": {
+      "eyebrow": "Çerez tercihleri",
+      "title": "Çerez kullanımı hakkında",
+      "settingsTitle": "Çerez ayarları",
+      "description": "Web sitemizde deneyiminizi iyileştirmek, site performansını ölçmek ve (onayınız varsa) analiz ile pazarlama faaliyetlerini yürütmek için çerezler kullanıyoruz. Zorunlu çerezler sitenin çalışması için gereklidir; diğerleri için açık rızanız şarttır (KVKK / GDPR).",
+      "policyLink": "Ayrıntılar için <policy>Çerez Politikası</policy> sayfamızı inceleyebilirsiniz.",
+      "acceptAll": "Hepsini kabul et",
+      "rejectAll": "Hepsini reddet",
+      "settings": "Çerez ayarları",
+      "save": "Tercihleri kaydet",
+      "close": "Kapat",
+      "necessaryTitle": "Zorunlu çerezler",
+      "necessaryDesc": "Dil tercihi, güvenlik ve sitenin temel işlevleri için gereklidir. Bu çerezler kapatılamaz.",
+      "analyticsTitle": "Analitik çerezler",
+      "analyticsDesc": "Ziyaretçi istatistikleri ve sayfa performansını anlamamıza yardımcı olur (ör. Google Analytics).",
+      "marketingTitle": "Pazarlama çerezleri",
+      "marketingDesc": "Reklam ve yeniden pazarlama amaçlı çerezler. Onay vermezseniz bu çerezler çalıştırılmaz.",
+      "alwaysOn": "Her zaman açık",
+      "managePreferences": "Çerez tercihlerini yönet"
+    }
   },
   "home": {
     "hero": {

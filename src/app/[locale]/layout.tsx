@@ -9,6 +9,7 @@ const ScrollToTop = dynamic(() => import('@/components/common/ScrollToTop'), { s
 import Footer from '@/components/Footer';
 import LocaleAttributes from '@/components/common/LocaleAttributes';
 import LanguageSuggestion from '@/components/common/LanguageSuggestion';
+import CookieConsent from '@/components/common/CookieConsent';
 import { routing, type Locale } from '@/i18n/routing';
 import SiteJsonLd from '@/components/seo/SiteJsonLd';
 import FaqJsonLd from '@/components/seo/FaqJsonLd';
@@ -41,6 +42,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Navbar />
             {children}
             <LanguageSuggestion />
+            <CookieConsent />
             <Footer />
             <ScrollToTop />
         </NextIntlClientProvider>

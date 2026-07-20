@@ -84,7 +84,27 @@
       "switch": "Змінити мову",
       "dismiss": "Закрити"
     },
-    "scrollHint": "Гортайте"
+    "scrollHint": "Гортайте",
+    "cookieConsent": {
+      "eyebrow": "Налаштування cookie",
+      "title": "Про використання cookie",
+      "settingsTitle": "Параметри cookie",
+      "description": "Ми використовуємо cookie, щоб покращити ваш досвід, вимірювати продуктивність сайту та — за вашою згодою — для аналітики й маркетингу. Обов’язкові cookie потрібні для роботи сайту; інші потребують явної згоди (KVKK / GDPR).",
+      "policyLink": "Докладніше див. нашу <policy>Політику cookie</policy>.",
+      "acceptAll": "Прийняти всі",
+      "rejectAll": "Відхилити всі",
+      "settings": "Налаштування cookie",
+      "save": "Зберегти налаштування",
+      "close": "Закрити",
+      "necessaryTitle": "Обов’язкові cookie",
+      "necessaryDesc": "Потрібні для мови, безпеки та базових функцій. Їх не можна вимкнути.",
+      "analyticsTitle": "Аналітичні cookie",
+      "analyticsDesc": "Допомагають розуміти статистику відвідувань і продуктивність (напр. Google Analytics).",
+      "marketingTitle": "Маркетингові cookie",
+      "marketingDesc": "Використовуються для реклами та ремаркетингу. Без згоди не запускаються.",
+      "alwaysOn": "Завжди увімкнені",
+      "managePreferences": "Керувати налаштуваннями cookie"
+    }
   },
   "home": {
     "hero": {

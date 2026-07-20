@@ -84,7 +84,27 @@
       "switch": "Sprache wechseln",
       "dismiss": "Schließen"
     },
-    "scrollHint": "Scrollen"
+    "scrollHint": "Scrollen",
+    "cookieConsent": {
+      "eyebrow": "Cookie-Einstellungen",
+      "title": "Informationen zu Cookies",
+      "settingsTitle": "Cookie-Einstellungen",
+      "description": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern, die Website-Leistung zu messen und — mit Ihrer Einwilligung — Analyse und Marketing durchzuführen. Notwendige Cookies sind für den Betrieb erforderlich; andere Cookies benötigen Ihre ausdrückliche Einwilligung (KVKK / DSGVO).",
+      "policyLink": "Details finden Sie in unserer <policy>Cookie-Richtlinie</policy>.",
+      "acceptAll": "Alle akzeptieren",
+      "rejectAll": "Alle ablehnen",
+      "settings": "Cookie-Einstellungen",
+      "save": "Einstellungen speichern",
+      "close": "Schließen",
+      "necessaryTitle": "Notwendige Cookies",
+      "necessaryDesc": "Erforderlich für Sprache, Sicherheit und grundlegende Funktionen. Können nicht deaktiviert werden.",
+      "analyticsTitle": "Analyse-Cookies",
+      "analyticsDesc": "Helfen uns, Besucherstatistiken und Seitenleistung zu verstehen (z. B. Google Analytics).",
+      "marketingTitle": "Marketing-Cookies",
+      "marketingDesc": "Für Werbung und Remarketing. Ohne Einwilligung werden sie nicht geladen.",
+      "alwaysOn": "Immer aktiv",
+      "managePreferences": "Cookie-Einstellungen verwalten"
+    }
   },
   "home": {
     "hero": {

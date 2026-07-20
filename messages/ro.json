@@ -84,7 +84,27 @@
       "switch": "Schimbă limba",
       "dismiss": "Închide"
     },
-    "scrollHint": "Derulează"
+    "scrollHint": "Derulează",
+    "cookieConsent": {
+      "eyebrow": "Preferințe cookie",
+      "title": "Despre cookie-uri pe acest site",
+      "settingsTitle": "Setări cookie",
+      "description": "Folosim cookie-uri pentru a îmbunătăți experiența, a măsura performanța site-ului și — cu consimțământul dvs. — pentru analiză și marketing. Cookie-urile esențiale sunt necesare pentru funcționare; celelalte necesită consimțământ explicit (KVKK / GDPR).",
+      "policyLink": "Pentru detalii, consultați <policy>Politica de cookie</policy>.",
+      "acceptAll": "Acceptă toate",
+      "rejectAll": "Respinge toate",
+      "settings": "Setări cookie",
+      "save": "Salvează preferințele",
+      "close": "Închide",
+      "necessaryTitle": "Cookie-uri esențiale",
+      "necessaryDesc": "Necesare pentru limbă, securitate și funcții de bază. Nu pot fi dezactivate.",
+      "analyticsTitle": "Cookie-uri analitice",
+      "analyticsDesc": "Ne ajută să înțelegem statisticile de vizitare și performanța (ex. Google Analytics).",
+      "marketingTitle": "Cookie-uri de marketing",
+      "marketingDesc": "Folosite pentru publicitate și remarketing. Nu rulează fără consimțământul dvs.",
+      "alwaysOn": "Mereu active",
+      "managePreferences": "Gestionează preferințele cookie"
+    }
   },
   "home": {
     "hero": {

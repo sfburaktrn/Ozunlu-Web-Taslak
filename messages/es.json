@@ -84,7 +84,27 @@
       "switch": "Cambiar idioma",
       "dismiss": "Cerrar"
     },
-    "scrollHint": "Desliza"
+    "scrollHint": "Desliza",
+    "cookieConsent": {
+      "eyebrow": "Preferencias de cookies",
+      "title": "Sobre el uso de cookies",
+      "settingsTitle": "Ajustes de cookies",
+      "description": "Usamos cookies para mejorar su experiencia, medir el rendimiento del sitio y — con su consentimiento — realizar análisis y marketing. Las cookies esenciales son necesarias para el funcionamiento; las demás requieren su consentimiento explícito (KVKK / RGPD).",
+      "policyLink": "Para más detalles, consulte nuestra <policy>Política de cookies</policy>.",
+      "acceptAll": "Aceptar todo",
+      "rejectAll": "Rechazar todo",
+      "settings": "Ajustes de cookies",
+      "save": "Guardar preferencias",
+      "close": "Cerrar",
+      "necessaryTitle": "Cookies esenciales",
+      "necessaryDesc": "Necesarias para el idioma, la seguridad y las funciones básicas. No se pueden desactivar.",
+      "analyticsTitle": "Cookies analíticas",
+      "analyticsDesc": "Nos ayudan a entender las estadísticas de visitas y el rendimiento (p. ej. Google Analytics).",
+      "marketingTitle": "Cookies de marketing",
+      "marketingDesc": "Usadas para publicidad y remarketing. No se activan sin su consentimiento.",
+      "alwaysOn": "Siempre activas",
+      "managePreferences": "Gestionar preferencias de cookies"
+    }
   },
   "home": {
     "hero": {

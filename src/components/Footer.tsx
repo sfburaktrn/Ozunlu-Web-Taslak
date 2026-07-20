@@ -10,6 +10,7 @@ import { footerRichTextHandlers } from '@/i18n/richText';
 import type { Locale } from '@/i18n/routing';
 import { getPublicEmail } from '@/lib/siteEmails';
 import EmailLink from '@/components/common/EmailLink';
+import { openCookieSettings } from '@/components/common/CookieConsent';
 
 const socials = [
     { href: 'https://www.linkedin.com/company/ozunlu-damper/', icon: Linkedin, label: 'LinkedIn' },
@@ -23,6 +24,7 @@ export default function Footer() {
     const t = useTranslations('common.footer');
     const tNav = useTranslations('common.nav');
     const tLabels = useTranslations('common.labels');
+    const tCookie = useTranslations('common.cookieConsent');
     const year = new Date().getFullYear();
     const contactEmail = getPublicEmail('contact');
 
@@ -141,6 +143,13 @@ export default function Footer() {
                                 {link.label}
                             </NextLink>
                         ))}
+                        <button
+                            type="button"
+                            onClick={openCookieSettings}
+                            className="hover:text-[#000552] transition-colors"
+                        >
+                            {tCookie('managePreferences')}
+                        </button>
                     </div>
                 </div>
             </div>

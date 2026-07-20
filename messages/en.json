@@ -84,7 +84,27 @@
       "switch": "Switch language",
       "dismiss": "Close"
     },
-    "scrollHint": "Scroll"
+    "scrollHint": "Scroll",
+    "cookieConsent": {
+      "eyebrow": "Cookie preferences",
+      "title": "About cookies on this site",
+      "settingsTitle": "Cookie settings",
+      "description": "We use cookies to improve your experience, measure site performance and — with your consent — run analytics and marketing. Essential cookies are required for the site to work; other cookies need your explicit consent (KVKK / GDPR).",
+      "policyLink": "For details, see our <policy>Cookie Policy</policy>.",
+      "acceptAll": "Accept all",
+      "rejectAll": "Reject all",
+      "settings": "Cookie settings",
+      "save": "Save preferences",
+      "close": "Close",
+      "necessaryTitle": "Essential cookies",
+      "necessaryDesc": "Required for language preference, security and core site functions. These cannot be disabled.",
+      "analyticsTitle": "Analytics cookies",
+      "analyticsDesc": "Help us understand visitor statistics and page performance (e.g. Google Analytics).",
+      "marketingTitle": "Marketing cookies",
+      "marketingDesc": "Used for advertising and remarketing. These will not run without your consent.",
+      "alwaysOn": "Always on",
+      "managePreferences": "Manage cookie preferences"
+    }
   },
   "home": {
     "hero": {
