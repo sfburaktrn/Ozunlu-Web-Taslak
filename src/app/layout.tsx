@@ -18,11 +18,11 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
     title: {
-        default: 'Özünlü Damper | Hardox Damper & Yarı Römork Üreticisi – Since 1977',
+        default: 'Özünlü Damper | Damper ve Yarı Römork Üreticisi – Since 1977',
         template: '%s',
     },
     description:
-        'Hardox sertifikalı damper, yarı römork ve ağır ticari araç üst yapı çözümleri. 1977\'den bu yana Türkiye\'nin güvenilir üreticisi.',
+        '1977\'den beri İstanbul\'da damper, damperli yarı römork ve ağır ticari araç üst yapı üretimi. 6 araç üreticisinin onaylı üst yapı tedarikçisi; 81 ile satış, 40+ ülkeye ihracat.',
     applicationName: 'Özünlü Damper',
     creator: 'Özünlü Damper',
     publisher: 'Özünlü Damper',

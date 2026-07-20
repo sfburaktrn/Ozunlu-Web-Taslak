@@ -6,12 +6,12 @@ const faqTr: FaqItem[] = [
     {
         question: 'Özünlü Damper nedir?',
         answer:
-            'Özünlü Damper, 1977 yılından bu yana İstanbul Sultangazi\'de faaliyet gösteren Hardox sertifikalı damper, yarı römork (dorse) ve ağır ticari araç üst yapı üreticisidir.',
+            'Özünlü Damper, 1977 yılından bu yana faaliyet gösteren, İstanbul Sultangazi\'de 3 tesiste toplam 30.000 m² alanda üretim yapan Hardox çelik damper, damperli yarı römork (dorse) ve ağır ticari araç üst yapı üreticisidir. Türkiye\'de 6 araç üreticisinin onaylı üst yapı tedarikçisidir.',
     },
     {
         question: 'Özünlü Damper ne üretir?',
         answer:
-            'Hardox çelik gövdeli hidrolik damper, yarı römork (dorse), ek ekipmanlar, yedek parça ve satış sonrası hizmet sunar. BPW ve Özkoç dingil seçenekleri mevcuttur.',
+            'Hardox 450/500 çelik gövdeli hidrolik damper (havuz ve kutu tip), damperli yarı römork (dorse), ek ekipmanlar, yedek parça ve satış sonrası hizmet sunar. BPW ve Özkoç dingil, EBS fren sistemi seçenekleri mevcuttur.',
     },
     {
         question: 'Özünlü Damper nerede bulunuyor?',
@@ -21,7 +21,7 @@ const faqTr: FaqItem[] = [
     {
         question: 'Türkiye\'de Hardox damper üreten firma var mı?',
         answer:
-            'Evet. Özünlü Damper, Hardox Qualified Body Builder sertifikasına sahip Türkiye merkezli bir damper ve dorse üreticisidir.',
+            'Evet. Özünlü Damper, 1977\'den beri Türkiye\'de Hardox çelik gövdeli damper ve dorse üreten köklü üreticilerden biridir; 81 ilde satış ve 40\'tan fazla ülkeye ihracat yapmaktadır.',
     },
     {
         question: 'Damper ile dorse (yarı römork) arasındaki fark nedir?',
@@ -39,12 +39,12 @@ const faqEn: FaqItem[] = [
     {
         question: 'What is Özünlü Damper?',
         answer:
-            'Özünlü Damper is a Turkish manufacturer of Hardox-certified tipper bodies, semi-trailers and heavy commercial vehicle superstructures, founded in 1977 and based in Sultangazi, Istanbul.',
+            'Özünlü Damper is a Turkish manufacturer of Hardox steel tipper bodies, tipping semi-trailers and heavy commercial vehicle superstructures, founded in 1977. Production takes place across 3 facilities totalling 30,000 m² in Sultangazi, Istanbul. It is an approved body builder for 6 vehicle manufacturers operating in Turkey.',
     },
     {
         question: 'What does Özünlü Damper manufacture?',
         answer:
-            'Hydraulic Hardox steel tippers, semi-trailers, spare parts, hydraulic systems and after-sales service. BPW and Özkoç axle options are available.',
+            'Hydraulic Hardox 450/500 steel tippers (half-pipe and box type), tipping semi-trailers, spare parts, hydraulic systems and after-sales service. BPW and Özkoç axle options with EBS braking are available.',
     },
     {
         question: 'Where is Özünlü Damper located?',
@@ -54,7 +54,7 @@ const faqEn: FaqItem[] = [
     {
         question: 'Is Özünlü Damper a Hardox tipper manufacturer in Turkey?',
         answer:
-            'Yes. Özünlü Damper is a Hardox Qualified Body Builder producing tipper and semi-trailer bodies in Turkey since 1977.',
+            'Yes. Özünlü Damper has been producing Hardox steel tipper bodies and dump semi-trailers in Turkey since 1977, selling across all 81 Turkish provinces and exporting to more than 40 countries.',
     },
     {
         question: 'What is the difference between a tipper and a semi-trailer?',
