@@ -5,27 +5,28 @@ import { getPageKeywords } from './keywords';
 import { localeHreflang, locales, type Locale } from './routing';
 import { appPathnames, getLocalizedPathname, type AppPathname } from './pathnames';
 
+/** Canonical production domain — used for sitemap, robots, JSON-LD, OG, canonicals. */
+export const PRODUCTION_SITE_URL = 'https://www.ozunlu.com';
+
 /**
- * SEO base URL resolution (highest priority first):
- * 1. Request host — matches the URL Lighthouse / users actually visit
- * 2. NEXT_PUBLIC_SITE_URL — production domain (e.g. www.ozunlu.com)
- * 3. VERCEL_PROJECT_PRODUCTION_URL — stable *.vercel.app alias (not deployment hash URL)
- * 4. VERCEL_URL — deployment-specific fallback
+ * SEO base URL resolution:
+ * 1. NEXT_PUBLIC_SITE_URL — explicit override (e.g. https://www.ozunlu.com)
+ * 2. Production builds — always PRODUCTION_SITE_URL (never *.vercel.app)
+ * 3. Local dev — request host (localhost) when available
+ * 4. Fallback — PRODUCTION_SITE_URL
  */
 export function getSiteUrl(): string {
-    const fromRequest = getSiteUrlFromHeaders();
-    if (fromRequest) return fromRequest;
-
     const configured = process.env.NEXT_PUBLIC_SITE_URL?.trim().replace(/\/$/, '');
     if (configured) return configured;
 
-    const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
-    if (productionHost) return `https://${productionHost}`;
+    if (process.env.NODE_ENV === 'production') {
+        return PRODUCTION_SITE_URL;
+    }
 
-    const vercelHost = process.env.VERCEL_URL?.trim();
-    if (vercelHost) return `https://${vercelHost}`;
+    const fromRequest = getSiteUrlFromHeaders();
+    if (fromRequest) return fromRequest;
 
-    return 'https://www.ozunlu.com';
+    return PRODUCTION_SITE_URL;
 }
 
 function getSiteUrlFromHeaders(): string | null {

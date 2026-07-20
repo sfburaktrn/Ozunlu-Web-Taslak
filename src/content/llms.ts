@@ -1,9 +1,9 @@
+import { PRODUCTION_SITE_URL } from '@/i18n/seo';
 import { getLocalizedPathname, type AppPathname } from '@/i18n/pathnames';
-import { locales, localeNames, type Locale } from '@/i18n/routing';
+import { locales, localeLabels, localeNames, type Locale } from '@/i18n/routing';
 import { getPublicEmail } from '@/lib/siteEmails';
 
-/** llms.txt always documents the production domain (not preview/staging hosts). */
-const LLMS_SITE_URL = 'https://www.ozunlu.com';
+const LLMS_SITE_URL = PRODUCTION_SITE_URL;
 const LLMS_CONTACT_EMAIL = getPublicEmail('contact') || 'info@ozunlu.com';
 
 const keyRoutes: { path: AppPathname; label: string }[] = [
@@ -17,6 +17,13 @@ const keyRoutes: { path: AppPathname; label: string }[] = [
 
 function url(locale: Locale, path: AppPathname) {
     return `${LLMS_SITE_URL}${getLocalizedPathname(locale, path)}`;
+}
+
+function appendLocaleUrlSection(lines: string[], locale: Locale) {
+    lines.push('', `## Tüm sayfa URL'leri (${localeLabels[locale]} — ${localeNames[locale]})`, '');
+    for (const { path, label } of keyRoutes) {
+        lines.push(`- ${label}: ${url(locale, path)}`);
+    }
 }
 
 export function generateLlmsTxt(): string {
@@ -72,11 +79,39 @@ export function generateLlmsTxt(): string {
         '',
         '## Çok dilli URL\'ler (örnek)',
         '',
-        `- TR damper: ${url('tr', '/damper')}`,
-        `- EN tipper: ${url('en', '/damper')}`,
-        `- DE kipper: ${url('de', '/damper')}`,
-        `- EN semi-trailer: ${url('en', '/yari-romork')}`,
-        `- RU полуприцеп: ${url('ru', '/yari-romork')}`,
+        '### Damper / tipper sayfası',
+        `- TR (damper): ${url('tr', '/damper')}`,
+        `- EN (tipper): ${url('en', '/damper')}`,
+        `- DE (kipper): ${url('de', '/damper')}`,
+        `- FR (benne): ${url('fr', '/damper')}`,
+        `- ES (volquete): ${url('es', '/damper')}`,
+        `- IT (ribaltabile): ${url('it', '/damper')}`,
+        `- AR (قلاب): ${url('ar', '/damper')}`,
+        `- RU (самосвал): ${url('ru', '/damper')}`,
+        `- UK (самоскид): ${url('uk', '/damper')}`,
+        `- BG (damper): ${url('bg', '/damper')}`,
+        `- RO (damper): ${url('ro', '/damper')}`,
+        '',
+        '### Yarı römork / semi-trailer sayfası',
+        `- TR (yarı römork): ${url('tr', '/yari-romork')}`,
+        `- EN (semi-trailer): ${url('en', '/yari-romork')}`,
+        `- DE (Sattelauflieger): ${url('de', '/yari-romork')}`,
+        `- FR (semi-remorque): ${url('fr', '/yari-romork')}`,
+        `- ES (semirremolque): ${url('es', '/yari-romork')}`,
+        `- IT (semirimorchio): ${url('it', '/yari-romork')}`,
+        `- AR (نصف مقطورة): ${url('ar', '/yari-romork')}`,
+        `- RU (полуприцеп): ${url('ru', '/yari-romork')}`,
+        `- UK (напівпричіп): ${url('uk', '/yari-romork')}`,
+        `- BG (полуреморк): ${url('bg', '/yari-romork')}`,
+        `- RO (semiremorcă): ${url('ro', '/yari-romork')}`,
+        '',
+        '### İletişim / contact',
+        `- TR: ${url('tr', '/iletisim')}`,
+        `- EN: ${url('en', '/iletisim')}`,
+        `- DE: ${url('de', '/iletisim')}`,
+        `- FR: ${url('fr', '/iletisim')}`,
+        `- AR: ${url('ar', '/iletisim')}`,
+        `- RU: ${url('ru', '/iletisim')}`,
         '',
         '## Sosyal medya',
         '',
@@ -155,17 +190,10 @@ export function generateLlmsFullTxt(): string {
         '### İletişim e-postası nedir?',
         LLMS_CONTACT_EMAIL + ' — teklif, satış ve genel iletişim için. İletişim formu: ' + url('tr', '/iletisim'),
         '',
-        '## Tüm sayfa URL\'leri (TR)',
-        '',
     ];
 
-    for (const { path, label } of keyRoutes) {
-        lines.push(`- ${label}: ${url('tr', path)}`);
-    }
-
-    lines.push('', '## Tüm sayfa URL\'leri (EN)', '');
-    for (const { path, label } of keyRoutes) {
-        lines.push(`- ${label}: ${url('en', path)}`);
+    for (const locale of locales) {
+        appendLocaleUrlSection(lines, locale);
     }
 
     lines.push(
