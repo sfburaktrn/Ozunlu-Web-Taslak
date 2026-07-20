@@ -19,7 +19,7 @@ export default function ContactPage({ params }: Props) {
     if (!hasLocale(routing.locales, params.locale)) notFound();
     setRequestLocale(params.locale);
     return (
-        <main className="min-h-screen bg-white pt-24 md:pt-28 px-4 sm:px-6">
+        <main className="min-h-[100svh] lg:h-[100svh] bg-[#eef0f4] pt-[52px] md:pt-[60px] px-3 sm:px-4 pb-4 md:pb-6 flex items-center overflow-x-hidden lg:overflow-hidden">
             <ContactForm />
         </main>
     );
