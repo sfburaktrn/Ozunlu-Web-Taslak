@@ -500,7 +500,7 @@
       "email": "E-POSTA",
       "emailPlaceholder": "ornek@sirket.com",
       "phone": "TELEFON",
-      "phonePlaceholder": "05XX XXX XX XX",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
       "message": "MESAJ",
       "messagePlaceholder": "Mesajınızı buraya yazınız...",
       "mapTitle": "Özünlü Damper Konum Haritası",
