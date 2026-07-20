@@ -23,7 +23,7 @@ export default function ContactCtaSection() {
                     className="relative rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden min-h-[420px] md:min-h-[380px] shadow-2xl layout-fixed"
                 >
                     <Image
-                        src="/images/ozunlu-mavi-cekici-sari-damperli-yari-romork-banner.webp"
+                        src="/images/ozunlu-turuncu-damperli-yari-romork-kirmizi-cekici-cta.webp"
                         alt={t('imageAlt')}
                         fill
                         className="object-cover object-[70%_center] md:object-center"

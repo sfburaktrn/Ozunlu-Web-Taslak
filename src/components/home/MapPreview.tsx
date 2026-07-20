@@ -15,7 +15,7 @@ import {
   serviceLocations,
   type ServiceLocation,
 } from "@/data/serviceLocations";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { defaultRichTextHandlers } from "@/i18n/richText";
 
 type MapPreviewProps = {
@@ -26,9 +26,15 @@ type MapPreviewProps = {
 
 type CityMarkerWrapperProps = {
   cityComponent: React.ReactElement;
+  cityName: string;
   isServiceCity: boolean;
   isSelected: boolean;
   pingDelay: number;
+};
+
+/** Bazı illerde bbox merkezi deniz/kıyıya düşer; noktayı şehrin içine kaydırır */
+const MARKER_OFFSETS: Record<string, { dx: number; dy: number }> = {
+  antalya: { dx: 2, dy: -14 },
 };
 
 const pingDelayFromName = (name: string) => {
@@ -54,6 +60,7 @@ const normalizeCityName = (name: string) =>
 
 const CityMarkerWrapper = ({
   cityComponent,
+  cityName,
   isServiceCity,
   isSelected,
   pingDelay,
@@ -66,8 +73,12 @@ const CityMarkerWrapper = ({
     const pathEl = cityRef.current?.querySelector("path");
     if (!pathEl) return;
     const { x, y, width, height } = pathEl.getBBox();
-    setCenter({ x: x + width / 2, y: y + height / 2 });
-  }, [isServiceCity]);
+    const offset = MARKER_OFFSETS[normalizeCityName(cityName)] ?? { dx: 0, dy: 0 };
+    setCenter({
+      x: x + width / 2 + offset.dx,
+      y: y + height / 2 + offset.dy,
+    });
+  }, [isServiceCity, cityName]);
 
   return (
     <g>
@@ -98,6 +109,7 @@ export default function MapPreview({
   title: titleProp,
   description: descriptionProp,
 }: MapPreviewProps) {
+  const locale = useLocale();
   const t = useTranslations("home.mapPreview");
   const eyebrow = eyebrowProp ?? t("eyebrow");
   const title = titleProp ?? t("title");
@@ -137,6 +149,7 @@ export default function MapPreview({
       return (
         <CityMarkerWrapper
           cityComponent={cityComponent}
+          cityName={city.name}
           isServiceCity={serviceCityNames.has(key)}
           isSelected={selectedKey === key}
           pingDelay={pingDelayFromName(city.name)}
@@ -153,6 +166,11 @@ export default function MapPreview({
     },
     [serviceByCity]
   );
+
+  // Türkiye servis ağı yalnızca TR ve EN dillerinde gösterilir
+  if (locale !== "tr" && locale !== "en") {
+    return null;
+  }
 
   return (
     <section className="bg-white py-4 md:py-8">

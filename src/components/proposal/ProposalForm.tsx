@@ -198,13 +198,13 @@ export default function ProposalForm({
         if (selectedProduct) return selectedProduct.image;
 
         if (formData.type === 'damper') {
-            if (step2Complete) return '/images/ozunlu-turuncu-hardox-damper-kamyon-ustyapi.webp';
-            if (step1Complete) return '/damper-step-2.jpg';
-            return '/damper.jpg';
+            if (step2Complete) return '/images/ozunlu-sari-hardox-damper-kamyon-on.webp';
+            if (step1Complete) return '/images/ozunlu-sari-hardox-damper-kamyon-yan.webp';
+            return '/images/ozunlu-sari-hardox-damper-kamyon-arka.webp';
         } else {
-            if (step2Complete) return '/dorse-step-3.jpg';
-            if (step1Complete) return '/dorse-step-2.jpg';
-            return '/dorse.jpg';
+            if (step2Complete) return '/images/ozunlu-gri-hardox-damperli-yari-romork-arka.webp';
+            if (step1Complete) return '/images/ozunlu-gri-hardox-damperli-yari-romork-yan-profil.webp';
+            return '/images/ozunlu-gri-hardox-damperli-yari-romork-kirmizi-branda.webp';
         }
     };
 
