@@ -11,6 +11,7 @@ const manrope = Manrope({
     display: 'swap',
     variable: '--font-manrope',
     weight: ['400', '500', '600', '700', '800'],
+    adjustFontFallback: true,
 });
 
 const siteUrl = getSiteUrl();
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
         address: true,
     },
     icons: {
-        icon: '/ozunlu-damper-logo.png',
-        shortcut: '/ozunlu-damper-logo.png',
-        apple: '/ozunlu-damper-logo.png',
+        icon: '/ozunlu-damper-logo.webp',
+        shortcut: '/ozunlu-damper-logo.webp',
+        apple: '/ozunlu-damper-logo.webp',
     },
     alternates: {
         types: {

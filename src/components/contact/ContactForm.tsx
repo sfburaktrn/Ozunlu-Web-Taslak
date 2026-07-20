@@ -8,6 +8,7 @@ import type { Locale } from '@/i18n/routing';
 import { submitForm } from '@/lib/submitForm';
 import { getPublicEmail } from '@/lib/siteEmails';
 import EmailLink from '@/components/common/EmailLink';
+import PhoneInput from '@/components/common/PhoneInput';
 
 const MAP_EMBED_BASE =
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3004.6752191444284!2d28.831061975905456!3d41.1416154713321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caae14a9f0318d%3A0x62b7c453a4d806bd!2s%C3%96z%C3%BCnl%C3%BC%20Damper%20Karoser%20ve%20%C3%87elik%20Konst.%20San.Tic.Ltd.%C5%9Eti.!5e0!3m2!1s';
@@ -273,12 +274,11 @@ export default function ContactForm() {
                                         <label className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#000552]/55 ps-0.5 mb-1.5 block">
                                             {t('phone')}
                                         </label>
-                                        <input
-                                            type="tel"
+                                        <PhoneInput
                                             value={phone}
-                                            onChange={(e) => setPhone(e.target.value)}
-                                            className={fieldClass}
+                                            onChange={setPhone}
                                             placeholder={t('phonePlaceholder')}
+                                            variant="contact"
                                         />
                                     </div>
                                 </div>

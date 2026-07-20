@@ -12,6 +12,12 @@ const nextConfig = {
     experimental: {
         optimizePackageImports: ['framer-motion', 'lucide-react'],
     },
+    async rewrites() {
+        return [
+            { source: '/llms.txt', destination: '/llms-txt' },
+            { source: '/llms-full.txt', destination: '/llms-full-txt' },
+        ];
+    },
     async headers() {
         const cacheOneYear = 'public, max-age=31536000, immutable';
         return [

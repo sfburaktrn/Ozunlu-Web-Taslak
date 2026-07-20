@@ -68,11 +68,12 @@ export default function Navbar() {
                     <Link href="/" className="flex-shrink-0 relative z-50 flex items-center">
                         <div className="relative w-20 h-9">
                             <Image
-                                src="/ozunlu-damper-logo.png"
+                                src="/ozunlu-damper-logo.webp"
                                 alt={tLabels('logoAlt')}
                                 fill
                                 className="object-contain object-left"
-                                priority
+                                sizes="80px"
+                                loading="eager"
                             />
                         </div>
                     </Link>

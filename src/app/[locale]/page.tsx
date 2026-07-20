@@ -1,5 +1,5 @@
+import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -21,9 +21,25 @@ export default function HomePage({ params }: Props) {
     const { locale } = params;
     if (!hasLocale(routing.locales, locale)) notFound();
     setRequestLocale(locale);
+
     return (
         <>
-            <link rel="preload" href="/banner-hero-poster.webp" as="image" type="image/webp" fetchPriority="high" />
+            <link
+                rel="preload"
+                href="/banner-hero-poster-mobile.webp"
+                as="image"
+                type="image/webp"
+                fetchPriority="high"
+                media="(max-width: 767px)"
+            />
+            <link
+                rel="preload"
+                href="/banner-hero-poster.webp"
+                as="image"
+                type="image/webp"
+                fetchPriority="high"
+                media="(min-width: 768px)"
+            />
             <HomePageClient />
         </>
     );

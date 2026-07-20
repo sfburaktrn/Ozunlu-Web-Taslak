@@ -9,6 +9,10 @@ export default function SmoothScroll() {
             return;
         }
 
+        if (window.matchMedia('(pointer: coarse)').matches) {
+            return;
+        }
+
         let lenis: import('lenis').default | null = null;
         let cancelled = false;
 

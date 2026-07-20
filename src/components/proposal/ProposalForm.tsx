@@ -3,9 +3,10 @@
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Check, Send, CreditCard, Banknote, Building2, User, Phone, Mail, MessageSquare, Info } from 'lucide-react';
+import { Check, Send, CreditCard, Banknote, Building2, User, Mail, MessageSquare, Info } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { submitForm } from '@/lib/submitForm';
+import PhoneInput from '@/components/common/PhoneInput';
 
 interface FormData {
     type: 'damper' | 'dorse';
@@ -373,13 +374,11 @@ export default function ProposalForm({
                                                     value={formData.contactPerson}
                                                     onChange={(v) => handleInputChange('contactPerson', v)}
                                                 />
-                                                <InputGroup
+                                                <PhoneInputGroup
                                                     label={t('fields.phone')}
-                                                    icon={<Phone size={18} />}
                                                     placeholder={t('fields.phonePh')}
                                                     value={formData.contactPhone}
                                                     onChange={(v) => handleInputChange('contactPhone', v)}
-                                                    type="tel"
                                                 />
                                                 <InputGroup
                                                     label={t('fields.email')}
@@ -616,13 +615,11 @@ export default function ProposalForm({
                                                     value={formData.contactPerson}
                                                     onChange={(v) => handleInputChange('contactPerson', v)}
                                                 />
-                                                <InputGroup
+                                                <PhoneInputGroup
                                                     label={t('fields.phone')}
-                                                    icon={<Phone size={18} />}
                                                     placeholder={t('fields.phonePh')}
                                                     value={formData.contactPhone}
                                                     onChange={(v) => handleInputChange('contactPhone', v)}
-                                                    type="tel"
                                                 />
                                                 <InputGroup
                                                     label={t('fields.email')}
@@ -687,7 +684,7 @@ function InputGroup({ label, placeholder, value, onChange, type = "text", icon }
     return (
         <div className="space-y-2">
             <label className="text-sm font-bold text-gray-600 block pl-1">{label}</label>
-            <div className="relative group">
+            <motion.div className="relative group">
                 {icon && (
                     <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
                         {icon}
@@ -701,7 +698,26 @@ function InputGroup({ label, placeholder, value, onChange, type = "text", icon }
                     className={`w-full bg-gray-50 border border-gray-200 rounded-xl p-4 ${icon ? 'pl-12' : 'pl-4'} text-ozunlu-950 font-medium 
                     placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all`}
                 />
-            </div>
+            </motion.div>
+        </div>
+    );
+}
+
+function PhoneInputGroup({
+    label,
+    placeholder,
+    value,
+    onChange,
+}: {
+    label: string;
+    placeholder: string;
+    value: string;
+    onChange: (v: string) => void;
+}) {
+    return (
+        <div className="space-y-2">
+            <label className="text-sm font-bold text-gray-600 block pl-1">{label}</label>
+            <PhoneInput value={value} onChange={onChange} placeholder={placeholder} variant="proposal" />
         </div>
     );
 }

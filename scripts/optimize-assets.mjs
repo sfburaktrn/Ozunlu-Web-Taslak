@@ -74,8 +74,18 @@ for (const job of imageJobs) {
     if (result) imageResults.push(result);
 }
 
-console.log('\nOptimizing videos...\n');
+console.log('\nOptimizing hero videos...\n');
 const videoResults = [];
+const mobileVideo = optimizeVideo('banner-video-new.mp4', 'banner-video-mobile.mp4', [
+    '-c:v', 'libx264', '-crf', '30', '-preset', 'slow', '-an', '-movflags', '+faststart', '-vf', 'scale=720:-2',
+]);
+const desktopVideo = optimizeVideo('banner-video-new.mp4', 'banner-video-new-opt.mp4', [
+    '-c:v', 'libx264', '-crf', '28', '-preset', 'slow', '-an', '-movflags', '+faststart', '-vf', 'scale=1280:-2',
+]);
+if (mobileVideo) videoResults.push(mobileVideo);
+if (desktopVideo) videoResults.push(desktopVideo);
+
+console.log('\nOptimizing legacy videos...\n');
 const mp4 = optimizeVideo('banner-video-new.mp4', 'banner-video-new.mp4', [
     '-c:v', 'libx264', '-crf', '28', '-preset', 'medium', '-an', '-movflags', '+faststart', '-vf', 'scale=1920:-2',
 ]);

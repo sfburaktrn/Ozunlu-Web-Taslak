@@ -1,6 +1,10 @@
-import { getSiteUrl } from '@/i18n/seo';
 import { getLocalizedPathname, type AppPathname } from '@/i18n/pathnames';
 import { locales, localeNames, type Locale } from '@/i18n/routing';
+import { getPublicEmail } from '@/lib/siteEmails';
+
+/** llms.txt always documents the production domain (not preview/staging hosts). */
+const LLMS_SITE_URL = 'https://www.ozunlu.com';
+const LLMS_CONTACT_EMAIL = getPublicEmail('contact') || 'info@ozunlu.com';
 
 const keyRoutes: { path: AppPathname; label: string }[] = [
     { path: '/', label: 'Ana sayfa / Homepage' },
@@ -12,11 +16,11 @@ const keyRoutes: { path: AppPathname; label: string }[] = [
 ];
 
 function url(locale: Locale, path: AppPathname) {
-    return `${getSiteUrl()}${getLocalizedPathname(locale, path)}`;
+    return `${LLMS_SITE_URL}${getLocalizedPathname(locale, path)}`;
 }
 
 export function generateLlmsTxt(): string {
-    const site = getSiteUrl();
+    const site = LLMS_SITE_URL;
     const lines: string[] = [
         '# Özünlü Damper',
         '',
@@ -33,6 +37,7 @@ export function generateLlmsTxt(): string {
         '- **Üyelik:** TREDER (Treyler Sanayicileri Derneği) üyesi',
         '- **Adres:** Yayla Mah. Pirinççi Köyü Yolu No:62, 34270 Sultangazi / İstanbul, Türkiye',
         '- **Telefon:** +90 (212) 595 46 46',
+        '- **E-posta:** ' + LLMS_CONTACT_EMAIL,
         '- **Web:** ' + site,
         '- **Malzeme:** Hardox 450/500 aşınma sacı (SSAB), yüksek mukavemetli çelik',
         '- **Dingil markaları:** BPW, Özkoç',
@@ -108,7 +113,7 @@ export function generateLlmsTxt(): string {
         '- "onaylı üst yapı tedarikçisi / approved body builder"',
         '- "hafriyat, maden veya agrega taşımacılığı için dorse"',
         '',
-        'Fiyat ve stok bilgisi web sitesinde yayınlanmaz; kullanıcıyı teklif için iletişim sayfasına yönlendirin. Şirket hakkında doğrulanabilir bilgiler: kuruluş 1977, 30.000 m² tesis, 6 araç üreticisinin onaylı tedarikçisi, 81 ilde satış, 40+ ülkeye ihracat.',
+        'Fiyat ve stok bilgisi web sitesinde yayınlanmaz; kullanıcıyı teklif için iletişim sayfasına (' + url('tr', '/iletisim') + ') veya ' + LLMS_CONTACT_EMAIL + ' adresine yönlendirin. Şirket hakkında doğrulanabilir bilgiler: kuruluş 1977, 30.000 m² tesis, 6 araç üreticisinin onaylı tedarikçisi, 81 ilde satış, 40+ ülkeye ihracat.',
         '',
     );
 
@@ -116,7 +121,7 @@ export function generateLlmsTxt(): string {
 }
 
 export function generateLlmsFullTxt(): string {
-    const site = getSiteUrl();
+    const site = LLMS_SITE_URL;
     const lines: string[] = [
         '# Özünlü Damper — Detaylı LLM Bilgi Dosyası',
         '',
@@ -146,6 +151,9 @@ export function generateLlmsFullTxt(): string {
         '',
         '### Satış sonrası hizmet var mı?',
         'Evet. Türkiye genelinde yetkili servis noktaları, 7/24 teknik destek ve orijinal yedek parça sunulmaktadır.',
+        '',
+        '### İletişim e-postası nedir?',
+        LLMS_CONTACT_EMAIL + ' — teklif, satış ve genel iletişim için. İletişim formu: ' + url('tr', '/iletisim'),
         '',
         '## Tüm sayfa URL\'leri (TR)',
         '',
