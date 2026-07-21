@@ -47,6 +47,24 @@ interface ProposalFormProps {
     configuratorBadge?: string;
 }
 
+function lockedStepMotion(unlocked: boolean) {
+    return {
+        opacity: unlocked ? 1 : 0.9,
+        y: 0,
+        pointerEvents: (unlocked ? 'auto' : 'none') as 'auto' | 'none',
+    };
+}
+
+function LockedGlassOverlay({ locked }: { locked: boolean }) {
+    if (!locked) return null;
+    return (
+        <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 z-20 rounded-2xl border border-white/70 bg-white/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] backdrop-blur-[2.5px]"
+        />
+    );
+}
+
 export default function ProposalForm({
     initialProduct,
     selectedProduct,
@@ -437,7 +455,7 @@ export default function ProposalForm({
                                                     />
                                                     {/* Axle Option - Dingil Seçeneği */}
                                                     <div className="space-y-2">
-                                                        <label className="text-sm font-bold text-gray-600 block pl-1">{t('fields.axle')}</label>
+                                                        <label className="text-sm font-bold text-ozunlu-950/80 block pl-1">{t('fields.axle')}</label>
                                                         <div className="grid grid-cols-2 gap-4">
                                                             <button
                                                                 type="button"
@@ -445,7 +463,7 @@ export default function ProposalForm({
                                                                 className={`p-4 rounded-xl font-bold transition-all border-2 
                                                                 ${formData.axle === 'yerli'
                                                                         ? 'border-primary bg-primary/10 text-primary'
-                                                                        : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
+                                                                        : 'border-gray-300 bg-white text-ozunlu-950/75 hover:border-gray-400 hover:text-ozunlu-950'}`}
                                                             >
                                                                 {t('fields.domestic')}
                                                             </button>
@@ -455,7 +473,7 @@ export default function ProposalForm({
                                                                 className={`p-4 rounded-xl font-bold transition-all border-2
                                                                 ${formData.axle === 'yabancı'
                                                                         ? 'border-primary bg-primary/10 text-primary'
-                                                                        : 'border-gray-200 bg-gray-50 text-gray-400 hover:border-gray-300'}`}
+                                                                        : 'border-gray-300 bg-white text-ozunlu-950/75 hover:border-gray-400 hover:text-ozunlu-950'}`}
                                                             >
                                                                 {t('fields.foreign')}
                                                             </button>
@@ -468,9 +486,9 @@ export default function ProposalForm({
                                         {/* STANDARD FLOW - STEP 2 */}
                                         <motion.div
                                             ref={step2Ref}
-                                            initial={{ opacity: 0.5, y: 20 }}
-                                            animate={{ opacity: step1Complete ? 1 : 0.5, y: 0, pointerEvents: step1Complete ? 'auto' : 'none', filter: step1Complete ? 'blur(0px)' : 'blur(2px)' }}
-                                            className="space-y-6 pt-8 border-t border-gray-100"
+                                            initial={{ opacity: 0.9, y: 20 }}
+                                            animate={lockedStepMotion(step1Complete)}
+                                            className="relative space-y-6 pt-8 border-t border-gray-100"
                                         >
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step1Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>2</div>
@@ -503,15 +521,16 @@ export default function ProposalForm({
                                                     />
                                                 </div>
                                             )}
+                                            <LockedGlassOverlay locked={!step1Complete} />
                                         </motion.div>
 
                                         {/* STANDARD FLOW - STEP 3 (Only for Damper - Dimensions) */}
                                         {formData.type === 'damper' && (
                                             <motion.div
                                                 ref={step3Ref}
-                                                initial={{ opacity: 0.5, y: 20 }}
-                                                animate={{ opacity: step2Complete ? 1 : 0.5, y: 0, pointerEvents: step2Complete ? 'auto' : 'none', filter: step2Complete ? 'blur(0px)' : 'blur(2px)' }}
-                                                className="space-y-6 pt-8 border-t border-gray-100"
+                                                initial={{ opacity: 0.9, y: 20 }}
+                                                animate={lockedStepMotion(step2Complete)}
+                                                className="relative space-y-6 pt-8 border-t border-gray-100"
                                             >
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${step2Complete ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>3</div>
@@ -542,20 +561,16 @@ export default function ProposalForm({
                                                         onChange={(v) => handleInputChange('quantity', v)}
                                                     />
                                                 </div>
+                                                <LockedGlassOverlay locked={!step2Complete} />
                                             </motion.div>
                                         )}
 
                                         {/* PAYMENT METHOD - Standard only */}
                                         <motion.div
                                             ref={paymentRef}
-                                            initial={{ opacity: 0.5, y: 20 }}
-                                            animate={{
-                                                opacity: (formData.type === 'damper' ? step3Complete : step2Complete) ? 1 : 0.5,
-                                                y: 0,
-                                                pointerEvents: (formData.type === 'damper' ? step3Complete : step2Complete) ? 'auto' : 'none',
-                                                filter: (formData.type === 'damper' ? step3Complete : step2Complete) ? 'blur(0px)' : 'blur(2px)'
-                                            }}
-                                            className="space-y-6 pt-8 border-t border-gray-100"
+                                            initial={{ opacity: 0.9, y: 20 }}
+                                            animate={lockedStepMotion(formData.type === 'damper' ? step3Complete : step2Complete)}
+                                            className="relative space-y-6 pt-8 border-t border-gray-100"
                                         >
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${(formData.type === 'damper' ? step3Complete : step2Complete) ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>
@@ -582,14 +597,15 @@ export default function ProposalForm({
                                                     onClick={() => handleInputChange('paymentMethod', 'vadeli')}
                                                 />
                                             </div>
+                                            <LockedGlassOverlay locked={!(formData.type === 'damper' ? step3Complete : step2Complete)} />
                                         </motion.div>
 
                                         {/* CONTACT INFO - Standard Flow */}
                                         <motion.div
                                             ref={contactRef}
-                                            initial={{ opacity: 0.5, y: 20 }}
-                                            animate={{ opacity: isPaymentValid ? 1 : 0.5, y: 0, pointerEvents: isPaymentValid ? 'auto' : 'none', filter: isPaymentValid ? 'blur(0px)' : 'blur(2px)' }}
-                                            className="space-y-6 pt-8 border-t border-gray-100"
+                                            initial={{ opacity: 0.9, y: 20 }}
+                                            animate={lockedStepMotion(isPaymentValid)}
+                                            className="relative space-y-6 pt-8 border-t border-gray-100"
                                         >
                                             <div className="flex items-center gap-4 mb-6">
                                                 <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg transition-colors ${isPaymentValid ? 'bg-primary text-white shadow-lg shadow-primary/20' : 'bg-gray-100 text-gray-400'}`}>
@@ -639,6 +655,7 @@ export default function ProposalForm({
                                                     />
                                                 </div>
                                             </div>
+                                            <LockedGlassOverlay locked={!isPaymentValid} />
                                         </motion.div>
                                     </>
                                 )}
@@ -683,10 +700,10 @@ export default function ProposalForm({
 function InputGroup({ label, placeholder, value, onChange, type = "text", icon }: { label: string, placeholder: string, value: string, onChange: (v: string) => void, type?: string, icon?: React.ReactNode }) {
     return (
         <div className="space-y-2">
-            <label className="text-sm font-bold text-gray-600 block pl-1">{label}</label>
+            <label className="text-sm font-bold text-ozunlu-950/80 block pl-1">{label}</label>
             <motion.div className="relative group">
                 {icon && (
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-primary transition-colors">
                         {icon}
                     </div>
                 )}
@@ -695,8 +712,8 @@ function InputGroup({ label, placeholder, value, onChange, type = "text", icon }
                     value={value}
                     onChange={(e) => onChange(e.target.value)}
                     placeholder={placeholder}
-                    className={`w-full bg-gray-50 border border-gray-200 rounded-xl p-4 ${icon ? 'pl-12' : 'pl-4'} text-ozunlu-950 font-medium 
-                    placeholder:text-gray-400 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all`}
+                    className={`w-full bg-white border border-gray-300 rounded-xl p-4 ${icon ? 'pl-12' : 'pl-4'} text-ozunlu-950 font-medium 
+                    placeholder:text-gray-500 focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all`}
                 />
             </motion.div>
         </div>
@@ -716,7 +733,7 @@ function PhoneInputGroup({
 }) {
     return (
         <div className="space-y-2">
-            <label className="text-sm font-bold text-gray-600 block pl-1">{label}</label>
+            <label className="text-sm font-bold text-ozunlu-950/80 block pl-1">{label}</label>
             <PhoneInput value={value} onChange={onChange} placeholder={placeholder} variant="proposal" />
         </div>
     );
@@ -727,16 +744,16 @@ function PaymentOption({ icon, title, description, selected, onClick }: { icon: 
         <div
             onClick={onClick}
             className={`p-6 rounded-2xl border-2 cursor-pointer transition-all relative overflow-hidden group
-            ${selected ? 'border-primary bg-primary/5' : 'border-gray-100 bg-white hover:border-gray-200 hover:bg-gray-50'}`}
+            ${selected ? 'border-primary bg-primary/5' : 'border-gray-300 bg-white hover:border-gray-400 hover:bg-gray-50'}`}
         >
-            <div className="flex items-start gap-4 relative z-10">
+            <div className="flex items-start gap-4">
                 <div className={`w-12 h-12 rounded-full flex items-center justify-center shrink-0 transition-colors
-                    ${selected ? 'bg-primary text-white' : 'bg-gray-100 text-gray-400 group-hover:bg-gray-200'}`}>
+                    ${selected ? 'bg-primary text-white' : 'bg-gray-200 text-ozunlu-950/60 group-hover:bg-gray-300'}`}>
                     {icon}
                 </div>
                 <div>
                     <h4 className={`font-bold text-lg mb-1 ${selected ? 'text-primary' : 'text-ozunlu-950'}`}>{title}</h4>
-                    <span className="text-xs text-gray-500 font-medium">{description}</span>
+                    <span className="text-xs text-gray-600 font-medium">{description}</span>
                 </div>
             </div>
             {selected && (

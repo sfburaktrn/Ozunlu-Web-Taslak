@@ -108,7 +108,7 @@ export default function PhoneInput({
                 className={
                     isContact
                         ? 'flex w-full overflow-hidden rounded-xl border border-[#000552]/12 bg-white focus-within:border-[#000552] focus-within:ring-2 focus-within:ring-[#000552]/15 transition-all'
-                        : 'flex w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 transition-all'
+                        : 'flex w-full overflow-hidden rounded-xl border border-gray-300 bg-white focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10 transition-all'
                 }
             >
                 <button
@@ -117,7 +117,7 @@ export default function PhoneInput({
                     className={
                         isContact
                             ? 'flex shrink-0 items-center gap-1.5 border-e border-[#000552]/12 px-2.5 sm:px-3 text-[#000552] hover:bg-[#000552]/[0.03] transition-colors'
-                            : 'flex shrink-0 items-center gap-1.5 border-e border-gray-200 px-3 text-ozunlu-950 hover:bg-white/70 transition-colors'
+                            : 'flex shrink-0 items-center gap-1.5 border-e border-gray-300 px-3 text-ozunlu-950 hover:bg-gray-50 transition-colors'
                     }
                     aria-expanded={open}
                     aria-haspopup="listbox"
@@ -141,7 +141,7 @@ export default function PhoneInput({
                     className={
                         isContact
                             ? 'min-w-0 flex-1 bg-transparent px-3.5 py-2.5 text-sm text-[#0a0a1a] placeholder:text-[#000552]/30 focus:outline-none'
-                            : 'min-w-0 flex-1 bg-transparent px-4 py-4 text-sm font-medium text-ozunlu-950 placeholder:text-gray-400 focus:outline-none'
+                            : 'min-w-0 flex-1 bg-transparent px-4 py-4 text-sm font-medium text-ozunlu-950 placeholder:text-gray-500 focus:outline-none'
                     }
                     autoComplete="tel-national"
                 />
