@@ -103,7 +103,12 @@
       "marketingTitle": "Маркетингові cookie",
       "marketingDesc": "Використовуються для реклами та ремаркетингу. Без згоди не запускаються.",
       "alwaysOn": "Завжди увімкнені",
-      "managePreferences": "Керувати налаштуваннями cookie"
+      "managePreferences": "Керувати налаштуваннями cookie",
+      "shortDescription": "Ми використовуємо cookie для зручності та аналітики. Обов’язкові потрібні сайту; інші — за вашою згодою.",
+      "policyLinkShort": "<policy>Політика</policy>",
+      "settingsShort": "Налаштування",
+      "rejectShort": "Відхилити",
+      "acceptShort": "Прийняти"
     }
   },
   "home": {

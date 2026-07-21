@@ -54,51 +54,89 @@ export default function CookieConsent() {
     if (mode === 'hidden') return null;
 
     return (
-        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[140] p-3 sm:p-4 md:p-6">
+        <div className="pointer-events-none fixed bottom-0 start-0 z-[140] p-2.5 sm:p-3 md:p-4">
             <div
                 role="dialog"
                 aria-modal="false"
                 aria-labelledby={titleId}
-                className="pointer-events-auto mx-auto w-full max-w-3xl overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_20px_60px_rgba(0,5,82,0.18)]"
+                className="pointer-events-auto w-[min(100%,22rem)] overflow-hidden rounded-2xl border border-black/8 bg-white/95 shadow-[0_12px_40px_rgba(0,5,82,0.14)] backdrop-blur-md sm:w-full sm:max-w-sm md:max-w-md"
             >
-                <div className="flex items-start justify-between gap-3 border-b border-black/[0.06] px-4 py-3 sm:px-5">
-                    <div>
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#000552]/55">
-                            {t('eyebrow')}
-                        </p>
-                        <h2 id={titleId} className="mt-1 text-base font-bold text-[#000552] sm:text-lg">
-                            {mode === 'settings' ? t('settingsTitle') : t('title')}
-                        </h2>
+                {mode === 'banner' ? (
+                    <div className="flex flex-col gap-2.5 p-3 sm:p-3.5">
+                        <div className="min-w-0">
+                            <h2 id={titleId} className="text-[13px] font-bold leading-tight text-[#000552] sm:text-sm">
+                                {t('title')}
+                            </h2>
+                            <p className="mt-0.5 text-[11px] leading-snug text-black/55 sm:text-xs">
+                                {t('shortDescription')}{' '}
+                                {t.rich('policyLinkShort', {
+                                    policy: (chunks) => (
+                                        <Link
+                                            href="/cerez-politikasi"
+                                            className="font-semibold text-[#000552] underline underline-offset-2"
+                                        >
+                                            {chunks}
+                                        </Link>
+                                    ),
+                                })}
+                            </p>
+                        </div>
+
+                        <div className="grid grid-cols-3 gap-1.5">
+                            <button
+                                type="button"
+                                onClick={() => setMode('settings')}
+                                className="inline-flex items-center justify-center gap-1 rounded-lg border border-black/10 bg-white px-2 py-2 text-[11px] font-semibold text-[#000552] transition-colors hover:bg-black/[0.03] sm:text-xs"
+                                aria-label={t('settings')}
+                            >
+                                <Settings2 size={13} className="shrink-0" />
+                                <span className="truncate">{t('settingsShort')}</span>
+                            </button>
+                            <button
+                                type="button"
+                                onClick={rejectAll}
+                                className="rounded-lg border border-black/10 bg-white px-2 py-2 text-[11px] font-semibold text-black/65 transition-colors hover:bg-black/[0.03] sm:text-xs"
+                            >
+                                {t('rejectShort')}
+                            </button>
+                            <button
+                                type="button"
+                                onClick={acceptAll}
+                                className="rounded-lg bg-[#000552] px-2 py-2 text-[11px] font-semibold text-white transition-colors hover:bg-[#000552]/90 sm:text-xs"
+                            >
+                                {t('acceptShort')}
+                            </button>
+                        </div>
                     </div>
-                    {mode === 'settings' && (
-                        <button
-                            type="button"
-                            onClick={() => setMode(readCookieConsent() ? 'hidden' : 'banner')}
-                            className="rounded-lg p-1.5 text-black/40 transition-colors hover:bg-black/5 hover:text-black"
-                            aria-label={t('close')}
-                        >
-                            <X size={18} />
-                        </button>
-                    )}
-                </div>
+                ) : (
+                    <div className="flex max-h-[min(55vh,24rem)] flex-col">
+                        <div className="flex items-center justify-between gap-2 border-b border-black/[0.06] px-3 py-2.5 sm:px-4">
+                            <h2 id={titleId} className="text-sm font-bold text-[#000552]">
+                                {t('settingsTitle')}
+                            </h2>
+                            <button
+                                type="button"
+                                onClick={() => setMode(readCookieConsent() ? 'hidden' : 'banner')}
+                                className="rounded-md p-1 text-black/40 transition-colors hover:bg-black/5 hover:text-black"
+                                aria-label={t('close')}
+                            >
+                                <X size={16} />
+                            </button>
+                        </div>
 
-                <div className="max-h-[min(70vh,32rem)] space-y-4 overflow-y-auto px-4 py-4 sm:px-5">
-                    <p className="text-sm leading-relaxed text-black/70">{t('description')}</p>
-                    <p className="text-sm text-black/60">
-                        {t.rich('policyLink', {
-                            policy: (chunks) => (
-                                <Link
-                                    href="/cerez-politikasi"
-                                    className="font-semibold text-[#000552] underline underline-offset-2 hover:text-[#000552]/80"
-                                >
-                                    {chunks}
-                                </Link>
-                            ),
-                        })}
-                    </p>
-
-                    {mode === 'settings' && (
-                        <div className="space-y-3">
+                        <div className="space-y-2 overflow-y-auto px-3 py-2.5 sm:px-4">
+                            <p className="text-[11px] leading-snug text-black/50 sm:text-xs">
+                                {t.rich('policyLink', {
+                                    policy: (chunks) => (
+                                        <Link
+                                            href="/cerez-politikasi"
+                                            className="font-semibold text-[#000552] underline underline-offset-2"
+                                        >
+                                            {chunks}
+                                        </Link>
+                                    ),
+                                })}
+                            </p>
                             <CategoryRow
                                 title={t('necessaryTitle')}
                                 description={t('necessaryDesc')}
@@ -119,61 +157,32 @@ export default function CookieConsent() {
                                 onChange={(marketing) => setDraft((prev) => ({ ...prev, marketing }))}
                             />
                         </div>
-                    )}
-                </div>
 
-                <div className="flex flex-col gap-2 border-t border-black/[0.06] bg-[#f8f8fb] px-4 py-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-2 sm:px-5">
-                    {mode === 'banner' ? (
-                        <>
-                            <button
-                                type="button"
-                                onClick={() => setMode('settings')}
-                                className="inline-flex items-center justify-center gap-2 rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm font-semibold text-[#000552] transition-colors hover:bg-black/[0.03] sm:order-1 sm:mr-auto"
-                            >
-                                <Settings2 size={16} />
-                                {t('settings')}
-                            </button>
+                        <div className="grid grid-cols-3 gap-1.5 border-t border-black/[0.06] bg-[#f8f8fb] px-3 py-2.5 sm:flex sm:justify-end sm:gap-2 sm:px-4">
                             <button
                                 type="button"
                                 onClick={rejectAll}
-                                className="rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm font-semibold text-black/70 transition-colors hover:bg-black/[0.03] sm:order-2"
+                                className="rounded-lg border border-black/10 bg-white px-2 py-2 text-[11px] font-semibold text-black/65 sm:px-3 sm:text-xs"
                             >
-                                {t('rejectAll')}
+                                {t('rejectShort')}
                             </button>
                             <button
                                 type="button"
                                 onClick={acceptAll}
-                                className="rounded-xl bg-[#000552] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#000552]/90 sm:order-3"
+                                className="rounded-lg border border-[#000552]/15 bg-white px-2 py-2 text-[11px] font-semibold text-[#000552] sm:px-3 sm:text-xs"
                             >
-                                {t('acceptAll')}
-                            </button>
-                        </>
-                    ) : (
-                        <>
-                            <button
-                                type="button"
-                                onClick={rejectAll}
-                                className="rounded-xl border border-black/10 bg-white px-4 py-2.5 text-sm font-semibold text-black/70 transition-colors hover:bg-black/[0.03] sm:mr-auto"
-                            >
-                                {t('rejectAll')}
-                            </button>
-                            <button
-                                type="button"
-                                onClick={acceptAll}
-                                className="rounded-xl border border-[#000552]/20 bg-white px-4 py-2.5 text-sm font-semibold text-[#000552] transition-colors hover:bg-[#000552]/[0.04]"
-                            >
-                                {t('acceptAll')}
+                                {t('acceptShort')}
                             </button>
                             <button
                                 type="button"
                                 onClick={saveSettings}
-                                className="rounded-xl bg-[#000552] px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#000552]/90"
+                                className="rounded-lg bg-[#000552] px-2 py-2 text-[11px] font-semibold text-white sm:px-3.5 sm:text-xs"
                             >
                                 {t('save')}
                             </button>
-                        </>
-                    )}
-                </div>
+                        </div>
+                    </div>
+                )}
             </div>
         </div>
     );
@@ -195,14 +204,16 @@ function CategoryRow({
     lockedLabel?: string;
 }) {
     return (
-        <div className="rounded-xl border border-black/[0.08] bg-white p-3.5 sm:p-4">
-            <div className="flex items-start justify-between gap-3">
+        <div className="rounded-lg border border-black/[0.07] bg-white px-2.5 py-2 sm:px-3 sm:py-2.5">
+            <div className="flex items-center justify-between gap-2">
                 <div className="min-w-0 flex-1">
-                    <p className="text-sm font-bold text-[#000552]">{title}</p>
-                    <p className="mt-1 text-xs leading-relaxed text-black/55 sm:text-sm">{description}</p>
+                    <p className="text-xs font-bold text-[#000552] sm:text-[13px]">{title}</p>
+                    <p className="mt-0.5 line-clamp-2 text-[10px] leading-snug text-black/45 sm:text-[11px]">
+                        {description}
+                    </p>
                 </div>
                 {locked ? (
-                    <span className="shrink-0 rounded-full bg-[#000552]/8 px-2.5 py-1 text-[11px] font-semibold text-[#000552]">
+                    <span className="shrink-0 rounded-full bg-[#000552]/8 px-2 py-0.5 text-[10px] font-semibold text-[#000552]">
                         {lockedLabel}
                     </span>
                 ) : (
@@ -211,13 +222,13 @@ function CategoryRow({
                         role="switch"
                         aria-checked={checked}
                         onClick={() => onChange?.(!checked)}
-                        className={`relative h-7 w-12 shrink-0 rounded-full transition-colors ${
+                        className={`relative h-6 w-10 shrink-0 rounded-full transition-colors ${
                             checked ? 'bg-[#000552]' : 'bg-black/15'
                         }`}
                     >
                         <span
-                            className={`absolute top-0.5 h-6 w-6 rounded-full bg-white shadow transition-transform ${
-                                checked ? 'translate-x-5' : 'translate-x-0.5'
+                            className={`absolute top-0.5 h-5 w-5 rounded-full bg-white shadow transition-transform ${
+                                checked ? 'translate-x-4' : 'translate-x-0.5'
                             }`}
                         />
                     </button>

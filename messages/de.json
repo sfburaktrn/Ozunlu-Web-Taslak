@@ -103,7 +103,12 @@
       "marketingTitle": "Marketing-Cookies",
       "marketingDesc": "Für Werbung und Remarketing. Ohne Einwilligung werden sie nicht geladen.",
       "alwaysOn": "Immer aktiv",
-      "managePreferences": "Cookie-Einstellungen verwalten"
+      "managePreferences": "Cookie-Einstellungen verwalten",
+      "shortDescription": "Wir verwenden Cookies für Nutzung und Analyse. Notwendige sind Pflicht; andere brauchen Ihre Einwilligung.",
+      "policyLinkShort": "<policy>Richtlinie</policy>",
+      "settingsShort": "Einstellungen",
+      "rejectShort": "Ablehnen",
+      "acceptShort": "Akzeptieren"
     }
   },
   "home": {

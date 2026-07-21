@@ -103,7 +103,12 @@
       "marketingTitle": "Marketing cookies",
       "marketingDesc": "Used for advertising and remarketing. These will not run without your consent.",
       "alwaysOn": "Always on",
-      "managePreferences": "Manage cookie preferences"
+      "managePreferences": "Manage cookie preferences",
+      "shortDescription": "We use cookies for experience and analytics. Essential ones are required; others need your consent.",
+      "policyLinkShort": "<policy>Policy</policy>",
+      "settingsShort": "Settings",
+      "rejectShort": "Reject",
+      "acceptShort": "Accept"
     }
   },
   "home": {

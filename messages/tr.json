@@ -103,7 +103,12 @@
       "marketingTitle": "Pazarlama çerezleri",
       "marketingDesc": "Reklam ve yeniden pazarlama amaçlı çerezler. Onay vermezseniz bu çerezler çalıştırılmaz.",
       "alwaysOn": "Her zaman açık",
-      "managePreferences": "Çerez tercihlerini yönet"
+      "managePreferences": "Çerez tercihlerini yönet",
+      "shortDescription": "Deneyim ve analiz için çerez kullanıyoruz. Zorunlu olanlar site için gerekli; diğerleri onayınıza bağlıdır.",
+      "policyLinkShort": "<policy>Politika</policy>",
+      "settingsShort": "Ayarlar",
+      "rejectShort": "Reddet",
+      "acceptShort": "Kabul et"
     }
   },
   "home": {

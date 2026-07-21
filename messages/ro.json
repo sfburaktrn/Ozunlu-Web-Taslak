@@ -103,7 +103,12 @@
       "marketingTitle": "Cookie-uri de marketing",
       "marketingDesc": "Folosite pentru publicitate și remarketing. Nu rulează fără consimțământul dvs.",
       "alwaysOn": "Mereu active",
-      "managePreferences": "Gestionează preferințele cookie"
+      "managePreferences": "Gestionează preferințele cookie",
+      "shortDescription": "Folosim cookie-uri pentru experiență și analiză. Cele esențiale sunt necesare; restul necesită consimțământ.",
+      "policyLinkShort": "<policy>Politică</policy>",
+      "settingsShort": "Setări",
+      "rejectShort": "Respinge",
+      "acceptShort": "Acceptă"
     }
   },
   "home": {

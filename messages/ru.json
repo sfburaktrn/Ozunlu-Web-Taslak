@@ -103,7 +103,12 @@
       "marketingTitle": "Маркетинговые cookie",
       "marketingDesc": "Используются для рекламы и ремаркетинга. Без согласия не запускаются.",
       "alwaysOn": "Всегда включены",
-      "managePreferences": "Управление настройками cookie"
+      "managePreferences": "Управление настройками cookie",
+      "shortDescription": "Мы используем cookie для удобства и аналитики. Обязательные нужны сайту; остальные — с вашего согласия.",
+      "policyLinkShort": "<policy>Политика</policy>",
+      "settingsShort": "Настройки",
+      "rejectShort": "Отклонить",
+      "acceptShort": "Принять"
     }
   },
   "home": {

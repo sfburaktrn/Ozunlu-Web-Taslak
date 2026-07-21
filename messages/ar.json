@@ -103,7 +103,12 @@
       "marketingTitle": "ملفات تسويقية",
       "marketingDesc": "تُستخدم للإعلان وإعادة التسويق. لن تعمل دون موافقتك.",
       "alwaysOn": "مفعّلة دائمًا",
-      "managePreferences": "إدارة تفضيلات ملفات تعريف الارتباط"
+      "managePreferences": "إدارة تفضيلات ملفات تعريف الارتباط",
+      "shortDescription": "نستخدم ملفات تعريف الارتباط للتجربة والتحليل. الأساسية ضرورية؛ والباقي يحتاج موافقتك.",
+      "policyLinkShort": "<policy>السياسة</policy>",
+      "settingsShort": "إعدادات",
+      "rejectShort": "رفض",
+      "acceptShort": "قبول"
     }
   },
   "home": {

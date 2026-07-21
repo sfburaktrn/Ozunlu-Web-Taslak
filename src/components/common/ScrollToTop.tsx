@@ -63,7 +63,7 @@ export default function ScrollToTop() {
                     exit={{ opacity: 0, y: 12, scale: 0.92 }}
                     transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
                     onClick={scrollToTop}
-                    className="fixed bottom-20 end-5 md:bottom-24 md:end-7 z-[60] group focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2"
+                    className="group fixed bottom-20 end-5 z-[60] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 md:bottom-24 md:end-7"
                 >
                     <span className="relative flex h-[52px] w-[52px] items-center justify-center">
                         <svg
