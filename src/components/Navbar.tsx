@@ -148,58 +148,81 @@ export default function Navbar() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="fixed inset-0 z-[120] lg:hidden bg-[#1d1d1f]/95 backdrop-blur-2xl overflow-hidden"
+                        transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+                        className="fixed inset-0 z-[120] lg:hidden bg-[#07070f] overflow-hidden"
                     >
-                        <div className="flex flex-col pt-20 sm:pt-24 px-5 sm:px-8 h-full overflow-y-auto overscroll-contain pb-[max(2.5rem,env(safe-area-inset-bottom))]" data-lenis-prevent>
-                            <div className="flex flex-col space-y-6">
+                        {/* Soft brand wash — no center glow */}
+                        <div
+                            className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#000552]/55 via-[#07070f] to-[#07070f]"
+                            aria-hidden
+                        />
+                        <div
+                            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"
+                            aria-hidden
+                        />
+
+                        <div
+                            className="relative flex h-full flex-col pt-[4.25rem] sm:pt-24 px-5 sm:px-8 md:px-12 md:max-w-3xl md:mx-auto overflow-y-auto overscroll-contain pb-[max(1.75rem,env(safe-area-inset-bottom))]"
+                            data-lenis-prevent
+                        >
+                            <nav className="flex flex-col" aria-label="Mobile">
                                 {navLinks.map((link, i) => (
                                     <motion.div
                                         key={link.href}
-                                        initial={{ opacity: 0, y: 15 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: 0.1 + i * 0.05, ease: [0.4, 0, 0.2, 1] }}
+                                        initial={{ opacity: 0, x: -16 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{
+                                            delay: 0.06 + i * 0.045,
+                                            duration: 0.35,
+                                            ease: [0.22, 1, 0.36, 1],
+                                        }}
                                     >
                                         <Link
                                             href={link.href}
                                             onClick={() => setMobileMenuOpen(false)}
-                                            className="text-[28px] font-semibold text-[#f5f5f7] hover:text-white block border-b border-white/5 pb-4"
+                                            className="group flex items-baseline gap-4 sm:gap-5 border-b border-white/[0.08] py-4 sm:py-5 md:py-6 transition-colors"
                                         >
-                                            {link.label}
+                                            <span className="w-7 shrink-0 text-[11px] sm:text-xs font-semibold tracking-[0.18em] text-white/35 group-hover:text-[rgb(185,162,25)] transition-colors">
+                                                {String(i + 1).padStart(2, '0')}
+                                            </span>
+                                            <span className="text-[1.65rem] sm:text-[2rem] md:text-[2.35rem] font-semibold tracking-tight text-[#f5f5f7] group-hover:text-white transition-colors">
+                                                {link.label}
+                                            </span>
                                         </Link>
                                     </motion.div>
                                 ))}
-                                <motion.div
-                                    initial={{ opacity: 0, y: 15 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.1 + navLinks.length * 0.05 }}
-                                    className="pt-4"
-                                >
-                                    <Link
-                                        href="/iletisim"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                        className="text-[19px] font-medium text-[#2997ff] hover:underline"
-                                    >
-                                        {t('mobileContactQuote')}
-                                    </Link>
-                                </motion.div>
+                            </nav>
 
-                                <motion.div
-                                    initial={{ opacity: 0, y: 15 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.1 + (navLinks.length + 1) * 0.05 }}
-                                    className="pt-6"
+                            <motion.div
+                                initial={{ opacity: 0, y: 12 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.32, duration: 0.35 }}
+                                className="mt-8 sm:mt-10"
+                            >
+                                <Link
+                                    href="/iletisim"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-[15px] sm:text-base font-bold text-[#000552] shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
                                 >
-                                    <div className="rounded-[1.35rem] border border-white/12 bg-white/[0.06] backdrop-blur-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]">
-                                        <LanguagePickerPanel
-                                            currentLocale={locale}
-                                            title={languageMenuTitle}
-                                            onSelect={selectLocale}
-                                            variant="dark"
-                                        />
-                                    </div>
-                                </motion.div>
-                            </div>
+                                    {t('mobileContactQuote')}
+                                </Link>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 16 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.35 }}
+                                className="mt-auto pt-10 sm:pt-12"
+                            >
+                                <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]">
+                                    <LanguagePickerPanel
+                                        currentLocale={locale}
+                                        title={languageMenuTitle}
+                                        onSelect={selectLocale}
+                                        variant="dark"
+                                    />
+                                </div>
+                            </motion.div>
                         </div>
                     </motion.div>
                 )}

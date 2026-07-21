@@ -8,6 +8,7 @@ import { Link } from '@/i18n/navigation';
 import { heroRichTextHandlers } from '@/i18n/richText';
 import { useTextDirection } from '@/i18n/useTextDirection';
 import HeroAccentText from '@/components/common/HeroAccentText';
+
 export default function DamperHero() {
     const t = useTranslations('home.damperHero');
     const tCommon = useTranslations('common');
@@ -21,34 +22,37 @@ export default function DamperHero() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="relative w-full h-[620px] sm:h-[660px] md:h-[600px] rounded-[1.5rem] md:rounded-3xl overflow-hidden border border-white/10 group layout-fixed"
+                    className="group layout-fixed relative w-full overflow-hidden rounded-[1.5rem] border border-black/5 md:rounded-3xl lg:h-[600px]"
                 >
-                    <div className="absolute inset-0">
+                    <div className="relative h-[280px] overflow-hidden bg-[#1a1a1a] sm:h-[340px] md:h-[400px] lg:absolute lg:inset-0 lg:h-full">
                         <Image
                             src="/images/ozunlu-hardox-siyah-damper-kamyon.webp"
                             alt={t('imageAlt')}
                             fill
                             loading="lazy"
-                            sizes="(max-width: 768px) 100vw, 1200px"
-                            className="object-cover object-[72%_center] sm:object-[75%_center] md:object-[82%_center] group-hover:scale-105 transition-transform duration-700"
+                            sizes="(max-width: 1023px) 100vw, 1200px"
+                            className="object-cover object-[62%_40%] transition-transform duration-700 group-hover:scale-[1.02] sm:object-[65%_38%] md:object-[68%_36%] lg:object-[82%_center] lg:group-hover:scale-105"
                             quality={90}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/25 md:bg-gradient-to-r md:from-black/92 md:via-black/55 md:via-40% md:to-transparent" />
+                        <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-black/92 via-black/55 via-40% to-transparent lg:block" />
                     </div>
 
-                    <div className="absolute top-6 left-6 z-30">
-                        <span className="inline-block py-2 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold tracking-widest uppercase">
+                    <div className="absolute left-4 top-4 z-30 sm:left-6 sm:top-6">
+                        <span className="inline-block rounded-full border border-white/20 bg-black/45 px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white backdrop-blur-md sm:px-4 sm:py-2 sm:text-xs">
                             {t('category')}
                         </span>
                     </div>
 
-                    <div className="relative z-10 h-full flex items-end md:items-center justify-start p-4 sm:p-6 md:p-12 lg:p-16">
-                        <div className="w-full max-w-md sm:max-w-lg md:max-w-[26rem] xl:max-w-[28rem] 2xl:max-w-[33rem] relative text-left rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none" dir={textDir}>
+                    <div className="relative z-10 bg-[#0c0c0e] px-4 py-5 sm:px-6 sm:py-6 md:px-8 md:py-7 lg:absolute lg:inset-0 lg:flex lg:items-center lg:justify-start lg:bg-transparent lg:p-12 xl:p-16">
+                        <div
+                            className="w-full max-w-lg text-left lg:max-w-[26rem] xl:max-w-[28rem] 2xl:max-w-[33rem]"
+                            dir={textDir}
+                        >
                             <motion.h2
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="relative z-10 text-[clamp(2rem,9vw,3.75rem)] md:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.75rem] font-bold text-white mb-3 md:mb-6 leading-[1.05] drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                                className="mb-3 text-[clamp(1.75rem,7vw,2.75rem)] font-bold leading-[1.08] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] lg:mb-6 lg:text-[2.5rem] xl:text-[3rem] 2xl:text-[3.75rem]"
                             >
                                 {t('titleLine1')} <br />
                                 <HeroAccentText onDark>{t('titleLine2')}</HeroAccentText>
@@ -58,18 +62,25 @@ export default function DamperHero() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3, duration: 0.6 }}
-                                className="relative z-10 text-sm sm:text-base md:text-lg text-gray-200 mb-5 md:mb-8 max-w-[33rem] text-left leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                                className="mb-5 max-w-[33rem] text-sm leading-relaxed text-gray-300 sm:text-base lg:mb-8 lg:text-lg lg:text-gray-200 lg:drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                             >
                                 {t.rich('description', heroRichTextHandlers)}
                             </motion.p>
 
-                            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.4, duration: 0.6 }} className="relative z-10">
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4, duration: 0.6 }}
+                            >
                                 <Link
                                     href={{ pathname: '/damper', hash: 'teklif-formu' }}
-                                    className="inline-flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-primary text-white rounded-full font-semibold text-base md:text-lg hover:bg-primary/90 transition-all shadow-lg shadow-black/40 border border-white/35 group/link"
+                                    className="group/link inline-flex items-center gap-2 rounded-full border border-white/35 bg-primary px-6 py-3 text-base font-semibold text-white shadow-lg shadow-black/40 transition-all hover:bg-primary/90 md:px-8 md:py-4 md:text-lg"
                                 >
                                     {tCommon('cta.teklifAl')}
-                                    <ArrowRight size={18} className="icon-directional group-hover/link:translate-x-1 transition-transform" />
+                                    <ArrowRight
+                                        size={18}
+                                        className="icon-directional transition-transform group-hover/link:translate-x-1"
+                                    />
                                 </Link>
                             </motion.div>
                         </div>

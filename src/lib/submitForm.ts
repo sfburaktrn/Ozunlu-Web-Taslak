@@ -1,5 +1,8 @@
 type SubmitResult = { success: true } | { success: false; error: string };
 
+/**
+ * Formu kendi API'mize gönderir; Web3Forms access key tarayıcıda görünmez.
+ */
 export async function submitForm(payload: Record<string, unknown>): Promise<SubmitResult> {
     const res = await fetch('/api/forms', {
         method: 'POST',

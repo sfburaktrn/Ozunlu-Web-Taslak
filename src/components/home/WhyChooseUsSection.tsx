@@ -123,9 +123,9 @@ export default function WhyChooseUsSection() {
                             </div>
 
                             {/* Interactive Stacked Images */}
-                            <div className="order-2 relative h-[300px] sm:h-[420px] lg:h-[700px] w-full flex items-center justify-center layout-fixed">
+                            <div className="order-2 relative h-[300px] sm:h-[420px] md:h-[560px] lg:h-[700px] w-full flex items-center justify-center layout-fixed">
                                 <div
-                                    className="relative w-[min(72vw,340px)] aspect-[17/12] lg:w-[min(48vw,750px)] lg:h-[500px] cursor-pointer -translate-x-4 sm:translate-x-0 rtl:translate-x-4 rtl:sm:translate-x-0"
+                                    className="relative w-[min(72vw,340px)] aspect-[17/12] md:w-[min(82vw,580px)] lg:w-[min(48vw,750px)] lg:h-[500px] cursor-pointer -translate-x-4 sm:translate-x-0 rtl:translate-x-4 rtl:sm:translate-x-0"
                                     onClick={handleNext}
                                 >
                                     {images.map((img, index) => {

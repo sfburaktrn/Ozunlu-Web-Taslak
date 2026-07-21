@@ -91,9 +91,9 @@ export default function DamperPageClient() {
 
     return (
         <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
-            {/* HERO */}
-            <section className="relative w-full h-[660px] sm:h-[700px] md:h-[700px] rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl layout-fixed">
-                <div className="absolute inset-0 z-0">
+            {/* HERO — mobile: image + text stacked (damper clear). Tablet+: overlay, description tight under title */}
+            <section className="relative w-full rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl layout-fixed md:aspect-[5/4] lg:aspect-auto lg:h-[660px]">
+                <div className="relative aspect-[16/11] sm:aspect-[16/10] md:absolute md:inset-0 md:aspect-auto">
                     {DAMPER_HERO_IMAGES.map((src, index) => (
                         <Image
                             key={src}
@@ -101,21 +101,22 @@ export default function DamperPageClient() {
                             alt={t('hero.imageAlt')}
                             fill
                             priority={index === 0}
-                            className={`object-cover object-[68%_center] sm:object-[72%_center] md:object-center transition-opacity duration-700 ${
+                            className={`object-cover object-[95%_40%] sm:object-[72%_38%] md:object-[95%_38%] lg:object-[68%_center] transition-opacity duration-700 ${
                                 index === heroIndex ? 'opacity-100' : 'opacity-0'
                             }`}
+                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 100vw, 1400px"
                         />
                     ))}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/45 to-black/10 md:bg-gradient-to-r md:from-black/85 md:via-black/55 md:to-black/15" />
+                    <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-b from-black/50 via-transparent to-black/45 md:block lg:bg-gradient-to-r lg:from-black/85 lg:via-black/55 lg:to-black/15" />
                 </div>
 
-                <div className="relative h-full flex flex-col justify-end md:justify-center items-start p-4 sm:p-6 md:px-8 lg:px-10">
-                    <div dir={textDir} className="max-w-[33rem] md:max-w-[28rem] 2xl:max-w-[33rem] relative text-left z-10 w-full rounded-2xl bg-black/55 p-4 backdrop-blur-[2px] md:bg-transparent md:p-0 md:backdrop-blur-none">
+                <div className="relative z-10 flex flex-col gap-5 bg-[#0c0c0e] px-4 py-5 sm:px-6 sm:py-6 md:absolute md:inset-0 md:gap-0 md:justify-between md:bg-transparent md:px-8 md:pt-7 md:pb-10 lg:justify-center lg:px-10 lg:py-12">
+                    <div dir={textDir} className="max-w-[33rem] md:max-w-[22rem] xl:max-w-[28rem] 2xl:max-w-[33rem] relative text-left w-full">
                         <motion.h1
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.2, duration: 0.8 }}
-                            className="relative z-10 text-[clamp(2.5rem,11vw,4.5rem)] md:text-[3rem] xl:text-[3.5rem] 2xl:text-[4.5rem] font-bold text-white mb-4 md:mb-6 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
+                            className="relative z-10 text-[clamp(2rem,9vw,3.25rem)] md:text-[2.15rem] xl:text-[3.5rem] 2xl:text-[4.5rem] font-bold text-white mb-2 md:mb-1.5 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
                         >
                             {t('hero.titleLine1')} <br />
                             <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
@@ -125,26 +126,26 @@ export default function DamperPageClient() {
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-sm sm:text-base md:text-lg 2xl:text-xl leading-relaxed text-white mb-6 md:mb-8 mr-auto max-w-[28rem] 2xl:max-w-[33rem] drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
+                            className="text-sm sm:text-base md:text-[0.95rem] md:leading-snug xl:text-lg 2xl:text-xl leading-relaxed text-gray-300 md:text-white mr-auto max-w-[28rem] md:max-w-[22rem] 2xl:max-w-[33rem] md:drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
                         >
                             {t.rich('hero.description', heroRichTextHandlers)}
                         </motion.p>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4, duration: 0.8 }}
-                            className="flex justify-start"
-                        >
-                            <a
-                                href="#teklif-formu"
-                                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-8 py-4 text-base rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-black/40 border border-white/35"
-                            >
-                                {tCommon('cta.teklifAlin')}
-                                <ArrowRight size={20} className="icon-directional" />
-                            </a>
-                        </motion.div>
                     </div>
+
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.8 }}
+                        className="flex justify-start self-start lg:mt-8"
+                    >
+                        <a
+                            href="#teklif-formu"
+                            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-8 py-4 text-base rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-black/40 border border-white/35"
+                        >
+                            {tCommon('cta.teklifAlin')}
+                            <ArrowRight size={20} className="icon-directional" />
+                        </a>
+                    </motion.div>
                 </div>
             </section>
 
@@ -162,7 +163,7 @@ export default function DamperPageClient() {
                     {products.map((product) => (
                         <div
                             key={product.id}
-                            className="group text-left bg-[#F5F5F7] hover:bg-white rounded-[2rem] p-4 pb-6 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col h-full border border-transparent hover:border-gray-100"
+                            className="group text-left bg-[#F5F5F7] hover:bg-white rounded-[2rem] p-4 pb-6 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 flex flex-col h-full border border-transparent hover:border-gray-100 md:last:col-span-2 md:last:w-[calc((100%-1.5rem)/2)] md:last:justify-self-center lg:last:col-span-1 lg:last:w-auto lg:last:justify-self-auto"
                         >
                             <ProductCardImage
                                 src={product.image}
@@ -196,48 +197,48 @@ export default function DamperPageClient() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
-                    className="bg-[#F5F5F7] rounded-[1.75rem] md:rounded-[2.5rem] p-5 sm:p-8 md:p-12 lg:p-16 flex flex-col md:flex-row gap-8 md:gap-12 group hover:shadow-xl transition-all duration-500"
+                    className="bg-[#F5F5F7] rounded-[1.75rem] md:rounded-[2.5rem] p-5 sm:p-8 md:p-10 lg:p-16 flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-12 group hover:shadow-xl transition-all duration-500"
                 >
-                    <div className="w-full md:w-1/2 flex flex-col justify-center">
-                        <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 md:mb-8">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center order-1 md:order-2 lg:order-1">
+                        <h3 className="text-3xl md:text-[1.85rem] md:leading-tight lg:text-4xl xl:text-5xl font-bold text-black mb-6 md:mb-5 lg:mb-8">
                             {t('features.titleLine1')} <br /> <span className="text-ozunlu-950">{t('features.titleLine2')}</span>
                         </h3>
 
-                        <div className="space-y-8">
+                        <div className="space-y-8 md:space-y-5 lg:space-y-8">
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
-                                    <span className="text-xl font-bold text-black">01</span>
+                                <div className="w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
+                                    <span className="text-xl md:text-base lg:text-xl font-bold text-black">01</span>
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item01Title')}</h4>
-                                    <p className="text-sm text-gray-700">
+                                    <h4 className="text-xl md:text-base lg:text-xl font-bold mb-2 md:mb-1 text-black">{t('features.item01Title')}</h4>
+                                    <p className="text-sm md:text-[13px] md:leading-snug lg:text-sm text-gray-700">
                                         {t.rich('features.item01Content', heroRichTextHandlers)}
                                     </p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
-                                    <span className="text-xl font-bold text-black">02</span>
+                                <div className="w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
+                                    <span className="text-xl md:text-base lg:text-xl font-bold text-black">02</span>
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item02Title')}</h4>
-                                    <p className="text-sm text-gray-700">{t.rich('features.item02Content', heroRichTextHandlers)}</p>
+                                    <h4 className="text-xl md:text-base lg:text-xl font-bold mb-2 md:mb-1 text-black">{t('features.item02Title')}</h4>
+                                    <p className="text-sm md:text-[13px] md:leading-snug lg:text-sm text-gray-700">{t.rich('features.item02Content', heroRichTextHandlers)}</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4">
-                                <div className="w-12 h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
-                                    <span className="text-xl font-bold text-black">03</span>
+                                <div className="w-12 h-12 md:w-10 md:h-10 lg:w-12 lg:h-12 rounded-full bg-black/5 flex items-center justify-center shrink-0">
+                                    <span className="text-xl md:text-base lg:text-xl font-bold text-black">03</span>
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold mb-2 text-black">{t('features.item03Title')}</h4>
-                                    <p className="text-sm text-gray-700">{t.rich('features.item03Content', heroRichTextHandlers)}</p>
+                                    <h4 className="text-xl md:text-base lg:text-xl font-bold mb-2 md:mb-1 text-black">{t('features.item03Title')}</h4>
+                                    <p className="text-sm md:text-[13px] md:leading-snug lg:text-sm text-gray-700">{t.rich('features.item03Content', heroRichTextHandlers)}</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="mt-12">
+                        <div className="mt-12 md:mt-8 lg:mt-12">
                             <a
                                 href="#teklif-formu"
                                 className="inline-flex items-center gap-3 px-8 py-4 bg-[#000552] text-white border-2 border-[#000552] rounded-full font-bold hover:bg-[#000552]/90 hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
@@ -247,14 +248,14 @@ export default function DamperPageClient() {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full lg:w-1/2 order-2 md:order-1 lg:order-2">
                         <Image
                             src="/images/ozunlu-sari-damper-yuksek-devrilme.webp"
                             alt={t('features.imageAlt')}
                             width={1536}
                             height={1024}
-                            className="w-full h-auto rounded-[2rem]"
-                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="w-full h-auto rounded-[2rem] md:aspect-[16/11] md:object-cover md:object-[95%_center] lg:aspect-auto lg:h-auto lg:object-contain lg:object-center"
+                            sizes="(max-width: 1023px) 100vw, 50vw"
                         />
                     </div>
                 </motion.div>

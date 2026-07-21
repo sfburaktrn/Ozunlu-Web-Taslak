@@ -54,9 +54,9 @@ export default function GallerySection() {
 
                         <motion.div
                             style={{ opacity: contentOpacity, scale: contentScale, filter: `blur(${contentBlur})` }}
-                            className="relative z-10 flex max-w-[75%] flex-col items-center justify-center text-center mix-blend-difference"
+                            className="relative z-30 flex max-w-[75%] flex-col items-center justify-center text-center mix-blend-difference pointer-events-none md:pointer-events-auto"
                         >
-                            <div className="relative w-32 h-16 mb-4 translate-y-3 md:w-64 md:h-32 md:mb-6">
+                            <div className="relative w-32 h-16 mb-4 translate-y-3 md:w-48 md:h-24 md:mb-5 lg:w-64 lg:h-32 lg:mb-6">
                                 <Image
                                     src="/ozunlu-damper-logo.png"
                                     alt={tLabels('logoAlt')}
@@ -65,13 +65,13 @@ export default function GallerySection() {
                                 />
                             </div>
 
-                            <h2 className="text-xl md:text-5xl font-bold italic text-white tracking-widest font-sans">
+                            <h2 className="text-xl md:text-3xl lg:text-5xl font-bold italic text-white tracking-widest font-sans">
                                 {t('slogan')}
                             </h2>
 
                             <Link
                                 href="/iletisim"
-                                className="mt-4 text-[10px] md:text-xs font-bold tracking-[0.3em] text-white/50 hover:text-white uppercase border-b border-white/20 pb-1 hover:border-white transition-all"
+                                className="pointer-events-auto mt-4 text-[10px] md:text-xs font-bold tracking-[0.3em] text-white/50 hover:text-white uppercase border-b border-white/20 pb-1 hover:border-white transition-all"
                             >
                                 {tCommon('cta.kesfet')}
                             </Link>
@@ -90,10 +90,10 @@ export default function GallerySection() {
                                 <motion.div
                                     key={img.id}
                                     style={{ x, y, rotate }}
-                                    className="absolute z-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+                                    className="absolute z-20 shadow-[0_20px_50px_rgba(0,0,0,0.5)] md:scale-[0.72] lg:scale-100"
                                 >
                                     <div
-                                        className="relative overflow-hidden bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm transition-all w-[34vw] h-[44vw] max-h-[190px] md:max-h-none md:w-[var(--d-w)] md:h-[var(--d-h)]"
+                                        className="relative overflow-hidden bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm transition-all w-[34vw] h-[44vw] max-h-[190px] md:w-[24vw] md:h-[18vw] md:max-h-[150px] lg:max-h-none lg:w-[var(--d-w)] lg:h-[var(--d-h)]"
                                         style={{
                                             '--d-w': `${img.w}px`,
                                             '--d-h': `${img.h}px`,
@@ -106,7 +106,7 @@ export default function GallerySection() {
                                             loading="lazy"
                                             quality={75}
                                             className="object-cover"
-                                            sizes="(max-width: 768px) 34vw, 400px"
+                                            sizes="(max-width: 768px) 34vw, (max-width: 1024px) 24vw, 400px"
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent opacity-0 hover:opacity-100 transition-opacity" />
                                     </div>
