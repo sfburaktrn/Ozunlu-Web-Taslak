@@ -145,7 +145,7 @@ export default function WhyChooseUsSection() {
                                                     src={img}
                                                     alt={`Why Choose Us ${index + 1}`}
                                                     fill
-                                                    className="object-cover"
+                                                    className="object-cover object-right"
                                                 />
                                             </motion.div>
                                         );
