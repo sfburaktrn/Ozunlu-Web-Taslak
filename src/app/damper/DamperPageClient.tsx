@@ -16,9 +16,9 @@ import { useTextDirection } from '@/i18n/useTextDirection';
 const PRODUCT_KEYS = ['d24', 'd30', 'd21'] as const;
 
 const DAMPER_HERO_IMAGES = [
-    '/images/ozunlu-sari-hardox-damper-beyaz-kabin-studyo.webp',
-    '/images/ozunlu-siyah-hardox-damper-beyaz-kabin.webp',
-    '/images/ozunlu-turuncu-hardox-damper-kamyon-studyo.webp',
+    '/images/ozunlu-sari-hardox-damper-cozumleri-studyo.webp',
+    '/images/ozunlu-turuncu-hardox-damper-cozumleri-studyo.webp',
+    '/images/ozunlu-siyah-hardox-damper-cozumleri-studyo.webp',
 ] as const;
 
 const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: string }> = {

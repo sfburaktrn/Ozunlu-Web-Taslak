@@ -22,9 +22,9 @@ const PRODUCT_META: Record<(typeof PRODUCT_KEYS)[number], { id: string; image: s
 };
 
 const HERO_IMAGES = [
-    '/images/ozunlu-sari-hardox-damperli-yari-romork-studyo.webp',
-    '/images/ozunlu-turuncu-hardox-damperli-yari-romork-studyo.webp',
-    '/images/ozunlu-beyaz-hardox-damperli-yari-romork-studyo.webp',
+    '/images/ozunlu-sari-damperli-yari-romork-studyo-sahne.webp',
+    '/images/ozunlu-turuncu-damperli-yari-romork-studyo-sahne.webp',
+    '/images/ozunlu-beyaz-damperli-yari-romork-studyo-sahne.webp',
 ] as const;
 
 export default function YariRomorkPageClient() {
