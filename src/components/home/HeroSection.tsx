@@ -49,16 +49,21 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <div className="viewport-screen relative min-h-[640px] w-full overflow-hidden bg-ozunlu-950">
-            <div className="absolute inset-0 z-0">
-                <picture className="absolute inset-0 block">
-                    <source media="(max-width: 767px)" srcSet={MOBILE_POSTER} type="image/webp" />
+        <div className="viewport-screen relative left-1/2 w-screen min-w-0 max-w-none min-h-[640px] -translate-x-1/2 overflow-hidden bg-ozunlu-950 [@media(orientation:landscape)_and_(max-height:500px)]:h-[100dvh] [@media(orientation:landscape)_and_(max-height:500px)]:min-h-[100dvh] [@media(orientation:landscape)_and_(max-height:500px)]:w-[100dvw]">
+            <div className="absolute inset-0 z-0 h-full w-full">
+                <picture className="absolute inset-0 block h-full w-full">
+                    {/* Kısa landscape’te mobil poster — masaüstü videosu yanları kesmesin */}
+                    <source
+                        media="(max-width: 1023px), (orientation: landscape) and (max-height: 500px)"
+                        srcSet={MOBILE_POSTER}
+                        type="image/webp"
+                    />
                     <img
                         src={DESKTOP_POSTER}
                         alt=""
                         decoding="async"
                         fetchPriority="high"
-                        className="absolute inset-0 h-full w-full object-cover"
+                        className="absolute inset-0 h-full w-full object-cover object-center [@media(orientation:landscape)_and_(max-height:500px)]:object-[center_45%]"
                     />
                 </picture>
 
@@ -70,52 +75,65 @@ export default function HeroSection() {
                     playsInline
                     preload="metadata"
                     poster={MOBILE_POSTER}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-cover object-center [@media(orientation:landscape)_and_(max-height:500px)]:object-[center_45%]"
                 >
-                    <source src={MOBILE_VIDEO} media="(max-width: 767px)" type="video/mp4" />
+                    <source
+                        src={MOBILE_VIDEO}
+                        media="(max-width: 1023px), (orientation: landscape) and (max-height: 500px)"
+                        type="video/mp4"
+                    />
                     <source src={DESKTOP_VIDEO} type="video/mp4" />
                 </video>
 
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/30" />
             </div>
 
-            <div className="relative z-10 flex h-full min-h-[640px] flex-col items-center justify-center text-center px-4 pt-16 pb-20">
-                <div className="hero-fade-up">
-                    <h1 className="text-[clamp(2.35rem,11vw,4.5rem)] font-black text-white mb-4 md:mb-6 tracking-tighter leading-[1.02] uppercase drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)]">
+            <div className="relative z-10 flex h-full min-h-[640px] w-full flex-col items-center justify-center px-4 pt-16 pb-24 text-center sm:px-6 [@media(orientation:landscape)_and_(max-height:500px)]:min-h-0 [@media(orientation:landscape)_and_(max-height:500px)]:px-6 [@media(orientation:landscape)_and_(max-height:500px)]:pt-12 [@media(orientation:landscape)_and_(max-height:500px)]:pb-8">
+                <div className="hero-fade-up w-full max-w-[min(100%,56rem)]">
+                    <h1 className="mb-4 text-[clamp(2.35rem,11vw,4.5rem)] font-black uppercase leading-[1.02] tracking-tighter text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)] md:mb-6 [@media(orientation:landscape)_and_(max-height:500px)]:mb-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-[clamp(1.25rem,8.5vh,2.1rem)] [@media(orientation:landscape)_and_(max-height:500px)]:leading-[1.15] [@media(orientation:landscape)_and_(max-height:500px)]:tracking-tight">
                         {t('titleLine1')} <br />
                         <span className="text-white">{t('titleLine2')}</span>
                     </h1>
                 </div>
 
-                <div className="hero-fade-in mt-3 md:mt-6 max-w-[min(100%,42rem)]">
-                    <p className="text-base sm:text-lg md:text-2xl text-gray-200 font-light tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
+                <div className="hero-fade-in mt-3 w-full max-w-[min(100%,42rem)] px-1 md:mt-6 [@media(orientation:landscape)_and_(max-height:500px)]:mt-1 [@media(orientation:landscape)_and_(max-height:500px)]:px-2">
+                    <p className="text-base font-light tracking-wide text-gray-200 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)] sm:text-lg md:text-2xl [@media(orientation:landscape)_and_(max-height:500px)]:text-sm [@media(orientation:landscape)_and_(max-height:500px)]:leading-snug">
                         {t.rich('subtitle', defaultRichTextHandlers)}
                     </p>
                 </div>
 
-                <div className="hero-fade-up-delayed flex w-full max-w-md flex-col sm:w-auto sm:max-w-none sm:flex-row gap-3 sm:gap-4 mt-8 md:mt-12">
+                <div className="hero-fade-up-delayed mt-8 flex w-full max-w-md flex-col gap-3 sm:w-auto sm:max-w-none sm:flex-row sm:gap-4 md:mt-12 [@media(orientation:landscape)_and_(max-height:500px)]:mt-3 [@media(orientation:landscape)_and_(max-height:500px)]:max-w-none [@media(orientation:landscape)_and_(max-height:500px)]:flex-row [@media(orientation:landscape)_and_(max-height:500px)]:flex-wrap [@media(orientation:landscape)_and_(max-height:500px)]:justify-center [@media(orientation:landscape)_and_(max-height:500px)]:gap-2">
                     <Link
                         href={{ pathname: '/damper', hash: 'teklif-formu' }}
-                        className="group relative flex justify-center px-5 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/35 md:bg-white/30 border border-white/60 text-primary text-sm sm:text-base font-bold tracking-[0.12em] sm:tracking-widest uppercase overflow-hidden transition-[transform,background-color,border-color] duration-300 hover:bg-white/45 md:hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+                        className="group relative flex justify-center overflow-hidden rounded-full border border-white/60 bg-white/35 px-5 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-primary shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-[transform,background-color,border-color] duration-300 hover:border-white/70 hover:bg-white/45 sm:px-8 sm:py-4 sm:text-base sm:tracking-widest md:bg-white/30 md:hover:scale-105 [@media(orientation:landscape)_and_(max-height:500px)]:px-4 [@media(orientation:landscape)_and_(max-height:500px)]:py-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-[11px] [@media(orientation:landscape)_and_(max-height:500px)]:tracking-[0.08em]"
                     >
-                        <span className="relative z-10 flex items-center gap-3">
-                            {t('ctaDamper')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
+                        <span className="relative z-10 flex items-center gap-2 sm:gap-3">
+                            {t('ctaDamper')}{' '}
+                            <ArrowRight
+                                size={16}
+                                className="transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
+                            />
                         </span>
                     </Link>
                     <Link
                         href={{ pathname: '/yari-romork', hash: 'teklif-formu' }}
-                        className="group relative flex justify-center px-5 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/35 md:bg-white/30 border border-white/60 text-primary text-sm sm:text-base font-bold tracking-[0.12em] sm:tracking-widest uppercase overflow-hidden transition-[transform,background-color,border-color] duration-300 hover:bg-white/45 md:hover:scale-105 hover:border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.12)]"
+                        className="group relative flex justify-center overflow-hidden rounded-full border border-white/60 bg-white/35 px-5 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-primary shadow-[0_8px_32px_rgba(0,0,0,0.12)] transition-[transform,background-color,border-color] duration-300 hover:border-white/70 hover:bg-white/45 sm:px-8 sm:py-4 sm:text-base sm:tracking-widest md:bg-white/30 md:hover:scale-105 [@media(orientation:landscape)_and_(max-height:500px)]:px-4 [@media(orientation:landscape)_and_(max-height:500px)]:py-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-[11px] [@media(orientation:landscape)_and_(max-height:500px)]:tracking-[0.08em]"
                     >
-                        <span className="relative z-10 flex items-center gap-3">
-                            {t('ctaYariRomork')} <ArrowRight size={18} className="group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform" />
+                        <span className="relative z-10 flex items-center gap-2 sm:gap-3">
+                            {t('ctaYariRomork')}{' '}
+                            <ArrowRight
+                                size={16}
+                                className="transition-transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
+                            />
                         </span>
                     </Link>
                 </div>
             </div>
 
+            {/* Landscape kısa ekranda gizle — butonlarla çakışmasın */}
             <button
                 type="button"
-                className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center opacity-80 transition-opacity hover:opacity-100"
+                className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center opacity-80 transition-opacity hover:opacity-100 [@media(orientation:landscape)_and_(max-height:500px)]:hidden"
                 onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
                 aria-label={t('scroll')}
             >

@@ -13,8 +13,8 @@
       "description": "Semiremorci basculante din oțel de înaltă rezistență cu osii BPW și Özkoç, frânare EBS și distribuție optimizată a sarcinii. Bene sigure, ușoare și durabile pentru terasamente, minerit și agregate. Solicitați o ofertă."
     },
     "ekEkipmanlar": {
-      "title": "Piese de schimb și echipamente pentru remorci | Sisteme hidraulice, osii și frâne originale – Özünlü",
-      "description": "Echipamente și piese de schimb originale pentru remorci cu garanția Özünlü. Sisteme hidraulice, osii BPW-Özkoç, kituri de frână EBS și iluminare LED — stoc extins, livrare rapidă."
+      "title": "Piese și echipamente | Hidraulică, osii, frâne – Özünlü",
+      "description": "Echipamente și piese originale pentru remorci cu garanție Özünlü."
     },
     "afterSales": {
       "title": "Özünlü Servicii post-vânzare | Asistență tehnică 24/7, piese de schimb, rețea de service autorizat",
@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Cookie Policy | Özünlü Damper",
       "description": "Cookie usage policy for the Özünlü Damper website."
+    },
+    "karlaMucadele": {
+      "title": "Deszăpezire | Özünlü",
+      "description": "Soluții de deszăpezire Özünlü. În curând."
     }
   },
   "common": {
@@ -45,7 +49,8 @@
       "satisSonrasi": "Post-vânzare",
       "iletisim": "Contact",
       "mobileContactQuote": "Contact și ofertă",
-      "languageMenu": "Limbă"
+      "languageMenu": "Limbă",
+      "karlaMucadele": "Deszăpezire"
     },
     "footer": {
       "logoAlt": "Logo Özünlü Damper",
@@ -148,9 +153,9 @@
     },
     "equipmentHero": {
       "category": "Echipamente",
-      "imageAlt": "Özünlü soluții de echipamente și piese de schimb",
-      "titleLine1": "Integrat",
-      "titleLine2": "Soluții de echipamente",
+      "imageAlt": "Echipamente și piese Özünlü",
+      "titleLine1": "Soluții",
+      "titleLine2": "integrate",
       "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
     },
     "whyChooseUs": {
@@ -386,9 +391,9 @@
   "ekEkipmanlar": {
     "hero": {
       "badge": "ECHIPAMENTE",
-      "imageAlt": "Soluții de echipamente și piese de schimb",
-      "titleLine1": "Integrat",
-      "titleLine2": "Soluții de echipamente",
+      "imageAlt": "Echipamente și piese de schimb",
+      "titleLine1": "Soluții",
+      "titleLine2": "integrate",
       "description": "De la sisteme hidraulice la kituri de frână EBS, de la osii premium la iluminare LED — toate echipamentele pentru remorci sunt certificate originale cu garanția Özünlü și livrare rapidă din stoc extins."
     },
     "categories": {
@@ -593,5 +598,12 @@
       "heardFromPh": "Google, Social Media, recomandare..."
     },
     "submitError": "Trimiterea a eșuat. Vă rugăm să încercați din nou sau să ne contactați telefonic."
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Deszăpezire",
+      "subtitle": "Soluții de deszăpezire Özünlü. În curând.",
+      "comingSoon": "Soluții de deszăpezire Özünlü. În curând."
+    }
   }
 }

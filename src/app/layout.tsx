@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 import { headers } from 'next/headers';
 import { Manrope } from 'next/font/google';
@@ -49,6 +49,14 @@ export const metadata: Metadata = {
     ...(process.env.GOOGLE_SITE_VERIFICATION
         ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
         : {}),
+};
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    viewportFit: 'cover',
+    themeColor: '#000552',
 };
 
 type Props = {

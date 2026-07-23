@@ -29,7 +29,7 @@ const statIcons: Record<(typeof statKeys)[number], React.ReactNode> = {
     support: <Phone className="w-10 h-10" />,
 };
 
-export default function EkEkipmanlarPageClient() {
+export default function EkEkipmanlarPageClient({ embedded = false }: { embedded?: boolean }) {
     const t = useTranslations('ekEkipmanlar');
     const tCommon = useTranslations('common');
     const textDir = useTextDirection();
@@ -48,8 +48,17 @@ export default function EkEkipmanlarPageClient() {
         },
     };
 
+    const Wrapper = embedded ? 'section' : 'main';
+
     return (
-        <main className="min-h-screen bg-[#F8F9FA] pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
+        <Wrapper
+            id={embedded ? 'ek-ekipmanlar' : undefined}
+            className={
+                embedded
+                    ? 'scroll-mt-20 bg-[#F8F9FA] py-12 md:py-20 px-3 sm:px-6'
+                    : 'min-h-screen bg-[#F8F9FA] pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6'
+            }
+        >
             {/* HERO — mobile: image + text stacked. Tablet+: overlay */}
             <section className="relative w-full rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mx-auto max-w-full shadow-2xl group mb-16 md:mb-24 layout-fixed md:min-h-[680px] md:aspect-auto lg:aspect-auto lg:h-[min(85svh,820px)] lg:min-h-[620px]">
                 <div className="relative aspect-[16/11] sm:aspect-[4/3] md:absolute md:inset-0 md:aspect-auto">
@@ -208,79 +217,7 @@ export default function EkEkipmanlarPageClient() {
                     ))}
                 </div>
             </section>
-
-            <section id="contact" className="max-w-[1600px] mx-auto mb-16 md:mb-24">
-                {/* Mobile: stacked. Tablet+: overlay */}
-                <div className="lg:hidden relative rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl layout-fixed md:aspect-[5/4]">
-                    <div className="relative aspect-[16/11] sm:aspect-[16/10] md:absolute md:inset-0 md:aspect-auto">
-                        <Image
-                            src="/images/ozunlu-yedek-parca-banner.webp"
-                            alt={t('cta.title')}
-                            fill
-                            className="object-cover object-[95%_40%] sm:object-[72%_38%] md:object-[95%_38%]"
-                            sizes="100vw"
-                        />
-                        <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-b from-black/50 via-transparent to-black/45 md:block" />
-                    </div>
-
-                    <div className="relative z-10 flex flex-col gap-5 bg-[#0c0c0e] px-5 py-6 sm:px-8 md:absolute md:inset-0 md:gap-0 md:justify-between md:bg-transparent md:px-12 md:pt-8 md:pb-10 text-left">
-                        <div className="max-w-[26rem] md:max-w-[22rem]">
-                            <span className="inline-flex w-fit mb-4 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
-                                {t('hero.badge')}
-                            </span>
-                            <h2 className="text-3xl md:text-[2.15rem] font-bold text-white mb-2 md:mb-1.5 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
-                                {t('cta.title')}
-                            </h2>
-                            <p className="text-sm sm:text-base md:text-[0.95rem] md:leading-snug text-gray-300 md:text-white/90 leading-relaxed md:drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
-                                {t('cta.description')}
-                            </p>
-                        </div>
-                        <div className="self-start">
-                            <Link
-                                href="/iletisim"
-                                className="inline-flex w-full sm:w-auto justify-center items-center gap-2 bg-white text-[#000552] hover:bg-white/95 px-6 sm:px-8 py-4 rounded-xl font-bold text-base transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-                            >
-                                {tCommon('cta.iletisimeGecin')}
-                                <ArrowRight className="w-5 h-5 rtl:rotate-180" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="hidden lg:block relative rounded-[2.5rem] overflow-hidden min-h-[380px] shadow-2xl">
-                    <Image
-                        src="/images/ozunlu-yedek-parca-banner.webp"
-                        alt={t('cta.title')}
-                        fill
-                        className="object-cover object-center"
-                        sizes="(max-width: 1600px) 100vw, 1600px"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/88 via-black/55 to-black/20" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-black/15" />
-
-                    <div className="relative z-10 h-full flex flex-col justify-center px-16 py-20 max-w-[30rem] xl:max-w-[36rem]">
-                        <span className="inline-flex w-fit mb-5 rounded-full border border-white/25 bg-black/35 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm">
-                            {t('hero.badge')}
-                        </span>
-                        <h2 className="text-4xl xl:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)]">
-                            {t('cta.title')}
-                        </h2>
-                        <p className="text-xl text-white/90 mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.45)]">
-                            {t('cta.description')}
-                        </p>
-                        <div>
-                            <Link
-                                href="/iletisim"
-                                className="inline-flex items-center gap-2 bg-white text-[#000552] hover:bg-white/95 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
-                            >
-                                {tCommon('cta.iletisimeGecin')}
-                                <ArrowRight className="w-5 h-5 rtl:rotate-180" />
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+        </Wrapper>
     );
 }
 

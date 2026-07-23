@@ -13,8 +13,8 @@
       "description": "Kippsattelanhänger aus hochfestem Stahl mit BPW- und Özkoç-Achsen, EBS-Bremssystem und optimierter Lastverteilung. Sichere, leichte und langlebige Kippauflieger für Erdbau, Bergbau und Schüttguttransport. Angebot anfordern."
     },
     "ekEkipmanlar": {
-      "title": "Anhänger-Ersatzteile & Ausrüstung | Original Hydraulik, Achsen, Bremsen – Özünlü",
-      "description": "Original-Anhängerausrüstung und Ersatzteile mit Özünlü-Garantie. Hydraulik, BPW-Özkoç-Achsen, EBS-Bremsen und LED-Beleuchtung — großer Lagerbestand, schnelle Lieferung."
+      "title": "Anhänger-Ersatzteile & Ausrüstung | Original Hydraulik, Achse, Bremse – Özünlü",
+      "description": "Original Anhängerausrüstung und Ersatzteile mit Özünlü-Garantie."
     },
     "afterSales": {
       "title": "Özünlü Kundendienst | 24/7 Technischer Support, Ersatzteile, Servicenetz",
@@ -35,17 +35,22 @@
     "legalCookie": {
       "title": "Cookie Policy | Özünlü Damper",
       "description": "Cookie usage policy for the Özünlü Damper website."
+    },
+    "karlaMucadele": {
+      "title": "Winterdienst | Özünlü",
+      "description": "Özünlü Winterdienst-Lösungen. Demnächst."
     }
   },
   "common": {
     "nav": {
       "damper": "Kipper",
       "yariRomork": "Sattelanhänger",
-      "ekEkipmanlar": "Ausrüstung",
+      "ekEkipmanlar": "Zubehör",
       "satisSonrasi": "Kundendienst",
       "iletisim": "Kontakt",
       "mobileContactQuote": "Kontakt & Angebot",
-      "languageMenu": "Sprache"
+      "languageMenu": "Sprache",
+      "karlaMucadele": "Winterdienst"
     },
     "footer": {
       "logoAlt": "Özünlü Damper Logo",
@@ -147,9 +152,9 @@
       "description": "Bietet Transporteffizienz, hohen Wiederverkaufswert und langlebige Leistung."
     },
     "equipmentHero": {
-      "category": "Ausrüstung",
+      "category": "Zubehör",
       "imageAlt": "Özünlü Ausrüstung und Ersatzteile",
-      "titleLine1": "Integriert",
+      "titleLine1": "Integrierte",
       "titleLine2": "Ausrüstungslösungen",
       "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung ist original zertifiziert und schnell aus großem Lager mit Özünlü-Garantie lieferbar."
     },
@@ -385,9 +390,9 @@
   },
   "ekEkipmanlar": {
     "hero": {
-      "badge": "AUSRÜSTUNG",
-      "imageAlt": "Ausrüstungs- und Ersatzteillösungen",
-      "titleLine1": "Integriert",
+      "badge": "ZUBEHÖR",
+      "imageAlt": "Ausrüstung und Ersatzteile",
+      "titleLine1": "Integrierte",
       "titleLine2": "Ausrüstungslösungen",
       "description": "Von <strong>Hydraulik</strong> bis EBS-Bremsen, Premium-Achsen bis LED-Beleuchtung — alle Anhängerausrüstung original zertifiziert mit Özünlü-Garantie und schneller Lagerlieferung."
     },
@@ -593,5 +598,12 @@
       "heardFromPh": "Google, Social Media, Referral..."
     },
     "submitError": "Übermittlung fehlgeschlagen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch."
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Winterdienst",
+      "subtitle": "Özünlü Winterdienst-Lösungen. Demnächst.",
+      "comingSoon": "Özünlü Winterdienst-Lösungen. Demnächst."
+    }
   }
 }

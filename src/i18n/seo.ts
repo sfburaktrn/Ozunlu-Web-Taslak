@@ -47,6 +47,7 @@ type PageSeoKey =
     | 'home'
     | 'damper'
     | 'yariRomork'
+    | 'karlaMucadele'
     | 'ekEkipmanlar'
     | 'afterSales'
     | 'contact'
@@ -69,6 +70,7 @@ export const pathnameToSeoKey: Record<AppPathname, PageSeoKey> = {
     '/': 'home',
     '/damper': 'damper',
     '/yari-romork': 'yariRomork',
+    '/karla-mucadele': 'karlaMucadele',
     '/ek-ekipmanlar': 'ekEkipmanlar',
     '/satis-sonrasi': 'afterSales',
     '/iletisim': 'contact',

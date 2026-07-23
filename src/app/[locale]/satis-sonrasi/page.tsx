@@ -5,7 +5,9 @@ import { notFound } from 'next/navigation';
 import AfterSalesHero from '@/components/after-sales/AfterSalesHero';
 import ServicesGrid from '@/components/after-sales/ServicesGrid';
 import DocumentLibrary from '@/components/after-sales/DocumentLibrary';
+import EkEkipmanlarCta from '@/components/after-sales/EkEkipmanlarCta';
 import AfterSalesMapPreview from '@/components/home/AfterSalesMapPreview';
+import EkEkipmanlarPageClient from '@/app/ek-ekipmanlar/EkEkipmanlarPageClient';
 import { routing } from '@/i18n/routing';
 import { getPageMetadata } from '@/i18n/seo';
 
@@ -22,11 +24,19 @@ export default function AfterSalesPage({ params }: Props) {
     if (!hasLocale(routing.locales, params.locale)) notFound();
     setRequestLocale(params.locale);
     return (
-        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-4 sm:px-6">
-            <AfterSalesHero />
-            <ServicesGrid />
-            <DocumentLibrary />
-            <AfterSalesMapPreview />
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24">
+            {/* Önce Ek Ekipmanlar (CTA hariç) */}
+            <div className="px-0">
+                <EkEkipmanlarPageClient embedded />
+            </div>
+            <div className="px-4 sm:px-6">
+                <AfterSalesHero />
+                <ServicesGrid />
+                <DocumentLibrary />
+                {/* CTA: haritanın hemen üstü */}
+                <EkEkipmanlarCta />
+                <AfterSalesMapPreview />
+            </div>
         </main>
     );
 }

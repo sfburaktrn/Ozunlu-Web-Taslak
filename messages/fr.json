@@ -13,8 +13,8 @@
       "description": "Semi-remorques bennes en acier haute résistance avec essieux BPW et Özkoç, freinage EBS et répartition optimisée des charges. Bennes TP sûres, légères et durables pour terrassement, mines et granulats. Demandez un devis."
     },
     "ekEkipmanlar": {
-      "title": "Pièces détachées et équipements pour remorques | Systèmes hydrauliques, essieux et freins d'origine – Özünlü",
-      "description": "Équipements et pièces détachées d'origine pour remorques avec garantie Özünlü. Systèmes hydrauliques, essieux BPW-Özkoç, kits de freinage EBS et éclairage LED — stock étendu, livraison rapide."
+      "title": "Pièces et équipements remorque | Hydraulique, essieux, freins – Özünlü",
+      "description": "Équipements et pièces d'origine pour remorques avec garantie Özünlü."
     },
     "afterSales": {
       "title": "Özünlü Services après-vente | Assistance technique 24/7, pièces détachées, réseau de service agréé",
@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Cookie Policy | Özünlü Damper",
       "description": "Cookie usage policy for the Özünlü Damper website."
+    },
+    "karlaMucadele": {
+      "title": "Déneigement | Özünlü",
+      "description": "Solutions de déneigement Özünlü. Bientôt."
     }
   },
   "common": {
@@ -45,7 +49,8 @@
       "satisSonrasi": "Après-vente",
       "iletisim": "Contact",
       "mobileContactQuote": "Contact et devis",
-      "languageMenu": "Langue"
+      "languageMenu": "Langue",
+      "karlaMucadele": "Déneigement"
     },
     "footer": {
       "logoAlt": "Logo Özünlü Damper",
@@ -148,9 +153,9 @@
     },
     "equipmentHero": {
       "category": "Équipements",
-      "imageAlt": "Özünlü solutions d'équipements et de pièces détachées",
-      "titleLine1": "Intégré",
-      "titleLine2": "Solutions d’équipement",
+      "imageAlt": "Équipements et pièces Özünlü",
+      "titleLine1": "Solutions",
+      "titleLine2": "Équipement",
       "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
     },
     "whyChooseUs": {
@@ -386,9 +391,9 @@
   "ekEkipmanlar": {
     "hero": {
       "badge": "ÉQUIPEMENTS",
-      "imageAlt": "Solutions d'équipements et de pièces détachées",
-      "titleLine1": "Intégré",
-      "titleLine2": "Solutions d’équipement",
+      "imageAlt": "Équipements et pièces détachées",
+      "titleLine1": "Solutions",
+      "titleLine2": "Équipement",
       "description": "Des systèmes hydrauliques aux kits de freinage EBS, des essieux premium à l'éclairage LED — tous les équipements pour remorques sont certifiés d'origine avec garantie Özünlü et livraison rapide depuis un stock étendu."
     },
     "categories": {
@@ -593,5 +598,12 @@
       "heardFromPh": "Google, réseaux sociaux, recommandation..."
     },
     "submitError": "L'envoi a échoué. Veuillez réessayer ou nous contacter par téléphone."
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Déneigement",
+      "subtitle": "Solutions de déneigement Özünlü. Bientôt.",
+      "comingSoon": "Solutions de déneigement Özünlü. Bientôt."
+    }
   }
 }

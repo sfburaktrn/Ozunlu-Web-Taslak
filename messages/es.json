@@ -13,8 +13,8 @@
       "description": "Semirremolques basculantes de acero de alta resistencia con ejes BPW y Özkoç, frenos EBS y distribución optimizada de cargas. Bañeras seguras, ligeras y duraderas para obra, minería y áridos. Solicite presupuesto."
     },
     "ekEkipmanlar": {
-      "title": "Repuestos y equipamiento para remolques | Sistemas hidráulicos, ejes y frenos originales – Özünlü",
-      "description": "Equipamiento y repuestos originales para remolques con garantía Özünlü. Sistemas hidráulicos, ejes BPW-Özkoç, kits de frenos EBS e iluminación LED — amplio stock, entrega rápida."
+      "title": "Recambios y equipamiento | Hidráulica, ejes, frenos – Özünlü",
+      "description": "Equipamiento y recambios originales para remolques con garantía Özünlü."
     },
     "afterSales": {
       "title": "Özünlü Servicio posventa | Asistencia técnica 24/7, repuestos, red de servicio autorizado",
@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Cookie Policy | Özünlü Damper",
       "description": "Cookie usage policy for the Özünlü Damper website."
+    },
+    "karlaMucadele": {
+      "title": "Quitanieves | Özünlü",
+      "description": "Soluciones antinieve Özünlü. Próximamente."
     }
   },
   "common": {
@@ -45,7 +49,8 @@
       "satisSonrasi": "Posventa",
       "iletisim": "Contacto",
       "mobileContactQuote": "Contacto y presupuesto",
-      "languageMenu": "Idioma"
+      "languageMenu": "Idioma",
+      "karlaMucadele": "Quitanieves"
     },
     "footer": {
       "logoAlt": "Logo Özünlü Damper",
@@ -148,9 +153,9 @@
     },
     "equipmentHero": {
       "category": "Equipamiento",
-      "imageAlt": "Özünlü soluciones de equipamiento y repuestos",
-      "titleLine1": "Integrado",
-      "titleLine2": "Soluciones de equipamiento",
+      "imageAlt": "Equipamiento y recambios Özünlü",
+      "titleLine1": "Soluciones",
+      "titleLine2": "Integradas",
       "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
     },
     "whyChooseUs": {
@@ -386,9 +391,9 @@
   "ekEkipmanlar": {
     "hero": {
       "badge": "EQUIPAMIENTO",
-      "imageAlt": "Soluciones de equipamiento y repuestos",
-      "titleLine1": "Integrado",
-      "titleLine2": "Soluciones de equipamiento",
+      "imageAlt": "Equipamiento y recambios",
+      "titleLine1": "Soluciones",
+      "titleLine2": "Integradas",
       "description": "Desde sistemas hidráulicos hasta kits de frenos EBS, desde ejes premium hasta iluminación LED — todo el equipamiento para remolques es original certificado con garantía Özünlü y entrega rápida desde amplio stock."
     },
     "categories": {
@@ -593,5 +598,12 @@
       "heardFromPh": "Google, redes sociales, recomendación..."
     },
     "submitError": "El envío ha fallado. Inténtelo de nuevo o contáctenos por teléfono."
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Quitanieves",
+      "subtitle": "Soluciones antinieve Özünlü. Próximamente.",
+      "comingSoon": "Soluciones antinieve Özünlü. Próximamente."
+    }
   }
 }

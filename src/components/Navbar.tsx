@@ -24,7 +24,7 @@ export default function Navbar() {
     const navLinks = [
         { href: '/damper' as const, label: t('damper') },
         { href: '/yari-romork' as const, label: t('yariRomork') },
-        { href: '/ek-ekipmanlar' as const, label: t('ekEkipmanlar') },
+        { href: '/karla-mucadele' as const, label: t('karlaMucadele') },
         { href: '/satis-sonrasi' as const, label: t('satisSonrasi') },
         { href: '/iletisim' as const, label: t('iletisim') },
     ];
@@ -62,9 +62,9 @@ export default function Navbar() {
     return (
         <>
             <nav
-                className={`fixed top-0 left-0 right-0 z-[130] transition-all duration-300 ${mobileMenuOpen ? 'bg-transparent border-transparent' : 'bg-[rgba(251,251,253,0.72)] backdrop-blur-2xl backdrop-saturate-[180%] border-b border-black/[0.06]'}`}
+                className={`fixed top-0 left-0 right-0 z-[130] w-full max-w-none transition-all duration-300 ${mobileMenuOpen ? 'bg-transparent border-transparent' : 'bg-[rgba(251,251,253,0.72)] backdrop-blur-2xl backdrop-saturate-[180%] border-b border-black/[0.06]'}`}
             >
-                <div className="container mx-auto px-4 sm:px-6 h-[48px] flex items-center justify-between lg:justify-center gap-x-5 xl:gap-x-9 2xl:gap-x-[50px]">
+                <div className="mx-auto flex h-[48px] w-full max-w-none items-center justify-between gap-x-5 px-4 sm:px-6 lg:justify-center xl:gap-x-9 2xl:gap-x-[50px] [@media(orientation:landscape)_and_(max-height:500px)]:px-[max(1rem,env(safe-area-inset-left))] [@media(orientation:landscape)_and_(max-height:500px)]:pr-[max(1rem,env(safe-area-inset-right))]">
                     <Link href="/" className="flex-shrink-0 relative z-50 flex items-center">
                         <div className="relative w-20 h-9">
                             <Image

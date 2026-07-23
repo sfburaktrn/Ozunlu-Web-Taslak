@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Çerez Politikası | Özünlü Damper",
       "description": "Özünlü Damper web sitesi çerez kullanım politikası."
+    },
+    "karlaMucadele": {
+      "title": "Karla Mücadele | Özünlü",
+      "description": "Özünlü karla mücadele çözümleri. Yakında."
     }
   },
   "common": {
@@ -50,7 +54,8 @@
       "satisSonrasi": "Satış Sonrası",
       "iletisim": "İletişim",
       "mobileContactQuote": "İletişim & Teklif Al",
-      "languageMenu": "Dil"
+      "languageMenu": "Dil",
+      "karlaMucadele": "Karla Mücadele"
     },
     "footer": {
       "logoAlt": "Özünlü Damper Logo",
@@ -592,6 +597,13 @@
       "emailPh": "mail@sirket.com",
       "heardFrom": "Bizi Nereden Duydunuz?",
       "heardFromPh": "Google, Sosyal Medya, Referans..."
+    }
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Karla Mücadele",
+      "subtitle": "Özünlü karla mücadele çözümleri. Yakında.",
+      "comingSoon": "İçerik yakında eklenecek."
     }
   }
 }

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -78,63 +78,144 @@ export default function YariRomorkPageClient() {
 
     return (
         <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
-            {/* HERO — mobile: image + text stacked. Tablet+: overlay, description tight under title */}
-            <section className="relative w-full rounded-[1.75rem] md:rounded-[2.5rem] overflow-hidden mb-12 group mx-auto max-w-full shadow-2xl layout-fixed md:aspect-[5/4] lg:aspect-auto lg:h-[660px]">
-                <div className="relative aspect-[16/11] sm:aspect-[16/10] md:absolute md:inset-0 md:aspect-auto">
-                    {HERO_IMAGES.map((src, index) => (
-                        <Image
-                            key={src}
-                            src={src}
-                            alt={t('hero.imageAlt')}
-                            fill
-                            priority={index === 0}
-                            className={`object-cover object-[95%_40%] sm:object-[72%_38%] md:object-[95%_38%] lg:object-[68%_center] transition-opacity duration-700 ${
-                                index === heroIndex ? 'opacity-100' : 'opacity-0'
-                            }`}
-                            sizes="(max-width: 767px) 100vw, (max-width: 1023px) 100vw, 1400px"
-                        />
-                    ))}
-                    <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-b from-black/50 via-transparent to-black/45 md:block lg:bg-gradient-to-r lg:from-black/85 lg:via-black/55 lg:to-black/15" />
-                </div>
-
-                <div className="relative z-10 flex flex-col gap-5 bg-[#0c0c0e] px-4 py-5 sm:px-6 sm:py-6 md:absolute md:inset-0 md:gap-0 md:justify-between md:bg-transparent md:px-8 md:pt-7 md:pb-10 lg:justify-center lg:px-10 lg:py-12">
-                    <div dir={textDir} className="max-w-[33rem] md:max-w-[22rem] xl:max-w-[28rem] 2xl:max-w-[33rem] relative text-left w-full">
-                        <motion.h1
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.2, duration: 0.8 }}
-                            className="relative z-10 text-[clamp(2rem,9vw,3.25rem)] md:text-[2.15rem] xl:text-[3.5rem] 2xl:text-[4.5rem] font-bold text-white mb-2 md:mb-1.5 leading-[0.95] tracking-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)]"
-                        >
-                            {t('hero.titleLine1')} <br />
-                            <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
-                        </motion.h1>
-
-                        <motion.p
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.3, duration: 0.8 }}
-                            className="text-sm sm:text-base md:text-[0.95rem] md:leading-snug xl:text-lg 2xl:text-xl leading-relaxed text-gray-300 md:text-white mr-auto max-w-[28rem] md:max-w-[22rem] 2xl:max-w-[33rem] md:drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]"
-                        >
-                            {t.rich('hero.description', heroRichTextHandlers)}
-                        </motion.p>
-                    </div>
+            {/* HERO — mobil: oval cam kartlar. Tablet+: overlay */}
+            <div className="mb-12 mx-auto max-w-full">
+                <div className="layout-fixed relative md:hidden">
+                    <motion.div
+                        initial={{ opacity: 0, y: 18 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
+                        className="relative h-[280px] overflow-hidden rounded-[1.75rem] border border-black/5 bg-[#1a1a1a] shadow-[0_10px_28px_rgba(0,0,0,0.1)] sm:h-[300px]"
+                    >
+                        {HERO_IMAGES.map((src, index) => (
+                            <Image
+                                key={src}
+                                src={src}
+                                alt={t('hero.imageAlt')}
+                                fill
+                                priority={index === 0}
+                                className={`object-cover object-[88%_40%] transition-opacity duration-700 ${
+                                    index === heroIndex ? 'opacity-100' : 'opacity-0'
+                                }`}
+                                sizes="100vw"
+                            />
+                        ))}
+                    </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
-                        className="flex justify-start self-start lg:mt-8"
+                        initial={{ opacity: 0, y: 48, scale: 0.94 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true, amount: 0.4 }}
+                        transition={{
+                            type: 'spring',
+                            stiffness: 130,
+                            damping: 18,
+                            mass: 0.8,
+                            delay: 0.5,
+                        }}
+                        className="relative z-20 -mt-[3.75rem] mx-3 flex flex-col justify-center rounded-[1.75rem] border border-white/30 bg-black/55 px-4 py-5 shadow-[0_16px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl backdrop-saturate-150 sm:-mt-16 sm:mx-4 sm:px-6 sm:py-6"
                     >
-                        <a
-                            href="#teklif-formu"
-                            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-600 text-white px-8 py-4 text-base rounded-full font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-black/40 border border-white/35"
-                        >
-                            {tCommon('cta.teklifAlin')}
-                            <ArrowRight size={20} className="icon-directional" />
-                        </a>
+                        <div dir={textDir} className="w-full text-left">
+                            <motion.h1
+                                initial={{ opacity: 0, y: 16 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.6, duration: 0.5 }}
+                                className="mb-3 text-[clamp(2rem,9vw,3.25rem)] font-bold leading-[0.95] tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)]"
+                            >
+                                {t('hero.titleLine1')} <br />
+                                <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 14 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.7, duration: 0.5 }}
+                                className="mb-5 max-w-[28rem] text-sm leading-relaxed text-white/90 drop-shadow-[0_1px_6px_rgba(0,0,0,0.45)] sm:text-base"
+                            >
+                                {t.rich('hero.description', heroRichTextHandlers)}
+                            </motion.p>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 12 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.78, duration: 0.45 }}
+                            >
+                                <a
+                                    href="#teklif-formu"
+                                    className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90"
+                                >
+                                    {tCommon('cta.teklifAlin')}
+                                    <ArrowRight size={20} className="icon-directional" />
+                                </a>
+                            </motion.div>
+                        </div>
                     </motion.div>
                 </div>
-            </section>
+
+                <section className="group layout-fixed relative mx-auto hidden w-full max-w-full overflow-hidden rounded-[2.5rem] shadow-2xl md:block md:aspect-[5/4] lg:aspect-auto lg:h-[660px]">
+                    <div className="absolute inset-0">
+                        {HERO_IMAGES.map((src, index) => (
+                            <Image
+                                key={src}
+                                src={src}
+                                alt={t('hero.imageAlt')}
+                                fill
+                                priority={index === 0}
+                                className={`object-cover object-[95%_38%] transition-opacity duration-700 lg:object-[68%_center] ${
+                                    index === heroIndex ? 'opacity-100' : 'opacity-0'
+                                }`}
+                                sizes="(max-width: 1023px) 100vw, 1400px"
+                            />
+                        ))}
+                        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/45 lg:bg-gradient-to-r lg:from-black/85 lg:via-black/55 lg:to-black/15" />
+                    </div>
+
+                    <div className="relative z-10 flex h-full flex-col justify-between gap-0 px-8 pb-10 pt-7 lg:justify-center lg:px-10 lg:py-12">
+                        <div
+                            dir={textDir}
+                            className="relative w-full max-w-[22rem] text-left xl:max-w-[28rem] 2xl:max-w-[33rem]"
+                        >
+                            <motion.h1
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.2, duration: 0.8 }}
+                                className="relative z-10 mb-1.5 text-[2.15rem] font-bold leading-[0.95] tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.55)] xl:text-[3.5rem] 2xl:text-[4.5rem]"
+                            >
+                                {t('hero.titleLine1')} <br />
+                                <HeroAccentText onDark>{t('hero.titleLine2')}</HeroAccentText>
+                            </motion.h1>
+
+                            <motion.p
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.3, duration: 0.8 }}
+                                className="mr-auto max-w-[22rem] text-[0.95rem] leading-snug text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)] xl:text-lg 2xl:max-w-[33rem] 2xl:text-xl"
+                            >
+                                {t.rich('hero.description', heroRichTextHandlers)}
+                            </motion.p>
+                        </div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4, duration: 0.8 }}
+                            className="flex justify-start self-start lg:mt-8"
+                        >
+                            <a
+                                href="#teklif-formu"
+                                className="inline-flex items-center gap-2 rounded-full border border-white/35 bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg shadow-black/40 transition-all duration-300 hover:-translate-y-1 hover:bg-primary/90"
+                            >
+                                {tCommon('cta.teklifAlin')}
+                                <ArrowRight size={20} className="icon-directional" />
+                            </a>
+                        </motion.div>
+                    </div>
+                </section>
+            </div>
 
             {/* PRODUCTS */}
             <section className="w-full max-w-[1600px] mx-auto mb-12 px-4 sm:px-0">

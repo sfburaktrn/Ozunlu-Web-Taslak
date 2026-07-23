@@ -7,6 +7,9 @@ import { sitemapRouteConfig } from '@/i18n/sitemapConfig';
 
 const siteUrl = getSiteUrl();
 
+/** Redirect-only / legacy routes — sitemap'te yayınlanmaz */
+const SITEMAP_EXCLUDED: ReadonlySet<AppPathname> = new Set(['/ek-ekipmanlar']);
+
 /** Stable date for last build — updated on each deploy */
 const lastModified = new Date();
 
@@ -14,16 +17,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const entries: MetadataRoute.Sitemap = [];
 
     for (const route of appPathnames) {
-        const config = sitemapRouteConfig[route as AppPathname];
+        if (SITEMAP_EXCLUDED.has(route)) continue;
+
+        const config = sitemapRouteConfig[route];
 
         for (const locale of locales) {
-            const url = `${siteUrl}${getLocalizedPathname(locale, route as AppPathname)}`;
+            const url = `${siteUrl}${getLocalizedPathname(locale, route)}`;
             const languages: Record<string, string> = {};
 
             for (const altLocale of locales) {
-                languages[localeHreflang[altLocale]] = `${siteUrl}${getLocalizedPathname(altLocale as Locale, route as AppPathname)}`;
+                languages[localeHreflang[altLocale]] = `${siteUrl}${getLocalizedPathname(altLocale as Locale, route)}`;
             }
-            languages['x-default'] = `${siteUrl}${getLocalizedPathname('tr', route as AppPathname)}`;
+            languages['x-default'] = `${siteUrl}${getLocalizedPathname('tr', route)}`;
 
             entries.push({
                 url,

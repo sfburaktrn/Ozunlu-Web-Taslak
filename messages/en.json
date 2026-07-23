@@ -14,7 +14,7 @@
     },
     "ekEkipmanlar": {
       "title": "Trailer Spare Parts & Equipment | Original Hydraulic, Axle, Brake Systems – Özünlü",
-      "description": "Original trailer equipment and spare parts supply with Özünlü guarantee. Hydraulic systems, BPW-Özkoç axles, EBS brake kits and LED lighting — wide stock, fast delivery."
+      "description": "Original trailer equipment and spare parts with Özünlü guarantee. Hydraulic systems, BPW-Özkoç axles, EBS brake kits and LED lighting — wide stock, fast delivery."
     },
     "afterSales": {
       "title": "Özünlü After-Sales Services | 24/7 Technical Support, Spare Parts, Authorized Service Network",
@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Cookie Policy | Özünlü Damper",
       "description": "Cookie usage policy for the Özünlü Damper website."
+    },
+    "karlaMucadele": {
+      "title": "Snow Fighting | Özünlü",
+      "description": "Özünlü snow fighting solutions. Coming soon."
     }
   },
   "common": {
@@ -45,7 +49,8 @@
       "satisSonrasi": "After-Sales",
       "iletisim": "Contact",
       "mobileContactQuote": "Contact & Get Quote",
-      "languageMenu": "Language"
+      "languageMenu": "Language",
+      "karlaMucadele": "Snow Fighting"
     },
     "footer": {
       "logoAlt": "Özünlü Damper Logo",
@@ -592,6 +597,13 @@
       "emailPh": "mail@company.com",
       "heardFrom": "How did you hear about us?",
       "heardFromPh": "Google, Social Media, Referral..."
+    }
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Snow Fighting",
+      "subtitle": "Özünlü snow fighting solutions. Coming soon.",
+      "comingSoon": "Content coming soon."
     }
   }
 }

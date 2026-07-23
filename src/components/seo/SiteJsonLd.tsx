@@ -62,6 +62,10 @@ export default function SiteJsonLd({ locale }: Props) {
                     'half-pipe tipper',
                     'BPW axle',
                     'EBS brake system',
+                    'snow fighting',
+                    'karla mücadele',
+                    'trailer spare parts',
+                    'after-sales service',
                 ],
                 hasOfferCatalog: {
                     '@type': 'OfferCatalog',
@@ -89,9 +93,27 @@ export default function SiteJsonLd({ locale }: Props) {
                             '@type': 'Offer',
                             itemOffered: {
                                 '@type': 'Product',
+                                name: 'Karla Mücadele (Snow Fighting)',
+                                description: 'Karla mücadele ekipman çözümleri — içerik yakında.',
+                                url: `${siteUrl}/karla-mucadele`,
+                            },
+                        },
+                        {
+                            '@type': 'Offer',
+                            itemOffered: {
+                                '@type': 'Product',
                                 name: 'Ek Ekipmanlar ve Yedek Parça',
                                 description: 'Hidrolik sistem, dingil, EBS fren ve aydınlatma ekipmanları.',
-                                url: `${siteUrl}/ek-ekipmanlar`,
+                                url: `${siteUrl}/satis-sonrasi#ek-ekipmanlar`,
+                            },
+                        },
+                        {
+                            '@type': 'Offer',
+                            itemOffered: {
+                                '@type': 'Service',
+                                name: 'Satış Sonrası Hizmetler',
+                                description: 'Yetkili servis ağı, teknik destek ve orijinal yedek parça.',
+                                url: `${siteUrl}/satis-sonrasi`,
                             },
                         },
                     ],

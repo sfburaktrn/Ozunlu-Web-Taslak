@@ -37,7 +37,7 @@ export default function Footer() {
     const quickLinks = [
         { href: '/damper' as const, label: tNav('damper') },
         { href: '/yari-romork' as const, label: tNav('yariRomork') },
-        { href: '/ek-ekipmanlar' as const, label: tNav('ekEkipmanlar') },
+        { href: '/karla-mucadele' as const, label: tNav('karlaMucadele') },
         { href: '/satis-sonrasi' as const, label: tNav('satisSonrasi') },
         { href: '/iletisim' as const, label: tNav('iletisim') },
     ];

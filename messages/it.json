@@ -13,8 +13,8 @@
       "description": "Semirimorchi ribaltabili in acciaio ad alta resistenza con assali BPW e Özkoç, frenatura EBS e distribuzione ottimizzata dei carichi. Vasche sicure, leggere e durevoli per movimento terra, miniere e inerti. Richiedi un preventivo."
     },
     "ekEkipmanlar": {
-      "title": "Ricambi e equipaggiamento per rimorchi | Sistemi idraulici, assali e freni originali – Özünlü",
-      "description": "Fornitura di equipaggiamento e ricambi originali per rimorchi con garanzia Özünlü. Sistemi idraulici, assali BPW-Özkoç, kit freni EBS e illuminazione LED — ampio stock, consegna rapida."
+      "title": "Ricambi ed equipaggiamento | Idraulica, assi, freni – Özünlü",
+      "description": "Equipaggiamento e ricambi originali per rimorchi con garanzia Özünlü."
     },
     "afterSales": {
       "title": "Özünlü Assistenza post-vendita | Supporto tecnico 24/7, ricambi, rete di assistenza autorizzata",
@@ -35,6 +35,10 @@
     "legalCookie": {
       "title": "Politica sui cookie | Özünlü Damper",
       "description": "Politica sull'utilizzo dei cookie sul sito web Özünlü Damper."
+    },
+    "karlaMucadele": {
+      "title": "Antineve | Özünlü",
+      "description": "Soluzioni antineve Özünlü. Prossimamente."
     }
   },
   "common": {
@@ -45,7 +49,8 @@
       "satisSonrasi": "Post-vendita",
       "iletisim": "Contatti",
       "mobileContactQuote": "Contatti e preventivo",
-      "languageMenu": "Lingua"
+      "languageMenu": "Lingua",
+      "karlaMucadele": "Antineve"
     },
     "footer": {
       "logoAlt": "Logo Özünlü Damper",
@@ -148,9 +153,9 @@
     },
     "equipmentHero": {
       "category": "Equipaggiamento",
-      "imageAlt": "Özünlü soluzioni di equipaggiamento e ricambi",
-      "titleLine1": "Integrato",
-      "titleLine2": "Soluzioni di equipaggiamento",
+      "imageAlt": "Equipaggiamento e ricambi Özünlü",
+      "titleLine1": "Soluzioni",
+      "titleLine2": "Integrate",
       "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato e consegnato rapidamente da ampio stock con garanzia Özünlü."
     },
     "whyChooseUs": {
@@ -386,9 +391,9 @@
   "ekEkipmanlar": {
     "hero": {
       "badge": "EQUIPAGGIAMENTO",
-      "imageAlt": "Soluzioni di equipaggiamento e ricambi",
-      "titleLine1": "Integrato",
-      "titleLine2": "Soluzioni di equipaggiamento",
+      "imageAlt": "Equipaggiamento e ricambi",
+      "titleLine1": "Soluzioni",
+      "titleLine2": "Integrate",
       "description": "Dai sistemi <strong>idraulici</strong> ai kit freni EBS, dai marchi premium di assali all'illuminazione LED — tutto l'equipaggiamento per rimorchi è originale certificato con garanzia Özünlü e consegna rapida da stock."
     },
     "categories": {
@@ -592,6 +597,13 @@
       "emailPh": "mail@azienda.com",
       "heardFrom": "Come ci hai conosciuto?",
       "heardFromPh": "Google, Social Media, Passaparola..."
+    }
+  },
+  "karlaMucadele": {
+    "hero": {
+      "title": "Antineve",
+      "subtitle": "Soluzioni antineve Özünlü. Prossimamente.",
+      "comingSoon": "Soluzioni antineve Özünlü. Prossimamente."
     }
   }
 }
