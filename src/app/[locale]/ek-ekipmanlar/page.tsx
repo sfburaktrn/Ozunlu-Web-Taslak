@@ -2,16 +2,17 @@
 
 import { useEffect } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter } from '@/i18n/navigation';
+import { getLocalizedPathname } from '@/i18n/pathnames';
+import type { Locale } from '@/i18n/routing';
 
 /** Eski /ek-ekipmanlar → Satış Sonrası (Ek Ekipmanlar bölümü) */
 export default function EkEkipmanlarRedirectPage() {
-    const router = useRouter();
-    const locale = useLocale();
+    const locale = useLocale() as Locale;
 
     useEffect(() => {
-        router.replace({ pathname: '/satis-sonrasi', hash: 'ek-ekipmanlar' });
-    }, [router, locale]);
+        // next-intl router.replace hash kabul etmiyor; tam URL ile yönlendir
+        window.location.replace(`${getLocalizedPathname(locale, '/satis-sonrasi')}#ek-ekipmanlar`);
+    }, [locale]);
 
     return (
         <main className="flex min-h-[50vh] items-center justify-center bg-white pt-[60px]">
