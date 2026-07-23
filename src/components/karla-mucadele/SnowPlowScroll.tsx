@@ -109,7 +109,7 @@ export default function SnowPlowScroll({ snowApi }: Props) {
             >
                 <motion.p
                     style={{ opacity: hintOpacity }}
-                    className="pointer-events-none absolute inset-x-0 top-[14%] text-center text-xs font-semibold uppercase tracking-[0.3em] text-white/55"
+                    className="pointer-events-none absolute inset-x-0 top-[14%] text-center text-xs font-semibold uppercase tracking-[0.3em] text-[#000552]/45"
                 >
                     {t('hint')}
                 </motion.p>
@@ -124,7 +124,7 @@ export default function SnowPlowScroll({ snowApi }: Props) {
                         }}
                         className="max-w-3xl text-center"
                     >
-                        <h2 className="font-[Georgia,'Times_New_Roman',serif] text-[clamp(2.5rem,7.5vw,4.5rem)] font-medium italic leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_28px_rgba(0,0,0,0.45)]">
+                        <h2 className="font-[Georgia,'Times_New_Roman',serif] text-[clamp(2.5rem,7.5vw,4.5rem)] font-medium italic leading-[1.12] tracking-tight text-[#000552]">
                             {t('title')}
                         </h2>
                     </motion.div>
@@ -135,7 +135,7 @@ export default function SnowPlowScroll({ snowApi }: Props) {
                     >
                         <Link
                             href="/iletisim"
-                            className="group inline-flex items-center gap-2 border-b border-white/50 pb-1 text-sm font-medium tracking-wide text-white/90 transition-colors hover:border-white hover:text-white"
+                            className="group inline-flex items-center gap-2 border-b border-[#000552]/35 pb-1 text-sm font-medium tracking-wide text-[#000552]/85 transition-colors hover:border-[#000552] hover:text-[#000552]"
                         >
                             {t('cta')}
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 icon-directional" />

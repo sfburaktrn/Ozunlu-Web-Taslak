@@ -24,16 +24,16 @@ type Spray = {
 };
 
 function createFlake(width: number, height: number, fromTop: boolean): Flake {
-    const r = 2 + Math.random() * 5;
+    const r = 2.8 + Math.random() * 6.5;
     return {
         x: Math.random() * width,
-        y: fromTop ? -14 - Math.random() * 60 : Math.random() * height * 0.55,
+        y: fromTop ? -16 - Math.random() * 70 : Math.random() * height * 0.55,
         r,
-        speedY: 0.55 + Math.random() * 1.25 + r * 0.05,
-        drift: (Math.random() - 0.5) * 0.65,
+        speedY: 0.65 + Math.random() * 1.45 + r * 0.05,
+        drift: (Math.random() - 0.5) * 0.75,
         wobble: Math.random() * Math.PI * 2,
-        wobbleSpeed: 0.01 + Math.random() * 0.02,
-        opacity: 0.5 + Math.random() * 0.45,
+        wobbleSpeed: 0.012 + Math.random() * 0.025,
+        opacity: 0.72 + Math.random() * 0.28,
     };
 }
 
@@ -77,8 +77,8 @@ export default function Snowfall({
         if (!ctx) return;
 
         const COL_W = 4;
-        // Bıçak üstünü geçmesin — viewport’un ~%10’u kadar
-        const MAX_PILE_RATIO = heavySeed ? 0.48 : softSeed ? 0.1 : 0.36;
+        // Alçak ama görünür tepecikler (~%8 viewport, bıçağın altında)
+        const MAX_PILE_RATIO = heavySeed ? 0.48 : softSeed ? 0.08 : 0.36;
         const SETTLE_EVERY = 8;
 
         let width = 0;
@@ -89,7 +89,8 @@ export default function Snowfall({
         let bladeX: number | null = null;
         let lastBladeX: number | null = null;
         let accumulate = accumulateProp;
-        let growth = softSeed ? 0.05 : 1;
+        // Yağarken de hafif birikim görünsün
+        let growth = softSeed ? 0.35 : 1;
         let pileSeeded = false;
         let frame = 0;
         let raf = 0;
@@ -99,13 +100,25 @@ export default function Snowfall({
 
         const flakeCount = () => {
             const area = width * height;
-            const base = Math.round((area / 8500) * density);
-            return Math.min(180, Math.max(55, base));
+            const base = Math.round((area / 6500) * density);
+            return Math.min(240, Math.max(80, base));
         };
 
         const colCount = () => Math.max(1, Math.ceil(width / COL_W));
 
-        const maxHNow = () => height * MAX_PILE_RATIO * (0.06 + 0.94 * growth);
+        // softSeed: başta da tepecik var, scroll ile biraz büyür ama tavan düşük
+        const maxHNow = () =>
+            height * MAX_PILE_RATIO * (softSeed ? 0.55 + 0.45 * growth : 0.06 + 0.94 * growth);
+
+        const hillWave = (i: number) => {
+            // Birkaç frekans → doğal tepecikler
+            return (
+                0.62 +
+                0.22 * Math.sin(i * 0.085) +
+                0.12 * Math.sin(i * 0.19 + 1.2) +
+                0.08 * Math.sin(i * 0.41 + 0.4)
+            );
+        };
 
         const pileAt = (x: number) => {
             const i = Math.max(0, Math.min(pile.length - 1, (x / COL_W) | 0));
@@ -125,22 +138,23 @@ export default function Snowfall({
         };
 
         const spawnSpray = (x: number, y: number, amount: number) => {
-            const n = Math.min(8, Math.max(2, Math.round(amount / 14)));
+            const n = Math.min(22, Math.max(8, Math.round(amount / 6) + 6));
             for (let k = 0; k < n; k++) {
+                const burst = Math.random();
                 spray.push({
-                    x: x + (Math.random() - 0.15) * 14,
-                    y: y - Math.random() * 10,
-                    vx: 0.6 + Math.random() * 2.2,
-                    vy: -0.8 - Math.random() * 2,
-                    r: 1.2 + Math.random() * 2.4,
+                    x: x + (Math.random() - 0.1) * 22,
+                    y: y - Math.random() * 16,
+                    vx: 1.4 + Math.random() * 4.2 + burst * 1.5,
+                    vy: -1.6 - Math.random() * 3.4 - burst * 1.2,
+                    r: 1.8 + Math.random() * 3.8,
                     life: 1,
-                    maxLife: 0.35 + Math.random() * 0.35,
+                    maxLife: 0.45 + Math.random() * 0.55,
                 });
             }
-            if (spray.length > 80) spray.splice(0, spray.length - 80);
+            if (spray.length > 140) spray.splice(0, spray.length - 140);
         };
 
-        /** Bıçak ilerledikçe karı temizle — önde yığılma yok */
+        /** Bıçak ilerledikçe temizle — önünde belirgin ince sırt + sprey */
         const plowAdvance = () => {
             if (bladeX == null || !pile.length) return;
 
@@ -154,7 +168,17 @@ export default function Snowfall({
             if (Math.abs(delta) < 0.35) {
                 for (let i = 0; i < pile.length; i++) {
                     const x = i * COL_W + COL_W * 0.5;
-                    if (x < bladeX + 12) pile[i] *= 0.86;
+                    if (x < bladeX - 10) {
+                        pile[i] = Math.min(pile[i], maxH * 0.06);
+                    } else if (x >= bladeX - 10 && x <= bladeX + 36) {
+                        // Bıçak önünde belirgin ince sırt
+                        const t = (x - (bladeX - 10)) / 46;
+                        pile[i] = Math.min(pile[i], maxH * (0.28 + 0.2 * Math.sin(t * Math.PI)));
+                    }
+                }
+                // Hareket azken de hafif sprey
+                if (frame % 4 === 0) {
+                    spawnSpray(bladeX + 8, height - Math.max(18, maxH * 0.45), maxH * 0.8);
                 }
                 return;
             }
@@ -165,24 +189,27 @@ export default function Snowfall({
 
             for (let i = 0; i < pile.length; i++) {
                 const x = i * COL_W + COL_W * 0.5;
-                if (x >= from - 16 && x <= to + 14) {
+                if (x >= from - 10 && x <= to + 6) {
                     scooped += pile[i];
-                    pile[i] *= 0.05;
-                } else if (x > to && x < to + 70) {
-                    const t = 1 - (x - to) / 70;
-                    pile[i] *= 1 - t * 0.35;
+                    pile[i] = Math.min(pile[i] * 0.08, maxH * 0.05);
+                } else if (x > to && x < to + 56) {
+                    // Bıçağın hemen önünde görünen küçük tepecik
+                    const t = (x - to) / 56;
+                    const front = maxH * (0.32 + 0.22 * Math.sin(t * Math.PI));
+                    pile[i] = Math.min(Math.max(pile[i] * 0.55, front * 0.85), front);
                 }
             }
 
-            if (scooped > 0.3) {
-                spawnSpray(bladeX, height - 22, scooped * 0.4);
+            if (scooped > 0.15) {
+                spawnSpray(bladeX + 6, height - Math.max(18, maxH * 0.5), scooped * 0.85 + 8);
+            } else {
+                spawnSpray(bladeX + 6, height - Math.max(16, maxH * 0.4), 10);
             }
 
             for (let i = 0; i < pile.length; i++) {
                 const x = i * COL_W;
-                if (x < bladeX - 12) {
-                    pile[i] *= 0.9;
-                    if (pile[i] < 2) pile[i] = Math.min(pile[i], maxH * 0.025);
+                if (x < bladeX - 14) {
+                    pile[i] = Math.min(pile[i] * 0.92, maxH * 0.07);
                 }
             }
 
@@ -214,7 +241,7 @@ export default function Snowfall({
                 const r = pile[i < pile.length - 1 ? i + 1 : i];
                 let v = c * 0.78 + l * 0.11 + r * 0.11;
                 if (bladeX != null && i * COL_W < bladeX - 20) {
-                    v = Math.min(v, maxH * 0.05);
+                    v = Math.min(v, maxH * 0.07);
                 }
                 next[i] = Math.min(maxH, v < 0 ? 0 : v);
             }
@@ -225,7 +252,7 @@ export default function Snowfall({
             if (!accumulate || !pile.length) return;
             const last = pile.length - 1;
 
-            // Fotoğraftaki kar zeminiyle birleşsin: sert gölge/kenar yok, yumuşak yüzey
+            // Kirli beyaz — saf beyaz arka planda belli olsun
             ctx.save();
             ctx.beginPath();
             ctx.moveTo(0, height + 2);
@@ -240,20 +267,29 @@ export default function Snowfall({
             ctx.lineTo(width, height + 2);
             ctx.closePath();
 
-            // Üst kenarı soft blur ile foto karına karıştır
-            ctx.filter = 'blur(1.2px)';
+            ctx.filter = 'blur(0.8px)';
             const g = ctx.createLinearGradient(0, height - height * MAX_PILE_RATIO, 0, height);
-            g.addColorStop(0, 'rgba(255,255,255,0.5)');
-            g.addColorStop(0.4, 'rgba(255,255,255,0.88)');
-            g.addColorStop(0.8, 'rgba(255,255,255,0.96)');
-            g.addColorStop(1, 'rgba(255,255,255,1)');
+            g.addColorStop(0, 'rgba(198, 208, 220, 0.72)');
+            g.addColorStop(0.35, 'rgba(214, 222, 232, 0.9)');
+            g.addColorStop(0.7, 'rgba(226, 232, 240, 0.96)');
+            g.addColorStop(1, 'rgba(236, 240, 246, 1)');
             ctx.fillStyle = g;
             ctx.fill();
 
-            ctx.filter = 'blur(2.5px)';
-            ctx.globalAlpha = 0.4;
-            ctx.fillStyle = 'rgba(255,255,255,0.85)';
-            ctx.fill();
+            // Üst kenarda hafif gölge — kontrast
+            ctx.filter = 'blur(1.5px)';
+            ctx.globalAlpha = 0.35;
+            ctx.strokeStyle = 'rgba(160, 174, 192, 0.55)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, height - pile[0]);
+            for (let i = 1; i < pile.length; i++) {
+                const prev = height - pile[i - 1];
+                const curr = height - pile[i];
+                const cpx = (i - 0.5) * COL_W;
+                ctx.quadraticCurveTo(cpx, (prev + curr) / 2, i * COL_W, curr);
+            }
+            ctx.stroke();
             ctx.restore();
         };
 
@@ -291,12 +327,10 @@ export default function Snowfall({
             }
 
             if (accumulate && pile.length && !pileSeeded) {
-                // Girişte çok düşük — scroll ile büyür
                 const maxH = maxHNow();
-                const deep = softSeed ? 0.4 : heavySeed ? 0.72 : 0.48;
+                const deep = softSeed ? 0.78 : heavySeed ? 0.72 : 0.48;
                 for (let i = 0; i < pile.length; i++) {
-                    const wave = 0.7 + 0.3 * Math.sin(i * 0.11) + 0.12 * Math.sin(i * 0.37);
-                    pile[i] = maxH * Math.min(1, deep * wave);
+                    pile[i] = maxH * Math.min(1, deep * hillWave(i));
                 }
                 pileSeeded = true;
                 lastBladeX = null;
@@ -307,10 +341,9 @@ export default function Snowfall({
             if (!softSeed || !accumulate || !pile.length) return;
             const maxH = maxHNow();
             for (let i = 0; i < pile.length; i++) {
-                const wave = 0.72 + 0.28 * Math.sin(i * 0.11) + 0.1 * Math.sin(i * 0.37);
-                const target = maxH * (0.55 + 0.45 * wave);
+                const target = maxH * Math.min(1, 0.7 + 0.3 * hillWave(i));
                 if (pile[i] < target) {
-                    pile[i] += (target - pile[i]) * 0.045;
+                    pile[i] += (target - pile[i]) * 0.04;
                 } else if (pile[i] > maxH) {
                     pile[i] = maxH;
                 }
@@ -350,33 +383,37 @@ export default function Snowfall({
                 }
 
                 ctx.beginPath();
-                ctx.arc(f.x, f.y, f.r * 1.25, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255,255,255,${f.opacity * 0.28})`;
+                ctx.arc(f.x, f.y, f.r * 1.55, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(170,184,204,${f.opacity * 0.28})`;
                 ctx.fill();
                 ctx.beginPath();
                 ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255,255,255,${f.opacity})`;
+                ctx.fillStyle = `rgba(248,250,252,${f.opacity})`;
                 ctx.fill();
             }
 
             drawPile();
 
-            // Küreme spreyi
+            // Küreme spreyi — daha belirgin
             for (let i = spray.length - 1; i >= 0; i--) {
                 const s = spray[i];
-                s.life -= 0.028;
+                s.life -= 0.022;
                 s.x += s.vx;
                 s.y += s.vy;
-                s.vy += 0.12;
-                s.vx *= 0.99;
+                s.vy += 0.14;
+                s.vx *= 0.985;
                 if (s.life <= 0) {
                     spray.splice(i, 1);
                     continue;
                 }
-                const a = (s.life / s.maxLife) * 0.85;
+                const a = (s.life / s.maxLife) * 0.95;
+                ctx.beginPath();
+                ctx.arc(s.x, s.y, s.r * 1.35, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(180,192,208,${a * 0.35})`;
+                ctx.fill();
                 ctx.beginPath();
                 ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(255,255,255,${a})`;
+                ctx.fillStyle = `rgba(245,248,252,${a})`;
                 ctx.fill();
             }
 

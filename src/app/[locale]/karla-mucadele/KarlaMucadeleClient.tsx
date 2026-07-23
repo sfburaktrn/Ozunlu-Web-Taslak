@@ -24,8 +24,8 @@ export default function KarlaMucadeleClient() {
                 ? plow.offsetTop + Math.min(plow.offsetHeight * 0.25, window.innerHeight)
                 : document.documentElement.scrollHeight * 0.65;
             const g = Math.min(1, Math.max(0, window.scrollY / Math.max(1, targetY)));
-            // Ease-in: başta yavaş
-            const eased = g * g;
+            // Başta da birikim var; aşağı indikçe hafif büyür (tavan düşük)
+            const eased = 0.35 + 0.65 * (g * g);
             snowApi.current?.setGrowth(eased);
 
             // Footer viewport’a girer girmez karı kes (plow yüksekliği yanıltmasın)
@@ -74,7 +74,7 @@ export default function KarlaMucadeleClient() {
                     apiRef={snowApi}
                     accumulate
                     softSeed
-                    density={1.2}
+                    density={1.55}
                     className="h-full w-full"
                 />
             </div>
