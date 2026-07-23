@@ -37,8 +37,8 @@
       "description": "Özünlü Damper web sitesi çerez kullanım politikası."
     },
     "karlaMucadele": {
-      "title": "Karla Mücadele | Özünlü",
-      "description": "Özünlü karla mücadele çözümleri. Yakında."
+      "title": "Karla Mücadele Araçları | Ön Bıçak, Yan Bıçak, Tuz Serici – Özünlü",
+      "description": "Özünlü karla mücadele üst yapıları: ön kar bıçağı, yan bıçak ve tuz/kum serici sistemleri. Belediye, karayolları ve ağır kış operasyonları için dayanıklı, sahaya hazır çözümler. Teklif alın."
     }
   },
   "common": {
@@ -601,9 +601,57 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Karla Mücadele",
-      "subtitle": "Özünlü karla mücadele çözümleri. Yakında.",
+      "subtitle": "Ön bıçak, yan bıçak ve tuz serici ile kış yollarını açık tutan üst yapı çözümleri. Sahaya hazır, operasyonel, Özünlü güvencesiyle.",
       "comingSoon": "İçerik yakında eklenecek."
+    },
+    "snowScroll": {
+      "hint": "Kaydırarak yolu açın",
+      "title": "Kar birikir. Biz temizleriz.",
+      "subtitle": "Özünlü karla mücadele aracı, yoğun kış koşullarında yolu açmak için tasarlandı.",
+      "cta": "İletişime geçin",
+      "truckAlt": "Özünlü karla mücadele aracı — ön bıçak, yan bıçak ve tuz serici"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Ön bıçak",
+        "title": "Güçlü ön küreme, net görüş hattı",
+        "body": "Geniş ön kar bıçağı ile ana şeridi hızlıca açın. Hidrolik kaldırma ve açı ayarı sayesinde farklı kar yoğunluklarında kontrollü küreme; kış operasyonunda güvenli ve verimli sürüş.",
+        "imageAlt": "Özünlü turuncu karla mücadele aracı yan görünüm — ön bıçak ve yan bıçak",
+        "points": [
+          "Hidrolik kaldırma ve açı kontrolü",
+          "Geniş küreme hattı",
+          "Operasyonel görüş ve güvenlik"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Tuz / kum serici",
+        "title": "Serici ile yol güvenliğini tamamlayın",
+        "body": "Küreme sonrası tuz veya kum serimi ile buzlanmayı önleyin. Kapalı bunker, homojen dağıtım ve ağır hizmet koşullarına uygun gövde — filo operasyonlarında kesintisiz kış bakımı.",
+        "imageAlt": "Özünlü karla mücadele aracı arka tuz serici ünitesi",
+        "points": [
+          "Kapalı bunker koruması",
+          "Homojen serim dağılımı",
+          "Ağır hizmet gövde dayanımı"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Filo & saha",
+        "title": "Belediye ve karayolu operasyonları için",
+        "body": "Karayolları ve belediye filolarının beklediği görünürlük, dayanım ve servis kolaylığı. Özünlü olarak damper geleneğimizi karla mücadele üst yapılarına taşıyoruz — üretimin her adımında sahaya uygun mühendislik.",
+        "imageAlt": "Özünlü karla mücadele araç filosu — ön bıçak detayı",
+        "points": [
+          "Yüksek görünürlük turuncu gövde",
+          "Servis ve bakım kolaylığı",
+          "Filo ölçeğinde üretim"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Teklif",
+      "title": "Kış filosunuzu birlikte planlayalım",
+      "description": "İhtiyacınıza göre ön bıçak, yan bıçak ve serici konfigürasyonu için Özünlü ekibiyle iletişime geçin."
     }
   }
 }

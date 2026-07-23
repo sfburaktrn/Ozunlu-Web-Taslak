@@ -137,3 +137,12 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Kaynak medya / geçici (optimize edilmişler public/ altında)
+tmp-karla/
+DJI_*.mp4
+MVI_*.mp4
+IMG_*.JPG
+IMG_*.jpg
+"MVI_8644 (online-video-cutter.com).mp4"
+"DJI_0791 (1).mp4"

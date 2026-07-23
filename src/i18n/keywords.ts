@@ -17,7 +17,7 @@ export const pageKeywords: Record<Locale, Record<PageSeoKey, string>> = {
         home: 'Özünlü Damper, damper üreticisi, Hardox damper, damperli yarı römork, dorse üreticisi, üst yapı imalatı, ağır ticari araç, onaylı üst yapı, karoser, İstanbul damper, kamyon damper, since 1977',
         damper: 'damper, Hardox damper, kamyon damperi, havuz damper, küvet damper, half-pipe damper, hafriyat damperi, hidrolik damper, şantiye damperi, maden damperi, damper üst yapı, damper fiyat, damper teklif',
         yariRomork: 'yarı römork, damperli dorse, küvet damper treyler, Hardox dorse, havuz dorse, hafriyat dorsesi, hafif dorse, BPW dingil, Özkoç dingil, EBS fren, ağır yük taşımacılığı, yarı römork üreticisi, dorse fiyat',
-        karlaMucadele: 'karla mücadele, kar küreme, snow fighting, Özünlü',
+        karlaMucadele: 'karla mücadele, kar küreme aracı, ön kar bıçağı, yan bıçak, tuz serici, kış bakım aracı, Özünlü',
         ekEkipmanlar: 'dorse yedek parça, hidrolik sistem, dingil, fren sistemi, EBS, LED aydınlatma, BPW, Özkoç, orijinal parça',
         afterSales: 'satış sonrası hizmet, yetkili servis, yedek parça, teknik destek, Özünlü servis, 7/24 destek',
         contact: 'Özünlü iletişim, damper teklif, satış, ihracat, İstanbul, Sultangazi',

@@ -1,5 +1,8 @@
 type LenisLike = {
-    scrollTo: (target: number | string, options?: { duration?: number }) => void;
+    scrollTo: (
+        target: number | string,
+        options?: { duration?: number; immediate?: boolean },
+    ) => void;
     destroy: () => void;
 };
 
@@ -15,4 +18,19 @@ export function scrollToTop() {
         return;
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+export function scrollToY(
+    y: number,
+    options?: { duration?: number; immediate?: boolean },
+) {
+    if (lenisInstance) {
+        lenisInstance.scrollTo(y, options);
+        return;
+    }
+    if (options?.immediate) {
+        window.scrollTo(0, y);
+        return;
+    }
+    window.scrollTo({ top: y, behavior: 'smooth' });
 }

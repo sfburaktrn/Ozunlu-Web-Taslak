@@ -94,7 +94,8 @@ export default function SiteJsonLd({ locale }: Props) {
                             itemOffered: {
                                 '@type': 'Product',
                                 name: 'Karla Mücadele (Snow Fighting)',
-                                description: 'Karla mücadele ekipman çözümleri — içerik yakında.',
+                                description:
+                                    'Ön kar bıçağı, yan bıçak ve tuz/kum serici ile donatılmış karla mücadele üst yapıları.',
                                 url: `${siteUrl}/karla-mucadele`,
                             },
                         },
