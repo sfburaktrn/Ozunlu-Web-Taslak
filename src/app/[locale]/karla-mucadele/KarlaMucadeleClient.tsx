@@ -27,6 +27,9 @@ export default function KarlaMucadeleClient() {
                 imageLeft
                 tone="frost"
             />
+
+            <KarlaFinale />
+
             <KarlaImageText
                 imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-arka-serici.webp"
                 imageAlt={t('sections.spreader.imageAlt')}
@@ -41,9 +44,8 @@ export default function KarlaMucadeleClient() {
                 imageLeft={false}
                 tone="glacier"
             />
-            <KarlaVideoPoster />
 
-            <KarlaFinale />
+            <KarlaVideoPoster />
         </main>
     );
 }

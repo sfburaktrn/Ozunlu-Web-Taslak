@@ -30,22 +30,23 @@ export default function KarlaVideoPoster() {
         restDelta: 0.001,
     });
 
-    const stageScale = useTransform(smooth, [0, 0.18, 0.82, 1], [0.86, 1, 1, 0.94]);
-    const stageRadius = useTransform(
-        smooth,
-        [0, 0.18, 0.82, 1],
-        ['1.75rem', '0rem', '0rem', '1.25rem'],
-    );
+    // Girişte kart gibi büyür; çıkışta beyaza soft fade yok — tam kalır
+    const stageScale = useTransform(smooth, [0, 0.18, 1], [0.86, 1, 1]);
+    const stageRadius = useTransform(smooth, [0, 0.18, 1], ['1.75rem', '0rem', '0rem']);
     const videoScale = useTransform(smooth, [0.05, 0.92], [1, 1.28]);
     const copyOpacity = useTransform(smooth, [0, 0.1, 0.55, 0.72], [1, 1, 1, 0]);
     const copyY = useTransform(smooth, [0.55, 0.72], [0, -24]);
+    const stagePad = useTransform(smooth, [0, 0.18, 1], [12, 0, 0]);
 
     useEffect(() => {
         const video = videoRef.current;
-        if (!video) return;
+        const root = containerRef.current;
+        if (!video || !root) return;
         video.defaultMuted = true;
         video.muted = true;
         video.setAttribute('playsinline', '');
+        video.setAttribute('muted', '');
+        video.setAttribute('webkit-playsinline', '');
 
         const pickSrc = () => {
             const mobile = window.matchMedia('(max-width: 767px)').matches;
@@ -58,21 +59,27 @@ export default function KarlaVideoPoster() {
         pickSrc();
 
         const play = () => {
+            video.muted = true;
             video.play().catch(() => undefined);
         };
 
+        // Sticky section görünürken oynat (video elementi transform’da IO kaçırabiliyor)
         const io = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) play();
                 else video.pause();
             },
-            { threshold: 0.25 },
+            { root: null, threshold: 0, rootMargin: '0px' },
         );
-        io.observe(video);
+        io.observe(root);
         video.addEventListener('canplay', play);
+        play();
 
         const mq = window.matchMedia('(max-width: 767px)');
-        const onMq = () => pickSrc();
+        const onMq = () => {
+            pickSrc();
+            play();
+        };
         mq.addEventListener('change', onMq);
 
         return () => {
@@ -85,10 +92,13 @@ export default function KarlaVideoPoster() {
     return (
         <section id="karla-video-poster" className="relative bg-white">
             <div ref={containerRef} className="relative h-[200vh]">
-                <div className="sticky top-0 flex h-[100svh] w-full items-center justify-center overflow-hidden px-3 sm:px-4 md:px-6">
+                <motion.div
+                    style={{ paddingLeft: stagePad, paddingRight: stagePad }}
+                    className="sticky top-0 flex h-[100svh] w-full items-center justify-center overflow-hidden"
+                >
                     <motion.div
                         style={{ scale: stageScale, borderRadius: stageRadius }}
-                        className="relative h-[min(100%,92svh)] w-full overflow-hidden bg-black shadow-[0_24px_60px_rgba(0,5,82,0.18)] will-change-transform md:h-full"
+                        className="relative h-full w-full overflow-hidden bg-black shadow-[0_24px_60px_rgba(0,5,82,0.18)] will-change-transform"
                     >
                         <motion.div
                             className="absolute inset-0"
@@ -98,26 +108,18 @@ export default function KarlaVideoPoster() {
                                 ref={videoRef}
                                 className="absolute inset-0 h-full w-full object-cover"
                                 poster={POSTER_IMAGE}
+                                autoPlay
                                 muted
                                 loop
                                 playsInline
-                                preload="metadata"
+                                preload="auto"
                                 aria-hidden
                             />
                         </motion.div>
 
                         <div
                             aria-hidden
-                            className="absolute inset-0 bg-gradient-to-b from-[#000552]/35 via-[#0a1840]/18 to-[#000552]/40 md:bg-gradient-to-r md:from-[#000552]/45 md:via-[#0c1a42]/20 md:to-[#000552]/12"
-                        />
-                        {/* Çok hafif metalik lacivert parıltı */}
-                        <div
-                            aria-hidden
-                            className="pointer-events-none absolute inset-0 bg-[linear-gradient(125deg,rgba(170,195,230,0.14)_0%,transparent_38%,rgba(0,5,82,0.08)_72%,transparent_100%)] mix-blend-soft-light"
-                        />
-                        <div
-                            aria-hidden
-                            className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.08]"
+                            className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/15 md:bg-gradient-to-r md:from-black/45 md:via-black/10 md:to-transparent"
                         />
 
                         <motion.div
@@ -143,14 +145,8 @@ export default function KarlaVideoPoster() {
                             </Link>
                         </motion.div>
                     </motion.div>
-                </div>
+                </motion.div>
             </div>
-
-            {/* Sticky bittikten sonra finale’ye uzayan yumuşak köprü */}
-            <div
-                aria-hidden
-                className="pointer-events-none relative -mt-16 h-20 bg-gradient-to-b from-transparent to-white md:-mt-24 md:h-28"
-            />
         </section>
     );
 }
