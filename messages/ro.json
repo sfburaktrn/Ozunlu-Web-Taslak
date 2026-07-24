@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "VITEZĂ ÎN PRODUCȚIE",
-      "titleLine2": "DURABILITATE PE TEREN",
+      "titleLine1": "<accent>VITEZĂ</accent> ÎN PRODUCȚIE",
+      "titleLine2": "<accentLate>DURABILITATE</accentLate> PE TEREN",
       "subtitle": "Producție rapidă, suprastructuri de lungă durată și performanță dovedită pe teren",
       "ctaDamper": "Ofertă basculantă",
       "ctaYariRomork": "Ofertă semiremorcă",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Deszăpezire",
-      "subtitle": "Suprastructuri care mențin drumurile de iarnă deschise cu lamă față, lamă laterală și împrăștiător. Gata de teren, operaționale, cu fiabilitatea Özünlü.",
+      "subtitle": "Suprastructuri care mențin drumurile de iarnă deschise cu lamă față, lamă laterală și împrăștiător. Gata de teren, operaționale, cu fiabilitatea <ozunlu></ozunlu>.",
       "comingSoon": "Conținut în curând."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Lamă față",
         "title": "Curățare frontală puternică, vizibilitate clară",
         "body": "Deschideți rapid banda principală cu o lamă frontală lată. Ridicare hidraulică și reglaj unghi pentru curățare controlată la densități diferite de zăpadă — operațiuni de iarnă mai sigure și eficiente.",
-        "imageAlt": "Vehicul de deszăpezire portocaliu Özünlü vedere laterală — lame față și laterală",
+        "imageAlt": "Vehicul de deszăpezire Özünlü vedere frontală — lamă față",
         "points": [
           "Ridicare hidraulică și control unghi",
           "Bandă largă de curățare",
@@ -636,7 +636,7 @@
         "eyebrow": "Împrăștiător sare / nisip",
         "title": "Completați siguranța rutieră cu împrăștierea",
         "body": "Preveniți ghețușul după curățare prin împrăștiere de sare sau nisip. Buncăr închis, distribuție omogenă și caroserie pentru uz greu — întreținere de iarnă neîntreruptă pentru flote.",
-        "imageAlt": "Unitate împrăștiător sare spate vehicul deszăpezire Özünlü",
+        "imageAlt": "Vehicul de deszăpezire Özünlü vedere spate — buncăr împrăștiător sare / nisip",
         "points": [
           "Protecție buncăr închis",
           "Distribuție omogenă",

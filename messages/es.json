@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "VELOCIDAD EN PRODUCCIÓN",
-      "titleLine2": "DURABILIDAD EN CAMPO",
+      "titleLine1": "<accent>VELOCIDAD</accent> EN PRODUCCIÓN",
+      "titleLine2": "<accentLate>DURABILIDAD</accentLate> EN CAMPO",
       "subtitle": "Producción rápida, superestructuras duraderas y rendimiento probado en campo",
       "ctaDamper": "Presupuesto volquete",
       "ctaYariRomork": "Presupuesto semirremolque",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Quitanieves",
-      "subtitle": "Superestructuras que mantienen abiertas las carreteras en invierno con cuchilla frontal, lateral y esparcidor. Listas para el terreno, operativas, con la fiabilidad Özünlü.",
+      "subtitle": "Superestructuras que mantienen abiertas las carreteras en invierno con cuchilla frontal, lateral y esparcidor. Listas para el terreno, operativas, con la fiabilidad <ozunlu></ozunlu>.",
       "comingSoon": "Contenido próximamente."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Cuchilla frontal",
         "title": "Despeje frontal potente, línea de visión clara",
         "body": "Abra el carril principal rápidamente con una amplia cuchilla frontal. Elevación hidráulica y ajuste de ángulo permiten un despeje controlado según la densidad de nieve — operaciones invernales más seguras y eficientes.",
-        "imageAlt": "Vehículo quitanieves naranja Özünlü vista lateral — cuchillas frontal y lateral",
+        "imageAlt": "Vehículo quitanieves Özünlü vista frontal — cuchilla frontal",
         "points": [
           "Elevación hidráulica y control de ángulo",
           "Amplia franja de despeje",
@@ -636,7 +636,7 @@
         "eyebrow": "Esparcidor sal / arena",
         "title": "Complete la seguridad vial con el esparcido",
         "body": "Prevenga el hielo tras el despeje con esparcido de sal o arena. Tolva cerrada, distribución homogénea y carrocería de servicio pesado — mantenimiento invernal continuo para flotas.",
-        "imageAlt": "Unidad esparcidora de sal trasera del vehículo quitanieves Özünlü",
+        "imageAlt": "Vehículo quitanieves Özünlü vista trasera — tolva esparcidor sal / arena",
         "points": [
           "Protección de tolva cerrada",
           "Distribución homogénea",

@@ -83,15 +83,12 @@ export default function KarlaVideoPoster() {
     }, []);
 
     return (
-        <section
-            id="karla-video-poster"
-            className="relative bg-[linear-gradient(180deg,#1a2438_0%,#222c42_50%,#1a2438_100%)]"
-        >
+        <section id="karla-video-poster" className="relative bg-white">
             <div ref={containerRef} className="relative h-[200vh]">
-                <div className="sticky top-0 flex h-[100svh] w-full items-center justify-center overflow-hidden px-0">
+                <div className="sticky top-0 flex h-[100svh] w-full items-center justify-center overflow-hidden px-3 sm:px-4 md:px-6">
                     <motion.div
                         style={{ scale: stageScale, borderRadius: stageRadius }}
-                        className="relative h-full w-full overflow-hidden bg-black will-change-transform"
+                        className="relative h-[min(100%,92svh)] w-full overflow-hidden bg-black shadow-[0_24px_60px_rgba(0,5,82,0.18)] will-change-transform md:h-full"
                     >
                         <motion.div
                             className="absolute inset-0"
@@ -111,7 +108,16 @@ export default function KarlaVideoPoster() {
 
                         <div
                             aria-hidden
-                            className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/45 md:bg-gradient-to-r md:from-black/50 md:via-black/20 md:to-black/15"
+                            className="absolute inset-0 bg-gradient-to-b from-[#000552]/35 via-[#0a1840]/18 to-[#000552]/40 md:bg-gradient-to-r md:from-[#000552]/45 md:via-[#0c1a42]/20 md:to-[#000552]/12"
+                        />
+                        {/* Çok hafif metalik lacivert parıltı */}
+                        <div
+                            aria-hidden
+                            className="pointer-events-none absolute inset-0 bg-[linear-gradient(125deg,rgba(170,195,230,0.14)_0%,transparent_38%,rgba(0,5,82,0.08)_72%,transparent_100%)] mix-blend-soft-light"
+                        />
+                        <div
+                            aria-hidden
+                            className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.08]"
                         />
 
                         <motion.div
@@ -139,6 +145,12 @@ export default function KarlaVideoPoster() {
                     </motion.div>
                 </div>
             </div>
+
+            {/* Sticky bittikten sonra finale’ye uzayan yumuşak köprü */}
+            <div
+                aria-hidden
+                className="pointer-events-none relative -mt-16 h-20 bg-gradient-to-b from-transparent to-white md:-mt-24 md:h-28"
+            />
         </section>
     );
 }

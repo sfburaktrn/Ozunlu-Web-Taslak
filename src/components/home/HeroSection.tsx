@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import HeroAccentUnderline from '@/components/common/HeroAccentUnderline';
 import { defaultRichTextHandlers } from '@/i18n/richText';
 import { Link } from '@/i18n/navigation';
 
@@ -10,6 +11,15 @@ const DESKTOP_POSTER = '/banner-hero-poster.webp';
 const MOBILE_POSTER = '/banner-hero-poster-mobile.webp';
 const DESKTOP_VIDEO = '/banner-video-new-opt.mp4';
 const MOBILE_VIDEO = '/banner-video-mobile.mp4';
+
+const heroTitleHandlers = {
+    accent: (chunks: ReactNode) => (
+        <HeroAccentUnderline delay="first">{chunks}</HeroAccentUnderline>
+    ),
+    accentLate: (chunks: ReactNode) => (
+        <HeroAccentUnderline delay="second">{chunks}</HeroAccentUnderline>
+    ),
+};
 
 export default function HeroSection() {
     const t = useTranslations('home.hero');
@@ -91,8 +101,9 @@ export default function HeroSection() {
             <div className="relative z-10 flex h-full min-h-[640px] w-full flex-col items-center justify-center px-4 pt-16 pb-24 text-center sm:px-6 [@media(orientation:landscape)_and_(max-height:500px)]:min-h-0 [@media(orientation:landscape)_and_(max-height:500px)]:px-6 [@media(orientation:landscape)_and_(max-height:500px)]:pt-12 [@media(orientation:landscape)_and_(max-height:500px)]:pb-8">
                 <div className="hero-fade-up w-full max-w-[min(100%,56rem)]">
                     <h1 className="mb-4 text-[clamp(2.35rem,11vw,4.5rem)] font-black uppercase leading-[1.02] tracking-tighter text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.75)] md:mb-6 [@media(orientation:landscape)_and_(max-height:500px)]:mb-2 [@media(orientation:landscape)_and_(max-height:500px)]:text-[clamp(1.25rem,8.5vh,2.1rem)] [@media(orientation:landscape)_and_(max-height:500px)]:leading-[1.15] [@media(orientation:landscape)_and_(max-height:500px)]:tracking-tight">
-                        {t('titleLine1')} <br />
-                        <span className="text-white">{t('titleLine2')}</span>
+                        {t.rich('titleLine1', heroTitleHandlers)}
+                        <br />
+                        {t.rich('titleLine2', heroTitleHandlers)}
                     </h1>
                 </div>
 

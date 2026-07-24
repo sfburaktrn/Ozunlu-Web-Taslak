@@ -14,7 +14,7 @@ export default function KarlaMucadeleClient() {
             <KarlaHero />
 
             <KarlaImageText
-                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-yan-gorunum.webp"
+                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-on-kureme.webp"
                 imageAlt={t('sections.front.imageAlt')}
                 eyebrow={t('sections.front.eyebrow')}
                 title={t('sections.front.title')}
@@ -25,10 +25,10 @@ export default function KarlaMucadeleClient() {
                     t('sections.front.points.2'),
                 ]}
                 imageLeft
-                tone="dusk"
+                tone="frost"
             />
             <KarlaImageText
-                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-tuz-serici.webp"
+                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-arka-serici.webp"
                 imageAlt={t('sections.spreader.imageAlt')}
                 eyebrow={t('sections.spreader.eyebrow')}
                 title={t('sections.spreader.title')}
@@ -39,23 +39,9 @@ export default function KarlaMucadeleClient() {
                     t('sections.spreader.points.2'),
                 ]}
                 imageLeft={false}
-                tone="steel"
+                tone="glacier"
             />
             <KarlaVideoPoster />
-            <KarlaImageText
-                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-on-bicak.webp"
-                imageAlt={t('sections.fleet.imageAlt')}
-                eyebrow={t('sections.fleet.eyebrow')}
-                title={t('sections.fleet.title')}
-                body={t('sections.fleet.body')}
-                points={[
-                    t('sections.fleet.points.0'),
-                    t('sections.fleet.points.1'),
-                    t('sections.fleet.points.2'),
-                ]}
-                imageLeft
-                tone="night"
-            />
 
             <KarlaFinale />
         </main>

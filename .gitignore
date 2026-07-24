@@ -140,9 +140,13 @@ vite.config.ts.timestamp-*
 
 # Kaynak medya / geçici (optimize edilmişler public/ altında)
 tmp-karla/
+tmp-karla-*.jpg
 DJI_*.mp4
 MVI_*.mp4
 IMG_*.JPG
 IMG_*.jpg
 "MVI_8644 (online-video-cutter.com).mp4"
 "DJI_0791 (1).mp4"
+"kar küreme 1.mp4"
+"Kar küreme *.png"
+"Kar küreme *.PNG"

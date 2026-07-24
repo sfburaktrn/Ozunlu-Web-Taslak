@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "GESCHWINDIGKEIT IN DER PRODUKTION",
-      "titleLine2": "BESTÄNDIGKEIT IM EINSATZ",
+      "titleLine1": "<accent>GESCHWINDIGKEIT</accent> IN DER PRODUKTION",
+      "titleLine2": "<accentLate>BESTÄNDIGKEIT</accentLate> IM EINSATZ",
       "subtitle": "Schnelle Produktion, langlebige Aufbauten und bewährte Leistung im Einsatz",
       "ctaDamper": "Kipper-Angebot",
       "ctaYariRomork": "Sattelanhänger-Angebot",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Winterdienst",
-      "subtitle": "Aufbauten, die Winterstraßen mit Frontschild, Seitenschild und Streuer offen halten. Einsatzbereit, betriebsstark — mit Özünlü-Zuverlässigkeit.",
+      "subtitle": "Aufbauten, die Winterstraßen mit Frontschild, Seitenschild und Streuer offen halten. Einsatzbereit, betriebsstark — mit <ozunlu></ozunlu>-Zuverlässigkeit.",
       "comingSoon": "Inhalt folgt in Kürze."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Frontschild",
         "title": "Starke Fronträumung, klare Sichtlinie",
         "body": "Öffnen Sie die Hauptspur schnell mit einem breiten Frontschneeschild. Hydraulisches Heben und Winkelverstellung ermöglichen kontrolliertes Räumen bei unterschiedlicher Schneedichte — sicherer und effizienter Winterbetrieb.",
-        "imageAlt": "Özünlü orangefarbenes Winterdienstfahrzeug Seitenansicht — Front- und Seitenschild",
+        "imageAlt": "Özünlü Winterdienstfahrzeug Frontansicht — Frontschneeschild",
         "points": [
           "Hydraulisches Heben und Winkelsteuerung",
           "Breite Räumbahn",
@@ -636,7 +636,7 @@
         "eyebrow": "Salz- / Sandstreuer",
         "title": "Straßensicherheit mit Streuen vervollständigen",
         "body": "Verhindern Sie Vereisung nach dem Räumen durch Salz- oder Sandstreuung. Geschlossener Bunker, gleichmäßige Verteilung und Schwerlastgehäuse — unterbrechungsfreier Winterdienst für Flotten.",
-        "imageAlt": "Özünlü Winterdienstfahrzeug hintere Salzstreueinheit",
+        "imageAlt": "Özünlü Winterdienstfahrzeug Heckansicht — Salz- / Sandstreuer-Bunker",
         "points": [
           "Geschützter Bunker",
           "Gleichmäßige Streuverteilung",

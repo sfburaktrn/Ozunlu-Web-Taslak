@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "ÜRETİMDE HIZ",
-      "titleLine2": "SAHADA DAYANIKLILIK",
+      "titleLine1": "ÜRETİMDE <accent>HIZ</accent>",
+      "titleLine2": "SAHADA <accentLate>DAYANIKLILIK</accentLate>",
       "subtitle": "Hızlı <strong>üretim</strong>, uzun ömürlü <strong>üst yapı</strong> çözümleri ve sahada güven veren performans",
       "ctaDamper": "Damper Teklifi",
       "ctaYariRomork": "Yarı Römork Teklifi",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Karla Mücadele",
-      "subtitle": "Ön bıçak, yan bıçak ve tuz serici ile kış yollarını açık tutan üst yapı çözümleri. Sahaya hazır, operasyonel, Özünlü güvencesiyle.",
+      "subtitle": "Ön bıçak, yan bıçak ve tuz serici ile kış yollarını açık tutan üst yapı çözümleri. Sahaya hazır, operasyonel, <ozunlu></ozunlu> güvencesiyle.",
       "comingSoon": "İçerik yakında eklenecek."
     },
     "finale": {
@@ -612,7 +612,11 @@
       "line2": "Biz temizleriz.",
       "title": "Kar birikir. Biz temizleriz.",
       "subtitle": "Belediye ve karayolu filoları için ön bıçak, yan bıçak ve serici — sahaya hazır, ölçülü mühendislik.",
-      "pillars": ["Ön bıçak", "Yan bıçak", "Tuz / kum serici"],
+      "pillars": [
+        "Ön bıçak",
+        "Yan bıçak",
+        "Tuz / kum serici"
+      ],
       "cta": "İletişime geçin",
       "truckAlt": "Özünlü karla mücadele aracı — ön bıçak, yan bıçak ve tuz serici"
     },
@@ -621,7 +625,7 @@
         "eyebrow": "Ön bıçak",
         "title": "Güçlü ön küreme, net görüş hattı",
         "body": "Geniş ön kar bıçağı ile ana şeridi hızlıca açın. Hidrolik kaldırma ve açı ayarı sayesinde farklı kar yoğunluklarında kontrollü küreme; kış operasyonunda güvenli ve verimli sürüş.",
-        "imageAlt": "Özünlü turuncu karla mücadele aracı yan görünüm — ön bıçak ve yan bıçak",
+        "imageAlt": "Özünlü karla mücadele aracı ön görünüm — ön kar bıçağı",
         "points": [
           "Hidrolik kaldırma ve açı kontrolü",
           "Geniş küreme hattı",
@@ -632,7 +636,7 @@
         "eyebrow": "Tuz / kum serici",
         "title": "Serici ile yol güvenliğini tamamlayın",
         "body": "Küreme sonrası tuz veya kum serimi ile buzlanmayı önleyin. Kapalı bunker, homojen dağıtım ve ağır hizmet koşullarına uygun gövde — filo operasyonlarında kesintisiz kış bakımı.",
-        "imageAlt": "Özünlü karla mücadele aracı arka tuz serici ünitesi",
+        "imageAlt": "Özünlü karla mücadele aracı arka görünüm — tuz / kum serici bunker",
         "points": [
           "Kapalı bunker koruması",
           "Homojen serim dağılımı",

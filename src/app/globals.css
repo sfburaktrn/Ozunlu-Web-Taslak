@@ -94,6 +94,48 @@ svg {
   .hero-scroll-dot {
     animation: hero-scroll-dot 1.5s ease-in-out infinite;
   }
+
+  .hero-accent-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.12em;
+  }
+
+  .hero-accent-underline::after {
+    content: '';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    bottom: 0.02em;
+    height: 0.085em;
+    min-height: 2px;
+    max-height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.95) 18%,
+      rgba(255, 255, 255, 0.95) 82%,
+      rgba(255, 255, 255, 0.15)
+    );
+    transform: scaleX(0);
+    transform-origin: inline-start center;
+    animation: hero-underline-draw 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards;
+  }
+
+  .hero-accent-underline--late::after {
+    animation-delay: 0.85s;
+  }
+
+  @supports not (transform-origin: inline-start center) {
+    .hero-accent-underline::after {
+      transform-origin: left center;
+    }
+
+    [dir='rtl'] .hero-accent-underline::after {
+      transform-origin: right center;
+    }
+  }
 }
 
 @keyframes hero-fade-up {
@@ -114,6 +156,18 @@ svg {
   }
 
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-underline-draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0.35;
+  }
+
+  to {
+    transform: scaleX(1);
     opacity: 1;
   }
 }

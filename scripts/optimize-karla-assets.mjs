@@ -8,11 +8,8 @@ const outDir = path.join(root, 'public', 'images', 'karla-mucadele');
 fs.mkdirSync(outDir, { recursive: true });
 
 const jobs = [
-    { in: 'IMG_8605.JPG', out: 'ozunlu-karla-mucadele-on-bicak.webp', w: 1800, q: 82 },
-    { in: 'IMG_8715.JPG', out: 'ozunlu-karla-mucadele-yan-gorunum.webp', w: 1800, q: 82 },
-    { in: 'IMG_8724.JPG', out: 'ozunlu-karla-mucadele-tuz-serici.webp', w: 1800, q: 82 },
-    { in: 'tmp-karla/hero-poster.jpg', out: 'ozunlu-karla-mucadele-hero-poster.webp', w: 1920, q: 78 },
-    { in: 'tmp-karla/cta-poster.jpg', out: 'ozunlu-karla-mucadele-cta-poster.webp', w: 1600, q: 78 },
+    { in: 'Kar küreme ön_.png', out: 'ozunlu-karla-mucadele-on-kureme.webp', w: 2000, q: 92 },
+    { in: 'Kar küreme arka.png', out: 'ozunlu-karla-mucadele-arka-serici.webp', w: 2000, q: 92 },
 ];
 
 for (const j of jobs) {

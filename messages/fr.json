@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "RAPIDITÉ EN PRODUCTION",
-      "titleLine2": "ROBUSTESSE SUR LE TERRAIN",
+      "titleLine1": "<accent>RAPIDITÉ</accent> EN PRODUCTION",
+      "titleLine2": "<accentLate>ROBUSTESSE</accentLate> SUR LE TERRAIN",
       "subtitle": "Production rapide, superstructures durables et performances éprouvées sur le terrain",
       "ctaDamper": "Devis benne",
       "ctaYariRomork": "Devis semi-remorque",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Déneigement",
-      "subtitle": "Des superstructures qui maintiennent les routes d’hiver ouvertes grâce à la lame avant, la lame latérale et l’épandeur. Prêtes pour le terrain, opérationnelles, avec la fiabilité Özünlü.",
+      "subtitle": "Des superstructures qui maintiennent les routes d'hiver ouvertes grâce à la lame avant, la lame latérale et l'épandeur. Prêtes pour le terrain, opérationnelles, avec la fiabilité <ozunlu></ozunlu>.",
       "comingSoon": "Contenu bientôt disponible."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Lame avant",
         "title": "Déblaiement avant puissant, ligne de vue claire",
         "body": "Ouvrez rapidement la voie principale avec une large lame à neige avant. Levage hydraulique et réglage d’angle pour un déblaiement contrôlé selon la densité de neige — opérations d’hiver plus sûres et efficaces.",
-        "imageAlt": "Véhicule de déneigement orange Özünlü vue de côté — lames avant et latérale",
+        "imageAlt": "Véhicule de déneigement Özünlü vue avant — lame à neige avant",
         "points": [
           "Levage hydraulique et contrôle d’angle",
           "Large bande de déblaiement",
@@ -636,7 +636,7 @@
         "eyebrow": "Épandeur sel / sable",
         "title": "Complétez la sécurité routière par l’épandage",
         "body": "Prévenez le verglas après déblaiement par épandage de sel ou de sable. Trémie fermée, répartition homogène et carrosserie pour usage intensif — entretien hivernal continu pour les flottes.",
-        "imageAlt": "Unité d’épandeur de sel arrière du véhicule de déneigement Özünlü",
+        "imageAlt": "Véhicule de déneigement Özünlü vue arrière — trémie épandeur sel / sable",
         "points": [
           "Protection par trémie fermée",
           "Répartition d’épandage homogène",

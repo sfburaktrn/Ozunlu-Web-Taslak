@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "SPEED IN PRODUCTION",
-      "titleLine2": "DURABILITY IN THE FIELD",
+      "titleLine1": "<accent>SPEED</accent> IN PRODUCTION",
+      "titleLine2": "<accentLate>DURABILITY</accentLate> IN THE FIELD",
       "subtitle": "Fast <strong>production</strong>, long-lasting <strong>superstructure</strong> solutions and field-proven performance",
       "ctaDamper": "Tipper Quote",
       "ctaYariRomork": "Semi-Trailer Quote",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Snow Fighting",
-      "subtitle": "Superstructure solutions that keep winter roads open with front blade, side blade and spreader. Field-ready, operational, with Özünlü reliability.",
+      "subtitle": "Superstructure solutions that keep winter roads open with front blade, side blade and spreader. Field-ready, operational, with <ozunlu></ozunlu> reliability.",
       "comingSoon": "Content coming soon."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Front blade",
         "title": "Strong front clearing, clear line of sight",
         "body": "Open the main lane quickly with a wide front snow blade. Hydraulic lift and angle control enable precise plowing in different snow densities — safer, more efficient winter operations.",
-        "imageAlt": "Özünlü orange snow fighting vehicle side view — front and side blades",
+        "imageAlt": "Özünlü snow fighting vehicle front view — front snow blade",
         "points": [
           "Hydraulic lift and angle control",
           "Wide clearing path",
@@ -636,7 +636,7 @@
         "eyebrow": "Salt / sand spreader",
         "title": "Complete road safety with spreading",
         "body": "Prevent icing after plowing with salt or sand spreading. Enclosed bunker, even distribution and a heavy-duty body — uninterrupted winter maintenance for fleet operations.",
-        "imageAlt": "Özünlü snow fighting vehicle rear salt spreader unit",
+        "imageAlt": "Özünlü snow fighting vehicle rear view — salt / sand spreader bunker",
         "points": [
           "Enclosed bunker protection",
           "Even spreading distribution",

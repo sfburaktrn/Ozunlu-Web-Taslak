@@ -118,8 +118,8 @@
   },
   "home": {
     "hero": {
-      "titleLine1": "VELOCITÀ IN PRODUZIONE",
-      "titleLine2": "DURATA SUL CAMPO",
+      "titleLine1": "<accent>VELOCITÀ</accent> IN PRODUZIONE",
+      "titleLine2": "<accentLate>DURATA</accentLate> SUL CAMPO",
       "subtitle": "<strong>Produzione</strong> rapida, soluzioni di <strong>sovrastruttura</strong> durature e prestazioni comprovate sul campo",
       "ctaDamper": "Preventivo ribaltabile",
       "ctaYariRomork": "Preventivo semirimorchio",
@@ -603,7 +603,7 @@
     "hero": {
       "eyebrow": "Özünlü Damper",
       "title": "Antineve",
-      "subtitle": "Allestimenti che tengono aperte le strade invernali con lama anteriore, laterale e spargisale. Pronti per il campo, operativi, con l’affidabilità Özünlü.",
+      "subtitle": "Allestimenti che tengono aperte le strade invernali con lama anteriore, laterale e spargisale. Pronti per il campo, operativi, con l'affidabilità <ozunlu></ozunlu>.",
       "comingSoon": "Contenuti in arrivo."
     },
     "finale": {
@@ -625,7 +625,7 @@
         "eyebrow": "Lama anteriore",
         "title": "Sgombero anteriore potente, linea di vista chiara",
         "body": "Apri rapidamente la corsia principale con un’ampia lama anteriore. Sollevamento idraulico e regolazione dell’angolo per uno sgombero controllato a diverse densità di neve — operazioni invernali più sicure ed efficienti.",
-        "imageAlt": "Veicolo antineve arancione Özünlü vista laterale — lame anteriore e laterale",
+        "imageAlt": "Veicolo antineve Özünlü vista anteriore — lama anteriore",
         "points": [
           "Sollevamento idraulico e controllo angolo",
           "Ampia fascia di sgombero",
@@ -636,7 +636,7 @@
         "eyebrow": "Spargisale / sabbia",
         "title": "Completa la sicurezza stradale con lo spargimento",
         "body": "Previeni il ghiaccio dopo lo sgombero con spargimento di sale o sabbia. Cassone chiuso, distribuzione omogenea e struttura heavy-duty — manutenzione invernale continua per le flotte.",
-        "imageAlt": "Unità spargisale posteriore del veicolo antineve Özünlü",
+        "imageAlt": "Veicolo antineve Özünlü vista posteriore — cassone spargisale / sabbia",
         "points": [
           "Protezione cassone chiuso",
           "Distribuzione omogenea",
