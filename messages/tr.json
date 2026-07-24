@@ -606,10 +606,13 @@
       "subtitle": "Ön bıçak, yan bıçak ve tuz serici ile kış yollarını açık tutan üst yapı çözümleri. Sahaya hazır, operasyonel, Özünlü güvencesiyle.",
       "comingSoon": "İçerik yakında eklenecek."
     },
-    "snowScroll": {
-      "hint": "Kaydırarak yolu açın",
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "Kar birikir.",
+      "line2": "Biz temizleriz.",
       "title": "Kar birikir. Biz temizleriz.",
-      "subtitle": "Özünlü karla mücadele aracı, yoğun kış koşullarında yolu açmak için tasarlandı.",
+      "subtitle": "Belediye ve karayolu filoları için ön bıçak, yan bıçak ve serici — sahaya hazır, ölçülü mühendislik.",
+      "pillars": ["Ön bıçak", "Yan bıçak", "Tuz / kum serici"],
       "cta": "İletişime geçin",
       "truckAlt": "Özünlü karla mücadele aracı — ön bıçak, yan bıçak ve tuz serici"
     },

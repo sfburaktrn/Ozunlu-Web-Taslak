@@ -37,8 +37,8 @@
       "description": "Cookie usage policy for the Özünlü Damper website."
     },
     "karlaMucadele": {
-      "title": "Quitanieves | Özünlü",
-      "description": "Soluciones antinieve Özünlü. Próximamente."
+      "title": "Vehículos quitanieves | Cuchilla frontal, lateral y esparcidor – Özünlü",
+      "description": "Superestructuras Özünlü para lucha contra la nieve: cuchilla frontal, cuchilla lateral y sistemas esparcidores de sal/arena. Soluciones durables y listas para el terreno para municipios, carreteras y operaciones invernales intensivas. Solicite presupuesto."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Quitanieves",
-      "subtitle": "Soluciones antinieve Özünlü. Próximamente.",
-      "comingSoon": "Soluciones antinieve Özünlü. Próximamente."
+      "subtitle": "Superestructuras que mantienen abiertas las carreteras en invierno con cuchilla frontal, lateral y esparcidor. Listas para el terreno, operativas, con la fiabilidad Özünlü.",
+      "comingSoon": "Contenido próximamente."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "La nieve se acumula.",
+      "line2": "Nosotros la retiramos.",
+      "title": "La nieve se acumula. Nosotros la retiramos.",
+      "subtitle": "Cuchilla frontal, lateral y esparcidor para flotas municipales y de carreteras — ingeniería precisa, lista para el terreno.",
+      "pillars": [
+        "Cuchilla frontal",
+        "Cuchilla lateral",
+        "Esparcidor sal / arena"
+      ],
+      "cta": "Contactar",
+      "truckAlt": "Vehículo quitanieves Özünlü — cuchilla frontal, lateral y esparcidor"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Cuchilla frontal",
+        "title": "Despeje frontal potente, línea de visión clara",
+        "body": "Abra el carril principal rápidamente con una amplia cuchilla frontal. Elevación hidráulica y ajuste de ángulo permiten un despeje controlado según la densidad de nieve — operaciones invernales más seguras y eficientes.",
+        "imageAlt": "Vehículo quitanieves naranja Özünlü vista lateral — cuchillas frontal y lateral",
+        "points": [
+          "Elevación hidráulica y control de ángulo",
+          "Amplia franja de despeje",
+          "Visibilidad y seguridad operativa"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Esparcidor sal / arena",
+        "title": "Complete la seguridad vial con el esparcido",
+        "body": "Prevenga el hielo tras el despeje con esparcido de sal o arena. Tolva cerrada, distribución homogénea y carrocería de servicio pesado — mantenimiento invernal continuo para flotas.",
+        "imageAlt": "Unidad esparcidora de sal trasera del vehículo quitanieves Özünlü",
+        "points": [
+          "Protección de tolva cerrada",
+          "Distribución homogénea",
+          "Resistencia de carrocería pesada"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Flota y campo",
+        "title": "Para operaciones municipales y de carreteras",
+        "body": "Visibilidad, resistencia y facilidad de servicio que esperan las flotas de carreteras y municipios. Llevamos nuestra herencia de volquete a las superestructuras quitanieves — ingeniería lista para el terreno en cada paso.",
+        "imageAlt": "Flota quitanieves Özünlü — detalle de cuchilla frontal",
+        "points": [
+          "Carrocería naranja de alta visibilidad",
+          "Servicio y mantenimiento fáciles",
+          "Producción a escala de flota"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Presupuesto",
+      "title": "Planifiquemos juntos su flota de invierno",
+      "description": "Contacte al equipo Özünlü para una configuración de cuchilla frontal, lateral y esparcidor según sus necesidades."
     }
   }
 }

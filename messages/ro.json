@@ -37,8 +37,8 @@
       "description": "Cookie usage policy for the Özünlü Damper website."
     },
     "karlaMucadele": {
-      "title": "Deszăpezire | Özünlü",
-      "description": "Soluții de deszăpezire Özünlü. În curând."
+      "title": "Vehicule de deszăpezire | Lamă față, lamă laterală, împrăștiător – Özünlü",
+      "description": "Suprastructuri Özünlü pentru deszăpezire: lamă de zăpadă față, lamă laterală și sisteme de împrăștiere sare/nisip. Soluții durabile, gata de teren pentru municipalități, drumuri și operațiuni grele de iarnă. Cereți ofertă."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Deszăpezire",
-      "subtitle": "Soluții de deszăpezire Özünlü. În curând.",
-      "comingSoon": "Soluții de deszăpezire Özünlü. În curând."
+      "subtitle": "Suprastructuri care mențin drumurile de iarnă deschise cu lamă față, lamă laterală și împrăștiător. Gata de teren, operaționale, cu fiabilitatea Özünlü.",
+      "comingSoon": "Conținut în curând."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "Zăpada se adună.",
+      "line2": "Noi o curățăm.",
+      "title": "Zăpada se adună. Noi o curățăm.",
+      "subtitle": "Lamă față, lamă laterală și împrăștiător pentru flote municipale și rutiere — inginerie precisă, gata de teren.",
+      "pillars": [
+        "Lamă față",
+        "Lamă laterală",
+        "Împrăștiător sare / nisip"
+      ],
+      "cta": "Contactați-ne",
+      "truckAlt": "Vehicul de deszăpezire Özünlü — lamă față, lamă laterală și împrăștiător"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Lamă față",
+        "title": "Curățare frontală puternică, vizibilitate clară",
+        "body": "Deschideți rapid banda principală cu o lamă frontală lată. Ridicare hidraulică și reglaj unghi pentru curățare controlată la densități diferite de zăpadă — operațiuni de iarnă mai sigure și eficiente.",
+        "imageAlt": "Vehicul de deszăpezire portocaliu Özünlü vedere laterală — lame față și laterală",
+        "points": [
+          "Ridicare hidraulică și control unghi",
+          "Bandă largă de curățare",
+          "Vizibilitate și siguranță operațională"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Împrăștiător sare / nisip",
+        "title": "Completați siguranța rutieră cu împrăștierea",
+        "body": "Preveniți ghețușul după curățare prin împrăștiere de sare sau nisip. Buncăr închis, distribuție omogenă și caroserie pentru uz greu — întreținere de iarnă neîntreruptă pentru flote.",
+        "imageAlt": "Unitate împrăștiător sare spate vehicul deszăpezire Özünlü",
+        "points": [
+          "Protecție buncăr închis",
+          "Distribuție omogenă",
+          "Rezistență caroserie uz greu"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Flotă & teren",
+        "title": "Pentru operațiuni municipale și rutiere",
+        "body": "Vizibilitate, rezistență și ușurință în service pe care le așteaptă flotele rutiere și municipale. Aducem tradiția noastră de basculante în suprastructurile de deszăpezire — inginerie adaptată terenului la fiecare pas.",
+        "imageAlt": "Flotă deszăpezire Özünlü — detaliu lamă față",
+        "points": [
+          "Caroserie portocalie vizibilitate ridicată",
+          "Service și întreținere ușoare",
+          "Producție la scară de flotă"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Ofertă",
+      "title": "Să planificăm împreună flota de iarnă",
+      "description": "Contactați echipa Özünlü pentru o configurație lamă față, lamă laterală și împrăștiător pe măsura nevoilor dvs."
     }
   }
 }

@@ -37,8 +37,8 @@
       "description": "Cookie usage policy for the Özünlü Damper website."
     },
     "karlaMucadele": {
-      "title": "Winterdienst | Özünlü",
-      "description": "Özünlü Winterdienst-Lösungen. Demnächst."
+      "title": "Winterdienst-Fahrzeuge | Frontschild, Seitenschild, Streuer – Özünlü",
+      "description": "Özünlü Winterdienst-Aufbauten: Frontschneeschild, Seitenschild und Salz-/Sandstreusysteme. Robuste, einsatzbereite Lösungen für Kommunen, Straßenbetriebe und schwere Wintereinsätze. Angebot anfordern."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Winterdienst",
-      "subtitle": "Özünlü Winterdienst-Lösungen. Demnächst.",
-      "comingSoon": "Özünlü Winterdienst-Lösungen. Demnächst."
+      "subtitle": "Aufbauten, die Winterstraßen mit Frontschild, Seitenschild und Streuer offen halten. Einsatzbereit, betriebsstark — mit Özünlü-Zuverlässigkeit.",
+      "comingSoon": "Inhalt folgt in Kürze."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "Schnee sammelt sich.",
+      "line2": "Wir räumen.",
+      "title": "Schnee sammelt sich. Wir räumen.",
+      "subtitle": "Frontschild, Seitenschild und Streuer für kommunale und Straßenflotten — einsatzbereit, präzise Technik.",
+      "pillars": [
+        "Frontschild",
+        "Seitenschild",
+        "Salz- / Sandstreuer"
+      ],
+      "cta": "Kontakt aufnehmen",
+      "truckAlt": "Özünlü Winterdienstfahrzeug — Frontschild, Seitenschild und Streuer"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Frontschild",
+        "title": "Starke Fronträumung, klare Sichtlinie",
+        "body": "Öffnen Sie die Hauptspur schnell mit einem breiten Frontschneeschild. Hydraulisches Heben und Winkelverstellung ermöglichen kontrolliertes Räumen bei unterschiedlicher Schneedichte — sicherer und effizienter Winterbetrieb.",
+        "imageAlt": "Özünlü orangefarbenes Winterdienstfahrzeug Seitenansicht — Front- und Seitenschild",
+        "points": [
+          "Hydraulisches Heben und Winkelsteuerung",
+          "Breite Räumbahn",
+          "Betriebliche Sicht und Sicherheit"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Salz- / Sandstreuer",
+        "title": "Straßensicherheit mit Streuen vervollständigen",
+        "body": "Verhindern Sie Vereisung nach dem Räumen durch Salz- oder Sandstreuung. Geschlossener Bunker, gleichmäßige Verteilung und Schwerlastgehäuse — unterbrechungsfreier Winterdienst für Flotten.",
+        "imageAlt": "Özünlü Winterdienstfahrzeug hintere Salzstreueinheit",
+        "points": [
+          "Geschützter Bunker",
+          "Gleichmäßige Streuverteilung",
+          "Schwerlast-Gehäusefestigkeit"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Flotte & Einsatz",
+        "title": "Für Kommunen und Straßenbetriebe",
+        "body": "Sichtbarkeit, Robustheit und Servicefreundlichkeit, die Autobahn- und Kommunalfahrzeuge brauchen. Wir übertragen unsere Kipper-Tradition auf Winterdienst-Aufbauten — einsatzgerechte Technik in jedem Produktionsschritt.",
+        "imageAlt": "Özünlü Winterdienstflotte — Frontschild-Detail",
+        "points": [
+          "Hochsichtbares orangefarbenes Gehäuse",
+          "Einfache Wartung und Service",
+          "Produktion im Flottenmaßstab"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Angebot",
+      "title": "Planen wir Ihre Winterflotte gemeinsam",
+      "description": "Kontaktieren Sie das Özünlü-Team für eine Frontschild-, Seitenschild- und Streuer-Konfiguration nach Ihren Anforderungen."
     }
   }
 }

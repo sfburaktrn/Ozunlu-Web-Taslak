@@ -37,8 +37,8 @@
       "description": "Politica sull'utilizzo dei cookie sul sito web Özünlü Damper."
     },
     "karlaMucadele": {
-      "title": "Antineve | Özünlü",
-      "description": "Soluzioni antineve Özünlü. Prossimamente."
+      "title": "Veicoli antineve | Lama anteriore, laterale, spargisale – Özünlü",
+      "description": "Allestimenti Özünlü per la lotta alla neve: lama anteriore, lama laterale e sistemi spargisale/sabbia. Soluzioni durevoli e pronte per il campo per comuni, strade e operazioni invernali intense. Richiedi un preventivo."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Antineve",
-      "subtitle": "Soluzioni antineve Özünlü. Prossimamente.",
-      "comingSoon": "Soluzioni antineve Özünlü. Prossimamente."
+      "subtitle": "Allestimenti che tengono aperte le strade invernali con lama anteriore, laterale e spargisale. Pronti per il campo, operativi, con l’affidabilità Özünlü.",
+      "comingSoon": "Contenuti in arrivo."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "La neve si accumula.",
+      "line2": "Noi la rimuoviamo.",
+      "title": "La neve si accumula. Noi la rimuoviamo.",
+      "subtitle": "Lama anteriore, laterale e spargisale per flotte comunali e stradali — ingegneria precisa, pronta per il campo.",
+      "pillars": [
+        "Lama anteriore",
+        "Lama laterale",
+        "Spargisale / sabbia"
+      ],
+      "cta": "Contattaci",
+      "truckAlt": "Veicolo antineve Özünlü — lama anteriore, laterale e spargisale"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Lama anteriore",
+        "title": "Sgombero anteriore potente, linea di vista chiara",
+        "body": "Apri rapidamente la corsia principale con un’ampia lama anteriore. Sollevamento idraulico e regolazione dell’angolo per uno sgombero controllato a diverse densità di neve — operazioni invernali più sicure ed efficienti.",
+        "imageAlt": "Veicolo antineve arancione Özünlü vista laterale — lame anteriore e laterale",
+        "points": [
+          "Sollevamento idraulico e controllo angolo",
+          "Ampia fascia di sgombero",
+          "Visibilità e sicurezza operativa"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Spargisale / sabbia",
+        "title": "Completa la sicurezza stradale con lo spargimento",
+        "body": "Previeni il ghiaccio dopo lo sgombero con spargimento di sale o sabbia. Cassone chiuso, distribuzione omogenea e struttura heavy-duty — manutenzione invernale continua per le flotte.",
+        "imageAlt": "Unità spargisale posteriore del veicolo antineve Özünlü",
+        "points": [
+          "Protezione cassone chiuso",
+          "Distribuzione omogenea",
+          "Resistenza struttura heavy-duty"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Flotta e campo",
+        "title": "Per operazioni comunali e stradali",
+        "body": "Visibilità, robustezza e facilità di servizio attese dalle flotte stradali e comunali. Portiamo la nostra tradizione ribaltabile agli allestimenti antineve — ingegneria pronta per il campo in ogni fase.",
+        "imageAlt": "Flotta antineve Özünlü — dettaglio lama anteriore",
+        "points": [
+          "Carrozzeria arancione ad alta visibilità",
+          "Manutenzione e servizio facilitati",
+          "Produzione su scala flotta"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Preventivo",
+      "title": "Pianifichiamo insieme la tua flotta invernale",
+      "description": "Contatta il team Özünlü per una configurazione lama anteriore, laterale e spargisale su misura."
     }
   }
 }

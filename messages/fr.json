@@ -37,8 +37,8 @@
       "description": "Cookie usage policy for the Özünlü Damper website."
     },
     "karlaMucadele": {
-      "title": "Déneigement | Özünlü",
-      "description": "Solutions de déneigement Özünlü. Bientôt."
+      "title": "Véhicules de déneigement | Lame avant, lame latérale, épandeur – Özünlü",
+      "description": "Superstructures Özünlü de déneigement : lame à neige avant, lame latérale et systèmes d’épandage sel/sable. Solutions durables et prêtes pour le terrain, pour collectivités, routes et opérations hivernales lourdes. Demandez un devis."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Déneigement",
-      "subtitle": "Solutions de déneigement Özünlü. Bientôt.",
-      "comingSoon": "Solutions de déneigement Özünlü. Bientôt."
+      "subtitle": "Des superstructures qui maintiennent les routes d’hiver ouvertes grâce à la lame avant, la lame latérale et l’épandeur. Prêtes pour le terrain, opérationnelles, avec la fiabilité Özünlü.",
+      "comingSoon": "Contenu bientôt disponible."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "La neige s’accumule.",
+      "line2": "Nous déblayons.",
+      "title": "La neige s’accumule. Nous déblayons.",
+      "subtitle": "Lame avant, lame latérale et épandeur pour flottes municipales et routières — ingénierie précise, prête pour le terrain.",
+      "pillars": [
+        "Lame avant",
+        "Lame latérale",
+        "Épandeur sel / sable"
+      ],
+      "cta": "Nous contacter",
+      "truckAlt": "Véhicule de déneigement Özünlü — lame avant, lame latérale et épandeur"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Lame avant",
+        "title": "Déblaiement avant puissant, ligne de vue claire",
+        "body": "Ouvrez rapidement la voie principale avec une large lame à neige avant. Levage hydraulique et réglage d’angle pour un déblaiement contrôlé selon la densité de neige — opérations d’hiver plus sûres et efficaces.",
+        "imageAlt": "Véhicule de déneigement orange Özünlü vue de côté — lames avant et latérale",
+        "points": [
+          "Levage hydraulique et contrôle d’angle",
+          "Large bande de déblaiement",
+          "Visibilité et sécurité opérationnelles"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Épandeur sel / sable",
+        "title": "Complétez la sécurité routière par l’épandage",
+        "body": "Prévenez le verglas après déblaiement par épandage de sel ou de sable. Trémie fermée, répartition homogène et carrosserie pour usage intensif — entretien hivernal continu pour les flottes.",
+        "imageAlt": "Unité d’épandeur de sel arrière du véhicule de déneigement Özünlü",
+        "points": [
+          "Protection par trémie fermée",
+          "Répartition d’épandage homogène",
+          "Résistance de carrosserie intensif"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Flotte & terrain",
+        "title": "Pour collectivités et routes",
+        "body": "Visibilité, robustesse et facilité d’entretien attendues par les flottes routières et municipales. Nous transposons notre héritage benne aux superstructures de déneigement — ingénierie adaptée au terrain à chaque étape.",
+        "imageAlt": "Flotte de déneigement Özünlü — détail lame avant",
+        "points": [
+          "Carrosserie orange haute visibilité",
+          "Entretien et service facilités",
+          "Production à l’échelle flotte"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Devis",
+      "title": "Planifions ensemble votre flotte d’hiver",
+      "description": "Contactez l’équipe Özünlü pour une configuration lame avant, lame latérale et épandeur adaptée à vos besoins."
     }
   }
 }

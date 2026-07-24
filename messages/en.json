@@ -37,8 +37,8 @@
       "description": "Cookie usage policy for the Özünlü Damper website."
     },
     "karlaMucadele": {
-      "title": "Snow Fighting | Özünlü",
-      "description": "Özünlü snow fighting solutions. Coming soon."
+      "title": "Snow Fighting Vehicles | Front Blade, Side Blade, Spreader – Özünlü",
+      "description": "Özünlü snow-fighting bodies: front snow blade, side blade and salt/sand spreader systems. Durable, field-ready solutions for municipalities, highways and heavy winter operations. Request a quote."
     }
   },
   "common": {
@@ -601,9 +601,64 @@
   },
   "karlaMucadele": {
     "hero": {
+      "eyebrow": "Özünlü Damper",
       "title": "Snow Fighting",
-      "subtitle": "Özünlü snow fighting solutions. Coming soon.",
+      "subtitle": "Superstructure solutions that keep winter roads open with front blade, side blade and spreader. Field-ready, operational, with Özünlü reliability.",
       "comingSoon": "Content coming soon."
+    },
+    "finale": {
+      "eyebrow": "Özünlü Damper",
+      "line1": "Snow builds up.",
+      "line2": "We clear it.",
+      "title": "Snow builds up. We clear it.",
+      "subtitle": "Front blade, side blade and spreader for municipal and highway fleets — field-ready, precise engineering.",
+      "pillars": [
+        "Front blade",
+        "Side blade",
+        "Salt / sand spreader"
+      ],
+      "cta": "Contact us",
+      "truckAlt": "Özünlü snow fighting vehicle — front blade, side blade and spreader"
+    },
+    "sections": {
+      "front": {
+        "eyebrow": "Front blade",
+        "title": "Strong front clearing, clear line of sight",
+        "body": "Open the main lane quickly with a wide front snow blade. Hydraulic lift and angle control enable precise plowing in different snow densities — safer, more efficient winter operations.",
+        "imageAlt": "Özünlü orange snow fighting vehicle side view — front and side blades",
+        "points": [
+          "Hydraulic lift and angle control",
+          "Wide clearing path",
+          "Operational visibility and safety"
+        ]
+      },
+      "spreader": {
+        "eyebrow": "Salt / sand spreader",
+        "title": "Complete road safety with spreading",
+        "body": "Prevent icing after plowing with salt or sand spreading. Enclosed bunker, even distribution and a heavy-duty body — uninterrupted winter maintenance for fleet operations.",
+        "imageAlt": "Özünlü snow fighting vehicle rear salt spreader unit",
+        "points": [
+          "Enclosed bunker protection",
+          "Even spreading distribution",
+          "Heavy-duty body strength"
+        ]
+      },
+      "fleet": {
+        "eyebrow": "Fleet & field",
+        "title": "For municipal and highway operations",
+        "body": "Visibility, durability and serviceability that highway and municipal fleets expect. We bring our tipper heritage to snow-fighting bodies — field-ready engineering in every step of production.",
+        "imageAlt": "Özünlü snow fighting fleet — front blade detail",
+        "points": [
+          "High-visibility orange body",
+          "Easy service and maintenance",
+          "Fleet-scale production"
+        ]
+      }
+    },
+    "poster": {
+      "eyebrow": "Quote",
+      "title": "Let's plan your winter fleet together",
+      "description": "Contact the Özünlü team for a front blade, side blade and spreader configuration tailored to your needs."
     }
   }
 }

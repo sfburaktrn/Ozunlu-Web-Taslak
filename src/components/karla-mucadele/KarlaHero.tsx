@@ -48,10 +48,18 @@ export default function KarlaHero() {
                 preload="metadata"
                 aria-hidden
             />
-            {/* Ana sayfa tarzı hafif gölge */}
+            {/* Genel hafif gölge + yazı tarafında okunabilirlik scrim’i */}
             <div
                 aria-hidden
-                className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-black/35"
+                className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/25"
+            />
+            <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/12 to-transparent rtl:bg-gradient-to-l rtl:from-black/40 rtl:via-black/12 rtl:to-transparent"
+            />
+            <div
+                aria-hidden
+                className="absolute inset-y-[12%] start-0 w-[min(85%,580px)] bg-[radial-gradient(ellipse_80%_70%_at_0%_55%,rgba(0,0,0,0.32),transparent_70%)]"
             />
 
             <div
