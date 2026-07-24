@@ -28,8 +28,6 @@ export default function KarlaMucadeleClient() {
                 tone="frost"
             />
 
-            <KarlaFinale />
-
             <KarlaImageText
                 imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-arka-serici.webp"
                 imageAlt={t('sections.spreader.imageAlt')}
@@ -43,6 +41,23 @@ export default function KarlaMucadeleClient() {
                 ]}
                 imageLeft={false}
                 tone="glacier"
+            />
+
+            <KarlaFinale />
+
+            <KarlaImageText
+                imageSrc="/images/karla-mucadele/ozunlu-karla-mucadele-yan-profil-hardox.webp"
+                imageAlt={t('sections.profile.imageAlt')}
+                eyebrow={t('sections.profile.eyebrow')}
+                title={t('sections.profile.title')}
+                body={t('sections.profile.body')}
+                points={[
+                    t('sections.profile.points.0'),
+                    t('sections.profile.points.1'),
+                    t('sections.profile.points.2'),
+                ]}
+                imageLeft
+                tone="ice"
             />
 
             <KarlaVideoPoster />

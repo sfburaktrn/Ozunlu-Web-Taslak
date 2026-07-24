@@ -653,6 +653,17 @@
           "Einfache Wartung und Service",
           "Produktion im Flottenmaßstab"
         ]
+      },
+      "profile": {
+        "eyebrow": "Seitenprofil",
+        "title": "Frontschild und Streuer — in einem Aufbau",
+        "body": "Integrierter Aufbau mit Frontpflug und Salz-/Sandstreuer auf derselben Hardox-Karosserie. Hochsichtbare orangefarbene Lackierung, einsatzbereite Montage und langlebige Robustheit.",
+        "imageAlt": "Özünlü Hardox Schneeräumfahrzeug Seitenprofil — Frontschild und Streuer",
+        "points": [
+          "Integriertes Frontschild + Streuer",
+          "Hardox-Karosseriefestigkeit",
+          "Hochsichtbares Orange"
+        ]
       }
     },
     "poster": {

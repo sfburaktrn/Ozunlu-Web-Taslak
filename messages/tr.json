@@ -653,6 +653,17 @@
           "Servis ve bakım kolaylığı",
           "Filo ölçeğinde üretim"
         ]
+      },
+      "profile": {
+        "eyebrow": "Yan profil",
+        "title": "Ön bıçak ve serici — tek gövdede",
+        "body": "Ön küreme bıçağı ile tuz/kum sericiyi aynı Hardox gövdede birleştiren entegre üst yapı. Filo görünürlüğü yüksek turuncu kaplama, sahaya hazır montaj ve uzun ömürlü dayanım.",
+        "imageAlt": "Özünlü Hardox karla mücadele aracı yan profil — ön bıçak ve tuz serici",
+        "points": [
+          "Entegre ön bıçak + serici",
+          "Hardox gövde dayanımı",
+          "Yüksek görünürlük turuncu"
+        ]
       }
     },
     "poster": {

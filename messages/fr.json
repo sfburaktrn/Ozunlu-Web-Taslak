@@ -653,6 +653,17 @@
           "Entretien et service facilités",
           "Production à l’échelle flotte"
         ]
+      },
+      "profile": {
+        "eyebrow": "Profil latéral",
+        "title": "Lame avant et épandeur — un seul corps",
+        "body": "Superstructure intégrée combinant lame de chasse-neige avant et épandeur sel/sable sur le même corps Hardox. Finition orange haute visibilité, montage prêt pour le terrain et durabilité longue durée.",
+        "imageAlt": "Véhicule de déneigement Özünlü Hardox en profil — lame avant et épandeur",
+        "points": [
+          "Lame avant + épandeur intégrés",
+          "Résistance du corps Hardox",
+          "Orange haute visibilité"
+        ]
       }
     },
     "poster": {
