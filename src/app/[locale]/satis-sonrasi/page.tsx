@@ -24,19 +24,15 @@ export default function AfterSalesPage({ params }: Props) {
     if (!hasLocale(routing.locales, params.locale)) notFound();
     setRequestLocale(params.locale);
     return (
-        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24">
-            {/* Önce Ek Ekipmanlar (CTA hariç) */}
-            <div className="px-0">
-                <EkEkipmanlarPageClient embedded />
-            </div>
-            <div className="px-4 sm:px-6">
-                <AfterSalesHero />
-                <ServicesGrid />
-                <DocumentLibrary />
-                {/* CTA: haritanın hemen üstü */}
-                <EkEkipmanlarCta />
-                <AfterSalesMapPreview />
-            </div>
+        <main className="min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6">
+            {/* Önce Ek Ekipmanlar (CTA hariç) — damper/yarı römork gibi hemen nav altında */}
+            <EkEkipmanlarPageClient embedded />
+            <AfterSalesHero />
+            <ServicesGrid />
+            <DocumentLibrary />
+            {/* CTA: haritanın hemen üstü */}
+            <EkEkipmanlarCta />
+            <AfterSalesMapPreview />
         </main>
     );
 }

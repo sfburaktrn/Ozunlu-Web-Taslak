@@ -55,8 +55,8 @@ export default function EkEkipmanlarPageClient({ embedded = false }: { embedded?
             id={embedded ? 'ek-ekipmanlar' : undefined}
             className={
                 embedded
-                    ? 'scroll-mt-20 bg-[#F8F9FA] py-12 md:py-20 px-3 sm:px-6'
-                    : 'min-h-screen bg-[#F8F9FA] pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6'
+                    ? 'scroll-mt-20 bg-white pt-0 pb-12 md:pb-16'
+                    : 'min-h-screen bg-white pt-[50px] pb-12 md:pt-[60px] md:pb-24 px-3 sm:px-6'
             }
         >
             {/* HERO — mobile: image + text stacked. Tablet+: overlay */}
